@@ -1,3 +1,57 @@
+//-------------------------------------------------------------------------------------
+//-- vervang of verwijder het <section> element met id = 'sotd'
+//-------------------------------------------------------------------------------------
+function changeSOTD()
+{
+  //console.log("\tStart changeSOTD");
+
+  let sstat = "";
+  if(respecConfig.specStatus != null) sstat = respecConfig.specStatus;
+
+  var srch = "sotd";
+  var tag = document.getElementById(srch);
+  //console.log("\t\tsection is [" + tag.innerHTML + "] is gevonden");
+
+  // if(respecParams.noSOTD || sstat == "")   //-- SOTD helemaal weghalen
+  // {
+  //   tag.parentNode.removeChild(tag);
+  //   console.log("\t\tsection is [" + srch + "] is verwijderd");
+  // }
+  // else                                  //-- SOTD Aanpassen
+  // {
+
+    tag.innerHTML = "<h2>Status van dit document</h2>";
+    tag.innerHTML += "<p>";
+   
+    switch(respecConfig.specStatus)
+    {
+      case "WV":
+        tag.innerHTML +=  "Dit is de werk versie van het document '" + document.title + "'. "; 
+        break;
+      case "CV":
+        tag.innerHTML +=  "Dit is een door de werkgroep goedgekeurde consultatieversie van het document '" + document.title + "'. " + 
+                          "Commentaar over dit document kan gestuurd worden naar <a href='" + respecConfig.emailComments + "'></a>" + ".";
+        break;
+      case "VV":
+        tag.innerHTML +=  "Dit is een definitief concept van de nieuwe versie van het document '" + document.title + "'. " + 
+                          "Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.";
+        break;
+      case "DF":
+        tag.innerHTML +=  "Dit is de definitieve versie van het document '" + document.title + "'. " + 
+                          "Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.";
+          break;
+      case "BASIS":
+        tag.innerHTML +=  "Dit is een document zonder officiële status.";
+          break;
+    }
+    //Dit is een document zonder officiële status.
+
+    tag.innerHTML += "<p>";
+  //}
+
+  //console.log("\tEinde changeSOTD");
+}
+
 var respecConfig = {
     // this template doesn't use all possible config parameters
     // see https://github.com/Logius-standaarden/respec/wiki for all options
@@ -10,7 +64,8 @@ var respecConfig = {
     // EO: Einde ondersteuning, verouderde versie, vervangen door nieuwe versie
     // TG: Versie teruggetrokken
     // BASIS, GN-BASIS: 'geen status'
-    specStatus: "WW",
+    specStatus: "WV",
+    postProcess:[changeSOTD],       //-- Deze roept de postprocessor aan
   
     // SpecType currently supported
     // NO: "Norm"
