@@ -4,19 +4,20 @@ De bouw moet efficiënter en doelmatiger om de uitdagingen waar de sector voor s
 Het is belangrijk om te komen tot een gemeenschappelijke taal. CB-NL is hiervoor bedoeld, en kan dienen als kernmodel waar andere standaarden aan kunnen verbinden en waarop OTL’s kunnen aanhaken (‘extenden’). Een gemeenschappelijk kernmodel uniformeert niet ineens de hele wereld, maar legt wel een basis-semantiek aan die het heel veel eenvoudiger maakt om met elkaar te communiceren. In de huidige vorm is de CB-NL hier onvoldoende op toegerust, en wordt dus ook niet als zodanig benut door de sector. 
 Door de komst van de NTA8035 en de ontwikkeling van de NEN2660 is er binnen de sector consensus over basisprincipes waaraan voldaan moet worden om informatie deling en uitwisseling beter mogelijk te maken. Verwachting is, dat als de CB-NL wordt aangepast op de uitgangspunten en modelleerregels uit de NEN2660 en de NTA8035, er een krachtig kernmodel ontstaat die deze verbindende rol in de sector wèl kan spelen. Dit doel wordt bereikt door een linked-data-versie van deze richtlijnen door te vertalen in de taxonomie van CB-NL en te publiceren.
 
-Andere standaarden van BIM-loket en van partners kunnen aansluiten op kernmodel van CB-NL. Hierdoor is het in de toekomst mogelijk om een “basis-OTL” te genereren, waarin de landelijke standaarden in 1 structuur aan elkaar gekoppeld zijn. 
+Andere standaarden van BIM-loket en van partners kunnen aansluiten op kernmodel van CB-NL. Hierdoor is het in de toekomst mogelijk om een “basis-OTL” te genereren, waarin de landelijke standaarden in 1 structuur aan elkaar gekoppeld zijn. Organisaties die een dergelijke basis-OTL volgen hoeven dus niet meer zelf te modelleren wat er in de sector is afgesproken.
 
  ![samenhang nen2660, cb-nl en otl](media/cb-nl-piramide.png "positionering cb-nl")
 
-Organisaties die een dergelijke basis-OTL volgen hoeven dus niet meer zelf te modelleren wat er in de sector is afgesproken. Dit is tevens een mooie vervolgstap op de ontwikkeling van de provincie OTL, die reeds loopt bij CROW en is aangemeld als versnellingsproject voor de DigiDeal. Indien de provinciale OTL wordt aangesloten op het kernmodel van CB-NL dan wordt gegevensuitwisseling tussen diverse partijen beter ondersteund. Aansluiting van deze initiatieven is geborgd door mensen in beide ontwikkelingen te laten meedoen.
+## Versnellingsproject kernmodel CB-NL
 
-Het voorliggend projectvoorstel biedt aan de gebruikers van standaarden (gemeenten, provincies, rijksoverheden, infrabouwers etc.) de mogelijkheid om:
-1. Met hun eigen OTL-ontwikkeling op de sectorstandaarden aan te sluiten en hierdoor hun data via sectorstandaarden en afgesproken formaten met meerdere ketenpartners te kunnen verbinden of uit te wisselen.
-2. Via beproeving van landelijke modelleerrichtlijnen (NTA8035) en onder begeleiding van kennisinstituten zoals TNO de methodiek voor OTL-modellering ten behoeve van hun eigen OTL-ontwikkeling, zoveel mogelijk gelijk te houden. TNO is een belangrijke kennisdrager en ontwikkelaar van het modelleren in linked data.
-3. Door gebruik te maken van reeds operationele toepassingen, zoals de (OTL-)GWSW, te profiteren van reeds beschikbare relaties, uitwisselformaten en gereedschappen. De bruikbaarheid en haalbaarheid van eigen OTL-ontwikkeling wordt hiermee vergroot.
+Dit project wordt gefinancierd door [DigiGO](https://www.digigo.nu/), aangevuld met 'in-kind' bijdragen van een aantal deelnemende organisatie.
+
+Het doel is het ontwikkelen van een nieuw kernmodel voor CB-NL gebaseerd op de NTA8035 en NEN2660. Het gaat daarbij primair om het afstemmen van termen en definities (semantiek) en het faciliteren van gegevensuitwisseling en -deling door afspraken over de gegevensstructuur (taxonomie).
+De inhoud van CB-NL (het kerndeel van de taxonomie) wordt opgeschoond en zo in lijn gebracht met datgene waarover consensus is in de sector. Hierdoor wordt koppeling van andere standaarden en OTL’s in de sector vereenvoudigd. Het draagt in hoge mate bij aan een gestandaardiseerde manier van uitwisselen van digitale informatie en het voorkomen van informatieverlies tussen opdrachtgevers en opdrachtnemers.
 
 
 
-# Project
 
-Dit project betreft het verwerken van het in de NEN2660 (en NTA8035) bepaalde topmodel in de CB-NL en het herinrichten van de taxonomie van CB-NL op zodanige wijze dat deze kan dienen als kernmodel waaraan gemodelleerde standaarden en datastructuren als OTL’s kunnen verbinden. Het CB-NL-kernmodel doet dus dienst als taxonomie waarin de in de bouw meest gangbare begrippen eenduidig zijn gedefinieerd. 
+
+
+
