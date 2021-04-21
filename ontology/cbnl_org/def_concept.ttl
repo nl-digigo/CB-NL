@@ -7352,10 +7352,6 @@ cbnlcore:CB04568 a owl:Class .
 
 cbnlcore:CB03933 a owl:Class .
 
-<http://ont.cbnl.org/mapping/IMGeo-2.1.1-CBNL-20190510#bartbink> a cbnlcore:CB04348 .
-
-<http://ont.cbnl.org/mapping/IMGeo-2.1.1-CBNL-20190510#hansschevers> a cbnlcore:CB04348 .
-
 cbnlcore:CB00001 dcterms:created "2015-01-05+01:00"^^xsd:date .
 
 cbnlcore:CB00002 dcterms:created "2015-01-05+01:00"^^xsd:date .
