@@ -1,0 +1,1 @@
+java -jar .\rmlmapper-4.7.0-r150.jar --mappingfile "NEN2767-4.rml.ttl" --outputfile "NEN2767-4.trig" --serialization trig

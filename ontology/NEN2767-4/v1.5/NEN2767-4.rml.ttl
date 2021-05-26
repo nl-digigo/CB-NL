@@ -1,0 +1,311 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix : <https://example.com/nen2767-4/1.5/> .
+
+:_MappingBeheerobjecten a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Beheerobjecten/Beheerobject"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Beheerobject-{@code}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "objectCategorieNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:narrower ;
+    rr:objectMap [
+      rr:template "https://example.com/nen2767-4/1.5/Element-{Elementen/Element/@code}" ;
+    ]
+  ] ;
+.
+
+:_MappingElementen a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Elementen/Element"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Element-{@code}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "elementNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:narrower ;
+    rr:objectMap [
+      rr:template "https://example.com/nen2767-4/1.5/Bouwdeel-{Bouwdelen/Bouwdeel/@code}" ;
+    ]
+  ] ;
+.
+
+:_MappingBouwdelen a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Bouwdelen/Bouwdeel"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Bouwdeel-{@code}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "bouwdeelNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:narrower ;
+    rr:objectMap [
+      rr:template "https://example.com/nen2767-4/1.5/Materiaalsoort-{Materiaalsoorten/Materiaalsoort/@code}" ;
+    ]
+  ] ;
+.
+
+:_MappingMateriaalsoorten a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Materiaalsoorten/Materiaalsoort"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Materiaalsoort-{@code}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "materiaalSoortNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:narrower ;
+    rr:objectMap [
+      rr:template "https://example.com/nen2767-4/1.5/Gebrek-{Gebreken/Gebrek/@code}" ;
+    ]
+  ] ;
+.
+
+:_MappingGebreken a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Gebreken/Gebrek"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Gebrek-{@code}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "gebrekNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:definition ;
+    rr:objectMap [
+      rml:reference "gebrekOmschrijving" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:related ;
+    rr:objectMap [
+      rr:template "https://example.com/nen2767-4/1.5/Gebreksoort-{gebreksoortID}" ;
+    ] ,
+    [
+      rr:template "https://example.com/nen2767-4/1.5/Gebrekgroep-{gebrekgroepID}" ;
+    ] ,
+    [
+      rr:template "https://example.com/nen2767-4/1.5/Eenheid-{eenheidID}" ;
+    ] 
+  ] ;
+.
+
+:_MappingVakdisciplines a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Vakdisciplines/Vakdiscipline"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Vakdiscipline-{@code}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "vakdisciplineNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:related ;
+    rr:objectMap [
+      rr:template "https://example.com/nen2767-4/1.5/Element-{Elementen/Element/@code}" ;
+    ]
+  ] ;
+.
+
+:_MappingBelangen a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Belangen/Belang"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Belang-{@code}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "weegText" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+.
+
+:_MappingGebrekgroepen a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Gebrekgroepen/Gebrekgroep"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Gebrekgroep-{gebrekgroepID}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "gebrekgroepNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+.
+
+:_MappingGebreksoorten a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Gebreksoorten/Gebreksoort"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Gebreksoort-{gebreksoortID}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "gebreksoortNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:altLabel ;
+    rr:objectMap [
+      rml:reference "gebreksoortAfkorting" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:definition ;
+    rr:objectMap [
+      rml:reference "gebreksoortToelichting" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+.
+
+:_MappingEenheden a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "NEN 2767-4-2 v1.5 - org.xml" ;
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/nen_product/Eenheden/Eenheid"
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/Eenheid-{eenheidID}" ;
+    rr:class skos:Concept ;
+    rr:graph : ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "eenheidNaam" ;
+      rr:language "nl" ;
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:altLabel ;
+    rr:objectMap [
+      rml:reference "eenheidAfkorting" ;
+    ]
+  ] ;
+.
+
+:_MappingNPR4768 a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+        a csvw:Table;
+        csvw:url "NPR4768_unofficial.csv";
+        csvw:dialect [
+          a csvw:Dialect;
+          csvw:delimiter ";"
+        ]
+      ] ;
+    rml:referenceFormulation ql:CSV;
+  ] ;
+  rr:subjectMap [
+    rr:template "https://example.com/nen2767-4/1.5/{type}-{code}";
+    rr:graph : ;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate skos:definition;
+    rr:objectMap [
+      rml:reference "definitie";
+      rr:language "nl" ;
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:comment;
+    rr:objectMap [
+      rml:reference "toelichting";
+      rr:language "nl" ;
+    ]
+  ];
+.
