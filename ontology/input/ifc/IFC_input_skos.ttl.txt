@@ -1,0 +1,89 @@
+@base <https://example.com/IFC/> .
+@prefix : <https://bimloket.nl/data/kernmodel/thesaurus#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:IfcElement a :Concept;
+  skos:prefLabel "Element"@NL-nl;
+  skos:prefLabel "Element"@en;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement"@en;
+  :altDefinition_1 "An element is a generalization of all components that make up an AEC product. Elements are physically existent objects, although they might be void elements, such as holes. Elements either remain permanently in the AEC product, or only temporarily, as formwork does. Elements can be either assembled on site or pre-manufactured and built in on site."@en .
+
+:IfcSpatialElement a :Concept;
+  skos:prefLabel "Ruimtelijk Element"@NL-nl;
+  skos:prefLabel "SpatialElement"@en;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement"@en;
+  :altDefinition_1 "A spatial element is the generalization of all spatial elements that might be used to define a spatial structure or to define spatial zones."@en .
+
+:IfcSystem a :Concept;
+  skos:prefLabel "Systeem"@NL-nl;
+  skos:prefLabel "System"@en;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSystem"@en;
+  :altDefinition_1 "A system is an organized combination of related parts within an AEC product, composed for a common purpose or function or to provide a service. A system is essentially a functionally related aggregation of products. The grouping relationship to one or several instances of IfcProduct (the system members) is handled by IfcRelAssignsToGroup."@en .
+
+:IfcBuildingElement a :Concept;
+  skos:prefLabel "Bouwelement"@NL-nl;
+  skos:prefLabel "BuildingElement"@en;
+  skos:altLabel "BuiltElement"@en;
+  skos:broader :IfcElement;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"@en;
+  :altDefinition_1 "The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system. Building elements are all physically existent and tangible things."@en .
+
+:IfcCivilElement a :Concept;
+  skos:prefLabel "Civiel Element"@NL-nl;
+  skos:prefLabel "CivilElement"@en;
+  skos:broader :IfcElement;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCivilElement"@en;
+  :altDefinition_1 "An IfcCivilElement is a generalization of all elements within a civil engineering works that cannot be represented as BuildingElements, DistributionElements or GeographicElements. Depending on the context of the construction project, included building work, such as buildings or factories, are represented as a collection of IfcBuildingElement's, distribution systems, such as piping or drainage, are represented as a collection of IfcDistributionElement's, and other geographic elements, such as trees, light posts, traffic signs etc. are represented as IfcGeographicElement's."@en .
+
+:IfcDistributionControlElement a :Concept;
+  skos:prefLabel "Distributie regelelement"@NL-nl;
+  skos:prefLabel "DistributionControlElement"@en;
+  skos:broader :IfcElement;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionControlElement"@en;
+  :sourceAltDefinition_2 "http://ont.cbnl.org/cb/def/CB01017"@NL-nl;
+  :altDefinition_1 "The distribution element IfcDistributionControlElement defines occurrence elements of a building automation control system that are used to impart control over elements of a distribution system. IfcDistributionControlElement defines elements of a building automation control system. These are typically used to control distribution system elements to maintain variables such as temperature, humidity, pressure, flow, power, or lighting levels, through the modulation, staging or sequencing of mechanical or electrical devices."@en;
+  :altDefinition_2 "Distributie regel element is een Installatie-element onderscheidt zich door de Doel-Functie: Regelen."@NL-nl .
+
+:IfcDistributionFlowElement a :Concept;
+  skos:prefLabel "Distributie stromingselement"@NL-nl;
+  skos:prefLabel "DistributionFlowElement"@en;
+  skos:broader :IfcElement;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionFlolElement"@en;
+  :sourceAltDefinition_2 "http://ont.cbnl.org/cb/def/CB03879"@NL-nl;
+  :altDefinition_1 "The distribution element IfcDistributionFlowElement defines occurrence elements of a distribution system that facilitate the distribution of energy or matter, such as air, water or power."@en;
+  :altDefinition_2 "Distributie stromings element is een Installatie-element onderscheidt zich door de Doel-Functie: Kanaliseren"@NL-nl .
+
+:IfcElementAssembly a :Concept;
+  skos:prefLabel "Element verzameling"@NL-nl;
+  skos:prefLabel "ElementAssembly"@en;
+  skos:broader :IfcElement;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ElementAssembly"@en;
+  :altDefinition_1 "The IfcElementAssembly represents complex element assemblies aggregated from several elements, such as discrete elements, building elements, or other elements."@en .
+
+:IfcElementComponent a :Concept;
+  skos:prefLabel "Civiel Element"@NL-nl;
+  skos:prefLabel "ElementComponent"@en;
+  skos:broader :IfcElement;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElementComponent"@en;
+  :altDefinition_1 "An element component is a representation for minor items included in, added to or connecting to or between elements, which usually are not of interest from the overall building structure viewpoint. However, these small parts may have vital and load carrying functions within the construction. These items do not provide any actual space boundaries. Typical examples of IfcElementComponents include different kinds of fasteners and various accessories."@en .
+
+:IfcTransportElement a :Concept;
+  skos:prefLabel "Transport Element"@NL-nl;
+  skos:prefLabel "TransportElement"@en;
+  skos:broader :IfcElement;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement"@en;
+  :altDefinition_1 "A transport element is a generalization of all transport related objects that move people, animals or goods within a building or building complex. The IfcTransportElement defines the occurrence of a transport element, that (if given), is expressed by the IfcTransportElementType."@en .
+
+
+:IfcSpatialStructureElement a :Concept;
+  skos:prefLabel "Ruimtelijk Structuurelement"@NL-nl;
+  skos:prefLabel "SpatialStructureElement"@en;
+  skos:broader :IfcSpatialElement;
+  :sourceAltDefinition_1 "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialStructureElement"@en;
+  :altDefinition_1 " spatial structure element is the generalization of all spatial elements that might be used to define a spatial structure. That spatial structure is often used to provide a project structure to organize a building project. A spatial project structure might define as many levels of decomposition as necessary for the building project. "@en .
+
