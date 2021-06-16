@@ -5,3 +5,6 @@ als test:
 een app die de ttl files kan inlezen in een triplestore:
 
 https://connectedapps.nl/projects/cbnl/cbnl-digideal-ontwikkelomgeving4/
+
+skos data zichtbaar in de volgende app:
+https://connectedapps.nl/projects/cbnl/cbnl-skos/
