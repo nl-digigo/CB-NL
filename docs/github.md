@@ -37,7 +37,7 @@ Na installatie log je in met de button "Sign in to GitHub.com"
 
 Na het inloggen kun aan de rechter kant zoeken naar het `bimloket/CB-NL` repository. Selecteer dat repository en klik op de blauwe button "Clone bimloket/CB-NL". Vul in het pop-up venster bij "Local path" de gewenste locatie voor de lokale kopie in. Klik op de blauwe button en de bestanden worden opgehaald.
 
-Ga naar de locatie die je hebt opgegeven en je zult zien dat daar de bestanden van github nu staan. Bewerk de bestanden hoe je gewend bent. Van noemenswaardige bewerkingen (kleine meilpaal in je ontwikkeling, wijzigingen van bestandsnamen en locaties) maak je een commit door in het Github Deskop venster links onderin een titel in te vullen en op "Commit to main" te klikken. De bewerkingen worden nu lokaal toegevoegd aan de versiehistorie. Om dit te uploaden klik je in de bovenste balk op "Push origin" je bestanden worden nu geupload naar Github.
+Ga naar de locatie die je hebt opgegeven en je zult zien dat daar de bestanden van github nu staan. Bewerk de bestanden hoe je gewend bent. Van noemenswaardige bewerkingen (kleine mijlpaal in je ontwikkeling, wijzigingen van bestandsnamen en locaties) maak je een commit door in het Github Deskop venster links onderin een titel in te vullen en op "Commit to main" te klikken. De bewerkingen worden nu lokaal toegevoegd aan de versiehistorie. Om dit te uploaden klik je in de bovenste balk op "Push origin" je bestanden worden nu geupload naar Github.
 
 **Let op:** Als je al een tijdje niet aan het project gewerkt hebt, moet je de lokale code even verversen. gebruik hiervoor de fetch button in de bovenste balk.
 
