@@ -74,6 +74,16 @@
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :sourceAltDefinition_4 ;
     ] ;
+    rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :thesaurus ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :kern ;
+    ] ;
 .
 :altDefinition_1
   a rdf:Property ;
@@ -118,4 +128,14 @@
   a rdf:Property ;
   rdfs:label "source of fourth alternative definition"@en ;
   rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/source> ;
+.
+:thesaurus
+  a rdf:Property ;
+  rdfs:label "Concept geselecteerd voor CB-NL thesaurus deel?"@nl ;
+  rdfs:range xsd:boolean ;
+.
+:kern
+  a rdf:Property ;
+  rdfs:label "Concept geselecteerd voor CB-NL kern deel?"@nl ;
+  rdfs:range xsd:boolean ;
 .
