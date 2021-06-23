@@ -8,3 +8,4 @@ De volgende modellen worden als bron gebruikt voor de CB-NL:
 - IMGEO
 - GWSW
 - NEN 3610
+- PIM
