@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ifc: <http://example.com/ifc/> .
 @prefix nen3610: <http://example.com/ifc-2021/> .
-@prefix nen3610_2011 <http://definities.geostandaarden.nl/def/nen3610#> .
+@prefix nen3610_2011: <http://definities.geostandaarden.nl/def/nen3610#> .
 @prefix bgt:  <https://bgt.basisregistraties.overheid.nl/bgt/def/> .
 @prefix nlcs: <http://example.com/nlcs/> .
 @prefix imbor-skos:  <http://example.com/imbor-skos/> .
@@ -520,8 +520,7 @@ bgt:Greppel a :Concept;
   :thesaurus "True"^^xsd:boolean;
   :kern "False"^^xsd:boolean .
 
-bgt:OnverhardOnbegroeidTerreindeel
-  :Concept;
+bgt:OnverhardOnbegroeidTerreindeel a :Concept;
   skos:prefLabel "Onverhard onbegroeid terreindeel"@NL-nl;
   :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
   :altDefinition_1 "Onbegroeid terreindeel waar geen verharding of aaneengesloten vegetatie aanwezig is."@NL-nl;
@@ -3357,7 +3356,6 @@ imbor-skos:12050DBB-8925-4802-AC14-2BF23AEA98CB a :Concept;
     imbor-skos:571A6285-184F-4A69-989C-33F7F2E082F0;
   :thesaurus "True"^^xsd:boolean;
   :kern "False"^^xsd:boolean;
-  :Concept;
   :thesaurus "True"^^xsd:boolean;
   :kern "False"^^xsd:boolean;
   skos:prefLabel "Bodemval"@NL-nl;
@@ -4134,7 +4132,6 @@ imbor-skos:BA5C03A8-58CD-44DD-A33F-B4568BC6442A a :Concept;
   skos:prefLabel "Toegangshekinstallatie"@NL-nl;
   :sourceAltDefinition_1 "IMBOR2021-06.5-Beta"@NL-nl;
   :altDefinition_1 "Installatie om de toegang tot een gebied of bouwwerk af te sluiten. (Bron: RWS)"@NL-nl;
-  :Concept;
   skos:broader imbor-skos:CB7A9F67-0BBA-4AAD-B3A8-125FDFFEA160, imbor-skos:06B43096-1F71-4939-B402-C46B8BFABAE2,
     imbor-skos:0AAA3483-DAAE-4FA2-9275-8D5E9F073237, imbor-skos:A999AA0C-9FC5-4E7E-A466-1A234FCCEA46, imbor-skos:0D7C877D-34BC-4C4C-87CD-CF08FAC6DF6F,
     imbor-skos:1F1C8620-C287-46A7-824E-6B5998129689, imbor-skos:08407431-3976-4EB7-86FD-DB3C5CCC363B, imbor-skos:0430BCC1-19AF-45B9-A36E-A2FED462B108,
