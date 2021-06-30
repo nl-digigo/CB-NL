@@ -1,0 +1,169 @@
+@prefix : <https://bimloket.nl/data/kernmodel/thesaurus#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <http://example.com/ifc/> .
+@prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610/> .
+@prefix nen3610_2011: <http://definities.geostandaarden.nl/def/nen3610#> .
+@prefix bgt:  <https://bgt.basisregistraties.overheid.nl/bgt/def/> .
+@prefix nlcs: <http://example.com/nlcs/> .
+@prefix imbor-skos:  <http://example.com/imbor-skos/> .
+
+nen3610:GeoObject a :Concept;
+  skos:prefLabel "Geo-object"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Abstractie van een fenomeen in de werkelijkheid, dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde."@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:ReeelObject a :Concept;
+  skos:prefLabel "Reeël object"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Geo-object waarvan het fenomeen in de werkelijkheid tastbaar, zichtbaar en begrensd aanwezig is."@NL-nl;
+  skos:broader nen3610:GeoObject; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:VirtueleRuimte a :Concept;
+  skos:prefLabel "Virtuele ruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Geo-object waarvan geen tastbaar, zichtbaar en begrensd fenomeen in de werkelijkheid aanwezig is, maar die slechts in abstracte en/of geregistreerde vorm bestaat."@NL-nl;
+  skos:broader nen3610:GeoObject; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Bodem a :Concept;
+  skos:prefLabel "Bodem"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Bovenste deel van het natuurlijke aardoppervlak."@NL-nl;
+  skos:broader nen3610:ReeelObject; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Water a :Concept;
+  skos:prefLabel "Water"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Oppervlak permanent bedekt met water of waarvan wordt geaccepteerd dat deze met water bedekt kan worden"@NL-nl;
+  skos:broader nen3610:ReeelObject; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Begroeiing a :Concept;
+  skos:prefLabel "Begroeiing"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant."@NL-nl;
+  skos:broader nen3610:ReeelObject; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Constructie a :Concept;
+  skos:prefLabel "Constructie"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Gebouwd object dat direct of indirect met de grond is verbonden en bedoeld is om ter plaatse te functioneren."@NL-nl;
+  skos:broader nen3610:ReeelObject; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:FunctioneleRuimte a :Concept;
+  skos:prefLabel "Functionele ruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Ruimte met een specifieke functie."@NL-nl;
+  skos:broader nen3610:VirtueleRuimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:RegistratieveRuimte a :Concept;
+  skos:prefLabel "Registratieve ruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering."@NL-nl;
+  skos:broader nen3610:VirtueleRuimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:GeografischeRuimte a :Concept;
+  skos:prefLabel "Geografische ruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Ruimte die bekend staat onder een vanuit de historie of in de volksmond bekende benaming of een fysisch-geografische samenhang kent."@NL-nl;
+  skos:broader nen3610:VirtueleRuimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:JuridischeRuimte a :Concept;
+  skos:prefLabel "Juridische ruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Ruimte waar een juridisch instrument beleid of regelgeving toepast."@NL-nl;
+  skos:broader nen3610:VirtueleRuimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Gebouw a :Concept;
+  skos:prefLabel "Gebouw"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Overdekte en geheel of gedeeltelijk met wanden omsloten constructief zelfstandige eenheid bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen."@NL-nl;
+  skos:broader nen3610:Constructie; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Verharding a :Concept;
+  skos:prefLabel "Verharding"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakte oppervlak, bestaande uit in één of meer lagen over een ondergrond of onderliggende constructie aangelegd materiaal."@NL-nl;
+  skos:broader nen3610:Constructie; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Kunstwerk a :Concept;
+  skos:prefLabel "Kunstwerk"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen."@NL-nl;
+  skos:broader nen3610:Constructie; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Leiding a :Concept;
+  skos:prefLabel "Leiding"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Een geheel van geleiders of ruimte welke voorzien zijn van één ommanteling en bestemd is voor transport van materie, data of energie."@NL-nl;
+  skos:broader nen3610:Constructie; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Transportruimte a :Concept;
+  skos:prefLabel "Transportruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich verplaatsen."@NL-nl;
+  skos:broader nen3610:FunctioneleRuimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Wegverkeerruimte a :Concept;
+  skos:prefLabel "Wegverkeerruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Transportruimte voor voertuigen die zich over wegen verplaatsen ."@NL-nl;
+  skos:broader nen3610:Transportruimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Spoorverkeerruimte a :Concept;
+  skos:prefLabel "Spoorverkeerruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Transportruimte voor voertuigen die zich over rails verplaatsen."@NL-nl;
+  skos:broader nen3610:Transportruimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Waterruimte a :Concept;
+  skos:prefLabel "Waterruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Transportruimte waardoor water zich verplaatst."@NL-nl;
+  skos:broader nen3610:Transportruimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nen3610:Scheepvaartruimte a :Concept;
+  skos:prefLabel "Scheepvaartruimte"@NL-nl;
+  :sourceAltDefinition_1 "NEN3610-Concept-20211221"@NL-nl;
+  :altDefinition_1 "Transportruimte voor voertuigen die zich over water verplaatsen ."@NL-nl;
+  skos:broader nen3610:Transportruimte; 
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .

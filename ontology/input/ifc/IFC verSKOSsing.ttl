@@ -1,0 +1,1280 @@
+@prefix : <https://bimloket.nl/data/kernmodel/thesaurus#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <http://example.com/ifc/> .
+@prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610/> .
+@prefix nen3610_2011: <http://definities.geostandaarden.nl/def/nen3610#> .
+@prefix bgt:  <https://bgt.basisregistraties.overheid.nl/bgt/def/> .
+@prefix nlcs: <http://example.com/nlcs/> .
+@prefix imbor-skos:  <http://example.com/imbor-skos/> .
+
+ifc:IfcActuator a :Concept;
+  skos:prefLabel "Aandrijver"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An actuator is a mechanical device for moving or controlling a mechanism or system. An actuator takes energy, usually created by air, electricity, or liquid, and converts that into some kind of motion."@NL-nl;
+  skos:broader ifc:IfcDistributionControlElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcactuator.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcAirTerminal a :Concept;
+  skos:prefLabel "Luchtstroom terminal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An air terminal is a terminating or origination point for the transfer of air between distribution system s and one or more spaces. It can also be used for the transfer of air between adjacent spaces. "@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcairterminal.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcAirTerminalBox a :Concept;
+  skos:prefLabel "Luchtkanaal eindpunt"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An air terminal box typically participates in an HVAC duct distribution system and is used to control or modulate the amount of air delivered to its downstream ductwork. An air terminal box type is often referred to as an air flow regulator. "@NL-nl;
+  skos:broader ifc:IfcFlowController;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcairterminalbox.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcAirToAirHeatRecovery a :Concept;
+  skos:prefLabel "Lucht lucht warmtewisselaar"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An air to air heat recovery device employs a counter flow heat exchanger between inbound and outbound air flow. It is typically used to transfer heat from warmer air in one chamber to cooler air in the second chamber i.e., typically used to recover heat from the conditioned air being exhausted and the outside air being supplied to a building , resulting in energy savings from reduced heating or cooling requirements. HISTORY New entity in IFC4 .note bSI Documentation"@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcairtoairheatrecovery.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcAlarm a :Concept;
+  skos:prefLabel "Alarm"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An alarm is a device that signals the existence of a condition or situation that is outside the boundaries of normal expectation or that activates such a device. Alarms include the provision of break glass buttons and manual pull boxes that are used to activate alarms."@NL-nl;
+  skos:broader ifc:IfcDistributionControlElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcalarm.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcAudioVisualAppliance a :Concept;
+  skos:prefLabel "Audiovisueel apparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An audio visual appliance is a device that displays, captures, transmits, or receives audio or video. Audio visual appliances may be fixed in place or may be able to be moved from one space to another. They may require an electrical supply that may be supplied either by an electrical circuit or provided from a local battery source. Audio visual appliances may be connected to data circuits including specialist circuits for audio visual purposes only."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcaudiovisualappliance.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBeam a :Concept;
+  skos:prefLabel "Balk"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An IfcBeam is a horizontal, or nearly horizontal, structural member that is capable of withstanding load primarily by resisting bending. It represents such a member from an architectural point of view. It is not required to be load bearing. .extDef NOTE Definition according to ISO 6707 1 structural member for carrying load s between or beyond points of support, usually narrow in relation to its length and horizontal or nearly so. NOTE The representation of load bearing beams in a structural analysis model is provided by subtypes of IfcStructuralMember with IfcStructuralCurveMember being mostly applicable as part of an IfcStructuralAnalysisModel . NOTE For any other longitudinal structural member, not constrained to be predominately horizontal nor vertical, or where this semantic information is irrelevant, the entity IfcMember should be used. The camber of a beam may be defined by assigning a StructuralCurveMember with displacement coordinates. Multiple sets of camber ordinates may be provided that are qualified by the particular load case, where full dead load would typically be used for fabrication, and other scenarios used for other loading conditions such as during construction. There are two entities for beam occurrences IfcBeamStandardCase used for all occurrences of beams, that have a profile defined that is swept along a directrix. The profile might be changed uniformly by a taper definition along the directrix. The profile parameter and its cardinal point of insertion can be fully described by the IfcMaterialProfileSetUsage . These beams are always represented geometricly by an Axis and a SweptSolid or AdvancedSweptSolid shape representation or by a Clipping geometry based on the swept solid , if a 3D geometric representation is assigned. In addition they have to have a corresponding IfcMaterialProfileSetUsage assigned. NOTE Model view definitions and implementer agreements may further constrain the applicable geometry types, for example, by excluding tapering from an IfcBeamStandardCase implementation. IfcBeam used for all other occurrences of beams, particularly for beams with non uniformly changing profile sizes along the sweep, or beams having only AdvancedBrep , Brep , SurfaceModel , or Tessellation geometry"@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcbeam.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBearing a :Concept;
+  skos:prefLabel "Lager"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "Type of building element that is usually used to transmit loads from superstructure to substructure, and usually allowing movement (displacement or rotation) in one or more degrees of freedom. It is typically a mechanical component procured as a whole and installed on site, but in simple cases it may be built on site (composed of other building elements, element components, etc.)."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBoiler a :Concept;
+  skos:prefLabel "Boiler"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A boiler is a closed, pressure rated vessel in which water or other fluid is heated using an energy source such as natural gas, heating oil, or electricity. The fluid in the vessel is then circulated out of the boiler for use in various processes or heating applications. IfcBoiler is a vessel solely used for heating of water or other fluids. Storage vessels, such as for drinking water storage are considered as tanks and use the IfcTank entity."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcboiler.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBridge a :Concept;
+  skos:prefLabel "Brug"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A Bridge is civil engineering works that affords passage to pedestrians, animals, vehicles, and services above obstacles or between two points at a height above ground."@NL-nl;
+  skos:broader ifc:IfcFacility;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBridgePart a :Concept;
+  skos:prefLabel "Brugdeel"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "In a bridge, BridgePart as subtype of FacilityPart represents the parts in breakdown structure according to local practices (e.g. Superstructure, Substructure, Foundation), and these can also be broken down further (e.g. Substructure as whole can be COMPLEX, while each abutment and pier would be ELEMENT, and a pier can be composed of separate towers (PARTIAL)."@NL-nl;
+  skos:broader ifc:IfcFacilityPart;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBuilding a :Concept;
+  skos:prefLabel "Gebouw"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project together with site, storey, and space . NOTE Definition from ISO 6707 1 Construction work that has the provision of shelter for its occupants or contents as one of its main purpose and is normally designed to stand permanently in one place. A building is if specified associated to a site. A building may span over several connected or disconnected buildings. Therefore building complex provides for a collection of buildings included in a site. A building can also be decomposed in vertical parts, where each part defines a building section. This is defined by the composition type attribute of the supertype IfcSpatialStructureElements which is interpreted as follow COMPLEX building complex ELEMENT building PARTIAL building section The IfcBuilding is used to build the spatial structure of a building that serves as the primary project breakdown and is required to be hierarchical . The spatial structure elements are linked together by using the objectified relationship IfcRelAggregates. Figure 150 shows the IfcBuilding as part of the spatial structure. It also serves as the spatial container for building and other elements. NOTE Detailed requirements on mandatory element containment and placement structure relationships are given in view definitions and implementer agreements. Building composition Figure 150 Building composition Systems, such as building service or electrical distribution systems, zonal systems, or structural analysis systems, relate to IfcBuilding by using the objectified relationship IfcRelReferencedInSpatialStructure. Figure 151 describes the heights and elevations of the IfcBuilding . It is used to provide the height above sea level of the project height datum for this building, that is, the internal height 0.00. The height 0.00 is often used as a building internal reference height and equal to the floor finish level of the ground floor. base elevation of building provided by IfcBuilding.ElevationOfRefHeight, it is usually the top of construction slab. base elevation of terrain at the perimeter of the building provided by IfcBuilding.ElevationOfTerrain, it is usually the minimum elevation is sloped terrain total height of building, also referred to as ridge height top of roof structure, e.g the ridge against terrain provided by BaseQuantity with Name TotalHeight eaves height of building base of roof structure, e.g the eaves against terrain provided by BaseQuantity with Name EavesHeight building elevations Figure 2 Building elevations."@NL-nl;
+  skos:broader ifc:IfcFacility;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcbuilding.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBuildingStorey a :Concept;
+  skos:prefLabel "Verdieping"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The building storey has an elevation and typically represents a (nearly) horizontal aggregation of spaces that are vertically bound. A storey is (if specified) associated to a building. A storey may span over several connected storeys. Therefore storey complex provides for a collection of storeys included in a building. A storey can also be decomposed in (horizontical) parts, where each part defines a partial storey. "@NL-nl;
+  skos:broader ifc:IfcSpatialStructureElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcbuildingstorey.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBuildingSystem a :Concept;
+  skos:prefLabel "Gebouwsysteem"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A building system is a group by which building elements are grouped according to a common function within the facility. The group IfcBuildingSystem defines the occurrence of a specialized system for use within the context of a building and finishing fabric."@NL-nl;
+  skos:broader ifc:IfcSystem;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcbuildingsystem.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBuiltElement a :Concept;
+  skos:prefLabel "Gebouwelement"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The built/building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system. Building elements are all physically existent and tangible things"@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcbuildingelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcBuiltSystem a :Concept;
+  skos:prefLabel "Bouwsysteem"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A built system is a group by which built elements are grouped according to a common function within the facility. The group IfcBuiltSystem defines the occurrence of a specialized system for use within the context of a facilities physical or finishing fabric."@NL-nl;
+  skos:broader ifc:IfcSystem;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcBurner a :Concept;
+  skos:prefLabel "Brander"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A burner is a device that converts fuel into heat through combustion. It includes gas, oil, and wood burners."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcburner.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCableCarrierFitting a :Concept;
+  skos:prefLabel "Kabelgoot passtuk"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A cable carrier fitting is a fitting that is placed at junction or transition in a cable carrier system."@NL-nl;
+  skos:broader ifc:IfcFlowFitting;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccablecarrierfitting.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCableCarrierSegment a :Concept;
+  skos:prefLabel "Kabeldragersegment"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A cable carrier segment is a flow segment that is specifically used to carry and support cabling."@NL-nl;
+  skos:broader ifc:IfcFlowSegment;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccablecarriersegment.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCableFitting a :Concept;
+  skos:prefLabel "Kabel passtuk"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A cable fitting is a fitting that is placed at a junction, transition or termination in a cable system."@NL-nl;
+  skos:broader ifc:IfcFlowFitting;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccablefitting.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCableSegment a :Concept;
+  skos:prefLabel "Kabelsegment"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A cable segment is a flow segment used to carry electrical power, data, or telecommunications signals. A cable segment is used to typically join two sections of an electrical network or a network of components carrying the electrical service."@NL-nl;
+  skos:broader ifc:IfcFlowSegment;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccablesegment.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcChiller a :Concept;
+  skos:prefLabel "Dampkoeler"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A chiller is a device used to remove heat from a liquid via a vapor compression or absorption refrigeration cycle to cool a fluid, typically water or a mixture of water and glycol. The chilled fluid is then used to cool and dehumidify air in a building."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcchiller.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcChimney a :Concept;
+  skos:prefLabel "Schoorsteen"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "Chimneys are typically vertical, or as near as vertical, parts of the construction of a building and part of the building fabric. Often constructed by pre cast or insitu concrete, today seldom by bricks. .extDef NOTE Definition according to ISO 6707 1 construction containing one or more flues. Flue Duct designed to convey the products of combustion to the open air. Chimney stack Part of the chimney that projects above a roof."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcchimney.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCivilElement a :Concept;
+  skos:prefLabel "Civiel element"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An IfcCivilElement is a generalization of all elements within a civil engineering works. It includes in particular all occurrences of typical linear construction works, such as road segments, bridge segments, pavements, etc. "@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccivilelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcCoil a :Concept;
+  skos:prefLabel "Spiraal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A coil is a device used to provide heat transfer between non mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes the coil carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface. Coils may also be used for non airflow cases such as embedded in a floor slab."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccoil.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcColumn a :Concept;
+  skos:prefLabel "Kolom"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An IfcColumn is a vertical structural member which often is aligned with a structural grid intersection. It represents a vertical, or nearly vertical, structural member that transmits, through compression, the weight of the structure above to other structural elements below. It represents such a member from an architectural point of view. It is not required to be load bearing. .extDef NOTE Definition according to ISO 6707 1 structural member of slender form, usually vertical, that transmits to its base the forces, primarily in compression, that are applied to it. NOTE The representation of a column in a structural analysis model is provided by IfcStructuralCurveMember being part of an IfcStructuralAnalysisModel . NOTE For any longitudial structural member, not constrained to be predominately horizontal nor vertical, or where this semantic information is irrelevant, the entity IfcMember exists. The IFC specification provides two entities for column occurrences IfcColumnStandardCase used for all occurrences of columns, tthat have a profile defined that is swept along a directrix. The profile might be changed uniformly by a taper definition along the directrix. The profile parameter and its cardinal point of insertion can be fully described by the IfcMaterialProfileSetUsage . These beams are always represented geometricly by an Axis and a SweptSolid or AdvancedSweptSolid shape representation or by a Clipping geometry based on the swept solid , if a 3D geometric representation is assigned. In addition they have to have a corresponding IfcMaterialProfileSetUsage assigned. NOTE View definitions and implementer agreements may further constrain the applicable geometry types, for example by excluding tapering from an IfcColumnStandardCase implementation. IfcColumn used for all other occurrences of columns, particularly for columns with changing profile sizes along the extrusion, or columns defined by non linear extrusion, or columns having only Brep , or SurfaceModel geometry."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccolumn.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCommunicationsAppliance a :Concept;
+  skos:prefLabel "Communicatie apparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A communications appliance transmits and receives electronic or digital information as data or sound. Communication appliances may be fixed in place or may be able to be moved from one space to another. Communication appliances require an electrical supply that may be supplied either by an electrical circuit or provided from a local battery source. "@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccommunicationsappliance.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCompressor a :Concept;
+  skos:prefLabel "Compressor"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A compressor is a device that compresses a fluid typically used in a refrigeration circuit."@NL-nl;
+  skos:broader ifc:IfcFlowMovingDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccompressor.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCondenser a :Concept;
+  skos:prefLabel "Condensor"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A condenser is a device that is used to dissipate heat, typically by condensing a substance such as a refrigerant from its gaseous to its liquid state."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccondenser.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcController a :Concept;
+  skos:prefLabel "Regelaar"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A controller is a device that monitors inputs and controls outputs within a building automation system. A controller may be physical having placement within a spatial structure or logical a software interface or aggregated within a programmable physical controller ."@NL-nl;
+  skos:broader ifc:IfcDistributionControlElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccontroller.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcConveyorSegment a :Concept;
+  skos:prefLabel "Transportband segment"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A conveyor segment defines an occurrence of a flow segment/ continuous run within a conveyor system that joins two sections of the system. these can utilise different carrying methods such as belt, rope, chain, screw etc. NOTE Definition according to ISO6707-1: machine that continuously transports material or objects along a gentle slope using an endless belt, rope or chain, or rollers."@NL-nl;
+  skos:broader ifc:IfcFlowSegment;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCooledBeam a :Concept;
+  skos:prefLabel "Koel convector"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A cooled beam or chilled beam is a device typically used to cool air by circulating a fluid such as chilled water through exposed finned tubes above a space. Typically mounted overhead near or within a ceiling, the cooled beam uses convection to cool the space below it by acting as a heat sink for the naturally rising warm air of the space. Once cooled, the air naturally drops back to the floor where the cycle begins again."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccooledbeam.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCoolingTower a :Concept;
+  skos:prefLabel "Koeltoren"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A cooling tower is a device which rejects heat to ambient air by circulating a fluid such as water through it to reduce its temperature by partial evaporation."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccoolingtower.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCourse a :Concept;
+  skos:prefLabel "Tracé"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 """A built element whose length greatly exceeds its thickness and often also its width, usually of a single material laid on site on top of another horizontal or nearly horizontal built element. A course is distinctive from a earthworks element in that a course is a graded granular (which can be bound or unbound) material that is generally processed in some fashion, where as earthworks elements are soil earthen based structure that can be formed by removal and transport of general ground material. Structurally a course does not have capacity to carry loads over open span, or to be removed or replaced as a single unit. examples of courses include: Graded aggregate layers
+Graded sand layers
+Cement bounded material (CBM)
+Asphalt layers"""@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCovering a :Concept;
+  skos:prefLabel "Bekleding"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A covering is an element which covers some part of another element and is fully dependent on that other element. The IfcCovering defines the occurrence of a covering type, that if given is expressed by the IfcCoveringType . .extDef NOTE Definition according to ISO ISO 6707 1 final coverings and treatments of surfaces and their intersections. Coverings are elements with relationships to the covered element and the space on the other side, they may contain openings, assigned by IfcRelVoidsElement , material information, assigned by IfcRelAssociatesMaterial , and others. EXAMPLE Coverings include wall claddings, floorings, suspended ceilings, moldings and skirting boards. NOTE A more basic information about claddings, floorings, and ceilings of a space can be attached to IfcSpace s using the Pset SpaceCommon properties. Then only a name can be provided and the covering quantities would be interpreted from the space quantities. Coverings can be assigned to a space represented by IfcSpace using the inverse relationship CoversSpaces pointing to IfcRelCoversSpaces . The space is then accessible via IfcRelCoversSpaces.RelatedSpace . It defines to which space a covering is facing towards. a space boundary represented by IfcRelSpaceBoundary using the inverse relationship ProvidesBoundaries pointing to IfcRelSpaceBoundary. The space is then accessible via IfcRelSpaceBoundary.RelatingSpace . a building element represented by IfcBuildingElement using the inverse relationship Covers pointing to IfcRelCoversBldgElements . The building element is then accessible via IfcRelCoversBldgElements.RelatingBuildingElement . NOTE The mere containment relationship between an IfcCovering and an IfcSpace is created by using IfcRelContainedInSpatialStructure The following guideline shall apply default if the space has coverings that may not have their own shape representation and no defined relationships to the building elements they cover, then the IfcCovering shall be assigned to IfcSpace using the IfcRelCoversSpaces relationship, if the space has coverings that have an own shape representation and the space has defined space boundaries, then the covering, which relates to that space, shall be contained in the space using IfcRelContainedInSpatialStructure . It may be assigned to the space boundaries using the IfcRelSpaceBoundary . if the covering does not relate to a space, then the covering should be assigned to the building element or a distribution element using the IfcRelCoversBldgElements relationship. "@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccovering.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcCurtainWall a :Concept;
+  skos:prefLabel "Vlieswand"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A curtain wall is an exterior wall of a building which is an assembly of components, hung from the edge of the floor roof structure rather than bearing on a floor. Curtain wall is represented as a building element assembly and implemented as a subtype of IfcBuildingElement that uses an IfcRelAggregates relationship. .extDef NOTE Definition according to ISO 6707 1 non load bearing wall positioned on the outside of a building and enclosing it. HISTORY New entity in IFC2.0 The geometric representation of IfcCurtainWall is given by the IfcProductDefinitionShape , allowing multiple geometric representations. Independent Body geometric representation, as described below, should only be used when the IfcCurtainWall is not defined as an aggregate. If defined as an aggregate, the geometric representation is the sum of the representations of the components within the aggregate. The geometric representation of IfcCurtainWall is defined using the following multiple shape representations for its definition Axis A two dimensional open curve for restrictions see below defining the axis for the curtain wall. This is an optional representation for curtain walls. Body A surface model or boundary representation model representation defining the 3D shape of the curtain wall. If the IfcCurtainWall has components referenced by SELF IfcObject.IsDecomposedBy then no independent shape representation with RepresentationType Body shall be defined. The body of IfcCurtainWall is then geometrically represented by the shape representation of its components. The components are accessed via SELF IfcObject.IsDecomposedBy 1 .RelatedObjects . If the IfcCurtainWall has no components defined empty set of SELF IfcObject.IsDecomposedBy then the IfcCurtainWall may be represented by an shape representation with the RepresentationIdentifier Body ."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifccurtainwall.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDamper a :Concept;
+  skos:prefLabel "Verdamper"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air."@NL-nl;
+  skos:broader ifc:IfcFlowController;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcdamper.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDeepFoundation a :Concept;
+  skos:prefLabel "Diepwand"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "Deep foundation is a type of foundation that transfers loads deeper than shallow foundation below the soft soils not capable of bearing the above structure. Depending on the soil strength it might have to reach down to the rock layer."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDistributionChamberElement a :Concept;
+  skos:prefLabel "Distributiekamer element"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A distribution chamber element defines a place at which distribution systems and their constituent elements may be inspected or through which they may travel."@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcdistributionchamberelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDistributionControlElement a :Concept;
+  skos:prefLabel "Distributie regelelement"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution element IfcDistributionControlElement defines occurrence elements of a building automation control system that are used to impart control over elements of a distribution system. IfcDistributionControlElement defines elements of a building automation control system. These are typically used to control distribution system elements to maintain variables such as temperature, humidity, pressure, flow, power, or lighting levels, through the modulation, staging or sequencing of mechanical or electrical devices."@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcdistributioncontrolelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcDistributionFlowElement a :Concept;
+  skos:prefLabel "Distributie stromingselement"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution element IfcDistributionFlowElement defines occurrence elements of a distribution system that facilitate the distribution of energy or matter, such as air, water or power."@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcdistributionflowelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcDistributionPort a :Concept;
+  skos:prefLabel "Aansluiting"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A distribution port is an inlet or outlet of a product through which a particular substance may flow. Distribution ports are used for passage of solid, liquid, or gas substances, as well as electricity for power or communications. Flow segments pipes, ducts, cables may be used to connect ports across products. Distribution ports are defined by system type and flow direction such that for two ports to be connected, they must share the same system type and have opposite flow directions one side being a SOURCE and the other being a SINK . Ports are similar to openings in that they do not have any visible geometry such geometry is captured at the shape representation of the enclosing element or element type. Ports may have placement that indicates the position and orientation of the connection. Ports are assigned the distribution systems in order to indicate its role in a particular system, e.g. cold water inlet."@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcdistributionport.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDistributionSystem a :Concept;
+  skos:prefLabel "Distributiesysteem"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A distribution system is a network designed to receive, store, maintain, distribute, or control the flow of a distribution media. A common example is a heating hot water system that consists of a pump, a tank, and an interconnected piping system for distributing hot water to terminals. The group IfcDistributionSystem defines the occurrence of a specialized system for use within the context of building services or utilities for built facilities. Important functionalities for the description of a distribution system are derived from existing IFC entities From IfcSystem it inherits the ability to couple the built system via IfcRelReferencedInSpatialStructure to one or more IfcSpatialElement subtypes as necessary. From IfcGroup it inherits the inverse attribute IsGroupedBy, pointing to the relationship class IfcRelAssignsToGroup . This allows the grouping of distribution elements instances of IfcDistributionElement subtypes . From IfcObjectDefinition it inherits the inverse attribute IsDecomposedBy pointing to the relationship class IfcRelAggregates. It provides the hierarchy between the separate partial distribution systems. For example, an electrical main circuit may be aggregated into branch circuits."@NL-nl;
+  skos:broader ifc:IfcSystem;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcdistributionsystem.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDoor a :Concept;
+  skos:prefLabel "Deur"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The door is a built element that is predominately used to provide controlled access for people, goods, animals and vehicles. It includes constructions with hinged, pivoted, sliding, and additionally revolving and folding operations. REMOVE A door consists of a lining and one or several panels. NOTE Definition according to ISO 6707 1 construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation. The IfcDoor defines a particular occurrence of a door inserted in the spatial context of a project. A door can be inserted as a filler in an opening using the IfcRelFillsElement relationship, then the IfcDoor has an inverse attribute FillsVoids provided NOTE View definitions or implementer agreements may restrict the relationship to only include one door into one opening be part of an element assembly, in general an IfcCurtainWall , using the IfcRelAggregates relationship, then the IfcDoor has an inverse attribute Decomposes is provided be a free standing door, then the IfcDoor has no inverse attributes FillsVoids or Decomposes provided. This specification provides two entities for door occurrences IfcDoorStandardCase used for all occurrences of doors, that have a Profile shape representation defined to which a set of shape parameters for lining and framing properties apply. Additionally it requires the provision of an IfcDoorType that references one IfcDoorLiningProperties and on to many IfcDoorPanelProperties NOTE see IfcDoorStandardCase for all specific constraints imposed by this subtype. IfcDoor used for all other occurrences of doors, particularly for doors having only Brep , or SurfaceModel geometry without applying shape parameters. The actual parameters of the door and or its shape are defined by the IfcDoor as the occurrence definition or project instance , or by the IfcDoorType as the specific definition or project type . The following parameters are given at the IfcDoor or IfcDoorStandardCase for occurrence specific parameters. The IfcDoor specifies the door width and height the door opening direction by the y axis of the ObjectPlacement at the IfcDoorType , to which the IfcDoor is related by the inverse relationship IsTypedBy pointing to IfcRelDefinesByType , for type parameters common to all occurrences of the same type. at the IfcDoorType, to which the IfcDoor is related by the inverse relationship IsTypedBy pointing to IfcRelDefinesByType, for type parameters common to all occurrences of the same type. the operation type single swing, double swing, revolving, etc. the door hinge side by using two different styles for right and left opening doors the construction material type the particular attributes for the lining by the IfcDoorLiningProperties the particular attributes for the panels by the IfcDoorPanelProperties The geometric representation of IfcDoor is given by the IfcProductDefinitionShape , allowing multiple geometric representations. The IfcDoor may get its parameter and shape from the IfcDoorType . If an IfcRepresentationMap a block definition is defined for the IfcDoorType , then the IfcDoor inserts it through the IfcMappedItem . The geometric representation of IfcDoor is defined using the following potentially multiple IfcShapeRepresentation s for its IfcProductDefinitionShape Profile A Curve3D consisting of a single losed curve defining the outer boundary of the door lining . The door parametric representation uses this profile in order to apply the door lining and panel parameter. If not provided, the profile of the IfcOpeningElement is taken. FootPrint A GeometricCurveSet , or Annotation2D representation defining the 2D shape of the door Body A SweptSolid , SurfaceModel , or Brep representation defining the 3D shape of the door. In addition the parametric representation of a limited door shape is available by applying the parameters from IfcDoorType referencing IfcDoorLiningProperties and IfcDoorPanelProperties . The purpose of the parameter is described at those entities and below door opening operation by door type . The overall size of the IfcDoor to be used to apply the lining or panel parameter provided by the IfcDoorType is determined by the IfcShapeRepresentation with the RepresentationIdentifier Profile ."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcdoor.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDuctFitting a :Concept;
+  skos:prefLabel "Kanaal passtuk"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A duct fitting is a junction or transition in a ducted flow distribution system or used to connect duct segments, resulting in changes in flow characteristics to the fluid such as direction and flow rate."@NL-nl;
+  skos:broader ifc:IfcFlowFitting;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcductfitting.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDuctSegment a :Concept;
+  skos:prefLabel "Kanaal segment"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A duct segment is used to typically join two sections of duct network."@NL-nl;
+  skos:broader ifc:IfcFlowSegment;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcductsegment.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcDuctSilencer a :Concept;
+  skos:prefLabel "Luchtkanaaldemper"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A duct silencer is a device that is typically installed inside a duct distribution system for the purpose of reducing the noise levels from air movement, fan noise, etc. in the adjacent space or downstream of the duct silencer device."@NL-nl;
+  skos:broader ifc:IfcFlowTreatmentDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcductsilencer.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcElectricAppliance a :Concept;
+  skos:prefLabel "Elektrisch apparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An electric appliance is a device intended for consumer usage that is powered by electricity. Electric appliances may be fixed in place or may be able to be moved from one space to another. Electric appliances require an electrical supply that may be supplied either by an electrical circuit or provided from a local battery source."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelectricappliance.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcElectricDistributionBoard a :Concept;
+  skos:prefLabel "Elektrisch distributiepaneel"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A distribution board is a flow controller in which instances of electrical devices are brought together at a single place for a particular purpose. A distribution provides a housing for connected electrical distribution elements so that they can be viewed, operated or acted upon from a single place. Each connected item may have its own geometric representation and location."@NL-nl;
+  skos:broader ifc:IfcFlowController;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelectricdistributionboard.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcElectricFlowStorageDevice a :Concept;
+  skos:prefLabel "Elektriciteit opslagapparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An electric flow storage device is a device in which electrical energy is stored and from which energy may be progressively released."@NL-nl;
+  skos:broader ifc:IfcFlowStorageDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelectricflowstoragedevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcElectricGenerator a :Concept;
+  skos:prefLabel "Electrische Generator"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An electric generator is an engine that is a machine for converting mechanical energy into electrical energy."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelectricgenerator.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcElectricMotor a :Concept;
+  skos:prefLabel "Electrische Motor"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An electric motor is an engine that is a machine for converting electrical energy into mechanical energy."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelectricmotor.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcElectricTimeControl a :Concept;
+  skos:prefLabel "Electrische tijdsregelaar"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An electric time control is a device that applies control to the provision or flow of electrical energy over time."@NL-nl;
+  skos:broader ifc:IfcFlowController;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelectrictimecontrol.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcElement a :Concept;
+  skos:prefLabel "Onderdeel"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An element is a generalization of all components that make up an AEC product. Elements are physically existent objects, although they might be void elements, such as holes. Elements either remain permanently in the AEC product, or only temporarily, as formwork does. Elements can be either assembled on site or pre-manufactured and built in on site."@NL-nl;
+  skos:broader ifc:IfcProduct;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcElementAssembly a :Concept;
+  skos:prefLabel "Elementsamenstelling"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The IfcElementAssembly represents complex element assemblies aggregated from several elements, such as discrete elements, building elements, or other elements."@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelementassembly.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcElementComponent a :Concept;
+  skos:prefLabel "Component"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An element component is a representation for minor items included in, added to or connecting to or between elements, which usually are not of interest from the overall building structure viewpoint. However, these small parts may have vital and load carrying functions within the construction. These items do not provide any actual space boundaries."@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcelementcomponent.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcEnergyConversionDevice a :Concept;
+  skos:prefLabel "Energie Conversie Apparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution flow element IfcEnergyConversionDevice defines the occurrence of a device used to perform energy conversion or heat transfer and typically participates in a flow distribution system. Its type is defined by IfcEnergyConversionDeviceType or its subtypes."@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcenergyconversiondevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcEngine a :Concept;
+  skos:prefLabel "Motor"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An engine is a device that converts fuel into mechanical energy through combustion."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcengine.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcEvaporativeCooler a :Concept;
+  skos:prefLabel "Dampkoeler"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An evaporative cooler is a device that cools air by saturating it with water vapor. "@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcevaporativecooler.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcEvaporator a :Concept;
+  skos:prefLabel "Verdamper"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An evaporator is a device in which a liquid refrigerent is vaporized and absorbs heat from the surrounding fluid."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcevaporator.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFacility a :Concept;
+  skos:prefLabel "Voorziening"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A Facility (derived from SpatialStructureElement) may be an IfcBuilding, an IfcBridge, an IfcRailway, an IfcRoad, an IfcMarineFacility (or any other type of built facility defined in the future)."@NL-nl;
+  skos:broader ifc:IfcSpatialStructureElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFacilityPart a :Concept;
+  skos:prefLabel "Deel van voorziening"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "IfcFacilityPart provides for spatial breakdown of built facilities. It may be further specialised according to the type of facility being broken down."@NL-nl;
+  skos:broader ifc:IfcSpatialStructureElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFan a :Concept;
+  skos:prefLabel "Ventilator"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A fan is a device which imparts mechanical work on a gas. A typical usage of a fan is to induce airflow in a building services air distribution system."@NL-nl;
+  skos:broader ifc:IfcFlowMovingDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcfan.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFastener a :Concept;
+  skos:prefLabel "Bevestigingselement"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "Representations of fixing parts which are used as fasteners to connect or join elements with other elements. Excluded are mechanical fasteners which are modeled by a separate entity IfcMechanicalFastener ."@NL-nl;
+  skos:broader ifc:IfcElementComponent;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcfastener.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFilter a :Concept;
+  skos:prefLabel "Filter"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A filter is an apparatus used to remove particulate or gaseous matter from fluids and gases."@NL-nl;
+  skos:broader ifc:IfcFlowTreatmentDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcfilter.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFireSuppressionTerminal a :Concept;
+  skos:prefLabel "BrandbestrijdingTerminal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A fire suppression terminal has the purpose of delivering a fluid gas or liquid that will suppress a fire. A fire suppression terminal provides for all forms of sprinkler, spreader and other form of terminal that is connected to a pipework system and intended to act in the role of suppressing a fire."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcfiresuppressionterminal.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowController a :Concept;
+  skos:prefLabel "StroomRegelaar"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution flow element IfcFlowController defines the occurrence of elements of a distribution system that are used to regulate flow through a distribution system. Examples include dampers, valves, switches, and relays. Its type is defined by IfcFlowControllerType or subtypes. "@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowcontroller.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowFitting a :Concept;
+  skos:prefLabel "StroomPasstuk"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution flow element IfcFlowFitting defines the occurrence of a junction or transition in a flow distribution system, such as an elbow or tee. Its type is defined by IfcFlowFittingType or its subtypes. "@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowfitting.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowInstrument a :Concept;
+  skos:prefLabel "Stromingssensor"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A flow instrument reads and displays the value of a particular property of a system at a point, or displays the difference in the value of a property between two points. Instrumentation is typically for the purpose of determining the value of the property at a point in time. It is not the purpose of an instrument to record or integrate the values over time although they may be connected to recording devices that do perform such a function . This entity provides for all forms of mechanical flow instrument thermometers, pressure gauges etc. and electrical flow instruments ammeters, voltmeters etc. "@NL-nl;
+  skos:broader ifc:IfcDistributionControlElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowinstrument.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowMeter a :Concept;
+  skos:prefLabel "Debietmeter"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A flow meter is a device that is used to measure the flow rate in a system."@NL-nl;
+  skos:broader ifc:IfcFlowController;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowmeter.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowMovingDevice a :Concept;
+  skos:prefLabel "Stroomingsapparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution flow element IfcFlowMovingDevice defines the occurrence of an apparatus used to distribute, circulate or perform conveyance of fluids, including liquids and gases such as a pump or fan , and typically participates in a flow distribution system. Its type is defined by IfcFlowMovingDeviceType or its subtypes."@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowmovingdevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowSegment a :Concept;
+  skos:prefLabel "StroomSegment"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution flow element IfcFlowSegment defines the occurrence of a segment of a flow distribution system. The IfcFlowSegment defines a particular occurrence of a segment inserted in the spatial context of a project. The parameters defining the type of the segment and or its shape are defined by the IfcFlowSegmentType, which is related by the inverse relationship IsDefinedBy pointing to IfcRelDefinesByType ."@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowsegment.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowStorageDevice a :Concept;
+  skos:prefLabel "StroomOpslagmedium"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution flow element IfcFlowStorageDevice defines the occurrence of a device that participates in a distribution system and is used for temporary storage such as a tank . Its type is defined by IfcFlowStorageDeviceType or its subtypes. "@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowstoragedevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowTerminal a :Concept;
+  skos:prefLabel "StroomTerminal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution flow element IfcFlowTerminal defines the occurrence of a permanently attached element that acts as a terminus or beginning of a distribution system such as an air outlet, drain, water closet, or sink . A terminal is typically a point at which a system interfaces with an external environment. Its type is defined by IfcFlowTerminalType or its subtypes."@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowterminal.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFlowTreatmentDevice a :Concept;
+  skos:prefLabel "Stromingsbehandelingsapparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The distribution flow element IfcFlowTreatmentDevice defines the occurrence of a device typically used to remove unwanted matter from a fluid, either liquid or gas, and typically participates in a flow distribution system. Its type is defined by IfcFlowTreatmentDeviceType or its subtypes."@NL-nl;
+  skos:broader ifc:IfcFlowTreatmentDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcflowtreatmentdevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFooting a :Concept;
+  skos:prefLabel "Fundering"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A footing is a part of the foundation of a structure that spreads and transmits the load to the soil. A footing is also characterized as shallow foundation, where the loads are transfered to the ground near the surface. .extDef NOTE Definition according to ISO 6707 1 stepped construction that spreads the load at the foot of a wall or column."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcfooting.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcFurniture a :Concept;
+  skos:prefLabel "Meubilair"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "Furniture defines complete furnishings such as a table, desk, chair, or cabinet, which may or may not be permanently attached to a building structure. Occurrences of furniture that are built in where the property Pset FurnitureTypeCommon.IsBuiltIn is asserted to be TRUE should have their connection relationship with a building element occurrence defined through the IfcRelConnectsElements relationship."@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcfurniture.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcGroup a :Concept;
+  skos:prefLabel "Groep"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "IfcGroup is an generalization of any arbitrary group. A group is a logical collection of objects. It does not have its own position, nor can it hold its own shape representation. Therefore a group is an aggregation under some non-geometrical / topological grouping aspects."@NL-nl;
+  skos:broader ifc:IfcObject;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcgroup.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcHeatExchanger a :Concept;
+  skos:prefLabel "Warmtewisselaar"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A heat exchanger is a device used to provide heat transfer between non mixing media such as plate and shell and tube heat exchangers. IfcHeatExchanger is commonly used on water side distribution systems to recover energy from a liquid to another liquid typically water based , whereas IfcAirToAirHeatRecovery is commonly used on air side distribution systems to recover energy from a gas to a gas usually air ."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcheatexchanger.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcHumidifier a :Concept;
+  skos:prefLabel "Bevochtiger"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A humidifier is a device that adds moisture into the air."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifchumidifier.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcInterceptor a :Concept;
+  skos:prefLabel "Afscheider"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An interceptor is a device designed and installed in order to separate and retain deleterious, hazardous or undesirable matter while permitting normal sewage or liquids to discharge into a collection system by gravity."@NL-nl;
+  skos:broader ifc:IfcFlowTreatmentDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcinterceptor.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcJunctionBox a :Concept;
+  skos:prefLabel "Splitsstuk"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A junction box is an enclosure within which cables are connected. Cables may be members of an electrical circuit for electrical power systems or be information carriers in a telecommunications system . A junction box is typically intended to conceal a cable junction from sight, eliminate tampering or provide a safe place for electrical connection."@NL-nl;
+  skos:broader ifc:IfcFlowFitting;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcjunctionbox.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcKerb a :Concept;
+  skos:prefLabel "Stoeprand"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A border of stone, concrete or other rigid material formed at the edge of the carriageway or footway. NOTE Definition from ISO 6707-1: border, usually upstanding, at the edge of a carriageway, hard strip, hard shoulder, or footway, (Curb, US). NOTE Definition from PIARC: Unit intended to separate surfacings of different surfaces and to provide physical delineation or containment [CEN]."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcLamp a :Concept;
+  skos:prefLabel "Lamp"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A lamp is an artificial light source such as a light bulb or tube."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifclamp.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcLightFixture a :Concept;
+  skos:prefLabel "Armatuur"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A light fixture is a container that is designed for the purpose of housing one or more lamps and optionally devices that control, restrict or vary their emission."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifclightfixture.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcLiquidTerminal a :Concept;
+  skos:prefLabel "Vloeistofterminal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A liquid terminal is a terminating or origination point for the transfer of liquid between distribution system(s). this is the point where the liquid distribution system interacts with the external environment. An example of this is a loading arm for the transfer of liquid from a docked vessel."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcMarineFacility a :Concept;
+  skos:prefLabel "Havenvoorziening"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A marine facility represents any major structure or entity that is specific to the ports and waterways domain. examples of this include quays, jetties, shipyards, breakwaters etc."@NL-nl;
+  skos:broader ifc:IfcFacility;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcMaterial a :Concept;
+  skos:prefLabel "Materiaal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "IfcMaterial is a homogeneous or inhomogeneous substance that can be used to form elements physical products or their components . IfcMaterial is the basic entity for material designation and definition this includes identification by name and classification via reference to an external classification , as well as association of material properties isotropic or anisotropic defined by subtypes of IfcMaterialProperties . An instance of IfcMaterial may be associated to an element or element type using the IfcRelAssociatesMaterial relationship. The assignment might either be direct as a single material information, or via a material layer set a material profile set a material constituent set An IfcMaterial may also have presentation information associated. Such presentation information is provided by IfcMaterialDefinitionRepresentation , associating curve styles, hatching definitions or surface colouring rendering information to a material."@NL-nl;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcmaterial.htm";
+  skos:scopeNote "Geen object"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcMedicalDevice a :Concept;
+  skos:prefLabel "MedischApparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A medical device is attached to a medical piping system and operates upon medical gases to perform a specific function. Medical gases include medical air, medical vacuum, oxygen, carbon dioxide, nitrogen, and nitrous oxide. Outlets for medical gasses should use IfcValve with PredefinedType equal to GASTAP, containing an IfcDistributionPort with FlowDirection SINK and PredefinedType equal to COMPRESSEDAIR, VACUUM, or CHEMICAL, and having property sets on the port further indicating the gas type and pressure. Tanks for medical gasses should use IfcTank with PredefinedType equal to PRESSUREVESSEL, containing an IfcDistributionPort with FlowDirection SOURCE and PredefinedType CHEMICAL, and having property sets on the port further indicating the gas type and pressure range. "@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcmedicaldevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcMember a :Concept;
+  skos:prefLabel "Lid"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An IfcMember is a structural member designed to carry loads between or beyond points of support. It is not required to be load bearing. The orientation of the member (being horizontal, vertical or sloped) is not relevant to its definition (in contrary to IfcBeam and IfcColumn). An IfcMember represents a linear structural element from an architectural or structural modeling point of view and shall be used if it cannot be expressed more specifically as either an IfcBeam or an IfcColumn."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcmember.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcMobileTelecommunicationsAppliance a :Concept;
+  skos:prefLabel "Mobiele communicatieapparatuur"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A mobile telecommunications appliance is a device that transmits, converts, amplifies or receives signals used in mobile networks. Note: This entity is used to define specific appliances used in mobile telecommunication networks. General communications appliances and those used in fixed transmission networks should be instantiated using IfcCommunicationsAppliance."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcMooringDevice a :Concept;
+  skos:prefLabel "Afmeerconstructie"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A mooring device is an active or passive built element who's primary function is to participate in the mooring of a vessel, this could be in the form of a bollard used as am attachment point for lines or active equipment such as quick release hooks."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcNavigationElement a :Concept;
+  skos:prefLabel "Navigatieonderdeel"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A navigation element is an active or passive built element who's primary function is provide navigational instructions and warnings to vessels, this could be in the form of a floating buoy, a fixed beacon. Navigation elements can aggregate other components and elements to form the entire structure. this might include frame structure to form the body, instances of IfcSign for signage or instances of IfcSignal for supplementary lights an/or sound signals."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcObject a :Concept;
+  skos:prefLabel "Object"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An IfcObject is the generalization of any semantically treated thing or process. Objects are things as they appear i.e. occurrences. NOTE Examples of IfcObject include physically tangible items such as wall, beam or covering, physically existing items such as spaces, or conceptual items such as grids or virtual boundaries. It also stands for processes such as work tasks, for controls such as cost items, or for actors such as persons involved in the design process. Objects can be named, using the inherited Name attribute, which should be a user recognizable label for the object occurrance. Further explanations to the object can be given using the inherited Description attribute. The ObjectType attribute is used to store the user defined value for all subtypes of IfcObject , where a PredefinedType attribute is given, and its value is set to USERDEFINED. to provide a type information could be seen as a very lightweight classifier of the subtype of IfcObject , if no PredefinedType attribute is given. This is often the case, if no comprehensive list of predefined types is available. Objects are independent pieces of information that might contain or reference other pieces of information. There are several relationships in which objects can be involved Association to external internal resource information an association relationship that refers to external internal sources of information. See supertype IfcObjectDefinition for more information. Assignment of other objects an assignment relationship that refers to other types of objects. See supertype IfcObjectDefinition for more information. Aggregation of other objects an aggregation relationship that establishes a whole part relation. Objects can either be a whole, or a part, or both. See supertype IfcObjectDefinition for more information. Assignment of a type IsTypedBy a definition relationship IfcRelDefinesByType that uses a type definition to define the common characteristics of this occurrences, potentially including the common shape representation and common properties of all object occurrences assigned to this type. It is a specific occurrence relationship with implied dependencies as the occurrence properties depend on the properties of the type, but may override them . Assignment of a partial type IsDeclaredBy , Declares a definition relationship IfcRelDefinesByObject that uses a component of a type definition a part of a type, called the declaring part to define a component of an occurence part of occurrence, called the reflected part . This is also refered to as a deep copy . The common characteristics of all parts in the occurrence are defined by parts in the type. It is a specific occurrence relationship with implied dependencies as the occurrence properties depend on the properties of the type, but may override them . Assignment of property sets IsDefinedBy a definition relationship IfcRelDefinesByProperties that assignes property set definitions to the object occurrence. NOTE See IfcRelDefinesByType for an explanatory figure. Also see there for how to override type properties by occurrence properties. See IfcRelDefinesByObject for an explanatory figure for the assignment of a partial type. "@NL-nl;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcobject.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcOpeningElement a :Concept;
+  skos:prefLabel "Opening"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The opening element stands for opening, recess or chase, all reflecting voids. It represents a void within any element that has physical manifestation. Openings can be inserted into walls, slabs, beams, columns, or other elements. The IFC specification provides two entities for opening elements IfcOpeningStandardCase is used for all openings that have a constant profile along a linear extrusion. They are placed relative to the voided elements and the extrusion direction is perpendicular to the plane of the element horizontally for walls, vertically for slabs . Only a single extrusion body is allowed. It cuts through the whole thickness of the voided element, i.e. it reflects a true opening. IfcOpeningElement is used for all other occurrences of openings and in particular also for niches or recesses. NOTE View definitions or implementer agreements may restrict the types of elements which can be voided by an IfcOpeningElement or IfcOpeningStandardCase There are two different types of opening elements an opening, where the thickness of the opening is greater or equal to the thickness of the element a recess or niche, where the thickness of the recess is smaller than the thickness of the element. The attribute PredefinedType should be used to capture the differences, the attribute is set to OPENING for an opening or the attribute is set to RECESS for a recess or niche. If the value for PredefinedType is omitted, or the value is set to NOTDEFINED, no specific information of whether it is an opening or recess shall be assumed. An IfcOpeningElement has to be inserted into an IfcElement by using the IfcRelVoidsElement relationship. It may be filled by an IfcDoor , IfcWindow , or another filling element by using the relationship IfcRelFillsElements . Depending on the type of the IfcShapeRepresentation of the IfcOpeningElement the voiding relationship implies if the IfcShapeRepresentation . emRepresentationIdentifier Body , then the Body shape represntation of the opening has to be subtracted from the body shape representation of the voided element implicit Boolean difference operation. if the IfcShapeRepresentation . emRepresentationIdentifier Reference , then the Reference shape representation of the opening is not subtracted, it is provided in addition to the hole in the Body shape representation of the voided element. The IfcOpeningElement shall not participate in the containment relationship, i.e. it is not linked directly to the spatial structure of the project. It has a mandatory VoidsElements inverse relationship pointing to the IfcElement that is contained in the spatial structure. The inverse relationship ContainedInStructure shall be NIL. NOTE See IfcRelVoidsElement for a diagram on how to apply spatial containment and the voiding relationship."@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcopeningelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcOrganization a :Concept;
+  skos:prefLabel "Organisatie"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A named and structured grouping with a corporate identity."@NL-nl;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcorganization.htm";
+  skos:scopeNote "Geen object"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcOutlet a :Concept;
+  skos:prefLabel "Uitgang"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An outlet is a device installed at a point to receive one or more inserted plugs for electrical power or communications. Power outlets are commonly connected within a junction box data outlets may be directly connected to a wall. For power outlets sharing the same circuit within a junction box, the ports should indicate the logical wiring relationship to the enclosing junction box, even though they may be physically connected to a cable going to another outlet, switch, or fixture."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcoutlet.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcPavement a :Concept;
+  skos:prefLabel "Verharding"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "Type of built element in a road or other paved area to provide an even surface sustaining loads from vehicles or pedestrians, usually comprising several courses. NOTE Definition from ISO 6707-1: road, runway, or similar construction above the subgrade."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcPile a :Concept;
+  skos:prefLabel "Funderingspaal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A pile is a slender timber, concrete, or steel structural element, driven, jetted, or otherwise embedded on end in the ground for the purpose of supporting a load. A pile is also characterized as deep foundation, where the loads are transfered to deeper subsurface layers. .extDef NOTE Definition according to ISO 6707 1 slender structural member, substantially underground, intended to transmit force s into loadbearing strata below the surface of the ground. NOTE Shallow foundations, which transfer the loads to the ground near its surface, are represented by IfcFooting ."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcpile.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcPipeFitting a :Concept;
+  skos:prefLabel "PijpPasstuk"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A pipe fitting is a junction or transition in a piping flow distribution system used to connect pipe segments, resulting in changes in flow characteristics to the fluid such as direction or flow rate. Pipe fittings include elbows, junctions, manifolds, and plumbing boxes."@NL-nl;
+  skos:broader ifc:IfcFlowFitting;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcpipefitting.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcPipeSegment a :Concept;
+  skos:prefLabel "PijpSegment"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A pipe segment is used to typically join two sections of a piping network."@NL-nl;
+  skos:broader ifc:IfcFlowSegment;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcpipesegment.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcPlate a :Concept;
+  skos:prefLabel "Plaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "An IfcPlate is a planar and often flat part with constant thickness. A plate may carry loads between or beyond points of support, or provide stiffening. The location of the plate being horizontal, vertical or sloped is not relevant to its definition in contrary to IfcWall and IfcSlab as floor slab . .extDef NOTE Definition according to ISO 6707 1 thin, rigid, flat, metal product, of a thickness greater than that of a sheet. Plates are S normally made of steel, other metallic material, or by glass panels. However the definition of IfcPlate is material independent and specific material information shall be handled by using IfcAssociatesMaterial to assign a material specification to the IfcPlate . NOTE S Although not necessarily, plates are often add on parts. This is represented by the IfcRelAggregates decomposition mechanism used to aggregate parts, such as IfcPlate , into a container element such as IfcElementAssembly or IfcCurtainWall . NOTE The representation of a plate in a structural analysis model is provided by IfcStructuralSurfaceMember being part of an IfcStructuralAnalysisModel . An instance IfcPlate should preferably get its geometric representation and material assignment through the type definition by IfcPlateType assigned using the IfcRelDefinesByType relationship. This allows identical plates in a construction to be represented by the same instance of IfcPlateType . A plate may have openings, such as voids or recesses. They are defined by an IfcOpeningElement attached to the plate using the inverse relationship HasOpenings pointing to IfcRelVoidsElement . The position number of a plate as often used in steel construction is assigned through the attribute IfcElement.Tag The IFC specification provides two entities for plate occurrences IfcPlateStandardCase used for all occurrences of plates, that are prismatic and where the thickness parameter can be fully described by the IfcMaterialLayerSetUsage . These plates are always represented geometrically by a SweptSolid geometry or by a Clipping geometry based on SweptSolid , if a 3D geometric representation is assigned. In addition they have to have a corresponding IfcMaterialLayerSetUsage assigned. IfcPlate used for all other occurrences of plates, particularly for plates with changing thickness, or plates with non planar surfaces, and plates having only SurfaceModel or Brep geometry."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcplate.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcPort a :Concept;
+  skos:prefLabel "Aansluiting"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A port provides the means for an element to connect to other elements. An IfcPort is associated with an IfcElement , it belongs to through the objectified relationship IfcRelNests if such port is fixed, or IfcRelConnectsPortToElement if such port is dynamically attached. Exactly two ports, belonging to two different elements, are connected with each other through the objectified relationship IfcRelConnectsPorts . An instance of IfcElement may have one or more points at which it connects to other instances of IfcElement . An instance of em IfcPort is located at a point where a connection can occur. The location of the port is determined in the context of the local coordinate system of the element to which it belongs. As a subordinate part being fully dependent on the master element the IfcPort shall have no independent containment relationship to the spatial structure. The local placement for IfcPort is defined in its supertype IfcProduct . It is defined by the IfcLocalPlacement , which defines the local coordinate system that is referenced by all geometric representations. The PlacementRelTo relationship of IfcLocalPlacement shall point to the local placement of the master IfcElement or IfcElementType relevant subtypes , which is related to the IfcPort by the relationship object IfcRelNests for fixed ports, or IfcRelConnectsPortToElement for dynamic ports."@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcport.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcProduct a :Concept;
+  skos:prefLabel "Product"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The IfcProduct is an abstract representation of any object that relates to a geometric or spatial context. An IfcProduct occurs at a specific location in space if it has a geometric representation assigned. It can be placed relatively to other products, but ultimately relative to the project coordinate system. The ObjectPlacement attribute establishes the coordinate system in which all points and directions used by the geometric representation items under Representation are founded. The Representation is provided by an IfcProductDefinitionShape being either a geometric shape representation, or a topology representation with or without underlying geometry of the topological items . Products include manufactured, supplied or created objects referred to as elements for incorporation into an AEC FM project. This also includes objects that are created indirectly by other products, as spaces are defined by bounding elements. Products can be designated for permanent use or temporary use, an example for the latter is formwork. Products are defined by their properties and representations. In addition to physical products covered by the subtype IfcElement and spatial items covered by the subtype IfcSpatialElement the IfcProduct also includes non physical items, that relate to a geometric or spatial contexts, such as grid, port, annotation, structural actions, etc. Any instance of IfcProduct defines a particular occurrence of a product, the common type information, that relates to many similar or identical occurrences of IfcProduct , is handled by the IfcTypeProduct and its subtypes , assigned to one or many occurrences of IfcProduct by using the objectified relationship IfcRelDefinesByType . The IfcTypeProduct may provide, in addition to common properties, also a common geometric representation for all occurrences. NOTE See IfcTypeProduct for how to use a common geometric representation and IfcRelDefinesByType for using and overriding common properties. On a generic level products can be assigned to processes, controls, resources, project by using the relationship objects that refer to the corresponding object Having a control applied assigned using IfcRelAssignsToControl linking the IfcProduct to an IfcControl Being assigned to a process assigned using IfcRelAssignsToProcess linking the IfcProduct to an IfcProcess Being assigned to a resource assigned using IfcRelAssignsToResource linking the IfcProduct to an IfcResource EXAMPLE An example of the control relationship is the assignment of a performance history to a distribution element. An example of process assignment relationship is the assignment of products like wall, slab, column to a contruction task for construction planning. And an example of resource assignment relationship is the assignment of products to a construction resource that consumes the product."@NL-nl;
+  skos:broader ifc:IfcObject;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcproduct.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcProperty a :Concept;
+  skos:prefLabel "Eigenschap"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "IfcProperty is an abstract generalization for all types of properties that can be associated with IFC objects through the property set mechanism."@NL-nl;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcproperty.htm";
+  skos:scopeNote "Geen object"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcProtectiveDevice a :Concept;
+  skos:prefLabel "Zekeringsschakelaar"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A protective device breaks an electrical circuit when a stated electric current that passes through it is exceeded. A protective device provides protection against electrical current only not as a general protective device . It may be used to represent the complete set of elements including both the tripping unit and the breaking unit that provide the protection. This may be particularly useful at earlier stages of design where the approach to breaking the electrical supply may be determined but the method of tripping may not. Alternatively, this entity may be used to specifically represent the breaking unit alone in which case the tripping unit will also be specifically identified . This entity is specific to dedicated protective devices and excludes electrical outlets that may have circuit protection."@NL-nl;
+  skos:broader ifc:IfcDistributionFlowElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcprotectivedevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcProtectiveDeviceTrippingUnit a :Concept;
+  skos:prefLabel "Zekeringsschakelaar tripping unit"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A protective device tripping unit breaks an electrical circuit at a separate breaking unit when a stated electric current that passes through the unit is exceeded."@NL-nl;
+  skos:broader ifc:IfcDistributionControlElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcprotectivedevicetrippingunit.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcPump a :Concept;
+  skos:prefLabel "Pomp"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A pump is a device which imparts mechanical work on fluids or slurries to move them through a channel or pipeline. A typical use of a pump is to circulate chilled water or heating hot water in a building services distribution system."@NL-nl;
+  skos:broader ifc:IfcFlowMovingDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcpump.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcRail a :Concept;
+  skos:prefLabel "Spoor"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A rail is a predominately linear built element that has a special section profile. Rail is distinctive from built elements with similar geometric shapes (e.g. beam, member) that its major function is to ensure guidance of moving for vehicles or other kinds of machineries."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcRailing a :Concept;
+  skos:prefLabel "Reling"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The railing is a frame assembly adjacent to human or vehicle circulation spaces and at some space boundaries where it is used in lieu of walls or to complement walls. REMOVE Designed to aid humans, either as an optional physical support, or to prevent injury or damage, either by falling or collision. Designed as an optional physical support, or to prevent injury or damage, either by falling or collision."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcrailing.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcRailway a :Concept;
+  skos:prefLabel "Spoorweg"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "An IfcRailway is a spatial structure element as a route from one location to another for guided passage of wheeled vehicles on rails. An IfcRailway acts as a basic spatial structure element that supports to break down a railway project into manageable parts. Note: Definition according to ISO 6706: 2017: national or regional transport system for guided passage of wheeled vehicles on rails."@NL-nl;
+  skos:broader ifc:IfcFacility;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcRamp a :Concept;
+  skos:prefLabel "Hellingbaan"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A ramp is a vertical passageway which provides a human or vehicle circulation link between one floor level and another floor level at a different elevation. It may include a landing as an intermediate floor slab. A ramp normally does not include steps. .extDef NOTE Definition according to ISO 6707 1 Inclined way or floor joining two surfaces at different levels. The IfcRamp shall either be represented as a ramp assembly that aggregates all parts ramp flight, landing, etc. with own shape representations, or as a single ramp without decomposition including all shape representations directly at the ramp entity. NOTE In case of an IfcRamp being the assembly of all parts of the ramp the aggregation is handled by the IfcRelAggregates relationship, relating an IfcRamp with the related IfcRampFlight and landings, IfcSlab with PredefinedType LANDING. IfcRailing s belonging to the ramp may also be included into the aggregation. NOTE Model View Definitions and implementer agreements may restrict the IfcRamp being an assembly to not have an independent shape representation, but to always require that the decomposed parts have a shape representation. In this case, at least the Body geometric representations shall not be provided directly at IfcRamp if it is an assembly. The Body geometric representation of the IfcRamp is then the sum of the Body shape representation of the parts within the decomposition structure."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcramp.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcRampFlight a :Concept;
+  skos:prefLabel "Hellingbaan"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A ramp comprises a single inclined segment, or several inclined segments that are connected by a horizontal segment, refered to as a landing. A ramp flight is the single inclined segment and part of the ramp construction. In case of single flight ramps, the ramp flight and the ramp are identical. NOTE A single flight ramp is represented by an IfcRamp instance without using aggregation and by utilizing the product shape representation directly at IfcRamp . An IfcRampFlight is an aggregated part of an IfcRamp realized through the IfcRelAggregates relationship, the ramp flight is therefore included in the set of IfcRelAggregates.RelatedObjects . An IfcRampFlight connects the floor slab of zero to two different storeys or partial storeys or landings within a building. The connection relationship between the IfcRampFlight and the IfcSlab can be expressed using the IfcRelConnectsElements relationship."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcrampflight.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcReinforcingElement a :Concept;
+  skos:prefLabel "Wapening"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A reinforcing element represents bars, wires, strands, meshes, tendons, and other components embedded in concrete in such a manner that the reinforcement and the concrete act together in resisting forces. .extDef NOTE Definition according to ISO 6707 1 rod s , bar s , fabric, fibres, wires and cable s added to give additional strength or support to a material or component. One or several instances of subtypes of IfcReinforcingElement should always be accompanied by a defining instance of a respective subtype of IfcReinforcingElementType . The type object holds shape and material information. "@NL-nl;
+  skos:broader ifc:IfcElementComponent;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcreinforcingelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcRoad a :Concept;
+  skos:prefLabel "Weg"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.3"@NL-nl;
+  :altDefinition_1 "A route built on land to allow travel from one location to another, including highways, streets, cycle and foot paths, but excluding railways. As a type of Facility, Road provides the basic element in the project structure hierarchy for the components of a road project (i.e. any undertaking such as design, construction or maintenance). NOTE Definition from ISO 6707-1: Way mainly for vehicles. NOTE Definition from PIARC: Line of communication (travelled way) using a stabilized base other than rails or air strips, primarily for the use of road motor vehicles running on their own wheel."@NL-nl;
+  skos:broader ifc:IfcFacility;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcRoof a :Concept;
+  skos:prefLabel "Dak"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A roof is the covering of the top part of a building, it protects the building against the effects of wheather. .extDef NOTE Definition according to ISO 6707 1 construction enclosing the building from above. The IfcRoof shall either be represented as a roof assembly that aggregates all parts slabs, rafters and purlins, or other included roofs, such as dormers with own shape representaion, or as a single roof without decomposition including all shape representations directly at the roof entity. NOTE In case of an IfcRoof being the assembly of all parts of the roof the aggregation is handled by the IfcRelAggregates relationship, relating an IfcRoof with the related roof elements, like slabs represented by IfcSlab , rafters and purlins represented by IfcBeam , or other included roofs, such as dormers represented by IfcRoof . NOTE Model View Definitions and implementer agreements may restrict the IfcRoof being an assembly to not have an independent shape representation, but to always require that the decomposed parts have a shape representation. In this case, at least the Body geometric representations shall not be provided directly at IfcRoof if it is an assembly. The Body geometric representation of the IfcRoof is then the sum of the Body shape representation of the parts within the decomposition structure."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcroof.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSanitaryTerminal a :Concept;
+  skos:prefLabel "Sanitairtappunt"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A sanitary terminal is a fixed appliance or terminal usually supplied with water and used for drinking, cleaning or foul water disposal or that is an item of equipment directly used with such an appliance or terminal."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcsanitaryterminal.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSensor a :Concept;
+  skos:prefLabel "Sensor"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A sensor is a device that measures a physical quantity and converts it into a signal which can be read by an observer or by an instrument."@NL-nl;
+  skos:broader ifc:IfcDistributionControlElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcsensor.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcShadingDevice a :Concept;
+  skos:prefLabel "Zonnescherm"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "Shading devices are purpose built devices to protect from the sunlight, from natural light, or screening them from view. Shading devices can form part of the facade or can be mounted inside the building, they can be fixed or operable. NOTE Also other building elements such as protruding slabs or balconies can act as shading devices. Those elements however have another primary purpose and are defined as IfcSlab or by other subtypes of IfcBuildingElement. "@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcshadingdevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSite a :Concept;
+  skos:prefLabel "Bouwterrein"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A site is a defined area of land, possibly covered with water, on which the project construction is to be completed. A site may be used to erect, retrofit or turn down building s , or for other construction related developments. NOTE Term according to ISO6707 1 vocabulary area of land or water where construction work or other development is undertaken . A site may include a definition of the single geographic reference point for this site global position using WGS84 with Longitude, Latitude and Elevation . The precision is provided up to millionth of a second and it provides an absolute placement in relation to the real world as used in exchange with geospatial information systems. If asserted, the Longitude, Latitude and Elevation establish the point in WGS84 where the point 0.,0.,0. of the LocalPlacement of IfcSite is situated. The geometrical placement of the site, defined by the IfcLocalPlacement, shall be always relative to the spatial structure element, in which this site is included, or absolute, i.e. to the world coordinate system, as established by the geometric representation context of the project. The world coordinate system, established at the IfcProject.RepresentationContexts, may include a definition of the true north within the XY plane of the world coordinate system, if provided, it can be obtained at IfcGeometricRepresentationContext.TrueNorth. A project may span over several connected or disconnected sites. Therefore site complex provides for a collection of sites included in a project. A site can also be decomposed in parts, where each part defines a site section. This is defined by the composition type attribute of the supertype IfcSpatialStructureElements which is interpreted as follow COMPLEX site complex ELEMENT site PARTIAL site section The IfcSite is used to build the spatial structure of a building that serves as the primary project breakdown and is required to be hierarchical . Figure 181 shows the IfcSite as part of the spatial structure. In addition to the logical spatial structure, also the placement hierarchy is shown. In this example the spatial structure hierarchy and the placement hierarchy are identical. NOTE Detailed requirements on mandatory element containment and placement structure relationships are given in view definitions and implementer agreements. site composition Figure 181 Site composition Figure 182 describes the heights and elevations of the IfcSite. It is used to provide the geographic longitude, latitude, and height above sea level for the origin of the site. The origin of the site is the local placement. The provision of longitude, latitude, height at the IfcSite for georeferencing is provided for upward compatibility reasons. It requires a single instance of IfcSite and WGS84 as coordinate reference system. For exact georeferencing or referencing to any other geographic coordinate system other than WSG84 the entities IfcCoordinateReferenceSystem and IfcMapConversion have to be used to define an exact mapping of the project engineering coordinate system to the geographic or map coordinate system. reference height of site is provided by IfcSite.RefElevation, it is given according to the height datum used at this location. the reference height of each building situated at the site is given against the same height datum used at this location. the elevations of each storey belonging to each building are given as local height relative to the reference height of the building. Site elevations Figure 182 Site elevations."@NL-nl;
+  skos:broader ifc:IfcSpatialStructureElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcsite.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSlab a :Concept;
+  skos:prefLabel "Constructieve vloer"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A slab is a component of the construction that may enclose a space vertically. The slab may provide the lower support floor or upper construction roof slab in any space in a building. .extDef NOTE Definition according to ISO 6707 1 thick, flat or shaped component, usually larger than 300 mm square, used to form a covering or projecting from a building. Only the core or constructional part of this construction is considered to be a slab. The upper finish flooring, roofing and the lower finish ceiling, suspended ceiling are considered to be coverings. A special type of slab is the landing, described as a floor section to which one or more stair flights or ramp flights connect. NOTE There is a representation of slabs for structural analysis provided by a proper subtype of IfcStructuralMember being part of the IfcStructuralAnalysisModel . NOTE S An arbitrary planar element to which this semantic information is not applicable or irrelevant shall be modeled as IfcPlate . A slab may have openings, such as floor openings, or recesses. They are defined by an IfcOpeningElement attached to the slab using the inverse relationship HasOpenings pointing to IfcRelVoidsElement . There are three entities for slab occurrences IfcSlabStandardCase used for all occurrences of slabs, that are prismatic and where the thickness parameter can be fully described by the IfcMaterialLayerSetUsage . These slabs are always represented geometrically by a SweptSolid geometry or by a Clipping geometry based on SweptSolid , if a 3D geometric representation is assigned. In addition they have to have a corresponding IfcMaterialLayerSetUsage assigned. IfcSlabElementedCase used for occurrences of slabs which are aggregated from subordinate elements, following specific decomposition rules expressed by the mandatory use of IfcRelAggregates relationship. IfcSlab used for all other occurrences of slabs, particularly for slabs with changing thickness, or slabs with non planar surfaces, and slabs having only SweptSolid or Brep geometry."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcslab.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSolarDevice a :Concept;
+  skos:prefLabel "Zonneenergie installatie"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A solar device converts solar radiation into other energy such as electric current or thermal energy."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcsolardevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSpace a :Concept;
+  skos:prefLabel "Functieruimte"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A space represents an area or volume bounded actually or theoretically. Spaces are areas or volumes that provide for certain functions within a building. A space is associated to a building storey or in case of exterior spaces to a site . A space may span over several connected spaces. Therefore a space group provides for a collection of spaces included in a storey. A space can also be decomposed in parts, where each part defines a partial space. This is defined by the CompositionType attribute of the supertype IfcSpatialStructureElement which is interpreted as follow COMPLEX space group ELEMENT space PARTIAL partial space NOTE View definitions and implementation agreements may restrict spaces with CompositionType ELEMENT to be non overlapping. The IfcSpace is used to build the spatial structure of a building that serves as the primary project breakdown and is required to be hierarchical . The spatial structure elements are linked together by using the objectified relationship IfcRelAggregates. Figure 187 shows the IfcSpace as part of the spatial structure. It also serves as the spatial container for space related elements. NOTE Detailed requirements on mandatory element containment and placement structure relationships are given in view definitions and implementer agreements. space composition Figure 187 Space composition The following guidelines should apply for using the Name, Description, LongName and ObjectType attributes. Name holds the unique name or space number from the plan. Description holds any additional information field the user may have specified, there are no further recommendations. LongName holds the full name of the space, it is often used in addition to the Name , if a number is assigned to the room, then the descriptive name is exchanged as LongName. ObjectType holds the space type, i.e. usually the functional category of the space . NOTE In cases of inconsistency between the geometric representation of the IfcSpace and the combined geometric representations of the surrounding IfcRelSpaceBoundary , the geometric representation of the space should take priority over the geometric representation of the surrounding space boundaries. Figure 188 describes the heights and elevations of the IfcSpace. elevation of the space top of construction slab equals elevation of storey provided by IfcBuildingStorey.Elevation relative to IfcBuilding.ElevationOfRefHeight elevation of the space flooring top of flooring on top of slab provided by IfcSpace.ElevationWithFlooring relative to IfcBuilding.ElevationOfRefHeight height of space top of slab below to bottom of slab above provided by BaseQuantity with Name Height floor height of space top of slab below to top of flooring provided by BaseQuantity with Name FinishFloorHeight net height of space top of flooring to bottom of suspended ceiling provided by BaseQuantity with Name FinishCeilingHeight Space elevations Figure 188 Space elevations "@NL-nl;
+  skos:broader ifc:IfcSpatialStructureElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcspace.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSpaceHeater a :Concept;
+  skos:prefLabel "Lokale warmteopwekkingsinstallatie"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "Space heaters utilize a combination of radiation and or natural convection using a heating source such as electricity, steam or hot water to heat a limited space or area. Examples of space heaters include radiators, convectors, baseboard and finned tube heaters. IfcUnitaryEquipment should be used for packaged units supporting a combination of heating, cooling, and or dehumidification IfcCoil should be used for coil based floor heating."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcspaceheater.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSpatialElement a :Concept;
+  skos:prefLabel "Ruimtelijk element"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A spatial element is the generalization of all spatial elements that might be used to define a spatial structure or to define spatial zones."@NL-nl;
+  skos:broader ifc:IfcProduct;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcspatialelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcSpatialStructureElement a :Concept;
+  skos:prefLabel "Ruimtelijk structuur element"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A spatial structure element is the generalization of all spatial elements that might be used to define a spatial structure. "@NL-nl;
+  skos:broader ifc:IfcSpatialElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcspatialstructureelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcStackTerminal a :Concept;
+  skos:prefLabel "VuilverzamelTerminal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A stack terminal is placed at the top of a ventilating stack such as to prevent ingress by birds or rainwater or rainwater pipe to act as a collector or hopper for discharge from guttering ."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcstackterminal.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcStair a :Concept;
+  skos:prefLabel "Trap"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A stair is a vertical passageway allowing occupants to walk step from one floor level to another floor level at a different elevation. It may include a landing as an intermediate floor slab. NOTE Definition according to ISO 6707 1 Construction comprising a succession of horizontal stages steps or landings that make it possible to pass on foot to other levels. The IfcStair shall either be represented as a stair assembly entity that aggregates all parts stair flight, landing, etc. with own representations , or as a single stair entity without decomposition including all representation directly at the stair entity. NOTE In case of an IfcStair being the aggregate of all parts of the stair the aggregation is handled by the IfcRelAggregates relationship, relating an IfcStair with the related IfcStairFlight and landings, IfcSlab with PredefinedType LANDING. IfcRailing s belonging to the stair may also be included into the aggregation. NOTE Model View Definitions and implementer agreements may restrict the IfcStair being an assembly to not have an independent shape representation, but to always require that the decomposed parts have a shape representation. In this case, at least the Body geometric representations shall not be provided directly at IfcStair if it is an assembly. The Body geometric representation of the IfcStair is then the sum of the Body shape representation of the parts within the decomposition structure."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcstair.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcStairFlight a :Concept;
+  skos:prefLabel "Steektrap"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A stair flight is an assembly of building components in a single run of stair steps not interrupted by a landing . The stair steps and any stringers are included in the stair flight. A winder is also regarded a part of a stair flight. An IfcStairFlight is normally aggregated by an IfcStair through the IfcRelAggregates relationship, the stair flight is then included in the set of IfcRelAggregates.RelatedObjects . An IfcStairFlight normally connects the floor slab of zero to two different storeys or partial storeys, or landings within a building. The connection relationship between the IfcStairFlight and the IfcSlab can be expressed using the IfcRelConnectsElements relationship."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcstairflight.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSwitchingDevice a :Concept;
+  skos:prefLabel "Schakelapparaat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A switch is used in a cable distribution system electrical circuit to control or modulate the flow of electricity. Switches include those used for electrical power, communications, audio visual, or other distribution system types as determined by the available ports. "@NL-nl;
+  skos:broader ifc:IfcFlowController;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcswitchingdevice.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcSystem%20 a :Concept;
+  skos:prefLabel "Systeem"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A system is an organized combination of related parts within an AEC product, composed for a common purpose or function or to provide a service. A system is essentially a functionally related aggregation of products. The grouping relationship to one or several instances of IfcProduct (the system members) is handled by IfcRelAssignsToGroup."@NL-nl;
+  skos:broader ifc:IfcGroup;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcsystem.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcTank a :Concept;
+  skos:prefLabel "Vat"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A tank is a vessel or container in which a fluid or gas is stored for later use."@NL-nl;
+  skos:broader ifc:IfcFlowStorageDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifctank.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcTendon a :Concept;
+  skos:prefLabel "Voorspanwapening"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A tendon is a steel element such as a wire, cable, bar, rod, or strand used to impart prestress to concrete when the element is tensioned. .extDef NOTE Definition according to ISO 6707 1 steel bar s or groups of bars, strands or wires given a tensile stress that produces a compressive stress in prestressed concrete or masonry. .extDef NOTE To be efficient, the cable follows the deck alignment and moves vertically up on the top of the piers and down in the middle of the span. Therefore the cable axis is defined relatively towards the deck alignment. The ShapeRepresentation should be AdvancedSweptSolid geometry based on SectionedSolidHorizontal description including DistanceExpression, CircleProfileDef and AlignmentCurve, leading to a polyline describing the cable directrix. .extDef NOTE Regarding the Structural Analysis model, the cable has to be transformed into loads applied at each CartesianPoint defining the polyline."@NL-nl;
+  skos:broader ifc:IfcReinforcingElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifctendon.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcTransformer a :Concept;
+  skos:prefLabel "Transformator (trafo)"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A transformer is an inductive stationary device that transfers electrical energy from one circuit to another. IfcTransformer is used to transform electric power conversion of electric signals for other purposes is handled at other entities IfcController converts arbitrary signals, IfcAudioVisualAppliance converts signals for audio or video streams, and IfcCommunicationsAppliance converts signals for data or other communications usage. "@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifctransformer.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcTransportElement a :Concept;
+  skos:prefLabel "Transportelement"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A transport element is a generalization of all transport related objects that move people, animals or goods within a building or building complex. "@NL-nl;
+  skos:broader ifc:IfcElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifctransportelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+ifc:IfcUnitaryControlElement a :Concept;
+  skos:prefLabel "Uitrustingseenheden"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A unitary control element combines a number of control components into a single product, such as a thermostat or humidistat. A unitary control element provides a housing for an aggregation of control or electrical distribution elements that, in combination, perform a singular unitary purpose. Each item in the aggregation may have its own geometric representation and location."@NL-nl;
+  skos:broader ifc:IfcDistributionControlElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcunitarycontrolelement.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcUnitaryEquipment a :Concept;
+  skos:prefLabel "Functioneel regelstation"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "Unitary equipment typically combine a number of components into a single product, such as air handlers, pre packaged rooftop air conditioning units, heat pumps, and split systems."@NL-nl;
+  skos:broader ifc:IfcEnergyConversionDevice;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcunitaryequipment.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcValve a :Concept;
+  skos:prefLabel "Afsluiter"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A valve is used in a building services piping distribution system to control or modulate the flow of the fluid."@NL-nl;
+  skos:broader ifc:IfcFlowController;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcvalve.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcVibrationIsolator a :Concept;
+  skos:prefLabel "Trillingsisolator"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A vibration isolator is a device used to minimize the effects of vibration transmissibility in a structure. "@NL-nl;
+  skos:broader ifc:IfcElementComponent;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcvibrationisolator.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcWall a :Concept;
+  skos:prefLabel "Wand"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The wall represents a vertical construction that may bound or subdivide spaces. Wall are usually vertical, or nearly vertical, planar elements, often designed to bear structural loads. A wall is however S not required to be load bearing. .extDef NOTE Definition according to ISO 6707 1 vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function. NOTE There is a representation of walls for structural analysis provided by a proper subtype of IfcStructuralMember being part of the IfcStructuralAnalysisModel . NOTE An arbitrary planar element to which this semantic information is not applicable is not predominantly vertical , shall be modeled as IfcPlate . A wall may have openings, such as wall openings, openings used for windows or doors, or niches and recesses. They are defined by an IfcOpeningElement attached to the wall using the inverse relationship HasOpenings pointing to IfcRelVoidsElement . NOTE Walls with openings that have already been modeled within the enclosing geometry may use the relationship IfcRelConnectsElements to associate the wall with embedded elements such as doors and windows. There are three entities for wall occurrences IfcWallStandardCase S used for all occurrences of walls, that have a non changing thickness along the wall path and where the thickness parameter can be fully described by a material layer set. These walls are always represented geometrically by an Axis and a SweptSolid shape representation or by a Clipping geometry based on SweptSolid , if a 3D geometric representation is assigned. In addition they have to have a corresponding IfcMaterialProfileSetUsage assigned. IfcWallElementedCase used for occurrences of walls which are aggregated from subordinate elements, following specific decomposition rules expressed by the mandatory use of IfcRelAggregates relationship. IfcWall S used for all other occurrences of wall, particularly for walls with changing thickness along the wall path e.g. polygonal walls , or walls with a non rectangular cross sections e.g. L shaped retaining walls , and walls having an extrusion axis that is unequal to the global Z axis of the project i.e. non vertical walls , or walls having only Brep , or SurfaceModel geometry. "@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcwall.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcWasteTerminal a :Concept;
+  skos:prefLabel "Afvalterminal"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A waste terminal has the purpose of collecting or intercepting waste from one or more sanitary terminals or other fluid waste generating equipment and discharging it into a single waste drainage system. A waste terminal provides for all forms of trap and waste point that collects discharge from a sanitary terminal and discharges it into a waste drainage subsystem or that collects waste from several terminals and passes it into a single waste drainage subsystem. This includes the P and S traps from soil sanitary terminals, sinks, and basins as well as floor wastes and gully traps that provide collection points."@NL-nl;
+  skos:broader ifc:IfcFlowTerminal;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcwasteterminal.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcWindow a :Concept;
+  skos:prefLabel "Raam"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "The window is a building element that is predominately used to provide natural light and fresh air. It includes vertical opening but also horizontal opening such as skylights or light domes. It includes constructions with swinging, pivoting, sliding, or revolving panels and fixed panels. A window consists of a lining and one or several panels. .extDef NOTE Definition according to ISO 6707 1 Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air. The IfcWindow defines a particular occurrence of a window inserted in the spatial context of a project. A window can be inserted into an IfcOpeningElement using the IfcRelFillsElement relationship, then the IfcWindow has an inverse attribute FillsVoids provided, be part of an element assembly, often an IfcCurtainWall , using the IfcRelAggregates relationship, then the inverse attribute Decomposes is provided. or be a free standing window, then the IfcWindow has no inverse attributes FillsVoids or Decomposes provided. NOTE View definitions or implementer agreements may restrict the relationship to only include one window or door into one opening. There are two entities for window occurrences IfcWindowStandardCase used for all occurrences of windows, that have a Profile shape representation defined to which a set of shape parameters for lining and framing properties apply. Additionally it requires the provision of an IfcWindowType that references one IfcWindowLiningProperties and on to many IfcWindowPanelProperties . IfcWindow used for all other occurrences of windows, particularly for windows having only Brep , or SurfaceModel geometry without applying shape parameters. The actual parameter of the window and or its shape is defined at the IfcWindow as the occurrence definition or project instance , or by the IfcWindowType as the specific definition or project type . The following parameters are given at the IfcWindow or IfcWindowStandardCase for occurrence specific parameters. The IfcWindow specifies the window width and height the window opening direction by the y axis of the ObjectPlacement at the IfcWindowType to which the IfcWindow is related by the inverse relationship IsDefinedBy pointing to IfcRelDefinesByType , for type parameters common to all occurrences of the same type. the partitioning type single panel, double panel, tripel panel, more panels the operation type swing, tilt and turn, pivot revolve, fixed case ment, etc. the window panel hinge side by using two different styles for right and left opening windows the construction material type the particular attributes for the lining by the IfcWindowLiningProperties the particular attributes for the panels by the S IfcWindowPanelProperties."@NL-nl;
+  skos:broader ifc:IfcBuiltElement;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifcwindow.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+ifc:IfcZone a :Concept;
+  skos:prefLabel "Zone"@NL-nl;
+  :sourceAltDefinition_1 "IFC4.1"@NL-nl;
+  :altDefinition_1 "A zone is S a group of spaces, partial spaces or other zones. Zone structures may not be hierarchical in contrary to the spatial structure of a project see IfcSpatialStructureElement , i.e. one individual IfcSpace may be associated with zero, one, or several IfcZone s. IfcSpace s are grouped into an IfcZone by using the objectified relationship IfcRelAssignsToGroup as specified at the supertype IfcGroup . NOTE S Certain use cases may restrict the freedom of non hierarchical relationships. In some building service use cases the zone denotes a S view based delimited volume for the purpose of analysis and calculation. This type of zone cannot overlap with respect to that analysis, but may overlap otherwise."@NL-nl;
+  skos:broader ifc:IfcSystem;
+  rdfs:seeAlso "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/link/ifczone.htm";
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .

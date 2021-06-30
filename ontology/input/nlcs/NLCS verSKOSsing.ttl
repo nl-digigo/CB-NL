@@ -1,0 +1,1600 @@
+@prefix : <https://bimloket.nl/data/kernmodel/thesaurus#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <http://example.com/ifc/> .
+@prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610/> .
+@prefix nen3610_2011: <http://definities.geostandaarden.nl/def/nen3610#> .
+@prefix bgt:  <https://bgt.basisregistraties.overheid.nl/bgt/def/> .
+@prefix nlcs: <http://example.com/nlcs/> .
+@prefix imbor-skos:  <http://example.com/imbor-skos/> .
+
+nlcs:DILATATIE a :Concept;
+  skos:prefLabel "Dilatatie"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:OPLEGBLOK a :Concept;
+  skos:prefLabel "Oplegblok"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:STORTNAAD a :Concept;
+  skos:prefLabel "Stortnaad"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:VOEGPROFIEL a :Concept;
+  skos:prefLabel "Voegprofiel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:VOORSPANNING a :Concept;
+  skos:prefLabel "Voorspanning"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:WAPENING a :Concept;
+  skos:prefLabel "Wapening"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:GELEIDECONSTRUCTIE a :Concept;
+  skos:prefLabel "Geleideconstructie"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:GELEIDECONSTRUCTIE_GELEIDEBARRIER a :Concept;
+  skos:prefLabel "Geleidebarrier"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GELEIDECONSTRUCTIE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GELEIDECONSTRUCTIE_GELEIDERAIL a :Concept;
+  skos:prefLabel "Geleiderail"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GELEIDECONSTRUCTIE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:LEUNING a :Concept;
+  skos:prefLabel "Leuning"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:OBSTAKELBEVEILIGER a :Concept;
+  skos:prefLabel "Obstakelbeveiliger"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:DAMWAND a :Concept;
+  skos:prefLabel "Damwand"@NL-nl, "Grondkerende constructie"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean, "True"^^xsd:boolean .
+
+nlcs:DIEPWAND a :Concept;
+  skos:prefLabel "Diepwand"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KESP a :Concept;
+  skos:prefLabel "Kesp"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:PAAL a :Concept;
+  skos:prefLabel "Paal"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:ECOLOGISCHEVERBINDINGSZONE a :Concept;
+  skos:prefLabel "Ecologischeverbindingszone"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_AMFIBIEENTUNNEL a :Concept;
+  skos:prefLabel "Amfibieenttunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAPASSAGE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_BOOMBRUG a :Concept;
+  skos:prefLabel "Boombrug"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAPASSAGE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_DASSENTUNNEL a :Concept;
+  skos:prefLabel "Dassentunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAPASSAGE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_ECODUCT a :Concept;
+  skos:prefLabel "Ecoduct"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAPASSAGE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_ECODUIKER a :Concept;
+  skos:prefLabel "Ecoduiker"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAPASSAGE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_FAUNATUNNEL a :Concept;
+  skos:prefLabel "Faunatunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAPASSAGE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_HOPOVER a :Concept;
+  skos:prefLabel "Hopover"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAPASSAGE;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_VISTRAP a :Concept;
+  skos:prefLabel "Vistrap"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAPASSAGE_WILDRICHEL a :Concept;
+  skos:prefLabel "Wildrichel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAVOORZIENING a :Concept;
+  skos:prefLabel "Faunavoorziening"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:FAUNAVOORZIENING_GRONDDAM a :Concept;
+  skos:prefLabel "Gronddam"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAVOORZIENING;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAVOORZIENING_LICHTKOKER a :Concept;
+  skos:prefLabel "Lichtkoker"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAVOORZIENING;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAVOORZIENING_LOOPPLANK a :Concept;
+  skos:prefLabel "Loopplank"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAVOORZIENING;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FAUNAVOORZIENING_TERUGKEERVOORZIENING a :Concept;
+  skos:prefLabel "Terugkeervoorziening"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAVOORZIENING;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GELEIDING_WILDRASTER a :Concept;
+  skos:prefLabel "Wildraster"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAGELEIDING;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GELEIDING_WILDROOSTER a :Concept;
+  skos:prefLabel "Wildrooster"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:FAUNAGELEIDING;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:NATUURVRIENDELIJKEOEVER a :Concept;
+  skos:prefLabel "Natuurvriendelijke oever"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:DEKSLOOF a :Concept;
+  skos:prefLabel "Deksloof"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GORDING a :Concept;
+  skos:prefLabel "Gording"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:STEMPEL a :Concept;
+  skos:prefLabel "Stempel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:BESCHOEIING a :Concept;
+  skos:prefLabel "Beschoeiing"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:BOUWKUIP a :Concept;
+  skos:prefLabel "Waterkerende constructie"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KADEMUUR a :Concept;
+  skos:prefLabel "Kademuur"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KEERWAND a :Concept;
+  skos:prefLabel "Keerwand"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KISTDAM a :Concept;
+  skos:prefLabel "Kistdam"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:BEPLANTING a :Concept;
+  skos:prefLabel "Beplanting"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:BLOEMBAK a :Concept;
+  skos:prefLabel "Bloembak"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:BOOM a :Concept;
+  skos:prefLabel "Boom"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:BOOMTEELT a :Concept;
+  skos:prefLabel "Boomteelt"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:BOS a :Concept;
+  skos:prefLabel "Begroeid terreindeel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:BOUWLAND a :Concept;
+  skos:prefLabel "Bouwland"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:DUIN a :Concept;
+  skos:prefLabel "Duin"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FRUITTEELT a :Concept;
+  skos:prefLabel "Fruitteelt"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROENVOORZIENING a :Concept;
+  skos:prefLabel "Groenvoorziening"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:HAAG a :Concept;
+  skos:prefLabel "Haag"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HAKHOUT a :Concept;
+  skos:prefLabel "Hakhout"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HEESTER a :Concept;
+  skos:prefLabel "Heester"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HEIDE a :Concept;
+  skos:prefLabel "Heide"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HOUTOPSTAND a :Concept;
+  skos:prefLabel "Houtopstand"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KWELDER a :Concept;
+  skos:prefLabel "Kwelder"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MOERAS a :Concept;
+  skos:prefLabel "Moeras"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:PERK a :Concept;
+  skos:prefLabel "Perk"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:PLANT a :Concept;
+  skos:prefLabel "Plant"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:PLANTENBAK a :Concept;
+  skos:prefLabel "Plantenbak"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:PLANTSOEN a :Concept;
+  skos:prefLabel "Plantsoen"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:RIET a :Concept;
+  skos:prefLabel "Riet"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:SPORTVELD a :Concept;
+  skos:prefLabel "Sportveld"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:STRUIK a :Concept;
+  skos:prefLabel "Struik"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:STRUWEEL a :Concept;
+  skos:prefLabel "Struweel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:TEELGROND a :Concept;
+  skos:prefLabel "Teelgrond"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:BERM a :Concept;
+  skos:prefLabel "Berm"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:CUNET a :Concept;
+  skos:prefLabel "Cunet"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:DIJK a :Concept;
+  skos:prefLabel "Dijk"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:GROND a :Concept;
+  skos:prefLabel "Grond"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_GRIND a :Concept;
+  skos:prefLabel "Grind"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_KLEI a :Concept;
+  skos:prefLabel "Klei"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_PUIN a :Concept;
+  skos:prefLabel "Puin"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_SLIB a :Concept;
+  skos:prefLabel "Slib"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_STEEN a :Concept;
+  skos:prefLabel "Steen"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_TEELAARDE a :Concept;
+  skos:prefLabel "Teelaarde"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_VEEN a :Concept;
+  skos:prefLabel "Veen"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_ZAND a :Concept;
+  skos:prefLabel "Zand"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GROND_ZAVEL a :Concept;
+  skos:prefLabel "Zavel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:GROND;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:RAAI a :Concept;
+  skos:prefLabel "Raai"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:SLEUF a :Concept;
+  skos:prefLabel "Sleuf"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:TALUD a :Concept;
+  skos:prefLabel "Talud"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:WAL a :Concept;
+  skos:prefLabel "Wal"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:WATERGANG a :Concept;
+  skos:prefLabel "Watergang"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:WATERGANG_GREPPEL a :Concept;
+  skos:prefLabel "Greppel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:WATERGANG;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:VERBINDING a :Concept;
+  skos:prefLabel "Verbinding"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:BALUSTRADE a :Concept;
+  skos:prefLabel "Balustrade"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:FIETSENKLUIS a :Concept;
+  skos:prefLabel "Fietsenkluis"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HERDENKINGSMONUMENT a :Concept;
+  skos:prefLabel "Herdenkingsmonument"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTOBJECT a :Concept;
+  skos:prefLabel "Kunstobject"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:MEUBILAIR a :Concept;
+  skos:prefLabel "Meubilair"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:MEUBILAIR_CAMERA a :Concept;
+  skos:prefLabel "Camera"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_DIJKPAAL a :Concept;
+  skos:prefLabel "Dijkpaal"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_FONTEIN a :Concept;
+  skos:prefLabel "Fontein"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_OPENBAARTOILET a :Concept;
+  skos:prefLabel "Openbaartoilet"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_SPEELPLEK a :Concept;
+  skos:prefLabel "Speelplek"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WATERWEGMEUBILAIR_AFMEERCONSTRUCTIE a :Concept;
+  skos:prefLabel "Afmeerconstructie"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WATERWEGMEUBILAIR_BOLDER a :Concept;
+  skos:prefLabel "Bolder"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WATERWEGMEUBILAIR_DRIJFRAAM a :Concept;
+  skos:prefLabel "Drijfraam"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WATERWEGMEUBILAIR_LOOPBRUG a :Concept;
+  skos:prefLabel "Loopbrug"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WATERWEGMEUBILAIR_PLANKIER a :Concept;
+  skos:prefLabel "Plankier"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WATERWEGMEUBILAIR_VLONDER a :Concept;
+  skos:prefLabel "Vlonder"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_ABRI a :Concept;
+  skos:prefLabel "Abri"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_AFVALBAK a :Concept;
+  skos:prefLabel "Afvalbak"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_ANTENNE a :Concept;
+  skos:prefLabel "Antenne"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_BOOMKRANS a :Concept;
+  skos:prefLabel "Boomkrans"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_BOOMROOSTER a :Concept;
+  skos:prefLabel "Boomrooster"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_BRIEVENBUS a :Concept;
+  skos:prefLabel "Brievenbus"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_CONTAINER a :Concept;
+  skos:prefLabel "Container"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_HOOGSPANNINGSMAST a :Concept;
+  skos:prefLabel "Hoogspanningsmast"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_INKLIMBEVEILIGING a :Concept;
+  skos:prefLabel "Inklimbeveiliging"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_LICHTMAST a :Concept;
+  skos:prefLabel "Lichtmast"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_RECLAMEZUIL a :Concept;
+  skos:prefLabel "Reclamezuil"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_SCHRIKHEK a :Concept;
+  skos:prefLabel "Schrikhek"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_SLAGBOOM a :Concept;
+  skos:prefLabel "Slagboom"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_SPEELTOESTEL a :Concept;
+  skos:prefLabel "Speeltoestel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_TRAP a :Concept;
+  skos:prefLabel "Trap"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_VERKEERSBORD a :Concept;
+  skos:prefLabel "Verkeersbord"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_VERKEERSLICHT a :Concept;
+  skos:prefLabel "Verkeerslicht"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_WEGMEUBILAIR_ZITBANK a :Concept;
+  skos:prefLabel "Zitbank"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:MEUBILAIR;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MEUBILAIR_ZONNEPANEEL a :Concept;
+  skos:prefLabel "Zonnepaneel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:SIRENE a :Concept;
+  skos:prefLabel "Sirene"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:TERREINAFSCHEIDING a :Concept;
+  skos:prefLabel "Terreinafscheiding"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:WEERSTATION a :Concept;
+  skos:prefLabel "Weerstation"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:AFSLUITINSTALLATIE_KABEL a :Concept;
+  skos:prefLabel "Kabel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:BRANDSTOF_MANTELBUIS a :Concept;
+  skos:prefLabel "Mantelbuis"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:CHEMIE_AFSLUITER a :Concept;
+  skos:prefLabel "Afsluiter"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:CV_HUISAANSLUITING a :Concept;
+  skos:prefLabel "Aansluiting"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:CV_TRANSPORTLEIDING a :Concept;
+  skos:prefLabel "Leiding"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:DATA_CAI_KAST a :Concept;
+  skos:prefLabel "Kast"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:ET_HS_HOOGSPANNINGSMAST a :Concept;
+  skos:prefLabel "Mast"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK a :Concept;
+  skos:prefLabel "Kunstwerk"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_AQUADUCT a :Concept;
+  skos:prefLabel "Aquaduct"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_BRUG a :Concept;
+  skos:prefLabel "Brug"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_BRUG_FIETSBRUG a :Concept;
+  skos:prefLabel "Fietsbrug"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:BRUG;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_BRUG_SPOORBRUG a :Concept;
+  skos:prefLabel "Spoorbrug"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:BRUG;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_BRUG_VOETGANGERSBRUG a :Concept;
+  skos:prefLabel "Voetgangersbrug"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:BRUG;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_BRUG_WEGVERKEERSBRUG a :Concept;
+  skos:prefLabel "Wegverkeersbrug"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:BRUG;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_DUIKER a :Concept;
+  skos:prefLabel "Duiker"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_FLYOVER a :Concept;
+  skos:prefLabel "Flyover"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_GELUIDSWERING a :Concept;
+  skos:prefLabel "Geluidswerende constructie"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_LANDHOOFD a :Concept;
+  skos:prefLabel "Landhoofd"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_OVERKLUIZING a :Concept;
+  skos:prefLabel "Overkluizing"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_OVERSTORT a :Concept;
+  skos:prefLabel "Overstort"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_PIJLER a :Concept;
+  skos:prefLabel "Pijler"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_REMMINGSWERK a :Concept;
+  skos:prefLabel "Remmingswerk"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_SLUIS a :Concept;
+  skos:prefLabel "Sluis"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_STEIGER a :Concept;
+  skos:prefLabel "Steiger"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_STUW a :Concept;
+  skos:prefLabel "Stuw"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_SYPHON a :Concept;
+  skos:prefLabel "Syphon"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_TUNNEL a :Concept;
+  skos:prefLabel "Tunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_TUNNEL_FIETSTUNNEL a :Concept;
+  skos:prefLabel "Fietstunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:TUNNEL;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_TUNNEL_SPOORTUNNEL a :Concept;
+  skos:prefLabel "Spoortunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:TUNNEL;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_TUNNEL_VOETGANGERSTUNNEL a :Concept;
+  skos:prefLabel "Voetgangerstunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:TUNNEL;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_TUNNEL_WEGVERKEERTUNNEL a :Concept;
+  skos:prefLabel "Wegverkeerstunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:TUNNEL;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_TUNNELBAK a :Concept;
+  skos:prefLabel "Tunnelbak"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_VIADUCT a :Concept;
+  skos:prefLabel "Viaduct"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:KUNSTWERK;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KUNSTWERK_VIADUCT_FIETSVIADUCT a :Concept;
+  skos:prefLabel "Fietsviaduct"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:VIADUCT;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_VIADUCT_SPOORVIADUCT a :Concept;
+  skos:prefLabel "Spoorviaduct"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:VIADUCT;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_VIADUCT_VOETGANGERSVIADUCT a :Concept;
+  skos:prefLabel "Voetgangersviaduct"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:VIADUCT;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_VIADUCT_WEGVERKEERSVIADUCT a :Concept;
+  skos:prefLabel "Wegverkeersviaduct"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:VIADUCT;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_WILDWISSEL a :Concept;
+  skos:prefLabel "Wildwissel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_WILDWISSEL_ECODUCT a :Concept;
+  skos:prefLabel "Ecoduct"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:WILDWISSEL;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KUNSTWERK_WILDWISSEL_ECOTUNNEL a :Concept;
+  skos:prefLabel "Ecotunnel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:broader nlcs:WILDWISSEL;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:VOEGOVERGANG a :Concept;
+  skos:prefLabel "Voegovergang"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:LATEI a :Concept;
+  skos:prefLabel "Latei"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GOLFBREKER a :Concept;
+  skos:prefLabel "Golfbreker"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:KRIB a :Concept;
+  skos:prefLabel "Krib"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:SCHANSKORF a :Concept;
+  skos:prefLabel "Schanskorf"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:STORTSTEEN a :Concept;
+  skos:prefLabel "Stortsteen"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:STREKDAM a :Concept;
+  skos:prefLabel "Strekdam"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:ZETSTEEN a :Concept;
+  skos:prefLabel "Zetsteen"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:ZINKCONSTRUCTIE a :Concept;
+  skos:prefLabel "Zinkconstructie"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:BEBOUWING a :Concept;
+  skos:prefLabel "Bebouwing"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:SPOORBAAN a :Concept;
+  skos:prefLabel "Spoorbaan"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:TERREIN a :Concept;
+  skos:prefLabel "Terrein"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:WATER a :Concept;
+  skos:prefLabel "Water"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:WEG a :Concept;
+  skos:prefLabel "Weg"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:ZONE a :Concept;
+  skos:prefLabel "Zone"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:AWZI a :Concept;
+  skos:prefLabel "AWZI"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:DRAINAGE a :Concept;
+  skos:prefLabel "Drainage"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:DRAINAGE_INLAAT a :Concept;
+  skos:prefLabel "Inlaat"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:DRAINAGE_LOZINGSPUNT a :Concept;
+  skos:prefLabel "Lozingsput"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GWA_HUISAANSLUITING a :Concept;
+  skos:prefLabel "Huisaansluiting"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GWA_KOLK a :Concept;
+  skos:prefLabel "Kolk"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:GWA_RIOOLPUT a :Concept;
+  skos:prefLabel "Rioolput"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GWA_TRANSPORTLEIDING a :Concept;
+  skos:prefLabel "Transportleiding"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HUISAANSLUITING a :Concept;
+  skos:prefLabel "Huisaansluiting"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HWA_GRINDKOFFER a :Concept;
+  skos:prefLabel "Grindkoffer"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:PUT a :Concept;
+  skos:prefLabel "Put"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:TANK a :Concept;
+  skos:prefLabel "Tank"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:STAALVORM_PLAAT a :Concept;
+  skos:prefLabel "Plaat"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:STAALVORM_PROFIEL a :Concept;
+  skos:prefLabel "Profiel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:TREKSTANG a :Concept;
+  skos:prefLabel "Trekstang"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:DREMPEL a :Concept;
+  skos:prefLabel "Drempel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:GOOT a :Concept;
+  skos:prefLabel "Goot"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:KANTOPSLUITING a :Concept;
+  skos:prefLabel "Kantopsluiting"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:STOOTBAND a :Concept;
+  skos:prefLabel "Stootband"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:VERHARDING a :Concept;
+  skos:prefLabel "Verharding"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:VERHARDING_ASFALT_DEKLAAG a :Concept;
+  skos:prefLabel "Constructielaag"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:AFMEERLOKATIE a :Concept;
+  skos:prefLabel "Afmeerlocatie"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:LIGPLAATS a :Concept;
+  skos:prefLabel "Ligplaats"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:AFSLUITPAAL a :Concept;
+  skos:prefLabel "Afsluitpaal"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:AFZETTING_POLLER a :Concept;
+  skos:prefLabel "Poller"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:BEWEGWIJZERING a :Concept;
+  skos:prefLabel "Bewegwijzering"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:DRIP a :Concept;
+  skos:prefLabel "DRIP"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HALTEPAAL a :Concept;
+  skos:prefLabel "Haltepaal"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:HECTOMETRERING a :Concept;
+  skos:prefLabel "Hectometerpaal"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:MARKERING a :Concept;
+  skos:prefLabel "Markering"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:VERKEERSSPIEGEL a :Concept;
+  skos:prefLabel "Verkeersspiegel"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+nlcs:VERKEERSTEKEN a :Concept;
+  skos:prefLabel "Verkeersteken"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:VRI a :Concept;
+  skos:prefLabel "VRI"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:GEUL a :Concept;
+  skos:prefLabel "Geul"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:WATERBODEM a :Concept;
+  skos:prefLabel "Waterbodem"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+nlcs:WATERLOOP a :Concept;
+  skos:prefLabel "Waterloop"@NL-nl;
+  :sourceAltDefinition_1 "NLCS"@NL-nl;
+  skos:scopeNote "Definitie zit niet in NLCS"@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .

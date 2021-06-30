@@ -1,0 +1,1790 @@
+@prefix : <https://bimloket.nl/data/kernmodel/thesaurus#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <http://example.com/ifc/> .
+@prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610/> .
+@prefix nen3610_2011: <http://definities.geostandaarden.nl/def/nen3610#> .
+@prefix bgt:  <https://bgt.basisregistraties.overheid.nl/bgt/def/> .
+@prefix nlcs: <http://example.com/nlcs/> .
+@prefix imbor-skos:  <http://example.com/imbor-skos/> .
+
+bgt:GeoObject a :Concept;
+  skos:prefLabel "IMGeo-Object"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "De gemeenschappelijke eigenschappen van een grootschalig topografisch object, al dan niet uit de basisregistratie."@NL-nl;
+  skos:broader nen3610_2011:GeoObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Wegdeel a :Concept;
+  skos:prefLabel "Wegdeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg met gelijkblijvende, homogene eigenschappen en relaties en primair bedoeld voor gebruik door weg-, spoor- en vliegverkeer te land."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Weg;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Waterdeel a :Concept;
+  skos:prefLabel "Waterdeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kleinste functioneel onafhankelijk stukje water met gelijkblijvende, homogene eigenschappen en relaties dat er binnen het objecttype Water van NEN 3610 wordt onderscheiden en dat permanent met water bedekt is."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Water;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:VegetatieObject a :Concept;
+  skos:prefLabel "Vegetatie"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Solitair vegetatieobject of lijn- of vlakvormige groep gelijksoortige vegetatieobjecten met een beperkte omvang."@NL-nl;
+  skos:broader bgt:GeoObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Tunneldeel a :Concept;
+  skos:prefLabel "Tunneldeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Onderdeel van een kunstmatig aangelegde, kokervormige onderdoorgang dat essentieel is voor de constructie."@NL-nl;
+  skos:broader bgt:GeoObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Spoor a :Concept;
+  skos:prefLabel "Spoor"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "De as van het spoor, dat wil zeggen het midden van twee stalen staven op een onderling vaste afstand, waarover trein, tram, of sneltram rijdt."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Spoorbaan;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:RegistratiefGebied a :Concept;
+  skos:prefLabel "Registratief gebied"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Op basis van wet- of regelgeving afgebakend gebied dat als eenheid geldt van politiek/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:RegistratiefGebied;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Pand a :Concept;
+  skos:prefLabel "Pand"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een PAND is de kleinste bij de totstandkoming functioneel en bouwkundig-constructief zelfstandige eenheid die direct en duurzaam met de aarde is verbonden en betreedbaar en afsluitbaar is."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Gebouw;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:OverigeConstructie a :Concept;
+  skos:prefLabel "Overige constructie"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Abstract objecttype zijnde een gebouwd object dat niet valt onder de definitie van NEN 3610 Gebouw."@NL-nl;
+  skos:broader bgt:GeoObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Overbruggingsdeel a :Concept;
+  skos:prefLabel "Overbruggingsdeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Onderdeel van een beweegbare of vaste verbinding tussen twee punten, die door water, een weg of anderszins gescheiden zijn, dat essentieel is voor de constructie."@NL-nl;
+  skos:broader bgt:GeoObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:OndersteunendWegdeel a :Concept;
+  skos:prefLabel "Ondersteunend wegdeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een deel van de weg dat niet primair bedoeld is voor gebruik door het verkeer."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Weg;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:OndersteunendWaterdeel a :Concept;
+  skos:prefLabel "Ondersteunend waterdeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Object dat in het kader van de waterhuishouding periodiek gedeeltelijk of geheel met water is bedekt."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Water;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:OnbegroeidTerreindeel a :Concept;
+  skos:prefLabel "Onbegroeid terreindeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kleinste functioneel onafhankelijk stukje van een terrein, dat er binnen het objecttype Terrein van NEN 3610 wordt onderscheiden, zonder aaneengesloten vegetatie."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Terrein;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Inrichtingselement a :Concept;
+  skos:prefLabel "Inrichtingselement"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een ruimtelijk object al dan niet ter detaillering dan wel ter inrichting van de overige benoemde ruimtelijke objecten of een ander inrichtingselement."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:GebouwInstallatie a :Concept;
+  skos:prefLabel "Gebouw installatie"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een component aan de buitenzijde van een gebouw, die het aanzicht van het gebouw mede bepaalt."@NL-nl;
+  skos:broader bgt:GeoObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bord a :Concept;
+  skos:prefLabel "Bord"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een paneel waarop informatie wordt afgebeeld."@NL-nl;
+  skos:broader bgt:GeoObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:BegroeidTerreindeel a :Concept;
+  skos:prefLabel "Begroeid terreindeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kleinste functioneel onafhankelijk stukje van een terrein dat er binnen het objecttype Terrein van NEN 3610 wordt onderscheiden, met aaneengesloten vegetatie."@NL-nl;
+  skos:broader bgt:GeoObject, nen3610_2011:Terrein;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Verkeerseiland a :Concept;
+  skos:prefLabel "Verkeerseiland"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Ondersteunend wegdeel van beperkte omvang, uitgevoerd als verhoging of wegmarkering, dat wordt omsloten door wegdelen en ten doel heeft verkeersstromen te scheiden."@NL-nl;
+  skos:broader bgt:OndersteunendWegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Berm a :Concept;
+  skos:prefLabel "Berm"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een strook grond langs een weg of spoorweg."@NL-nl;
+  skos:broader bgt:OndersteunendWegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Woonerf a :Concept;
+  skos:prefLabel "Woonerf"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel waar de verblijfsfunctie (lopen, spelen, ontmoeten enzovoorts) prioriteit heeft boven de verkeersfunctie."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:VoetpadOpTrap a :Concept;
+  skos:prefLabel "Voetpad op trap"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Voetpad op verkeersinfrastructurele voorziening bestaande uit een constructie van treden, waarop men een hoger of lager gelegen plaats kan bereiken."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Voetpad a :Concept;
+  skos:prefLabel "Voetpad"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel waar voetgangers gebruik van moeten maken."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Voetgangersgebied a :Concept;
+  skos:prefLabel "Voetgangersgebied"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel alleen voor het gebruik door voetgangers, waarbij het door voetgangers te gebruiken gebied de volle breedte van de weg beslaat en het gebied een nadrukkelijk openbaar karakter heeft."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Verkeersdrempel a :Concept;
+  skos:prefLabel "Verkeersdrempel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Verhoging in een regionale rijbaan, bedoeld om het gemotoriseerde verkeer met een lage snelheid te laten rijden."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Verbindingsweg a :Concept;
+  skos:prefLabel "Verbindingsweg"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een verbindingsweg is (in principe) een eenrichtingsweg, gelegen binnen een knooppunt of aansluiting, die onderdeel is van de wijze waarop de ongelijkvloersheid is gerealiseerd."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Spoorbaan a :Concept;
+  skos:prefLabel "Spoorbaan"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Gebaand gedeelte voor het verkeer over rails."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Ruiterpad a :Concept;
+  skos:prefLabel "Ruiterpad"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een wegdeel primair aangelegd voor het gebruik door ruiters."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:RijbaanRegionaleWeg a :Concept;
+  skos:prefLabel "Rijbaan regionale weg"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel dat onderdeel is van een weg die een verbinding vormt tussen bewoonde oorden of tussen wijken binnen een dorp of stad."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:RijbaanLokaleWeg a :Concept;
+  skos:prefLabel "Rijbaan lokale weg"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel dat onderdeel is van een weg van lokaal belang."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:RijbaanAutoweg a :Concept;
+  skos:prefLabel "Rijbaan autoweg"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:RijbaanAutosnelweg a :Concept;
+  skos:prefLabel "Rijbaan autosnelweg"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer en met gescheiden rijbanen en ongelijkvloerse kruisingen."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Parkeervlak a :Concept;
+  skos:prefLabel "Parkeervlak"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel bestemd voor het parkeren van motorvoertuigen."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Overweg a :Concept;
+  skos:prefLabel "Overweg"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een gelijkvloerse kruising van een wegdeel en een wegdeel type ov-baan met spoor type trein of sneltram."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:OVBaan a :Concept;
+  skos:prefLabel "OV-baan"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel dat uitsluitend is bestemd en gemarkeerd voor openbaar vervoer en afgescheiden is van de andere wegdelen niet uitsluitend door markering."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Inrit a :Concept;
+  skos:prefLabel "Inrit"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Toegangswegen, oprijlanen en dergelijke met verkeersfunctie die leiden naar afgelegen erven en terreinen."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Fietspad a :Concept;
+  skos:prefLabel "Fietspad"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel met name bestemd voor fietsers en, indien toegestaan, bromfietsers en dat afgescheiden is van de andere wegdelen niet uitsluitend door markering."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Calamiteitendoorsteek a :Concept;
+  skos:prefLabel "Calamiteitendoorsteek"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een (Calamiteiten doorsteek) CADO heeft tot doel het verkeer op een rijbaan via een doorsteek van de weg te kunnen geleiden in geval van een calamiteit of werkzaamheden op de rijbaan. Een tweede doel is het faciliteren van toegang tot rijbanen voor hulpdiensten vanaf andere rijbanen of van een parallelweg."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:BaanVoorVliegverkeer a :Concept;
+  skos:prefLabel "Baan voor vliegverkeer"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wegdeel uitsluitend bedoeld voor vliegverkeer."@NL-nl;
+  skos:broader bgt:Wegdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Slik a :Concept;
+  skos:prefLabel "Slik"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Buitendijks aangeslibde, onbegroeide grond die bij vrijwel elk hoogwater onderloopt."@NL-nl;
+  skos:broader bgt:OndersteunendWaterdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Oever a :Concept;
+  skos:prefLabel "Oever"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "De strook land die in direct contact staat met water, inclusief het gebied tussen de hoogwaterlijn en laagwaterlijn."@NL-nl;
+  skos:broader bgt:OndersteunendWaterdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Zee a :Concept;
+  skos:prefLabel "Zee"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Uitgestrekt oppervlak zout water."@NL-nl;
+  skos:broader bgt:Waterdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Watervlakte a :Concept;
+  skos:prefLabel "Watervlakte"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Alle oppervlakken die vrij permanent met zoet water zijn bedekt. (zoals meer, plas, ven, vijver)."@NL-nl;
+  skos:broader bgt:Waterdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Waterloop a :Concept;
+  skos:prefLabel "Waterloop"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een voor de waterbeheersing bestemde geul die meestal permanent water bevat (zoals rivier, kanaal, beek, sloot, gracht)."@NL-nl;
+  skos:broader bgt:Waterdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Greppel a :Concept;
+  skos:prefLabel "Greppel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een ten behoeve van de waterbeheersing gegraven geul die al dan niet met water bedekt is."@NL-nl;
+  skos:broader bgt:Waterdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:OnverhardOnbegroeidTerreindeel a :Concept;
+  skos:prefLabel "Onverhard onbegroeid terreindeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Onbegroeid terreindeel waar geen verharding of aaneengesloten vegetatie aanwezig is."@NL-nl;
+  skos:broader bgt:OnbegroeidTerreindeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Trein a :Concept;
+  skos:prefLabel "Treinspoor"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Spoor voor een railvoertuig voor de langere afstand dat sneller dan 45 km per uur kan, bestaande uit een enkele of een reeks van locomotieven, treinstellen en/of wagons."@NL-nl;
+  skos:broader bgt:Spoor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Tram a :Concept;
+  skos:prefLabel "Tramspoor"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Spoor voor een railvoertuig voor personenvervoer voor de korte afstand."@NL-nl;
+  skos:broader bgt:Spoor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Sneltram a :Concept;
+  skos:prefLabel "Sneltramspoor"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Spoor voor een boven- danwel ondergrondse interlokale tram met een vrije baan."@NL-nl;
+  skos:broader bgt:Spoor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Kraan a :Concept;
+  skos:prefLabel "(Haven)kraan"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Spoorbaan waarop een hefkraan (bij een haven) zich voortbeweegt."@NL-nl;
+  skos:broader bgt:Spoor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Wegwijzer a :Concept;
+  skos:prefLabel "Wegwijzer"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Constructie voorzien van een of meer panelen met informatie ten behoeve van de bewegwijzering."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Waarschuwingshek a :Concept;
+  skos:prefLabel "Waarschuwingshek"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Constructie in de vorm van een hek, voorzien van rode en witte blokken of chevrons, die het verkeer attendeert op een gevarenpunt."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:VerklikkerTransportleiding a :Concept;
+  skos:prefLabel "Verklikker transportleiding"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bovengrondse voorziening om een ondergrondse transportleiding te markeren."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Verkeersbord a :Concept;
+  skos:prefLabel "Verkeersbord"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bord waarop een verkeersteken is aangebracht en waarvan de uitvoering wettelijk is voorgeschreven volgens het 'Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)'."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Straatnaambord a :Concept;
+  skos:prefLabel "Straatnaambord"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bord waarop de door de gemeente vastgestelde naam van de straat is vermeld. Bord kan zich op een paal of aan de gevel bevinden."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Scheepvaartbord a :Concept;
+  skos:prefLabel "Scheepvaartbord"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bord waarop een scheepvaartteken is aangebracht en waarvan de uitvoering als richtlijn is voorgeschreven volgens 'Richtlijnen Scheepvaarttekens (RST 2008)'."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Reclamebord a :Concept;
+  skos:prefLabel "Reclamebord"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Vrijstaand bord/zuil waarop rondom of aan Ã©Ã©n of meer zijden affiches kunnen worden (of zijn) geplakt."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Plaatsnaambord a :Concept;
+  skos:prefLabel "Plaatsnaambord"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een bord waarop een naam van een (woon)plaats of locatie is vermeld."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Informatiebord a :Concept;
+  skos:prefLabel "Informatiebord"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een bord met daarop specifieke actuele informatie, zoals plattegronden of vertrektijden."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:DynamischeSnelheidsindicator a :Concept;
+  skos:prefLabel "Dynamische snelheidsindicator"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een snelheidsinformatiebord dat in â€œreal timeâ€ de snelheid van de weggebruikers aanduidt."@NL-nl;
+  skos:broader bgt:Bord;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Toegangstrap a :Concept;
+  skos:prefLabel "Toegangstrap"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Niet afsluitbare trap (of trappenhuis) die toegang biedt aan een gebouw."@NL-nl;
+  skos:broader bgt:GebouwInstallatie;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Luifel a :Concept;
+  skos:prefLabel "Luifel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Afdak aangebracht aan de gevel van een pand, eventueel rustend op kolommen."@NL-nl;
+  skos:broader bgt:GebouwInstallatie;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bordes a :Concept;
+  skos:prefLabel "Bordes"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een verhard oppervlak, eventueel verhoogd en/of uitgevoerd met treden, grenzend aan een pand en primair bedoeld voor gebruik door voetgangers."@NL-nl;
+  skos:broader bgt:GebouwInstallatie;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Weginrichtingselement a :Concept;
+  skos:prefLabel "Weginrichtingselement"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een ruimtelijk object dat dient voor de inrichting van de openbare weg."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Waterinrichtingselement a :Concept;
+  skos:prefLabel "Waterinrichtingselement"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een ruimtelijk object ter inrichting van het water."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Straatmeubilair a :Concept;
+  skos:prefLabel "Straatmeubilair"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een ruimtelijk object ter inrichting van de openbare ruimte."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Sensor a :Concept;
+  skos:prefLabel "Sensor"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Apparaat voor de meting van een fysieke grootheid (bijv. temperatuur, licht, druk, elektriciteit)."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Put a :Concept;
+  skos:prefLabel "Put"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Gegraven of geboorde kokervormige diepte waarin zich (vloei)stoffen bevinden."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Paal a :Concept;
+  skos:prefLabel "Paal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Langwerpig stuk hout, ijzer, steen enz., dat in de grond staat."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Mast a :Concept;
+  skos:prefLabel "Mast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Hoge draagconstructie."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Kast a :Concept;
+  skos:prefLabel "Kast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Object met een permanent karakter dat dient om iets in te bergen en te beschermen."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Installatie a :Concept;
+  skos:prefLabel "Installatie"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Samenhangend systeem dat een bepaald doel dient."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Bak a :Concept;
+  skos:prefLabel "Bak"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Object met een permanent karakter dat dient om iets in te bergen of te verzamelen."@NL-nl;
+  skos:broader bgt:Inrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Sloof a :Concept;
+  skos:prefLabel "Sloof"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Deel van de pijler voor de overdracht van krachten naar de ondergrond of de fundering."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Pyloon a :Concept;
+  skos:prefLabel "Pyloon"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Boven de bovenbouw uitstekende draagconstructie voor tuien (kabels)."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Pijler a :Concept;
+  skos:prefLabel "Pijler"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Ondersteuningsconstructie van bruggen en soortgelijke kunstwerken."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Landhoofd a :Concept;
+  skos:prefLabel "Landhoofd"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Ondersteuningsconstructie ter plaatse van een overgang van de aardebaan naar een kunstwerk."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Dek a :Concept;
+  skos:prefLabel "Dek"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Direct door het verkeer belaste deel van de bovenbouw van de brug."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Viaduct a :Concept;
+  skos:prefLabel "Viaduct"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kunstwerk over een weg, spoorweg of terreinverdieping, bestaande uit een dek gesteund door pijlers en/of landhoofden."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Flyover a :Concept;
+  skos:prefLabel "Fly-over"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kunstwerk in de vorm van een viaduct dat deel uitmaakt van een verkeersbaan en waarmee een verkeersstroom over twee of meer ongelijkvloerse verkeersstromen wordt geleid."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Ecoduct a :Concept;
+  skos:prefLabel "Ecoduct"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Wildwissel in de vorm van een viaduct voor passages van dieren over een weg of spoorweg."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Brug a :Concept;
+  skos:prefLabel "Brug"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kunstwerk over een watervlakte of waterloop, bestaande uit een losliggend, al of niet beweegbaar brugdek gesteund door pijlers en/of landhoofden."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Aquaduct a :Concept;
+  skos:prefLabel "Aquaduct"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kunstwerk waarmee een watergang door een bakvormige constructie over een weg, een spoorweg, een andere watergang, een leiding of een terrein wordt geleid."@NL-nl;
+  skos:broader bgt:Overbruggingsdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Scheiding a :Concept;
+  skos:prefLabel "Scheiding"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kunstmatig obstakel met een werende functie."@NL-nl;
+  skos:broader bgt:OverigeConstructie;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:OverigBouwwerk a :Concept;
+  skos:prefLabel "Overig bouwwerk"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Met de aarde verbonden duurzaam bouwwerk, dat niet valt onder de definities van een pand of kunstwerk."@NL-nl;
+  skos:broader bgt:OverigeConstructie;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Kunstwerkdeel a :Concept;
+  skos:prefLabel "Kunstwerkdeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Onderdeel van een civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen."@NL-nl;
+  skos:broader bgt:OverigeConstructie;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Waterschap a :Concept;
+  skos:prefLabel "Waterschap"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Regionaal gebied onder het bestuur van een overheidsinstantie (waterschap) die tot taak heeft de waterhuishouding in dit gebied te regelen."@NL-nl;
+  skos:broader bgt:RegistratiefGebied;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:OpenbareRuimte a :Concept;
+  skos:prefLabel "Openbare ruimte"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een OPENBARE RUIMTE is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorziene buitenruimte die binnen Ã©Ã©n woonplaats is gelegen."@NL-nl;
+  skos:broader bgt:RegistratiefGebied;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Buurt a :Concept;
+  skos:prefLabel "Buurt"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  skos:broader bgt:RegistratiefGebied;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Wijk a :Concept;
+  skos:prefLabel "Wijk"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een aaneengesloten gedeelte van het grondgebied van een gemeente, waarvan de grenzen zoveel mogelijk zijn gebaseerd op sociaalgeografische kenmerken."@NL-nl;
+  skos:broader bgt:RegistratiefGebied;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Stadsdeel a :Concept;
+  skos:prefLabel "Stadsdeel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Deel van een stad, wijk."@NL-nl;
+  skos:broader bgt:RegistratiefGebied;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Haag a :Concept;
+  skos:prefLabel "Haag"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een rijvormige afscheiding van zeer beperkte breedte bestaande uit aangeplante aaneengesloten struiken."@NL-nl;
+  skos:broader bgt:VegetatieObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Boom a :Concept;
+  skos:prefLabel "Boom"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een markante boom die geen onderdeel uitmaakt van een ander boom- of struikbeplanting."@NL-nl;
+  skos:broader bgt:VegetatieObject;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
+
+bgt:Sloot a :Concept;
+  skos:prefLabel "Sloot"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Algemene benaming voor een waterloop van beperkte breedte die stilstaand of slechts langzaam stromend water bevat."@NL-nl;
+  skos:broader bgt:Waterloop;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Rivier a :Concept;
+  skos:prefLabel "Rivier"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Het water, dat ten atmosferische neerslag op hellende terreinen valt, vloeit, voor zover het niet verdampt of door planten wordt opgenomen, tezamen tot een waterloop en stroomt naar laaggelegen streken. Zulk een natuurlijke afvloeiing heet een rivier."@NL-nl;
+  skos:broader bgt:Waterloop;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Kanaal a :Concept;
+  skos:prefLabel "Kanaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een gegraven grote waterloop die dient voor scheepvaart en/of watertransport."@NL-nl;
+  skos:broader bgt:Waterloop;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Gracht a :Concept;
+  skos:prefLabel "Gracht"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een gracht is een gegraven greppel met water, die hoofdzakelijk voorkomt in oude steden."@NL-nl;
+  skos:broader bgt:Waterloop;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bron a :Concept;
+  skos:prefLabel "Bron"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Grondwater dat op natuurlijke wijze uit het aardoppervlak tevoorschijn komt."@NL-nl;
+  skos:broader bgt:Waterloop;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Beek a :Concept;
+  skos:prefLabel "Beek"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een natuurlijke smalle waterloop zonder getij."@NL-nl;
+  skos:broader bgt:Waterloop;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:MeerPlasVenVijver a :Concept;
+  skos:prefLabel "Meer, plas, ven, vijver"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een massa stilstaand landoppervlaktewater."@NL-nl;
+  skos:broader bgt:Watervlakte;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Haven a :Concept;
+  skos:prefLabel "Haven"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een tot ligplaats van schepen geschikt, natuurlijk of gegraven waterbekken aan zee of aan de oever van een rivier of binnenwater, dat beschutting biedt tegen wind en golven."@NL-nl;
+  skos:broader bgt:Watervlakte;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Voorde a :Concept;
+  skos:prefLabel "Voorde"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een doorwaadbare, doorgaans verharde, plaats in de waterloop, die dient voor de oversteek van die waterloop."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Vispassage a :Concept;
+  skos:prefLabel "Vispassage"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een kunstmatige passage ten behoeve van de vistrek bij kunstwerken in wateren."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Stuw a :Concept;
+  skos:prefLabel "Stuw"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een constructie met een vaste drempel of een beweegbare klep, die dient om de waterstand boven- en benedenstrooms te regelen."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Strekdam a :Concept;
+  skos:prefLabel "Strekdam"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Constructie in het water ter verdediging van de kust/oever."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Steiger a :Concept;
+  skos:prefLabel "Steiger"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Vaste (niet drijvende) waterbouwkundige constructie voor het aanleggen van schepen en bedoeld om deze schepen vanaf de wal te laden en te lossen."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Sluisdeur a :Concept;
+  skos:prefLabel "Sluisdeur"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Het beweegbare deel van een kunstmatige waterkering die de verbinding tussen twee wateren kan afsluiten of openstellen en daartoe van deuren of schuiven is voorzien."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Ponton a :Concept;
+  skos:prefLabel "Ponton"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Drijvende, dichte bak, waarover soms een dek is gelegd."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Perron a :Concept;
+  skos:prefLabel "Perron"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Verhoogde constructie langs een spoorrail of tramrail voor het in- en uitstappen van passagiers of voor het laden en lossen van goederen."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Overkluizing a :Concept;
+  skos:prefLabel "Overkluizing"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Keermuur a :Concept;
+  skos:prefLabel "Keermuur"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een keermuur of keerwand is een stijf, grond- of waterkerend kunstwerk dat door een groot gewicht en een brede voet een grote standzekerheid kan bereiken. Een keermuur is meestal van gewapend beton, maar er kan ook ander materiaal gebruikt worden."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Hoogspanningsmast a :Concept;
+  skos:prefLabel "Hoogspanningsmast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Metalen mast of stellage ter ondersteuning van geleidedraden voor het transport van elektriciteit met een hoog voltage."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Gemaal a :Concept;
+  skos:prefLabel "Gemaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een kunstwerk in principe bedoeld om water van een laag peil naar een hoog peil te brengen."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Faunavoorziening a :Concept;
+  skos:prefLabel "Faunavoorziening"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Voorziening bij een weg of spoorweg, niet zijnde een ecoduct, om de uit dat werk voortvloeiende negatieve gevolgen voor de fauna zoveel mogelijk te voorkomen of te beperken."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Duiker a :Concept;
+  skos:prefLabel "Duiker"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kunstwerk voor de waterhuishouding, bestaande uit een gesloten kokervormige constructie met een in- en uitstroomopening, niet de gehele waterbreedte beslaand en aangebracht onder een weg of spoorweg of in een dam."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bodemval a :Concept;
+  skos:prefLabel "Bodemval"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Sprong in de bodem van een waterloop."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Coupure a :Concept;
+  skos:prefLabel "Coupure"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een onderbreking in een waterkering voor de doorvoer van een weg of spoorweg, die bij extreme waterstanden afsluitbaar is."@NL-nl;
+  skos:broader bgt:Kunstwerkdeel;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Windturbine a :Concept;
+  skos:prefLabel "Windturbine"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Turbine waarin winddruk omgezet wordt in mechanische energie."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Voedersilo a :Concept;
+  skos:prefLabel "Voedersilo"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Opslagfaciliteit voor veevoer, bestaande uit een verticale container met een opening aan de onderkant."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Schuur a :Concept;
+  skos:prefLabel "Schuur"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een vrijstaand, al of niet prefab, niet-vergunningsplichtig bouwwerk dat gebruikt wordt om goederen in op te slaan en ook als werkruimte kan dienen."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Overkapping a :Concept;
+  skos:prefLabel "Overkapping"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een afzonderlijk staande overdekking rustend op kolommen."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Opslagtank a :Concept;
+  skos:prefLabel "Opslagtank"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Opslagfaciliteit voor vloeistoffen, gassen of energie."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:OpenLoods a :Concept;
+  skos:prefLabel "Open loods"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Niet verplaatsbaar licht gebouw met een open gevel, bestemd als berg- of werkplaats of als tijdelijk onderdak voor andere doeleinden."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:LageTrafo a :Concept;
+  skos:prefLabel "Lage trafo"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bouwwerk waarin transformator(en) zijn geplaatst voor elektriciteitsvoorziening."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bunker a :Concept;
+  skos:prefLabel "Bunker"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bezinkbak a :Concept;
+  skos:prefLabel "Bezinkbak"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een gesloten reservoir waarin het afvalwater tijdelijk wordt opgevangen met een slibreinigende voorziening."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bassin a :Concept;
+  skos:prefLabel "Bassin"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Waterbak, zoals een zwembad of een dok."@NL-nl;
+  skos:broader bgt:OverigBouwwerk;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Walbescherming a :Concept;
+  skos:prefLabel "Walbescherming"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een nagenoeg verticale wand tot kering van grond om afkalving van water te voorkomen, niet zijnde een kademuur."@NL-nl;
+  skos:broader bgt:Scheiding;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Muur a :Concept;
+  skos:prefLabel "Muur"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een scheiding gemaakt van steen."@NL-nl;
+  skos:broader bgt:Scheiding;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Kademuur a :Concept;
+  skos:prefLabel "Kademuur"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Verticale wand ter scheiding van land en water, opgebouwd uit een muur van gemetselde stenen of gestort beton."@NL-nl;
+  skos:broader bgt:Scheiding;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Hek a :Concept;
+  skos:prefLabel "Hek"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een hekwerk of schutting, typisch ten behoeve van erfafscheiding."@NL-nl;
+  skos:broader bgt:Scheiding;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Geluidsscherm a :Concept;
+  skos:prefLabel "Geluidsscherm"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een scheiding bedoeld om geluidshinder in de buitenlucht te verminderen."@NL-nl;
+  skos:broader bgt:Scheiding;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Faunaraster a :Concept;
+  skos:prefLabel "Faunaraster"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kunstmatig aangebrachte scheiding van metaaldraad tussen palen, bedoeld voor het leiden van dieren."@NL-nl;
+  skos:broader bgt:Scheiding;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Draadraster a :Concept;
+  skos:prefLabel "Draadraster"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kunstmatige terreinafscheiding, niet zijnde een faunaraster, in de vorm van een overwegend houten, metalen of kunststoffen rechtopstaande palen met daartussen een of meerdere draden."@NL-nl;
+  skos:broader bgt:Scheiding;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Damwand a :Concept;
+  skos:prefLabel "Damwand"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een grondkerende constructie die bestaat uit een verticaal in de grond geplaatste wand."@NL-nl;
+  skos:broader bgt:Scheiding;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:ZandZoutbak a :Concept;
+  skos:prefLabel "Zand-/zoutbak"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een bak met strooisel ten behoeve van gladheidsbestrijding."@NL-nl;
+  skos:broader bgt:Bak;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bloembak a :Concept;
+  skos:prefLabel "Bloembak"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bak in de openbare ruimte met een permanent karakter, waarin planten of struiken zijn geplant."@NL-nl;
+  skos:broader bgt:Bak;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Drinkbak a :Concept;
+  skos:prefLabel "Drinkbak"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bak of korf in de openbare ruimte met een permanent karakter"@NL-nl;
+  skos:broader bgt:Bak;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Container a :Concept;
+  skos:prefLabel "Container"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Nagelvast met de grond verbonden inzamelmiddel voor afvalstoffen, doorgaans van metaal of kunststof waarin afvalstoffen worden verzameld, bewaard en waaruit deze afvalstoffen vervolgens worden overgeladen in een inzamelvoertuig."@NL-nl;
+  skos:broader bgt:Bak;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Afvalbak a :Concept;
+  skos:prefLabel "Afvalbak"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bak of korf in de openbare ruimte met een permanent karakter"@NL-nl;
+  skos:broader bgt:Bak;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:AfvalApartPlaats a :Concept;
+  skos:prefLabel "Afval apart plaats"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Boven- of ondergrondse opslagplaats voor het gescheiden inzamelen van afval, met stortkoker(s) op het straatniveau."@NL-nl;
+  skos:broader bgt:Bak;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Zonnepaneel a :Concept;
+  skos:prefLabel "Zonnepaneel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een zonnepaneel is een paneel dat zonne-energie omzet in elektriciteit."@NL-nl;
+  skos:broader bgt:Installatie;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Pomp a :Concept;
+  skos:prefLabel "Pomp"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Werktuig dat door middel van een verschil in druk vloeistoffen of gassen verplaatst."@NL-nl;
+  skos:broader bgt:Installatie;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Verkeersregelinstallatiekast a :Concept;
+  skos:prefLabel "Verkeersregelinstallatiekast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van de regeling van het verkeer."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Telkast a :Concept;
+  skos:prefLabel "Telkast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van het meten van permanente verkeertellingen."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:TelecomKast a :Concept;
+  skos:prefLabel "Telecom kast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van de regeling van telecommunicatie."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Rioolkast a :Concept;
+  skos:prefLabel "Rioolkast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van de regeling van het transport van rioolwater."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:OpenbareVerlichtingkast a :Concept;
+  skos:prefLabel "Openbare verlichtingkast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van de regeling van de openbare verlichting."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:GmsKast a :Concept;
+  skos:prefLabel "GMS kast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van het meten van weers- en wegdekomstandigheden."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Gaskast a :Concept;
+  skos:prefLabel "Gaskast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van de regeling van het transport van gas."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Elektrakast a :Concept;
+  skos:prefLabel "Elektrakast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van de regeling van het transport van elektriciteit."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:CaiKast a :Concept;
+  skos:prefLabel "CAI-kast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Kast ten behoeve van de regeling van radio- en televisiesignalen."@NL-nl;
+  skos:broader bgt:Kast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Zendmast a :Concept;
+  skos:prefLabel "Zendmast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Mast bestemd voor het uitzenden van radio, televisie of telecommunicatie signalen."@NL-nl;
+  skos:broader bgt:Mast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Straalzender a :Concept;
+  skos:prefLabel "Straalzender"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Zender voor radio, televisie en telecommunicatie signalen die in smalle stralenbundels uitzendt."@NL-nl;
+  skos:broader bgt:Mast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Radarmast a :Concept;
+  skos:prefLabel "Radarmast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Vaste of neerklapbare constructie waarop de radarantenne bevestigd is."@NL-nl;
+  skos:broader bgt:Mast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Laagspanningsmast a :Concept;
+  skos:prefLabel "Laagspanningsmast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Houten of metalen mast waaraan kabels voor het transport van elektrische energie met een spanning lager dan 500 V zijn bevestigd."@NL-nl;
+  skos:broader bgt:Mast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bovenleidingmast a :Concept;
+  skos:prefLabel "Bovenleidingmast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Mast die een onderdeel vormt van de bovenleidingdraagconstructie."@NL-nl;
+  skos:broader bgt:Mast;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Vlaggenmast a :Concept;
+  skos:prefLabel "Vlaggenmast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paal bedoeld om vlaggen aan te hangen."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Verkeersregelinstallatiepaal a :Concept;
+  skos:prefLabel "Verkeersregelinstallatiepaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paal met daaraan bevestigd de verkeersregelinstallatie."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Verkeersbordpaal a :Concept;
+  skos:prefLabel "Verkeersbordpaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paal waaraan een of meerdere verkeersborden zijn bevestigd."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Telpaal a :Concept;
+  skos:prefLabel "Telpaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paal waaraan de verkeersteller is bevestigd."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Sirene a :Concept;
+  skos:prefLabel "Sirene"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een apparaat dat geluiden van variabele toonhoogte kan voortbrengen met als functie waarschuwingsdoeleinden."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Praatpaal a :Concept;
+  skos:prefLabel "Praatpaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Stalen of kunststof paal langs verkeerswegen welke bedoeld is telefonisch contact te leggen met een centrale meldkamer (ANWB)."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Portaal a :Concept;
+  skos:prefLabel "Portaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Geheel van twee of meer ondersteuningsconstructies die door een ligger zijn verbonden, bedoelt voor het aanbrengen van verkeersaanduidingen."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Poller a :Concept;
+  skos:prefLabel "Poller"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een poller of inzinkbare paal is een paal die door een elektrische of hydraulische aandrijving uit een wegdek omhoog wordt gestuurd en die dient om het autoverkeer te reguleren."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Lichtmast a :Concept;
+  skos:prefLabel "Lichtmast"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Mast bestemd voor het dragen van een of meer verlichtingsarmaturen."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Hectometerpaal a :Concept;
+  skos:prefLabel "Hectometerpaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paaltje of bordje geplaatst langs de weg, waarop een hectometerwaarde (weg) of kilometrering (vaarweg) is vermeld eventueel gevolgd door een letter."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Haltepaal a :Concept;
+  skos:prefLabel "Haltepaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paal met daarop de dienstregeling ten behoeve van het openbaar vervoer."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Grensmarkering a :Concept;
+  skos:prefLabel "Grensmarkering"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paal ter afbakening van een grens."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Drukknoppaal a :Concept;
+  skos:prefLabel "Drukknoppaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paal met een lengte van ongeveer 1 m, met drukknop waarmee de verkeersdeelnemer zich meldt bij een verkeersregelinstallatie."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Dijkpaal a :Concept;
+  skos:prefLabel "Dijkpaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een markant punt op de waterkering of op het strand dat dient als referentiepunt voor afstandsaanduidingen."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Afsluitpaal a :Concept;
+  skos:prefLabel "Afsluitpaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Al dan niet verwijderbare paal in de grond om de weg of een gedeelte hiervan af te sluiten."@NL-nl;
+  skos:broader bgt:Paal;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Waterleidingput a :Concept;
+  skos:prefLabel "Waterleidingput"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Deksel van een put met afsluitkraan ten behoeve van het ondergrondse leidingenstelsel voor watertransport."@NL-nl;
+  skos:broader bgt:Put;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Kolk a :Concept;
+  skos:prefLabel "Kolk"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Deksel van een ingegraven bak voor de opvang en afvoer van neerslag afkomstig van erop aangesloten oppervlakken."@NL-nl;
+  skos:broader bgt:Put;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:InspectieRioolput a :Concept;
+  skos:prefLabel "Inspectie-/rioolput"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Deksel van een constructie die toegang geeft tot een rioolstelsel."@NL-nl;
+  skos:broader bgt:Put;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Gasput a :Concept;
+  skos:prefLabel "Gasput"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Deksel van een put met afsluitkraan ten behoeve van het ondergrondse leidingenstelsel voor gastransport."@NL-nl;
+  skos:broader bgt:Put;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Drainageput a :Concept;
+  skos:prefLabel "Drainageput"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Putdeksel welke toegang geeft naar een poreuze of geperforeerde buisleiding, aangebracht onder de grond om de afwatering van de grond te verbeteren."@NL-nl;
+  skos:broader bgt:Put;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:BrandkraanPut a :Concept;
+  skos:prefLabel "Brandkraan/-put"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Op de drinkwaterleiding aangesloten kraan, of deksel van een put voor het plaatsen van een brandkraan, op of nabij de openbare weg, voor brandbestrijding."@NL-nl;
+  skos:broader bgt:Put;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:BenzineOlieput a :Concept;
+  skos:prefLabel "Benzine-/olieput"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Putdeksel die toegang geeft tot een benzine- of olietank ten behoeve van vullen, onderhoud of inspectie."@NL-nl;
+  skos:broader bgt:Put;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Windmeter a :Concept;
+  skos:prefLabel "Windmeter"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Apparatuur waarmee de snelheid en de richting van de wind kan worden gemeten."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Weerstation a :Concept;
+  skos:prefLabel "Weerstation"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een weerstation is een verzameling instrumenten die het weer kunnen meten."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Waterstandmeter a :Concept;
+  skos:prefLabel "Waterstandmeter"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een meter die de waterstand, over het algemeen ten opzichte van NAP, meet."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:RadarDetector a :Concept;
+  skos:prefLabel "Radar detector"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Met een radardetector wordt het verkeer gedetecteerd, bijvoorbeeld voor het beÃ¯nvloeden van verkeerslichten."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Lichtcel a :Concept;
+  skos:prefLabel "Lichtcel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Lichtcel waarmee het verlichtingsniveau naar een lager verlichtingsniveau omgeschakeld wordt (dimmen) wanneer de situatie dit toelaat."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Hoogtedetectieapparaat a :Concept;
+  skos:prefLabel "Hoogtedetectieapparaat"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een mechanisch of elektronisch waarschuwingssysteem, dat in werking treedt bij overschrijding van de aangegeven maximale doorrijhoogte."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:GmsSensor a :Concept;
+  skos:prefLabel "GMS sensor"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Gladheidsmeldsysteem (GMS) waarmee de kans op gladheid wordt voorspeld aan de hand van meting en interpretatie van de parameters die een rol spelen bij het ontstaan van gladheid."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Flitser a :Concept;
+  skos:prefLabel "Flitser"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een flitser bevat een mechanisme om een snelheidsmeting uit te voeren om snelheidsovertredingen in het verkeer te kunnen vaststellen."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Detectielus a :Concept;
+  skos:prefLabel "Detectielus"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "In de verharding opgenomen lusvormig onderdeel van een verkeersdetector."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Debietmeter a :Concept;
+  skos:prefLabel "Debietmeter"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een instrument dat de (afvoer)capaciteit van de volumestroom meet."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Camera a :Concept;
+  skos:prefLabel "Camera"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Installatie voor de registratie van beelden van situaties, waarvan directe observatie moeilijk of niet permanent mogelijk is."@NL-nl;
+  skos:broader bgt:Sensor;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Telefooncel a :Concept;
+  skos:prefLabel "Telefooncel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Niet-inpandige ruimte in openbaar gebied louter bestemd voor telefoneren."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Speelvoorziening a :Concept;
+  skos:prefLabel "Speelvoorziening"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Aard en nagelvast met de grond verbonden constructie in de openbare ruimte, bedoeld als speelmateriaal voor kinderen."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Slagboom a :Concept;
+  skos:prefLabel "Slagboom"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Boom of balk om de weg of een gedeelte hiervan af te sluiten."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Reclamezuil a :Concept;
+  skos:prefLabel "Reclamezuil"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Vrijstaand bord/zuil waarop rondom of aan Ã©Ã©n of meer zijden affiches kunnen worden (of zijn) geplakt."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Picknicktafel a :Concept;
+  skos:prefLabel "Picknicktafel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een â€˜picknicktafelâ€™ is een tafel met vaak daaraan gemonteerde zitbanken of stoelen die kan gebruikt worden om te picknicken."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Parkeerbeugel a :Concept;
+  skos:prefLabel "Parkeerbeugel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een omklapbare beugel voor het afschermen van een parkeerplaats."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:OpenbaarToilet a :Concept;
+  skos:prefLabel "Openbaar toilet"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Voor mensen bedoeld toilet niet zijnde een pand, langs de openbare weg."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Lichtpunt a :Concept;
+  skos:prefLabel "Lichtpunt"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een lichtpunt is een lamp die licht uitzendt niet verbonden met een mast die het maaiveld raakt."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Kunstobject a :Concept;
+  skos:prefLabel "Kunstobject"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een object dat als kunst gezien wordt en een bepaalde schoonheid heeft, niet door de natuur gemaakt."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Herdenkingsmonument a :Concept;
+  skos:prefLabel "Herdenkingsmonument"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Langs de weg of elders in het terrein aangelegd object ter herdenking van personen of evenementen."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Fontein a :Concept;
+  skos:prefLabel "Fontein"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een fontein is een natuurlijke of kunstmatige installatie die water spuit."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Fietsenrek a :Concept;
+  skos:prefLabel "Fietsenrek"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een duurzaam verankerd rek in de openbare ruimte voor het stallen van fietsen."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Fietsenkluis a :Concept;
+  skos:prefLabel "Fietsenkluis"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een fietskluis is een kluis om een fiets in te bewaren, meestal ter voorkoming van diefstal of beschadiging."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Brievenbus a :Concept;
+  skos:prefLabel "Brievenbus"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Uitpandige kast waar post in kan worden gedeponeerd ter bezorging."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bolder a :Concept;
+  skos:prefLabel "Bolder"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een inrichting aan de wal, waar een schip, door middel van een tros of landvast, aan vastgelegd kan worden."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Betaalautomaat a :Concept;
+  skos:prefLabel "Betaalautomaat"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een apparaat dat betaalkaarten en/of contant geld accepteert om betalingen uit te voeren."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Bank a :Concept;
+  skos:prefLabel "Bank"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Aaneengesloten zitplaats voor verscheidene personen, bedoeld voor openbaar gebruik en geplaatst in de openbare ruimte (vnl. in parken, plantsoenen, bossen en langs wegen)."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Abri a :Concept;
+  skos:prefLabel "Abri"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Overdekte wachtplaats voor passagiers van het openbaar vervoer."@NL-nl;
+  skos:broader bgt:Straatmeubilair;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Vuilvang a :Concept;
+  skos:prefLabel "Vuilvang"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een voorziening om de waterloop dan wel Ã©Ã©n of meerdere objecten benedenstrooms te vrijwaren van drijvend vuil en dergelijke."@NL-nl;
+  skos:broader bgt:Waterinrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Remmingswerk a :Concept;
+  skos:prefLabel "Remmingswerk"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Constructie langs de opstelruimte en wachtruimte bedoeld voor het afmeren van schepen."@NL-nl;
+  skos:broader bgt:Waterinrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Meerpaal a :Concept;
+  skos:prefLabel "Meerpaal"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Paal voor een kade of in een haven waaraan een schip kan worden afgemeerd."@NL-nl;
+  skos:broader bgt:Waterinrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Hoogtemerk a :Concept;
+  skos:prefLabel "Hoogtemerk"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Relatief permanent merk, natuurlijk of kunstmatig, met daarin een punt met een bekende hoogte ten opzichte van een bepaald referentievlak."@NL-nl;
+  skos:broader bgt:Waterinrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Geleidewerk a :Concept;
+  skos:prefLabel "Geleidewerk"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Fuikvormige constructie aansluitend aan het hoofd van een kunstwerk voor het geven van mechanische en visuele geleiding tijdens het invaren van dat kunstwerk."@NL-nl;
+  skos:broader bgt:Waterinrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Betonning a :Concept;
+  skos:prefLabel "Betonning"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een systeem van boeien en bakens, waarmee in open zee of in een vaarwater ondiepten of de aanwezigheid van gevaarlijke objecten worden aangegeven."@NL-nl;
+  skos:broader bgt:Waterinrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Wildrooster a :Concept;
+  skos:prefLabel "Wildrooster"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Horizontaal raamwerk dat dient om wild de doorgang te beletten."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Wegmarkering a :Concept;
+  skos:prefLabel "Wegmarkering"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Op of in het oppervlak van de verharding aangebrachte tekens ter geleiding, waarschuwing, regeling of informatie van het verkeer."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Verblindingswering a :Concept;
+  skos:prefLabel "Verblindingswering"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Constructie bedoeld om verblinding van weggebruikers door tegenlicht te voorkomen."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Rooster a :Concept;
+  skos:prefLabel "Rooster"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een rooster niet zijnde lijnafwatering of wildrooster."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Molgoot a :Concept;
+  skos:prefLabel "Molgoot"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Smalle goot (lijngeometrie) in de lengterichting van de verharding, met veelal een cirkelsegment als dwarsprofiel."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Lijnafwatering a :Concept;
+  skos:prefLabel "Lijnafwatering"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Goot in de lengterichting van de verharding, niet zijnde molgoot. Bijvoorbeeld roostergoot en verholen goot."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Geleideconstructie a :Concept;
+  skos:prefLabel "Geleideconstructie"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Bermbeveiligingsconstructie bedoeld voor fysieke geleiding van voertuigen die uit de koers zijn geraakt."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Boomspiegel a :Concept;
+  skos:prefLabel "Boomspiegel"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Het stuk grond rondom de stam van een boom dat van boven toegankelijk is voor lucht en water."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:Balustrade a :Concept;
+  skos:prefLabel "Balustrade"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Een balustrade is een hekwerk of afzetting aan de rand van een overbrugging. Een balustrade beveiligt tegen het vallen."@NL-nl;
+  skos:broader bgt:Weginrichtingselement;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "False"^^xsd:boolean .
+
+bgt:FunctioneelGebied a :Concept;
+  skos:prefLabel "FunctioneelGebied"@NL-nl;
+  :sourceAltDefinition_1 "BGT-LD_20210617"@NL-nl;
+  :altDefinition_1 "Begrensd en benoemd gebied dat door een functionele eenheid beschreven wordt."@NL-nl;
+  :thesaurus "True"^^xsd:boolean;
+  :kern "True"^^xsd:boolean .
