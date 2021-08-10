@@ -168,6 +168,8 @@
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0095>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Informatiemodel Grootschalige topografie" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#3558a562-2e31-4599-ad0e-8658c0bca110> ;
@@ -873,6 +875,17 @@
   skos:prefLabel "brandstofunit"@nl ;
   skos:prefLabel "fuel unit"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0655>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Regeling voertuigen" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
+  skos:definition "prefDef: wegvoertuig van de voertuigcategorie L met de voertuigclassificatie L1e, L2e of L6e, niet zijnde een motorrijtuig met beperkte snelheid of gehandicaptenvoertuig; in ieder geval wordt als bromfiets aangemerkt een voertuig dat blijkens het kentekenregister een bromfiets is."@nl ;
+  skos:prefLabel "bromfiets"@nl ;
+  skos:prefLabel "moped"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0660>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2029> ;
@@ -1043,8 +1056,12 @@
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0793>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2660-1" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1793> ;
-  skos:definition "Gestandaardiseerde werkwijze voor de opname van technische gebreken en de bepaling van de conditie van een bouwdeel (bron: NEN 2767-1)"@nl ;
+  skos:definition "Gestandaardiseerde inspectie (werkwijze) voor de opname van technische gebreken en de bepaling van de conditie van een bouwdeel."@nl ;
   skos:prefLabel "conditiemeting"@nl ;
   skos:prefLabel "condition assessment"@en ;
 .
@@ -1147,10 +1164,14 @@
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0912>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:altLabel "denkproces"@nl ;
   skos:altLabel "thinking"@en ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2305> ;
-  skos:definition "prefDef: Rationele activiteit die plaatsvindt binnen de geest (mind) van een persoon, en die resulteert in gedachten. (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:definition "mentale (rationele) activiteit die plaatsvindt binnen de geest (mind) van een persoon, en die resulteert in gedachten."@nl ;
   skos:prefLabel "denken"@nl ;
   skos:prefLabel "think"@en ;
 .
@@ -1447,8 +1468,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1093>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4572> ;
-  skos:definition "ontmoeting van drie of meer netwerklinks, waarbij er uitwisseling mogelijk is (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:definition "netwerknode van drie of meer netwerklinks, waarbij er uitwisseling mogelijk is."@nl ;
   skos:prefLabel "intersection"@en ;
   skos:prefLabel "kruispunt"@nl ;
 .
@@ -1577,6 +1602,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "fauna wall"@en ;
   skos:prefLabel "faunawand"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1251>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wegenverkeerswet 1994" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5000> ;
+  skos:definition "Fiets die is voorzien van een elektrische hulpmotor met een nominaal continu vermogen van maximaal 0,25 kW en waarvan de aandrijfkracht geleidelijk vermindert en tenslotte wordt onderbroken wanneer het voertuig een snelheid van 25 km/h bereikt, of eerder, indien de bestuurder ophoudt met trappen."@nl ;
+  skos:prefLabel "fiets met trapondersteuning"@nl ;
+  skos:prefLabel "power-assisted bicycle"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1262>
   a skos:Concept ;
@@ -1727,6 +1763,39 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "gedenksteen"@nl ;
   skos:prefLabel "memorial stone"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1377>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Regeling voertuigen" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
+  skos:definition "wegvoertuig dat is ingericht voor het vervoer van een gehandicapte, niet breder is dan 1,10 m en niet is uitgerust met een motor, dan wel is uitgerust met een motor waarvan de door de constructie bepaalde maximumsnelheid niet meer dan 45 km/h bedraagt, en niet zijnde een motorrijtuig met beperkte snelheid of landbouw- of bosbouwtrekker."@nl ;
+  skos:prefLabel "gehandicaptenvoertuig"@nl ;
+  skos:prefLabel "mobility scooter"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1378>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Reglement verkeersregels en verkeerstekens 1990" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1377> ;
+  skos:definition "gehandicaptenvoertuig dat is ingericht voor het vervoer van een gehandicapte, niet breder is dan 1,10 meter en uitgerust met een motor waarvan de door de constructie bepaalde maximumsnelheid niet meer dan 45 km per uur bedraagt, en geen bromfiets is."@nl ;
+  skos:prefLabel "gehandicaptenvoertuig met motor"@nl ;
+  skos:prefLabel "mobility scooter with engine"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1379>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Reglement verkeersregels en verkeerstekens 1990" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1377> ;
+  skos:definition "gehandicaptenvoertuig dat is ingericht voor het vervoer van een gehandicapte, niet breder is dan 1,10 meter en niet is uitgerust met een motor."@nl ;
+  skos:prefLabel "gehandicaptenvoertuig zonder motor"@nl ;
+  skos:prefLabel "mobility scooter without engine"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1384>
   a skos:Concept ;
@@ -2300,8 +2369,13 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1793>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Inspectiekader RWS" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "moet hier niet het hele werkwoord genoemd worden? inspectie is wat anders dan inspecteren. Anders had het ook observatie moeten zijn etc." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5281> ;
-  skos:definition "Proces (inwinnen, verwerken en interpreteren van gegevens) dat de actuele situatie van een object ten aanzien van functioneren, presteren en toestand vaststelt en doorvertaalt naar risicos en consequenties (beheersmaatregelen) voor een beheerder. (bron: Inspectiekader RWS)"@nl ;
+  skos:definition "observatie proces (inwinnen, verwerken en interpreteren van gegevens) dat de actuele situatie van een object ten aanzien van functioneren, presteren en toestand vaststelt en doorvertaalt naar risicos en consequenties (beheersmaatregelen) voor een beheerder."@nl ;
   skos:prefLabel "inspectie"@nl ;
   skos:prefLabel "inspection"@en ;
 .
@@ -3137,8 +3211,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2305>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2660-1" ;
+  rdfs:comment "none" ;
   skos:broader <https://w3id.org/nen2660/term#Activity> ;
-  skos:definition "prefDef: Activiteit die plaatsvindt binnen de geest (mind) van een persoon. (bron: NEN 2660-1 (Ontw))"@nl ;
+  skos:definition "Activiteit die plaatsvindt binnen de geest (mind) van een persoon."@nl ;
   skos:prefLabel "mental activity"@en ;
   skos:prefLabel "mentale activiteit"@nl ;
 .
@@ -3175,6 +3253,20 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2364>
   a skos:Concept ;
   skos:prefLabel "monsternameapparaat"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2375>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
+  skos:definition "altDef: Gemotoriseerd voertuig behalve bromfiets, fiets met trapondersteuning en gehandicaptenvoertuig, bestemd om anders dan langs rails te worden voortbewogen. (bron: CS 42)"@nl ;
+  skos:definition "altDef: Gemotoriseerd voertuig, niet zijnde een bromfiets, snorfiets, invalidenvoertuig of tram. (bron: CROW 156)"@nl ;
+  skos:definition "altDef: Gemotoriseerd voertuig, niet zijnde een bromfiets, snorfiets, invalidenvoertuig of tram. (bron: Stelsel RWS Basisspecificaties)"@nl ;
+  skos:definition "altDef: Ieder gemotoriseerd voertuig behalve bromfiets, fiets met trapondersteuning en gehandicaptenvoertuig, bestemd om anders dan langs rails te worden voortbewogen. (bron: Objecttypenbibliotheek Rijkswaterstaat (NL))"@nl ;
+  skos:definition "altDef: motorrijtuig als bedoeld in artikel 1, eerste lid, onderdeel c, van de Wegenverkeerswet. (bron: Regeling voertuigen)"@nl ;
+  skos:definition "prefDef: Gemotoriseerd voertuig behalve bromfiets, fiets met trapondersteuning en gehandicaptenvoertuig, bestemd om anders dan langs rails te worden voortbewogen. (bron: Reglement verkeersregels en verkeerstekens 1990)"@nl ;
+  skos:prefLabel "motor vehicle"@en ;
+  skos:prefLabel "motorvoertuig"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2397>
   a skos:Concept ;
@@ -3872,6 +3964,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "pylon"@en ;
   skos:prefLabel "pyloon"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3025>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://w3id.org/nen2660/term#Connection> ;
+  skos:definition "Onderlinge connectie (verbinding) (associatie, drager, kanaal) tussen twee systeem(delen), waarlangs een (soms dynamische) wisselwerking of interactie tussen die elementen kan plaatsvinden."@nl ;
+  skos:inScheme <http://www.rws.nl/abdl#ONT-0000> ;
+  skos:prefLabel "raakvlak"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3031>
   a skos:Concept ;
   skos:prefLabel "raam"@nl ;
@@ -4211,6 +4314,18 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Armatuur met een of meerdere lichtbronnen die de verkeersstromen van de scheepvaart door middel van lichtsignalen reguleert. (bron: NPR 4768)"@nl ;
   skos:prefLabel "scheepvaartsein"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3290>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "shipping traffic"@en ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4758> ;
+  skos:definition "het verkeer (het geheel van verplaatsingen) van vaartuigen over een vaarweglink."@nl ;
+  skos:prefLabel "scheepvaartverkeer"@nl ;
+  skos:prefLabel "waterway traffic"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3293>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1797> ;
@@ -4257,8 +4372,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3309>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Inspectiekader RWS" ;
+  rdfs:comment "none" ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1793> ;
-  skos:definition "Niet gerichte inspectie, in het kader van de korte termijn zorgplicht (directe aansprakelijkheidsrisicos) van een beheerder. (bron: Inspectiekader RWS)"@nl ;
+  skos:definition "Niet gerichte inspectie, in het kader van de korte termijn zorgplicht (directe aansprakelijkheidsrisicos) van een beheerder."@nl ;
   skos:prefLabel "schouw"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3311>
@@ -4781,8 +4900,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3734>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Inspectiekader RWS" ;
+  rdfs:comment "none" ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1793> ;
-  skos:definition "Gerichte inspectie (toetsing), mede gebaseerd op risicoanalyse, voor het vaststellen van de huidige toestand en het huidig functioneren van objecten en onderdelen alsmede de houdbaarheid van het bijbehorende instandhoudingsplan. (bron: Inspectiekader RWS)"@nl ;
+  skos:definition "Gerichte inspectie (toetsing), mede gebaseerd op risicoanalyse, voor het vaststellen van de huidige toestand en het huidig functioneren van objecten en onderdelen alsmede de houdbaarheid van het bijbehorende instandhoudingsplan."@nl ;
   skos:prefLabel "toestandsinspectie"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3745>
@@ -4822,6 +4945,16 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "barred door"@en ;
   skos:prefLabel "traliedeur"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3767>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
+  skos:definition "altDef: Voertuig, bestemd om langs spoorstaven te worden voortbewogen. (bron: Objecttypenbibliotheek Rijkswaterstaat (NL))"@nl ;
+  skos:definition "prefDef: Spoor voor een railvoertuig voor personenvervoer voor de korte afstand. (bron: Informatiemodel Grootschalige topografie)"@nl ;
+  skos:prefLabel "tram"@en ;
+  skos:prefLabel "tram"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3769>
   a skos:Concept ;
@@ -5375,6 +5508,15 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "wadi"@en ;
   skos:prefLabel "wadi"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4262>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
+  skos:definition "prefDef: voertuig, met uitzondering van een motorvoertuig, aanhangwagen, niet-gemotoriseerd gehandicaptenvoertuig, fiets en zijspanwagen, doch met inbegrip van een handwagen met motorvermogen; (bron: Regeling voertuigen)"@nl ;
+  skos:prefLabel "car"@en ;
+  skos:prefLabel "wagen"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4264>
   a skos:Concept ;
   skos:prefLabel "wals"@nl ;
@@ -5459,13 +5601,23 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4326>
   a skos:Concept ;
-  skos:definition "Samenhangend geheel van een of meer oppervlaktewaterlichamen en grondwaterlichamen, met bijbehorende bergingsgebieden, waterkeringen en ondersteunende kunstwerken; (bron: Waterwet)"@nl ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Waterwet" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3594> ;
+  skos:definition "systeem (samenhangend geheel)van een of meer oppervlaktewaterlichamen en grondwaterlichamen, met bijbehorende bergingsgebieden, waterkeringen en ondersteunende kunstwerken."@nl ;
   skos:prefLabel "hydro network"@en ;
   skos:prefLabel "watersysteem"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4328>
   a skos:Concept ;
-  skos:definition "een deel van een hydrologisch systeem dat dezelfde beherende instantie heeft en functiehomogeen is. (bron: Aquo Lex en Objectencatalogus)"@nl ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Aquo Lex en Objectencatalogus" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader cbnl-term:acc5a51d-897a-4e9e-bc4f-6b2df5f4fdaf ;
+  skos:definition "een deel van een watersysteem (hydrologisch systeem) dat dezelfde beherende instantie heeft en functiehomogeen is."@nl ;
   skos:prefLabel "hydro network section"@en ;
   skos:prefLabel "watersysteemdeel"@nl ;
 .
@@ -5521,6 +5673,18 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Discreet object dat een onderdeel van een installatie vormt."@nl ;
   skos:prefLabel "installatiedeel"@nl ;
   skos:prefLabel "installation part"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4383>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "Definitie herschreven zodat wegvoertuig en weglink genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4758> ;
+  skos:definition "verkeer (geheel van verplaatsingen) van wegvoertuigen met hun bestuurder, voetgangers, ruiters en geleiders met rij- of trekdieren of vee over een weglink."@nl ;
+  skos:prefLabel "road traffic"@en ;
+  skos:prefLabel "wegverkeer"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4385>
   a skos:Concept ;
@@ -5729,6 +5893,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "sun shade"@en ;
   skos:prefLabel "zonwerend rooster"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4527>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://w3id.org/nen2660/term#AamountOfMatter> ;
+  skos:definition "hoeveelheid materie die een gelijke chemische samenstelling en herkenbare uniforme en isotrope eigenschappen heeft."@nl ;
+  skos:prefLabel "pure substance"@en ;
+  skos:prefLabel "zuivere stof"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4550>
   a skos:Concept ;
@@ -6154,6 +6329,16 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "traffic"@en ;
   skos:prefLabel "verkeer"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4759>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4758> ;
+  skos:definition "TODO (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
+  skos:prefLabel "railway traffic"@en ;
+  skos:prefLabel "spoorverkeer"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4762>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4755> ;
@@ -6172,6 +6357,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "sociale activiteit van het verplaatsen van personen (passagiers) en/of goederen (lading) tussen twee locaties."@nl ;
   skos:prefLabel "transport"@en ;
   skos:prefLabel "vervoer"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4798>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wet luchtvaart" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4758> ;
+  skos:definition "het verkeer (geheel der verplaatsingen) van luchtvaartuigen in de lucht of op een luchthaven, alsmede het gebruik van het luchtruim door toestellen die geen luchtvaartuigen zijn."@nl ;
+  skos:prefLabel "air traffic"@en ;
+  skos:prefLabel "luchtverkeer"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4825>
   a skos:Concept ;
@@ -6411,6 +6607,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "economic area"@en ;
   skos:prefLabel "economisch gebied"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5000>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
+  skos:definition "Twee- of meerwielig wegvoertuig dat wordt aangedreven door spierkracht via pedalen."@nl ;
+  skos:prefLabel "bicycle"@en ;
+  skos:prefLabel "fiets"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5056>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -6523,10 +6730,14 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5281>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:altLabel "observation process"@en ;
   skos:altLabel "waarnemen, observatieproces"@nl ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0912> ;
-  skos:definition "Denkproces dat resulteert in een observatie (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:definition "denken dat resulteert in een observatie."@nl ;
   skos:prefLabel "observeren"@nl ;
   skos:prefLabel "observing"@en ;
 .
@@ -6582,6 +6793,17 @@ cbnl-term:a37351e0-1413-4f66-8dec-d94ad79c1a8c
   skos:broader <https://w3id.org/nen2660/term#FunctionalEntity> ;
   skos:definition "Functionele entiteit met een actieve functie, die het resultaat van een uitvoering van processen specificeert in termen van input en output."@nl ;
   skos:prefLabel "actieve functionele entiteit"@nl ;
+.
+cbnl-term:acc5a51d-897a-4e9e-bc4f-6b2df5f4fdaf
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:comment "analoog aan bouwdeel." ;
+  rdfs:comment "none" ;
+  skos:broader <https://w3id.org/nen2660/term#PhysicalObject> ;
+  skos:definition "Een fysiek object dat een zelfstandig en aanwijsbaar deel van een systeem vormt, onderscheiden naar deelfunctie."@nl ;
+  skos:prefLabel "systeemdeel"@nl ;
+  skos:prefLabel "system part"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurusConcepts>
   a owl:Ontology ;
