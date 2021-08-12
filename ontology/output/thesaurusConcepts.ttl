@@ -11,6 +11,138 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://www.rws.nl/abdl#DEF-0224>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "eis aan aspect"@nl ;
+  skos:broader <http://www.rws.nl/abdl#DEF-3597> ;
+  skos:definition "Beschrijving van de eis aan een systeem (LSE2: product of dienst) aangaande een aspect."@nl ;
+  skos:prefLabel "aspect requirement"@en ;
+  skos:prefLabel "aspecteis"@nl ;
+.
+<http://www.rws.nl/abdl#DEF-0458>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Richtlijnen Vaarwegen" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <http://www.rws.nl/abdl#DEF-0224> ;
+  skos:definition "aspecteis die bepaalt of een object veilig bruikbaar, dus beschikbaar is. Voor het bepalen van de interventieniveau’s en beheermaatregelen is het van essentieel belang dat beschikbaarheidseisen worden gedefinieerd."@nl ;
+  skos:prefLabel "availability requirement"@en ;
+  skos:prefLabel "beschikbaarheidseis"@nl ;
+.
+<http://www.rws.nl/abdl#DEF-1303>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:altLabel "eis aan functie"@nl ;
+  skos:broader <http://www.rws.nl/abdl#DEF-3597> ;
+  skos:definition "altDef: De beschrijving van een gewenste eigenschap aangaande een primaire functie van een product(object) of dienst. (bron: WWB0001)"@nl ;
+  skos:definition "altDef: Eeen primaire eis aan de functie. Deze worden per functie beschreven.  Er is in vervat wat het systeem moet kunnen, beschreven in kwantitatieve termen. Vaak heeft een functionele eis betrekking op de capaciteit die een systeem moet leveren bij het vervullen van de functie. (bron: Netwerkschakels in relatie tot prestatiemanagement)"@nl ;
+  skos:definition "altDef: Eis die de gewenste functionaliteit (functie) expliciteert. (bron: Vraagspecificatie Algemeen PRC (oud))"@nl ;
+  skos:definition "altDef: Eis, die aan de inrichting van een watersysteem of beheersobject gesteld wordt, om te voldoen aan de gebruiksfuncties ervan en in kwaliteitseisen (waaronder technische eisen) zijn te vertalen. (bron: Richtlijnen Vaarwegen)"@nl ;
+  skos:definition "altDef: Primaire eis die gesteld wordt aan de functie. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
+  skos:definition "prefDef: Eis die beschrijft welke functie het systeem moet vervullen, in kwalitatieve en/of kwantitatieve termen, inclusief de condities waaronder de functie moet worden vervuld. (bron: Sjabloon Systeemspecificatie)"@nl ;
+  skos:prefLabel "functional requirement"@en ;
+  skos:prefLabel "functionele eis"@nl ;
+.
+<http://www.rws.nl/abdl#DEF-1946>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "Verzameling van behoeften duidt niet op een enkele eis, maar meerdere, zoals een specificatie of KES" ;
+  skos:altLabel "stakeholder requirement"@en ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "(Verzameling van behoeften en randvoorwaarden) Eis van de belanghebbenden (LSE2: klanten)."@nl ;
+  skos:prefLabel "customer requirement"@en ;
+  skos:prefLabel "klanteis"@nl ;
+.
+<http://www.rws.nl/abdl#DEF-2053>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "ISO 9000" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <http://www.rws.nl/abdl#DEF-0224> ;
+  skos:definition "aspecteis (3.6.4) met betrekking tot kwaliteit (3.6.2)."@nl ;
+  skos:prefLabel "kwaliteitseis"@nl ;
+  skos:prefLabel "quality requirement"@en ;
+.
+<http://www.rws.nl/abdl#DEF-2236>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "RWS DBFM-hoofdovk" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <http://www.rws.nl/abdl#DEF-2929> ;
+  skos:definition "proceseis die wordt gesteld aan een proces van een opdrachtnemer in de context van een DBFM contract."@nl ;
+  skos:prefLabel "managementeis"@nl ;
+.
+<http://www.rws.nl/abdl#DEF-2929>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Vraagspecificatie Eisen DenC (oud)" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "Eis die wordt gesteld aan een proces van een opdrachtnemer."@nl ;
+  skos:narrower <http://www.rws.nl/abdl#DEF-2236> ;
+  skos:prefLabel "proceseis"@nl ;
+  skos:prefLabel "process requirement"@en ;
+.
+<http://www.rws.nl/abdl#DEF-3027>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:altLabel "eis aan raakvlak"@nl ;
+  skos:broader <http://www.rws.nl/abdl#DEF-3597> ;
+  skos:definition "altDef: Eis aan een systeem die het resultaat is van een raakvlakkenanalyse. Een dergelijke analyse inventariseert de eisen die de omgeving van het systeem aan het systeem stelt. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
+  skos:definition "altDef: Eis die wordt gesteld aan het in samenhang functioneren tussen objecten of diensten op hun gemeenschappelijke grens. (bron: WWB0001)"@nl ;
+  skos:definition "prefDef: Eis die wordt gesteld aan een raakvlak tussen twee of meer objecten. (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:prefLabel "interface requirement"@en ;
+  skos:prefLabel "raakvlakeis"@nl ;
+.
+<http://www.rws.nl/abdl#DEF-3597>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "altDef: Eis die wordt gesteld wordt aan het systeem. (bron: WWB0022)"@nl ;
+  skos:definition "altDef: Eis die wordt gesteld wordt aan het systeem. (bron: WWB0058)"@nl ;
+  skos:definition "prefDef: Eis die wordt gesteld wordt aan het systeem. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
+  skos:narrower <http://www.rws.nl/abdl#DEF-0224> ;
+  skos:narrower <http://www.rws.nl/abdl#DEF-1303> ;
+  skos:narrower <http://www.rws.nl/abdl#DEF-3027> ;
+  skos:prefLabel "systeemeis"@nl ;
+  skos:prefLabel "system requirement"@en ;
+.
+<http://www.rws.nl/abdl#DEF-5346>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Regeling veiligheid primaire waterkeringen 2017" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt en veralgemeniseerd." ;
+  skos:broader <http://www.rws.nl/abdl#DEF-0224> ;
+  skos:definition "aspecteis die wordt gesteld aan de kans van falen van een systeem (dijkdoorsnede) (faalkanseis)."@nl ;
+  skos:prefLabel "betrouwbaarheidseis"@nl ;
+  skos:prefLabel "reliability requirement"@en ;
+.
+<http://www.rws.nl/abdl#DEF-6723>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN-EN-ISO 19650-1" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <http://www.rws.nl/abdl#DEF-0224> ;
+  skos:definition "aspect requirement for what, when, how and for whom information (3.3.1) is to be produced."@en ;
+  skos:prefLabel "informatie-eis"@nl ;
+  skos:prefLabel "information requirement"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#0704d29e-b00e-4746-915c-7a8fc8960de0>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -282,6 +414,17 @@
   a skos:Concept ;
   skos:prefLabel "afvoer"@nl ;
   skos:prefLabel "drain"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0165>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Meeteenhedenbesluit 2006" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "fysieke eenheid van elektrische stroom, die volgt uit de vaste numerieke waarde van de elementaire lading e, die is vastgesteld op 1,602 176 634 × 10-19, uitgedrukt in de eenheid C, waarbij C gelijk is aan A•s en de seconde volgt uit de cesiumfrequentie."@nl ;
+  skos:prefLabel "ampere"@en ;
+  skos:prefLabel "ampere"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0169>
   a skos:Concept ;
@@ -985,6 +1128,17 @@
   a skos:Concept ;
   skos:prefLabel "camera (vast)"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0713>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Meeteenhedenbesluit 2006" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "fysieke eenheid van lichtsterkte, die volgt uit de vaste numerieke waarde van het lichtrendement van monochromatische straling met een frequentie van 540 × 1012 Hz, Kcd, die is vastgesteld op 683, uitgedrukt in de eenheid lm•W-1, waarbij lm•W-1 gelijk is aan cd•sr•W-1 of cd•sr•kg-1•m-2•s3 en de kilogram, de meter en de seconde volgen uit h, c en de cesiumfrequentie, en sr (steradiaal) de SI-eenheid voor ruimtehoek is."@nl ;
+  skos:prefLabel "candela"@en ;
+  skos:prefLabel "candela"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0724>
   a skos:Concept ;
   skos:altLabel "betonverharding"@nl ;
@@ -1261,6 +1415,15 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "dilatatievoeg"@nl ;
   skos:prefLabel "expansion joint"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0959>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:prefLabel "meter per second"@en ;
+  skos:prefLabel "meter per seconde"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0966>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -1460,6 +1623,15 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "cross girder"@en ;
   skos:prefLabel "dwarsdrager"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1086>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:prefLabel "kilogram per cubic meter"@en ;
+  skos:prefLabel "kilogram per kubieke meter"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1088>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1797> ;
@@ -1503,7 +1675,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1112>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://w3id.org/nen2660/term#InformationObject> ;
+  skos:definition "een informatieobject dat een maat vormt waarin grootheden numeriek kunnen worden uitgedrukt."@nl ;
   skos:definition "scale that specifies how the size or extent of an aspect is unambiguously quantified by a value on a mathematical range (bron: NEN-ISO 16354)"@en ;
   skos:prefLabel "eenheid"@nl ;
   skos:prefLabel "unit of measure"@en ;
@@ -1511,9 +1688,9 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130>
   a skos:Concept ;
   dct:references "UIT 68" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt en subtypen aansluiten." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856> ;
-  skos:definition "bewering die als behoefte of verwachting kenbaar is gemaakt, vanzelfsprekend is of dwingend is voorgeschreven"@nl ;
+  skos:definition "bewering die als prestatiebehoefte of -verwachting kenbaar is gemaakt, vanzelfsprekend is of dwingend is voorgeschreven"@nl ;
   skos:prefLabel "eis"@nl ;
   skos:prefLabel "requirement"@en ;
 .
@@ -1704,8 +1881,11 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1112> ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition "een eenheid dat een maat vormt waarin natuurkundige grootheden numeriek kunnen worden uitgedrukt."@nl ;
   skos:prefLabel "fysieke eenheid"@nl ;
   skos:prefLabel "physical unit"@en ;
 .
@@ -2339,6 +2519,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Informatiesysteem dat wordt gebruikt in een verkeerspost waarin scheeps- en ladinggegevens worden geregistreerd en schepen worden gevolgd. (bron: NPR 4768)"@nl ;
   skos:prefLabel "informatie en volgsysteem scheepvaart 1990"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1741>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "de fysieke eenheid van energie. De joule is gedefinieerd als de energie die nodig is om een lichaam te verplaatsen met een kracht van 1 newton over een afstand van 1 meter."@nl ;
+  skos:prefLabel "joule"@en ;
+  skos:prefLabel "joule"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1746>
   a skos:Concept ;
   skos:prefLabel "informatiebord"@nl ;
@@ -2576,6 +2767,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "basement"@en ;
   skos:prefLabel "kelder"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1906>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Meeteenhedenbesluit 2006" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "fysieke eenheid van thermodynamische temperatuur, die volgt uit de vaste numerieke waarde van de constante van Boltzmann k, die is vastgesteld op 1,380 649 × 10-23, uitgedrukt in de eenheid J•K-1, waarbij J•K-1 gelijk is aan kg•m2•s-2•K-1 en de kilogram, de meter en de seconde volgen uit h, c en de cesiumfrequentie."@nl ;
+  skos:prefLabel "kelvin"@en ;
+  skos:prefLabel "kelvin"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1913>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0613> ;
@@ -2632,6 +2834,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1931>
   a skos:Concept ;
   skos:prefLabel "keukeninstallatie"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1938>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Meeteenhedenbesluit 2006" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "fysieke eenheid van massa, die volgt uit de vaste numerieke waarde van de constante van Planck h, die is vastgesteld op 6,626 070 15 × 10-34, uitgedrukt in de eenheid J•s, waarbij J•s gelijk is aan kg•m2•s-1 en de meter en de seconde volgen uit c en de cesiumfrequentie."@nl ;
+  skos:prefLabel "kilogram"@en ;
+  skos:prefLabel "kilogram"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1942>
   a skos:Concept ;
@@ -3220,6 +3433,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "mental activity"@en ;
   skos:prefLabel "mentale activiteit"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2309>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Meeteenhedenbesluit 2006" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "fysieke eenheid van lengte, die volgt uit de vaste numerieke waarde van de snelheid van het licht in vacuüm c, die is vastgesteld op 299 792 458, uitgedrukt in m•s-1, waarbij de seconde volgt uit de cesiumfrequentie."@nl ;
+  skos:prefLabel "meter"@nl ;
+  skos:prefLabel "metre"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2310>
   a skos:Concept ;
   skos:altLabel "measurement process"@en ;
@@ -3243,6 +3467,15 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "mixer"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2356>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "fysieke eenheid voor de hoeveelheid stof van een systeem dat exact 6,022 140 76 × 1023 elementaire entiteiten bevat, welk getal, uitgedrukt in de eenheid mol-1, de vaste numerieke waarde van de constante van Avogadro NA is en het getal van Avogrado wordt genoemd."@nl ;
+  skos:prefLabel "mol"@en ;
+  skos:prefLabel "mol"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2360>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4382> ;
@@ -3258,13 +3491,10 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Reglement verkeersregels en verkeerstekens 1990" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
-  skos:definition "altDef: Gemotoriseerd voertuig behalve bromfiets, fiets met trapondersteuning en gehandicaptenvoertuig, bestemd om anders dan langs rails te worden voortbewogen. (bron: CS 42)"@nl ;
-  skos:definition "altDef: Gemotoriseerd voertuig, niet zijnde een bromfiets, snorfiets, invalidenvoertuig of tram. (bron: CROW 156)"@nl ;
-  skos:definition "altDef: Gemotoriseerd voertuig, niet zijnde een bromfiets, snorfiets, invalidenvoertuig of tram. (bron: Stelsel RWS Basisspecificaties)"@nl ;
-  skos:definition "altDef: Ieder gemotoriseerd voertuig behalve bromfiets, fiets met trapondersteuning en gehandicaptenvoertuig, bestemd om anders dan langs rails te worden voortbewogen. (bron: Objecttypenbibliotheek Rijkswaterstaat (NL))"@nl ;
-  skos:definition "altDef: motorrijtuig als bedoeld in artikel 1, eerste lid, onderdeel c, van de Wegenverkeerswet. (bron: Regeling voertuigen)"@nl ;
-  skos:definition "prefDef: Gemotoriseerd voertuig behalve bromfiets, fiets met trapondersteuning en gehandicaptenvoertuig, bestemd om anders dan langs rails te worden voortbewogen. (bron: Reglement verkeersregels en verkeerstekens 1990)"@nl ;
+  skos:definition "Gemotoriseerd wegvoertuig behalve bromfiets, fiets met trapondersteuning en gehandicaptenvoertuig, bestemd om anders dan langs rails te worden voortbewogen."@nl ;
   skos:prefLabel "motor vehicle"@en ;
   skos:prefLabel "motorvoertuig"@nl ;
 .
@@ -4425,6 +4655,15 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "navigation lock"@en ;
   skos:prefLabel "schutsluis"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3336>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "fysieke eenheid van tijd, die volgt uit de vaste numerieke waarde van de cesiumfrequentie, de frequentie van de onverstoorde hyperfijnovergang van het cesium-133-atoom in grondtoestand, die is vastgesteld op 9 192 631 770, uitgedrukt in de eenheid Hz, die gelijk is aan s-1."@nl ;
+  skos:prefLabel "second"@en ;
+  skos:prefLabel "seconde"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3354>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4382> ;
@@ -4950,9 +5189,10 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
-  skos:definition "altDef: Voertuig, bestemd om langs spoorstaven te worden voortbewogen. (bron: Objecttypenbibliotheek Rijkswaterstaat (NL))"@nl ;
-  skos:definition "prefDef: Spoor voor een railvoertuig voor personenvervoer voor de korte afstand. (bron: Informatiemodel Grootschalige topografie)"@nl ;
+  dct:references "Informatiemodel Grootschalige topografie" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4573> ;
+  skos:definition "Spoor voor een spoorvoertuig voor personenvervoer voor de korte afstand."@nl ;
   skos:prefLabel "tram"@en ;
   skos:prefLabel "tram"@nl ;
 .
@@ -5512,8 +5752,10 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Regeling voertuigen" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4177> ;
-  skos:definition "prefDef: voertuig, met uitzondering van een motorvoertuig, aanhangwagen, niet-gemotoriseerd gehandicaptenvoertuig, fiets en zijspanwagen, doch met inbegrip van een handwagen met motorvermogen; (bron: Regeling voertuigen)"@nl ;
+  skos:definition "wegvoertuig, met uitzondering van een motorvoertuig, aanhangwagen, niet-gemotoriseerd gehandicaptenvoertuig, fiets en zijspanwagen, doch met inbegrip van een handwagen met motorvermogen."@nl ;
   skos:prefLabel "car"@en ;
   skos:prefLabel "wagen"@nl ;
 .
@@ -6535,6 +6777,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "vaarwegnode"@nl ;
   skos:prefLabel "waterway node"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4900>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "fysieke eenheid van elektrische lading. Een Coulomb is gedefinieerd in termen van ampère en seconden. 1 C is gelijk aan 1 As (ampère-seconde), de hoeveelheid lading die vervoerd wordt door een elektrische stroom van 1 ampère gedurende 1 seconde."@nl ;
+  skos:prefLabel "coulomb"@en ;
+  skos:prefLabel "coulomb"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4902>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2131> ;
@@ -6556,6 +6809,24 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "volume"@en ;
   skos:prefLabel "volume"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4905>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:prefLabel "square meter"@en ;
+  skos:prefLabel "vierkante meter"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4906>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:prefLabel "cubic meter"@en ;
+  skos:prefLabel "kubieke meter"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4915>
   a skos:Concept ;
   dct:references "NEN-EN 15804" ;
@@ -6571,6 +6842,15 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "force"@en ;
   skos:prefLabel "kracht"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4919>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1318> ;
+  skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:prefLabel "newton"@en ;
+  skos:prefLabel "newton"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4927>
   a skos:Concept ;
