@@ -19,7 +19,7 @@
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:altLabel "eis aan aspect"@nl ;
   skos:broader <http://www.rws.nl/abdl#DEF-3597> ;
-  skos:definition "Beschrijving van de eis aan een systeem (LSE2: product of dienst) aangaande een aspect."@nl ;
+  skos:definition "Beschrijving van de systeemeis aan een systeem (LSE2: product of dienst) aangaande een aspect."@nl ;
   skos:prefLabel "aspect requirement"@en ;
   skos:prefLabel "aspecteis"@nl ;
 .
@@ -107,20 +107,6 @@
   skos:prefLabel "interface requirement"@en ;
   skos:prefLabel "raakvlakeis"@nl ;
 .
-<http://www.rws.nl/abdl#DEF-3597>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
-  skos:definition "altDef: Eis die wordt gesteld wordt aan het systeem. (bron: WWB0022)"@nl ;
-  skos:definition "altDef: Eis die wordt gesteld wordt aan het systeem. (bron: WWB0058)"@nl ;
-  skos:definition "prefDef: Eis die wordt gesteld wordt aan het systeem. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
-  skos:narrower <http://www.rws.nl/abdl#DEF-0224> ;
-  skos:narrower <http://www.rws.nl/abdl#DEF-1303> ;
-  skos:narrower <http://www.rws.nl/abdl#DEF-3027> ;
-  skos:prefLabel "systeemeis"@nl ;
-  skos:prefLabel "system requirement"@en ;
-.
 <http://www.rws.nl/abdl#DEF-5346>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -131,6 +117,17 @@
   skos:definition "aspecteis die wordt gesteld aan de kans van falen van een systeem (dijkdoorsnede) (faalkanseis)."@nl ;
   skos:prefLabel "betrouwbaarheidseis"@nl ;
   skos:prefLabel "reliability requirement"@en ;
+.
+<http://www.rws.nl/abdl#DEF-5503>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2917> ;
+  skos:definition "vaste, weldoordachte procedure (werkwijze) om een bepaald doel te bereiken"@nl ;
+  skos:prefLabel "method"@en ;
+  skos:prefLabel "methode"@nl ;
 .
 <http://www.rws.nl/abdl#DEF-6723>
   a skos:Concept ;
@@ -291,6 +288,13 @@
   skos:prefLabel "achterplaat"@nl ;
   skos:prefLabel "anchor plate"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0080>
+  a skos:Concept ;
+  skos:broader <https://w3id.org/nen2660/term#FunctionalEntity> ;
+  skos:definition "prefDef: Actieve rol van een activiteit, die het resultaat van een transformatie van objecten specificeert in termen van input en output. (bron: NEN 2660-1 (Ontw))"@nl ;
+  skos:prefLabel "actieve activiteit"@nl ;
+  skos:prefLabel "active activity"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0089>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4382> ;
@@ -304,7 +308,7 @@
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Informatiemodel Grootschalige topografie" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#3558a562-2e31-4599-ad0e-8658c0bca110> ;
+  skos:broader cbnl-term:a37351e0-1413-4f66-8dec-d94ad79c1a8c ;
   skos:definition "Passieve functionele entiteit die een niet tastbaar begrensd grondoppervlak vormt, dat als eenheid geldt voor bestuurlijke verantwoordelijkheid voor bedrijfsvoering waarbinnen een specifieke rechtsverhouding te onderscheiden is of waarvoor een specifieke functie of bestemming geldt."@nl ;
   skos:prefLabel "administratief gebied"@nl ;
   skos:prefLabel "administrative area"@en ;
@@ -415,6 +419,18 @@
   skos:prefLabel "afvoer"@nl ;
   skos:prefLabel "drain"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0143>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "non-conformiteit"@nl ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4006> ;
+  skos:definition "verificatie, waarbij de mogelijke of feitelijke werkelijkheid niet voldoet aan de verzameling van gespecificeerde eisen."@nl ;
+  skos:prefLabel "afwijking"@nl ;
+  skos:prefLabel "nonconformity"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0165>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -477,6 +493,18 @@
   skos:prefLabel "aquaduct"@en ;
   skos:prefLabel "aquaduct"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0199>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Design & Engineering Methodology for Organizations" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "meta-ontwerp"@nl ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#4913e1b8-90f7-4fab-8618-b33a40441cb0> ;
+  skos:definition "Conceptually, architecture is a set of normative restrictions of design freedom. Operationally, an architecture is a coherent and consistent set of design principles. It regards one or more system kinds and one or more design domains, and it addresses one or more areas of concern."@en ;
+  skos:prefLabel "architecture"@en ;
+  skos:prefLabel "architectuur"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0206>
   a skos:Concept ;
   skos:prefLabel "arm"@nl ;
@@ -493,6 +521,9 @@
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0212>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:comment "none" ;
   skos:altLabel "bitumineus mengsel"@nl ;
   skos:altLabel "bituminous mixture"@en ;
   skos:broader <https://w3id.org/nen2660/term#Mixture> ;
@@ -528,7 +559,12 @@
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0226>
   a skos:Concept ;
-  skos:definition "zaak, ding of entiteit met potentiële of daadwerkelijke waarde voor een organisatie (3.1.13) (bron: NEN-ISO 55000)"@nl ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN-ISO 55000" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader cbnl-term:a37351e0-1413-4f66-8dec-d94ad79c1a8c ;
+  skos:definition "(zaak, ding of) actieve functionele entiteit met potentiële of daadwerkelijke waarde voor een organisatie (3.1.13)."@nl ;
   skos:prefLabel "asset"@en ;
   skos:prefLabel "asset"@nl ;
 .
@@ -667,6 +703,17 @@
   a skos:Concept ;
   skos:prefLabel "beheerobject overstijgende voorziening"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0385>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Kader Kansen- en risicomanagement" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2225> ;
+  skos:definition "maatregel gericht op het voorkomen van het optreden van een onzekere gebeurtenis of het beperken van de consequenties van een onzekere gebeurtenis."@nl ;
+  skos:prefLabel "beheersmaatregel"@nl ;
+  skos:prefLabel "control measure"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0390>
   a skos:Concept ;
   skos:prefLabel "bekabeling"@nl ;
@@ -695,6 +742,19 @@
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0406>
   a skos:Concept ;
   skos:prefLabel "beluchtingstank"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0422>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "beperking, randvoorwaarde, restrictie"@nl ;
+  skos:altLabel "constraint, limitation, prerequisite, restriction"@en ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4935> ;
+  skos:definition "regel over een vereiste werkelijkheid die een randvoorwaarde vormt bij het bereiken van een doel."@nl ;
+  skos:prefLabel "beperkingsregel"@nl ;
+  skos:prefLabel "constraint rule"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0428>
   a skos:Concept ;
@@ -732,6 +792,16 @@
   skos:prefLabel "beschermlaag"@nl ;
   skos:prefLabel "protective coating"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0459>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2084" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0483> ;
+  skos:definition "bestuurlijk besluit van een persoon of organisatie die van specifieke strekking is, inhoudende een publiek- of privaatrechtelijke rechtshandeling. Hieronder vallen ook verlening, vernietiging, vaststelling en intrekking beschikkingen."@nl ;
+  skos:prefLabel "beschikking"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0460>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1528> ;
@@ -739,11 +809,37 @@
   skos:prefLabel "beschoeiing"@nl ;
   skos:prefLabel "shoring"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0464>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "besluit"@nl ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856> ;
+  skos:definition "bewering dat een selectie vormt van een voorstelbare werkelijkheid (voorkeursvariant) uit een aantal mogelijke werkelijkheden (varianten) op basis van een verzameling van criteria."@nl ;
+  skos:prefLabel "beslissing"@nl ;
+  skos:prefLabel "decision"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0483>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Algemene wet bestuursrecht" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0464> ;
+  skos:definition "Schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling."@nl ;
+  skos:prefLabel "bestuurlijk besluit"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0494>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:comment "none" ;
   skos:altLabel "beton"@nl ;
   skos:broader <https://w3id.org/nen2660/term#Mixture> ;
-  skos:definition "Verhard mengsel van cement, water, toeslagmaterialen en eventueel hulp- en/of vulstoffen. (bron: CROW 156)"@nl ;
+  skos:definition "Verhard mengsel van cement, water, toeslagmaterialen en eventueel hulp- en/of vulstoffen."@nl ;
   skos:prefLabel "cementbeton"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0497>
@@ -946,6 +1042,8 @@
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0620>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Bouwbesluit 2012" ;
   rdfs:comment "none" ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0619> ;
@@ -1031,8 +1129,12 @@
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0660>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:comment "none" ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2029> ;
-  skos:definition "Kunstwerk over een waterweg, watergang of waterloop, bestaande uit een brugdek gesteund door pijlers en/of landhoofden. (bron: CROW 156)"@nl ;
+  skos:definition "Kunstwerk over een waterweg, watergang of waterloop, bestaande uit een brugdek gesteund door pijlers en/of landhoofden."@nl ;
   skos:prefLabel "bridge"@en ;
   skos:prefLabel "brug"@nl ;
 .
@@ -1219,6 +1321,18 @@
   skos:prefLabel "conditiemeting"@nl ;
   skos:prefLabel "condition assessment"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0809>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4006> ;
+  skos:definition "verificatie, waarbij de mogelijke of feitelijke werkelijkheid voldoet aan de verzameling van gespecificeerde eisen."@nl ;
+  skos:prefLabel "conformiteit"@nl ;
+  skos:prefLabel "conformity"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0811>
   a skos:Concept ;
   skos:prefLabel "connector"@nl ;
@@ -1239,6 +1353,28 @@
   skos:definition "Punt of gebied waar twee rijbanen ten behoeve van verkeer met dezelfde rijrichting onder een kleine hoek samenkomen en overgaan in een rijbaan. (bron: CROW 156)"@nl ;
   skos:prefLabel "convergentiepunt"@nl ;
   skos:prefLabel "point of convergence"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0846>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Kader Kansen- en risicomanagement" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0385> ;
+  skos:definition "beheersmaatregel die wordt uitgevoerd na het optreden van een onzekere gebeurtenis met het doel de gevolgen te verminderen."@nl ;
+  skos:prefLabel "correctieve maatregel"@nl ;
+  skos:prefLabel "corrective action"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0848>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "UIT 68" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0385> ;
+  skos:definition "beheersmaatregel om de oorzaak van een afwijking (3.19) weg te nemen en om herhaling te voorkomen."@nl ;
+  skos:prefLabel "corrective action"@en ;
+  skos:prefLabel "corrigerende maatregel"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0849>
   a skos:Concept ;
@@ -1687,6 +1823,8 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "UIT 68" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt en subtypen aansluiten." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856> ;
@@ -1835,7 +1973,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1288>
   a skos:Concept ;
-  skos:definition "Activiteit waarvan de succesvolle uitvoering bijdraagt aan het bereiken van een doelstelling. (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Sjabloon Systeemspecificatie" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0080> ;
+  skos:definition "actieve activiteit (gedrag) (handeling, actie, werk) van een persoon, groep van personen (organisatie) of van een systeem richting een of meerdere (context)objecten. Een functie kan worden uigedrukt in een transformatie (omzetting, verandering) van een of meerdere inputs in een of meerdere outputs."@nl ;
   skos:prefLabel "functie"@nl ;
   skos:prefLabel "function"@en ;
 .
@@ -2581,7 +2724,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Aquo Lex en Objectencatalogus" ;
   rdfs:comment "Definitie herschreven zodat Discreet Object genoemd wordt en 'verbonden' toegevoegd." ;
-  rdfs:comment "is een apparaat dan niet een installatiedeel als je naar de definitie kijkt?" ;
+  rdfs:comment "volgens de definitie is een apparaat dan een installatiedeel." ;
   skos:broader <https://w3id.org/nen2660/term#DiscreteObject> ;
   skos:definition "Discreet object dat een geheel van verbonden apparaten vormt voor een bepaald doel."@nl ;
   skos:prefLabel "installatie"@nl ;
@@ -2591,6 +2734,16 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "installatiekabel"@nl ;
   skos:prefLabel "installation cable"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1802>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Combinatie LTS-1.10 en Jaap Bakker - persoonlijke communicatie" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2832> ;
+  skos:definition "Plan dat beschrijft hoe de continuïteit van een object wordt gewaarborgd (met behulp van beheer en onderhoud)."@nl ;
+  skos:prefLabel "conservation plan"@en ;
+  skos:prefLabel "instandhoudingsplan"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1805>
   a skos:Concept ;
@@ -2849,6 +3002,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1942>
   a skos:Concept ;
   skos:prefLabel "kist"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1947>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3435> ;
+  skos:definition "specificatie (document) dat de klanteisen specificeert in termen van probleemdefinitie, projectdoelstellingen, system of interest en bijbehorende eisen en wensen per klant."@nl ;
+  skos:prefLabel "customer requirements specification"@en ;
+  skos:prefLabel "klanteisenspecificatie"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1952>
   a skos:Concept ;
@@ -3279,7 +3443,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2225>
   a skos:Concept ;
-  skos:definition "Activiteit die moet worden uitgevoerd om een doelstelling te bereiken. (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Combinatie van Wikipedia, de vrije encyclopedie (NL) en Begrippenkader Bedrijfsvoering - Programmering" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0080> ;
+  skos:definition "actieve activiteit (ingreep) die moet worden uitgevoerd om een doelstelling te bereiken."@nl ;
   skos:prefLabel "maatregel"@nl ;
   skos:prefLabel "measure"@en ;
 .
@@ -3446,10 +3615,14 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2310>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:altLabel "measurement process"@en ;
   skos:altLabel "meetproces"@nl ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4736> ;
-  skos:definition "Kwantitatieve bewering over de werkelijkheid met een bepaald waarheidsgehalte, die het resultaat is van een meetproces. (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:definition "observatie over de werkelijkheid met een bepaald waarheidsgehalte, die het resultaat is van een meetproces."@nl ;
   skos:prefLabel "measurement"@en ;
   skos:prefLabel "meting"@nl ;
 .
@@ -3548,8 +3721,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2447>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://w3id.org/nen2660/term#Mixture> ;
-  skos:definition "Hydraulisch materiaal, ten dele of in hoofdzaak bestaande uit (fijn) gemalen cementklinker, waaraan gewoonlijk een geringe hoeveelheid gips of anhydriet is toegevoegd als bindtijdregelaar. (bron: CROW 156)"@nl ;
+  skos:definition "Hydraulisch mengsel (materiaal), ten dele of in hoofdzaak bestaande uit (fijn) gemalen cementklinker, waaraan gewoonlijk een geringe hoeveelheid gips of anhydriet is toegevoegd als bindtijdregelaar."@nl ;
   skos:prefLabel "cement"@en ;
   skos:prefLabel "cement"@nl ;
 .
@@ -3591,6 +3768,8 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2467>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Aanbestedingsreglement Werken 2016" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4935> ;
@@ -3602,6 +3781,16 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "object vegetation"@en ;
   skos:prefLabel "objectbegroeiing"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2488>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Prestatiesturing in kort bestek" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3435> ;
+  skos:definition "specificatie per object-categorie van de LCC-optimale onderhoudsstrategieën voor het halen van verschillende prestatieniveaus."@nl ;
+  skos:prefLabel "objectbeheerregime"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2494>
   a skos:Concept ;
@@ -3743,6 +3932,28 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2586>
   a skos:Concept ;
   skos:prefLabel "ontvangst- en verdeelwerk"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2591>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "ISO-IEC 15288" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2832> ;
+  skos:definition "plan that is a result of the design process (4.1.15)."@en ;
+  skos:prefLabel "design"@en ;
+  skos:prefLabel "ontwerp"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2600>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Sjabloon Systeemspecificatie" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0422> ;
+  skos:definition "beperkingsregel op de oplossingsruimte die volgt uit bepaalde ontwerpkeuzes, die vooruit lopen op het ontwerp."@nl ;
+  skos:prefLabel "design constraint"@en ;
+  skos:prefLabel "ontwerprandvoorwaarde"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2609>
   a skos:Concept ;
@@ -4091,6 +4302,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "plafondconstructie"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2832>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856> ;
+  skos:definition "Bewering over een mogelijke werkelijkheid, gekoppeld aan specifieke momenten in de tijd, en de handelingen en middelen die nodig zijn om deze werkelijkheid te realiseren."@nl ;
+  skos:prefLabel "plan"@en ;
+  skos:prefLabel "plan"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2844>
   a skos:Concept ;
   skos:definition "Meercellig organisme dat door fotosynthese in staat is uit anorganische stoffen organische op te bouwen. De cellen van een plant zijn voorzien van een celwand en celkern. Sommige cellen bezitten bladgroenkorrels. Planten hebben geen gespecialiseerde zintuigen, noch kunnen ze zich bewegen. (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
@@ -4147,12 +4369,46 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "emergency telephone"@en ;
   skos:prefLabel "praatpaal"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2880>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN-ISO 55000" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0385> ;
+  skos:definition "beheersmaatregel voor het monitoren van de conditie van een asset (3.2.1) en het voorspellen van de noodzaak van preventieve maatregelen (3.3.4) of corrigerende maatregelen (3.4.1)."@nl ;
+  skos:prefLabel "predictieve maatregel"@nl ;
+  skos:prefLabel "predictive action"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2890>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5282> ;
   skos:definition "Proces van het verzamelen, analyseren en / of rapporteren van informatie over de prestaties van een individu, groep, organisatie, systeem of component. Dit resulteert in een meting van een prestatie-indicator. (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
   skos:prefLabel "performance measurement"@en ;
   skos:prefLabel "prestatiemeting"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2895>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Kader Kansen- en risicomanagement" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0385> ;
+  skos:definition "beheersmaatregel die wordt uitgevoerd voorafgaand aan het optreden van een onzekere gebeurtenis met het doel de kans van optreden en/of de gevolgen te verminderen en/of oorzaken weg te nemen."@nl ;
+  skos:prefLabel "preventieve maatregel"@nl ;
+  skos:prefLabel "preventive action"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2917>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "ISO 9000" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://w3id.org/nen2660/term#InformationObject> ;
+  skos:definition "A declared way of formally conducting a customary course of action. (bron: NVN-ISO/IEC TS 33060)"@en ;
+  skos:definition "bewering dat een gespecificeerde wijze vormt van het uitvoeren van een activiteit of een proces (3.4.1)"@nl ;
+  skos:prefLabel "procedure"@en ;
+  skos:prefLabel "procedure"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2921>
   a skos:Concept ;
@@ -4162,7 +4418,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   dct:references "ISO 9000" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#3558a562-2e31-4599-ad0e-8658c0bca110> ;
+  skos:broader cbnl-term:a37351e0-1413-4f66-8dec-d94ad79c1a8c ;
   skos:definition "Passieve functionele entiteit die de output vormt van een organisatie en geproduceerd kan worden zonder dat er een uitwisseling plaatsvindt tussen de organisatie en de klant."@nl ;
   skos:prefLabel "product"@en ;
   skos:prefLabel "product"@nl ;
@@ -4200,8 +4456,8 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:broader <https://w3id.org/nen2660/term#Connection> ;
-  skos:definition "Onderlinge connectie (verbinding) (associatie, drager, kanaal) tussen twee systeem(delen), waarlangs een (soms dynamische) wisselwerking of interactie tussen die elementen kan plaatsvinden."@nl ;
+  skos:broader <https://w3id.org/nen2660/term#Interface> ;
+  skos:definition "Onderlinge interface (verbinding) (associatie, drager, kanaal) tussen twee systeem(delen), waarlangs een (soms dynamische) wisselwerking of interactie tussen die elementen kan plaatsvinden."@nl ;
   skos:inScheme <http://www.rws.nl/abdl#ONT-0000> ;
   skos:prefLabel "raakvlak"@nl ;
 .
@@ -4467,6 +4723,19 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "rotonde"@nl ;
   skos:prefLabel "roundabout"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3250>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2660-1" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "ruimte"@nl ;
+  skos:altLabel "space"@en ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4954> ;
+  skos:definition "euclidische ruimte (wiskundig concept), dat een afbakening in een wiskundige (euclidische) ruimte vormt. Deze ruimte kan worden afgebeeld op de concrete (fysieke) ruimte, die we in de werkelijkheid ervaren."@nl ;
+  skos:prefLabel "ruimtelijk gebied"@nl ;
+  skos:prefLabel "spatial region"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3256>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2179> ;
@@ -4670,6 +4939,18 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Installatiedeel dat een of meer fysische grootheden in zijn waarnemingsgebied kan waarnemen en omzet in een (elektrisch) signaal. (bron: NPR 4768)"@nl ;
   skos:prefLabel "sensor"@en ;
   skos:prefLabel "sensor"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3357>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "ISO 9000" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "er staat output in de originele definitie en dat is een passieve functionele entiteit." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0080> ;
+  skos:definition "actieve activiteit (output) (3.7.5) van een organisatie (3.2.1) waarbij er noodzakelijkerwijs ten minste één activiteit wordt uitgevoerd tussen de organisatie en de klant (3.2.4)."@nl ;
+  skos:prefLabel "dienst"@nl ;
+  skos:prefLabel "service"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3367>
   a skos:Concept ;
@@ -4937,6 +5218,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "beach groyne"@en ;
   skos:prefLabel "strandhoofd"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3542>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "ISO 9000" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2832> ;
+  skos:definition "plan om een langetermijn- of algehele doelstelling (3.7.1) te bereiken."@nl ;
+  skos:prefLabel "strategie"@nl ;
+  skos:prefLabel "strategy"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3548>
   a skos:Concept ;
   skos:prefLabel "strekdam"@nl ;
@@ -4996,6 +5288,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Een fysiek object dat een samenhangend geheel van (fysieke) onderdelen dat is bedoeld om een bepaalde functie te vervullen."@nl ;
   skos:prefLabel "systeem"@nl ;
   skos:prefLabel "system"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3604>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN-ISO/IEC/IEEE 29148" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3435> ;
+  skos:definition "structured specification (3.1.19) [functions, performance, design constraints (3.1.7), and other attributes (3.1.2)] for the system and its operational environments and external interfaces."@en ;
+  skos:prefLabel "systeemspecificatie"@nl ;
+  skos:prefLabel "system specification"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3609>
   a skos:Concept ;
@@ -5077,6 +5380,18 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "temperature"@en ;
   skos:prefLabel "temperatuur"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3681>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2660-1" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "tijdsperiode"@nl ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4954> ;
+  skos:definition "euclidische ruimte (wiskundig concept), dat een afbakening in een wiskundige (euclidische) ruimte vormt. Deze ruimte kan worden afgebeeld op de concrete (fysieke) tijd, die we in de werkelijkheid ervaren."@nl ;
+  skos:prefLabel "temporal region"@en ;
+  skos:prefLabel "temporeel gebied"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3690>
   a skos:Concept ;
@@ -5327,12 +5642,14 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:altLabel "propositie"@nl ;
   skos:altLabel "proposition"@en ;
   skos:broader <https://w3id.org/nen2660/term#InformationObject> ;
-  skos:definition "altDef: Definite or clear expression of something in speech or writing (bron: Systems Engineering uitwisselingsstandaard voor de Nederlandse bouwketen (concept))"@en ;
-  skos:definition "altDef: betekenisvolle declaratieve zin die of waar of onwaar kan zijn (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
-  skos:definition "prefDef: Bewering over een feitelijke werkelijkheid of voorstelbare werkelijkheden, die het resultaat is van een denkproces. (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:definition "informatie object over een feitelijke werkelijkheid of voorstelbare werkelijkheden, die het resultaat is van een denkproces."@nl ;
   skos:prefLabel "bewering"@nl ;
   skos:prefLabel "statement"@en ;
 .
@@ -5357,8 +5674,8 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Definitie herschreven t.b.v. de taxonomie." ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#3558a562-2e31-4599-ad0e-8658c0bca110> ;
-  skos:definition "Passieve functionele entiteit van een chemische stof in een bepaalde context."@nl ;
+  skos:broader cbnl-term:a37351e0-1413-4f66-8dec-d94ad79c1a8c ;
+  skos:definition "actieve functionele entiteit (rol of toepassing) van een chemische stof in een bepaalde context."@nl ;
   skos:prefLabel "materiaal"@nl ;
   skos:prefLabel "material"@en ;
 .
@@ -5381,6 +5698,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4754> ;
   skos:definition "Met behulp van markeringsvoorwerpen aangeven van de vaargeul, dan wel obstakels of gevaren in de vaargeul. Markeringsvoorwerpen kunnen boeien en bakens zijn (bron: Aquo Lex en Objectencatalogus)"@nl ;
   skos:prefLabel "vaarwegmarkering"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3904>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4732> ;
+  skos:definition "evaluatie van een mogelijke of feitelijke werkelijkheid op basis van een verzameling van eisen voor een specifiek beoogd(e) gebruik of toepassing."@nl ;
+  skos:prefLabel "validatie"@nl ;
+  skos:prefLabel "validation"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3906>
   a skos:Concept ;
@@ -5465,6 +5793,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Laag van de verharding (bron: CROW 156)"@nl ;
   skos:prefLabel "paving layer"@en ;
   skos:prefLabel "verhardingslaag"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4006>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4732> ;
+  skos:definition "Gewogen waardering van een mogelijke of feitelijke werkelijkheid op basis van een verzameling van gespecificeerde eisen."@nl ;
+  skos:prefLabel "verificatie"@nl ;
+  skos:prefLabel "verification"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4021>
   a skos:Concept ;
@@ -5559,6 +5898,31 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Geheel van hard- en software in een installatie dat verantwoordelijk is voor al het functionele gedrag, aansturing van actuatoren en sensoren en communicatie met externe systemen. (bron: NPR 4768)"@nl ;
   skos:prefLabel "processing unit"@en ;
   skos:prefLabel "verwerkingseenheid"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4105>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NVN-ISO/IEC TS 33060" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856> ;
+  skos:definition "statement that initiates a defined course of action or change in order to fulfil a need."@en ;
+  skos:prefLabel "request"@en ;
+  skos:prefLabel "verzoek"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4106>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Information Technology Infrastructure Library - Glossary of Terms English - Dutch" ;
+  rdfs:comment "none" ;
+  skos:altLabel "RFC"@en ;
+  skos:altLabel "VTW"@nl ;
+  skos:altLabel "voorstel tot wijziging, wijzigingsverzoek, wijzigingsvoorstel"@nl ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4105> ;
+  skos:definition "Formeel verzoek om een wijziging door te voeren (op één of meer gespecificeerde Configuratie Items). Een wijzigingsverzoek bevat details van de voorgestelde wijziging, en kan op papier worden geregistreerd of elektronisch."@nl ;
+  skos:prefLabel "request for change"@en ;
+  skos:prefLabel "verzoek tot wijziging"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4113>
   a skos:Concept ;
@@ -5723,6 +6087,62 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4216>
   a skos:Concept ;
   skos:prefLabel "voortstuwer"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4225>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Uniforme Administratieve Voorwaarden voor geïntegreerde contractvormen 2005" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0977> ;
+  skos:definition "het als zodanig in de Basisovereenkomst aangemerkte contractdocument dat door of namens de Opdrachtgever is vervaardigd, op basis waarvan de Opdrachtnemer zijn Aanbieding heeft opgesteld en ingediend."@nl ;
+  skos:prefLabel "tender specification"@en ;
+  skos:prefLabel "vraagspecificatie"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4226>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Vraagspecificatie Eisen DenC (oud)" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4225> ;
+  skos:definition "Contractdocument, onderdeel van een DC overeenkomst, waarin de systeemeisen zijn opgenomen."@nl ;
+  skos:prefLabel "vraagspecificatie eisendeel (dc)"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4227>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Vraagspecificatie Eisen EenC (oud)" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4225> ;
+  skos:definition "Contractdocument, onderdeel van een EC overeenkomst, waarin de systeemeisen zijn opgenomen."@nl ;
+  skos:prefLabel "vraagspecificatie eisendeel (ec)"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4228>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Vraagspecificatie Algemeen PRC (oud)" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4225> ;
+  skos:definition "Contractdocument, onderdeel van een PRC overeenkomst, waarin de systeemeisen zijn opgenomen."@nl ;
+  skos:prefLabel "vraagspecificatie eisendeel (prc)"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4229>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Vraagspecificatie Algemeen DenC (oud)" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4225> ;
+  skos:definition "Contractdocument, onderdeel van een DC overeenkomst, waarin de proceseisen zijn opgenomen."@nl ;
+  skos:prefLabel "vraagspecificatie procesdeel (dc)"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4230>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Vraagspecificatie Algemeen PRC (oud)" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4225> ;
+  skos:definition "Contractdocument, onderdeel van een PRC overeenkomst, waarin de proceseisen zijn opgenomen."@nl ;
+  skos:prefLabel "vraagspecificatie procesdeel (prc)"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4243>
   a skos:Concept ;
@@ -5965,6 +6385,8 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4407>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "NEN 2084" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4935> ;
@@ -6044,8 +6466,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4473>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://w3id.org/nen2660/term#Mixture> ;
-  skos:definition "Grondsoort van grotendeels minerale deeltjes, waarvan minimaal 50 massaprocent een korrelgrootte heeft tussen 63 micrometer en 2 mm, en maximaal 8 massaprocent een korrelgrootte heeft kleiner dan 2 micrometer. (bron: CROW 156)"@nl ;
+  skos:definition "mengsel (grondsoort) van grotendeels minerale deeltjes, waarvan minimaal 50 massaprocent een korrelgrootte heeft tussen 63 micrometer en 2 mm, en maximaal 8 massaprocent een korrelgrootte heeft kleiner dan 2 micrometer."@nl ;
   skos:prefLabel "sand"@en ;
   skos:prefLabel "zand"@nl ;
 .
@@ -6146,6 +6572,19 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "hoeveelheid materie die een gelijke chemische samenstelling en herkenbare uniforme en isotrope eigenschappen heeft."@nl ;
   skos:prefLabel "pure substance"@en ;
   skos:prefLabel "zuivere stof"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4531>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "lineaire ruimte"@nl ;
+  skos:altLabel "linear space"@en ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4945> ;
+  skos:definition "mathematical space (collection of objects called) defined by vectors, which may be added together and multiplied (\"scaled\") by numbers, called scalars."@en ;
+  skos:prefLabel "vector space"@en ;
+  skos:prefLabel "vectorruimte"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4550>
   a skos:Concept ;
@@ -6442,6 +6881,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "openbaar lichaam"@nl ;
   skos:prefLabel "public body"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4652>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Aanbestedingswet 2012" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2917> ;
+  skos:definition "procedure van de aanbesteding. Hierbij maakt een opdrachtgever een aanbesteding bekend door middel van een officiële aankondiging. De opdrachtgever vraagt eventueel geïnteresseerde bedrijven om zich in te schrijven op de aanbesteding. Dit gebeurt door middel van het indienen van een offerte (vrij naar bron)."@nl ;
+  skos:prefLabel "aanbestedingsprocedure"@nl ;
+  skos:prefLabel "procurement procedure"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4661>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -6530,13 +6980,49 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "bij notariële akte als onderlinge waarborgmaatschappij opgerichte privaatrechtelijke organisatie (vereniging). Zij moet zich blijkens de statuten ten doel stellen met haar leden verzekerings-overeenkomsten te sluiten, een en ander in het verzekeringsbedrijf dat zij te dien einde ten behoeve van haar leden uitoefent."@nl ;
   skos:prefLabel "onderlinge waarborgmaatschappij"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4732>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856> ;
+  skos:definition "bewering dat een gewogen waardering vormt van een feitelijke werkelijkheid of aantal voorstelbare werkelijkheden op basis van een verzameling van criteria."@nl ;
+  skos:prefLabel "evaluatie"@nl ;
+  skos:prefLabel "evaluation"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4733>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4732> ;
+  skos:definition "geordende evaluatie van een aantal mogelijke werkelijkheden op basis van een verzameling van criteria."@nl ;
+  skos:prefLabel "ordening"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4736>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "none" ;
   skos:altLabel "waarneming"@nl ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856> ;
-  skos:definition "Kwalitatieve bewering over de werkelijkheid met een bepaald waarheidsgehalte, die het resultaat is van een waarnemingsproces. (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:definition "Kwalitatieve bewering over de werkelijkheid met een bepaald waarheidsgehalte, die het resultaat is van een waarnemingsproces."@nl ;
   skos:prefLabel "observatie"@nl ;
   skos:prefLabel "observation"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4741>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2084" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0483> ;
+  skos:definition "bestuurlijk besluit van een persoon of organisatie die van algemene strekking is, inhoudende een publiek- of privaatrechtelijke rechtshandeling."@nl ;
+  skos:prefLabel "besluit van algemene strekking"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4750>
   a skos:Concept ;
@@ -6868,11 +7354,60 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4935>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "none" ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3856> ;
   skos:definition "bewering over hoe de werkelijkheid eruit moet zien."@nl ;
   skos:prefLabel "regel"@nl ;
   skos:prefLabel "rule"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4945>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://w3id.org/nen2660/term#GeometricEntity> ;
+  skos:definition "GeometricEntity (set of mathematical objects), treated as points, and selected relationships between these points."@en ;
+  skos:prefLabel "mathematical space"@en ;
+  skos:prefLabel "wiskundige ruimte"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4952>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
+  rdfs:comment "none" ;
+  rdfs:comment "zwakke definitie, topologie wordt herhaald in de definitie." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4945> ;
+  skos:definition "mathematical space with a topology."@en ;
+  skos:prefLabel "topological space"@en ;
+  skos:prefLabel "topologische ruimte"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4953>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
+  rdfs:comment "none" ;
+  rdfs:comment "zwakke definitie, metrische wordt herhaald in de definitie." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4952> ;
+  skos:definition "a topological space with a metric."@en ;
+  skos:prefLabel "metric space"@en ;
+  skos:prefLabel "metrische ruimte"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4954>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4953> ;
+  skos:definition "a metric space with isometry."@en ;
+  skos:prefLabel "euclidean space"@en ;
+  skos:prefLabel "euclidische ruimte"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4988>
   a skos:Concept ;
@@ -6882,7 +7417,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4989>
   a skos:Concept ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#3558a562-2e31-4599-ad0e-8658c0bca110> ;
+  skos:broader cbnl-term:a37351e0-1413-4f66-8dec-d94ad79c1a8c ;
   skos:definition "Passieve functionele entiteit."@nl ;
   skos:prefLabel "economic area"@en ;
   skos:prefLabel "economisch gebied"@nl ;
@@ -6909,6 +7444,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "staat"@nl ;
   skos:prefLabel "state"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5057>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#4913e1b8-90f7-4fab-8618-b33a40441cb0> ;
+  skos:definition "set (verzameling) van concepten en relaties, die betrekking hebben op een bepaald wetenschappelijk gebied of vakgebied."@nl ;
+  skos:prefLabel "domain"@en ;
+  skos:prefLabel "domein"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5059>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0614> ;
@@ -6925,8 +7471,12 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5078>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN-EN-ISO 14688-1" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://w3id.org/nen2660/term#Mixture> ;
-  skos:definition "verzameling van minerale en/of organische materialen die handmatig in water kunnen worden gescheiden (bron: NEN-EN-ISO 14688-1)"@nl ;
+  skos:definition "mengsel (verzameling) van minerale en/of organische materialen die handmatig in water kunnen worden gescheiden."@nl ;
   skos:prefLabel "grond"@nl ;
   skos:prefLabel "soil"@en ;
 .
@@ -7008,6 +7558,17 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:prefLabel "gelijkvloers kruispunt"@nl ;
   skos:prefLabel "level crossroads"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5257>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4952> ;
+  skos:definition "a topological space that locally resembles Euclidean space near each point. More precisely, each point of an n-dimensional manifold has a neighborhood that is homeomorphic to the Euclidean space of dimension n."@en ;
+  skos:prefLabel "manifold"@en ;
+  skos:prefLabel "varieteit"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5281>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -7047,8 +7608,12 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c6685>
   a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   skos:broader <https://w3id.org/nen2660/term#Mixture> ;
-  skos:definition "Belangrijkste grondstof voor de productie van cement dat wordt vervaardigd uit kalk-, silicium-, aluminium- en ijzerhoudende stoffen. (bron: CROW 156)"@nl ;
+  skos:definition "Belangrijkst mengsel (grondstof) voor de productie van cement dat wordt vervaardigd uit kalk-, silicium-, aluminium- en ijzerhoudende stoffen."@nl ;
   skos:prefLabel "cement clinker"@en ;
   skos:prefLabel "cementklinker"@nl ;
 .
@@ -7066,10 +7631,25 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:prefLabel "lights"@en ;
   skos:prefLabel "verlichtingsinstallatie"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc3597>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Handreiking prestatiegestuurde risicoanalyses" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "Eis die wordt gesteld wordt aan het systeem."@nl ;
+  skos:narrower <http://www.rws.nl/abdl#DEF-0224> ;
+  skos:narrower <http://www.rws.nl/abdl#DEF-1303> ;
+  skos:narrower <http://www.rws.nl/abdl#DEF-3027> ;
+  skos:prefLabel "systeemeis"@nl ;
+  skos:prefLabel "system requirement"@en ;
+.
 cbnl-term:a37351e0-1413-4f66-8dec-d94ad79c1a8c
   a skos:Concept ;
   dct:references "NEN 2660-1" ;
   rdfs:comment "none" ;
+  skos:altLabel "functional role"@en ;
+  skos:altLabel "functionele rol"@nl ;
   skos:broader <https://w3id.org/nen2660/term#FunctionalEntity> ;
   skos:definition "Functionele entiteit met een actieve functie, die het resultaat van een uitvoering van processen specificeert in termen van input en output."@nl ;
   skos:prefLabel "actieve functionele entiteit"@nl ;
