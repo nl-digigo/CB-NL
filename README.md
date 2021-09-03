@@ -12,3 +12,5 @@ CBNL Skos viewer met sparql widget is te vinden via:
 https://connectedapps.nl/projects/cbnl/viewer/
 
 
+
+
