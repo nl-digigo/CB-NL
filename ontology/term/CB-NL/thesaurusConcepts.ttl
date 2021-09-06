@@ -11,135 +11,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.rws.nl/abdl#DEF-0224>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:altLabel "eis aan aspect"@nl ;
-  skos:broader <http://www.rws.nl/abdl#DEF-3597> ;
-  skos:definition "Beschrijving van de systeemeis aan een systeem (LSE2: product of dienst) aangaande een aspect."@nl ;
-  skos:prefLabel "aspect requirement"@en ;
-  skos:prefLabel "aspecteis"@nl ;
-.
-<http://www.rws.nl/abdl#DEF-0458>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "Richtlijnen Vaarwegen" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:broader <http://www.rws.nl/abdl#DEF-0224> ;
-  skos:definition "aspecteis die bepaalt of een object veilig bruikbaar, dus beschikbaar is. Voor het bepalen van de interventieniveau’s en beheermaatregelen is het van essentieel belang dat beschikbaarheidseisen worden gedefinieerd."@nl ;
-  skos:prefLabel "availability requirement"@en ;
-  skos:prefLabel "beschikbaarheidseis"@nl ;
-.
-<http://www.rws.nl/abdl#DEF-1303>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  skos:altLabel "eis aan functie"@nl ;
-  skos:broader <http://www.rws.nl/abdl#DEF-3597> ;
-  skos:definition "altDef: De beschrijving van een gewenste eigenschap aangaande een primaire functie van een product(object) of dienst. (bron: WWB0001)"@nl ;
-  skos:definition "altDef: Eeen primaire eis aan de functie. Deze worden per functie beschreven.  Er is in vervat wat het systeem moet kunnen, beschreven in kwantitatieve termen. Vaak heeft een functionele eis betrekking op de capaciteit die een systeem moet leveren bij het vervullen van de functie. (bron: Netwerkschakels in relatie tot prestatiemanagement)"@nl ;
-  skos:definition "altDef: Eis die de gewenste functionaliteit (functie) expliciteert. (bron: Vraagspecificatie Algemeen PRC (oud))"@nl ;
-  skos:definition "altDef: Eis, die aan de inrichting van een watersysteem of beheersobject gesteld wordt, om te voldoen aan de gebruiksfuncties ervan en in kwaliteitseisen (waaronder technische eisen) zijn te vertalen. (bron: Richtlijnen Vaarwegen)"@nl ;
-  skos:definition "altDef: Primaire eis die gesteld wordt aan de functie. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
-  skos:definition "prefDef: Eis die beschrijft welke functie het systeem moet vervullen, in kwalitatieve en/of kwantitatieve termen, inclusief de condities waaronder de functie moet worden vervuld. (bron: Sjabloon Systeemspecificatie)"@nl ;
-  skos:prefLabel "functional requirement"@en ;
-  skos:prefLabel "functionele eis"@nl ;
-.
-<http://www.rws.nl/abdl#DEF-1946>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:comment "Verzameling van behoeften duidt niet op een enkele eis, maar meerdere, zoals een specificatie of KES" ;
-  skos:altLabel "stakeholder requirement"@en ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
-  skos:definition "(Verzameling van behoeften en randvoorwaarden) Eis van de belanghebbenden (LSE2: klanten)."@nl ;
-  skos:prefLabel "customer requirement"@en ;
-  skos:prefLabel "klanteis"@nl ;
-.
-<http://www.rws.nl/abdl#DEF-2053>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "ISO 9000" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:broader <http://www.rws.nl/abdl#DEF-0224> ;
-  skos:definition "aspecteis (3.6.4) met betrekking tot kwaliteit (3.6.2)."@nl ;
-  skos:prefLabel "kwaliteitseis"@nl ;
-  skos:prefLabel "quality requirement"@en ;
-.
-<http://www.rws.nl/abdl#DEF-2236>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "RWS DBFM-hoofdovk" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:broader <http://www.rws.nl/abdl#DEF-2929> ;
-  skos:definition "proceseis die wordt gesteld aan een proces van een opdrachtnemer in de context van een DBFM contract."@nl ;
-  skos:prefLabel "managementeis"@nl ;
-.
-<http://www.rws.nl/abdl#DEF-2929>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "Vraagspecificatie Eisen DenC (oud)" ;
-  rdfs:comment "none" ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
-  skos:definition "Eis die wordt gesteld aan een proces van een opdrachtnemer."@nl ;
-  skos:narrower <http://www.rws.nl/abdl#DEF-2236> ;
-  skos:prefLabel "proceseis"@nl ;
-  skos:prefLabel "process requirement"@en ;
-.
-<http://www.rws.nl/abdl#DEF-3027>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  skos:altLabel "eis aan raakvlak"@nl ;
-  skos:broader <http://www.rws.nl/abdl#DEF-3597> ;
-  skos:definition "altDef: Eis aan een systeem die het resultaat is van een raakvlakkenanalyse. Een dergelijke analyse inventariseert de eisen die de omgeving van het systeem aan het systeem stelt. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
-  skos:definition "altDef: Eis die wordt gesteld aan het in samenhang functioneren tussen objecten of diensten op hun gemeenschappelijke grens. (bron: WWB0001)"@nl ;
-  skos:definition "prefDef: Eis die wordt gesteld aan een raakvlak tussen twee of meer objecten. (bron: AOA Begrippen- en Definitielijst)"@nl ;
-  skos:prefLabel "interface requirement"@en ;
-  skos:prefLabel "raakvlakeis"@nl ;
-.
-<http://www.rws.nl/abdl#DEF-5346>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "Regeling veiligheid primaire waterkeringen 2017" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt en veralgemeniseerd." ;
-  skos:broader <http://www.rws.nl/abdl#DEF-0224> ;
-  skos:definition "aspecteis die wordt gesteld aan de kans van falen van een systeem (dijkdoorsnede) (faalkanseis)."@nl ;
-  skos:prefLabel "betrouwbaarheidseis"@nl ;
-  skos:prefLabel "reliability requirement"@en ;
-.
-<http://www.rws.nl/abdl#DEF-5503>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "AOA Begrippen- en Definitielijst" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2917> ;
-  skos:definition "vaste, weldoordachte procedure (werkwijze) om een bepaald doel te bereiken"@nl ;
-  skos:prefLabel "method"@en ;
-  skos:prefLabel "methode"@nl ;
-.
-<http://www.rws.nl/abdl#DEF-6723>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "NEN-EN-ISO 19650-1" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:broader <http://www.rws.nl/abdl#DEF-0224> ;
-  skos:definition "aspect requirement for what, when, how and for whom information (3.3.1) is to be produced."@en ;
-  skos:prefLabel "informatie-eis"@nl ;
-  skos:prefLabel "information requirement"@en ;
-.
 <https://bimloket.nl/data/kernmodel/thesaurus#0704d29e-b00e-4746-915c-7a8fc8960de0>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -552,6 +423,18 @@
   skos:prefLabel "askoppeling"@nl ;
   skos:prefLabel "shaft coupling"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0224>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:altLabel "eis aan aspect"@nl ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "Beschrijving van de systeemeis aan een systeem (LSE2: product of dienst) aangaande een aspect."@nl ;
+  skos:prefLabel "aspect requirement"@en ;
+  skos:prefLabel "aspecteis"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0225>
   a skos:Concept ;
   skos:prefLabel "assenstelsel"@nl ;
@@ -791,6 +674,17 @@
   a skos:Concept ;
   skos:prefLabel "beschermlaag"@nl ;
   skos:prefLabel "protective coating"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0458>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Richtlijnen Vaarwegen" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0224> ;
+  skos:definition "aspecteis die bepaalt of een object veilig bruikbaar, dus beschikbaar is. Voor het bepalen van de interventieniveau’s en beheermaatregelen is het van essentieel belang dat beschikbaarheidseisen worden gedefinieerd."@nl ;
+  skos:prefLabel "availability requirement"@en ;
+  skos:prefLabel "beschikbaarheidseis"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0459>
   a skos:Concept ;
@@ -1316,6 +1210,7 @@
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "NEN 2660-1" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "een activiteit is een werkwoord, een bezigheid dat lager duurt." ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1793> ;
   skos:definition "Gestandaardiseerde inspectie (werkwijze) voor de opname van technische gebreken en de bepaling van de conditie van een bouwdeel."@nl ;
   skos:prefLabel "conditiemeting"@nl ;
@@ -1590,7 +1485,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0977>
   a skos:Concept ;
-  skos:broader <https://w3id.org/nen2660/term#SymbolicObject> ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3591> ;
   skos:definition "fixed and structured amount of information that can be managed and interchanged as a unit between users and systems (bron: ISO 21597-1)"@en ;
   skos:prefLabel "document"@en ;
   skos:prefLabel "document"@nl ;
@@ -1878,6 +1773,18 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "extensief gazon"@nl ;
   skos:prefLabel "extensive lawn"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1227>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Handreiking prestatiegestuurde risicoanalyses" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "het kan ook een verzameling van gebeurtenissen zijn!!" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3772> ;
+  skos:definition "transformatiegebeurtenis, of een verzameling gebeurtenissen, waardoor een systeem zijn functie verliest, c.q. niet meer kan vervullen (voldoet niet meer aan de functionele eis). Er wordt niet van falen van het systeem gesproken, indien het systeem zijn functie niet kan vervullen door geplande onderhoudswerkzaamheden of capaciteitsgebrek."@nl ;
+  skos:prefLabel "failure"@en ;
+  skos:prefLabel "falen"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1237>
   a skos:Concept ;
   skos:altLabel "FUP"@nl ;
@@ -1982,6 +1889,21 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "functie"@nl ;
   skos:prefLabel "function"@en ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1303>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:altLabel "eis aan functie"@nl ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "altDef: De beschrijving van een gewenste eigenschap aangaande een primaire functie van een product(object) of dienst. (bron: WWB0001)"@nl ;
+  skos:definition "altDef: Eeen primaire eis aan de functie. Deze worden per functie beschreven.  Er is in vervat wat het systeem moet kunnen, beschreven in kwantitatieve termen. Vaak heeft een functionele eis betrekking op de capaciteit die een systeem moet leveren bij het vervullen van de functie. (bron: Netwerkschakels in relatie tot prestatiemanagement)"@nl ;
+  skos:definition "altDef: Eis die de gewenste functionaliteit (functie) expliciteert. (bron: Vraagspecificatie Algemeen PRC (oud))"@nl ;
+  skos:definition "altDef: Eis, die aan de inrichting van een watersysteem of beheersobject gesteld wordt, om te voldoen aan de gebruiksfuncties ervan en in kwaliteitseisen (waaronder technische eisen) zijn te vertalen. (bron: Richtlijnen Vaarwegen)"@nl ;
+  skos:definition "altDef: Primaire eis die gesteld wordt aan de functie. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
+  skos:definition "prefDef: Eis die beschrijft welke functie het systeem moet vervullen, in kwalitatieve en/of kwantitatieve termen, inclusief de condities waaronder de functie moet worden vervuld. (bron: Sjabloon Systeemspecificatie)"@nl ;
+  skos:prefLabel "functional requirement"@en ;
+  skos:prefLabel "functionele eis"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1306>
   a skos:Concept ;
   skos:prefLabel "foundation"@en ;
@@ -2066,7 +1988,13 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1335>
   a skos:Concept ;
-  skos:definition "Concreet concept, dat een overgang vormt tussen twee opeenvolgende  toestanden van een entiteit. Een gebeurtenis wordt gegenereerd in een toestand, en activeert een actieve rol. (bron: NEN 2660-1 (Ontw))"@nl ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2660-1" ;
+  rdfs:comment "is dit niet beter: concreet concept dat plaatsvindt of voorvalt met of zonder motivatie of aanwijsbare oorzaak. Definitie is practisch eender met transformatiegebeurtenis." ;
+  rdfs:comment "none" ;
+  skos:broader <https://w3id.org/nen2660/term#ConcreteConcept> ;
+  skos:definition "concreet concept, dat een overgang vormt tussen twee opeenvolgende  toestanden van een entiteit. Een gebeurtenis wordt gegenereerd in een toestand, en activeert een actieve rol."@nl ;
   skos:prefLabel "event"@en ;
   skos:prefLabel "gebeurtenis"@nl ;
 .
@@ -3003,6 +2931,19 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "kist"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1946>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "Verzameling van behoeften duidt niet op een enkele eis, maar meerdere, zoals een specificatie of KES" ;
+  skos:altLabel "stakeholder requirement"@en ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "(Verzameling van behoeften en randvoorwaarden) Eis van de belanghebbenden (LSE2: klanten)."@nl ;
+  skos:prefLabel "customer requirement"@en ;
+  skos:prefLabel "klanteis"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1947>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -3219,6 +3160,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "mate waarin een geheel van inherente kenmerken (3.10.1) van een object (3.6.1) voldoet aan eisen (3.6.4) (bron: ISO 9000)"@nl ;
   skos:prefLabel "kwaliteit"@nl ;
   skos:prefLabel "quality"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2053>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "ISO 9000" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0224> ;
+  skos:definition "aspecteis (3.6.4) met betrekking tot kwaliteit (3.6.2)."@nl ;
+  skos:prefLabel "kwaliteitseis"@nl ;
+  skos:prefLabel "quality requirement"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2076>
   a skos:Concept ;
@@ -3465,6 +3417,16 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "engine"@en ;
   skos:prefLabel "machine"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2236>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "RWS DBFM-hoofdovk" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2929> ;
+  skos:definition "proceseis die wordt gesteld aan een proces van een opdrachtnemer in de context van een DBFM contract."@nl ;
+  skos:prefLabel "managementeis"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2242>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2122> ;
@@ -3566,17 +3528,6 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a skos:Concept ;
   skos:prefLabel "measurement system"@en ;
   skos:prefLabel "meetsysteem"@nl ;
-.
-<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2299>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:broader <https://w3id.org/nen2660/term#AamountOfMatter> ;
-  skos:definition "Combinatie van twee of meer verschillende hoeveelheden materie (zuivere stoffen) zonder dat daarbij de moleculen hun identiteit verliezen. Een mengsel wordt gekarakteriseerd door de moleculen die eraan deelnemen en de verhouding van hun hoeveelheden."@nl ;
-  skos:prefLabel "mengsel"@nl ;
-  skos:prefLabel "mixture"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2301>
   a skos:Concept ;
@@ -4410,9 +4361,42 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "procedure"@en ;
   skos:prefLabel "procedure"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2918>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://w3id.org/nen2660/term#ConcreteConcept> ;
+  skos:definition "altDef: A sequence of behaviors that achieves a specific result. (bron: Archimate specification)"@en ;
+  skos:definition "altDef: Een aaneengesloten reeks van activiteiten (inclusief beslissingen) die verricht worden om in een behoefte van een klant te kunnen voorzien gestart vanuit een trigger en ondersteund met informatie. (bron: LTS-1.10)"@nl ;
+  skos:definition "altDef: Een gestructureerde verzameling activiteiten die zijn ontworpen om een bepaalde doelstelling te bereiken. Een proces gebruikt één of meer inputs en vormt die om tot gedefinieerde outputs. (bron: PRINCE2 - Glossary of Terms English - Dutch)"@nl ;
+  skos:definition "altDef: Een set van opeenvolgende en samenhangende activiteiten gericht op het tot stand brengen van een (tussen)product of dienst. In CMMI betekent dit het in de praktijk uitvoeren van de specifieke en generieke praktijken. (bron: De kleine CMMI voor Acquisitie, Cannegieter et al (boek))"@nl ;
+  skos:definition "altDef: Sequence of interdependent and linked procedures activities which consume one or more resources to convert inputs into outputs. (bron: Conceptenbibliotheek Gebouwde Omgeving (EN))"@en ;
+  skos:definition "altDef: een activiteit, dan wel een geheel van samenhangende of elkaar beÃ¯nvloedende activiteiten, uitgevoerd door een of meer onderdelen van de zuiveringsinfrastructuur/het kunstwerk. (bron: Aquo Lex en Objectencatalogus)"@nl ;
+  skos:definition "altDef: geheel van samenhangende of elkaar beïnvloedende activiteiten dat input gebruikt om een beoogd resultaat te leveren (bron: ISO 9000)"@nl ;
+  skos:definition "altDef: geheel van samenhangende of elkaar beïnvloedende activiteiten dat input gebruikt om een beoogd resultaat te leveren (bron: Leidraad voor Systems Engineering (SE) in de GWW sector)"@nl ;
+  skos:definition "altDef: geheel van samenhangende of elkaar beïnvloedende activiteiten dat input gebruikt om een beoogd resultaat te leveren (bron: NEN-ISO 55000)"@nl ;
+  skos:definition "altDef: geheel van samenhangende of elkaar beïnvloedende activiteiten dat input omzet in output (bron: UIT 68)"@nl ;
+  skos:definition """altDef: set of interacting operations by which material, energy or information is transformed, transported or stored
+Note 1 to entry: In the context of this standard the term \"process\" refers to the industrial process (assembly, construction, installation, etc.) through which an object is realized. (bron: NEN-EN-IEC 81346-1)"""@en ;
+  skos:definition "altDef: set of interrelated or interacting activities that transforms inputs into outputs (bron: ISO-IEC 12207)"@en ;
+  skos:definition "altDef: set of interrelated or interacting activities that transforms inputs into outputs (bron: ISO-IEC 15288)"@en ;
+  skos:prefLabel "proces"@nl ;
+  skos:prefLabel "process"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2921>
   a skos:Concept ;
   skos:prefLabel "procesbassin"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2929>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Vraagspecificatie Eisen DenC (oud)" ;
+  rdfs:comment "none" ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "Eis die wordt gesteld aan een proces van een opdrachtnemer."@nl ;
+  skos:prefLabel "proceseis"@nl ;
+  skos:prefLabel "process requirement"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2944>
   a skos:Concept ;
@@ -4460,6 +4444,18 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Onderlinge interface (verbinding) (associatie, drager, kanaal) tussen twee systeem(delen), waarlangs een (soms dynamische) wisselwerking of interactie tussen die elementen kan plaatsvinden."@nl ;
   skos:inScheme <http://www.rws.nl/abdl#ONT-0000> ;
   skos:prefLabel "raakvlak"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3027>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  skos:altLabel "eis aan raakvlak"@nl ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
+  skos:definition "altDef: Eis aan een systeem die het resultaat is van een raakvlakkenanalyse. Een dergelijke analyse inventariseert de eisen die de omgeving van het systeem aan het systeem stelt. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
+  skos:definition "altDef: Eis die wordt gesteld aan het in samenhang functioneren tussen objecten of diensten op hun gemeenschappelijke grens. (bron: WWB0001)"@nl ;
+  skos:definition "prefDef: Eis die wordt gesteld aan een raakvlak tussen twee of meer objecten. (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:prefLabel "interface requirement"@en ;
+  skos:prefLabel "raakvlakeis"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3031>
   a skos:Concept ;
@@ -5278,6 +5274,14 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "switch"@en ;
   skos:prefLabel "switch"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3591>
+  a skos:Concept ;
+  dct:issued "2021-04-15T16:54:00.000Z"^^xsd:dateTime ;
+  skos:broader <https://w3id.org/nen2660/term#InformationObject> ;
+  skos:definition "prefDef: Object dat wordt uitgewisseld, of kan worden uitgewisseld,  tijdens communicatie tussen twee of meer actoren (sociale actoren of computer actoren). Een symbolisch object is een drager van informatie, en wordt op zijn beurt gedragen door een fysiek object. Een symbolisch object wordt uitgedrukt in een taal. (bron: NEN 2660-1 (Ontw))"@nl ;
+  skos:prefLabel "symbolic object"@en ;
+  skos:prefLabel "symbolisch object"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3594>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -5516,6 +5520,18 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "tram track"@en ;
   skos:prefLabel "trambaan"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3772>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2660-1" ;
+  rdfs:comment "Definitie aangepast met meer objecten." ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1335> ;
+  skos:definition "gebeurtenis tussen twee opeenvolgende toestanden van een of meer objecten."@nl ;
+  skos:prefLabel "transformatiegebeurtenis"@nl ;
+  skos:prefLabel "transformation event"@en ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3773>
   a skos:Concept ;
   skos:prefLabel "transformator"@nl ;
@@ -5669,6 +5685,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Divergentiepunt waar een rijbaan door middel van een of meer uitrijstroken wordt afgeleid van de doorgaande rijbaan. (bron: CROW 156)"@nl ;
   skos:prefLabel "diverging point"@en ;
   skos:prefLabel "uitvoeging"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3868>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2660-1" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1335> ;
+  skos:definition "gebeurtenis tussen twee opeenvolgende toestanden van een activiteit."@nl ;
+  skos:prefLabel "performance event"@en ;
+  skos:prefLabel "uitvoeringsgebeurtenis"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3872>
   a skos:Concept ;
@@ -6226,7 +6253,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Helpdesk Water" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt. Gevaarlijk om de subtypen exclusief te noemen in de definitie." ;
-  skos:broader <https://w3id.org/nen2660/term#AamountOfLiquidMatter> ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4931> ;
   skos:definition "Een hoeveelheid vloeibare materie dat een oppervlaktewaterlichaam en/of grondwaterlichaam vormt."@nl ;
   skos:prefLabel "water body"@en ;
   skos:prefLabel "waterlichaam"@nl ;
@@ -6562,17 +6589,6 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:prefLabel "sun shade"@en ;
   skos:prefLabel "zonwerend rooster"@nl ;
 .
-<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4527>
-  a skos:Concept ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  skos:broader <https://w3id.org/nen2660/term#AamountOfMatter> ;
-  skos:definition "hoeveelheid materie die een gelijke chemische samenstelling en herkenbare uniforme en isotrope eigenschappen heeft."@nl ;
-  skos:prefLabel "pure substance"@en ;
-  skos:prefLabel "zuivere stof"@nl ;
-.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4531>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -6629,6 +6645,17 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "aggregatietoestand van een stof met een veranderlijk volume die uit losse moleculen of atomen bestaat."@nl ;
   skos:prefLabel "gas"@en ;
   skos:prefLabel "gas"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4554>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4550> ;
+  skos:definition "aggregatietoestand waarin de deeltjes van een gasvormige stof enigszins geïoniseerd zijn."@nl ;
+  skos:prefLabel "plasma"@en ;
+  skos:prefLabel "plasma"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4572>
   a skos:Concept ;
@@ -7340,17 +7367,25 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4927>
   a skos:Concept ;
-  skos:broader <https://w3id.org/nen2660/term#SymbolicObject> ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3591> ;
   skos:definition "TODO (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
   skos:prefLabel "sign"@en ;
   skos:prefLabel "teken"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4928>
   a skos:Concept ;
-  skos:broader <https://w3id.org/nen2660/term#SymbolicObject> ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c3591> ;
   skos:definition "<informatica> discrete waarde waaraan een semantische inhoud, dat wil zeggen een specifieke betekenis, is toegevoegd. (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
   skos:prefLabel "symbol"@en ;
   skos:prefLabel "symbool"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4931>
+  a skos:Concept ;
+  dct:issued "2021-06-30T23:59:59.000Z"^^xsd:dateTime ;
+  skos:broader <https://w3id.org/nen2660/term#AmountOfBulkMatter> ;
+  skos:definition "prefDef: Bulk materie, bestaand uit een aaneengesloten vloeistofmassa. (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
+  skos:prefLabel "amount of liquid matter"@en ;
+  skos:prefLabel "hoeveelheid vloeibare materie"@nl ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c4935>
   a skos:Concept ;
@@ -7432,6 +7467,18 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   skos:definition "Twee- of meerwielig wegvoertuig dat wordt aangedreven door spierkracht via pedalen."@nl ;
   skos:prefLabel "bicycle"@en ;
   skos:prefLabel "fiets"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5044>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 2084" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "een certificaat is NIET altijd een document. Als dat wel zo gevonden wordt hoort het onder document en niet onder Informatie Object." ;
+  skos:broader <https://w3id.org/nen2660/term#InformationObject> ;
+  skos:definition "Information object (document) dat bewijst dat aan vastgelegde specificaties is voldaan."@nl ;
+  skos:prefLabel "certificaat"@nl ;
+  skos:prefLabel "certificate"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5056>
   a skos:Concept ;
@@ -7606,6 +7653,28 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:prefLabel "lateral marking"@en ;
   skos:prefLabel "laterale vaarwegmarkering"@nl ;
 .
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5346>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Regeling veiligheid primaire waterkeringen 2017" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt en veralgemeniseerd." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0224> ;
+  skos:definition "aspecteis die wordt gesteld aan de kans van falen van een systeem (dijkdoorsnede) (faalkanseis)."@nl ;
+  skos:prefLabel "betrouwbaarheidseis"@nl ;
+  skos:prefLabel "reliability requirement"@en ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c5503>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "AOA Begrippen- en Definitielijst" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c2917> ;
+  skos:definition "vaste, weldoordachte procedure (werkwijze) om een bepaald doel te bereiken"@nl ;
+  skos:prefLabel "method"@en ;
+  skos:prefLabel "methode"@nl ;
+.
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c6685>
   a skos:Concept ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -7616,6 +7685,17 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:definition "Belangrijkst mengsel (grondstof) voor de productie van cement dat wordt vervaardigd uit kalk-, silicium-, aluminium- en ijzerhoudende stoffen."@nl ;
   skos:prefLabel "cement clinker"@en ;
   skos:prefLabel "cementklinker"@nl ;
+.
+<https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c6723>
+  a skos:Concept ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN-EN-ISO 19650-1" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c0224> ;
+  skos:definition "aspect requirement for what, when, how and for whom information (3.3.1) is to be produced."@en ;
+  skos:prefLabel "informatie-eis"@nl ;
+  skos:prefLabel "information requirement"@en ;
 .
 <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c6782>
   a skos:Concept ;
@@ -7638,9 +7718,6 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   dct:references "Handreiking prestatiegestuurde risicoanalyses" ;
   skos:broader <https://bimloket.nl/data/kernmodel/thesaurus#718dcbf8-e701-4963-a26d-3897bc2c1130> ;
   skos:definition "Eis die wordt gesteld wordt aan het systeem."@nl ;
-  skos:narrower <http://www.rws.nl/abdl#DEF-0224> ;
-  skos:narrower <http://www.rws.nl/abdl#DEF-1303> ;
-  skos:narrower <http://www.rws.nl/abdl#DEF-3027> ;
   skos:prefLabel "systeemeis"@nl ;
   skos:prefLabel "system requirement"@en ;
 .
