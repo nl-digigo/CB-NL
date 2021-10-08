@@ -1,0 +1,3597 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cbnl-def: <https://bimloket.nl/data/def/cbnl/> .
+@prefix cbnl-term: <https://bimloket.nl/data/term/cbnl/> .
+
+cbnl-def:6d7124a6-7079-4074-8eb7-ac40d646e893
+        rdfs:isDefinedBy  cbnl-term:0ecbc78b-912a-4960-9a6f-d025f1769912 .
+
+cbnl-def:ea760e2e-dc6d-4e0e-89e0-1728e605e880
+        rdfs:isDefinedBy  cbnl-term:b1d4a863-57ad-4eaf-aae5-82012038896f .
+
+cbnl-def:0f831f0d-d4f1-4cdd-ac09-0f8d1ebb7f72
+        rdfs:isDefinedBy  cbnl-term:f2e8bfc7-bf06-47ff-836d-9a755652198a .
+
+cbnl-def:905863bc-8315-4dfb-85d8-69604b31a698
+        rdfs:isDefinedBy  cbnl-term:bda24833-e1de-4305-b536-d72b1b36cc3a .
+
+cbnl-def:64bcd8ab-a539-4198-9d34-21c06a96d247
+        rdfs:isDefinedBy  cbnl-term:122d5a8f-f63f-481a-b4b2-877f94137b75 .
+
+cbnl-def:38c79fc3-ab3f-439d-b14c-b3e02b58add3
+        rdfs:isDefinedBy  cbnl-term:66797d1e-14e7-4b17-b3a8-1b5e61d92644 .
+
+cbnl-def:17f3ff42-4574-450f-b89b-c727681f7e1f
+        rdfs:isDefinedBy  cbnl-term:9cb7e264-2ba1-4f50-9a4f-48dd9f9439f4 .
+
+cbnl-def:b799e5e1-5695-48a6-96f4-4bb1490ddc33
+        rdfs:isDefinedBy  cbnl-term:0e25ee3d-3eea-4693-95b7-ad5e367a7fdb .
+
+cbnl-def:04257541-92b6-4536-8a6c-6fd9da466113
+        rdfs:isDefinedBy  cbnl-term:9d8866b8-a943-45f1-9a5b-ce23250281ff .
+
+cbnl-def:496091cc-6d52-481e-b560-e656f9cd7329
+        rdfs:isDefinedBy  cbnl-term:2710f14d-d8db-476e-b6d2-0908bb28d807 .
+
+cbnl-def:1487adc0-f66d-492c-89e4-bbc35843a636
+        rdfs:isDefinedBy  cbnl-term:2375969c-8d8c-4da9-8f58-399ce041cf03 .
+
+cbnl-def:d0ffa5c5-7619-4780-91cd-016fff80a6b6
+        rdfs:isDefinedBy  cbnl-term:09338aa6-b5e5-4f0b-b93d-5b937e1947f7 .
+
+cbnl-def:f567a9b4-84ca-4423-92b8-a9988063dd50
+        rdfs:isDefinedBy  cbnl-term:e9a54375-bc0e-476d-a47a-f757af7a52fe .
+
+cbnl-def:e103d4ea-0a06-482d-bb64-7b99f368150f
+        rdfs:isDefinedBy  cbnl-term:49e5d988-5fcb-4eda-b92a-0351e2631aaf .
+
+cbnl-def:bc61c14b-f43a-437a-b0de-a9ebc8d092a4
+        rdfs:isDefinedBy  cbnl-term:72da95f8-561a-43e4-bdbb-43e13133c4ff .
+
+cbnl-def:5896fbaf-3dda-4ec0-a808-0bd02b35ca2c
+        rdfs:isDefinedBy  cbnl-term:e1b3293d-1bab-4287-a01a-830c299f7bb5 .
+
+cbnl-def:0d6c08f9-7a01-4f02-96c2-90b1024ead3d
+        rdfs:isDefinedBy  cbnl-term:71bd8980-dc66-4f09-ac95-e254258785ef .
+
+cbnl-def:d2b7e49a-60b9-420d-baee-7ca8156ba146
+        rdfs:isDefinedBy  cbnl-term:373bb446-5e45-4d2d-b823-901ee8eae99e .
+
+cbnl-def:2cf6e7c9-9a37-46eb-b841-930caf982fee
+        rdfs:isDefinedBy  cbnl-term:b4f7bfd0-257c-46dc-87b0-55a3344e34e4 .
+
+cbnl-def:eb2713e5-1b5d-4ec7-b588-e5ac31309622
+        rdfs:isDefinedBy  cbnl-term:978bf168-c5a9-43bd-8b3c-31cedf6a2be6 .
+
+cbnl-def:637133f6-4074-4d44-ad96-5b8d4670fe66
+        rdfs:isDefinedBy  cbnl-term:67d2652c-a136-481b-baf3-f396ab607e85 .
+
+cbnl-def:8acb9c66-ff60-4f64-9e7e-494c4f4f037c
+        rdfs:isDefinedBy  cbnl-term:9c3b8349-3091-4b12-9f25-de356095c683 .
+
+cbnl-def:3da9e9d1-3993-4c4c-bd89-e36921abcd9d
+        rdfs:isDefinedBy  cbnl-term:21c93a0b-40be-4616-80c6-4cfc40edd3ab .
+
+cbnl-def:04d5d111-ad1c-405a-b3c4-a21cc2d33563
+        rdfs:isDefinedBy  cbnl-term:af6d8ef4-2d15-4487-bd78-e75a3898c478 .
+
+cbnl-def:ad032c12-4137-42e5-a401-69bc50bf8f8e
+        rdfs:isDefinedBy  cbnl-term:e114b71f-988a-4b11-b8f9-0f2dd29eadae .
+
+cbnl-def:d163dee5-f1a0-4cc8-b175-1227498493cf
+        rdfs:isDefinedBy  cbnl-term:7b424888-0023-45cb-a222-c3c8dc66b687 .
+
+cbnl-def:059e3de0-5c2e-408c-b01d-6e7a104df7f8
+        rdfs:isDefinedBy  cbnl-term:a5eef8d5-1717-4e6c-a296-ddc5223df0f6 .
+
+cbnl-def:88014280-ecb9-4ed3-a45b-a56ac49ce91a
+        rdfs:isDefinedBy  cbnl-term:7030100a-1565-4c07-a958-a0d0e9a2d506 .
+
+cbnl-def:a888e924-bcab-4530-8362-2fd62c616e82
+        rdfs:isDefinedBy  cbnl-term:b7f9533c-b796-4cdb-8950-d1a8483881e9 .
+
+cbnl-def:90e6e246-52f6-488d-997a-b4372fb788e2
+        rdfs:isDefinedBy  cbnl-term:cecfba3a-d9aa-4319-a79c-3e48d8494a50 .
+
+cbnl-def:8ec0b7c4-1659-4d26-9e3e-7f3a44935e74
+        rdfs:isDefinedBy  cbnl-term:91d63160-0b11-4919-ac4e-b80d5161eb32 .
+
+cbnl-def:8f7c64e8-bacd-408c-9fcf-e4924ceb3c22
+        rdfs:isDefinedBy  cbnl-term:497e2905-e75b-457b-b71e-0c5a89618cf0 .
+
+cbnl-def:72fa6b78-56cb-4c04-a112-fd88f3f45c99
+        rdfs:isDefinedBy  cbnl-term:47a1f61e-8e98-4227-a042-c4035686daf7 .
+
+cbnl-def:07c8a2c5-20eb-4074-9fc1-1756d1e7514e
+        rdfs:isDefinedBy  cbnl-term:f3ce8400-f2ca-456a-8e83-8a6a0cd960ec .
+
+cbnl-def:69a4993e-cf87-4387-a534-8bbd5c234b3e
+        rdfs:isDefinedBy  cbnl-term:e2da7deb-16fe-4ba7-bee8-058899f092f0 .
+
+cbnl-def:00d5624d-603d-4ec8-b6e2-575f9ab8798f
+        rdfs:isDefinedBy  cbnl-term:4cf10b4b-978c-46dd-881f-75c9781ed1ef .
+
+cbnl-def:eb81ddcc-4ec4-4752-a826-84127ea6e44c
+        rdfs:isDefinedBy  cbnl-term:b3a875d2-f73a-48f1-9a53-52fb0ec683c0 .
+
+cbnl-def:9a795b76-fc0e-44ba-b882-f077bdd9b56f
+        rdfs:isDefinedBy  cbnl-term:deb2a79b-b584-4476-905c-7f981a8cde46 .
+
+cbnl-def:cd513055-ecf5-4536-91b1-6b2497d58889
+        rdfs:isDefinedBy  cbnl-term:877cbbb9-adea-49ab-8634-df71ed3e36c4 .
+
+cbnl-def:adfc6cb3-da33-4df2-9a3b-9323a7792209
+        rdfs:isDefinedBy  cbnl-term:a3634ce5-efaa-424d-a439-959286139c63 .
+
+cbnl-def:6f9bf5e4-5f7e-48db-a106-2d226ecf2505
+        rdfs:isDefinedBy  cbnl-term:71895495-5ec5-45f9-889a-234d350be0da .
+
+cbnl-def:f5cdd979-e2a3-4896-9ee3-8f03add62894
+        rdfs:isDefinedBy  cbnl-term:2c513890-0172-46f3-87cd-b869105a9b33 .
+
+cbnl-def:c7115df2-75c7-4163-8ede-0fcf73b92cd0
+        rdfs:isDefinedBy  cbnl-term:caabae42-9ade-4ecd-93ee-75ba22d49f19 .
+
+cbnl-def:4d7ae892-f49a-4a6f-bfd6-54b1ae99a2f1
+        rdfs:isDefinedBy  cbnl-term:090d6e35-2da5-4f2c-ba62-b2ec1a786311 .
+
+cbnl-def:7712ea54-f44c-4d44-9a03-c365bd89a875
+        rdfs:isDefinedBy  cbnl-term:a483f726-a9b6-4f83-bb09-632bcbaddddd .
+
+cbnl-def:47636f0f-5b33-48f5-9248-135ffbd34d0e
+        rdfs:isDefinedBy  cbnl-term:2e5a3e0b-aac5-4bde-88c7-e543ad0bd062 .
+
+cbnl-def:e1b81a62-f073-44b3-a0b2-1aadced4a709
+        rdfs:isDefinedBy  cbnl-term:51bff23c-2da6-40ed-9008-bca905382b6a .
+
+cbnl-def:29a63ec1-adc0-4047-99b8-690c654ecfb1
+        rdfs:isDefinedBy  cbnl-term:cd1b4d1a-7946-4cc0-9564-ce7f982c1664 .
+
+cbnl-def:1b34505a-d11d-4f64-9b25-d27f046c3267
+        rdfs:isDefinedBy  cbnl-term:553f0240-3685-4a2a-937a-8511010b50a9 .
+
+cbnl-def:c6d86b6b-0dd2-4e1a-a698-234601d0b47c
+        rdfs:isDefinedBy  cbnl-term:ae958bfc-1246-4010-8e58-06659f12bede .
+
+cbnl-def:3774d8a4-0936-4fdb-a3a0-9e91da773d85
+        rdfs:isDefinedBy  cbnl-term:7b8ff259-2c06-4cb9-84dd-370d7c91622e .
+
+cbnl-def:e73ec5a0-9d1e-4676-8dcc-788dd1c14ef9
+        rdfs:isDefinedBy  cbnl-term:182a8efa-cae4-4fc7-8e4d-9a902bc12286 .
+
+cbnl-def:4c49f9cf-db56-48d7-b1d4-c598aaef1586
+        rdfs:isDefinedBy  cbnl-term:39eccdba-974e-41e4-9804-594410b5b82b .
+
+cbnl-def:a5ddd422-de37-4e27-b6e5-d6129b66111f
+        rdfs:isDefinedBy  cbnl-term:6deeb35d-22d0-42db-9ce0-04edcdddf10d .
+
+cbnl-def:91ff278d-af35-4540-9434-e6e7a8e2c8f8
+        rdfs:isDefinedBy  cbnl-term:0c41db79-76bf-47d3-b607-0698f09c2b7a .
+
+cbnl-def:2a85ca02-7043-495d-961d-58fb213cc61a
+        rdfs:isDefinedBy  cbnl-term:856e1522-be01-4f70-8507-fa1ba23b2e98 .
+
+cbnl-def:cf2a356d-7768-4b21-8a7a-763ad7520bf7
+        rdfs:isDefinedBy  cbnl-term:23a17fff-bf85-4b2d-a183-869c2c2db757 .
+
+cbnl-def:bf41ec23-f455-4868-849c-1b40af972b60
+        rdfs:isDefinedBy  cbnl-term:f68095e5-82bd-47d6-8c80-2a2264e50fa4 .
+
+cbnl-def:08ce6978-06c7-474f-be57-29c62b538767
+        rdfs:isDefinedBy  cbnl-term:a8fffa54-aac7-4f19-b38e-8545f4502242 .
+
+cbnl-def:392a44f0-5386-4f8e-bee2-c3fcdf4befea
+        rdfs:isDefinedBy  cbnl-term:50459dc4-d95e-4ef2-8566-672b3892b5ec .
+
+cbnl-def:4a8c31a4-14da-4c19-8362-e7ad53a5c671
+        rdfs:isDefinedBy  cbnl-term:f05c1d56-8bcd-40a0-b81d-99241eb3a211 .
+
+cbnl-def:0c5390f8-8d1c-4389-8c18-d7ed2a12abc5
+        rdfs:isDefinedBy  cbnl-term:ce466944-98dc-401c-ac96-8e93a297b763 .
+
+cbnl-def:061c5522-b4ce-45bc-a9e7-a41e758a4b3b
+        rdfs:isDefinedBy  cbnl-term:10a3f0c9-cbbd-42b9-a164-0924cb7467df .
+
+cbnl-def:294ad544-e3cd-4137-b4c1-efdb7d140c5d
+        rdfs:isDefinedBy  cbnl-term:d9b085cb-38d6-466d-a4c3-27d47683fa61 .
+
+cbnl-def:5011c046-dc30-424b-9d39-f4a590012606
+        rdfs:isDefinedBy  cbnl-term:b7045eba-aac6-4ed4-856c-1512a0800dbf .
+
+cbnl-def:2171603c-75df-4f20-a21d-06dc082611ba
+        rdfs:isDefinedBy  cbnl-term:c0673ef0-b016-4e8e-b538-6a5244975552 .
+
+cbnl-def:59a60ee7-c41a-417c-9d38-8da4892cc34a
+        rdfs:isDefinedBy  cbnl-term:d0ba9142-8633-4583-9f47-8c3d9615c64e .
+
+cbnl-def:0146fdae-450a-48a7-bb17-57b5c7c2eaf9
+        rdfs:isDefinedBy  cbnl-term:6ed1bb61-9615-432e-a571-3204dbcb088a .
+
+cbnl-def:69ddf515-18ea-4ca4-9344-9ef0f50d1b5a
+        rdfs:isDefinedBy  cbnl-term:5be4ae03-89cb-4006-8396-60ac7c95086b .
+
+cbnl-def:1eb81b22-f2b6-4b3b-9e73-d6d5a6cbee36
+        rdfs:isDefinedBy  cbnl-term:7bb4971b-5dce-4bbf-99c9-370c3f61f956 .
+
+cbnl-def:b38df359-a44c-4498-ac42-fd1800d41187
+        rdfs:isDefinedBy  cbnl-term:4be4f052-7f66-45c9-ae8b-c9c4e820bf38 .
+
+cbnl-def:358ea8ba-c094-4436-b0e6-022673debe64
+        rdfs:isDefinedBy  cbnl-term:4cad02dc-2f7a-4089-b223-3b09c50f025c .
+
+cbnl-def:cdfbbbd8-fe14-437d-85d9-5ff79b54325f
+        rdfs:isDefinedBy  cbnl-term:5958fe90-20a3-4c2f-98d4-be9c165e86fc .
+
+cbnl-def:180a530a-b8fa-4dde-bfd1-32b9575f45ce
+        rdfs:isDefinedBy  cbnl-term:2e1dfdc7-e2ae-4f2d-b49d-36a6b1818043 .
+
+cbnl-def:a30b28ae-13a3-4cb0-8e42-43ea838658ca
+        rdfs:isDefinedBy  cbnl-term:bcf4e4b3-0744-47c2-a399-6c972d9659ae .
+
+cbnl-def:379dd03b-f981-489c-b932-d0c23d6ae478
+        rdfs:isDefinedBy  cbnl-term:42885a5d-98f4-427c-834e-55c790b5b44f .
+
+cbnl-def:99c1b561-7cc1-463d-b10d-04efd63ff1c5
+        rdfs:isDefinedBy  cbnl-term:3387e50b-db36-4f1b-aace-fa956912df05 .
+
+cbnl-def:18581eb4-b671-4b3a-90af-4341da090299
+        rdfs:isDefinedBy  cbnl-term:704d2e57-0fe7-4501-b06e-4373159a78c3 .
+
+cbnl-def:47a714e5-f2f6-4654-98cd-87df63851ec7
+        rdfs:isDefinedBy  cbnl-term:d36097d9-306b-4573-b460-c5cffa268671 .
+
+cbnl-def:3da4866d-487c-4518-b811-7c0f853e046d
+        rdfs:isDefinedBy  cbnl-term:9ecc5671-30d1-440f-9ae6-10350d594916 .
+
+cbnl-def:92030bdb-8340-4435-8dcf-e7245057db44
+        rdfs:isDefinedBy  cbnl-term:f4f4a83f-8b8b-4ccd-a9be-8c0bdffc3fab .
+
+cbnl-def:7686fb64-50b4-4227-a6d5-e49476525fa3
+        rdfs:isDefinedBy  cbnl-term:ed79b577-53a0-490a-8bd0-5b45e1026ea7 .
+
+cbnl-def:21cf2a2b-029a-41bf-b88e-93f6353e1da1
+        rdfs:isDefinedBy  cbnl-term:6c7abae5-22c7-487f-b47a-5b42fefcef15 .
+
+cbnl-def:f8f7c21d-c2e0-4acd-ae9a-8a5dd2381ec2
+        rdfs:isDefinedBy  cbnl-term:ba5b307f-c11c-48e4-a3a9-e7edb9d99a32 .
+
+cbnl-def:7087223f-4ccd-491d-b83e-005d82de25c5
+        rdfs:isDefinedBy  cbnl-term:7382832f-8ef5-41dd-9e6a-0a28a6d11aa6 .
+
+cbnl-def:5d03b183-56dd-4955-a3fb-63cd84602d9d
+        rdfs:isDefinedBy  cbnl-term:9cb8e182-d6a0-447c-b2bb-48206c9887a3 .
+
+cbnl-def:9ef2009f-d5ed-4ad4-a63a-ced6181b2022
+        rdfs:isDefinedBy  cbnl-term:7b4403fe-0f30-4971-a7fb-fba5dd2b23a5 .
+
+cbnl-def:371eb27b-6355-461a-8458-d80d2dc55c51
+        rdfs:isDefinedBy  cbnl-term:c6a3cab1-b6c9-419b-a433-5e24b2004751 .
+
+cbnl-def:3c3ac97c-5ee8-43c7-980a-623650506ae9
+        rdfs:isDefinedBy  cbnl-term:9555cb44-31f0-4866-817c-1185b68c1b0d .
+
+cbnl-def:14a9ef28-47aa-4ec5-87fb-2b7653d02bb9
+        rdfs:isDefinedBy  cbnl-term:236aa5bb-e371-4432-95c1-cd1b5176402a .
+
+cbnl-def:7924cc2d-a542-4a54-9e02-d5093a15e41b
+        rdfs:isDefinedBy  cbnl-term:4e7e491d-7d06-49f3-af97-811ad402356b .
+
+cbnl-def:786582c1-027f-45d1-92a2-e8af78475ade
+        rdfs:isDefinedBy  cbnl-term:beac49da-abef-49ad-8ad9-f40b716acb01 .
+
+cbnl-def:b765460b-cb42-4897-895e-7b685b6109c2
+        rdfs:isDefinedBy  cbnl-term:9a0dc56f-904e-4971-b37e-6868016290f4 .
+
+cbnl-def:531cecd9-bca5-4186-9cf9-1675489d1acd
+        rdfs:isDefinedBy  cbnl-term:672d15ff-19a8-4b1b-8a58-900eb0bb9a08 .
+
+cbnl-def:a6d501a6-0563-4c3e-9f22-71eaaebb0745
+        rdfs:isDefinedBy  cbnl-term:62c70a81-3a00-4a99-89a1-d86e7a1a88a8 .
+
+cbnl-def:2736b72c-aada-4381-a6d0-39e8211d4a9e
+        rdfs:isDefinedBy  cbnl-term:19931685-a758-4607-83da-decb8589ad0a .
+
+cbnl-def:c64ec28e-5c7e-436f-8eb4-f6cc554bcba6
+        rdfs:isDefinedBy  cbnl-term:b2e57d6f-0748-47b2-a880-abc978f1af54 .
+
+cbnl-def:9d564fcf-5ed4-4ae8-9d58-592f9faa62ab
+        rdfs:isDefinedBy  cbnl-term:f590f9f7-54be-49fb-b949-769e0f38b579 .
+
+cbnl-def:148323aa-0ec9-48f0-9a76-43d882a0a34c
+        rdfs:isDefinedBy  cbnl-term:93cc306c-4b1d-425c-b78a-4c37eb3ee8d5 .
+
+cbnl-def:0ed3c35c-cb83-42dc-8efc-0d52dc4f8fda
+        rdfs:isDefinedBy  cbnl-term:cf6d03fa-47ff-4d6f-b765-dd347d966fb1 .
+
+cbnl-def:3d36922f-7691-4f20-8550-776ad61f2bbd
+        rdfs:isDefinedBy  cbnl-term:f460f60b-472b-48df-97c8-f99aac721ad7 .
+
+cbnl-def:ad8452d3-5e27-4969-a670-533392691c7e
+        rdfs:isDefinedBy  cbnl-term:5b82bd1f-ce50-4bee-8ab3-f6763388beb2 .
+
+cbnl-def:45e4ce5f-3a30-4901-86aa-59ad194b45ba
+        rdfs:isDefinedBy  cbnl-term:15d6f204-d202-4517-bf14-7788aa8d8de2 .
+
+cbnl-def:b3cb47e0-5cf8-4f02-8f49-143e7135d56d
+        rdfs:isDefinedBy  cbnl-term:df0ffbe3-de6f-4354-8b94-94290aec635d .
+
+cbnl-def:098ae08c-2739-4a99-a9f8-db733f5b2e22
+        rdfs:isDefinedBy  cbnl-term:35e48305-42d7-4f67-930b-e73f57679a73 .
+
+cbnl-def:6e146d6d-f254-42c8-b93f-f73ef2b2374f
+        rdfs:isDefinedBy  cbnl-term:cafa4bb0-7e93-460c-a5ae-8808fa42a510 .
+
+cbnl-def:169e27ea-faba-4244-b887-0c11dff2526e
+        rdfs:isDefinedBy  cbnl-term:49ba35ff-1e93-4216-8fe0-2152f4b459b8 .
+
+cbnl-def:c7a3b1b5-b9eb-45d2-bbf6-485df6d4c945
+        rdfs:isDefinedBy  cbnl-term:22aef6f2-39e8-4531-8926-0b570b366167 .
+
+cbnl-def:31214f12-6058-418c-bd7d-0acae3b70078
+        rdfs:isDefinedBy  cbnl-term:10c7925d-b999-423a-a6cc-ef2ae30c82b0 .
+
+cbnl-def:8d0fd597-09df-4676-876d-3dde1459d761
+        rdfs:isDefinedBy  cbnl-term:609c3dbf-7dd8-4b2f-9ecf-b91e5df7a626 .
+
+cbnl-def:0b1c440e-275b-4147-87a2-889b947cd6d7
+        rdfs:isDefinedBy  cbnl-term:fe68290c-0990-4fab-b99b-505f5a35d2eb .
+
+cbnl-def:0a1f64de-c9a2-4a63-a26c-fbf26cc97dec
+        rdfs:isDefinedBy  cbnl-term:174b2785-1487-49d2-8bc3-8c7134711359 .
+
+cbnl-def:35ae992e-2627-4ade-8787-8cf5cc02973d
+        rdfs:isDefinedBy  cbnl-term:0525668b-af1e-4e22-a46b-0af0c90eb27e .
+
+cbnl-def:0a7409b6-c7d0-43eb-9d6f-d8acbedae462
+        rdfs:isDefinedBy  cbnl-term:1c79a179-b319-48c6-b56d-b42e2ada8888 .
+
+cbnl-def:34a8dcec-f9ba-4c67-90bf-8d4e9093f85a
+        rdfs:isDefinedBy  cbnl-term:3e59336d-5f82-4ddc-95ee-ce899ca62112 .
+
+cbnl-def:d9515283-8a7a-4f18-b65b-a547e0f2bdcc
+        rdfs:isDefinedBy  cbnl-term:68d65d05-74e7-4f8f-b45e-9f88bf8aa93c .
+
+cbnl-def:220500f7-237e-4b9a-a30e-c31d68623ac8
+        rdfs:isDefinedBy  cbnl-term:9ea499e8-dcb9-41d1-9b29-0c9669239d7d .
+
+cbnl-def:8abc76b7-6040-4eb7-b44a-09565f7f6653
+        rdfs:isDefinedBy  cbnl-term:3e170377-1e2c-4574-bb93-3b9d70c41068 .
+
+cbnl-def:3c275db9-65ee-46e0-a872-b39001cccd97
+        rdfs:isDefinedBy  cbnl-term:380514dc-f011-44b0-b2bc-5de5aeac6aa3 .
+
+cbnl-def:fb452a89-177f-4cdd-acbc-13a9f18f472f
+        rdfs:isDefinedBy  cbnl-term:52d0c7a2-f813-43f1-9134-74201665cfa5 .
+
+cbnl-def:022a3f64-bab7-4b41-8c8a-8a9bb7675f1f
+        rdfs:isDefinedBy  cbnl-term:3db4edfc-c706-4437-95b3-3112e42e5e55 .
+
+cbnl-def:9afba396-b142-4804-bf46-8b3545d9abc6
+        rdfs:isDefinedBy  cbnl-term:709d7dc3-b4cd-4cc8-9dac-24e8f5a98543 .
+
+cbnl-def:598383eb-7b67-46b5-82d0-2b14510c5343
+        rdfs:isDefinedBy  cbnl-term:e4b4209f-a9a8-47e6-8032-c572085e3c3a .
+
+cbnl-def:07d3a081-043c-4f1d-b504-ed1c949472a9
+        rdfs:isDefinedBy  cbnl-term:2778ee08-d272-4d6f-a5c5-56d7e9828ef9 .
+
+cbnl-def:5f1adf14-84fe-45a1-88ce-63d35f24c7c8
+        rdfs:isDefinedBy  cbnl-term:174fecbc-ac70-4233-9e9e-ffc393a1a599 .
+
+cbnl-def:4218093f-192d-4e55-b2e6-7cbd3e8dceb1
+        rdfs:isDefinedBy  cbnl-term:ea5767c5-4f83-427b-b3ca-6e4301333c88 .
+
+cbnl-def:beaac1a7-d2ec-4cc0-aca0-55dd02e01860
+        rdfs:isDefinedBy  cbnl-term:26266749-6cf1-4bbf-9f3d-961340fc010a .
+
+cbnl-def:f4e3af73-6254-4f21-87d1-70c69d959620
+        rdfs:isDefinedBy  cbnl-term:63e8d182-ce0e-4386-9748-751a95d15c17 .
+
+cbnl-def:d50f4882-dec6-4494-89ca-34aa8901c626
+        rdfs:isDefinedBy  cbnl-term:8e6adf94-048c-452f-9306-620188acf88b .
+
+cbnl-def:04e6220e-7f61-4938-b289-52dc4a510d27
+        rdfs:isDefinedBy  cbnl-term:7f064771-4518-45f7-b6c8-aa59f71b32da .
+
+cbnl-def:e53c7d9c-e0c3-4e8f-aacd-45f9218880e6
+        rdfs:isDefinedBy  cbnl-term:ae0a32a4-cdf8-4b35-8841-724e89a4c732 .
+
+cbnl-def:1135d32d-6ab2-4b86-8895-85e27dc74fe4
+        rdfs:isDefinedBy  cbnl-term:15223f9a-565d-475f-9564-8c18b58e34b5 .
+
+cbnl-def:0be5ab53-6e42-4e43-b445-ae78f70ed019
+        rdfs:isDefinedBy  cbnl-term:6fb38612-6f9a-4b02-b3fa-c2a2308c4bc4 .
+
+cbnl-def:46d3f069-8e38-4ddd-b052-199dd27c5eb8
+        rdfs:isDefinedBy  cbnl-term:d36a52fd-0888-4ed1-83dd-69ff8d1f3995 .
+
+cbnl-def:def6129f-bef2-437d-a46e-da9c75f2adff
+        rdfs:isDefinedBy  cbnl-term:0d0e94e1-2d70-4fe1-8fa2-299eb8772ff2 .
+
+cbnl-def:058e0098-879f-45c0-9219-2225997ac6ba
+        rdfs:isDefinedBy  cbnl-term:796333c1-5397-4943-9605-62b770d43f21 .
+
+cbnl-def:e14b9fa7-aca7-4354-9823-476982a0d820
+        rdfs:isDefinedBy  cbnl-term:cb90c97e-c899-42ba-8c08-b881c8441da9 .
+
+cbnl-def:f05480d9-ff10-4b79-a687-e0b040577b53
+        rdfs:isDefinedBy  cbnl-term:1e7655e9-39b7-40e0-9739-57660e55cf1b .
+
+cbnl-def:00e1a069-66a5-4dd9-b6cf-502a45d4d84f
+        rdfs:isDefinedBy  cbnl-term:72c6f2d4-f30a-41a8-be57-3a073abede2b .
+
+cbnl-def:2d914816-1313-4fa8-a4af-33a2d02ffb40
+        rdfs:isDefinedBy  cbnl-term:2afbfc97-4c9d-44e7-a2b5-c43f912d16a7 .
+
+cbnl-def:465351bf-aae5-4c06-be14-4bbf5d037159
+        rdfs:isDefinedBy  cbnl-term:896764f2-50bb-465c-8f87-f3137726f6d4 .
+
+cbnl-def:052a9a9b-5de8-47c7-89b5-c346b71cce2d
+        rdfs:isDefinedBy  cbnl-term:86a076a7-a445-488d-bb98-594b49b6c7aa .
+
+cbnl-def:cc1e35c9-2191-448c-9086-aafd332fe9aa
+        rdfs:isDefinedBy  cbnl-term:c285a0df-e2d2-476e-bf93-2ad20d19ce94 .
+
+cbnl-def:d84eb255-6cb6-44b4-8b11-36700a5b016a
+        rdfs:isDefinedBy  cbnl-term:927a5dac-2469-41ef-b165-d6d3f2cf256f .
+
+cbnl-def:0e5e8f00-4a61-410a-b115-d39a432725c7
+        rdfs:isDefinedBy  cbnl-term:7d7ab22f-2eee-41d8-a514-006ae1364d1f .
+
+cbnl-def:d446cb0e-b27a-4ddb-b097-6324fd57e49f
+        rdfs:isDefinedBy  cbnl-term:eb0989be-7a15-4625-8687-e447e2e195bb .
+
+cbnl-def:29f131a6-999e-42db-981f-3e420624068e
+        rdfs:isDefinedBy  cbnl-term:24692ee7-df71-4c0f-88f0-165102419e03 .
+
+cbnl-def:8cfb9ba2-3287-4257-ac71-ffb9a107a593
+        rdfs:isDefinedBy  cbnl-term:38bbb004-e338-4d49-8162-4b4efa688e6d .
+
+cbnl-def:0ac5ba47-29a2-4bf7-8f88-bceedb853907
+        rdfs:isDefinedBy  cbnl-term:2bd30941-7b96-4739-ac7c-bebe21be71d8 .
+
+cbnl-def:ddd69426-bd73-4db8-8b49-f3b15ee0fdac
+        rdfs:isDefinedBy  cbnl-term:2950ee80-eece-41cb-881f-4adc23ed6a66 .
+
+cbnl-def:294e1040-3edb-4e20-8f4f-42255199817c
+        rdfs:isDefinedBy  cbnl-term:02d3cec7-d2b8-4444-bffc-819ee70f6e3f .
+
+cbnl-def:5cf5534e-2f11-480e-bbe8-145ad367ecb6
+        rdfs:isDefinedBy  cbnl-term:c4fd1cdf-8bf4-40d9-8ae3-9568e458d535 .
+
+cbnl-def:cd34f568-59ae-4890-bafe-d4824f5a3677
+        rdfs:isDefinedBy  cbnl-term:8d168610-a633-4f8f-8aab-2845b2baf9af .
+
+cbnl-def:8401c38f-49ba-47ef-869c-e45dbabd72cc
+        rdfs:isDefinedBy  cbnl-term:a3360e69-e6ad-4054-bc58-e527e9f39d4e .
+
+cbnl-def:8b2ec56f-fbf9-4673-afa0-ddda229c0d35
+        rdfs:isDefinedBy  cbnl-term:bdfec7c8-2364-4d2f-9596-a0a24cace2e6 .
+
+cbnl-def:93526815-e281-4d27-adfe-d32d81aa6f16
+        rdfs:isDefinedBy  cbnl-term:5bfd8aa8-008a-4853-a91e-872ba0da1053 .
+
+cbnl-def:26c85469-9396-49c3-b7e2-020cee7355f1
+        rdfs:isDefinedBy  cbnl-term:fae2dd4b-53e8-48e4-b08e-a93a7520c39e .
+
+cbnl-def:f05c466d-9a99-448c-beb4-2d4f525e60d9
+        rdfs:isDefinedBy  cbnl-term:ee64453a-1787-4528-b54a-ce73a5fcea1d .
+
+cbnl-def:22231043-fedd-4e65-ae3c-2fa4311bd23f
+        rdfs:isDefinedBy  cbnl-term:317684f6-e4ff-432f-a356-5b5661f443e7 .
+
+cbnl-def:10fd0967-605f-4097-8135-72b249f64fed
+        rdfs:isDefinedBy  cbnl-term:2fafac40-5fb6-47bd-82dc-fd21b6671a83 .
+
+cbnl-def:c8dcffa9-0a72-46e1-9bbd-5fd66e497668
+        rdfs:isDefinedBy  cbnl-term:1a23673e-3f87-4edb-a9eb-c9f3a3a0d36d .
+
+cbnl-def:0dbe9177-72f8-4ade-985c-47a57012d145
+        rdfs:isDefinedBy  cbnl-term:66f0ab16-6c9f-491c-a27a-f1073a00745a .
+
+cbnl-def:f5570028-f593-458a-aedb-b84ff50cf1ab
+        rdfs:isDefinedBy  cbnl-term:e45db1f6-a460-445c-920e-1f7d945fc509 .
+
+cbnl-def:15ec3115-3a07-483f-aa59-b94b3a9e6864
+        rdfs:isDefinedBy  cbnl-term:bd9a50c3-1aa0-4d23-9531-028c363d13da .
+
+cbnl-def:25b787f9-522c-4493-874d-72964ef9b2a8
+        rdfs:isDefinedBy  cbnl-term:6ce7f79a-f1e6-408a-bd5f-ad795efd6ef4 .
+
+cbnl-def:6d69bcc4-acbc-47cd-9c32-3d3e1d928965
+        rdfs:isDefinedBy  cbnl-term:62186e20-033b-4c4f-b102-1159039ec636 .
+
+cbnl-def:c09460b6-45c9-4423-b96b-7dd19994ab85
+        rdfs:isDefinedBy  cbnl-term:90816fb5-11d7-400c-bad6-7a2d30815d7b .
+
+cbnl-def:709c0f6c-947e-4ef3-a1fe-4585852fbd9d
+        rdfs:isDefinedBy  cbnl-term:4a1f475e-fd2d-4477-9aaa-41a532196481 .
+
+cbnl-def:c5e23a7b-b477-45bc-bb5e-cd27aa7c65f3
+        rdfs:isDefinedBy  cbnl-term:e86368f3-ef32-43ea-95eb-9f636e4b9cb0 .
+
+cbnl-def:517a21da-b6fb-47d0-9c82-216f7e7f58ef
+        rdfs:isDefinedBy  cbnl-term:16371def-a4ff-4644-ae44-e5d7704c72fd .
+
+cbnl-def:bb9a8fde-6ed2-4790-a997-3845ef2b0ff3
+        rdfs:isDefinedBy  cbnl-term:874606f4-0c6b-49f0-98e8-730e4785a9db .
+
+cbnl-def:e927c060-5862-4852-93e2-027cde48ebda
+        rdfs:isDefinedBy  cbnl-term:ec27426a-a646-414b-abe0-f4e5f57097a4 .
+
+cbnl-def:cd82d83f-fa74-4723-b079-75cd23d575df
+        rdfs:isDefinedBy  cbnl-term:02c3a921-abcf-45fc-ab1e-aa658e3fcc5a .
+
+cbnl-def:fbed33fa-95a4-469f-841d-508033dc608f
+        rdfs:isDefinedBy  cbnl-term:106555b9-a3b4-43fb-99f4-ed42d1c10136 .
+
+cbnl-def:e07039b1-0cf6-4006-9b51-f695d95a6806
+        rdfs:isDefinedBy  cbnl-term:1a2a18f7-d1a1-466b-bd45-b5166fc3569a .
+
+cbnl-def:62e39bfa-c8ea-466c-a1a3-6df43b2671ff
+        rdfs:isDefinedBy  cbnl-term:655066d3-f6c1-46f8-9b16-a030ff0cbf07 .
+
+cbnl-def:4f3877b2-8528-4efd-b84a-036d37f5afd3
+        rdfs:isDefinedBy  cbnl-term:72e0a1d5-7981-4e30-97f6-3b56346bbdd1 .
+
+cbnl-def:a0fc98d5-0464-40de-bd6d-2de35dda8f0f
+        rdfs:isDefinedBy  cbnl-term:21480816-c8d2-4441-a617-fc8e85b20dac .
+
+cbnl-def:da228384-47da-4b39-85bf-86313fe2bc58
+        rdfs:isDefinedBy  cbnl-term:2085e5af-34e8-4877-94b8-9af879debd5e .
+
+cbnl-def:4fed0549-e5ce-4337-b409-93067783602a
+        rdfs:isDefinedBy  cbnl-term:ab39c12c-78d1-4854-a1ba-ce94d9d79fc5 .
+
+cbnl-def:c8266f37-11d7-4238-b5b0-d3c5dc5e9640
+        rdfs:isDefinedBy  cbnl-term:f1d5a9ef-ed1f-4069-b759-8b637d78166d .
+
+cbnl-def:e793d9d6-3b78-4d6b-8175-5119337c8859
+        rdfs:isDefinedBy  cbnl-term:6c3c90c4-6005-4c58-98b6-615d652a1815 .
+
+cbnl-def:5de413f2-65ee-4a18-b39f-ee4179058c4d
+        rdfs:isDefinedBy  cbnl-term:3e5c0e9f-af63-4373-b73b-1903e075d602 .
+
+cbnl-def:a1347861-f29e-459d-ae76-ac23f0d9d1b3
+        rdfs:isDefinedBy  cbnl-term:53f6e2df-30b7-45af-b1ad-2f5833d4b085 .
+
+cbnl-def:16f70e0b-b68c-48ec-92b5-e0e898fd7c5c
+        rdfs:isDefinedBy  cbnl-term:0afcaa70-439e-42f5-b5eb-41480ca04cb1 .
+
+cbnl-def:1c1c9410-b49f-4145-adb2-9aeeb7b3d0c4
+        rdfs:isDefinedBy  cbnl-term:d0906119-164f-4573-a915-81a40a2aef64 .
+
+cbnl-def:79b24c33-9cb6-4d69-bf0d-6b044dc0c650
+        rdfs:isDefinedBy  cbnl-term:f9066137-29e3-48b4-b674-6fc91b0706e9 .
+
+cbnl-def:edf6ff5a-d44f-4eb0-90e7-9e656b324949
+        rdfs:isDefinedBy  cbnl-term:f38da32c-76ca-4ea1-8a0d-329c29106c23 .
+
+cbnl-def:9087a25e-7d20-4bc7-ad62-fd40e70ee52b
+        rdfs:isDefinedBy  cbnl-term:3dfb9eda-1ccd-4adc-8fc5-def622d5eaa4 .
+
+cbnl-def:118afa21-d907-43a2-a3f1-01fe2c1506fe
+        rdfs:isDefinedBy  cbnl-term:607ae174-d3c7-48e7-89ba-4ded8c1ad41b .
+
+cbnl-def:07cfe1e2-5a54-4d3c-8d58-840acbc9e1df
+        rdfs:isDefinedBy  cbnl-term:98bf28d1-61c8-4ec9-b813-a5e5aa7ffd9d .
+
+cbnl-def:ed200ed9-24ed-491c-bd60-a5383aab9fbf
+        rdfs:isDefinedBy  cbnl-term:74a5e257-980a-4f86-a277-36d7896747d9 .
+
+cbnl-def:46b4d655-f737-4dc8-b9c2-1096f7df2bc6
+        rdfs:isDefinedBy  cbnl-term:eddb62e2-e5d0-43c2-bbba-8640e687f49c .
+
+cbnl-def:b102e467-112e-4b9f-9c9f-bae2935ba34b
+        rdfs:isDefinedBy  cbnl-term:549e02ec-1900-4274-9b5d-918308eebf6b .
+
+cbnl-def:23535ea0-cf65-4d07-9798-c4a39aa1a5c9
+        rdfs:isDefinedBy  cbnl-term:7d7481b1-c3a9-4da8-985d-958e668cdc2b .
+
+cbnl-def:842eb336-f05b-4bb6-b4c7-9570fdd2427f
+        rdfs:isDefinedBy  cbnl-term:46765342-0215-4b78-8e65-195591f691a3 .
+
+cbnl-def:67caaa85-7014-4bb5-b931-f43758133f1e
+        rdfs:isDefinedBy  cbnl-term:76532a6d-b4d7-4f0f-a738-f7d17b5e9f77 .
+
+cbnl-def:807fa4b0-1241-4b1c-a9d4-8f0a966ae97a
+        rdfs:isDefinedBy  cbnl-term:cab99655-7c30-449c-94b8-386ec306f4bd .
+
+cbnl-def:1ad5b249-b405-4387-8b2f-094a0e77904c
+        rdfs:isDefinedBy  cbnl-term:f652cfac-ffbd-450d-a4be-03bfe2e1fe96 .
+
+cbnl-def:2daa844a-0911-472d-9743-fdf8c00a1be2
+        rdfs:isDefinedBy  cbnl-term:ee736cb8-017f-497b-b83d-300517bf102b .
+
+cbnl-def:a20b57c4-a960-4055-9f12-4a853ffc3e7e
+        rdfs:isDefinedBy  cbnl-term:3c7f43bc-16f9-420b-8dc3-c6cad86f9c2b .
+
+cbnl-def:0741506a-21e0-4cb0-a07d-5002d46470a3
+        rdfs:isDefinedBy  cbnl-term:4638db52-9016-44c7-8892-446026ec59eb .
+
+cbnl-def:7f1ba571-bb7b-4a7e-9ade-60f8d5a7aa4e
+        rdfs:isDefinedBy  cbnl-term:6a828297-ffb6-4ac9-a87a-3697b9c33e79 .
+
+cbnl-def:2a899a1a-f32c-43cb-ae21-2b9c724b3676
+        rdfs:isDefinedBy  cbnl-term:9eb1e2dc-d7cc-4c28-bb49-5568a59403b0 .
+
+cbnl-def:d15d20dc-019a-4097-b754-5483787a89f3
+        rdfs:isDefinedBy  cbnl-term:d9734d3e-2b4d-4ea9-85a0-b4b69a24cb1c .
+
+cbnl-def:ba47852e-7f21-42e2-a0cb-162f7a6b0f44
+        rdfs:isDefinedBy  cbnl-term:e5ed8afb-5475-4f91-b77c-437b6bdfba3f .
+
+cbnl-def:368dabcb-0343-4052-8b2f-ca753b6aeaf3
+        rdfs:isDefinedBy  cbnl-term:09b12666-ee7e-47e9-942f-362f9797b9c7 .
+
+cbnl-def:fd7849ba-8a09-4aed-a738-a2eabf181cd4
+        rdfs:isDefinedBy  cbnl-term:b431afc3-b4d2-48a1-8c9f-7615689c809e .
+
+cbnl-def:b3efef91-40eb-483b-956f-8f470c19fa48
+        rdfs:isDefinedBy  cbnl-term:4377dc65-188d-4d3a-b188-bf14d91f2ba5 .
+
+cbnl-def:81c78f62-8166-4991-975a-f10f7efa5e19
+        rdfs:isDefinedBy  cbnl-term:8bb9788b-223d-4865-9c4a-b440966ca25e .
+
+cbnl-def:be95a97b-2db3-4e44-8d11-800e2b47e886
+        rdfs:isDefinedBy  cbnl-term:65ee38bd-a4c2-4798-ac8d-6d3ad1ceef18 .
+
+cbnl-def:8d3314f5-0a8f-449c-a03e-44734198afbd
+        rdfs:isDefinedBy  cbnl-term:96d97f1a-93ec-4294-8035-27216253c710 .
+
+cbnl-def:9de1ba49-61ac-4745-b723-6be782ae954b
+        rdfs:isDefinedBy  cbnl-term:09b4bf03-f8cb-4e24-bca9-a06d0593738e .
+
+cbnl-def:c4688f46-881e-4854-918d-fd02453322c1
+        rdfs:isDefinedBy  cbnl-term:abdfed82-4ead-471d-a965-3d80d51f2c4b .
+
+cbnl-def:37d91a0a-ba07-44df-9847-ea4d27a110dc
+        rdfs:isDefinedBy  cbnl-term:f5ca1762-b91a-42d0-b6ca-897f9efc7565 .
+
+cbnl-def:cbd6b5a6-0283-46b1-9235-0291447da302
+        rdfs:isDefinedBy  cbnl-term:cb1284a7-95d5-425a-8498-61182c59e380 .
+
+cbnl-def:ba65d30b-c8f2-40c8-8b2d-a0d65bdbaeeb
+        rdfs:isDefinedBy  cbnl-term:937580d3-4610-431b-a146-2a0429c1860a .
+
+cbnl-def:3eec8e80-10eb-4719-9069-abfff9b3e065
+        rdfs:isDefinedBy  cbnl-term:43dce396-316b-45d3-89b3-581e53faf136 .
+
+cbnl-def:c7283932-6580-4021-b663-98bf19efdaa8
+        rdfs:isDefinedBy  cbnl-term:0965945f-8e16-45ff-94ce-87a5bad318c4 .
+
+cbnl-def:5f956dc8-ce69-4c72-a75f-5906aee1f283
+        rdfs:isDefinedBy  cbnl-term:ba0299fd-1d44-422d-84c5-b32eca8b3f23 .
+
+cbnl-def:c5b6f3ce-762e-4cd0-8287-c3c5e1210714
+        rdfs:isDefinedBy  cbnl-term:f71c66b4-cf25-458d-918b-48013fd9550d .
+
+cbnl-def:932433e9-8748-4fa0-aaa3-1bbf7e164cd0
+        rdfs:isDefinedBy  cbnl-term:f0bd114e-bc1c-4e6e-997f-a31911a1924a .
+
+cbnl-def:9a6b9302-77ad-4bcc-8438-6b34965053d2
+        rdfs:isDefinedBy  cbnl-term:3a01e01c-00bf-40ed-8c7e-c8ecb7648f18 .
+
+cbnl-def:dd5dd6c5-2363-420f-bc4a-fc2b6db3ed5c
+        rdfs:isDefinedBy  cbnl-term:4d4695f3-d4e1-461b-8531-2ba573968579 .
+
+cbnl-def:204db122-0e31-468a-8324-11a1d906b550
+        rdfs:isDefinedBy  cbnl-term:da86c912-8ce4-44fa-a164-14ce2d5c0e4a .
+
+cbnl-def:f9a4959f-06a1-482a-a52d-002a9b769386
+        rdfs:isDefinedBy  cbnl-term:323c398d-0b3d-4e3b-962b-a68a4c0f97c9 .
+
+cbnl-def:694cfe38-7c55-4df2-9fe8-f0d89110d008
+        rdfs:isDefinedBy  cbnl-term:fc447b45-745c-4793-a528-26f2dd7a28c0 .
+
+cbnl-def:b486b3ae-08a3-4510-849b-d185a4ee5e05
+        rdfs:isDefinedBy  cbnl-term:eb8a3936-3843-4321-b600-9a9202e8bc8b .
+
+cbnl-def:e5ff1cde-d736-42ef-8da0-9d4f32525ead
+        rdfs:isDefinedBy  cbnl-term:8bccafd8-b97e-4254-bbb8-b7793896b329 .
+
+cbnl-def:d7f6fd25-f723-4d8d-bdbb-25da4b2c8be3
+        rdfs:isDefinedBy  cbnl-term:dc2ddc0c-c3d7-4785-a0c6-6dd80f44409d .
+
+cbnl-def:0f6c47a0-7b6d-4ea6-b43d-0fe4fd1fb1c1
+        rdfs:isDefinedBy  cbnl-term:fb4040c3-df19-4aef-a527-c50025a9edbb .
+
+cbnl-def:6725ac29-2fe5-4e33-9219-8b926aa44a56
+        rdfs:isDefinedBy  cbnl-term:2194c443-88a4-4c79-9e0c-74e41da2e30e .
+
+cbnl-def:9ca51a51-3ca7-448d-a95e-1cecf9393e2f
+        rdfs:isDefinedBy  cbnl-term:78129da2-8fe8-449f-a311-73c1812ff68a .
+
+cbnl-def:f2d4d34a-9841-4df0-a3e5-6e2caa5e9864
+        rdfs:isDefinedBy  cbnl-term:d4258788-01e5-4671-8dc8-43027a723616 .
+
+cbnl-def:d9f51848-1e14-4753-aa14-fde495fc24a8
+        rdfs:isDefinedBy  cbnl-term:8c87c06c-eae2-4613-9531-5e868c9bfdef .
+
+cbnl-def:642c239b-727c-46a3-bc3b-ea0413546cf1
+        rdfs:isDefinedBy  cbnl-term:efd17422-fd97-4023-8523-493ce7492854 .
+
+cbnl-def:3f2946ac-5ea4-405e-93f0-b1f79096622f
+        rdfs:isDefinedBy  cbnl-term:72cc8d53-394e-4159-ac26-c1f81f66e932 .
+
+cbnl-def:2daa3afd-fc86-470c-b199-131299e3fc0f
+        rdfs:isDefinedBy  cbnl-term:7f6ca3d7-a8eb-4453-9575-4e9ac3c75ee4 .
+
+cbnl-def:7c3afe4a-db5d-4007-b54a-e072b20d308b
+        rdfs:isDefinedBy  cbnl-term:9cad717f-aee9-4d11-8fe1-15f698b21e4b .
+
+cbnl-def:be64ad35-bb77-415f-979a-3dbc270556cd
+        rdfs:isDefinedBy  cbnl-term:8fd38ab1-cb19-463a-986d-b99d7bc2474b .
+
+cbnl-def:d529ce68-b943-48d0-baef-7ffb3ebe7a7f
+        rdfs:isDefinedBy  cbnl-term:fa0e33e7-3150-4c57-945c-5073bab37d3a .
+
+cbnl-def:fbdf551c-c346-4a14-b9f7-bfe579fa61e3
+        rdfs:isDefinedBy  cbnl-term:57786f44-25e2-4533-84d8-a8709b13d5df .
+
+cbnl-def:ef06339e-7ffd-4897-a799-6baf5e550fcb
+        rdfs:isDefinedBy  cbnl-term:c936f297-556e-4af4-b39a-e1e3598c93c3 .
+
+cbnl-def:844f1a6e-d491-4880-9274-e139ca243431
+        rdfs:isDefinedBy  cbnl-term:98e71b8a-9d25-4082-8eef-f2bb63f73f97 .
+
+cbnl-def:7ec8e9a2-7e16-44df-9fc1-595d18cee14f
+        rdfs:isDefinedBy  cbnl-term:426afca0-6103-46ed-93c4-eb1e31d6c896 .
+
+cbnl-def:75d211d5-d735-4013-a6bb-09b41619fd41
+        rdfs:isDefinedBy  cbnl-term:d9bd5f2e-2af2-45c3-963b-c52083077dd6 .
+
+cbnl-def:418a99f4-e0ff-4f71-b6b8-43d48ca9a4f3
+        rdfs:isDefinedBy  cbnl-term:34cb586a-d3bc-4f7b-864a-20d201a3945f .
+
+cbnl-def:9d38f4f6-e7c0-4eab-afc5-13a01cedfe7a
+        rdfs:isDefinedBy  cbnl-term:c7ef7795-b1e5-4f40-b167-a19b0c616690 .
+
+cbnl-def:c56fe96d-3eea-4d18-8977-e08a6a159edf
+        rdfs:isDefinedBy  cbnl-term:f201eba2-f45e-41b5-9ed3-b0966006f494 .
+
+cbnl-def:7dc30ee7-aa8e-419b-a263-5ec16fb1f887
+        rdfs:isDefinedBy  cbnl-term:faa9476f-0b56-484c-b4f3-807de1239d07 .
+
+cbnl-def:0266b732-ba10-473b-843f-4f09a6b31841
+        rdfs:isDefinedBy  cbnl-term:baa03f3b-8bbd-4fc9-9521-964bc5122519 .
+
+cbnl-def:ca9cb38b-768a-4a00-9516-1ce52aee1045
+        rdfs:isDefinedBy  cbnl-term:f110da34-bc10-4033-b348-de1a8c8d5a7d .
+
+cbnl-def:191cbe72-bd97-45b5-84e3-daee0405d3b5
+        rdfs:isDefinedBy  cbnl-term:24e02b2d-fedc-4ad2-ac47-ecab642f67fd .
+
+cbnl-def:3d089154-5357-429d-94ba-3187d7a00c8d
+        rdfs:isDefinedBy  cbnl-term:c6d7a5a5-7f5f-4f18-99a4-a1f0e6cb7093 .
+
+cbnl-def:daa1bc18-71b2-4617-a8a4-71442c104f68
+        rdfs:isDefinedBy  cbnl-term:527da94c-573a-4ddd-89bb-faf04d327270 .
+
+cbnl-def:cc0e7856-04ad-424a-96c0-39badfd5a540
+        rdfs:isDefinedBy  cbnl-term:83133771-2ec6-4a48-b791-2bf66724eb29 .
+
+cbnl-def:0222184b-1bf9-4bb2-97e3-1be8db7da2c9
+        rdfs:isDefinedBy  cbnl-term:0016f909-dd1d-46c5-855e-fec88fb15ee8 .
+
+cbnl-def:f0b272d3-c10a-4bf6-a17d-7c1984727ead
+        rdfs:isDefinedBy  cbnl-term:11fed174-18f2-404d-8654-762193d2f351 .
+
+cbnl-def:002cf0ec-aac6-4499-9d8d-519a4816c01e
+        rdfs:isDefinedBy  cbnl-term:991ffec8-0b5e-47b9-a1a0-bb91fb5b0ea5 .
+
+cbnl-def:e1cab520-969c-42c9-8cbf-88412a168262
+        rdfs:isDefinedBy  cbnl-term:56633dc7-70fe-4c28-89e9-f9b961edf17b .
+
+cbnl-def:aa50d92b-43c0-4cef-a800-d322a4542e7d
+        rdfs:isDefinedBy  cbnl-term:ad6c1daa-e5f2-4b5d-9207-d3583c1f48de .
+
+cbnl-def:4b0d3db8-bd64-4de7-8519-3fa73bac7a4f
+        rdfs:isDefinedBy  cbnl-term:fba3fb7e-ecc0-4159-9f8e-c93af7d2b29a .
+
+cbnl-def:7eb6b9e0-cab7-44cc-8cc7-b3e909f4608f
+        rdfs:isDefinedBy  cbnl-term:c62b3c81-80da-4636-a6c3-85ed07a0d12d .
+
+cbnl-def:058135c8-173c-4117-91af-34e936956a32
+        rdfs:isDefinedBy  cbnl-term:9f6ea36e-e157-4581-b69f-a5a5eaa909c1 .
+
+cbnl-def:82ecbb3a-79af-4298-bca0-adf807a9a1f4
+        rdfs:isDefinedBy  cbnl-term:76ac5885-b420-4290-bf1f-d3e5aa74a9a4 .
+
+cbnl-def:6950124f-a636-490f-9aa7-d38b16043c31
+        rdfs:isDefinedBy  cbnl-term:f7077e9a-5ede-4931-bb0d-0da667ca15e9 .
+
+cbnl-def:8107c788-01d9-401d-9659-fba2b0d153bd
+        rdfs:isDefinedBy  cbnl-term:8f4b5c16-86e8-4936-9c8a-26c72a8ef3b7 .
+
+cbnl-def:7d966f22-b13b-4382-b055-ca8bb0e68523
+        rdfs:isDefinedBy  cbnl-term:33ec4027-b017-42aa-9f89-077371a6a89d .
+
+cbnl-def:bd59b256-1f2a-4e35-bdd7-f83ef6cb0a4c
+        rdfs:isDefinedBy  cbnl-term:129c12d6-05b4-417a-8c53-3fe64cf32a9b .
+
+cbnl-def:e438a708-a462-46a2-b7d4-6dca56d7088b
+        rdfs:isDefinedBy  cbnl-term:2e378d83-a3c6-48d4-a964-d9e207355e84 .
+
+cbnl-def:c78536c3-b448-469e-825f-748ffb031e8d
+        rdfs:isDefinedBy  cbnl-term:6d837348-9f84-4ebe-8875-aaac0936e79c .
+
+cbnl-def:d34a2bfe-e3d2-447e-a930-e1054de605b1
+        rdfs:isDefinedBy  cbnl-term:fd56e7e7-bf4f-4f83-8109-ab06a1627683 .
+
+cbnl-def:184d2e0e-6053-4425-8a44-bbb17eaa3588
+        rdfs:isDefinedBy  cbnl-term:177670e5-e0f5-484e-a6df-00e3444264eb .
+
+cbnl-def:6d26e57a-e344-4d83-9098-f74fc371ca06
+        rdfs:isDefinedBy  cbnl-term:fd2e485d-25d6-4de8-8ac5-c62345628faa .
+
+cbnl-def:5b0ad307-3c64-4e12-89ab-5457bc7e301c
+        rdfs:isDefinedBy  cbnl-term:9fc795d6-3961-4f95-aa7a-b4536819a221 .
+
+cbnl-def:9cc2f950-625c-492d-b6bf-eb771b597164
+        rdfs:isDefinedBy  cbnl-term:e04af5d2-2282-44d1-9816-5023209a976a .
+
+cbnl-def:6b5b815a-850e-41fd-8350-6eae089d18fa
+        rdfs:isDefinedBy  cbnl-term:57f5c5b4-fd24-4d6e-a998-22f627281f53 .
+
+cbnl-def:565b550e-5296-408f-8991-e99fbc9e29f9
+        rdfs:isDefinedBy  cbnl-term:071f7135-c259-40b1-ac9d-7b35277010bd .
+
+cbnl-def:3ddba978-4b25-4431-a82a-29675519ddc8
+        rdfs:isDefinedBy  cbnl-term:0b99d7ba-f659-4ec2-864e-cf454db69239 .
+
+cbnl-def:e785ab56-460d-44b0-91ef-0840f55c03c3
+        rdfs:isDefinedBy  cbnl-term:55b02e3d-94f9-4dd1-9e68-6eb036faf332 .
+
+cbnl-def:f38d2b1a-e043-4ae4-9a69-965c1bc06fe7
+        rdfs:isDefinedBy  cbnl-term:05b35527-480a-4382-bfee-f1c3e1c63576 .
+
+cbnl-def:e177d52d-25c4-4df0-b740-c09c1f4eb07e
+        rdfs:isDefinedBy  cbnl-term:16857140-0622-40ca-a899-d797de5e2590 .
+
+cbnl-def:1e20be1f-7c72-48bd-ae27-c25c477bdda5
+        rdfs:isDefinedBy  cbnl-term:690e637a-f46e-41e0-b313-c987feafe820 .
+
+cbnl-def:83beb956-cb13-49c1-b619-7dbf6dd4ea9a
+        rdfs:isDefinedBy  cbnl-term:c4289d8d-27d9-4a51-9440-207f6ac31133 .
+
+cbnl-def:92151eac-e9e2-43b5-8900-3d234c044087
+        rdfs:isDefinedBy  cbnl-term:76614f59-730b-4631-b214-575c8a9677d5 .
+
+cbnl-def:7de9b8cc-9461-4eb1-9cc7-53cc36bc5d6a
+        rdfs:isDefinedBy  cbnl-term:b9a3d9d2-c7ca-4286-bc25-ad5bffb7b3dc .
+
+cbnl-def:3d7f43bb-172b-4580-954e-85d98626910f
+        rdfs:isDefinedBy  cbnl-term:03fa3351-4591-4cf5-bde1-ae3f0c32f9c5 .
+
+cbnl-def:e77960e2-7592-41dd-864f-7295bc85e78d
+        rdfs:isDefinedBy  cbnl-term:5a80ea11-acd4-4dd1-b70a-f2a7ffbce4c3 .
+
+cbnl-def:6f0009b8-086b-4d1c-a5f9-fe26706a93ad
+        rdfs:isDefinedBy  cbnl-term:3f82b1a1-58b7-4722-88cd-82e6f63bfde0 .
+
+cbnl-def:aad07539-eeff-4b42-b898-60edc9d0cced
+        rdfs:isDefinedBy  cbnl-term:e32231ae-4b11-4431-a73e-51233d58e107 .
+
+cbnl-def:0be5baf4-872c-4a90-a64b-59d8e7d6a71a
+        rdfs:isDefinedBy  cbnl-term:68850b5f-bbf7-4c7f-ad7b-0887d2a8687f .
+
+cbnl-def:a1cdbdc4-aa81-4c6e-b3c0-37f503cace42
+        rdfs:isDefinedBy  cbnl-term:12f3a51a-58c8-442b-9a98-a4c6a0c9f9ff .
+
+cbnl-def:99cb48f5-dfe6-4c1a-9109-eace216e7d37
+        rdfs:isDefinedBy  cbnl-term:a04e345a-9da8-4e3c-a6c5-f7f196854988 .
+
+cbnl-def:0e106ccb-fc91-4e2a-8c91-aaeae7e809df
+        rdfs:isDefinedBy  cbnl-term:a1492a76-b890-4ad9-9aa0-63549b2bab8b .
+
+cbnl-def:cbc48c87-3d40-461a-a30d-f354dbc49347
+        rdfs:isDefinedBy  cbnl-term:1337aa77-90a3-4019-b10a-7427ba1ca676 .
+
+cbnl-def:1a4aa628-d00a-466c-b1cf-a29e80bfb6e1
+        rdfs:isDefinedBy  cbnl-term:093e443d-516e-41a2-8821-17a714bd7544 .
+
+cbnl-def:d2a50f64-9aff-4864-8a84-c446ffee6399
+        rdfs:isDefinedBy  cbnl-term:c240ee3c-9da4-4e10-8b6d-eaceae45ffec .
+
+cbnl-def:33afdebd-40bc-4032-a879-e29ca892adff
+        rdfs:isDefinedBy  cbnl-term:b7ffad60-62b2-46a8-b9a2-7b7a81696e01 .
+
+cbnl-def:63d3839b-96ae-41d7-8d82-a142a7e986ce
+        rdfs:isDefinedBy  cbnl-term:c9946052-0533-458a-9c98-9e4789c3c253 .
+
+cbnl-def:a76fa97a-e196-4331-a1ab-1d8aec72c819
+        rdfs:isDefinedBy  cbnl-term:78f26b86-df29-4b45-b006-93408ce561db .
+
+cbnl-def:6794ce85-ec40-4f2e-a495-02637f9e51e5
+        rdfs:isDefinedBy  cbnl-term:0902b019-2138-4da1-a31d-bbb3cfa710b5 .
+
+cbnl-def:8c131f74-4974-4020-84e5-b43c9cf14ec4
+        rdfs:isDefinedBy  cbnl-term:05f78e43-4b46-44a7-bf5f-7414a8d83590 .
+
+cbnl-def:ac61a72e-57cc-4d14-9466-423c3de9dec9
+        rdfs:isDefinedBy  cbnl-term:fc231d58-0366-4ae9-84b4-56c7755c42dd .
+
+cbnl-def:1ea94bd8-9f9e-49e3-b680-2c8b16865066
+        rdfs:isDefinedBy  cbnl-term:fec9f683-52f3-46d3-8574-ffaedae83596 .
+
+cbnl-def:f4b82917-d973-4b31-9cd3-d2ac3e8247cd
+        rdfs:isDefinedBy  cbnl-term:e5b9b96e-a14b-4801-b8fc-5ec3e511d586 .
+
+cbnl-def:1e8d4282-d727-4b62-908a-db0248eb73dc
+        rdfs:isDefinedBy  cbnl-term:bc39111d-b0ba-40b7-aaa8-327f48b45a67 .
+
+cbnl-def:fe7a0445-a1e2-40bf-9ad6-29872c142f2c
+        rdfs:isDefinedBy  cbnl-term:5804526b-aa94-4a84-b215-37b2989110e6 .
+
+cbnl-def:d3142fc2-9cf4-493e-9dd2-cc77d2cc2a9e
+        rdfs:isDefinedBy  cbnl-term:f11a0d14-7c37-4add-b2f9-dfcd7c651304 .
+
+cbnl-def:131b03c3-ff80-41b3-9749-76622651ae78
+        rdfs:isDefinedBy  cbnl-term:22edf9b4-291c-4e23-b10e-d69ecb9781f2 .
+
+cbnl-def:9dc70298-0c88-4adf-bd02-74b18036b8bd
+        rdfs:isDefinedBy  cbnl-term:0dcef9fe-ea70-414e-a8ad-8a4a786abd4c .
+
+cbnl-def:b2e4d301-5fcb-48dc-bbd1-84b326a19110
+        rdfs:isDefinedBy  cbnl-term:497313fe-3afe-4b97-b379-55f19a559040 .
+
+cbnl-def:7ad74327-f483-418c-80ce-6a6b53886102
+        rdfs:isDefinedBy  cbnl-term:0d862c37-72e2-4289-8bc1-3eea363f0399 .
+
+cbnl-def:ce2a605e-3c0d-47ac-950f-6ea462d90072
+        rdfs:isDefinedBy  cbnl-term:38a7b548-2261-4b1e-8197-2b64e5ab6ec9 .
+
+cbnl-def:28ae5882-e084-45b1-a284-2913808e703b
+        rdfs:isDefinedBy  cbnl-term:69c5c3dd-f39d-45d1-99d5-98a5d58c83bf .
+
+cbnl-def:fcf20e88-d6cc-4183-a7c7-79c2bb534a95
+        rdfs:isDefinedBy  cbnl-term:5844b507-d395-448b-bce0-8a717ed9d758 .
+
+cbnl-def:3ebcd696-7449-43c8-8620-cae5d4555ada
+        rdfs:isDefinedBy  cbnl-term:4041f90b-b55d-433a-8d28-4b521228ff2c .
+
+cbnl-def:e071ec04-c2ed-4d01-986e-2725feae44f3
+        rdfs:isDefinedBy  cbnl-term:3bb52046-c751-4796-af4a-82f399867804 .
+
+cbnl-def:e05d4af1-9e0a-43db-a7dd-fc36b04e828d
+        rdfs:isDefinedBy  cbnl-term:0f05f810-cbaf-4f05-b07e-a7218309da24 .
+
+cbnl-def:51bd17e0-e3ca-4671-8428-36e6c62baa68
+        rdfs:isDefinedBy  cbnl-term:1f758d5e-6adf-4463-a03a-80fe8f4a3f46 .
+
+cbnl-def:32e1707c-6678-4808-bd1b-236fe50dd6e3
+        rdfs:isDefinedBy  cbnl-term:a9c9bbcc-25cb-4b8f-8d40-6381a7cb02d1 .
+
+cbnl-def:427cbe1b-4b78-4538-a998-e624ce529d6b
+        rdfs:isDefinedBy  cbnl-term:6471f455-7ca2-49c7-b01e-2ef9d31db15a .
+
+cbnl-def:06e7daad-bfde-43ff-b751-58039bebc5a7
+        rdfs:isDefinedBy  cbnl-term:f5bde3c5-a65f-4047-8363-9ad29b3b72c5 .
+
+cbnl-def:c30d9006-767c-443b-b13a-507f76f207e0
+        rdfs:isDefinedBy  cbnl-term:7874aa38-0ebe-443e-91c9-fcb9977b113d .
+
+cbnl-def:b0914c2b-7928-4639-b99a-7ea25eaf5a31
+        rdfs:isDefinedBy  cbnl-term:d571c0fb-b7ba-4745-ac5a-f94938bd7b13 .
+
+cbnl-def:121911b2-55fb-4829-98f4-be7c54d0f238
+        rdfs:isDefinedBy  cbnl-term:d4ed63f7-8761-44e1-991e-77088cd426fc .
+
+cbnl-def:cd901707-cdc6-4742-9567-40bc4c511de6
+        rdfs:isDefinedBy  cbnl-term:7c3b2cfb-97b1-4258-8b1a-48b2776c9ec5 .
+
+cbnl-def:ca5add9a-dad8-4a89-a324-2b9f96ee21d7
+        rdfs:isDefinedBy  cbnl-term:0659ae9b-da31-458d-8f7b-36307049c458 .
+
+cbnl-def:f08b3431-6422-49a5-8ad2-12f59778ae2f
+        rdfs:isDefinedBy  cbnl-term:67abb8e9-284f-4b1e-a848-556e5b933ad2 .
+
+cbnl-def:bd6f96ff-4f0b-4049-a280-4758099827fc
+        rdfs:isDefinedBy  cbnl-term:ebc07241-4b6e-4b45-b54c-93a5e3b39ea1 .
+
+cbnl-def:95c45801-785f-4f65-8477-cf275ed16558
+        rdfs:isDefinedBy  cbnl-term:a782e503-621c-4e4f-a54c-590eb89e359d .
+
+cbnl-def:18f57cfa-db41-4426-9de2-edc8be721da0
+        rdfs:isDefinedBy  cbnl-term:25e08bdd-82f7-44fe-acd2-9f1d19d7c5aa .
+
+cbnl-def:8d72f90d-8a5a-48a5-a085-e67096daae47
+        rdfs:isDefinedBy  cbnl-term:a601b6d1-1ef3-4093-9810-feea203d86a4 .
+
+cbnl-def:ea9fe2b1-489a-4ba6-a716-37b0ed2dedad
+        rdfs:isDefinedBy  cbnl-term:4191b3c6-88fd-4d2f-8e82-43368dbd830b .
+
+cbnl-def:daf46997-0f45-42e2-805b-217635ed37b2
+        rdfs:isDefinedBy  cbnl-term:23c992cb-338b-4e30-bf7a-2c0e74c0bb6c .
+
+cbnl-def:77f84356-5220-46e2-be54-602d35937e07
+        rdfs:isDefinedBy  cbnl-term:6a5fb7e9-0068-46b3-ab8f-c7782a49c15e .
+
+cbnl-def:69156020-1ba0-443d-be15-f29d4a439435
+        rdfs:isDefinedBy  cbnl-term:a8d92750-a7fe-4095-b3c3-41cf23fe0b84 .
+
+cbnl-def:76ad1d96-3d47-44f4-8284-cefd244c6d7b
+        rdfs:isDefinedBy  cbnl-term:49f68e6b-7786-447f-aa72-e1768f494617 .
+
+cbnl-def:773c70b3-fd7f-480a-a667-f8f00fbdc2ec
+        rdfs:isDefinedBy  cbnl-term:d71c8cea-9422-4148-a693-68d6599c8d28 .
+
+cbnl-def:4d9d2fde-4673-4b12-a54f-3c72aab7ae45
+        rdfs:isDefinedBy  cbnl-term:ee7d87ad-c451-4846-b610-6e9c068eb005 .
+
+cbnl-def:0aba6cc0-0eed-4fc1-ae46-841995b5e6e2
+        rdfs:isDefinedBy  cbnl-term:19b096a3-d392-429b-9de7-973332115de8 .
+
+cbnl-def:3181fd8b-1122-4d8c-8ec7-5661da336879
+        rdfs:isDefinedBy  cbnl-term:5971516f-c520-4465-b2e6-7249b0a58a62 .
+
+cbnl-def:320bf03a-4a12-4e9e-9a7d-c308c551d35c
+        rdfs:isDefinedBy  cbnl-term:a690f552-3958-4626-995b-77c1b4741501 .
+
+cbnl-def:fe947d0f-4d73-42e8-a56c-d1541a9ceb8e
+        rdfs:isDefinedBy  cbnl-term:a700a2dd-2c4f-48ec-8d76-d2942d44d93a .
+
+cbnl-def:0bf12daa-5803-437d-accd-83762b50cc3b
+        rdfs:isDefinedBy  cbnl-term:2de33ba4-3e06-43c4-be84-aa779d25377d .
+
+cbnl-def:15dbe10b-3844-4980-a13e-5bd3262d176a
+        rdfs:isDefinedBy  cbnl-term:063ec8ae-0960-44b3-8bf1-5efb4d4c30ae .
+
+cbnl-def:086795f8-960b-4094-adb2-e7ce650841b6
+        rdfs:isDefinedBy  cbnl-term:6af2c1a7-89c2-449e-92b6-20c3a5c69011 .
+
+cbnl-def:5c22d55d-8ff9-4a1a-a90a-e02571a451ea
+        rdfs:isDefinedBy  cbnl-term:8ff7b940-daca-4688-9801-7b107ebff1ac .
+
+cbnl-def:128114e5-4e58-4785-a0c1-f56b20f573e7
+        rdfs:isDefinedBy  cbnl-term:71596e9e-f817-4aec-9492-c8c4043bef87 .
+
+cbnl-def:f984abe3-2bee-4d9d-a223-6ecb1d0968a7
+        rdfs:isDefinedBy  cbnl-term:f640f77e-2d0f-4689-a911-5d5c9bb6da0d .
+
+cbnl-def:b52829fc-a1e0-4595-a959-7067dfdcf8d2
+        rdfs:isDefinedBy  cbnl-term:94a6f7fd-2d6f-4e6f-9370-69fc4645893b .
+
+cbnl-def:cc8e7264-9694-4436-96f6-7ed0032d991c
+        rdfs:isDefinedBy  cbnl-term:a3be7fcc-7bf8-46aa-b926-c7d8ff3a3288 .
+
+cbnl-def:a9ce67a3-e46c-4cf8-9bf8-95e5eb2c6a65
+        rdfs:isDefinedBy  cbnl-term:353f0a23-234a-4364-80c8-b2230b549010 .
+
+cbnl-def:a6b6b2bb-1f6e-41da-bc75-108d4a69ab98
+        rdfs:isDefinedBy  cbnl-term:0d686e0e-ea68-4c0b-98d2-c4ebbe1c4ea6 .
+
+cbnl-def:8585ef6e-cdc7-4804-901b-edce22ae226c
+        rdfs:isDefinedBy  cbnl-term:7f3ab46f-498d-4455-854d-85eabda9ac99 .
+
+cbnl-def:e92800ac-1cff-4a8f-bb4f-1803605b8e0d
+        rdfs:isDefinedBy  cbnl-term:76e78663-df78-4337-821e-e5997b7f097a .
+
+cbnl-def:87dbcd3d-6525-4688-a33f-56f3e262d0ef
+        rdfs:isDefinedBy  cbnl-term:859ac673-d9e3-4e9e-ab90-513c1784c3c0 .
+
+cbnl-def:2efb818a-10a5-424c-a9af-70d733b02258
+        rdfs:isDefinedBy  cbnl-term:b05da581-ef76-4ea7-a64e-4635a7c748c6 .
+
+cbnl-def:38288cc8-ec8b-4730-ae93-a492c8bb9d24
+        rdfs:isDefinedBy  cbnl-term:5183e7c0-5de9-4c39-8c09-a6b2eb5a1cf7 .
+
+cbnl-def:33b24051-2e9f-48a3-a33e-2a524c60d649
+        rdfs:isDefinedBy  cbnl-term:3413cb8e-0cd1-4ecf-ad38-20ea77a437f8 .
+
+cbnl-def:2d76da4e-e67d-4d22-82f2-fc276b5ec8cd
+        rdfs:isDefinedBy  cbnl-term:87d504fd-0f10-43d0-bdfc-3f823340517a .
+
+cbnl-def:05419108-7cd8-4d64-9221-7b4402bae071
+        rdfs:isDefinedBy  cbnl-term:0ca03e5b-e3d7-48ed-a96d-6f9f67028c57 .
+
+cbnl-def:e8d6f76c-7bf7-465e-a20a-ac80c91f9aec
+        rdfs:isDefinedBy  cbnl-term:d715afa6-a0b5-4086-a7ab-56d063bda9ae .
+
+cbnl-def:5f213f10-e6ce-4314-a73c-d261d8dac3bf
+        rdfs:isDefinedBy  cbnl-term:09b9e998-01dd-4093-9b69-02353451b570 .
+
+cbnl-def:d57a9b26-e4e9-43ff-8ee5-d88e2b10aefc
+        rdfs:isDefinedBy  cbnl-term:141265c8-e93f-48f3-8a2d-94f8a431fd33 .
+
+cbnl-def:13718b19-bcb9-4e0a-92c5-06105e3e1a3b
+        rdfs:isDefinedBy  cbnl-term:bc69e33d-f3a5-4014-957a-d5a3f03f465d .
+
+cbnl-def:73471e7f-b2b5-4ab2-b85c-14617fa1fbe3
+        rdfs:isDefinedBy  cbnl-term:849deb3b-70e3-4b37-b0e1-f4b621e52207 .
+
+cbnl-def:21ee169a-2b6a-4b29-8313-cad158a75ee9
+        rdfs:isDefinedBy  cbnl-term:f438f9dd-0b8d-468a-ab84-38494b0e1b5a .
+
+cbnl-def:73efcdbb-1e3a-4064-bff0-fc6fa93f0db8
+        rdfs:isDefinedBy  cbnl-term:55547d17-d0ed-45aa-938c-a9a5e4ff34c2 .
+
+cbnl-def:fa527c82-e770-4394-8091-591a35ec4ac5
+        rdfs:isDefinedBy  cbnl-term:5f0ea227-de85-47e6-b9b0-c589355960f3 .
+
+cbnl-def:929ff6e2-380d-494c-b1d2-cde917a54e8c
+        rdfs:isDefinedBy  cbnl-term:15558c1e-1a36-4900-835d-8fa0c0fd937f .
+
+cbnl-def:be8fa4c0-e6bd-4ea0-b771-c42f172e80e2
+        rdfs:isDefinedBy  cbnl-term:d4f73ff3-3a9d-4738-8d03-2b45d799dc83 .
+
+cbnl-def:975b770e-d3db-4f1d-9e73-7f27a7588048
+        rdfs:isDefinedBy  cbnl-term:34c5039e-3caa-4688-b6f7-b4b2291eba01 .
+
+cbnl-def:9d298f5a-79f0-4f57-b4f5-6cea9e86baad
+        rdfs:isDefinedBy  cbnl-term:e31bac96-329a-4c6b-bfbd-c859637ad58d .
+
+cbnl-def:48a22e37-cb7a-4534-ad21-58d873b24e6b
+        rdfs:isDefinedBy  cbnl-term:fe514396-22b8-42e5-85f8-6102e50bfd99 .
+
+cbnl-def:c9125316-7d22-4295-aadf-901461c7fde9
+        rdfs:isDefinedBy  cbnl-term:6e59eec3-de00-4825-a066-35aa7da6fe53 .
+
+cbnl-def:f9ea98e3-14a6-4efa-864e-2823940b24ce
+        rdfs:isDefinedBy  cbnl-term:1b3e9e65-3ca8-48f7-9598-38b826019f65 .
+
+cbnl-def:f27189ce-af69-4190-9944-9fa81d448b49
+        rdfs:isDefinedBy  cbnl-term:57f684cb-015f-4089-b346-e4f775ea0d6c .
+
+cbnl-def:761c78b2-20bd-4ce0-ac64-7e27db6d7a2f
+        rdfs:isDefinedBy  cbnl-term:654e4bcd-d005-4c5f-9f59-a9377b07eb2d .
+
+cbnl-def:583254e2-5018-4e6e-93f5-97364c7bb23c
+        rdfs:isDefinedBy  cbnl-term:a41f9869-a75e-4ac9-b93f-20b75650fdc6 .
+
+cbnl-def:ff8e2682-400f-4a20-8bc3-f652c99b1b07
+        rdfs:isDefinedBy  cbnl-term:2903bd4c-c952-438e-a00e-8ab515b21a67 .
+
+cbnl-def:0be2ad46-ed21-4899-bb30-b5292e0e3fd9
+        rdfs:isDefinedBy  cbnl-term:5713146b-ffa7-4c01-9115-f33a8a7b6b31 .
+
+cbnl-def:eecbbcce-2ca7-492f-9b2e-465d9b11b9ac
+        rdfs:isDefinedBy  cbnl-term:ffa7adaa-860d-495e-a352-d193a31b5bdf .
+
+cbnl-def:0a3c8f28-902e-49d3-9436-1efbafd1a12d
+        rdfs:isDefinedBy  cbnl-term:d6b29dee-314a-4b2d-8fb6-96935d066d0f .
+
+cbnl-def:a5a491d6-1a6d-4ec3-85bb-41d039347a24
+        rdfs:isDefinedBy  cbnl-term:578fc2ac-a007-4f3e-9f37-e39acf797232 .
+
+cbnl-def:3fda7e94-c095-46db-9ce3-224c5acdc0e1
+        rdfs:isDefinedBy  cbnl-term:76efb7fc-cf26-4e39-8c64-aa682a663ad6 .
+
+cbnl-def:389d4267-c079-4008-b824-3ddc7254c08e
+        rdfs:isDefinedBy  cbnl-term:02f69644-d083-4544-ae73-56485dda616c .
+
+cbnl-def:523e835b-aec6-452c-b015-a416eb081c23
+        rdfs:isDefinedBy  cbnl-term:87bda55d-6896-43be-88ad-ce87a257aa33 .
+
+cbnl-def:d8aff1bf-3bb4-4c52-bf0d-8355d6dfd75f
+        rdfs:isDefinedBy  cbnl-term:40df1c61-7b6f-4720-8269-9ca8ed224a11 .
+
+cbnl-def:94852bb2-aaa3-416a-a522-b9139357a0e4
+        rdfs:isDefinedBy  cbnl-term:f531eeb9-dd43-4f1b-ad8c-31a46d112a22 .
+
+cbnl-def:a2d30d29-e0e4-4da1-a308-c89f1db9f2cc
+        rdfs:isDefinedBy  cbnl-term:0a4fdd95-fdf1-4635-9c4b-17c7a0fe1694 .
+
+cbnl-def:850efde4-c072-4045-bda0-1944369acc99
+        rdfs:isDefinedBy  cbnl-term:4fc57a42-af1b-4073-a375-e04ee49c896f .
+
+cbnl-def:5cf53cde-a0b8-477f-9eb3-822b3d51ebd9
+        rdfs:isDefinedBy  cbnl-term:9e05c23f-1aca-4fd4-a2f9-a0702644d69b .
+
+cbnl-def:8043c651-1413-44bf-a3df-86162bc40d73
+        rdfs:isDefinedBy  cbnl-term:8b2b62e5-c63d-43c1-b442-040086c0993e .
+
+cbnl-def:3cdeff2e-4ec3-4387-b8d4-f0cc5355cd8f
+        rdfs:isDefinedBy  cbnl-term:c09b1a33-0b29-4825-8e5c-cf2a22b50891 .
+
+cbnl-def:d71cb5f5-34f3-4009-ac79-4f90ff22fa98
+        rdfs:isDefinedBy  cbnl-term:3bba6ecc-ff52-4d3f-9878-f98d3bcc6e69 .
+
+cbnl-def:abe3b1fa-5063-4760-81b5-3de6c9d40905
+        rdfs:isDefinedBy  cbnl-term:a77713fc-0b85-42d9-a294-1859e2b5124a .
+
+cbnl-def:8214d2f1-0c73-4da1-b428-192c8898eb7e
+        rdfs:isDefinedBy  cbnl-term:0d53d857-7a99-4633-9e84-195effaf7eb9 .
+
+cbnl-def:0fd7bec2-ad5e-4c64-aced-b3d30f6eab8c
+        rdfs:isDefinedBy  cbnl-term:76a78215-e0fb-43aa-88fc-7a019aa5def6 .
+
+cbnl-def:5e7d2acd-3096-44ba-bdd8-63ec86285ac7
+        rdfs:isDefinedBy  cbnl-term:1aff482c-8a39-4bcf-af11-3fe28dbbe64b .
+
+cbnl-def:fcc55608-7fc4-42bb-8d3f-20d3eaad9ac1
+        rdfs:isDefinedBy  cbnl-term:fee3c47f-70f3-4be4-8ddd-2ae6b883f108 .
+
+cbnl-def:0997140f-04cc-49a8-97f5-2355f85271b3
+        rdfs:isDefinedBy  cbnl-term:a2f8b343-e319-4095-a5cb-9a0d178369dc .
+
+cbnl-def:1e19223d-ec1f-473d-b805-2155de65c887
+        rdfs:isDefinedBy  cbnl-term:f78b0d77-a841-4b3a-be4e-367d9d81e966 .
+
+cbnl-def:dcf167af-0cd4-4db5-a1b4-ee2983059045
+        rdfs:isDefinedBy  cbnl-term:f48361c4-f479-4d52-9ede-94b71e2514eb .
+
+cbnl-def:042073ad-cace-4902-aaf9-aeaac64ffdd1
+        rdfs:isDefinedBy  cbnl-term:ece9c38a-37d4-4791-8b90-147f0e69bb73 .
+
+cbnl-def:c18a520a-49e8-4af3-853d-291ed069d0be
+        rdfs:isDefinedBy  cbnl-term:6b61bbc1-147a-4eb0-a1f6-ea89a6e705ee .
+
+cbnl-def:fab9ef1d-770c-48ec-9a1a-0255908cc1be
+        rdfs:isDefinedBy  cbnl-term:1fcb6fe7-8f62-43e2-929a-5050c5b77842 .
+
+cbnl-def:2d6dba87-9d4e-4a72-81e9-b652fbd3f5a2
+        rdfs:isDefinedBy  cbnl-term:e49b56da-d944-4ca0-a824-ff5b20354a0d .
+
+cbnl-def:b78646d8-5e1b-4d36-bb48-eccf563fce9c
+        rdfs:isDefinedBy  cbnl-term:43bbbb08-efca-4fb2-b36b-3f5d64ba3a78 .
+
+cbnl-def:e940498c-29f2-4e37-97e5-55e641ed79f9
+        rdfs:isDefinedBy  cbnl-term:f67063fd-03bd-422e-b8db-d0440ba5e7ac .
+
+cbnl-def:1abdff3d-2c8a-4d55-823a-2ac46315d9a9
+        rdfs:isDefinedBy  cbnl-term:318c647b-1ed9-4fd2-9e3c-797bb5f9a5af .
+
+cbnl-def:8217371c-6ea8-41e1-9aa4-e2e007ca7b39
+        rdfs:isDefinedBy  cbnl-term:b42d2506-c26c-4efa-9c6d-cb870dc6bf68 .
+
+cbnl-def:66ef5f11-cedd-4b89-a48c-a27b557e5bbd
+        rdfs:isDefinedBy  cbnl-term:d2611fe5-c21a-4960-996b-0b1c01ed3729 .
+
+cbnl-def:966c523a-6591-4383-a854-bcd6714faa19
+        rdfs:isDefinedBy  cbnl-term:5b3f8ccf-ca17-47f1-b974-11436f324dea .
+
+cbnl-def:aea70f35-744b-4f03-8abc-6f902fbcbe74
+        rdfs:isDefinedBy  cbnl-term:a09cc604-7098-47a0-896d-43918691e170 .
+
+cbnl-def:fcb2f7dc-c958-43e3-8d3e-d234968b1178
+        rdfs:isDefinedBy  cbnl-term:1c7a3056-2372-4139-8bd4-0528912e4aa3 .
+
+cbnl-def:5b5dbc18-1d1a-400f-a52a-28349b7f1508
+        rdfs:isDefinedBy  cbnl-term:97e844bd-34e7-4b63-b365-609f516e5200 .
+
+cbnl-def:26840322-f098-4fe1-a1de-e9bdfab7b445
+        rdfs:isDefinedBy  cbnl-term:0a987807-cfcb-446c-be46-010d2486cbe1 .
+
+cbnl-def:8e3ef73e-51eb-43af-a921-a0bdd221cd93
+        rdfs:isDefinedBy  cbnl-term:27fd9135-6c9a-4edb-bb8f-a749af9702ac .
+
+cbnl-def:96a82ed1-bab5-478d-a224-6aab2a204ff8
+        rdfs:isDefinedBy  cbnl-term:9a82a6ce-fb7d-4f7b-8c80-ce23e5ea5c33 .
+
+cbnl-def:5a2cfad0-ae0d-4d2c-b1bf-b415a1a393ce
+        rdfs:isDefinedBy  cbnl-term:053fb6c1-f8b8-4156-8867-b1c60f584d27 .
+
+cbnl-def:a77ce5dc-dbd6-4824-abe1-4a60a882daf7
+        rdfs:isDefinedBy  cbnl-term:d5d02a93-3e88-447a-b6af-852d8976d173 .
+
+cbnl-def:42df7338-a741-485e-aaf1-f6f28be33970
+        rdfs:isDefinedBy  cbnl-term:dfdea8cc-23ab-4096-83ca-f743d48b6780 .
+
+cbnl-def:70e8141e-a360-4037-a924-15dc053c1b1c
+        rdfs:isDefinedBy  cbnl-term:64fe3a89-ec0f-49a7-8c40-fbd65b7daafa .
+
+cbnl-def:adecf064-9f64-4d92-ac7c-e4e6b6ee4b70
+        rdfs:isDefinedBy  cbnl-term:7e4c96ec-933c-4d81-a5b5-c236b3f4ed37 .
+
+cbnl-def:81952b85-14c2-47d4-bce1-594e86dec661
+        rdfs:isDefinedBy  cbnl-term:a1a2ec44-98ca-4991-b76f-9881c57f83f7 .
+
+cbnl-def:8760f4f8-e2bd-4982-9ed9-6cea9467a0a0
+        rdfs:isDefinedBy  cbnl-term:ddbf0699-2175-49ff-91f2-e80b4f2a5247 .
+
+cbnl-def:e6a23f59-e75b-4966-addd-767ab32b8019
+        rdfs:isDefinedBy  cbnl-term:3bae4fdc-e803-4104-95ee-996d58cd98b4 .
+
+cbnl-def:1986eec1-23f8-4ded-8f36-907b9baa59f5
+        rdfs:isDefinedBy  cbnl-term:4edd7c4f-6843-4722-b408-53c984d1c4d5 .
+
+cbnl-def:218bf5fe-ad8b-45eb-a0aa-1a7e53c2c173
+        rdfs:isDefinedBy  cbnl-term:0a1d1081-03f4-40cc-8b27-b7e8937093e9 .
+
+cbnl-def:565f990a-df48-4777-ab39-59aeadfea6df
+        rdfs:isDefinedBy  cbnl-term:1d2e3139-763b-4423-a731-93f1bf79d3d3 .
+
+cbnl-def:71841f5c-751f-4d9d-bff5-f907789f544f
+        rdfs:isDefinedBy  cbnl-term:8ccd5a0d-a8ce-4f09-bff7-eb97e7470fa4 .
+
+cbnl-def:bc3737f0-b5b7-41a8-a1b4-b8a5bdf9e856
+        rdfs:isDefinedBy  cbnl-term:117e426c-776f-4b89-b8d9-5b99bef46618 .
+
+cbnl-def:b0bc2bd5-859d-4302-8c14-92cdbc3127ea
+        rdfs:isDefinedBy  cbnl-term:b30f2023-768b-4c4a-a4f1-00316db231a3 .
+
+cbnl-def:349a07b9-a46a-4d6d-9a72-04e3eb372a9f
+        rdfs:isDefinedBy  cbnl-term:1c48d837-49f6-4f0c-8470-f8fbfeefeabb .
+
+cbnl-def:30c43109-98df-4562-a429-643fcc4e2288
+        rdfs:isDefinedBy  cbnl-term:78e61fbd-a3eb-45c2-8f37-5230edf0b792 .
+
+cbnl-def:33e7c013-380b-404d-8577-adf414158461
+        rdfs:isDefinedBy  cbnl-term:40123c08-63f5-4a07-a154-bd4ecf5c372e .
+
+cbnl-def:1ec1cb5d-44b3-4be2-b10d-16d7470a8fe8
+        rdfs:isDefinedBy  cbnl-term:c2a7b9bb-110e-45b7-8578-051eb56f43f8 .
+
+cbnl-def:221abb14-b783-4672-ae77-c6b1cf83e140
+        rdfs:isDefinedBy  cbnl-term:47cf385a-4ce0-4679-91d2-e9224f67f750 .
+
+cbnl-def:1d341de8-f63e-49cb-9247-ff8f46015c79
+        rdfs:isDefinedBy  cbnl-term:b85c36ae-3471-43d4-b559-c6932db9c352 .
+
+cbnl-def:6894f934-700f-466d-87e7-0b76b30ddbf2
+        rdfs:isDefinedBy  cbnl-term:1ff1783f-cd63-4865-ab3e-a0558bc2c0a7 .
+
+cbnl-def:3736dad3-81a1-4a35-8cca-60641a2432d3
+        rdfs:isDefinedBy  cbnl-term:0a9dac20-8989-4be6-8cc9-ee15cb638614 .
+
+cbnl-def:726aef2e-6bfc-4934-a3cd-a1ada20e4703
+        rdfs:isDefinedBy  cbnl-term:6147f4f1-8839-4285-bf5f-8ad1006ae741 .
+
+cbnl-def:2d819f70-f4e0-4cec-a790-4940a2caf84f
+        rdfs:isDefinedBy  cbnl-term:bde10d60-05a0-4861-b2ee-04e672f9e450 .
+
+cbnl-def:2fdfbe5f-4174-448c-8169-93c3c0fbf60b
+        rdfs:isDefinedBy  cbnl-term:9071cc67-00e8-4aba-81c1-efc79aa95f44 .
+
+cbnl-def:7be7dcca-a430-4e15-af37-cecd8162740f
+        rdfs:isDefinedBy  cbnl-term:399c6eae-43c9-4df6-935f-4c8bb6fd26e2 .
+
+cbnl-def:18a8e2bc-7e78-4de6-9695-fe9ffd00e7a7
+        rdfs:isDefinedBy  cbnl-term:9221052b-20ca-4168-a1cc-3c0a706bc67c .
+
+cbnl-def:61c20844-6d6c-4434-b989-278d221d0924
+        rdfs:isDefinedBy  cbnl-term:6d7e7efc-65ab-4e1b-b16d-a90d8febf788 .
+
+cbnl-def:0c6b1a49-536f-407c-a8d8-9d21b3e8c384
+        rdfs:isDefinedBy  cbnl-term:10dd8e04-0b7e-44ea-a630-1777036f2024 .
+
+cbnl-def:02607e16-9e44-465b-aa97-5dfda290b2aa
+        rdfs:isDefinedBy  cbnl-term:f17b5801-dc14-4f15-b8f1-475d7290d5e8 .
+
+cbnl-def:620d9a1f-ce33-4b46-bd3e-3498086f5401
+        rdfs:isDefinedBy  cbnl-term:4bd58c25-e5b8-4ba1-9d8b-c8d10d856fd4 .
+
+cbnl-def:70c9031f-73b7-4397-84dd-d9d5298cd53a
+        rdfs:isDefinedBy  cbnl-term:93810a1c-9caf-4d37-9faf-89b22a522da9 .
+
+cbnl-def:b6fea697-a156-431c-9c5c-af90279224a4
+        rdfs:isDefinedBy  cbnl-term:089431e1-e3ef-4920-8791-fafe54d68141 .
+
+cbnl-def:54269d23-6f86-4b90-9151-59e56250369c
+        rdfs:isDefinedBy  cbnl-term:9f668443-ae2d-42c6-a5bc-87f6f2bc033d .
+
+cbnl-def:7c8993f2-d66a-47e2-bc40-c75d045bf686
+        rdfs:isDefinedBy  cbnl-term:7f56ee70-5191-465b-80be-95eafe89a2d2 .
+
+cbnl-def:2b6d7965-0e16-4831-942a-d7928e320187
+        rdfs:isDefinedBy  cbnl-term:1dcd7adb-b28c-4016-9ea3-3266bd2677a1 .
+
+cbnl-def:d1090766-b39d-4b9b-ae92-96a0abda5b51
+        rdfs:isDefinedBy  cbnl-term:285a0240-dff2-4364-85bb-743d9418b183 .
+
+cbnl-def:d5dd8c53-d6e1-4cc4-99c6-afe811d585a1
+        rdfs:isDefinedBy  cbnl-term:cd3c89e2-2877-4fcd-9dfa-bbbd4a18ee9d .
+
+cbnl-def:723d57f2-5b0e-4bce-bc67-e8dde92d2f95
+        rdfs:isDefinedBy  cbnl-term:b9f269d6-60c3-4067-929a-f0efc9626afd .
+
+cbnl-def:17a5aef6-9a73-4e6c-8c3f-03cfe9a796a5
+        rdfs:isDefinedBy  cbnl-term:3c624619-27e2-4235-8ca5-5fc80dbc32ca .
+
+cbnl-def:316964cf-fb2a-45ec-8912-8877becbd170
+        rdfs:isDefinedBy  cbnl-term:268c2745-4af4-4610-a8c0-815870876785 .
+
+cbnl-def:7f351a68-5af8-4cb5-b95a-cbea9fddce19
+        rdfs:isDefinedBy  cbnl-term:cf84d648-8ea4-48b0-80e9-408c5155763c .
+
+cbnl-def:491205f1-aaa0-48cf-9ecb-d7fe5293c9bf
+        rdfs:isDefinedBy  cbnl-term:f05d2fb4-bb27-4807-8a3a-175edae02546 .
+
+cbnl-def:00815153-6001-4a15-8e07-31d4d739634b
+        rdfs:isDefinedBy  cbnl-term:b53b4888-ea44-454d-9727-a75faee37152 .
+
+cbnl-def:96724ab7-1b64-44da-8973-d55418998dbb
+        rdfs:isDefinedBy  cbnl-term:97967ba0-b5b9-4918-8aa8-a8f37ca7af0c .
+
+cbnl-def:5c77f7f9-6691-4b19-b97f-05bca19c0e0a
+        rdfs:isDefinedBy  cbnl-term:260b2ba5-4402-42ca-bb14-1240f84d7257 .
+
+cbnl-def:54cfb9f5-ba53-4e7b-82bb-7a724673e826
+        rdfs:isDefinedBy  cbnl-term:94695e9b-b154-4d21-b680-00aaefd0636b .
+
+cbnl-def:3bbe7427-9221-4ab0-a38f-a7f76d6b15ce
+        rdfs:isDefinedBy  cbnl-term:0a384e70-11b4-4119-ae3a-8a575c44ea32 .
+
+cbnl-def:2c71f70d-d7b2-445f-a32c-de167c07e399
+        rdfs:isDefinedBy  cbnl-term:9726095c-968b-425f-87db-e899b110675d .
+
+cbnl-def:1913302c-9148-4a8a-90ee-60165f7e7560
+        rdfs:isDefinedBy  cbnl-term:462d7ad2-d726-44ff-88ad-88c63f5aaa9d .
+
+cbnl-def:a7fb07b4-eb6f-4efb-b27a-3fc4c303295c
+        rdfs:isDefinedBy  cbnl-term:331c9a4f-a0b4-45fc-9a3e-bc486b0587a1 .
+
+cbnl-def:cc63a380-fd0a-4fa5-b677-da6ed02623cc
+        rdfs:isDefinedBy  cbnl-term:31b8acc4-6b07-476c-b3f9-ef6e55ce1d75 .
+
+cbnl-def:d1ec906e-4366-4b39-9b55-24ef0507fe4c
+        rdfs:isDefinedBy  cbnl-term:c9328a65-8eaa-4ae7-a24c-85993e605147 .
+
+cbnl-def:ad5af686-cbc9-46e1-b143-49b18aba13ce
+        rdfs:isDefinedBy  cbnl-term:6bee2365-2928-4cd0-8d78-1b7a73ba7399 .
+
+cbnl-def:ec330a1d-fbaf-4ca6-bfbf-f16b41968f8f
+        rdfs:isDefinedBy  cbnl-term:f353f16a-78cb-468f-ab5e-ca3f9e82b41f .
+
+cbnl-def:459b6d5d-b034-44d2-9753-17a5fb1c4681
+        rdfs:isDefinedBy  cbnl-term:8c85972a-25e4-4d96-b29a-b8873713b7ee .
+
+cbnl-def:10c03428-735d-47d1-a0e0-2a6fd7373ceb
+        rdfs:isDefinedBy  cbnl-term:bd6121b2-7d0d-413e-beba-8d8aeb8045cc .
+
+cbnl-def:9d6f6c53-1788-4748-90e3-374dabb51fef
+        rdfs:isDefinedBy  cbnl-term:7a7a3949-83b8-4138-819f-72e80795d27e .
+
+cbnl-def:5962166a-d551-48f5-9d53-6129e4cc68c3
+        rdfs:isDefinedBy  cbnl-term:7b09d343-0cfa-48e6-94b3-fd62fae7d8b4 .
+
+cbnl-def:216d171a-da40-48e8-8b42-523e2e0c367d
+        rdfs:isDefinedBy  cbnl-term:5ff7c423-4a0f-4acb-b6e8-18610ec0cd10 .
+
+cbnl-def:3ace082f-bd3f-48d1-9123-a94412306854
+        rdfs:isDefinedBy  cbnl-term:59c6114c-1286-4dde-8ff8-b878ec519eab .
+
+cbnl-def:542d52fd-e268-40eb-9bc8-4f12b97fab9a
+        rdfs:isDefinedBy  cbnl-term:ee15bf02-63c3-4bbd-be73-cc301b821082 .
+
+cbnl-def:0a1706be-1cac-4adf-81ab-a1bbfc3f0e78
+        rdfs:isDefinedBy  cbnl-term:a0d766cc-14b0-423d-97a2-045761d148fb .
+
+cbnl-def:54e57b01-e4c6-4e1c-9e3b-8ad2a4ee20e9
+        rdfs:isDefinedBy  cbnl-term:4edd311a-1b06-46d5-a661-34009cab402f .
+
+cbnl-def:c4f0b2ba-68af-4449-9651-4041d7a895a8
+        rdfs:isDefinedBy  cbnl-term:d9a2b2db-b75d-43d8-a1f1-2642c930ee15 .
+
+cbnl-def:d3834003-ddb2-4558-b4c6-26430958d066
+        rdfs:isDefinedBy  cbnl-term:ae1df81c-8456-4cbd-b0ca-8beb06939214 .
+
+cbnl-def:31b7aeca-36dd-4d5d-8938-74c358d367ba
+        rdfs:isDefinedBy  cbnl-term:6bba6c4d-a1fc-4c5f-b488-fa58a6779171 .
+
+cbnl-def:3a20bc9e-cae4-4333-9bf0-daa387126e8f
+        rdfs:isDefinedBy  cbnl-term:ae04e426-dca0-47e9-92f4-30bc9e490426 .
+
+cbnl-def:546da687-fb06-44d5-bc86-f8a194030740
+        rdfs:isDefinedBy  cbnl-term:a3bad785-927a-47dc-94a7-581296bf8ad7 .
+
+cbnl-def:b540afa7-03d0-4582-a6a0-2d4883953619
+        rdfs:isDefinedBy  cbnl-term:2306e7d4-c993-49eb-8bcf-d868c848ac3b .
+
+cbnl-def:2847a71a-63eb-49a0-88c3-5244ccbd02f0
+        rdfs:isDefinedBy  cbnl-term:da2c5f0f-1b2f-4268-8709-d398de827cd6 .
+
+cbnl-def:786c56e7-9089-45fd-96a3-9307b01c94b7
+        rdfs:isDefinedBy  cbnl-term:fe919f69-f0d7-4300-9001-b87844c51583 .
+
+cbnl-def:9f06725f-db9f-4c74-9f05-79f899bc9dc5
+        rdfs:isDefinedBy  cbnl-term:3b6a2bce-b44c-49ac-8060-29b903129b18 .
+
+cbnl-def:efe9dfcd-e6ed-4a61-af56-b5940b10cb13
+        rdfs:isDefinedBy  cbnl-term:575901eb-2c68-4256-9289-5040e3ba66b8 .
+
+cbnl-def:caf7283b-e6da-4219-8622-39dc95ef91b3
+        rdfs:isDefinedBy  cbnl-term:1e01fe8e-6892-4bb3-b521-6cd9db71f617 .
+
+cbnl-def:99eb8672-ae31-4ce1-a89b-351f70c8abf7
+        rdfs:isDefinedBy  cbnl-term:40de8e18-7f72-4bc9-8e82-9dd4790b4e08 .
+
+cbnl-def:45b9c50f-05dd-4e5c-b3d6-4f9eecea21e6
+        rdfs:isDefinedBy  cbnl-term:30b63e58-35ca-4ba2-8455-84e29d282a3c .
+
+cbnl-def:3f751fdc-3fe7-4f98-a178-1e53f5736d58
+        rdfs:isDefinedBy  cbnl-term:bdcf033d-e488-40ab-93f1-378e69bffcd9 .
+
+cbnl-def:c4759e6b-03f2-4489-add2-e770ba336a36
+        rdfs:isDefinedBy  cbnl-term:87549519-a07e-473a-a239-8ce0867aa3fc .
+
+cbnl-def:ce52be86-e63d-4d6a-b0a5-83ecc3496ec9
+        rdfs:isDefinedBy  cbnl-term:cf1c9d82-cc2d-47a2-823a-f697f6af1cef .
+
+cbnl-def:b1a21ae5-cffb-4494-8cca-21bebb1251d8
+        rdfs:isDefinedBy  cbnl-term:8972e592-63f6-4bf7-9be4-d0ad7117214b .
+
+cbnl-def:ceb0ae96-c4dc-4146-afc4-5374e4181cb5
+        rdfs:isDefinedBy  cbnl-term:77b68443-70b9-4c2e-a483-25cede1f250c .
+
+cbnl-def:a2c73300-6cc5-41a7-8bd8-0870c4a6075a
+        rdfs:isDefinedBy  cbnl-term:808cb4d6-9651-487e-ad7b-5689eb0fa685 .
+
+cbnl-def:c77b9572-d2b9-4e51-9665-11d65335f1a0
+        rdfs:isDefinedBy  cbnl-term:c4f5baa9-062a-4069-aefc-59e9bdafc9c8 .
+
+cbnl-def:dc1a06e7-d2eb-419c-9963-37e57224dbcf
+        rdfs:isDefinedBy  cbnl-term:53874d29-1077-4d2b-a31f-ac803f345adb .
+
+cbnl-def:8bd8c68b-3ec8-4da8-acdd-d919427f5592
+        rdfs:isDefinedBy  cbnl-term:359a28e8-7381-4dd3-8b22-e5ef00753feb .
+
+cbnl-def:7b352c27-dd39-441a-b0a8-488d8cd460ca
+        rdfs:isDefinedBy  cbnl-term:39c99421-513d-481f-92df-8cc43e0e0523 .
+
+cbnl-def:5f939285-3a7a-42d8-8fa3-e32e7234cf8c
+        rdfs:isDefinedBy  cbnl-term:0314e6db-2c43-4364-adc6-f91244c3a204 .
+
+cbnl-def:6781b562-e998-4821-b81e-9b5740bea0d9
+        rdfs:isDefinedBy  cbnl-term:0301955d-53b9-46bd-a954-d91cdc370e1a .
+
+cbnl-def:be452d1a-2326-47dc-b0a2-72a6c96ae286
+        rdfs:isDefinedBy  cbnl-term:e8bc289a-ef78-4120-9f12-1871778a266a .
+
+cbnl-def:6981151b-4fb3-4b53-b05c-3d20a316252e
+        rdfs:isDefinedBy  cbnl-term:c989456e-d938-4b5d-a285-88cb5958e133 .
+
+cbnl-def:71300e16-968f-46e5-b031-0fbf760df7cb
+        rdfs:isDefinedBy  cbnl-term:b26ea66e-ec4f-4f19-aa08-cb2f9759d4d5 .
+
+cbnl-def:c848aa59-7e42-4bd1-8567-a821bc11a949
+        rdfs:isDefinedBy  cbnl-term:0ab633ec-1ad5-4614-a3bf-7b1e09906a6d .
+
+cbnl-def:4effcaef-0241-4428-8e85-01226663121e
+        rdfs:isDefinedBy  cbnl-term:d403fe4e-2811-4bcf-acd0-a2992afdf7eb .
+
+cbnl-def:bdd7142a-d92a-44ee-a466-9b8dc46dd5c8
+        rdfs:isDefinedBy  cbnl-term:a5033620-c8fd-4194-8801-562b0a939f0e .
+
+cbnl-def:83898900-4fa7-4439-b072-263621681ebb
+        rdfs:isDefinedBy  cbnl-term:f3e4bb1b-7f69-4a15-9078-20304b94121a .
+
+cbnl-def:6a7e6c32-60fb-4c7d-9359-3a2acff07394
+        rdfs:isDefinedBy  cbnl-term:9ea241c1-57af-4a34-b39c-459d4c00d472 .
+
+cbnl-def:a83e830d-9b38-441f-a445-5cf0f6fe4950
+        rdfs:isDefinedBy  cbnl-term:31d6f424-597e-467d-a190-ad86cd31a226 .
+
+cbnl-def:dd73a90d-7822-4c61-8bb1-28316c264998
+        rdfs:isDefinedBy  cbnl-term:d32921f7-9348-4314-b73e-09744339e935 .
+
+cbnl-def:27d9faaa-71bc-4d78-8824-438fc07bd86f
+        rdfs:isDefinedBy  cbnl-term:096caf4a-1c4e-47ba-a803-aea88ba91ddb .
+
+cbnl-def:f7d529e8-1d02-4ca2-8000-1367083bcc79
+        rdfs:isDefinedBy  cbnl-term:d130dfca-ced9-4d3d-89eb-910cbbcacef1 .
+
+cbnl-def:d0fd4742-8e05-4071-87f3-60670aeb7936
+        rdfs:isDefinedBy  cbnl-term:0fb9a019-f4cd-4d3c-849e-0dce1dd5abdc .
+
+cbnl-def:b330200b-7db3-413e-bb9a-0ddb86e45bc5
+        rdfs:isDefinedBy  cbnl-term:106ba066-810b-40bb-a9e9-8d829b7f67b6 .
+
+cbnl-def:b750bb4b-27c3-4455-a6e4-aa3cca4d51e1
+        rdfs:isDefinedBy  cbnl-term:c6395f2f-6770-4686-ac35-d30e3ab54f0c .
+
+cbnl-def:d1271565-d972-4dd7-9479-36e14566625b
+        rdfs:isDefinedBy  cbnl-term:122cdae4-433c-4ca2-a48a-702f289c86af .
+
+cbnl-def:e41cd4b5-0954-4a33-8a10-1a7040142ab5
+        rdfs:isDefinedBy  cbnl-term:cc85dd7d-4c98-49ac-8451-0de9993ac97f .
+
+cbnl-def:bebf1851-8459-4143-8eac-1e0e8bf153df
+        rdfs:isDefinedBy  cbnl-term:ca533fd2-37c2-40be-a2b9-2d833e1290f7 .
+
+cbnl-def:7c0d9a8d-b79d-4f25-82ee-0575c57a56c8
+        rdfs:isDefinedBy  cbnl-term:a3a473fa-ac47-4c8a-9601-ccd636bc3440 .
+
+cbnl-def:255472d7-184d-4b41-a8d5-610c186d8e08
+        rdfs:isDefinedBy  cbnl-term:d1928c3b-b3f2-40a2-a044-4e444e2813e3 .
+
+cbnl-def:7bad8e1c-993f-4aa5-8b96-75e43141bb84
+        rdfs:isDefinedBy  cbnl-term:2d5e7969-00ce-439d-b1de-a8eff9fa881d .
+
+cbnl-def:2e5d40aa-55a9-4198-ba12-3c2033fc53c5
+        rdfs:isDefinedBy  cbnl-term:bbf2f3cb-e077-429e-b58c-07ebf3269e7d .
+
+cbnl-def:236dc60e-2f69-474d-ad77-cf1b48b6f446
+        rdfs:isDefinedBy  cbnl-term:04d0dfa9-2af5-4954-a37a-82bfd84220a0 .
+
+cbnl-def:440a39e7-d465-4b2f-9f9a-5d3f650a53b6
+        rdfs:isDefinedBy  cbnl-term:5a6af301-c55d-43ed-b20e-c65260afb783 .
+
+cbnl-def:209dbfe2-97b8-43e9-8a33-c42dbcb454c9
+        rdfs:isDefinedBy  cbnl-term:c517b5ea-530f-4aca-973e-3a35e350f209 .
+
+cbnl-def:5b9dcb9e-4950-47e2-87d7-00e7f6a0cf5e
+        rdfs:isDefinedBy  cbnl-term:bbf4e023-2538-4dfc-aa5b-bcedd6344d25 .
+
+cbnl-def:61206b80-2842-47c8-81ad-13046aa56391
+        rdfs:isDefinedBy  cbnl-term:6f2bf6e9-7e1d-40cb-bbc1-dcc9c7a84006 .
+
+cbnl-def:4507d851-48aa-479a-8f24-27c77ab23ef7
+        rdfs:isDefinedBy  cbnl-term:7e968fae-6ff4-4867-9f26-d55c296cb7f2 .
+
+cbnl-def:637e84da-85f4-4b79-90ae-0f880a997826
+        rdfs:isDefinedBy  cbnl-term:c9633905-8d7b-4709-83ef-f0cfc2a1ea6e .
+
+cbnl-def:e11f69db-0f72-4949-b2e2-26448d2a60ab
+        rdfs:isDefinedBy  cbnl-term:3a468030-be23-41ea-8112-f41c4a477edf .
+
+cbnl-def:1c34d775-eb44-4da0-b174-2bdcc8ddecd8
+        rdfs:isDefinedBy  cbnl-term:5b0e830b-9243-4ba4-8551-3b21af5bf631 .
+
+cbnl-def:0963c08f-47d4-4528-890c-ba9beba0feaa
+        rdfs:isDefinedBy  cbnl-term:ddbb37c6-2ae7-480f-aab9-db6c18b0b6a5 .
+
+cbnl-def:09f52741-20f7-4cfd-9fb2-da94fe9d328a
+        rdfs:isDefinedBy  cbnl-term:67eebb79-559d-4c7b-851b-456bf5a9b130 .
+
+cbnl-def:dcc6fb12-7c9b-4c37-b69f-662c63efe189
+        rdfs:isDefinedBy  cbnl-term:ec58f451-a17b-45fa-8a7e-068dd07ed0e7 .
+
+cbnl-def:e11d9a36-1c85-4216-a2da-2fd200ac2526
+        rdfs:isDefinedBy  cbnl-term:86465f9f-5c41-44b3-8d96-82a390143ced .
+
+cbnl-def:4ae1427b-11c3-4161-a3a6-46c5de82b3ec
+        rdfs:isDefinedBy  cbnl-term:cee76a4c-8581-4a57-9289-1dcf845de478 .
+
+cbnl-def:eb13def7-96f6-4920-8b95-f62bf8bfaf87
+        rdfs:isDefinedBy  cbnl-term:f09d59ac-c595-4b24-9620-392788bed6ce .
+
+cbnl-def:fff4b129-0ecc-4d16-8b08-cda1cb7ad696
+        rdfs:isDefinedBy  cbnl-term:0215d090-a011-4378-8e2d-7a79fa928ade .
+
+cbnl-def:3ebfd661-545c-4ecd-982f-e249f1ce92a9
+        rdfs:isDefinedBy  cbnl-term:826f2e3a-b891-44ff-96c6-8467d583aa8c .
+
+cbnl-def:9d8288bc-73ff-48af-a347-1511c6240886
+        rdfs:isDefinedBy  cbnl-term:1b288a0c-f741-4839-ab28-8ff84916200d .
+
+cbnl-def:b8e0c2e0-197c-4ffa-8631-ccf5de42fe77
+        rdfs:isDefinedBy  cbnl-term:250236f6-2081-4f1b-9e4c-23752c9592d2 .
+
+cbnl-def:fde9efb8-46b1-4751-b124-edfe9c777e0b
+        rdfs:isDefinedBy  cbnl-term:709e9e5f-f4d4-4ff6-ba67-5025850be83d .
+
+cbnl-def:5af7bf63-72db-48d2-9b12-0ef958843423
+        rdfs:isDefinedBy  cbnl-term:68fe2313-d5c2-41a9-8a5d-7d3c633bd79b .
+
+cbnl-def:eb5301f9-e9bb-4d0a-af0a-ff4407d5abc1
+        rdfs:isDefinedBy  cbnl-term:770038f5-16d1-4bdd-b51f-894ed79eaed3 .
+
+cbnl-def:c4492e66-ea01-4b52-9212-ef8b174d8eaf
+        rdfs:isDefinedBy  cbnl-term:54abd73c-a0ad-4b6d-b0c9-7f16d202e8fe .
+
+cbnl-def:4e9edb95-90e1-49b1-9fd0-e5e921f63612
+        rdfs:isDefinedBy  cbnl-term:6fadc2f3-0ab7-4a39-a9c4-b73976433137 .
+
+cbnl-def:eedd9d85-fdcd-4ece-9f58-36c29092e623
+        rdfs:isDefinedBy  cbnl-term:b43647f4-6af4-49b4-955a-92de73359c49 .
+
+cbnl-def:f4b29ee5-8f3e-44b0-ad45-ee322b77fdca
+        rdfs:isDefinedBy  cbnl-term:445b7a98-169b-4033-a1c2-22c97734e412 .
+
+cbnl-def:b1346c37-c917-4db2-9484-f3d8c1d2d1cc
+        rdfs:isDefinedBy  cbnl-term:0f3ddbd5-7b01-4c15-babc-fb00789aaace .
+
+cbnl-def:5f73cdba-51b4-4aeb-843b-1626adc7a9e2
+        rdfs:isDefinedBy  cbnl-term:4b14850b-633b-46b4-ac5a-385d126b05c7 .
+
+cbnl-def:d4c0e2e2-12db-4a0a-869e-ec09b499481d
+        rdfs:isDefinedBy  cbnl-term:5796909b-d538-438f-9a21-251f4dd823c7 .
+
+cbnl-def:4df18581-e35b-47c2-bc28-2de217afae2f
+        rdfs:isDefinedBy  cbnl-term:f5fb8824-1764-4341-ba24-b1da71dd74b8 .
+
+cbnl-def:1f9ecba5-5ac2-4537-8d89-bd66cfdcbe7e
+        rdfs:isDefinedBy  cbnl-term:421eae95-e573-4ea0-8464-defa0001efcd .
+
+cbnl-def:72723ab4-5913-4544-80a7-7d9d51f4cfaa
+        rdfs:isDefinedBy  cbnl-term:5f856628-7344-4641-9aee-c0040eb1c300 .
+
+cbnl-def:d1181469-ba41-460b-9462-5d6225ba1d56
+        rdfs:isDefinedBy  cbnl-term:11bdd1d5-8261-492d-bf30-2e8df90af7ff .
+
+cbnl-def:f363c143-508f-40a7-a3c1-958c6b360d4e
+        rdfs:isDefinedBy  cbnl-term:f514d8c0-5539-43b2-8a84-8c8a035c98f6 .
+
+cbnl-def:3a360d8c-2994-4bdf-b7f1-c9f477f9d490
+        rdfs:isDefinedBy  cbnl-term:c0f24dbc-cc54-4129-a2f5-3f457f5e7b99 .
+
+cbnl-def:62c96572-b1b5-4e81-87d2-c1e3f99e59ed
+        rdfs:isDefinedBy  cbnl-term:8873346d-c8b5-4f0c-b349-aef9d701880b .
+
+cbnl-def:fb3c9362-858e-4fa9-b9de-530a3ea5f935
+        rdfs:isDefinedBy  cbnl-term:e64da426-c886-4079-8f70-fd84209b1882 .
+
+cbnl-def:5c201b1a-3af5-4bf1-9b7c-4e5471ae3d0e
+        rdfs:isDefinedBy  cbnl-term:d6c88372-0a73-4154-8b8c-37d69e7c6b6d .
+
+cbnl-def:9215105c-7612-4698-8dce-1803fdfaaa1f
+        rdfs:isDefinedBy  cbnl-term:94be061f-fd36-4887-9c0a-55c44a6d78bb .
+
+cbnl-def:ad60e8e0-a1fc-4fc2-a4a8-33c74915c1ee
+        rdfs:isDefinedBy  cbnl-term:1715f9a2-8549-4288-8f4c-af641b714716 .
+
+cbnl-def:755ac8b0-b934-4da0-be2d-48672fc13b73
+        rdfs:isDefinedBy  cbnl-term:4f3890c3-70f3-4f86-9d7d-9c013e616e0a .
+
+cbnl-def:4ab97bec-55fb-48fc-b808-df3c72025694
+        rdfs:isDefinedBy  cbnl-term:1fc687d1-7f9d-430f-9d70-828ab3788bdc .
+
+cbnl-def:ecfcb903-e49b-4c94-974a-c85233b79a09
+        rdfs:isDefinedBy  cbnl-term:8abafeb9-d3f2-498b-a94d-6ff0bbd004b8 .
+
+cbnl-def:2e8516f1-4a74-4aaa-84c5-fd78e5dd0738
+        rdfs:isDefinedBy  cbnl-term:fb191c7d-73c4-4269-834a-eba25c253b44 .
+
+cbnl-def:dba37203-5d62-45cc-a0a8-da65a4dc09a1
+        rdfs:isDefinedBy  cbnl-term:7ba33b11-b3db-400c-8e19-218602bfd22a .
+
+cbnl-def:a0532751-cead-4477-a108-3f4826d134b4
+        rdfs:isDefinedBy  cbnl-term:779606f4-1051-4ecb-806e-102ab77426a0 .
+
+cbnl-def:b469ba18-a31a-45a9-b959-8c04d5cb09d4
+        rdfs:isDefinedBy  cbnl-term:e7e5f8d5-6327-4e34-9f39-c3d572224933 .
+
+cbnl-def:08acbc64-2812-435a-aeca-84aeba854a32
+        rdfs:isDefinedBy  cbnl-term:224440bc-0eaa-4877-86f2-ab33c17b7522 .
+
+cbnl-def:6c6a4a4e-d897-44a3-83c3-e6e39574d6e2
+        rdfs:isDefinedBy  cbnl-term:202567e1-4b57-4b00-bc12-a110efc68529 .
+
+cbnl-def:ffdbadcd-b410-4402-a103-25e6c0cbf19c
+        rdfs:isDefinedBy  cbnl-term:5e2282e2-0464-4bf8-862d-a38bb894ee2b .
+
+cbnl-def:d4be147f-668e-444e-a66f-d4db9793f2ab
+        rdfs:isDefinedBy  cbnl-term:dcaa65ab-3292-4352-9b6c-2eb06741352a .
+
+cbnl-def:f4c38551-fa9d-42ed-83f4-e5d0f3e59951
+        rdfs:isDefinedBy  cbnl-term:eb58e9ac-bfd2-4073-9ac7-04e12acee1a4 .
+
+cbnl-def:0ead237b-01ca-44e1-a5d4-00b8a8dbee83
+        rdfs:isDefinedBy  cbnl-term:33ff0566-8d39-4f59-8d03-653c589535f2 .
+
+cbnl-def:69e1817b-7d1d-40b8-8ecb-47a9acc8a2e4
+        rdfs:isDefinedBy  cbnl-term:b121f361-0a8a-44f9-ab20-c3a4cd7ae1d0 .
+
+cbnl-def:a80c6ba3-2b90-47e9-af3b-1884c433a452
+        rdfs:isDefinedBy  cbnl-term:23fe7d41-2175-49e7-a8a7-fc4aa7590fcb .
+
+cbnl-def:b7e6cf10-ccdf-4a59-8bf1-49b63fc54599
+        rdfs:isDefinedBy  cbnl-term:08923442-dae2-4246-8f2d-80169afbe52c .
+
+cbnl-def:bb38ec7d-72ef-4534-9cbb-a50aada50266
+        rdfs:isDefinedBy  cbnl-term:f31cac93-12b3-4989-88d5-764b00c7143e .
+
+cbnl-def:14dbeca5-b430-4cb4-9db8-d5c1ec61cb28
+        rdfs:isDefinedBy  cbnl-term:797988fb-e02a-4fd3-a60b-780eee0a755a .
+
+cbnl-def:0fe7a9ea-99ce-4f3f-80af-5e6fa7507cfe
+        rdfs:isDefinedBy  cbnl-term:f7ff0b4d-c168-4681-b292-aa239d0354fa .
+
+cbnl-def:1c0a212b-c4d3-4531-9760-eb9b98bf9b55
+        rdfs:isDefinedBy  cbnl-term:628b6607-3fd6-4144-8dac-ee84ed077dbc .
+
+cbnl-def:827e3253-e7e0-4101-b1b0-fddad81bfda1
+        rdfs:isDefinedBy  cbnl-term:6e52037b-b08e-4688-96b3-14747f0a1c99 .
+
+cbnl-def:884c9ec7-7887-4d2e-a848-a4c468d68c0f
+        rdfs:isDefinedBy  cbnl-term:733c7165-5197-4b4b-8844-cd9edec05415 .
+
+cbnl-def:dec5dceb-a76b-4432-a027-d35a55e9358e
+        rdfs:isDefinedBy  cbnl-term:4c304196-111b-4900-8e0e-9195d5101db8 .
+
+cbnl-def:18956d06-e012-48bd-be89-c662d4e63ca9
+        rdfs:isDefinedBy  cbnl-term:773a247d-9dd6-4f1e-9a57-f7f54d693438 .
+
+cbnl-def:25aaff9e-d3be-4b5a-bda5-3c91a17c90a8
+        rdfs:isDefinedBy  cbnl-term:3607d584-7128-45d3-86e5-ed3fc4686162 .
+
+cbnl-def:5455f16d-4126-495d-874e-70c859c3e981
+        rdfs:isDefinedBy  cbnl-term:380c8de8-7b69-42d8-bb19-7ad720da7efa .
+
+cbnl-def:7283f890-a1e9-49fa-9ebc-b413002c10aa
+        rdfs:isDefinedBy  cbnl-term:5cd1b94c-2a8d-4822-9571-b4fe61bdc301 .
+
+cbnl-def:7b05ff4a-8821-4af9-b5fa-ebdb895fbfe6
+        rdfs:isDefinedBy  cbnl-term:1e2c5518-2796-484c-80c8-0be98cbd9b9c .
+
+cbnl-def:c78087b0-a95a-4386-94c7-0958827cc3cc
+        rdfs:isDefinedBy  cbnl-term:9e0d70c4-e5fe-4ef9-b294-8c6199ca8d26 .
+
+cbnl-def:297dd57c-0290-4e44-a854-b27dab7deacf
+        rdfs:isDefinedBy  cbnl-term:5472eb00-39c0-4438-8187-cde1b4c6fe12 .
+
+cbnl-def:5334e5c0-e06d-448f-b054-d35ad82e8fc7
+        rdfs:isDefinedBy  cbnl-term:b9e6fa7a-5d42-457d-ad7b-c174d865a5a8 .
+
+cbnl-def:eb5ba4da-15da-4391-bf7d-75d634cdcb3e
+        rdfs:isDefinedBy  cbnl-term:5d132414-23d2-4f64-866b-a79a534b6914 .
+
+cbnl-def:d1a63fba-32a0-4d3d-bd96-e1747b143abe
+        rdfs:isDefinedBy  cbnl-term:170d676a-9b7a-4a7d-9c4e-3daebeead6bf .
+
+cbnl-def:3ab6c52e-0339-47c2-9aad-1e20627c4b2e
+        rdfs:isDefinedBy  cbnl-term:4dfc0b8b-d0bb-473a-a023-658501f4569c .
+
+cbnl-def:5da22154-9c0f-461b-9e4c-bb1919791087
+        rdfs:isDefinedBy  cbnl-term:c3a50eb8-d391-4289-993d-eed232a08339 .
+
+cbnl-def:c409266b-1edb-4948-8151-b7c5e29349d3
+        rdfs:isDefinedBy  cbnl-term:ea443505-2c7a-4f4d-bf57-4e28c5ec4850 .
+
+cbnl-def:053acc62-05ad-4e25-9df1-553593aaae73
+        rdfs:isDefinedBy  cbnl-term:95a0cf3c-bc48-42e0-b5a2-c4af7d390e94 .
+
+cbnl-def:e1fc0eaf-a89f-42b4-a0bc-38f4e8dc163a
+        rdfs:isDefinedBy  cbnl-term:2791fc39-526d-4cd5-8a25-b344443a4263 .
+
+cbnl-def:8fff19e6-6daa-4ca0-b910-b727375e9561
+        rdfs:isDefinedBy  cbnl-term:1892670e-52c0-4be6-986c-1bc535f09681 .
+
+cbnl-def:21e1d780-b2f7-45e6-a947-07e4d7c59d4a
+        rdfs:isDefinedBy  cbnl-term:aeba239f-9fe7-40ae-8bb4-1cf8e09f438e .
+
+cbnl-def:0ca0d158-868f-417f-ac68-d444a9c6ac48
+        rdfs:isDefinedBy  cbnl-term:09c52d7c-7e7d-40c8-861d-5610df32ff64 .
+
+cbnl-def:d6702846-f7d5-419e-89ce-bb4b0162fa51
+        rdfs:isDefinedBy  cbnl-term:ba15464f-b285-4f11-a29b-416a4fb78a11 .
+
+cbnl-def:17889c19-d47a-4c60-966e-0c2ae87f800e
+        rdfs:isDefinedBy  cbnl-term:7d540e13-4862-4dc6-9d4d-1028de3a6829 .
+
+cbnl-def:2b7fb4a8-ea7c-4333-a915-f48f90913d65
+        rdfs:isDefinedBy  cbnl-term:b4e79aad-9e9a-4d9b-bde9-8244bd66947b .
+
+cbnl-def:fea97901-adb0-4771-a5a8-65e494198ebf
+        rdfs:isDefinedBy  cbnl-term:75fad0c1-65b0-411c-966d-cabd67f0b028 .
+
+cbnl-def:622936b3-06df-4083-90ff-2b20ad7c3aee
+        rdfs:isDefinedBy  cbnl-term:ad33333d-9fcd-480c-b4d8-a0ea61f476f4 .
+
+cbnl-def:0bd72663-446b-4c70-ad58-7464e9eb0598
+        rdfs:isDefinedBy  cbnl-term:4d38de27-0657-4288-af83-bd6769a45657 .
+
+cbnl-def:720e8b46-c48f-4451-9cfb-515388ef3f7b
+        rdfs:isDefinedBy  cbnl-term:23b87f88-0b31-42a6-901f-0cedd1caa020 .
+
+cbnl-def:42e81988-3a5e-4d8a-9169-207209ae441c
+        rdfs:isDefinedBy  cbnl-term:f656341a-a191-4aef-bfb7-847aa66f9026 .
+
+cbnl-def:95c0aec8-e50d-4cfd-81f0-cd95b30b26e9
+        rdfs:isDefinedBy  cbnl-term:40e8ea9b-54ec-4b45-aeeb-fc7752d76f08 .
+
+cbnl-def:901e2788-8d89-40f0-9cbb-15110477ce92
+        rdfs:isDefinedBy  cbnl-term:05104222-db8a-4f35-b909-61b9245ffa30 .
+
+cbnl-def:45da8ae5-9efa-4c61-b68c-cf610251d0f4
+        rdfs:isDefinedBy  cbnl-term:707f60fa-6857-4e91-84af-2b56e0e37ed2 .
+
+cbnl-def:a28b0c40-7787-4dc4-9505-9fbda115ba9f
+        rdfs:isDefinedBy  cbnl-term:8f602db4-d9a4-47d9-b25c-209921e477ac .
+
+cbnl-def:355963ee-1e44-4ecf-8d9c-680ec4a4e079
+        rdfs:isDefinedBy  cbnl-term:265db131-f6f5-4135-a825-8a7cdb6588ff .
+
+cbnl-def:64ac7e8b-dffd-42b1-8bf4-d093c4f39efd
+        rdfs:isDefinedBy  cbnl-term:164831d9-1a18-4929-8d7e-83626d7e525e .
+
+cbnl-def:632d9c63-bcac-4c45-8429-c56837a68629
+        rdfs:isDefinedBy  cbnl-term:d659ad7f-b712-445a-ace8-ce04b2ef1f79 .
+
+cbnl-def:96886b9c-dcf1-4a61-8e46-ec05ec153a02
+        rdfs:isDefinedBy  cbnl-term:f6fbf3d7-d8d1-4683-81aa-2b4286496e3a .
+
+cbnl-def:2e44e5e8-d756-414e-bd4e-6c535697e72f
+        rdfs:isDefinedBy  cbnl-term:acbaccc6-157d-4ed9-ba99-30b1ddaed2f9 .
+
+cbnl-def:61a97222-6eec-4ea9-964c-879c112cb26c
+        rdfs:isDefinedBy  cbnl-term:f57f2d22-10a3-41aa-a580-f45881be951a .
+
+cbnl-def:a3d22aab-9fc5-49cf-8560-4b352973f404
+        rdfs:isDefinedBy  cbnl-term:f6885483-09d8-457a-b80e-8ee593d31a0c .
+
+cbnl-def:aa02de2b-0b52-4fe3-b763-3caaabd06b83
+        rdfs:isDefinedBy  cbnl-term:5db907d9-0f46-4f06-9471-9fba0d92d88f .
+
+cbnl-def:2e9fa83c-3c9b-46a6-9640-07ac3156a2f1
+        rdfs:isDefinedBy  cbnl-term:9bb43cdc-c21e-408f-b01c-9eaa0b1ca236 .
+
+cbnl-def:95e28bb9-7dc6-47c4-9c51-29ae46cc7cdb
+        rdfs:isDefinedBy  cbnl-term:456fb681-f349-4151-b0b3-389a4e93dfcf .
+
+cbnl-def:e9edda19-b1cc-41ae-9231-9da9af41165e
+        rdfs:isDefinedBy  cbnl-term:42750938-ab27-4cf3-85c1-32090ec321e9 .
+
+cbnl-def:14b23215-d51e-49f8-8fcf-6d68d793c9e2
+        rdfs:isDefinedBy  cbnl-term:a1ecc5e5-78d9-433a-bc9f-cf9034f3dbcf .
+
+cbnl-def:89f8e1ee-7b8c-4cf0-bb6b-8035977263d0
+        rdfs:isDefinedBy  cbnl-term:738c3132-0e6b-4fb0-9573-f583b1f1e2fd .
+
+cbnl-def:047ebb9d-9b0f-496c-a6bc-db5690727a30
+        rdfs:isDefinedBy  cbnl-term:a57eedab-dcc2-4a44-bf73-f36877d3faab .
+
+cbnl-def:38069ad1-d137-4aad-b55f-cd3dc231b3d5
+        rdfs:isDefinedBy  cbnl-term:36fc7c91-6329-46a9-a293-f7539686510a .
+
+cbnl-def:4ebd5d76-13c8-4bca-abb5-0aec5424c759
+        rdfs:isDefinedBy  cbnl-term:9f0f3a16-4d9c-464b-bf4c-f3e1cfaa0067 .
+
+cbnl-def:f6e72fe3-be31-4587-8e8f-e6b3f061084a
+        rdfs:isDefinedBy  cbnl-term:dee42eff-9687-4ef9-89fb-5302670c69ca .
+
+cbnl-def:6bfc0946-0e1c-48b2-a266-0e16e0e514ba
+        rdfs:isDefinedBy  cbnl-term:26859dbb-24fe-4648-bb05-221abab72498 .
+
+cbnl-def:56a53990-7d38-4d06-936b-32272619cb95
+        rdfs:isDefinedBy  cbnl-term:a8ce8b57-9cdf-4783-8077-f21effb3da6a .
+
+cbnl-def:9958de68-ab94-4a42-8c46-996b74c29462
+        rdfs:isDefinedBy  cbnl-term:72fe2673-3805-4f20-9219-8253d7162da3 .
+
+cbnl-def:5b2e3276-d889-4967-a483-a82d144f4ee2
+        rdfs:isDefinedBy  cbnl-term:134e50bd-3b1f-46ab-a528-6fe59fc88051 .
+
+cbnl-def:1a06fdff-2c8a-44aa-af8d-139b7b5bdad2
+        rdfs:isDefinedBy  cbnl-term:7cdc6402-9660-4230-8f32-34749fce7007 .
+
+cbnl-def:79c896f7-ade5-466b-9c9d-33c9b7d6156a
+        rdfs:isDefinedBy  cbnl-term:4e95ef99-60c6-4d95-aa68-9ca41f900d38 .
+
+cbnl-def:ae5f466c-5e5e-4b70-aec5-d4475e2491c2
+        rdfs:isDefinedBy  cbnl-term:8a59b79f-c449-4fea-9327-b5b496acdd87 .
+
+cbnl-def:508f9e14-d6de-47b2-9544-3e3bbb2d500b
+        rdfs:isDefinedBy  cbnl-term:de843c59-06e6-4c2f-980d-458fd1d71942 .
+
+cbnl-def:1f67d71d-ae12-4afe-9466-880fbf19820b
+        rdfs:isDefinedBy  cbnl-term:4046f1a6-6918-4bdd-b6dd-fc0942205f08 .
+
+cbnl-def:4437f5ac-b4ba-409f-8556-d6c6557f9fc4
+        rdfs:isDefinedBy  cbnl-term:a454b1f3-ae05-43f1-903a-502d97d64a37 .
+
+cbnl-def:d746a301-3ae6-4cc3-86dd-c425fb67eea1
+        rdfs:isDefinedBy  cbnl-term:b8541844-97a5-4e30-8d5c-d22471a381b0 .
+
+cbnl-def:740643d2-8bf9-4269-8a70-b14f9c588411
+        rdfs:isDefinedBy  cbnl-term:ea93c481-3450-4875-b9f8-591fc15be06b .
+
+cbnl-def:922c951e-1519-423f-9f59-86414af15459
+        rdfs:isDefinedBy  cbnl-term:1a09224c-d24f-4e69-80d1-b5454c885d53 .
+
+cbnl-def:b4f9c69e-44c3-4f13-84fa-cb70e275499f
+        rdfs:isDefinedBy  cbnl-term:ac79e740-4b96-49bb-aa5d-5fd98bb9a982 .
+
+cbnl-def:1d6fdee3-add2-4551-94ea-382c2b123375
+        rdfs:isDefinedBy  cbnl-term:800e1d95-ddf5-4f8a-8528-ee99f3579b1f .
+
+cbnl-def:3a9a898c-9e42-42be-8e01-e25216816ebd
+        rdfs:isDefinedBy  cbnl-term:0a1a6661-57b6-4c5d-9f39-ed1f6320637c .
+
+cbnl-def:cdd9f717-9a22-45ca-87e5-80fe91a8020d
+        rdfs:isDefinedBy  cbnl-term:c3aac8f9-66c1-435d-82f9-db81f746d0f6 .
+
+cbnl-def:df36da67-3ab2-49b7-bc22-7d84db76f4b2
+        rdfs:isDefinedBy  cbnl-term:18d03b3d-0ce4-4bea-9ab4-3ae894d02e5b .
+
+cbnl-def:68bbaa7c-acae-4b72-88bc-97230e880bab
+        rdfs:isDefinedBy  cbnl-term:9225ae68-43c5-43b2-a298-419a105b337e .
+
+cbnl-def:83f94f35-5705-4d7d-ae41-7bc0c1393992
+        rdfs:isDefinedBy  cbnl-term:12faaf5c-1ae2-43a9-baed-5a8fcccd6e81 .
+
+cbnl-def:9767a007-6fff-4bc6-943c-f00f4db72b18
+        rdfs:isDefinedBy  cbnl-term:650d5eb8-7a7e-4277-96fa-7683e120dfa5 .
+
+cbnl-def:f013d4ff-be25-4696-8a58-9a74caec0505
+        rdfs:isDefinedBy  cbnl-term:d5b9a3f1-d095-48a8-baab-0e2f8fd5ef4b .
+
+cbnl-def:d0944aaf-5fc5-4510-8125-847602f3999a
+        rdfs:isDefinedBy  cbnl-term:74665698-d253-40e2-b0cd-3710c13b98d8 .
+
+cbnl-def:59fbba7c-5d2a-4cd5-8777-ee607c310dfe
+        rdfs:isDefinedBy  cbnl-term:e918a4f0-cb29-4663-8b0b-e444f7d8d705 .
+
+cbnl-def:24e2bc18-e386-4369-89ee-40da357a74a9
+        rdfs:isDefinedBy  cbnl-term:8b98710c-a4a9-4796-82ee-afe0e2c28421 .
+
+cbnl-def:d0c57612-d352-442f-8684-7b34e68a2fcd
+        rdfs:isDefinedBy  cbnl-term:ede6384c-a3db-45f9-91c2-5246d432b8b8 .
+
+cbnl-def:99257466-cb4e-41c1-8507-43474962d990
+        rdfs:isDefinedBy  cbnl-term:a7efd8cb-2ff2-4fe2-b17a-f82a4f7530f1 .
+
+cbnl-def:b7d38bc7-f2e6-45d7-8848-7fcaaac84523
+        rdfs:isDefinedBy  cbnl-term:9c3a0d8c-3cc2-46ba-939f-a1e09e119a64 .
+
+cbnl-def:483c8815-bbe7-4512-93ae-372e275ec498
+        rdfs:isDefinedBy  cbnl-term:ec5f616f-5402-4cbb-9ff4-28cf59011e12 .
+
+cbnl-def:acb03f06-5e13-49c4-9b38-2a794e634353
+        rdfs:isDefinedBy  cbnl-term:cb12f8af-317c-438b-926f-470cc7b2b967 .
+
+cbnl-def:94570d02-e3db-47db-a79c-d077669a0aee
+        rdfs:isDefinedBy  cbnl-term:aaed2060-831d-44a0-bb18-528a88e83002 .
+
+cbnl-def:b95bff60-45d9-4a3a-bc5c-8b4649832a2c
+        rdfs:isDefinedBy  cbnl-term:31cb02c1-a915-4afa-842f-2408bbe9d1c7 .
+
+cbnl-def:d027b8c4-37f2-4eb4-b5f7-decf464ca3f6
+        rdfs:isDefinedBy  cbnl-term:f5526cad-9420-4e00-970e-5f960f414d0d .
+
+cbnl-def:bf80fab4-1440-4033-8e04-c9f75db1fb94
+        rdfs:isDefinedBy  cbnl-term:c314ef11-ecf8-40cc-bc20-9557d62bd0e8 .
+
+cbnl-def:87924ae9-c0aa-4e81-8b48-10199bca4b1c
+        rdfs:isDefinedBy  cbnl-term:6e7481f0-0229-420f-832e-5b8f675b25fb .
+
+cbnl-def:425104f6-41e3-4877-9a1a-7b9893c996a9
+        rdfs:isDefinedBy  cbnl-term:04000a6b-2aa8-4c1d-8e94-cf39c6e0a310 .
+
+cbnl-def:59898af2-9262-4b6d-8405-c610dc0e0f3b
+        rdfs:isDefinedBy  cbnl-term:6c47620f-acd8-4766-9591-77b08c810182 .
+
+cbnl-def:1cf5f351-98ee-409b-abcb-fe2b6fb529f4
+        rdfs:isDefinedBy  cbnl-term:5b88e172-1c1a-48bf-a69f-5b5906416a16 .
+
+cbnl-def:2544428d-7615-48e2-b2d0-eb6cb64f0831
+        rdfs:isDefinedBy  cbnl-term:9747d190-5a5f-4059-952e-3cca98038cc6 .
+
+cbnl-def:c4560606-63d8-42ed-ac23-41ac82fe6a99
+        rdfs:isDefinedBy  cbnl-term:8feb8f3f-8080-4106-bc1e-0bf3c2842bad .
+
+cbnl-def:977efc8e-90d1-4ab9-a1d4-874f806434cc
+        rdfs:isDefinedBy  cbnl-term:b7052fcc-c29c-405d-afe9-a12b06588ea4 .
+
+cbnl-def:13e0214a-dffd-4313-8dc5-e122cae250f8
+        rdfs:isDefinedBy  cbnl-term:2ebc016f-b087-4b99-9b30-153a7a1bd804 .
+
+cbnl-def:2c8f078e-8a65-45c3-acc4-a13231b655dd
+        rdfs:isDefinedBy  cbnl-term:b100febf-bf73-416a-8d80-bfaf5bdaecb4 .
+
+cbnl-def:d80fa5ed-0df1-40ea-9000-a7943711acd8
+        rdfs:isDefinedBy  cbnl-term:021681e9-cc78-46f7-9073-2ce80081e952 .
+
+cbnl-def:353533b5-0961-4bed-a546-7aea214d4d8d
+        rdfs:isDefinedBy  cbnl-term:0a1279a7-859f-46c0-80e0-9386af4d1516 .
+
+cbnl-def:cd00adc1-17ee-492b-8779-f492050f12a4
+        rdfs:isDefinedBy  cbnl-term:5966a948-7a05-4575-a5be-db184bd80a1c .
+
+cbnl-def:097dc21e-13c0-45fc-9add-305ed9039475
+        rdfs:isDefinedBy  cbnl-term:d836cfde-edf1-4156-acc4-2c1610829444 .
+
+cbnl-def:05f6684e-725c-4b8a-bc2f-8bca94d70440
+        rdfs:isDefinedBy  cbnl-term:603e04c2-7c1b-4c1e-84a0-361687b8dc63 .
+
+cbnl-def:fce016da-0863-4a7c-b183-01e9139c760d
+        rdfs:isDefinedBy  cbnl-term:e8d335d9-0a30-4e90-b1de-6621175164ee .
+
+cbnl-def:107fc89e-ee62-4f14-9281-471d6d875d4e
+        rdfs:isDefinedBy  cbnl-term:6a0f5d77-001f-45d4-b243-d466a0295947 .
+
+cbnl-def:99e5a570-f489-4444-ac5b-9c40f854565c
+        rdfs:isDefinedBy  cbnl-term:f410e5a8-d64c-4fde-8f57-cee89fae805d .
+
+cbnl-def:a56b8c69-c3d3-43ed-8933-d0b860188ff5
+        rdfs:isDefinedBy  cbnl-term:16a32cef-2290-4686-b95b-89517ef3ad72 .
+
+cbnl-def:12698b13-5816-4d6a-813d-6dbc25436491
+        rdfs:isDefinedBy  cbnl-term:3adf4771-4b6d-40b6-9ebb-baf3f297b86c .
+
+cbnl-def:7b1e100d-b84a-4843-8c08-d4053b1032ed
+        rdfs:isDefinedBy  cbnl-term:5bdcf8dd-cb2e-43cf-8cb8-47a6f99f3ec5 .
+
+cbnl-def:30453949-cb2d-4280-ac11-66b40adbaba1
+        rdfs:isDefinedBy  cbnl-term:5a261e51-a757-4eb2-b79b-abf7dff3bce8 .
+
+cbnl-def:ca9b694b-5aab-4044-a851-868594caedda
+        rdfs:isDefinedBy  cbnl-term:748617af-d107-493e-8bc9-3558f2356c4c .
+
+cbnl-def:422972ec-3890-4ab7-bc2c-717f551f80a3
+        rdfs:isDefinedBy  cbnl-term:97df5416-a48e-42b8-a70a-2e92049f3a2b .
+
+cbnl-def:6f119a17-c34c-4fff-b556-a4cbd8532367
+        rdfs:isDefinedBy  cbnl-term:d3b3ba92-10c6-43d7-a7c9-71ebf8a28f47 .
+
+cbnl-def:b2613218-063e-49a6-b5fe-4967953ae7b1
+        rdfs:isDefinedBy  cbnl-term:a2a8331d-0ec1-45b6-93e6-4f45d695b9fc .
+
+cbnl-def:7390c149-0e8a-43b2-963a-41f763ff0a22
+        rdfs:isDefinedBy  cbnl-term:d864ee81-d57b-4eda-bbce-5d33cce48682 .
+
+cbnl-def:9363b2ec-0fd0-4be9-8eda-7833c6c8d089
+        rdfs:isDefinedBy  cbnl-term:8f18e177-a8f2-4f0b-85fd-011891cb3a93 .
+
+cbnl-def:c2dd3eae-2adb-4cbd-9eab-ca7c5e9aad30
+        rdfs:isDefinedBy  cbnl-term:843d0546-6e4b-4d52-912a-5d7d7d55f6f6 .
+
+cbnl-def:24d933d5-4260-4dc6-8711-7a3eda9fe2d9
+        rdfs:isDefinedBy  cbnl-term:79826506-a158-49db-af8b-82d5d5569ac5 .
+
+cbnl-def:7b8b2563-4f63-42dd-8bbc-ffdc6f46a82f
+        rdfs:isDefinedBy  cbnl-term:1164dd67-dc2f-4a35-94a6-8c08b90b30c6 .
+
+cbnl-def:05790cfd-c1f6-4314-9696-7bf1b04764d3
+        rdfs:isDefinedBy  cbnl-term:8b0c1c42-b6e7-4ddf-ad8f-15781affda80 .
+
+cbnl-def:47f99a14-de04-49f8-91c2-db997f80a1bf
+        rdfs:isDefinedBy  cbnl-term:72116175-ae4d-4ab2-89e1-6c52a9f287eb .
+
+cbnl-def:ca7de0e9-bdca-485a-beb8-539ba6c6a00d
+        rdfs:isDefinedBy  cbnl-term:b8a83551-539c-481c-9dd0-c395c76cb627 .
+
+cbnl-def:b235dc25-95ab-402b-93e6-f27a5b06641e
+        rdfs:isDefinedBy  cbnl-term:befb6295-57ff-4d14-b5eb-fee9be99b648 .
+
+cbnl-def:dfb84e11-aafd-433f-bbd8-997d53262678
+        rdfs:isDefinedBy  cbnl-term:514b9bd3-7674-4171-a565-e6971ea8960d .
+
+cbnl-def:7b963c5e-3985-4d21-9a0a-166fe5e846f7
+        rdfs:isDefinedBy  cbnl-term:5a70daf9-71b5-4446-8652-3028637bfab4 .
+
+cbnl-def:e254735a-2dca-438b-9b8b-07ff647088cf
+        rdfs:isDefinedBy  cbnl-term:ed672955-6a4f-4547-886e-504c1d6ad41d .
+
+cbnl-def:12110229-f9f0-42c3-82f1-67ddd393ed60
+        rdfs:isDefinedBy  cbnl-term:a7a03356-73b3-4f57-94aa-52e9a23afd20 .
+
+cbnl-def:0fbba289-1f1a-46b5-87a5-2becca3a0426
+        rdfs:isDefinedBy  cbnl-term:21b99b62-991c-4b52-ab13-d5053a95a01a .
+
+cbnl-def:1287a71d-a875-4bee-a4d0-f1b82ea5c09f
+        rdfs:isDefinedBy  cbnl-term:f6e8706e-4ad4-4019-92b2-72909ff81a99 .
+
+cbnl-def:b5dbb914-378e-41cf-80a8-d32b3d7b86d1
+        rdfs:isDefinedBy  cbnl-term:f14e0806-d0a9-46e8-bf64-454a08b007db .
+
+cbnl-def:bf13c792-ce9a-4c18-b524-f91ee40364f6
+        rdfs:isDefinedBy  cbnl-term:d56b9dcd-bc5a-46aa-9d68-d86ad40724a6 .
+
+cbnl-def:6f08800e-a3a3-4974-97a8-58f4e66c726a
+        rdfs:isDefinedBy  cbnl-term:50e9d464-d31f-4549-9acc-3b9d9da45094 .
+
+cbnl-def:c17135ef-56ad-45b2-9909-4d4c49512d0a
+        rdfs:isDefinedBy  cbnl-term:1c48852d-8e32-4c34-a776-2eb0d3491cf4 .
+
+cbnl-def:2f3ac5ae-3b78-4775-9336-dc7306617c7e
+        rdfs:isDefinedBy  cbnl-term:2369dc72-a4b9-4b77-b322-b5d3c8cab625 .
+
+cbnl-def:092c97b0-4897-4f7c-9c1e-870ec2027e26
+        rdfs:isDefinedBy  cbnl-term:718e011d-ad30-46e4-b488-15c57be02ced .
+
+cbnl-def:4267767e-b175-4b3b-91a4-614c88fce30f
+        rdfs:isDefinedBy  cbnl-term:e53c3a56-0539-42f8-917c-c9e54d93e994 .
+
+cbnl-def:acb9424f-d6cb-4f94-8fa7-ba7d9515ddca
+        rdfs:isDefinedBy  cbnl-term:66f29919-8986-4c8f-bf35-63d393fd3de3 .
+
+cbnl-def:133e9189-d0f7-4ada-9d51-ff0bc18b3244
+        rdfs:isDefinedBy  cbnl-term:5c9e077f-b8c5-461e-b027-2281871af858 .
+
+cbnl-def:76610df7-79f6-4960-8bcc-8afac4eb80bc
+        rdfs:isDefinedBy  cbnl-term:2902c3b6-3020-4af9-bc99-6d71f86731f1 .
+
+cbnl-def:529da773-68f5-4386-9696-ccab97e0bdf2
+        rdfs:isDefinedBy  cbnl-term:2d7a23f3-6b08-443e-a6d1-8837a79c4713 .
+
+cbnl-def:3f5643f0-2298-4c84-ad49-517eb8fc118b
+        rdfs:isDefinedBy  cbnl-term:687b98a1-4783-468d-9916-b30d139b0265 .
+
+cbnl-def:e0be4c53-0a0b-4179-9938-6e73d30bc4c4
+        rdfs:isDefinedBy  cbnl-term:492061eb-2ccd-49ac-8b95-513367696894 .
+
+cbnl-def:b8f268c4-351b-47a3-93b1-ab13dcdea010
+        rdfs:isDefinedBy  cbnl-term:7a4c3b2e-316d-4375-a814-751c232e1468 .
+
+cbnl-def:de5ca4ad-4ba0-4e3e-b0e2-7aa5d66e1167
+        rdfs:isDefinedBy  cbnl-term:550e2315-3197-4155-aced-6525bff9707b .
+
+cbnl-def:4c697a4e-2d44-4787-b38e-276397134fe3
+        rdfs:isDefinedBy  cbnl-term:dfe0abcb-0f70-44db-9834-78adc28dddd6 .
+
+cbnl-def:e0c65f7c-249f-4bf1-804e-e8cf93ead5f2
+        rdfs:isDefinedBy  cbnl-term:9652b405-7e93-4ef2-8722-0254717ec1c1 .
+
+cbnl-def:4fb15aab-70b9-40f0-99c2-89a8f5b32a47
+        rdfs:isDefinedBy  cbnl-term:6458b009-1c50-4f84-ba7c-0983c48cb7d4 .
+
+cbnl-def:95f0a35c-f178-4bf5-908d-2fbc15d9d2eb
+        rdfs:isDefinedBy  cbnl-term:5c2ad991-45c6-4e41-83ba-aa2a15cc8924 .
+
+cbnl-def:eafb3082-3f64-40d1-9ff4-2a21251ba701
+        rdfs:isDefinedBy  cbnl-term:289b1d70-7905-4744-a700-ba934032b1b8 .
+
+cbnl-def:031cf01a-b14b-4872-a366-8a4916df7939
+        rdfs:isDefinedBy  cbnl-term:95f30426-1752-4415-b8b7-4156c75d2bab .
+
+cbnl-def:25258fca-655e-494c-aaaf-4efb15755697
+        rdfs:isDefinedBy  cbnl-term:e590ed3f-83cd-497d-9a2f-ab3655ac79b7 .
+
+cbnl-def:68f0e141-cb6c-41bf-8e62-933d745612e1
+        rdfs:isDefinedBy  cbnl-term:778a694c-85d7-4081-b750-2d7d1c8d632f .
+
+cbnl-def:053fdb64-867c-4269-b4f3-23d161cf4a49
+        rdfs:isDefinedBy  cbnl-term:560801f6-50fc-4a09-9b9d-3821fd0a8f65 .
+
+cbnl-def:ab8f2c42-ae6e-4cb8-bab3-29a4d3213b17
+        rdfs:isDefinedBy  cbnl-term:71500c61-b695-401b-9f17-48f5a04ad506 .
+
+cbnl-def:5e1d1ec8-3c8c-4a7d-a4a6-821d0ca9cb0c
+        rdfs:isDefinedBy  cbnl-term:4eab3890-f3bb-46ae-b936-b58ab765cfd2 .
+
+cbnl-def:7b99c1ba-e2d0-46f2-9eb9-9e69c7f79a20
+        rdfs:isDefinedBy  cbnl-term:36518d6f-c5f5-4709-aa8b-571fd4a67fd8 .
+
+cbnl-def:7b4b4f1a-cb1e-4868-9e35-6ec1c3a5ab3a
+        rdfs:isDefinedBy  cbnl-term:a65af44c-9488-4ea5-9ba0-b36ad6b1fbe5 .
+
+cbnl-def:ecd1f8b5-cd38-418e-b4cc-e2f77bc6458f
+        rdfs:isDefinedBy  cbnl-term:98edf54d-17e4-4915-b13f-141df583bb97 .
+
+cbnl-def:e35d7abe-bfd3-4d95-a3f6-3f2711bb164f
+        rdfs:isDefinedBy  cbnl-term:ddeb0f7d-6093-4044-b795-4cdaa95323a6 .
+
+cbnl-def:2dbfb4e6-6f3b-43f0-92e3-8958b0e3e5ee
+        rdfs:isDefinedBy  cbnl-term:e355c950-f381-4e2c-b7cf-c06d527d0d41 .
+
+cbnl-def:ff03be69-9e64-4d70-b35b-a854fa816ae1
+        rdfs:isDefinedBy  cbnl-term:76cae896-3026-4633-9b36-85ad6415a4ab .
+
+cbnl-def:88a7ca58-3c73-4ab3-aa77-4bb757e286c9
+        rdfs:isDefinedBy  cbnl-term:1d0c787b-1c42-4c6c-9d3b-e7760e7dd181 .
+
+cbnl-def:0ce55d01-ef92-4be6-af83-6cc73851cbd1
+        rdfs:isDefinedBy  cbnl-term:217c05fe-7dea-41d9-8e5b-225c600e06e8 .
+
+cbnl-def:42667bba-6fb9-460f-a8d3-1b49114b24fb
+        rdfs:isDefinedBy  cbnl-term:c671e4be-cea0-44ac-9db0-3c2826357885 .
+
+cbnl-def:5bed3692-fafc-4709-a5ae-0f2e4fc28a13
+        rdfs:isDefinedBy  cbnl-term:e744a6de-cb1b-4ab8-bb6e-77822c74ec53 .
+
+cbnl-def:75acafb3-57ab-4116-8ae8-7605121fb92d
+        rdfs:isDefinedBy  cbnl-term:0974d17a-654e-474b-9755-40a923a94868 .
+
+cbnl-def:f56ebb91-6868-45e4-b522-ec8d97cb7431
+        rdfs:isDefinedBy  cbnl-term:796a5e38-3eb2-4f98-b00d-a7f2c7b43e90 .
+
+cbnl-def:fd332db9-2a52-4510-b73a-466ffa339ab8
+        rdfs:isDefinedBy  cbnl-term:3d12aaa8-e5f1-468e-906a-2b1bfc8a697e .
+
+cbnl-def:5cf7ce98-b6e2-40f4-8bc7-45221905b28a
+        rdfs:isDefinedBy  cbnl-term:dc06bb0e-9b1f-4b93-b735-80212d154da8 .
+
+cbnl-def:9c0e1705-a4d9-4730-9dc3-9506fcb5a5cb
+        rdfs:isDefinedBy  cbnl-term:4f6ed063-9197-4e1e-b0a7-4321cc9ce3b2 .
+
+cbnl-def:d1f2909d-5bc1-48fb-b9ce-0c82298b3612
+        rdfs:isDefinedBy  cbnl-term:1f7ff7f3-7729-41c2-8267-17301fc68487 .
+
+cbnl-def:60c9a7e2-a695-4343-b107-98b1dad2d77a
+        rdfs:isDefinedBy  cbnl-term:9d7c5b3d-9578-4e91-8bd0-691a847874a3 .
+
+cbnl-def:77a66ebc-533d-4622-80a7-afd437d4910c
+        rdfs:isDefinedBy  cbnl-term:7998c724-d2de-4e51-9a84-a86eb1a2c075 .
+
+cbnl-def:3e6253e1-5f45-4d1c-bee7-b204839a77b7
+        rdfs:isDefinedBy  cbnl-term:881f07af-fb6e-41a4-a504-cd393f0d819d .
+
+cbnl-def:cc1b8bac-a164-4127-bb9b-2e05dd474eb2
+        rdfs:isDefinedBy  cbnl-term:c34b879b-f315-49f4-a505-446367bec239 .
+
+cbnl-def:966b8ada-8616-47d0-b7fa-902cd1195977
+        rdfs:isDefinedBy  cbnl-term:5130e7b6-18e2-495c-b462-d26c52afa727 .
+
+cbnl-def:9d1ef0ef-799f-4786-bc66-adc75429d581
+        rdfs:isDefinedBy  cbnl-term:be78013a-535e-4483-b29e-e94a8d68d297 .
+
+cbnl-def:4169c996-72ac-48ff-b47c-24411b674c7c
+        rdfs:isDefinedBy  cbnl-term:f83b1f1d-d342-4dca-b363-549f6ed60ac9 .
+
+cbnl-def:e246d7a5-e3ef-4351-8f49-501a17496e44
+        rdfs:isDefinedBy  cbnl-term:cc6d61c5-fd3e-4af5-8071-68738e5689dc .
+
+cbnl-def:ead7f0f0-3dbc-44fe-a45f-8e54984f6c45
+        rdfs:isDefinedBy  cbnl-term:dbad1d33-e4e4-471f-abb4-92a79d07d49e .
+
+cbnl-def:66a49065-eb7e-4fb8-b150-ebf9ae2f6b0d
+        rdfs:isDefinedBy  cbnl-term:8f3234a5-808e-43fe-847f-6fd02e213bf1 .
+
+cbnl-def:0407dbed-01c8-4db0-9e1c-e63f870c85c4
+        rdfs:isDefinedBy  cbnl-term:4ec87291-21ba-44ce-b774-c4ee5e8005cf .
+
+cbnl-def:b70e1819-2182-4c4d-ad42-4853486a5125
+        rdfs:isDefinedBy  cbnl-term:04b3e8b8-24f9-4676-bfe4-d5c5efb670c7 .
+
+cbnl-def:63677e0f-f779-421c-80e6-3ebae770ac71
+        rdfs:isDefinedBy  cbnl-term:1200d6af-5bc1-458b-8d46-f6d427ea100a .
+
+cbnl-def:0692ea34-8591-44b7-92db-2f4a31b43c10
+        rdfs:isDefinedBy  cbnl-term:3f0ba9ba-c00c-4f6e-9b5b-102dd9f73c88 .
+
+cbnl-def:08acace6-c16c-4461-ab3c-75c78cb020a9
+        rdfs:isDefinedBy  cbnl-term:427d1b48-c9a4-4438-8662-a5e1770d44c4 .
+
+cbnl-def:9e02d8f5-e395-4191-a4e5-58c80754db5c
+        rdfs:isDefinedBy  cbnl-term:7b4d3f8f-7584-4ff4-bd2b-468f75240de1 .
+
+cbnl-def:ff80f011-894b-4f70-b6df-a0457ceab3c2
+        rdfs:isDefinedBy  cbnl-term:5dc44124-a37a-490a-aaf0-fb8cd9566056 .
+
+cbnl-def:8af9f447-8e61-48f9-90d9-4164d19849ea
+        rdfs:isDefinedBy  cbnl-term:e09fe1c7-f601-4b58-89c5-1470f4e036cd .
+
+cbnl-def:1584f70b-7c67-4197-9453-66854e7985e3
+        rdfs:isDefinedBy  cbnl-term:66de0e04-cd7e-4502-aa07-77293a7b7756 .
+
+cbnl-def:e9271471-c8af-409e-b5d4-ec9ce9bd7b2d
+        rdfs:isDefinedBy  cbnl-term:9b58d804-5e03-4553-86cd-fb9527305b03 .
+
+cbnl-def:bdd5716c-6abe-4285-9480-fc3d25b8c63b
+        rdfs:isDefinedBy  cbnl-term:4cb083a7-f158-4941-bbb8-2fc696c75442 .
+
+cbnl-def:599a4d65-6a6b-41d4-a906-5e80ffbfe5f9
+        rdfs:isDefinedBy  cbnl-term:cf2cc98e-6cd6-4582-a889-3781a646a6c7 .
+
+cbnl-def:efdec3a1-9763-4678-b1b3-d2cd6baa8fa2
+        rdfs:isDefinedBy  cbnl-term:d030ddda-c290-4c78-a7bd-6f5298e3cae1 .
+
+cbnl-def:aa8e67f9-a699-4c8f-accd-9ecf78a6bc31
+        rdfs:isDefinedBy  cbnl-term:584a4ab6-9ef4-4c1e-a42a-45922d242620 .
+
+cbnl-def:77253914-f644-41ac-bff2-d1220a7ed9da
+        rdfs:isDefinedBy  cbnl-term:e2c8745e-4e9e-4d5c-8f04-8c4a05f9bad0 .
+
+cbnl-def:f688b252-0283-4187-a309-19538546fec4
+        rdfs:isDefinedBy  cbnl-term:9784b75a-d427-44fb-9834-010b02dd4fdd .
+
+cbnl-def:0f56039b-2385-4452-aa21-02fb4b5c57c8
+        rdfs:isDefinedBy  cbnl-term:ba05b2a0-52de-4ad6-bd60-49e20231ca4f .
+
+cbnl-def:a5891e5c-690b-48db-9eec-6a4b360af8cf
+        rdfs:isDefinedBy  cbnl-term:ec0868c3-3b05-4df3-8a9b-aa656a8ea3cd .
+
+cbnl-def:2a401017-3b7c-46b9-b41d-f24d926712f8
+        rdfs:isDefinedBy  cbnl-term:0880b876-6bc9-4ff9-8afc-bae89478b2ee .
+
+cbnl-def:aa311452-9422-4289-9ed7-71f20c234adc
+        rdfs:isDefinedBy  cbnl-term:c8bbad16-7a89-47ff-9f48-3f4cc9cb9eff .
+
+cbnl-def:169bd575-4e0b-4566-a0c7-0f24565a388f
+        rdfs:isDefinedBy  cbnl-term:fb70231a-b8c5-4ced-b4eb-e5ccbe6cecca .
+
+cbnl-def:7381d06b-e320-41c2-a3c2-befa2e0a277e
+        rdfs:isDefinedBy  cbnl-term:55562110-9e82-4e90-ab12-57d800895282 .
+
+cbnl-def:5ab4535c-6fe3-4f62-a9f6-b8f1e857b4f8
+        rdfs:isDefinedBy  cbnl-term:9f91d311-50b9-42a2-92ca-6566384659c5 .
+
+cbnl-def:828cef83-de12-44f2-bd39-5a2ffd3fc20c
+        rdfs:isDefinedBy  cbnl-term:4aa99654-4a65-4884-a1f9-c5478fed1d15 .
+
+cbnl-def:456a2ab3-4324-4533-863d-99a6fa9f28a7
+        rdfs:isDefinedBy  cbnl-term:9b29944f-6da6-4fcc-be21-e987e10523c0 .
+
+cbnl-def:52d6c2d8-6b26-465c-9ed5-333d3d62d787
+        rdfs:isDefinedBy  cbnl-term:f64dbbd3-44e9-4924-8c19-a2fb48c5c0c0 .
+
+cbnl-def:511f7bf6-3816-4fda-b0de-54dbd3263d0d
+        rdfs:isDefinedBy  cbnl-term:f8d0d507-59d4-4ba9-809c-b87f1c4976e0 .
+
+cbnl-def:3c049a05-cec6-4324-b78e-47f72407c49b
+        rdfs:isDefinedBy  cbnl-term:cef2f830-4ee0-4f66-9d35-f1cebe4961f2 .
+
+cbnl-def:b8c42eb5-7170-41c9-bf92-294313325e7a
+        rdfs:isDefinedBy  cbnl-term:d42ef53a-e117-4cbb-918a-60f5328793c4 .
+
+cbnl-def:668a65eb-1e4a-4193-bcb1-22ea0a78f9fa
+        rdfs:isDefinedBy  cbnl-term:373c7976-a637-4ea2-9c46-c9696a71bac7 .
+
+cbnl-def:eddc4b12-1c4d-499d-8daa-ae4023476000
+        rdfs:isDefinedBy  cbnl-term:9db60b5a-9d98-4f27-b15d-42e46e693d09 .
+
+cbnl-def:2a28d88f-46b3-489c-9f62-de5f65d7da4d
+        rdfs:isDefinedBy  cbnl-term:90dc6bde-cc37-4be4-b447-76580b8335a5 .
+
+cbnl-def:be63ef1a-6186-44a2-8dee-7db891eb54da
+        rdfs:isDefinedBy  cbnl-term:e7c1bae3-04ab-4760-9586-15aef01eb103 .
+
+cbnl-def:698f8faf-2b7e-4166-a85e-8f73e827761e
+        rdfs:isDefinedBy  cbnl-term:863f45de-4e83-4f17-86da-1fc5147d1cb8 .
+
+cbnl-def:09a2ee92-b330-4b9f-b13c-348217be0f1f
+        rdfs:isDefinedBy  cbnl-term:325b95c1-80ca-42cc-9bdd-cb9f9cf1da17 .
+
+cbnl-def:9c97ebeb-6fc2-43b5-91e1-fffb4e1953d4
+        rdfs:isDefinedBy  cbnl-term:92a77c0e-5ff3-4799-b3de-e3693c976a4c .
+
+cbnl-def:57029b05-f380-4d5e-99cf-a3d46ffb233b
+        rdfs:isDefinedBy  cbnl-term:0faa6a6e-3c44-44da-b19f-542f265b24a0 .
+
+cbnl-def:cf8f4a94-306f-4828-a47c-a6c1b2ba04d9
+        rdfs:isDefinedBy  cbnl-term:170f247f-005c-4362-b117-ffff13fd68d1 .
+
+cbnl-def:fe7f8ad5-12e6-4b18-8b7d-15703c876069
+        rdfs:isDefinedBy  cbnl-term:2a7c64fb-1508-4a20-aa16-924ee4ee89d2 .
+
+cbnl-def:bd4a0c85-7206-44de-bdd7-1cc2a2a3ef0c
+        rdfs:isDefinedBy  cbnl-term:b689c1e5-9050-4cfb-b9e2-1d82afc38521 .
+
+cbnl-def:6225baf4-faa0-4c18-bd31-d5c011d730fe
+        rdfs:isDefinedBy  cbnl-term:2d1c0537-c9b9-4de4-82ac-8d5908e4c13e .
+
+cbnl-def:9c0b8e5f-c2fa-42d0-8450-3f03ecdd9c90
+        rdfs:isDefinedBy  cbnl-term:eff74fae-e116-466d-af5a-5489a4abc89d .
+
+cbnl-def:0b61c93b-a863-4c21-829c-4161776f81d5
+        rdfs:isDefinedBy  cbnl-term:ba8fb10d-c08f-4b91-a5f0-1318692fe438 .
+
+cbnl-def:41381ec8-13cc-4900-bb11-ed7ef63a8ade
+        rdfs:isDefinedBy  cbnl-term:a5a4342e-a2d3-4625-a766-c129c35a4f9f .
+
+cbnl-def:7952913b-f6d4-45b4-b179-8e3b2cba502d
+        rdfs:isDefinedBy  cbnl-term:bb58ad1e-335b-4d2a-bcf6-021d504735c2 .
+
+cbnl-def:27d1f29a-8f05-4f7e-9926-ff55a8ac70dd
+        rdfs:isDefinedBy  cbnl-term:773657be-4b93-4ea9-b2dd-092a3f62a550 .
+
+cbnl-def:e11799ec-e46e-4d3a-be03-8f0d95b0a20a
+        rdfs:isDefinedBy  cbnl-term:a5a6f8fa-73bd-4516-80ea-b6b012e6bf8f .
+
+cbnl-def:0c7ebbf3-1d28-4bef-a846-8df0ed3fc7ec
+        rdfs:isDefinedBy  cbnl-term:ccfafe3f-ff7a-443e-9adf-6ca1a94a4728 .
+
+cbnl-def:75c4587b-431f-4a78-9492-c6482e677f56
+        rdfs:isDefinedBy  cbnl-term:2bbd90d9-ba98-4267-936c-d91d4a46ddc0 .
+
+cbnl-def:42a3c70e-ee0e-4f0e-922e-bd67b26e2159
+        rdfs:isDefinedBy  cbnl-term:c306fe0b-3b0b-4b58-a255-617f9e9ef070 .
+
+cbnl-def:167a660b-66e6-4739-99c0-9df35b8ad1cf
+        rdfs:isDefinedBy  cbnl-term:74f17f54-4a08-48e0-8027-560a77de7fa7 .
+
+cbnl-def:6e4ef4cb-15c3-4fd3-9796-50c85a410e10
+        rdfs:isDefinedBy  cbnl-term:1e5a0a6b-780f-4287-8dae-dc6938895f10 .
+
+cbnl-def:fcbfe399-f1d0-4ab1-bb99-506233c347dd
+        rdfs:isDefinedBy  cbnl-term:39aa5fa8-2e61-4d7a-b0c0-bd8ea2d2942a .
+
+cbnl-def:9ab1dc02-a1d0-4cef-bd6a-021df7c137d4
+        rdfs:isDefinedBy  cbnl-term:a63a0ea0-8ed3-47d6-8f63-aa03cd2c2181 .
+
+cbnl-def:36fdd100-94fe-473b-9127-0c89dea83cea
+        rdfs:isDefinedBy  cbnl-term:11f4bfeb-24c1-4d59-acc8-7cc90f393dae .
+
+cbnl-def:b32305ef-ca5c-471b-aa8b-c43d5a7480d9
+        rdfs:isDefinedBy  cbnl-term:652db0e7-93a3-40f4-af42-3722d64e6b00 .
+
+cbnl-def:e8ccd42e-85c1-4683-a89d-c9b075e1b565
+        rdfs:isDefinedBy  cbnl-term:73639908-7f84-47ff-ba1d-8cd8a6883d63 .
+
+cbnl-def:2ff5504c-aa24-40b4-b26c-39d92f9f4b9b
+        rdfs:isDefinedBy  cbnl-term:d79619c2-5cb2-4922-adf7-f80078bf8a32 .
+
+cbnl-def:31a6ffd6-d846-4763-95e3-ded2e5f0ffce
+        rdfs:isDefinedBy  cbnl-term:a8a4342b-5555-4424-b560-44f7ba025b9e .
+
+cbnl-def:f1b47bc5-17fd-4e5b-b348-455c0900af3c
+        rdfs:isDefinedBy  cbnl-term:ac944986-6430-42de-97f1-0628a368d895 .
+
+cbnl-def:6cfb1f59-96b5-45f5-b968-089ce20950ef
+        rdfs:isDefinedBy  cbnl-term:20d45ef5-c060-41db-8f19-50641d89e292 .
+
+cbnl-def:547e4fd5-0375-4e81-80cd-e648f86b0c02
+        rdfs:isDefinedBy  cbnl-term:2903208b-88c8-40e8-bf1f-6d06dec5ebea .
+
+cbnl-def:9202fa98-1af9-487d-bec9-bd1171c12b9c
+        rdfs:isDefinedBy  cbnl-term:aa396ee3-1256-4716-8885-4ea6849210ea .
+
+cbnl-def:b64fc929-c154-4d8f-a35e-d970bc6173f8
+        rdfs:isDefinedBy  cbnl-term:a4d27c13-dec6-4f03-8b94-636acc251d95 .
+
+cbnl-def:a2307850-ae7e-4e85-aff2-c004d92d4c9c
+        rdfs:isDefinedBy  cbnl-term:5b67d45d-5358-44e3-a9c3-2fb2a6b37ad3 .
+
+cbnl-def:cacd5de3-5446-47a1-91ac-d12b8e37e85f
+        rdfs:isDefinedBy  cbnl-term:47fb0426-8766-492f-90b9-8cf4674d9dec .
+
+cbnl-def:65455c53-be05-4103-a484-63aa31627b88
+        rdfs:isDefinedBy  cbnl-term:dbf98fce-2c57-48d5-a200-783b78e310f2 .
+
+cbnl-def:2e50f215-ca95-4c5e-a41c-eaf3244b8525
+        rdfs:isDefinedBy  cbnl-term:be4667b6-b602-4cb3-8417-da87f28c656b .
+
+cbnl-def:73bb6522-c41b-4035-847b-252eb44d3800
+        rdfs:isDefinedBy  cbnl-term:826110c9-75de-4af9-80e2-7c3c2035ea96 .
+
+cbnl-def:db07175b-dcbd-483f-9a13-4dc46c47cfce
+        rdfs:isDefinedBy  cbnl-term:8c137ee2-e6b7-4642-94e1-8dfaa115bba3 .
+
+cbnl-def:90518e75-f0b6-4be4-8781-99d3cc9ecfc3
+        rdfs:isDefinedBy  cbnl-term:10fce551-6917-4d38-b547-d531c2f03dcc .
+
+cbnl-def:7daa0f10-538b-4144-9902-07df670b3608
+        rdfs:isDefinedBy  cbnl-term:87d17969-f0aa-4c96-91b0-d3c95aefbc61 .
+
+cbnl-def:2ab25f37-523f-47e2-a6fa-65a78ac77603
+        rdfs:isDefinedBy  cbnl-term:fbeeead6-6e9d-405d-9691-99e8e0d2433d .
+
+cbnl-def:6d26af51-8170-427c-800a-469a549f8f7f
+        rdfs:isDefinedBy  cbnl-term:772a419a-786c-46f2-8635-6dfac64053c3 .
+
+cbnl-def:00ea5fd0-c669-4e8b-9143-46c3b57784b1
+        rdfs:isDefinedBy  cbnl-term:79803ba2-f753-49e4-84be-91b7e3cc276c .
+
+cbnl-def:b5c27955-b4e9-4abf-9270-9e90507aec27
+        rdfs:isDefinedBy  cbnl-term:a730966d-500a-4dfe-9f63-0b46a3639719 .
+
+cbnl-def:8d730451-735f-45eb-a85a-9ba7d2f2d5cf
+        rdfs:isDefinedBy  cbnl-term:f223b8e7-3992-4298-9235-7110141023a6 .
+
+cbnl-def:91eedb79-d454-4782-b570-e07c6c0ac951
+        rdfs:isDefinedBy  cbnl-term:1d4f365d-e572-461e-ae8a-08b3b900e4ee .
+
+cbnl-def:0e3443c4-de70-438a-ba12-2f6d6b11d3d6
+        rdfs:isDefinedBy  cbnl-term:e0f1ef0d-0ac2-42d6-8881-746c52727f4c .
+
+cbnl-def:9e0372bc-93ff-4d51-9d0e-e0df98f2a577
+        rdfs:isDefinedBy  cbnl-term:b851b349-fca8-410b-aa65-355449030cf2 .
+
+cbnl-def:3e17c01c-d062-4509-b158-5504d72e35c9
+        rdfs:isDefinedBy  cbnl-term:8378d160-fe70-4410-a44d-4ad66d6ce7cb .
+
+cbnl-def:85a55f07-036f-455e-831d-6baff625fc0d
+        rdfs:isDefinedBy  cbnl-term:92a650ae-eb23-412a-b8a8-1d94d72ac014 .
+
+cbnl-def:94cfce45-589e-4e5f-ac50-fdfb73338cb6
+        rdfs:isDefinedBy  cbnl-term:21393d23-b254-4731-90a9-26c09626916d .
+
+cbnl-def:07a01b3d-039a-4f43-95b8-f024feb58f7a
+        rdfs:isDefinedBy  cbnl-term:36191f72-fcb0-4721-ae2f-6186a6293fac .
+
+cbnl-def:16fe83ad-2857-4497-b7eb-04f13223f1cc
+        rdfs:isDefinedBy  cbnl-term:797c5493-ddd9-4deb-9ea7-55103c3adc27 .
+
+cbnl-def:dc69d74a-4272-4a44-8cd9-bc256b843e64
+        rdfs:isDefinedBy  cbnl-term:b2ee6769-5179-4b47-a8d7-518e5580140c .
+
+cbnl-def:ca8645d6-e8e8-4dcb-8c74-5184f1c0ee05
+        rdfs:isDefinedBy  cbnl-term:2773f4f6-11ac-46e7-af75-834803527fc1 .
+
+cbnl-def:7a8202cd-a3e1-45b6-9261-90f368847e88
+        rdfs:isDefinedBy  cbnl-term:7bb0d490-c1f0-4366-8606-f282cacf6f82 .
+
+cbnl-def:547a3e2f-7e52-4f36-9e50-d5c328048b2d
+        rdfs:isDefinedBy  cbnl-term:cde51d8a-7960-43f1-881f-5ccf49bf5c1b .
+
+cbnl-def:a1041648-e035-4787-a59c-03790fd69ecb
+        rdfs:isDefinedBy  cbnl-term:c86d7425-fcd6-42a3-b813-21942d01188b .
+
+cbnl-def:db2d97bc-e35a-458e-8e9d-359e20ec5e81
+        rdfs:isDefinedBy  cbnl-term:e916128c-29a7-4140-ba54-78c1be597a26 .
+
+cbnl-def:e30c37f1-daeb-4f92-9db6-1c98b1eafb95
+        rdfs:isDefinedBy  cbnl-term:e1debb18-2d9d-4760-915c-346bbeb7898b .
+
+cbnl-def:0e1c5ce5-0f0b-4a89-868f-3a968844dcc4
+        rdfs:isDefinedBy  cbnl-term:04e6cfcd-72ef-4840-8233-6d6f72e330f2 .
+
+cbnl-def:7f80addf-c068-4e4d-a50e-33dff3be72fe
+        rdfs:isDefinedBy  cbnl-term:6330f038-31ef-41a1-9cdd-d6dc3a21ca1e .
+
+cbnl-def:45d1fadf-a167-45c1-8442-3a112b0a342c
+        rdfs:isDefinedBy  cbnl-term:209c2afd-1af1-422b-91f9-46208a00a4ad .
+
+cbnl-def:269801dc-42c3-4e5f-83d9-95737e48e18d
+        rdfs:isDefinedBy  cbnl-term:a7c36849-5bef-48a6-9673-b8b17563f107 .
+
+cbnl-def:3e1732c2-eebd-4b09-b2ae-7da04e816434
+        rdfs:isDefinedBy  cbnl-term:935fde33-3774-4e82-b5bd-bfee58abab34 .
+
+cbnl-def:9a06a701-6565-4893-9001-16e03abe54d1
+        rdfs:isDefinedBy  cbnl-term:62919452-018c-41af-8bd4-36ede696cf48 .
+
+cbnl-def:80ed49b2-9afa-4325-a40e-75f1b1cf5fba
+        rdfs:isDefinedBy  cbnl-term:efb60168-8533-4e79-bf61-db3fb6b90645 .
+
+cbnl-def:02db3f3b-0090-46e0-998d-6d809f6d3b65
+        rdfs:isDefinedBy  cbnl-term:f2eee86e-0875-4dbf-b20b-023283f05f4c .
+
+cbnl-def:51fa77fa-4040-4e48-a52e-0b5ec5cf090e
+        rdfs:isDefinedBy  cbnl-term:5caaabe2-fc93-4546-9ce0-79bd03f3bff5 .
+
+cbnl-def:8d32e511-3c6b-49eb-a9d0-b00380cbfb94
+        rdfs:isDefinedBy  cbnl-term:12e5ebe3-729c-4428-ab1d-83d9bfbfbf5f .
+
+cbnl-def:c5000469-93be-48be-80e1-7122822c9f77
+        rdfs:isDefinedBy  cbnl-term:7c51692a-982f-4d97-af92-76716de40e0e .
+
+cbnl-def:c1a4d63e-905d-48bb-af02-a64840e4d49a
+        rdfs:isDefinedBy  cbnl-term:61724eae-b512-43f1-a23f-e933432391a8 .
+
+cbnl-def:5998e4ea-c3bf-400e-a3cd-88ddb3a7f250
+        rdfs:isDefinedBy  cbnl-term:fc5f464e-cc4c-4c5c-82dd-649eeae43cdf .
+
+cbnl-def:9d6309ee-b736-490f-9f43-8c0da7eb522d
+        rdfs:isDefinedBy  cbnl-term:7114aeee-810a-49ab-ab0e-320a2e19453e .
+
+cbnl-def:ebb72475-bce0-4621-9cf7-1ab51c446302
+        rdfs:isDefinedBy  cbnl-term:d0cbcd25-6a66-40b0-909c-3ed88f0ef4ed .
+
+cbnl-def:14c6f733-9524-4200-8578-793cdd5b41b7
+        rdfs:isDefinedBy  cbnl-term:a757c0c2-0a4f-48e6-80f7-2e6ea9282f8d .
+
+cbnl-def:0623ae9d-3cf1-4b75-aa80-9d92bbca1978
+        rdfs:isDefinedBy  cbnl-term:a6e0ee6b-3ee5-43e8-8b27-d303a6beccc0 .
+
+cbnl-def:d28e76d4-bb08-4889-bb42-fcb589e8c18d
+        rdfs:isDefinedBy  cbnl-term:3e93c3eb-03db-42e0-b54e-4300173592a2 .
+
+cbnl-def:2257bea8-a010-4d89-b5da-a45e6da0f335
+        rdfs:isDefinedBy  cbnl-term:70cbf440-d66c-4306-bfbd-4814493e52a8 .
+
+cbnl-def:1c8bb740-a242-4d5e-bf93-8192b95e021b
+        rdfs:isDefinedBy  cbnl-term:a13f04d8-7153-43d0-8767-9c19eb5f86f7 .
+
+cbnl-def:7cc07bb4-b386-416f-b22c-213a2a4e523f
+        rdfs:isDefinedBy  cbnl-term:03a0b3e8-e436-496a-b8f7-3b60d969517b .
+
+cbnl-def:bdd3edd4-83bd-4739-b422-b65c4d87716e
+        rdfs:isDefinedBy  cbnl-term:13d8ef79-f63a-4aa8-9122-d5e8c09c38d8 .
+
+cbnl-def:2f9677e0-61c5-484f-ae2e-dc5cae0e1fab
+        rdfs:isDefinedBy  cbnl-term:8515d883-888d-4ac7-988d-35817502387a .
+
+cbnl-def:c7e3e161-1031-4204-9a9e-389dac198aef
+        rdfs:isDefinedBy  cbnl-term:74c3a118-6305-40a1-b7c9-7c3587446785 .
+
+cbnl-def:19f11017-858b-42eb-8e8d-c517c92cf863
+        rdfs:isDefinedBy  cbnl-term:ae4eac8d-7d2c-4e1e-a730-1e85a0e08c61 .
+
+cbnl-def:744f9dd9-d66f-45f2-94a1-4382d28444d6
+        rdfs:isDefinedBy  cbnl-term:86d70da3-78a5-448a-8a56-282d37a62c9f .
+
+cbnl-def:ed2586bd-3898-47b7-a2dc-997cbeb9c67c
+        rdfs:isDefinedBy  cbnl-term:92f4e9de-ebd7-43e3-bf48-2fb443210cc8 .
+
+cbnl-def:8e11cbf5-2135-4018-8999-4f53698f4a35
+        rdfs:isDefinedBy  cbnl-term:d883d93d-b533-473d-af43-1725e3b7e306 .
+
+cbnl-def:de49aff7-85a9-4317-a333-6447a8e05b39
+        rdfs:isDefinedBy  cbnl-term:0774af00-393e-40d5-978b-5ad6a94e9c96 .
+
+cbnl-def:2b1af04c-0071-479c-ac07-75f47f36ad32
+        rdfs:isDefinedBy  cbnl-term:77d216f3-9eab-4b90-b8f5-6b6c24721b92 .
+
+cbnl-def:b6981ffa-6f80-4a50-87e5-7a41309dbf4c
+        rdfs:isDefinedBy  cbnl-term:264be9d3-2aef-47fb-ba8e-bd317bc492b4 .
+
+cbnl-def:b107d698-cfd7-4540-90c7-f76248e0a6ef
+        rdfs:isDefinedBy  cbnl-term:5d9b601e-f77e-4909-8a31-5a2f39579bc2 .
+
+cbnl-def:9b0853c6-1b30-4968-b0b2-634f7762b8c8
+        rdfs:isDefinedBy  cbnl-term:b0757914-aac3-4e60-8fe2-5e23682d95ec .
+
+cbnl-def:b0beca6b-562f-4b48-94df-b7c732172157
+        rdfs:isDefinedBy  cbnl-term:1f996bdf-6b78-454a-be1c-440e039f9d4e .
+
+cbnl-def:a5517be8-f8d0-4715-91e6-1eb5efb66afc
+        rdfs:isDefinedBy  cbnl-term:eeb6582b-2005-42f5-961a-eede82521275 .
+
+cbnl-def:3014dfa8-6467-4a8a-9eed-54226d4fa305
+        rdfs:isDefinedBy  cbnl-term:02998a9f-ab72-4361-804d-b4eba6c1a86e .
+
+cbnl-def:e4c7fe66-edba-4367-9613-ffd6cc221c1d
+        rdfs:isDefinedBy  cbnl-term:b42aa742-ea21-41b2-a974-b70eb2151d2e .
+
+cbnl-def:1023c7bf-2991-4658-80b8-3297e75298cb
+        rdfs:isDefinedBy  cbnl-term:34c6462e-b0c8-4f42-959c-08cbb9ee6ea9 .
+
+cbnl-def:6caa5130-d9aa-4f46-aeba-09039216d830
+        rdfs:isDefinedBy  cbnl-term:ca39f440-2702-4574-9f32-53e721d7e19a .
+
+cbnl-def:f21e092d-b288-476e-af67-cc728b51a70e
+        rdfs:isDefinedBy  cbnl-term:e245e4ea-f9fe-48d4-a758-83edd102f4df .
+
+cbnl-def:771e21a7-3ca5-4af0-92ca-63baf737578e
+        rdfs:isDefinedBy  cbnl-term:2df409d3-b991-41cd-b0fc-84e9fa6be266 .
+
+cbnl-def:8fdd8be8-bd2c-452d-977f-1df88bf63d60
+        rdfs:isDefinedBy  cbnl-term:a87a5b69-6c77-4bdd-8149-943f131ab27a .
+
+cbnl-def:d43ad59d-7f19-4340-9fc6-6f10baac9b7a
+        rdfs:isDefinedBy  cbnl-term:d0307a3d-973e-4dea-a04f-ad287751dc6c .
+
+cbnl-def:77d21fdc-8b20-4eab-a11f-bdbed1ee6521
+        rdfs:isDefinedBy  cbnl-term:42f6369e-7229-4248-834b-87c634183108 .
+
+cbnl-def:47bbc985-c501-4a4d-9c5d-d7e52ba34ca2
+        rdfs:isDefinedBy  cbnl-term:aafabd38-c039-481d-bf50-e3d9f5bfeb63 .
+
+cbnl-def:9cc4dcdd-62c1-4429-8718-c7e4b11a1015
+        rdfs:isDefinedBy  cbnl-term:7861470c-a9e0-4f83-be52-4981632fe03a .
+
+cbnl-def:309db57e-27e7-4ce9-a670-ebdff572926a
+        rdfs:isDefinedBy  cbnl-term:af7a5bd6-a576-4b76-851c-759bfc5397cc .
+
+cbnl-def:7f336c34-7256-4542-a2e1-b55b00ff06b5
+        rdfs:isDefinedBy  cbnl-term:e38d75b1-bb91-44fb-b77c-02bfe8046f6c .
+
+cbnl-def:dee8fd09-6c7e-4fd7-8f43-509efafd39d0
+        rdfs:isDefinedBy  cbnl-term:ffe46462-942b-4dec-b3d3-209714035d39 .
+
+cbnl-def:aed0cd8d-d327-4628-bf0e-fa6f48ec4677
+        rdfs:isDefinedBy  cbnl-term:49f540e6-c8e2-4298-b5d3-0ccc752ccf88 .
+
+cbnl-def:dbaaabfa-b288-4b2e-b8c8-cdcb4ab46848
+        rdfs:isDefinedBy  cbnl-term:9214ce94-5d42-4342-ad32-a91cd8a98fdf .
+
+cbnl-def:641664e5-c443-4841-89d7-534865ee4a44
+        rdfs:isDefinedBy  cbnl-term:118dfe66-900e-461b-83a7-69ea114cbb44 .
+
+cbnl-def:f740bdc3-71a8-4194-928d-73e45894694f
+        rdfs:isDefinedBy  cbnl-term:c514aee0-369e-48d7-9b11-799ad847cbb1 .
+
+cbnl-def:4cef765c-c30a-4446-b6da-0d10951ad489
+        rdfs:isDefinedBy  cbnl-term:160145b3-04ea-4e33-aa4a-bac65c2f4f11 .
+
+cbnl-def:ab23fdb3-356d-4cac-8bd4-e1638a3cfd77
+        rdfs:isDefinedBy  cbnl-term:510ac35e-3f9e-4d84-851c-833e5057834e .
+
+cbnl-def:ffb3bf78-c9cf-42b3-9279-9902f3c3c71d
+        rdfs:isDefinedBy  cbnl-term:e62d8f2b-dcbb-4b0b-ac96-37e1a56a7951 .
+
+cbnl-def:6033606a-fe6e-4e4e-8b0e-e2933a98bf43
+        rdfs:isDefinedBy  cbnl-term:5c3dfc7b-d2c2-4397-96c5-ae610ef2abc7 .
+
+cbnl-def:c92e2d84-3777-45d8-bad7-0bac32e8add7
+        rdfs:isDefinedBy  cbnl-term:e9db97dc-095a-4b41-928f-54c576a590a9 .
+
+cbnl-def:56d35be9-eafd-42b5-84af-3e7a390cbb6e
+        rdfs:isDefinedBy  cbnl-term:5695caae-c3ce-45f2-82c0-5e70bd95e12d .
+
+cbnl-def:a84f8101-95dc-4f68-9f41-f292b1d2e899
+        rdfs:isDefinedBy  cbnl-term:9a67964c-c314-4a17-ae98-a04a29c19727 .
+
+cbnl-def:73afd604-558f-4eef-943e-72b9289cb2bc
+        rdfs:isDefinedBy  cbnl-term:b4d15dee-03d9-4583-8afe-4f4e9e0e2f27 .
+
+cbnl-def:21d3ab33-5428-4ee7-8340-c1b7b6977ff4
+        rdfs:isDefinedBy  cbnl-term:7cad898a-b5d2-4306-a815-30a01e576fa3 .
+
+cbnl-def:350c39a4-01bf-47fa-a6ef-1f3693a9d9d5
+        rdfs:isDefinedBy  cbnl-term:dad6406c-6fd4-4e51-9d7b-b4d13b14e0bb .
+
+cbnl-def:99e3e6d4-57df-438a-897a-81fb4f15127f
+        rdfs:isDefinedBy  cbnl-term:26b2207b-81c8-4400-bd04-ce50a73200fc .
+
+cbnl-def:2c9ff7f7-7553-4030-a651-64282b46ab93
+        rdfs:isDefinedBy  cbnl-term:5e36a570-160e-4494-aa4e-788d35a66daf .
+
+cbnl-def:e6222ab6-415b-451d-8f6a-8454536995c0
+        rdfs:isDefinedBy  cbnl-term:6e6c8b93-d93d-4aeb-ae0e-981903c518c5 .
+
+cbnl-def:c5328e90-d18f-40e1-86f8-126803ee4698
+        rdfs:isDefinedBy  cbnl-term:a696724f-0fb5-40bf-aa05-4d7e20f7f536 .
+
+cbnl-def:df270f2b-1fe3-45f4-9cd3-fc900bbb8ee0
+        rdfs:isDefinedBy  cbnl-term:ed168d2b-1e78-48e4-8e0a-b6d3ab1e2c32 .
+
+cbnl-def:e24ac429-d059-4c73-9402-30f0745236e9
+        rdfs:isDefinedBy  cbnl-term:eef33b6f-8806-4d00-8115-3d24644fb718 .
+
+cbnl-def:4e3f975b-8dde-46ec-8d0b-f6ffbcb21d34
+        rdfs:isDefinedBy  cbnl-term:5acb4ec8-3877-4a53-968e-9ecaa6287765 .
+
+cbnl-def:edbc4cae-0e2a-4b8e-8cdf-97c270a0ecc1
+        rdfs:isDefinedBy  cbnl-term:bacd1e70-429e-4232-8f3c-28d38947708e .
+
+cbnl-def:bc4f5c85-e06e-4aaa-b9c5-784cea5ce991
+        rdfs:isDefinedBy  cbnl-term:8edf9e35-ac9d-45cc-9a8a-408632636c6c .
+
+cbnl-def:fe840e63-744c-4b1d-a8c3-ffe207d1f27c
+        rdfs:isDefinedBy  cbnl-term:c10a3bcb-d315-4b84-8523-7f6f6d6a3114 .
+
+cbnl-def:b5148e65-50ae-4522-a4e9-92371112fc1f
+        rdfs:isDefinedBy  cbnl-term:bc3923a5-4c88-4a3d-bbf6-039a89909ffe .
+
+cbnl-def:68a3e842-9f8d-4cf4-8ed9-8335bae2c9dc
+        rdfs:isDefinedBy  cbnl-term:9a93ecac-71bb-4c90-b39c-8b507a0ab9a8 .
+
+cbnl-def:1759a1cc-cbf8-4017-9974-d89cded1a623
+        rdfs:isDefinedBy  cbnl-term:c243fd0e-f136-4f4d-9170-9c24adef3949 .
+
+cbnl-def:0cded4b4-ab36-413e-9972-67f09ca32143
+        rdfs:isDefinedBy  cbnl-term:fafb7d42-9339-494e-ae42-deef5d18fdbb .
+
+cbnl-def:f371e14b-6dc9-47ae-8f2c-a9f4ef812c1b
+        rdfs:isDefinedBy  cbnl-term:086d1cd7-5b61-4afd-8792-9671b5d58031 .
+
+cbnl-def:3b97b108-ab4b-49d1-bc27-5c40ad833b4d
+        rdfs:isDefinedBy  cbnl-term:891c2bc7-f0e9-49f1-b34d-c67406d1bda0 .
+
+cbnl-def:25dd09b0-1749-4d54-abed-ce5ffd9e903e
+        rdfs:isDefinedBy  cbnl-term:52d49b91-3086-4514-9e5d-786376946cad .
+
+cbnl-def:a2ad8dc3-278f-43f1-99f8-767d16518e75
+        rdfs:isDefinedBy  cbnl-term:2fc39fcc-9be3-4257-9f28-0e18f9f278a0 .
+
+cbnl-def:af1de650-8d6a-4aff-91be-67e1d873abc2
+        rdfs:isDefinedBy  cbnl-term:e2c71750-4867-4f54-a696-9714fb7b4c26 .
+
+cbnl-def:64098789-8e2e-46e8-8088-f81b05e43649
+        rdfs:isDefinedBy  cbnl-term:9cc322ef-4af1-4107-a1f2-2ba026048782 .
+
+cbnl-def:dbcd6aea-a97a-4e40-9652-fe8395a09b25
+        rdfs:isDefinedBy  cbnl-term:c64afae1-43a4-45a8-8053-be675d6f8481 .
+
+cbnl-def:102f07f0-f6d8-4b9b-b0ee-6c293d6dfe74
+        rdfs:isDefinedBy  cbnl-term:b4bca4b0-9c90-40f0-855d-7445fbc9112d .
+
+cbnl-def:3d2dbe7d-e248-4595-b0db-5327af047896
+        rdfs:isDefinedBy  cbnl-term:24ba8ac0-391d-4195-90bb-1ab42e43fe7a .
+
+cbnl-def:f0db271c-a96a-4146-a3f6-270ddf8b8ee1
+        rdfs:isDefinedBy  cbnl-term:0599ec44-1984-4c83-9890-21cd3b6c536a .
+
+cbnl-def:1699de67-5376-49e2-a038-12324efe1899
+        rdfs:isDefinedBy  cbnl-term:a876ca5b-122d-4fdf-b2e8-e4436e9617dd .
+
+cbnl-def:8889c737-b7b6-4f91-855f-edec232283d4
+        rdfs:isDefinedBy  cbnl-term:e77ddfc5-f4cb-4fef-83f3-86324f746000 .
+
+cbnl-def:e4a64357-3560-4db6-b42a-89e3c1319df3
+        rdfs:isDefinedBy  cbnl-term:a6207985-e599-4901-acbd-588687f6adf3 .
+
+cbnl-def:65d125ed-32e7-4e45-bcdd-7e52af4d4f15
+        rdfs:isDefinedBy  cbnl-term:81a717cd-28c0-425b-b21e-d04cdad8ad57 .
+
+cbnl-def:8cbf87b6-8362-461f-9b0b-6a140fef047f
+        rdfs:isDefinedBy  cbnl-term:e774da2e-f55c-4da0-bbe3-d7442a5f4d4a .
+
+cbnl-def:18634818-6fbf-4387-8f36-f167a2c541f6
+        rdfs:isDefinedBy  cbnl-term:02e00411-7a5a-45cb-ba32-219a6122608c .
+
+cbnl-def:4a6a82ad-362c-487d-9478-13d0ce1f903d
+        rdfs:isDefinedBy  cbnl-term:71f84d67-ddac-4154-8313-5a6963bfc34e .
+
+cbnl-def:18d33f97-a525-4a91-b0c5-8494d07d1dcb
+        rdfs:isDefinedBy  cbnl-term:a4d93507-c6f6-4a93-838e-eee53c3db1e7 .
+
+cbnl-def:dd44613a-dcd3-461a-a25a-fd4bab6cf154
+        rdfs:isDefinedBy  cbnl-term:63d3f1a2-5b37-47d4-b9d2-47c008afafdb .
+
+cbnl-def:8828abf2-478e-4125-9e28-49e4cf997530
+        rdfs:isDefinedBy  cbnl-term:88e62c36-ba01-4a0a-9e49-048c480f44c5 .
+
+cbnl-def:4d46ea15-50a4-40c4-94f9-d78dcb5f0511
+        rdfs:isDefinedBy  cbnl-term:d1941f71-9094-4995-952c-93885d4c23f6 .
+
+cbnl-def:00dab5ec-e9f4-42d9-a880-a64c69631467
+        rdfs:isDefinedBy  cbnl-term:3f84022c-2c32-4882-b134-314931c21bff .
+
+cbnl-def:3d216d16-8575-4d04-8784-36e4c522ea7f
+        rdfs:isDefinedBy  cbnl-term:81e523f6-f928-4301-a873-73d7776288f4 .
+
+cbnl-def:62a4e40c-ef3e-4c9d-a320-2a702e5b4563
+        rdfs:isDefinedBy  cbnl-term:365ca33e-64bb-4d45-9d88-9b4bc01a8bbb .
+
+cbnl-def:207656b1-9b64-4fa5-958e-2b7e7f51b3a1
+        rdfs:isDefinedBy  cbnl-term:2ae3358d-a5dd-4d83-a16d-791a57d509c7 .
+
+cbnl-def:18342360-a2f0-4f7c-90ba-02d1cdf00acb
+        rdfs:isDefinedBy  cbnl-term:b3c54f2b-caef-49f2-8e95-4ff8d9fd70e6 .
+
+cbnl-def:6ee94749-2f7e-49aa-969d-3388d82a24e9
+        rdfs:isDefinedBy  cbnl-term:a6641bbf-d699-4d9e-a09b-a5f20e244d9a .
+
+cbnl-def:fc970e18-40a7-40d2-a83b-601b5f8b6466
+        rdfs:isDefinedBy  cbnl-term:5556ab32-ae9c-4cf2-bd72-a87c0049b75f .
+
+cbnl-def:982fabc7-3c8b-47a2-9f5a-e55445260c28
+        rdfs:isDefinedBy  cbnl-term:d47174de-ef56-41f4-9c04-700613c91e8c .
+
+cbnl-def:49356cd2-ec0b-41a3-b385-4a08b593640c
+        rdfs:isDefinedBy  cbnl-term:31b18155-c84f-4728-bcf9-905bc5cc9adb .
+
+cbnl-def:a23b2ee8-09c4-4106-9647-e1037bf51f61
+        rdfs:isDefinedBy  cbnl-term:bf0a60ea-5358-4506-b728-b39ab89d397f .
+
+cbnl-def:ba1830c5-b29e-490f-823a-ef22a6bfa73d
+        rdfs:isDefinedBy  cbnl-term:04a2f9da-8e21-4af5-a8f4-1b415f89b648 .
+
+cbnl-def:49681d9d-3cd4-459e-83e8-a22cefb7bdac
+        rdfs:isDefinedBy  cbnl-term:1a9cdf2b-1f64-49a6-a1d1-1befcef5e44a .
+
+cbnl-def:3923e599-5747-424b-93c5-060751142adf
+        rdfs:isDefinedBy  cbnl-term:570c9af8-5d4d-4b40-8327-f7d655f4c86a .
+
+cbnl-def:1fe1d44f-6a0f-4c4f-8049-5ff81737f50c
+        rdfs:isDefinedBy  cbnl-term:e3648ca6-9a04-4e96-bd29-5d3ff5c6d944 .
+
+cbnl-def:3e739966-9228-46e6-b7dd-04dcd803cccc
+        rdfs:isDefinedBy  cbnl-term:ae3aaac0-1f6d-4fe8-ae29-ce91edededa1 .
+
+cbnl-def:0d595b53-5c35-422a-ad14-6e3bc240e021
+        rdfs:isDefinedBy  cbnl-term:c4fabe11-9197-4db8-9a1e-1741c5909189 .
+
+cbnl-def:051d7b0d-95e8-4828-b051-9b48cd37d8b1
+        rdfs:isDefinedBy  cbnl-term:7ffe197c-a1e9-44f7-a47d-42e732153f5a .
+
+cbnl-def:2f8bce6c-5748-4c7f-ada6-f4897945afdb
+        rdfs:isDefinedBy  cbnl-term:886c46cb-9f57-4336-8e87-d125f26d3f6c .
+
+cbnl-def:107ae37b-5415-47c1-8dbe-929c2f41d037
+        rdfs:isDefinedBy  cbnl-term:9f24cb45-ca83-4483-85de-130c0d5dbc57 .
+
+cbnl-def:3fd9cbad-75b5-47b2-8416-54a90e053ca6
+        rdfs:isDefinedBy  cbnl-term:6224f040-896b-4e71-8b1c-8d60545665b7 .
+
+cbnl-def:237e4a8a-bd4b-4c23-af03-0fc66c40f1a3
+        rdfs:isDefinedBy  cbnl-term:4441b3ac-f5f3-4343-9630-5f69d05c8bd4 .
+
+cbnl-def:39aa56dd-684c-43bc-a45c-cc33a03cf1f8
+        rdfs:isDefinedBy  cbnl-term:0d48e90d-0941-4f0f-879a-3559b7a041c0 .
+
+cbnl-def:d4c7bd28-630d-4b00-990d-57092b13a3d4
+        rdfs:isDefinedBy  cbnl-term:6586f292-f4b0-4bb3-9e16-438b3b742a06 .
+
+cbnl-def:8abb2a1f-eb0f-48ea-ab7c-38b31f4fa079
+        rdfs:isDefinedBy  cbnl-term:ba770ba6-d275-43a5-b221-1ee2afc0d0e2 .
+
+cbnl-def:6fb412a1-45a9-4caf-8c68-5e1c49e31fcb
+        rdfs:isDefinedBy  cbnl-term:279fcc62-3e0c-45b9-9a81-b5a2ff2e2ab1 .
+
+cbnl-def:38a122fc-f4d3-46a9-90a7-12393833969f
+        rdfs:isDefinedBy  cbnl-term:3aad32c2-29bb-4879-bc71-98572ac5bd2c .
+
+cbnl-def:e5932c18-6072-42fe-b06f-c85c9a1a7d28
+        rdfs:isDefinedBy  cbnl-term:196b8a07-db3b-40dc-98d3-b828c3cd2e04 .
+
+cbnl-def:143b8e58-9f42-4091-bae5-fe6338b30826
+        rdfs:isDefinedBy  cbnl-term:355aa1ac-7e14-4048-ae57-962c4e05c234 .
+
+cbnl-def:412e5428-a1a1-4a90-9bb6-6510a0bcb90f
+        rdfs:isDefinedBy  cbnl-term:dc22aa74-231a-4382-b569-ce31eb4797b8 .
+
+cbnl-def:8980d479-2cf1-4738-91bf-6559dadf766f
+        rdfs:isDefinedBy  cbnl-term:848708be-8a0e-4360-aedf-31af5fd92d06 .
+
+cbnl-def:f06c0aa4-ede3-4973-aa82-b5fe0c8f77d5
+        rdfs:isDefinedBy  cbnl-term:3e5cb656-e44f-4954-b9d1-cbacd7e5eac7 .
+
+cbnl-def:0a9b78f5-4622-41de-be3b-af4b65668f7c
+        rdfs:isDefinedBy  cbnl-term:96b339ec-aa3b-4131-bb6c-439b12671799 .
+
+cbnl-def:a8a2f552-897f-4f49-a339-8ed1567ad973
+        rdfs:isDefinedBy  cbnl-term:4b03c9ec-8f24-4dc4-b204-1dee4dc8b953 .
+
+cbnl-def:dd89ab80-6fa4-4131-b386-3102ec8f001d
+        rdfs:isDefinedBy  cbnl-term:329c1ef1-6688-4479-8c95-3ff6d0037b6a .
+
+cbnl-def:a18f7731-af7c-4b2c-87ba-5133e9dc2ccb
+        rdfs:isDefinedBy  cbnl-term:9e476208-8118-4459-8243-768f172a2985 .
+
+cbnl-def:cb9d9f69-906a-4f6c-932b-2ee74b5f85a3
+        rdfs:isDefinedBy  cbnl-term:47e33321-e797-4a87-87eb-ca486a1d3d8f .
+
+cbnl-def:02677a1b-e049-4474-aa53-2e88a70ad5a0
+        rdfs:isDefinedBy  cbnl-term:757913ee-9351-4fa8-a86e-651208a5c63f .
+
+cbnl-def:0308f780-e510-4498-b6a9-9f99eb642636
+        rdfs:isDefinedBy  cbnl-term:312b5114-1f0b-487b-95a0-072f3362e11f .
+
+cbnl-def:29cc7197-075d-42ba-b1fb-cf16047d534b
+        rdfs:isDefinedBy  cbnl-term:2a58b1d9-7911-4529-9659-1acbb7deba0c .
+
+cbnl-def:0d11dc13-d054-42b7-8db1-358eea8ab11a
+        rdfs:isDefinedBy  cbnl-term:20783aa2-20bf-4c2f-b841-f20e068b15a7 .
+
+cbnl-def:e146e8fc-db79-4be5-9b85-e9d1811ef64f
+        rdfs:isDefinedBy  cbnl-term:ed6fea9f-a1f2-4fdc-b2a5-3d786731a6f9 .
+
+cbnl-def:ee3d7d9e-b939-4ee6-84f8-7518e46b3552
+        rdfs:isDefinedBy  cbnl-term:b81ed367-bd68-4701-acaf-22b5967fb134 .
+
+cbnl-def:ba6cfc5c-1653-4366-947b-9c11755ae93c
+        rdfs:isDefinedBy  cbnl-term:5d0ad52c-c836-40c1-ae50-f1cc1a425a15 .
+
+cbnl-def:a535ec29-a739-4592-9006-f49fa633b677
+        rdfs:isDefinedBy  cbnl-term:224485d2-6968-4a01-abe9-8a7f524eb2ef .
+
+cbnl-def:988feeb0-9791-4189-93f5-ec024717560f
+        rdfs:isDefinedBy  cbnl-term:f2b04a5c-7bd8-4212-8d1f-eca83c1e8ab3 .
+
+cbnl-def:6c4a991c-4d29-48eb-b380-faee4c3c18b5
+        rdfs:isDefinedBy  cbnl-term:689cdea3-bfa1-4f86-a601-e77ef607f1a9 .
+
+cbnl-def:213397e7-4253-4d4d-adb8-c7141530f321
+        rdfs:isDefinedBy  cbnl-term:c72880db-e337-4779-8e50-3a1587ec76cf .
+
+cbnl-def:ac2d8b4d-5cab-450e-aa24-08f41b4edcf7
+        rdfs:isDefinedBy  cbnl-term:813c96bb-7aa5-471b-9f99-cf62f5527387 .
+
+cbnl-def:65a1e319-21a1-4523-80be-57b5a25f8e09
+        rdfs:isDefinedBy  cbnl-term:0b339142-d00d-4b5e-a527-436700c94314 .
+
+cbnl-def:4508c7e8-37a5-40fe-8a52-8163b55c315d
+        rdfs:isDefinedBy  cbnl-term:e14a57db-8bef-424c-ba11-a98cde84b613 .
+
+cbnl-def:aa23b11f-e1bb-449e-bfbe-f7aad803a9d2
+        rdfs:isDefinedBy  cbnl-term:f27d0d90-e097-4ada-8e45-e3f6319982f6 .
+
+cbnl-def:795f92fa-8dc0-4eb7-b8df-bb0b71e6bbb0
+        rdfs:isDefinedBy  cbnl-term:84fedd84-4561-4fea-bc73-08d9836ea7a4 .
+
+cbnl-def:e056dbb1-d3bc-49dd-af51-0477f1be77a9
+        rdfs:isDefinedBy  cbnl-term:8dd36dc4-75fc-47e0-9e50-075fc75a0451 .
+
+cbnl-def:96126f25-16da-4a48-8f37-54c2d6e65c89
+        rdfs:isDefinedBy  cbnl-term:a0da6478-caf5-42d6-9e7a-832ba31ce0e6 .
+
+cbnl-def:0b6dce96-5e9e-454d-9254-851b12f76bf5
+        rdfs:isDefinedBy  cbnl-term:7e7973af-9085-4fb7-a464-1787eff89a5d .
+
+cbnl-def:511c9b2a-92fa-478e-ad0e-5dd0366c9b5a
+        rdfs:isDefinedBy  cbnl-term:1f7b6816-2d3b-49d3-a86a-4ee2a8377c8f .
+
+cbnl-def:27c3f6b7-6f12-41a2-a569-a95c646fcf74
+        rdfs:isDefinedBy  cbnl-term:84c67b7b-22d3-4bd2-9dba-2e1795f19658 .
+
+cbnl-def:9ce7d8b0-ee37-432c-945c-4797b997a520
+        rdfs:isDefinedBy  cbnl-term:3f253d48-369a-4030-ba07-b4018033ac26 .
+
+cbnl-def:9ebc5c32-742b-4dce-9a50-46b246c83c03
+        rdfs:isDefinedBy  cbnl-term:86c7f530-574b-4c56-8b8a-69cac93b1aad .
+
+cbnl-def:7bc78bef-57a0-4bbe-b88f-6d6c41d93005
+        rdfs:isDefinedBy  cbnl-term:8dd329e0-aa82-4ded-8c83-d72903486b48 .
+
+cbnl-def:1556488c-57c9-4c5a-89a3-e7b2ee8c4b5c
+        rdfs:isDefinedBy  cbnl-term:69daf26c-6b8b-49fa-8699-4bf7b716ce59 .
+
+cbnl-def:be76fcca-0a3c-464b-8721-7922145ad7aa
+        rdfs:isDefinedBy  cbnl-term:1967431a-2503-4726-89e2-df429d1e20e8 .
+
+cbnl-def:c2242d3f-dbc4-4b49-a15f-f4f172016d8e
+        rdfs:isDefinedBy  cbnl-term:28c62c62-d1e7-4efe-aaab-4741325c3f7d .
+
+cbnl-def:99942ee2-6db2-44b4-bbd7-b3139eefffcb
+        rdfs:isDefinedBy  cbnl-term:25495681-5c46-4660-b5d6-dc5b707b29c3 .
+
+cbnl-def:852122c7-24f7-4a2a-9ac7-463f60a163df
+        rdfs:isDefinedBy  cbnl-term:9bf66b1d-4a07-43d7-be36-bea7f8349fa3 .
+
+cbnl-def:2d0170ce-14c1-4d88-8af1-57f39f091e75
+        rdfs:isDefinedBy  cbnl-term:6de6db67-c700-4726-b5de-14c8a5fcc0bd .
+
+cbnl-def:ce72d1a9-cdaa-4fe8-8673-754f09f3050d
+        rdfs:isDefinedBy  cbnl-term:a4267f5e-c4d6-4c53-9b6c-82cc12e52cc1 .
+
+cbnl-def:2f003282-c886-4324-b2b0-8d5100a2614e
+        rdfs:isDefinedBy  cbnl-term:6d99e053-f3ee-487d-8bfe-677ecfa5128d .
+
+cbnl-def:77bcfcc2-c707-4945-a699-176bfb3477ff
+        rdfs:isDefinedBy  cbnl-term:847f1e4c-0c49-4ff3-ba2c-de7992f730cd .
+
+cbnl-def:e28b068f-1fda-4f53-94b9-63f91f2d3c72
+        rdfs:isDefinedBy  cbnl-term:5fc41d87-f1e2-4e1a-9008-1997071b8b3c .
+
+cbnl-def:ebb00bbf-7aed-47d0-b5db-b6955d4625ec
+        rdfs:isDefinedBy  cbnl-term:dc074049-3252-4d38-b8ec-b7745aa5901b .
+
+cbnl-def:9563d2c7-c7c7-4ec0-8a21-99276be21510
+        rdfs:isDefinedBy  cbnl-term:eedaa0c3-d22f-4455-a69b-d2820ea75bf8 .
+
+cbnl-def:c79edf97-e097-429e-a091-aa75aa533e3e
+        rdfs:isDefinedBy  cbnl-term:44188818-074c-4e91-a709-f0bf7a3d6938 .
+
+cbnl-def:d7e6eaa2-65c4-4a53-b107-dc999a3364df
+        rdfs:isDefinedBy  cbnl-term:075fe984-3182-4ca1-87bb-e145815c2aab .
+
+cbnl-def:e62d38b1-5170-4f91-936a-a4bda1a954e5
+        rdfs:isDefinedBy  cbnl-term:9b54bbde-0ca2-4e32-abdc-8ab8d9f3a8fc .
+
+cbnl-def:1635449a-5d21-4739-aa37-28318d2aa4d4
+        rdfs:isDefinedBy  cbnl-term:c2fbb57f-22b3-4f71-a426-c0bf08a18eac .
+
+cbnl-def:617eee44-02f2-403e-96a0-9731db890f13
+        rdfs:isDefinedBy  cbnl-term:b1ed2a7d-edfa-4a77-bec3-f20493df418b .
+
+cbnl-def:64a6d3be-e28b-4acd-b0ae-995941b85965
+        rdfs:isDefinedBy  cbnl-term:2c168c66-407e-49d2-b2fa-f87cd6ff2768 .
+
+cbnl-def:1c0e9548-eb36-456e-9702-ae7d71307a15
+        rdfs:isDefinedBy  cbnl-term:2a5d743a-ab4c-49c5-ad70-a81a1f192d52 .
+
+cbnl-def:8c6d3742-98d4-47cd-9eff-c45ed1747205
+        rdfs:isDefinedBy  cbnl-term:5273fe50-14cc-4053-9ab1-3f8c1d04f361 .
+
+cbnl-def:739f8442-9618-4d2e-829b-211e8743874f
+        rdfs:isDefinedBy  cbnl-term:b3349195-1ed4-4fda-a3d0-645f749b6286 .
+
+cbnl-def:69db76bc-22f8-47f2-b027-1af6960ffcb6
+        rdfs:isDefinedBy  cbnl-term:80a3a2ff-10c9-405e-995d-068e009ee6cc .
+
+cbnl-def:2f188934-6fa6-4521-9987-c739e2e318da
+        rdfs:isDefinedBy  cbnl-term:6caecedb-1bcc-410f-b999-f504bc90fe63 .
+
+cbnl-def:3c6a583d-9169-435a-901c-aa5c74e5155f
+        rdfs:isDefinedBy  cbnl-term:c10e5d00-cd32-4bc8-8826-9aa179ee1f57 .
+
+cbnl-def:0de3e8bf-a659-4274-8e3a-30290f9dbde9
+        rdfs:isDefinedBy  cbnl-term:60ef2593-84d2-4fd9-9274-2150b6a50e45 .
+
+cbnl-def:bfa3a8be-7ca4-4b77-9658-fb13b3a4a58d
+        rdfs:isDefinedBy  cbnl-term:14ecc91a-0852-49ac-b2b1-1f140ef2cc91 .
+
+cbnl-def:b63fe209-bcdc-4951-975c-5448ed16b298
+        rdfs:isDefinedBy  cbnl-term:9f3eff08-f783-463a-9471-dad6e1834c0a .
+
+cbnl-def:85682c85-fc75-4df5-9260-bb5293896af1
+        rdfs:isDefinedBy  cbnl-term:85fd5c1e-3dd7-48f5-8885-fde678ddd1aa .
+
+cbnl-def:10b19fff-6dd5-4772-9002-f5bbcf687b05
+        rdfs:isDefinedBy  cbnl-term:8093b1ea-0323-4e14-b5e6-fad4bf413376 .
+
+cbnl-def:74beee7a-716c-4787-8f65-4e065ba667fc
+        rdfs:isDefinedBy  cbnl-term:98882762-a43e-477f-b3a4-48c3b11fd73c .
+
+cbnl-def:7a8cbfd1-593a-46c3-ac65-3dffb2c79056
+        rdfs:isDefinedBy  cbnl-term:7f0dd515-31a1-4a73-b1e6-e0745ce4c138 .
+
+cbnl-def:70faa41f-124d-4c65-8a03-c2e65c2eb321
+        rdfs:isDefinedBy  cbnl-term:7e1fca30-339e-4fda-8fb9-c518a961539e .
+
+cbnl-def:f07a3bf0-0b1f-4a27-8abe-b320a49718fc
+        rdfs:isDefinedBy  cbnl-term:90742d3c-b338-41f2-b89b-7c760f6cb9f7 .
+
+cbnl-def:4b151831-1223-4737-b4d8-02da6dc7bc9a
+        rdfs:isDefinedBy  cbnl-term:d04785a5-500b-41d1-971e-1f4df168cfeb .
+
+cbnl-def:956a1ccd-1853-4337-b23d-8dd8b914391a
+        rdfs:isDefinedBy  cbnl-term:5c75747c-922e-4e7a-a640-fc695c94589b .
+
+cbnl-def:eb4b68f3-940d-4145-b462-1e36eaa3d643
+        rdfs:isDefinedBy  cbnl-term:17389d4b-22d4-44e2-bae5-910c1b4f49cd .
+
+cbnl-def:bbc17d82-08a0-4b72-b5f5-2a74b98134f8
+        rdfs:isDefinedBy  cbnl-term:0278e87f-11b6-411e-9b14-af143c61d00d .
+
+cbnl-def:95721924-c8cf-40b1-904e-c20a9ad128db
+        rdfs:isDefinedBy  cbnl-term:b31f9f9f-673a-4dc8-b3b4-103085b4474d .
+
+cbnl-def:ab40b533-1a11-45eb-b7dd-fa51f4049e98
+        rdfs:isDefinedBy  cbnl-term:16747ed7-0af9-4ac7-912e-4f21549ed787 .
+
+cbnl-def:bee892b2-e05a-4cb7-bf3a-c7e308aa54fa
+        rdfs:isDefinedBy  cbnl-term:8bfa1cbe-37af-4e92-bc83-bb70fb6af520 .
+
+cbnl-def:ca69fff0-27a4-45a4-8214-2f532ae6b3de
+        rdfs:isDefinedBy  cbnl-term:54808068-0aa0-4516-a1c5-9b556ed05529 .
+
+cbnl-def:dfec04d5-b318-44c4-9cb2-1e5e5ff1c701
+        rdfs:isDefinedBy  cbnl-term:13fa10b3-3906-453c-b513-2ae7ea61e01a .
+
+cbnl-def:8b3f2193-8f0b-443c-879e-7f32172124f7
+        rdfs:isDefinedBy  cbnl-term:aa2b3dfc-704e-410a-838d-1f03e54fb655 .
+
+cbnl-def:2a11a951-4b8d-4e0f-a64e-757913128420
+        rdfs:isDefinedBy  cbnl-term:7003ba18-6807-44bc-9a3e-a2a98d69ef88 .
+
+cbnl-def:10ae45ae-4546-4255-9fd9-eb8f82d2cbc1
+        rdfs:isDefinedBy  cbnl-term:3471703b-1c8b-474b-a5c4-e10f3a6cfdca .
+
+cbnl-def:e906ae78-bcd4-44c8-b788-e7e02fef4399
+        rdfs:isDefinedBy  cbnl-term:0ce189f9-ebc2-4e1b-b82a-6fe48037c81b .
+
+cbnl-def:6946ba8f-1a83-4fb1-aece-a2dcea806982
+        rdfs:isDefinedBy  cbnl-term:6a57ee25-0371-4704-8bc7-479784e55ff6 .
+
+cbnl-def:b2a8987c-7887-4070-8db6-f848698f7408
+        rdfs:isDefinedBy  cbnl-term:f9b3d82a-7c33-4304-b641-974d02a9267b .
+
+cbnl-def:099f2ac7-7853-4bce-b858-1f7f4b246a17
+        rdfs:isDefinedBy  cbnl-term:1c62813c-81f1-4181-8ba2-79d25c56c9bc .
+
+cbnl-def:72b8893b-e83d-4ec2-a836-b0a30943cf3f
+        rdfs:isDefinedBy  cbnl-term:675f9881-bf58-4267-969b-1466f6c8b0ae .
+
+cbnl-def:fff36fbd-00e5-4f62-97fd-6b8cff13b969
+        rdfs:isDefinedBy  cbnl-term:eb61df0b-b890-4422-923f-10a63dd75849 .
+
+cbnl-def:cd79f4f7-6914-4fc5-b6f8-53f160af7376
+        rdfs:isDefinedBy  cbnl-term:af0908c5-7819-4804-a1b5-026cba3e1ad5 .
+
+cbnl-def:8e8146cf-e09b-4547-b9c1-22ae44e9126e
+        rdfs:isDefinedBy  cbnl-term:b9002187-ebe2-46b9-9e14-037b3fa46fef .
+
+cbnl-def:a616fc41-e479-40e2-b706-7849b7113972
+        rdfs:isDefinedBy  cbnl-term:905722da-68f5-451b-9a88-ffc5c945b789 .
+
+cbnl-def:ad768fd6-cb3f-44da-bbb7-3ee5a7a0ba13
+        rdfs:isDefinedBy  cbnl-term:174103ad-ecb0-4b48-bc2c-ae65d499044c .
+
+cbnl-def:45e5fae0-2ace-4e8e-acc2-840dd24bc412
+        rdfs:isDefinedBy  cbnl-term:441e71b7-158b-4302-8d10-dd0bfe28be6e .
+
+cbnl-def:af5d4a3f-9542-4bf4-813c-b8be224a1876
+        rdfs:isDefinedBy  cbnl-term:1f03fba6-db05-4cfd-b4cb-9d27f5d5c30d .
+
+cbnl-def:89268403-c7a8-4e8a-861b-028279dbacc6
+        rdfs:isDefinedBy  cbnl-term:4cef9589-b903-4888-9c6d-7f0c6fa25d48 .
+
+cbnl-def:5dbcc489-adf0-4784-996e-73a480cda2d2
+        rdfs:isDefinedBy  cbnl-term:8a6bcf06-2b19-4f0c-97d6-3b9663e260c2 .
+
+cbnl-def:e509cce1-0e2b-438c-b7f6-336087369409
+        rdfs:isDefinedBy  cbnl-term:8250c605-07d7-460d-99b9-0f0e102da385 .
+
+cbnl-def:17d63c63-ede7-4b05-93ba-d417858d3e70
+        rdfs:isDefinedBy  cbnl-term:f6972d7f-0a2a-4ffd-8c71-89750bc4cc22 .
+
+cbnl-def:2fcd4e10-1c02-4ab6-8d2a-ef8547ba1743
+        rdfs:isDefinedBy  cbnl-term:d90034ab-9981-436a-bab0-55abe730c994 .
+
+cbnl-def:cc17a991-325b-4194-805e-136be5481fa4
+        rdfs:isDefinedBy  cbnl-term:2adc7731-ae7e-426e-b455-013043585a03 .
+
+cbnl-def:8ad4b69e-9f98-4d32-957b-ffdb2f9f44d3
+        rdfs:isDefinedBy  cbnl-term:8e50a86b-e188-4202-bbe2-2ea60e5c1f3b .
+
+cbnl-def:18470764-ca0e-4bf5-b032-0585a33f7371
+        rdfs:isDefinedBy  cbnl-term:fee7f639-8c2b-442c-8f30-0afab65d1c35 .
+
+cbnl-def:78046ab1-56bf-45a2-8185-d6cb2e9f6aa7
+        rdfs:isDefinedBy  cbnl-term:c9db974e-a54b-4127-b1e8-1624280b0a19 .
+
+cbnl-def:457c58d3-dda1-46e9-a347-c010170e82ca
+        rdfs:isDefinedBy  cbnl-term:1016becd-e654-4279-8fba-d86796d17c3a .
+
+cbnl-def:2446b48c-b820-4321-9ce5-76b20c9a71f9
+        rdfs:isDefinedBy  cbnl-term:aff8bb1f-e320-4c9b-a0a4-f950fa66532a .
+
+cbnl-def:6e876ecc-61c7-4841-9dc0-24abdb3f6b4c
+        rdfs:isDefinedBy  cbnl-term:ecee7f65-cfcc-4da0-9884-247851be4d3e .
+
+cbnl-def:4ad2e12c-96b8-4e5e-9a7e-0a349c1b4612
+        rdfs:isDefinedBy  cbnl-term:76cddd32-755e-47f9-996e-33a843ef4513 .
+
+cbnl-def:57bc3d08-09c3-4489-8ca0-13964cf11f3b
+        rdfs:isDefinedBy  cbnl-term:3bc68416-4a43-4785-bf8c-874866952352 .
+
+cbnl-def:2abf2089-9c17-492a-acfa-5e6c920d8c35
+        rdfs:isDefinedBy  cbnl-term:7cbac3a6-9907-4257-8be4-a91b9dbb41ae .
+
+cbnl-def:bcf7da8a-36c1-40d7-958e-63fc03a4c5e0
+        rdfs:isDefinedBy  cbnl-term:b5d60aae-192f-4bd9-9730-8a2c418c0d5b .
+
+cbnl-def:5fe6525e-7b9d-41ea-b1f6-885841986490
+        rdfs:isDefinedBy  cbnl-term:ee06a115-ec4c-4def-8833-0d75850031aa .
+
+cbnl-def:9764f870-45f8-41df-848f-7735ff4183d6
+        rdfs:isDefinedBy  cbnl-term:8e188ce9-bc68-41d4-98eb-9032c77dc620 .
+
+cbnl-def:58ca4d97-a487-4722-becd-5131c17c09f9
+        rdfs:isDefinedBy  cbnl-term:ffa09c2e-21d6-49d5-b0e1-e2bacdfd14de .
+
+cbnl-def:4be6fc6a-ec3c-40d3-9b75-76eeb6de7525
+        rdfs:isDefinedBy  cbnl-term:56f33a0e-efa3-4f6e-a4d0-db030ebf8324 .
+
+cbnl-def:48052e3e-45a6-4024-94d2-ed0d06edde9d
+        rdfs:isDefinedBy  cbnl-term:f518e5f5-c680-4f71-9be1-1bd04f19a288 .
+
+cbnl-def:d45c924c-1df4-444f-bc0b-102d9fcaa4dd
+        rdfs:isDefinedBy  cbnl-term:79f727bb-6e0d-4159-b183-909800a540fb .
+
+cbnl-def:29b7c1b5-8bc2-4d70-a8bb-496d30a46a73
+        rdfs:isDefinedBy  cbnl-term:18310ba1-65df-4430-b32a-44506fe27896 .
+
+cbnl-def:d110d1ab-fd64-4d02-88d4-0946db73de29
+        rdfs:isDefinedBy  cbnl-term:ef8f3a1d-16c6-4b8f-b7a2-a529b58a5e25 .
+
+cbnl-def:4ae355c1-cfb7-4257-9069-bb7e03b62165
+        rdfs:isDefinedBy  cbnl-term:bddea06d-a688-48a9-a05c-2db5382ea194 .
+
+cbnl-def:5c07e6f9-a7cd-49e6-91c2-bbce87a6ae48
+        rdfs:isDefinedBy  cbnl-term:ad5924d4-70ec-4fac-abd8-3301a2adf8a9 .
+
+cbnl-def:05cb1ce3-c84b-49bf-b4a2-87d87b0e8669
+        rdfs:isDefinedBy  cbnl-term:0686038d-9b48-4f83-8dd8-607a585f9328 .
+
+cbnl-def:9c112565-f38e-4592-928e-e446fb417ecb
+        rdfs:isDefinedBy  cbnl-term:4089789b-944d-4185-a0e2-f016a6721ac9 .
+
+cbnl-def:9537bd8e-dc9f-4f7c-b1eb-9921599f2fc6
+        rdfs:isDefinedBy  cbnl-term:bd8e9eb1-958c-4e79-af16-e331adc98808 .
+
+cbnl-def:17e78816-ea91-4651-ac69-062e5ff76150
+        rdfs:isDefinedBy  cbnl-term:e111f173-9333-441a-9742-1fe5bafc69f3 .
+
+cbnl-def:c8dcc81d-9919-4d26-857e-b41283b178ca
+        rdfs:isDefinedBy  cbnl-term:d4a165e9-5358-4c49-82cf-f5635b0bc1e8 .
+
+cbnl-def:30b7701d-2c66-49bc-9371-74576243e5c7
+        rdfs:isDefinedBy  cbnl-term:ef9d6039-b7f1-4701-ade3-f92eed2f81c5 .
+
+cbnl-def:12b54928-0043-4618-916b-6a99851fb825
+        rdfs:isDefinedBy  cbnl-term:edab85df-7967-41be-a21a-2635cac85121 .
+
+cbnl-def:dafef1d6-24f1-4e30-a0eb-56d53cafa140
+        rdfs:isDefinedBy  cbnl-term:6375a3ab-c2e7-4fe7-aecf-0c8f5610988d .
+
+cbnl-def:d8ffc1b3-96a7-4f3a-a270-b4ff5b199b68
+        rdfs:isDefinedBy  cbnl-term:ca044497-9058-4b9a-b7b4-77bef283c9f4 .
+
+cbnl-def:246a7ab2-f420-422e-bd48-d1f520e32f7c
+        rdfs:isDefinedBy  cbnl-term:2cb93f0a-32bf-411d-b22e-cb021b880e23 .
+
+cbnl-def:1be9a948-38de-4422-a4c0-264d123849f1
+        rdfs:isDefinedBy  cbnl-term:851983d3-6ec2-4e66-832c-af765e8d8c26 .
+
+cbnl-def:529d438a-de14-4a03-b2b6-4f96d48db028
+        rdfs:isDefinedBy  cbnl-term:c95f0c7a-b943-4e66-9baf-87b2631551c9 .
+
+cbnl-def:242a891e-0aab-43c1-9a89-19ebd0b5ac69
+        rdfs:isDefinedBy  cbnl-term:b3b5a602-8f31-4cc5-806f-53f907999d99 .
+
+cbnl-def:4e324371-6082-4872-94d7-ada6119f3f63
+        rdfs:isDefinedBy  cbnl-term:7eb1f4ba-58ae-4d0b-9678-b8cba75fff0a .
+
+cbnl-def:af66d871-8fe2-437d-b727-dd20fdfddc64
+        rdfs:isDefinedBy  cbnl-term:4a661f5c-b6c2-4181-8ddf-f77a0cc59f5b .
+
+cbnl-def:a1a85daa-eb8b-41c2-8638-ef963bebc971
+        rdfs:isDefinedBy  cbnl-term:73dc2662-a1c6-41b4-a0b3-85e22d5d320b .
+
+cbnl-def:e7c344a3-ea3a-46dd-a3c5-d42a248f0217
+        rdfs:isDefinedBy  cbnl-term:2a68d978-41be-4f2a-8664-4b2184e5261e .
+
+cbnl-def:0a3878c3-a8c5-4b4b-aae9-b05e664e725e
+        rdfs:isDefinedBy  cbnl-term:62b5b5bc-efac-4407-84ab-5f99d2884198 .
+
+cbnl-def:a5bbda95-f189-48ca-a64a-5d8413cd9a93
+        rdfs:isDefinedBy  cbnl-term:500556e1-4b83-4888-8a53-dac2e71dfc0f .
+
+cbnl-def:c0bdcca5-1d59-4dc5-8d6b-09db4846ad21
+        rdfs:isDefinedBy  cbnl-term:d059f6d0-64fd-4295-904a-e5689790ecaf .
+
+cbnl-def:758aa32e-2193-4079-a62d-92a431c9f416
+        rdfs:isDefinedBy  cbnl-term:d68853ea-e6dc-4d5e-a33c-ebd6df410d32 .
+
+cbnl-def:d04d5bbc-7e6f-4e2e-9e25-0ce2850648a8
+        rdfs:isDefinedBy  cbnl-term:1c0c0422-2f04-481e-af85-aa4cee2eb3af .
+
+cbnl-def:439d690d-12b2-4a72-98c5-85b761d68840
+        rdfs:isDefinedBy  cbnl-term:66df180f-67d2-4587-adf4-709aeb32f72f .
+
+cbnl-def:03f902ea-64c6-4592-bdaf-b18842d2933d
+        rdfs:isDefinedBy  cbnl-term:c139b825-5cdd-46ad-8041-437aa8cd595b .
+
+cbnl-def:8d7e3ff1-7a28-4e4f-b9c8-d5f8d65cc596
+        rdfs:isDefinedBy  cbnl-term:d22616dd-a071-4179-9700-d9561b2dbe1f .
+
+cbnl-def:5d880f3f-0a8f-4460-800f-af256a577bbb
+        rdfs:isDefinedBy  cbnl-term:36d3d583-9e63-48fd-9d5b-0c370d07157b .
+
+cbnl-def:543970e3-5ead-462f-a083-30f01b69387b
+        rdfs:isDefinedBy  cbnl-term:bbcb1ab8-494b-46c9-b336-535ece39fb2d .
+
+cbnl-def:06c90027-f7cf-4e30-ac1b-f6b2337ff4ec
+        rdfs:isDefinedBy  cbnl-term:860b2be7-5953-4e85-9712-0d6675dfa51d .
+
+cbnl-def:0310d105-58fb-49a0-85b6-9b80515f0aa0
+        rdfs:isDefinedBy  cbnl-term:7f032470-b558-4704-aaae-a3dee691174b .
+
+cbnl-def:058d3932-787d-49b0-9cb7-7e2e1537be9f
+        rdfs:isDefinedBy  cbnl-term:5943ce6f-e018-4b54-a01e-c4312cf96e8d .
+
+cbnl-def:7d9168bd-54de-406b-9896-7d0c027b09a3
+        rdfs:isDefinedBy  cbnl-term:235ec511-23fd-49eb-ab69-33ad1d8496d2 .
+
+cbnl-def:a9c935bf-2071-47a2-b990-c8a3f3fafd41
+        rdfs:isDefinedBy  cbnl-term:5ef467c7-0be8-40f6-93f4-d6aa6441e506 .
+
+cbnl-def:7a7977ab-47a8-44c4-8128-ae64e0c266d8
+        rdfs:isDefinedBy  cbnl-term:934413c6-09d5-44b9-a737-f180d1b9bbf0 .
+
+cbnl-def:268d67a2-9cb2-48b9-be2b-f04ba7639413
+        rdfs:isDefinedBy  cbnl-term:8baa1fff-491d-4a61-96c5-89928b2834c1 .
+
+cbnl-def:7de746c3-6dde-4adf-a6a4-8d47ed1722e0
+        rdfs:isDefinedBy  cbnl-term:67dce7e6-c092-470e-b043-67bcaaa2022e .
+
+cbnl-def:f9f29950-9cb7-4c95-abd8-e3c9f6310f78
+        rdfs:isDefinedBy  cbnl-term:e8dfcf0d-edb5-4aa8-9b44-ee98d3716fc5 .
+
+cbnl-def:adde3322-e8ce-472b-a261-95ec774719c3
+        rdfs:isDefinedBy  cbnl-term:0652a0b3-cc6b-4d62-a6c7-1cbce148c610 .
+
+cbnl-def:086c7943-06d7-4613-82b1-b50d6aab4e63
+        rdfs:isDefinedBy  cbnl-term:2d0fa6f9-d8aa-4439-8842-335b68d60b09 .
+
+cbnl-def:13a3b0c4-fff6-4d73-9748-872ec5dd7b45
+        rdfs:isDefinedBy  cbnl-term:560bb04a-626e-48f6-b492-83bbad4da4df .
+
+cbnl-def:25515953-dc08-4c9d-8909-99f10e929ac3
+        rdfs:isDefinedBy  cbnl-term:8f1ca84b-6f6a-44f7-8def-fc9bf1f33431 .
+
+cbnl-def:04c1fa38-c081-4c4e-800b-0cda78a01a90
+        rdfs:isDefinedBy  cbnl-term:9d2efc39-34cf-404d-8a09-8b1ef3953ecd .
+
+cbnl-def:1f711200-806e-45c8-aa6e-217016d61a11
+        rdfs:isDefinedBy  cbnl-term:9327ecc6-5555-4a84-bf1a-86c03c5f1e8d .
+
+cbnl-def:703d4d8f-336c-469b-888b-5d08ec5c998e
+        rdfs:isDefinedBy  cbnl-term:910d6380-d6be-4618-bef5-54e610d4e178 .
+
+cbnl-def:eeb60863-f334-467a-9fee-ea867067de5c
+        rdfs:isDefinedBy  cbnl-term:dd4033d3-1594-4195-9bef-5dd42cf9bbc9 .
+
+cbnl-def:12340fce-f11b-4455-8b81-5ab52ecc2c30
+        rdfs:isDefinedBy  cbnl-term:bf57a698-dace-4649-aa06-78562f1e7063 .
+
+cbnl-def:83f78c37-b3c8-4493-8bb4-eb92d99d6565
+        rdfs:isDefinedBy  cbnl-term:7a77041c-8dc5-4d7b-b629-c5dbfee615cf .
+
+cbnl-def:4bea0794-ae27-4de0-847d-11e0cffeda49
+        rdfs:isDefinedBy  cbnl-term:f3164749-c219-483f-b240-f21ad5a6942d .
+
+cbnl-def:e2f1f6c2-60f1-49dd-8be9-66afb44c992b
+        rdfs:isDefinedBy  cbnl-term:57ffed2e-ed6b-450f-9f1f-eb06473ab229 .
+
+cbnl-def:fbdc0bb6-17a6-49e6-8d58-e8aa8aeac519
+        rdfs:isDefinedBy  cbnl-term:81d80a37-24b7-4522-bf59-2e8bbde11927 .
+
+cbnl-def:71ad2b6c-cd00-47ab-b4a6-a68659ed082d
+        rdfs:isDefinedBy  cbnl-term:3760af0d-dab3-466e-9dcd-e93032c0d7c9 .
+
+cbnl-def:468dbda9-e789-4b0b-a72a-aef3518facc3
+        rdfs:isDefinedBy  cbnl-term:0ab8028f-8f6c-4aa4-8763-f0f535dcca4b .
+
+cbnl-def:12be329a-5a06-40eb-8afe-5a2c65f513b6
+        rdfs:isDefinedBy  cbnl-term:45a15c43-7ade-4c22-94b4-07104e70263d .
+
+cbnl-def:becbee08-c1f7-47c8-bb84-c8c3837ff726
+        rdfs:isDefinedBy  cbnl-term:899749a3-24dd-4893-b861-20dee2e453f1 .
+
+cbnl-def:7a798c1c-59ab-4405-a65c-99ac87e0d387
+        rdfs:isDefinedBy  cbnl-term:c6ded09f-4f6c-44b2-8d21-11ffd6a56ec3 .
+
+cbnl-def:1764696a-fa20-47f4-bde0-9087c9baf425
+        rdfs:isDefinedBy  cbnl-term:3fde9a6a-27af-4927-bb53-7f698554f700 .
+
+cbnl-def:7c5ef4b0-9130-434c-b235-728ecd3349f0
+        rdfs:isDefinedBy  cbnl-term:e2a0dadb-75f2-4f27-9891-f84c89948e3d .
+
+cbnl-def:ac9b29a7-49d4-40b4-94f9-48dca96856d2
+        rdfs:isDefinedBy  cbnl-term:8876d491-d3aa-4d91-a77d-2496ee28e431 .
+
+cbnl-def:4a66121f-b540-42c9-8e85-07cf5dcedcff
+        rdfs:isDefinedBy  cbnl-term:1ff56d23-3b4c-4d72-98b9-f9a93dd243c0 .
+
+cbnl-def:dcbe4704-2748-4fa3-959b-44082e682a4d
+        rdfs:isDefinedBy  cbnl-term:241d76eb-92fd-426d-862c-2d956a9214c4 .
+
+cbnl-def:a50c20b4-efc4-4e3c-9aa2-a6a515f41fdb
+        rdfs:isDefinedBy  cbnl-term:7a434a91-e7fa-4692-ad19-62d60c8d9b1e .
+
+cbnl-def:35092884-f87b-4e4a-83a3-e67b2a312187
+        rdfs:isDefinedBy  cbnl-term:edddd4f1-5085-49c3-81d6-ae545af16daa .
+
+cbnl-def:1fa0113a-1fd0-4036-8c3c-08825e24a093
+        rdfs:isDefinedBy  cbnl-term:ab5dbbca-aad1-405a-8e3e-67fe891d3cee .
+
+cbnl-def:70389718-41f3-4cfc-856b-86ec911a3f70
+        rdfs:isDefinedBy  cbnl-term:8436cd3d-64d5-4dd8-b787-95baeb57fb37 .
+
+cbnl-def:a2698ec5-5435-444f-9c12-dce646cd6edb
+        rdfs:isDefinedBy  cbnl-term:b44409a3-e364-402c-b509-9d981ff93cea .
+
+cbnl-def:bef97b59-6993-4527-8f19-f563c4f08e75
+        rdfs:isDefinedBy  cbnl-term:fbe9fce9-0624-4392-a385-e91307aee299 .
+
+cbnl-def:06185c62-e316-44df-bd64-45c9db04a3c3
+        rdfs:isDefinedBy  cbnl-term:f124daf7-2b9f-40aa-93eb-7d4a39f64b6c .
+
+cbnl-def:63fe1a13-7011-486e-bc23-63fc80245595
+        rdfs:isDefinedBy  cbnl-term:403bd6d7-a5f3-478b-9943-0cd537f76cd9 .
+
+cbnl-def:3c142bbe-6ae7-4da3-9fe1-aaf1b0063d8c
+        rdfs:isDefinedBy  cbnl-term:61899d0e-d54c-4e15-84d2-ea1150850348 .
+
+cbnl-def:4c337f04-2393-4dd5-a105-cbc090b1c905
+        rdfs:isDefinedBy  cbnl-term:e169dadb-e39d-4093-908b-1c447a24ecf9 .
+
+cbnl-def:552aef81-7562-4e63-83c3-812f5968c1d3
+        rdfs:isDefinedBy  cbnl-term:ea27009b-993f-48a9-b54a-b0ecf28b193a .
+
+cbnl-def:ff6faa45-4763-47ec-ae12-6cee4fb92a36
+        rdfs:isDefinedBy  cbnl-term:0b74d641-3e57-4398-abdc-5c92639ea053 .
+
+cbnl-def:57f3e23e-0ef9-4c00-828c-4f2690925f2f
+        rdfs:isDefinedBy  cbnl-term:54bc59f6-029e-4814-8c46-4f5defed88bb .
+
+cbnl-def:131f7c87-d685-4dea-a1fb-ed424a7f36de
+        rdfs:isDefinedBy  cbnl-term:c6145760-f0a5-41e6-96c5-b9ef8e701cd1 .
+
+cbnl-def:9b960c19-1e82-42ce-b040-c4bc4a5f45a5
+        rdfs:isDefinedBy  cbnl-term:057385f1-24a7-4fd3-a5db-bb984accafc1 .
+
+cbnl-def:80e5ced4-6d92-429b-a830-8d51a11e7776
+        rdfs:isDefinedBy  cbnl-term:a8b13d68-209a-493c-9e3e-2e01f5af919e .
+
+cbnl-def:a11b6fd5-fbb0-4b9a-b407-ba5a218f839a
+        rdfs:isDefinedBy  cbnl-term:0e9335c8-19b3-40a2-a7b3-6f8fa5cbbe22 .
+
+cbnl-def:cd5aa1a1-0ee3-49f0-8cda-af71d0239908
+        rdfs:isDefinedBy  cbnl-term:9f049c1e-4ca8-483f-ab69-a5babd18dea0 .
+
+cbnl-def:4ab8210d-3950-4ed3-bfde-33f282ee03c2
+        rdfs:isDefinedBy  cbnl-term:c0d171b3-12b3-46ab-8e1d-f55daec63a1e .
+
+cbnl-def:426323ed-3be4-4533-aeb8-bf7ad48bfef3
+        rdfs:isDefinedBy  cbnl-term:7293e060-2dad-41ef-885d-d85748df9569 .
+
+cbnl-def:27b28e4d-8b5e-4f63-a7be-1aa575504246
+        rdfs:isDefinedBy  cbnl-term:baab602f-aba7-4692-8d3a-07cc3623a33e .
+
+cbnl-def:716820a4-1919-4439-b84a-41103a556b97
+        rdfs:isDefinedBy  cbnl-term:1676a3f3-9aca-4758-8075-3c091733ffdc .
+
+cbnl-def:fae8929d-fa25-416a-9625-62ff665913ac
+        rdfs:isDefinedBy  cbnl-term:ac45726a-d29f-4597-8d13-e6b909e2350d .
+
+cbnl-def:0611fa7b-d83b-498f-b9c2-617cf9b913eb
+        rdfs:isDefinedBy  cbnl-term:791efcc1-80ea-4361-a455-cac224f021d1 .
+
+cbnl-def:ff24390c-6cd9-45a3-b2e2-543f59010abd
+        rdfs:isDefinedBy  cbnl-term:33265315-e3de-42c6-8bba-3406ee68f73d .
+
+cbnl-def:1095cb66-6e8d-4a9e-847d-2537809cae99
+        rdfs:isDefinedBy  cbnl-term:5de70507-5c35-4ab0-84bf-85fefba51b3c .
+
+cbnl-def:3812dd57-9e62-4a3a-895f-05bacdaa2ab0
+        rdfs:isDefinedBy  cbnl-term:76ff4345-c351-4e13-acea-158dfea6b725 .
+
+cbnl-def:17891bfd-8a01-4f3d-8afd-d8c027b77255
+        rdfs:isDefinedBy  cbnl-term:49a0c286-8b34-4ead-94ff-97660b2af11a .
+
+cbnl-def:60adca01-49fe-4c58-8c2c-c3944bd7c19e
+        rdfs:isDefinedBy  cbnl-term:ca83d79c-7622-4285-84ce-543974ce2d58 .
+
+cbnl-def:3854cf9e-0a71-4fd6-b43e-808c21822501
+        rdfs:isDefinedBy  cbnl-term:6c34f995-35ad-4c57-b331-a889eaa88b25 .
+
+cbnl-def:2c74e334-88d6-45e5-a800-f9356a53923e
+        rdfs:isDefinedBy  cbnl-term:ad8aa223-60d6-4593-b789-b7a7bdb7abfb .
+
+cbnl-def:9103c174-2dc9-407c-b1f6-14a89351db2d
+        rdfs:isDefinedBy  cbnl-term:9916dda7-24da-41d0-bce6-fbc52ef08ae5 .
+
+cbnl-def:584a1bcc-3bb4-487f-9792-830c638ee406
+        rdfs:isDefinedBy  cbnl-term:f51ecd2c-490d-4095-829a-28dd75923ff0 .
+
+cbnl-def:53ff04c6-80a7-430d-9f44-ddec380fd448
+        rdfs:isDefinedBy  cbnl-term:b6c34e10-55b6-4c95-b9f7-d410736ee2ce .
+
+cbnl-def:de2105c5-ffc5-470b-9263-7b29ce6dd5fa
+        rdfs:isDefinedBy  cbnl-term:2f19e4cc-3a94-4157-840e-00a164476cc3 .
+
+cbnl-def:ce047b04-0595-44af-97a3-a03d725e6074
+        rdfs:isDefinedBy  cbnl-term:c0f765e7-c58a-4d21-82a0-9cd0a90b3ae1 .
+
+cbnl-def:9c59305e-52c9-4244-8b76-f45845ace76f
+        rdfs:isDefinedBy  cbnl-term:3f0fa8a9-d2bf-4fe4-8e5d-e22d617a1561 .
+
+cbnl-def:d85eac94-c354-46cd-aacc-8a0bacaadaba
+        rdfs:isDefinedBy  cbnl-term:aeaaac54-69ff-4e90-a84f-862e18796716 .
+
+cbnl-def:a3318371-9743-43d7-9428-6d62a8379df8
+        rdfs:isDefinedBy  cbnl-term:fa059138-d70e-4bb6-8839-2c4841250190 .
+
+cbnl-def:e6403958-784f-40e9-8743-99c25b0dbc88
+        rdfs:isDefinedBy  cbnl-term:a6c0e3e9-6bec-44b6-a320-1a5f626ef19d .
