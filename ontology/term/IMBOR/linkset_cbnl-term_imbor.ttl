@@ -1,0 +1,422 @@
+# baseURI: file:///C:/Users/Wilhelmina/OneDrive%20-%20bink.nu/Documents/My%20Projects/BIM-Loket/Kernmodel%20CB-NL/TBC702/Kernmodel/linkset_cbnl-term_imbor.ttl
+
+@prefix cbnl-term: <https://bimloket.nl/data/term/cbnl/> .
+@prefix ifc: <http://example.com/ifc/> .
+@prefix imbor-skos: <http://example.com/imbor-skos/> .
+@prefix nen2660-term: <https://w3id.org/nen2660/term#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bimloket.nl/data/term/cbnl/019ea484-49a9-4cc5-be7a-2986b3488604>
+  skos:closeMatch <http://example.com/imbor-skos/9CBAFABD-EF5F-4121-A63A-57DA752300E5> ;
+  skos:relatedMatch <http://example.com/imbor-skos/22C76A86-D969-464E-87CD-53466BD75FC4> ;
+  skos:relatedMatch <http://example.com/imbor-skos/6561639E-1802-4723-9B9E-20922E53BD28> ;
+.
+<https://bimloket.nl/data/term/cbnl/0215d090-a011-4378-8e2d-7a79fa928ade>
+  skos:closeMatch imbor-skos:BB851E68-4A0A-461B-B2CF-85BF64765E6E ;
+.
+<https://bimloket.nl/data/term/cbnl/04e6cfcd-72ef-4840-8233-6d6f72e330f2>
+  skos:closeMatch <http://example.com/imbor-skos/8FB333FC-E296-4619-A84B-FAC4E8F704E8> ;
+.
+<https://bimloket.nl/data/term/cbnl/09967ef0-6bcd-4c46-8b80-1f62e5c9190a>
+  skos:closeMatch <http://example.com/imbor-skos/66EEEAE8-0696-4A21-84CD-8AFC4D438A92> ;
+.
+<https://bimloket.nl/data/term/cbnl/09b4bf03-f8cb-4e24-bca9-a06d0593738e>
+  skos:closeMatch imbor-skos:EDC93D69-5A61-4A2E-9DD4-B61B80932921 ;
+.
+<https://bimloket.nl/data/term/cbnl/0a4fdd95-fdf1-4635-9c4b-17c7a0fe1694>
+  skos:relatedMatch imbor-skos:C2B9234A-769B-492B-B9B3-9003D181ED73 ;
+.
+<https://bimloket.nl/data/term/cbnl/0f3ddbd5-7b01-4c15-babc-fb00789aaace>
+  skos:closeMatch imbor-skos:B572DAE1-FC8C-43E9-B31C-7123ABD151D8 ;
+.
+<https://bimloket.nl/data/term/cbnl/10c7925d-b999-423a-a6cc-ef2ae30c82b0>
+  skos:closeMatch imbor-skos:E67193CB-2051-4527-91C8-CC59BB0CEBFB ;
+.
+<https://bimloket.nl/data/term/cbnl/11bdd1d5-8261-492d-bf30-2e8df90af7ff>
+  skos:closeMatch imbor-skos:E5255093-D73F-40E3-942A-2A8B7B10B21F ;
+.
+<https://bimloket.nl/data/term/cbnl/1337aa77-90a3-4019-b10a-7427ba1ca676>
+  skos:closeMatch imbor-skos:B7A11005-0AF5-4364-8751-214D2588C81C ;
+.
+<https://bimloket.nl/data/term/cbnl/13fa10b3-3906-453c-b513-2ae7ea61e01a>
+  skos:closeMatch imbor-skos:C356473A-D05E-495B-B19F-13455DE72EF1 ;
+.
+<https://bimloket.nl/data/term/cbnl/15223f9a-565d-475f-9564-8c18b58e34b5>
+  skos:closeMatch imbor-skos:DA0BCF91-ADA1-4BD4-81A0-C9213A8A1B3E ;
+.
+<https://bimloket.nl/data/term/cbnl/1898f499-d700-4e88-8440-ce5314fe2928>
+  skos:closeMatch <http://example.com/imbor-skos/79A89AC1-19B0-4756-9971-C40FADE1A8FE> ;
+.
+<https://bimloket.nl/data/term/cbnl/1929f067-e783-4ad8-b275-bad275ea5a32>
+  skos:closeMatch <http://example.com/imbor-skos/53929F41-9240-4A61-9ABE-5ADE04A679B8> ;
+.
+<https://bimloket.nl/data/term/cbnl/1a2c6e27-5cb4-4a64-a252-abeefb0a18c8>
+  skos:closeMatch <http://example.com/imbor-skos/7F3202B1-9A3B-4E02-B4F4-31EBCE6B8DEF> ;
+.
+<https://bimloket.nl/data/term/cbnl/1c7a3056-2372-4139-8bd4-0528912e4aa3>
+  skos:closeMatch <http://example.com/imbor-skos/207777F2-C8E1-4852-82B3-339BA4CD1402> ;
+  skos:relatedMatch <http://example.com/imbor-skos/5E39DABB-0772-45AD-82D9-94265EF69C3B> ;
+.
+<https://bimloket.nl/data/term/cbnl/1f671590-e874-40b5-b35f-560d45dff294>
+  skos:closeMatch imbor-skos:D14FE879-40FE-414B-9FE3-89AD7D9B907B ;
+.
+<https://bimloket.nl/data/term/cbnl/202567e1-4b57-4b00-bc12-a110efc68529>
+  skos:closeMatch imbor-skos:DD64F32C-3273-4E23-9A61-FCC8EC93977F ;
+.
+<https://bimloket.nl/data/term/cbnl/2085e5af-34e8-4877-94b8-9af879debd5e>
+  skos:closeMatch imbor-skos:EFCEC4C3-01EA-4061-8479-F236C43A998B ;
+.
+<https://bimloket.nl/data/term/cbnl/2375969c-8d8c-4da9-8f58-399ce041cf03>
+  skos:closeMatch <http://example.com/imbor-skos/4BE53997-2F11-49CA-B92D-19D7087B2E3A> ;
+.
+<https://bimloket.nl/data/term/cbnl/23af8fa3-95ec-4d47-a20b-2df9d348dec4>
+  skos:closeMatch imbor-skos:E95C6640-75F1-4A8A-9C93-41EE8D620613 ;
+.
+<https://bimloket.nl/data/term/cbnl/2791fc39-526d-4cd5-8a25-b344443a4263>
+  skos:closeMatch imbor-skos:B85705DF-E508-4EBC-98BE-AFE55C0326FB ;
+  skos:relatedMatch <http://example.com/imbor-skos/7C9EF03E-636D-4B07-ACC7-B910CCA2C69F> ;
+  skos:relatedMatch <http://example.com/imbor-skos/8B90CB61-B547-4AE7-AD3D-C6F98317F0D2> ;
+.
+<https://bimloket.nl/data/term/cbnl/313d5f91-1b89-401f-b399-ba0b23a01d34>
+  skos:closeMatch <http://example.com/imbor-skos/0DCEE6C7-87BC-498C-A02A-25271DB1BC9A> ;
+.
+<https://bimloket.nl/data/term/cbnl/323c398d-0b3d-4e3b-962b-a68a4c0f97c9>
+  skos:relatedMatch <http://example.com/imbor-skos/16141F61-E52F-4214-A53A-123BEEFF3F11> ;
+.
+<https://bimloket.nl/data/term/cbnl/3471703b-1c8b-474b-a5c4-e10f3a6cfdca>
+  skos:closeMatch imbor-skos:D4CDD69A-BFBE-4C89-8D07-D0A4F125FDA4 ;
+  skos:relatedMatch <http://example.com/imbor-skos/1FCFC05E-E33E-4FD0-9D91-9358670E6940> ;
+  skos:relatedMatch imbor-skos:A31C40C7-7F8B-497B-ABDB-EC958EAFABB7 ;
+.
+<https://bimloket.nl/data/term/cbnl/365ca33e-64bb-4d45-9d88-9b4bc01a8bbb>
+  skos:relatedMatch <http://example.com/imbor-skos/5C5CE323-D61A-4C3A-8388-954283DD8559> ;
+.
+<https://bimloket.nl/data/term/cbnl/373c7976-a637-4ea2-9c46-c9696a71bac7>
+  skos:relatedMatch <http://example.com/imbor-skos/7C3ADDD3-7C29-45DE-BF66-3FB3ED084750> ;
+.
+<https://bimloket.nl/data/term/cbnl/3adf4771-4b6d-40b6-9ebb-baf3f297b86c>
+  skos:closeMatch <http://example.com/imbor-skos/954C21D6-D937-4752-B191-FC30DC5F4675> ;
+.
+<https://bimloket.nl/data/term/cbnl/3bb52046-c751-4796-af4a-82f399867804>
+  skos:closeMatch imbor-skos:A15450E3-DCBB-4471-8211-443117A85964 ;
+.
+<https://bimloket.nl/data/term/cbnl/3e5f9eb6-fc88-424c-8190-ecf4781dfc8c>
+  skos:closeMatch <http://example.com/imbor-skos/1BDE9B22-97D3-440B-A287-496C11748090> ;
+.
+<https://bimloket.nl/data/term/cbnl/3f253d48-369a-4030-ba07-b4018033ac26>
+  skos:closeMatch imbor-skos:E4C1E5E3-5895-40D9-96EA-3CB840057592 ;
+  skos:relatedMatch imbor-skos:E4C1E5E3-5895-40D9-96EA-3CB840057592 ;
+.
+<https://bimloket.nl/data/term/cbnl/42750938-ab27-4cf3-85c1-32090ec321e9>
+  skos:closeMatch imbor-skos:F11A7883-E5FE-40C2-92A7-C63372E4A962 ;
+.
+<https://bimloket.nl/data/term/cbnl/441e71b7-158b-4302-8d10-dd0bfe28be6e>
+  skos:closeMatch imbor-skos:BF133D86-7847-4EA4-8EE5-9CB7758865E7 ;
+.
+<https://bimloket.nl/data/term/cbnl/462f954d-b37b-4f0f-8344-5a12fcbc27db>
+  skos:closeMatch <http://example.com/imbor-skos/596B5269-AE6E-4D60-8206-DA6B5B5FD2D2> ;
+.
+<https://bimloket.nl/data/term/cbnl/47e33321-e797-4a87-87eb-ca486a1d3d8f>
+  skos:relatedMatch <http://example.com/imbor-skos/49F4666F-1E40-48DD-B32B-B01B098ACE57> ;
+.
+<https://bimloket.nl/data/term/cbnl/4cd6abb1-4444-415a-a379-913a44afd8f7>
+  skos:closeMatch <http://example.com/imbor-skos/8471C3E7-DEE8-4DF2-BC95-1E0CD7BDA891> ;
+.
+<https://bimloket.nl/data/term/cbnl/4cef9589-b903-4888-9c6d-7f0c6fa25d48>
+  skos:closeMatch <http://example.com/imbor-skos/57A2225B-0494-4BC9-BAC6-188BC9863777> ;
+.
+<https://bimloket.nl/data/term/cbnl/549e02ec-1900-4274-9b5d-918308eebf6b>
+  skos:closeMatch <http://example.com/imbor-skos/914127EF-670F-44FF-B64F-883596E3244B> ;
+.
+<https://bimloket.nl/data/term/cbnl/56750133-bb19-401e-97cb-609aad6060f3>
+  skos:closeMatch <http://example.com/imbor-skos/12E770A0-981A-4FAB-9245-60D5A4593260> ;
+.
+<https://bimloket.nl/data/term/cbnl/5796909b-d538-438f-9a21-251f4dd823c7>
+  skos:closeMatch <http://example.com/imbor-skos/73C28DC5-A73A-47C8-8954-BAC8AB61D375> ;
+.
+<https://bimloket.nl/data/term/cbnl/5943ce6f-e018-4b54-a01e-c4312cf96e8d>
+  skos:relatedMatch <http://example.com/imbor-skos/1CDCC6AA-16CE-4ACC-A6C3-991ED1202AB0> ;
+  skos:relatedMatch <http://example.com/imbor-skos/47FBBA3E-34BB-4F4B-A4EA-B6FBFA34426C> ;
+  skos:relatedMatch <http://example.com/imbor-skos/6111CF53-56EC-439C-9FE4-022EC25AEAE8> ;
+  skos:relatedMatch imbor-skos:B5947439-11E6-423E-B67B-671905610154 ;
+.
+<https://bimloket.nl/data/term/cbnl/5acb4ec8-3877-4a53-968e-9ecaa6287765>
+  skos:closeMatch <http://example.com/imbor-skos/048B3010-0BD1-4A89-9F49-FE6D825DA799> ;
+.
+<https://bimloket.nl/data/term/cbnl/5d132414-23d2-4f64-866b-a79a534b6914>
+  skos:closeMatch <http://example.com/imbor-skos/0FE729D5-FB1E-406C-BE96-07F3CC275A73> ;
+.
+<https://bimloket.nl/data/term/cbnl/5d9b601e-f77e-4909-8a31-5a2f39579bc2>
+  skos:closeMatch imbor-skos:B4C44E57-5F1D-4A81-A9DD-325763643BD0 ;
+.
+<https://bimloket.nl/data/term/cbnl/5de70507-5c35-4ab0-84bf-85fefba51b3c>
+  skos:closeMatch <http://example.com/imbor-skos/79B51472-2686-4468-A17C-D7CEB4276387> ;
+.
+<https://bimloket.nl/data/term/cbnl/6147f4f1-8839-4285-bf5f-8ad1006ae741>
+  skos:relatedMatch imbor-skos:F3077AB7-E289-4F35-9F4B-8C1CA7B3DE5D ;
+.
+<https://bimloket.nl/data/term/cbnl/65ee38bd-a4c2-4798-ac8d-6d3ad1ceef18>
+  skos:closeMatch imbor-skos:A1A80021-71D1-4EF3-98BC-754464547C33 ;
+  skos:relatedMatch <http://example.com/imbor-skos/7B932B5C-90DC-4E24-8818-DA65EB5618F4> ;
+.
+<https://bimloket.nl/data/term/cbnl/66df180f-67d2-4587-adf4-709aeb32f72f>
+  skos:closeMatch <http://example.com/imbor-skos/6156AD75-A23C-4B5F-8095-C773CD6EBFFE> ;
+.
+<https://bimloket.nl/data/term/cbnl/66f0ab16-6c9f-491c-a27a-f1073a00745a>
+  skos:closeMatch imbor-skos:B274C627-00E9-46DF-B897-C72DA698473A ;
+.
+<https://bimloket.nl/data/term/cbnl/66f29919-8986-4c8f-bf35-63d393fd3de3>
+  skos:closeMatch imbor-skos:BE9B4F6C-D72C-4CBB-9A22-9EB74C7EDD03 ;
+.
+<https://bimloket.nl/data/term/cbnl/67abb8e9-284f-4b1e-a848-556e5b933ad2>
+  skos:closeMatch <http://example.com/imbor-skos/4BCE51E8-3402-46B9-8BB3-B649626BE9CA> ;
+.
+<https://bimloket.nl/data/term/cbnl/690e637a-f46e-41e0-b313-c987feafe820>
+  skos:closeMatch <http://example.com/imbor-skos/71BCDE9D-88C2-4519-8105-028E40898AB5> ;
+.
+<https://bimloket.nl/data/term/cbnl/6a0f5d77-001f-45d4-b243-d466a0295947>
+  skos:relatedMatch <http://example.com/imbor-skos/12050DBB-8925-4802-AC14-2BF23AEA98CB> ;
+.
+<https://bimloket.nl/data/term/cbnl/6a828297-ffb6-4ac9-a87a-3697b9c33e79>
+  skos:closeMatch <http://example.com/imbor-skos/5D70E69A-2A35-4088-886E-32C0B07275C6> ;
+.
+<https://bimloket.nl/data/term/cbnl/6ce7f79a-f1e6-408a-bd5f-ad795efd6ef4>
+  skos:closeMatch imbor-skos:D8D7D3A3-B6A2-4160-BE3F-4A665D44EC6C ;
+.
+<https://bimloket.nl/data/term/cbnl/7003ba18-6807-44bc-9a3e-a2a98d69ef88>
+  skos:closeMatch <http://example.com/imbor-skos/38A36B34-A593-499D-B210-0C48FB40CA3B> ;
+.
+<https://bimloket.nl/data/term/cbnl/709e9e5f-f4d4-4ff6-ba67-5025850be83d>
+  skos:relatedMatch <http://example.com/imbor-skos/1B360B15-FFE9-4D6A-A459-4F007533C716> ;
+.
+<https://bimloket.nl/data/term/cbnl/731e6bb6-cec7-4ae1-905e-3165f3940620>
+  skos:closeMatch imbor-skos:AB90731D-E8C8-43CC-A465-BF9094C5A921 ;
+.
+<https://bimloket.nl/data/term/cbnl/7b4d3f8f-7584-4ff4-bd2b-468f75240de1>
+  skos:closeMatch imbor-skos:DEE45E84-56AF-4948-9FE8-9D584AF7DE07 ;
+.
+<https://bimloket.nl/data/term/cbnl/7eb1f4ba-58ae-4d0b-9678-b8cba75fff0a>
+  skos:closeMatch imbor-skos:A5EEDFA7-48FF-4E7F-B5BF-4A809130A3DC ;
+.
+<https://bimloket.nl/data/term/cbnl/8093b1ea-0323-4e14-b5e6-fad4bf413376>
+  skos:relatedMatch <http://example.com/imbor-skos/597D4F1A-8471-48DE-8226-B0DE4D76321D> ;
+.
+<https://bimloket.nl/data/term/cbnl/843d0546-6e4b-4d52-912a-5d7d7d55f6f6>
+  skos:closeMatch imbor-skos:A3AAEC95-5131-4128-ACD8-85AB714C6AEC ;
+.
+<https://bimloket.nl/data/term/cbnl/847f1e4c-0c49-4ff3-ba2c-de7992f730cd>
+  skos:closeMatch <http://example.com/imbor-skos/1EA4EE45-672D-477D-9BB4-6961418FE601> ;
+  skos:relatedMatch <http://example.com/imbor-skos/24ADB07A-8A5E-435B-852F-5C034EAFCCEB> ;
+.
+<https://bimloket.nl/data/term/cbnl/84c67b7b-22d3-4bd2-9dba-2e1795f19658>
+  skos:closeMatch imbor-skos:AC8E3B01-901F-4053-9957-F16B9CA7A28B ;
+.
+<https://bimloket.nl/data/term/cbnl/86465f9f-5c41-44b3-8d96-82a390143ced>
+  skos:relatedMatch imbor-skos:F16F8FFE-4069-41BA-A8C0-3321DD85CABE ;
+  skos:relatedMatch imbor-skos:F5DDDF76-4234-427B-B497-8B2ABCC98336 ;
+.
+<https://bimloket.nl/data/term/cbnl/87bda55d-6896-43be-88ad-ce87a257aa33>
+  skos:closeMatch <http://example.com/imbor-skos/07D5EE08-67AA-4DD5-A411-0D3BB248E911> ;
+.
+<https://bimloket.nl/data/term/cbnl/8837d43d-38a2-4ed7-b1c0-922c45bac04b>
+  skos:closeMatch <http://example.com/imbor-skos/42E2C9EF-F361-4E4C-B1A7-89D36BFB942A> ;
+.
+<https://bimloket.nl/data/term/cbnl/891c2bc7-f0e9-49f1-b34d-c67406d1bda0>
+  skos:closeMatch <http://example.com/imbor-skos/1D5691F0-E94A-473F-88D8-7986FF8E3223> ;
+.
+<https://bimloket.nl/data/term/cbnl/8a1742f3-4bdc-46ef-a20e-863e0907c7a1>
+  skos:closeMatch imbor-skos:CB6104F2-AEBE-4EC6-AD5C-9829B8AEC985 ;
+  skos:relatedMatch <http://example.com/imbor-skos/14571ED0-89FC-4D77-9E27-980698045183> ;
+  skos:relatedMatch <http://example.com/imbor-skos/20B74A16-3945-4CEE-AB24-CD896CD73B49> ;
+  skos:relatedMatch <http://example.com/imbor-skos/34031DA3-19F6-450D-9849-59B2A80B9BCF> ;
+  skos:relatedMatch <http://example.com/imbor-skos/7D41FA00-6BB5-4B66-A5C7-1AF15E35BC8C> ;
+  skos:relatedMatch <http://example.com/imbor-skos/93205529-70A7-4D20-B4F4-6B3FC412B5FA> ;
+  skos:relatedMatch imbor-skos:BD2FD05D-9D00-4C84-B05C-12E3E22B79AE ;
+.
+<https://bimloket.nl/data/term/cbnl/8a6bcf06-2b19-4f0c-97d6-3b9663e260c2>
+  skos:relatedMatch imbor-skos:C78D122A-EDBE-490A-8AE6-583997B6D261 ;
+.
+<https://bimloket.nl/data/term/cbnl/8b0c1c42-b6e7-4ddf-ad8f-15781affda80>
+  skos:closeMatch <http://example.com/imbor-skos/516D7924-8850-44E7-9B47-5027381F075E> ;
+.
+<https://bimloket.nl/data/term/cbnl/8b98710c-a4a9-4796-82ee-afe0e2c28421>
+  skos:closeMatch imbor-skos:E13E2867-BC61-462A-BCBA-A8570C863A75 ;
+  skos:relatedMatch imbor-skos:B2B0B46E-CC1F-45AE-A22A-F6D0B8B04AE9 ;
+.
+<https://bimloket.nl/data/term/cbnl/8d062430-45df-48bf-8a68-94fb3030d609>
+  skos:closeMatch <http://example.com/imbor-skos/10D3883E-B5E4-4A1A-B0B4-471DE5E55133> ;
+.
+<https://bimloket.nl/data/term/cbnl/8f1ca84b-6f6a-44f7-8def-fc9bf1f33431>
+  skos:closeMatch imbor-skos:B955C931-DAB5-43BD-AE9D-9EBBCF78C3BA ;
+.
+<https://bimloket.nl/data/term/cbnl/8ff7b940-daca-4688-9801-7b107ebff1ac>
+  skos:closeMatch <http://example.com/imbor-skos/374D6554-9B39-44FE-B92E-B54B2B45E83F> ;
+.
+<https://bimloket.nl/data/term/cbnl/9071cc67-00e8-4aba-81c1-efc79aa95f44>
+  skos:closeMatch <http://example.com/imbor-skos/4DA9735B-97FE-488E-892E-D0729A29AFEC> ;
+.
+<https://bimloket.nl/data/term/cbnl/927a5dac-2469-41ef-b165-d6d3f2cf256f>
+  skos:closeMatch <http://example.com/imbor-skos/8298E24E-2D79-48C5-A80C-74503DFDC588> ;
+.
+<https://bimloket.nl/data/term/cbnl/92a650ae-eb23-412a-b8a8-1d94d72ac014>
+  skos:closeMatch <http://example.com/imbor-skos/4223240C-8786-4D44-889E-9F54BA39A837> ;
+  skos:relatedMatch <http://example.com/imbor-skos/04424005-7CD6-45B3-BABB-1B15CB0AFF82> ;
+  skos:relatedMatch <http://example.com/imbor-skos/068703B2-CC11-4D29-B5D8-A91A263FD92F> ;
+  skos:relatedMatch <http://example.com/imbor-skos/0A305E60-C715-4D3C-A7B6-918B41C6900C> ;
+  skos:relatedMatch <http://example.com/imbor-skos/0A724D02-77C1-4DD6-89DE-D936E4D7910D> ;
+  skos:relatedMatch <http://example.com/imbor-skos/4B40AEF3-4713-41FD-86D1-722A470DD558> ;
+  skos:relatedMatch <http://example.com/imbor-skos/4C78D58E-8344-4696-BAA8-7F8EBE91EF31> ;
+  skos:relatedMatch <http://example.com/imbor-skos/84A9AFB9-FDB0-4306-880F-F55512F9D21A> ;
+  skos:relatedMatch <http://example.com/imbor-skos/88075418-0506-4995-AD11-9133FCFFA391> ;
+  skos:relatedMatch <http://example.com/imbor-skos/9A0BE387-0FCF-4D16-AF0D-A89EE0DEF168> ;
+  skos:relatedMatch <http://example.com/imbor-skos/9E026BB2-3153-4E89-93C8-B08867329B3E> ;
+.
+<https://bimloket.nl/data/term/cbnl/95f30426-1752-4415-b8b7-4156c75d2bab>
+  skos:relatedMatch <http://example.com/imbor-skos/40D30DE7-5F7E-4A16-8F2E-85F305BE18FB> ;
+  skos:relatedMatch imbor-skos:F349D291-F25B-4258-A008-00082F932BE9 ;
+.
+<https://bimloket.nl/data/term/cbnl/9784b75a-d427-44fb-9834-010b02dd4fdd>
+  skos:closeMatch imbor-skos:BFDAC6FA-90A2-4C43-8D28-744164CB7A97 ;
+.
+<https://bimloket.nl/data/term/cbnl/98e71b8a-9d25-4082-8eef-f2bb63f73f97>
+  skos:closeMatch <http://example.com/imbor-skos/83A942F7-5291-42F0-AFB1-9A57D0FB2F15> ;
+.
+<https://bimloket.nl/data/term/cbnl/9a0dc56f-904e-4971-b37e-6868016290f4>
+  skos:relatedMatch <http://example.com/imbor-skos/7363A6E2-55DC-452B-9389-ADA6A35A4705> ;
+  skos:relatedMatch <http://example.com/imbor-skos/74F35552-7109-4DC2-9AFA-91F0D8FF1D09> ;
+.
+<https://bimloket.nl/data/term/cbnl/9a93ecac-71bb-4c90-b39c-8b507a0ab9a8>
+  skos:closeMatch <http://example.com/imbor-skos/2D40B48E-7271-450A-986C-690FE372E708> ;
+  skos:relatedMatch <http://example.com/imbor-skos/0E3FCBD8-E7B2-4800-A965-2DE44833B1F1> ;
+  skos:relatedMatch <http://example.com/imbor-skos/63B63591-A437-4F1E-B977-CB8DFF2D224C> ;
+  skos:relatedMatch imbor-skos:DC580241-086D-46DC-83F6-F7D4C9C6CAC3 ;
+.
+<https://bimloket.nl/data/term/cbnl/9f3eff08-f783-463a-9471-dad6e1834c0a>
+  skos:closeMatch <http://example.com/imbor-skos/31EB954F-CEFD-4886-8B74-8A46F1EB7E52> ;
+.
+cbnl-term:a08114d5-e203-41c3-ae4f-cf556ac6ffbc
+  skos:closeMatch <http://example.com/imbor-skos/6F9472DC-3E4F-4C0B-8640-60590E89EBB1> ;
+.
+cbnl-term:a0d766cc-14b0-423d-97a2-045761d148fb
+  skos:relatedMatch <http://example.com/imbor-skos/668F15A4-7990-439B-9411-669B0F015556> ;
+.
+cbnl-term:a13f04d8-7153-43d0-8767-9c19eb5f86f7
+  skos:closeMatch <http://example.com/imbor-skos/366207DF-0B72-46A6-8E10-000085D60151> ;
+.
+cbnl-term:a5a4342e-a2d3-4625-a766-c129c35a4f9f
+  skos:closeMatch <http://example.com/imbor-skos/6B54FE2F-9897-47DA-863C-5A931E89B2DE> ;
+.
+cbnl-term:a730966d-500a-4dfe-9f63-0b46a3639719
+  skos:closeMatch imbor-skos:EADCB28A-2436-40D0-B5A3-2358642D0575 ;
+.
+cbnl-term:a735820e-32b2-4121-b91e-3891d23813c9
+  skos:relatedMatch imbor-skos:F49B48AE-80D5-4A4D-BC1A-2232E49835C9 ;
+.
+cbnl-term:a9c9bbcc-25cb-4b8f-8d40-6381a7cb02d1
+  skos:closeMatch <http://example.com/imbor-skos/2D772615-214C-46E0-9C1D-2B4749B5ECAF> ;
+.
+cbnl-term:abb621cd-8b1c-457a-bb5d-beaa1b035280
+  skos:closeMatch <http://example.com/imbor-skos/47F12418-C5F8-44E0-8EC6-3D0C59933726> ;
+.
+cbnl-term:b51d83bd-4bd7-497f-90a9-76e3715e3f3e
+  skos:closeMatch <http://example.com/imbor-skos/17EDBFED-DEB2-45A9-BC19-9B22BE980CE6> ;
+.
+cbnl-term:b72734e1-a556-4540-91c9-25a6cce52af4
+  skos:closeMatch <http://example.com/imbor-skos/8D545D3C-1311-43A0-8571-CB82B429BFB4> ;
+.
+cbnl-term:ba5b307f-c11c-48e4-a3a9-e7edb9d99a32
+  skos:closeMatch <http://example.com/imbor-skos/01E06F2E-E561-4D6E-8625-2D0F284BE884> ;
+.
+cbnl-term:bbf4e023-2538-4dfc-aa5b-bcedd6344d25
+  skos:relatedMatch <http://example.com/imbor-skos/424E3B6A-5C0A-43BF-B9AC-1F6B4184816D> ;
+.
+cbnl-term:bcf4e4b3-0744-47c2-a399-6c972d9659ae
+  skos:closeMatch imbor-skos:FFA16BB2-FA5A-49F1-B3E8-794499B02785 ;
+  skos:relatedMatch <http://example.com/imbor-skos/54EE3712-08CA-48FF-A9C8-5C37E05692FC> ;
+.
+cbnl-term:bf1021b6-32c4-4e96-ad79-7dbf73dbbe55
+  skos:closeMatch <http://example.com/imbor-skos/48F6FA03-08BE-4DB7-BC2F-A0D6E3B68F14> ;
+.
+cbnl-term:c514aee0-369e-48d7-9b11-799ad847cbb1
+  skos:closeMatch <http://example.com/imbor-skos/8B9D6F6F-524D-45CA-8A1A-996414BFD04B> ;
+.
+cbnl-term:c517b5ea-530f-4aca-973e-3a35e350f209
+  skos:closeMatch <http://example.com/imbor-skos/40E5BFD4-F071-466B-A8A7-C1A0AC092BA9> ;
+.
+cbnl-term:c671e4be-cea0-44ac-9db0-3c2826357885
+  skos:closeMatch imbor-skos:AE2F44F5-7B52-48D9-8F87-28B5C957E26F ;
+.
+cbnl-term:cb12f8af-317c-438b-926f-470cc7b2b967
+  skos:closeMatch imbor-skos:AA359515-53C3-428B-AC68-9A0BF4C19A0F ;
+.
+cbnl-term:d07758b3-9085-49d7-a6ae-94e549179ecd
+  skos:closeMatch <http://example.com/imbor-skos/13FD95AF-BA1E-41CC-8603-F9A6AA4A885D> ;
+  skos:relatedMatch <http://example.com/imbor-skos/839083EE-2433-4C81-B43C-4CF16432C5D3> ;
+.
+cbnl-term:d32921f7-9348-4314-b73e-09744339e935
+  skos:closeMatch imbor-skos:C0F3DE1B-AF3D-4CA8-85CB-0FD47A1FC0FD ;
+.
+cbnl-term:d36e19e4-712d-41be-8313-07840ce9d955
+  skos:closeMatch <http://example.com/imbor-skos/7FFCB522-277D-4A2A-AA2A-FBCC2A68F0A1> ;
+.
+cbnl-term:d659ad7f-b712-445a-ace8-ce04b2ef1f79
+  skos:relatedMatch <http://example.com/imbor-skos/6CD859B6-C6D6-4241-BD5C-DAE33452679A> ;
+.
+cbnl-term:da86c912-8ce4-44fa-a164-14ce2d5c0e4a
+  skos:closeMatch imbor-skos:E70C3A62-A298-436A-B72C-A79A96061A6E ;
+.
+cbnl-term:dbad1d33-e4e4-471f-abb4-92a79d07d49e
+  skos:closeMatch <http://example.com/imbor-skos/76E7FFA9-6741-476F-8B58-73B3185CFE89> ;
+.
+cbnl-term:dbb6ce61-ed11-4353-a6fa-5537f990fda4
+  skos:relatedMatch <http://example.com/imbor-skos/2076C8A2-CB3E-49BC-BAEE-78086B2D168C> ;
+  skos:relatedMatch <http://example.com/imbor-skos/43DD67FD-75F0-4FE0-90F0-DB49048F14C6> ;
+  skos:relatedMatch imbor-skos:F266D1BE-A634-4D8E-8DA9-14618A40B705 ;
+.
+cbnl-term:ddbb37c6-2ae7-480f-aab9-db6c18b0b6a5
+  skos:closeMatch imbor-skos:B193D52E-0243-4E0E-9F90-236EDB35C624 ;
+.
+cbnl-term:deb2a79b-b584-4476-905c-7f981a8cde46
+  skos:relatedMatch <http://example.com/imbor-skos/5E68AC93-B75A-4ACC-A04F-803DB710E66A> ;
+.
+cbnl-term:e4c65e32-5382-4d93-a211-9d6b793ad2b1
+  skos:closeMatch imbor-skos:B7927523-7B47-4A7F-AA8C-BC47FEC9F855 ;
+.
+cbnl-term:e64da426-c886-4079-8f70-fd84209b1882
+  skos:relatedMatch <http://example.com/imbor-skos/81CBE022-0D94-4377-82CA-3AA12937FE8D> ;
+  skos:relatedMatch <http://example.com/imbor-skos/999C662A-CDCC-4FEB-8EC6-8818A2CA44E4> ;
+  skos:relatedMatch imbor-skos:AA28383D-3F96-4688-AD5E-91C85CBC4221 ;
+  skos:relatedMatch imbor-skos:AAAD83EB-D568-4CF3-8F76-A26E51CC0714 ;
+.
+cbnl-term:e813c2e3-2b8d-462c-a172-fa2913ca2981
+  skos:closeMatch <http://example.com/imbor-skos/618EF498-EFA9-4E02-B74C-09A266503937> ;
+.
+cbnl-term:eb786396-1915-4701-ae13-123a5b153695
+  skos:closeMatch <http://example.com/imbor-skos/761406D1-87BC-4DC1-B1B7-BD3BB7AB54A7> ;
+  skos:closeMatch imbor-skos:B4935E75-46CA-414D-949D-30A8B801FD5B ;
+.
+cbnl-term:edab85df-7967-41be-a21a-2635cac85121
+  skos:closeMatch <http://example.com/imbor-skos/7E4BD993-5E52-4E61-87BC-6E51BA944168> ;
+.
+cbnl-term:ee64453a-1787-4528-b54a-ce73a5fcea1d
+  skos:closeMatch <http://example.com/imbor-skos/56530E65-17A8-482C-832C-17A9A0621813> ;
+.
+cbnl-term:ef9d6039-b7f1-4701-ade3-f92eed2f81c5
+  skos:closeMatch <http://example.com/imbor-skos/8350623A-8840-459A-AA82-B2974D21021F> ;
+.
+cbnl-term:f04d95cb-9ad1-4a2c-93fa-12b950101d78
+  skos:closeMatch <http://example.com/imbor-skos/67C67760-C630-483E-B19B-0CACD881D226> ;
+.
+cbnl-term:f4af923b-91a7-4176-a719-a408dfbb5a4a
+  skos:relatedMatch <http://example.com/imbor-skos/8F2BD038-31A2-4933-A20F-5525FED4BD5D> ;
+.
+cbnl-term:f7ff0b4d-c168-4681-b292-aa239d0354fa
+  skos:relatedMatch imbor-skos:BA5C03A8-58CD-44DD-A33F-B4568BC6442A ;
+.
+cbnl-term:fd2e485d-25d6-4de8-8ac5-c62345628faa
+  skos:closeMatch imbor-skos:FF30D965-C37B-41A8-87D1-AA895FC6A8AA ;
+.
