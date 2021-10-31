@@ -1,0 +1,12 @@
+@prefix nen2660-term: <https://w3id.org/nen2660/term#> .
+@prefix abdl:  <http://www.rws.nl/abdl#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix nen2767: <https://bimloket.nl/data/term/nen2767-4/> .
+
+nen2767:Element-101
+        a               skos:Concept ;
+        skos:prefLabel  "Aandrijving en bewegingswerk (elektrohydraulisch)"@nl .
