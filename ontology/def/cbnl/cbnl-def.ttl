@@ -371,9 +371,10 @@ cbnl:
   dct:references "Gemeentewet" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   rdfs:subClassOf nen2660:SpatialRegion ;
+  skos:altLabel "gemeente"@nl ;
   skos:definition "Ruimtelijk gebied onder het bestuur van een gemeente."@nl ;
-  skos:prefLabel "gemeente"@nl ;
-  skos:prefLabel "municipality"@en ;
+  skos:prefLabel "gemeentelijk gebied"@nl ;
+  skos:prefLabel "municipality grounds"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
@@ -436,6 +437,8 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/06185c62-e316-44df-bd64-45c9db04a3c3>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "ISO 80000-3:2019" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/316964cf-fb2a-45ec-8912-8877becbd170> ;
   skos:definition "minimum length of a straight line segment between a point and a reference line or reference surface."@en ;
@@ -443,17 +446,19 @@ cbnl:
   skos:prefLabel "diepte"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/061c5522-b4ce-45bc-a9e7-a41e758a4b3b>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "volume"@en ;
   skos:prefLabel "volume"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/0623ae9d-3cf1-4b75-aa80-9d92bbca1978>
   a rdfs:Class ;
@@ -530,7 +535,7 @@ cbnl:
   rdfs:comment "Verzameling van behoeften duidt niet op een enkele eis, maar meerdere, zoals een specificatie of KES" ;
   rdfs:subClassOf nen2660:Requirement ;
   skos:altLabel "stakeholder requirement"@en ;
-  skos:definition "(Verzameling van behoeften en randvoorwaarden) Eis van de belanghebbenden (LSE2: klanten)."@nl ;
+  skos:definition "Requirement van de belanghebbenden (klant)."@nl ;
   skos:prefLabel "customer requirement"@en ;
   skos:prefLabel "klanteis"@nl ;
   cbnl:state "proposed" ;
@@ -626,9 +631,9 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "CROW 156" ;
   rdfs:comment "none" ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1e20be1f-7c72-48bd-ae27-c25c477bdda5> ;
+  rdfs:subClassOf cbnl:c2242d3f-dbc4-4b49-a15f-f4f172016d8e ;
   skos:altLabel "sluice"@en ;
-  skos:definition "Kunstwerk met een beweegbare waterkering, die de verbinding vormt tussen twee wateren met verschillende waterstanden."@nl ;
+  skos:definition "bouwwerk, geen gebouw zijnde met een beweegbare waterkering, die de verbinding vormt tussen twee wateren met verschillende waterstanden."@nl ;
   skos:prefLabel "lock"@en ;
   skos:prefLabel "sluis"@nl ;
   cbnl:state "proposed" ;
@@ -647,6 +652,8 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/098ae08c-2739-4a99-a9f8-db733f5b2e22>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "ISO 80000-3:2019" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/316964cf-fb2a-45ec-8912-8877becbd170> ;
   skos:definition "minimum length of a straight line segment between two parallel straight lines (in two dimensions) or planes (in three dimensions) that enclose a given geometrical shape."@en ;
@@ -654,7 +661,7 @@ cbnl:
   skos:prefLabel "width"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/0997140f-04cc-49a8-97f5-2355f85271b3>
   a rdfs:Class ;
@@ -726,7 +733,7 @@ cbnl:
   dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:e4a64357-3560-4db6-b42a-89e3c1319df3 ;
-  skos:definition "Meercellig organisme, met zintuigen uitgerust, die hun energie niet door fotosynthese opwekken maar deze uit organische stof betrekken (verkregen door andere organismen op te eten en te verteren) en zuurstof voor hun ademhaling nodig hebben. De meeste dieren kunnen zich bewegen."@nl ;
+  skos:definition "organisme bestaande uit merdere cellen, met zintuigen uitgerust, die hun energie (niet door fotosynthese opwekken maar deze) uit organische stof betrekken (verkregen door andere organismen op te eten en te verteren) en zuurstof voor hun ademhaling nodig hebben. De meeste dieren kunnen zich bewegen."@nl ;
   skos:prefLabel "animal"@en ;
   skos:prefLabel "dier"@nl ;
   cbnl:state "proposed" ;
@@ -740,7 +747,7 @@ cbnl:
   dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:e4a64357-3560-4db6-b42a-89e3c1319df3 ;
-  skos:definition "Eencellig organismezonder celkern en bevatten weinig andere cellulaire structuren. Archaea staan bekend om hun extremofiele levenswijze."@nl ;
+  skos:definition "organisme bestaande uit een cel zonder celkern en bevat weinig andere cellulaire structuren. Archaea staan bekend om hun extremofiele levenswijze."@nl ;
   skos:prefLabel "archaeon"@en ;
   skos:prefLabel "archaeon"@nl ;
   cbnl:state "proposed" ;
@@ -855,8 +862,8 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "NEN 2660-1" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf nen2660:InformationObject ;
-  skos:definition "informatie object dat wordt uitgewisseld, of kan worden uitgewisseld,  tijdens communicatie tussen twee of meer actoren (sociale actoren of computer actoren). Een symbolisch object is een drager van informatie, en wordt op zijn beurt gedragen door een fysiek object. Een symbolisch object wordt uitgedrukt in een taal."@nl ;
+  rdfs:subClassOf nen2660:Representation ;
+  skos:definition "Representation dat wordt uitgewisseld, of kan worden uitgewisseld,  tijdens communicatie tussen twee of meer actoren (sociale actoren of computer actoren). Een symbolisch object vertegenwoordigt informatie en wordt uitgedrukt in een taal."@nl ;
   skos:prefLabel "symbolic object"@en ;
   skos:prefLabel "symbolisch object"@nl ;
   cbnl:state "proposed" ;
@@ -912,7 +919,7 @@ cbnl:
   dct:references "IMGeo:1.0/2007" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/9a795b76-fc0e-44ba-b882-f077bdd9b56f> ;
-  skos:definition "Een put bestemd voor de opvang van hemelwater afkomstig van erop aangesloten oppervlakken, het laten bezinken van in dit water meegevoerde bezinkbare stoffen en de afvoer van dit water naar een rioolstelsel of naar de ondergrond."@nl ;
+  skos:definition "put bestemd voor de opvang van hemelwater afkomstig van erop aangesloten oppervlakken, het laten bezinken van in dit water meegevoerde bezinkbare stoffen en de afvoer van dit water naar een rioolstelsel of naar de ondergrond."@nl ;
   skos:prefLabel "gully, drain"@en ;
   skos:prefLabel "kolk"@nl ;
   cbnl:state "proposed" ;
@@ -954,7 +961,7 @@ cbnl:
   rdfs:comment "none" ;
   rdfs:subClassOf nen2660:Mixture ;
   skos:altLabel "beton"@nl ;
-  skos:definition "Verhard mengsel van cement, water, toeslagmaterialen en eventueel hulp- en/of vulstoffen."@nl ;
+  skos:definition "verhard mengsel van cement, water, toeslagmaterialen en eventueel hulp- en/of vulstoffen."@nl ;
   skos:prefLabel "cementbeton"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -1155,7 +1162,7 @@ cbnl:
   dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:e4a64357-3560-4db6-b42a-89e3c1319df3 ;
-  skos:definition "Eencellig organisme zonder celkern, het erfelijk materiaal ligt los in het cytoplasma.."@nl ;
+  skos:definition "organisme bestaande uit een cel zonder celkern, waarvan het erfelijk materiaal ligt los in het cytoplasma."@nl ;
   skos:prefLabel "bacterie"@nl ;
   skos:prefLabel "bacterium"@en ;
   cbnl:state "proposed" ;
@@ -1231,12 +1238,13 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Leidraad voor Systems Engineering (SE) in de GWW sector" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf nen2660:Interface ;
+  rdfs:comment "Interface uit de NEN 2660 heet Nederlandse versie raakvlak."@nl ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "Onderlinge interface (verbinding) (associatie, drager, kanaal) tussen twee systeem(delen), waarlangs een (soms dynamische) wisselwerking of interactie tussen die elementen kan plaatsvinden."@nl ;
   skos:prefLabel "raakvlak"@nl ;
-  cbnl:state "proposed" ;
+  cbnl:state "deleted" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-02-10"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/107fc89e-ee62-4f14-9281-471d6d875d4e>
   a rdfs:Class ;
@@ -1273,12 +1281,14 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/10b07640-7e28-43cc-a14a-f6e07789f135>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:bb0e8e3c-3379-4c7a-b860-2db24fbcb7e5 ;
-  skos:definition "is de geografische positieaanduiding die de hoogte van een geografische locatie (bijvoorbeeld een berg of plateau) is opgegeven in meters (of andere lengtemaat) ten opzichte van een referentieniveau: het nulvlak."@nl ;
+  skos:definition "is de geografische positieaanduiding die de hoogte van een geografische locatie (bijvoorbeeld een berg of plateau) aangeeft in meters (of andere lengtemaat) ten opzichte van een referentieniveau: het nulvlak."@nl ;
   skos:prefLabel "geografische hoogte"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/10b19fff-6dd5-4772-9002-f5bbcf687b05>
   a rdfs:Class ;
@@ -1399,9 +1409,10 @@ cbnl:
   dct:references "Provinciewet" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   rdfs:subClassOf nen2660:SpatialRegion ;
+  skos:altLabel "provincie"@nl ;
   skos:definition "Ruimtelijk gebied onder het bestuur van een provincie."@nl ;
   skos:prefLabel "province area"@en ;
-  skos:prefLabel "provincie"@nl ;
+  skos:prefLabel "provinciaal gebied"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
@@ -1443,7 +1454,7 @@ cbnl:
   dct:references "CROW 156" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf cbnl:f9f29950-9cb7-4c95-abd8-e3c9f6310f78 ;
-  skos:definition "Bovenste bouwdeel van de aardebaan (weg), tot een diepte van 1 m onder het verhardingsoppervlak, waarvan het zand aan bepaalde eisen moet voldoen en waarop de verharding rust."@nl ;
+  skos:definition "bovenste bouwdeel van de aardebaan (weg), tot een diepte van 1 m onder het verhardingsoppervlak, waarvan het zand aan bepaalde eisen moet voldoen en waarop de verharding rust."@nl ;
   skos:prefLabel "sand bed"@en ;
   skos:prefLabel "zandbed"@nl ;
   cbnl:state "proposed" ;
@@ -1537,6 +1548,7 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:comment "defnitie moet beter" ;
   rdfs:subClassOf cbnl:cd901707-cdc6-4742-9567-40bc4c511de6 ;
   skos:definition "meten van de prestaties van een individu, groep, organisatie, systeem of component. Dit resulteert in een meting van een prestatie-indicator."@nl ;
   skos:prefLabel "prestatie meten"@nl ;
@@ -1589,7 +1601,7 @@ cbnl:
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/14dbeca5-b430-4cb4-9db8-d5c1ec61cb28> ;
-  skos:definition "Gewogen waardering van een mogelijke of feitelijke werkelijkheid op basis van een verzameling van gespecificeerde eisen."@nl ;
+  skos:definition "evaluatie van een mogelijke of feitelijke werkelijkheid op basis van een verzameling van gespecificeerde eisen."@nl ;
   skos:prefLabel "verificatie"@nl ;
   skos:prefLabel "verification"@en ;
   cbnl:state "proposed" ;
@@ -1611,8 +1623,8 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf cbnl:c18a520a-49e8-4af3-853d-291ed069d0be ;
-  skos:definition "bewering dat een gewogen waardering vormt van een feitelijke werkelijkheid of aantal voorstelbare werkelijkheden op basis van een verzameling van criteria."@nl ;
+  rdfs:subClassOf nen2660:InformationObject ;
+  skos:definition "Informatie object dat een gewogen waardering vormt van een feitelijke werkelijkheid of aantal voorstelbare werkelijkheden op basis van een verzameling van criteria."@nl ;
   skos:prefLabel "evaluatie"@nl ;
   skos:prefLabel "evaluation"@en ;
   cbnl:state "proposed" ;
@@ -1638,7 +1650,7 @@ cbnl:
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "Definitie herschreven zodat wegvoertuig en weglink genoemd wordt." ;
   rdfs:subClassOf cbnl:dcbe4704-2748-4fa3-959b-44082e682a4d ;
-  skos:definition "verkeer (geheel van verplaatsingen) van wegvoertuigen met hun bestuurder, voetgangers, ruiters en geleiders met rij- of trekdieren of vee over een weglink."@nl ;
+  skos:definition "verkeer (geheel van verplaatsingen) van wegvoertuigen al of niet met hun bestuurder, voetgangers, ruiters en geleiders met rij- of trekdieren of vee over een weglink."@nl ;
   skos:prefLabel "road traffic"@en ;
   skos:prefLabel "wegverkeer"@nl ;
   cbnl:state "proposed" ;
@@ -1894,7 +1906,7 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:comment "none" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1b34505a-d11d-4f64-9b25-d27f046c3267> ;
-  skos:definition "prefDef: TODO (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
+  skos:definition "organisatie-eenheid die tijdelijk is opgezet om de aansturing voor bepaald werk zo soepel mogelijk te laten verlopen."@nl ;
   skos:prefLabel "werkorganisatie-eenheid"@nl ;
   skos:prefLabel "work organisation unit"@en ;
   cbnl:state "proposed" ;
@@ -1954,6 +1966,8 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/18d33f97-a525-4a91-b0c5-8494d07d1dcb>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf nen2660:TopConcept ;
   skos:altLabel "kwantiteit"@nl ;
   skos:definition "property of a phenomenon, body, or substance, where the property has a magnitude that can be expressed as a number and a reference (bron: International Vocabulary of Metrology)"@en ;
@@ -1961,7 +1975,7 @@ cbnl:
   skos:prefLabel "quantity"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/18f57cfa-db41-4426-9de2-edc8be721da0>
   a rdfs:Class ;
@@ -1991,9 +2005,9 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf cbnl:c18a520a-49e8-4af3-853d-291ed069d0be ;
+  rdfs:subClassOf nen2660:InformationObject ;
   skos:altLabel "besluit"@nl ;
-  skos:definition "bewering dat een selectie vormt van een voorstelbare werkelijkheid (voorkeursvariant) uit een aantal mogelijke werkelijkheden (varianten) op basis van een verzameling van criteria."@nl ;
+  skos:definition "Informatie object dat een selectie vormt van een voorstelbare werkelijkheid (voorkeursvariant) uit een aantal mogelijke werkelijkheden (varianten) op basis van een verzameling van criteria."@nl ;
   skos:prefLabel "beslissing"@nl ;
   skos:prefLabel "decision"@en ;
   cbnl:state "proposed" ;
@@ -2094,7 +2108,7 @@ cbnl:
   dct:references "The Organization Ontology" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf nen2660:DiscreteObject ;
-  skos:definition "social group such as a department or support unit which is part of some larger Organization and only has full recognition within the context of that Organization. In particular the unit would not be regarded as a legal entity in its own right."@en ;
+  skos:definition "Discrete object which is part of some larger Organization and only has full recognition within the context of that Organization. In particular the unit would not be regarded as a legal entity in its own right."@en ;
   skos:prefLabel "organisatie-eenheid"@nl ;
   skos:prefLabel "organisational unit"@en ;
   cbnl:state "proposed" ;
@@ -2232,9 +2246,9 @@ cbnl:
   dct:modified "2021-10-27T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "none" ;
   rdfs:comment "geintroduceert voor NEN 2767-4" ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/13334548-925b-4974-9d65-ecd85905b6cd> ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/8704b333-91c3-46d7-b6ed-ef1c7c9b8545> ;
   skos:altLabel "element"@nl ;
-  skos:definition "component dat een nen 2767-4 element vormt."@nl ;
+  skos:definition "onderdeel dat een nen 2767-4 element vormt."@nl ;
   skos:prefLabel "nen 2767-4 element"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -2257,7 +2271,7 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "CROW 156" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf cbnl:c2242d3f-dbc4-4b49-a15f-f4f172016d8e ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "bouwwerk, geen gebouw zijnde (Civiel-bouwkundige constructie) dat onderdeel is van een weg, spoorweg of waterweg bij kruising met een andere weg, spoorweg, waterweg of een terreinverdieping."@nl ;
   skos:prefLabel "civil structure"@en ;
   skos:prefLabel "kunstwerk"@nl ;
@@ -2380,6 +2394,8 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/207656b1-9b64-4fa5-958e-2b7e7f51b3a1>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:altLabel "lichtintensiteit"@nl ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
@@ -2387,7 +2403,7 @@ cbnl:
   skos:prefLabel "luminous intensity"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/209dbfe2-97b8-43e9-8a33-c42dbcb454c9>
   a rdfs:Class ;
@@ -2411,8 +2427,10 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/213397e7-4253-4d4d-adb8-c7141530f321>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/0310d105-58fb-49a0-85b6-9b80515f0aa0> ;
-  skos:definition "Constructie ter afscherming van een gevarenzone of ter beperking van de risicos daarin. (bron: CROW 156)"@nl ;
+  skos:definition "bouwconstructie ter afscherming van een gevarenzone of ter beperking van de risicos daarin. (bron: CROW 156)"@nl ;
   skos:prefLabel "bermbeveiligingsconstructie"@nl ;
   skos:prefLabel "verge protection structure"@en ;
   cbnl:state "proposed" ;
@@ -2502,8 +2520,10 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/21d3ab33-5428-4ee7-8340-c1b7b6977ff4>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:f688b252-0283-4187-a309-19538546fec4 ;
-  skos:definition "Lintvormige geleideconstructie samengesteld uit metalen planken, afstandhouders (ROA-VIB: diagonalen) en palen (op aardebanen) of stijlen (op kunstwerken). (bron: CROW 156)"@nl ;
+  skos:definition "lintvormige geleideconstructie samengesteld uit metalen planken, afstandhouders (ROA-VIB: diagonalen) en palen (op aardebanen) of stijlen (op kunstwerken). (bron: CROW 156)"@nl ;
   skos:prefLabel "crash barrier structure"@en ;
   skos:prefLabel "geleiderailconstructie"@nl ;
   cbnl:state "proposed" ;
@@ -2556,10 +2576,10 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf cbnl:c18a520a-49e8-4af3-853d-291ed069d0be ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/3c6a583d-9169-435a-901c-aa5c74e5155f> ;
   skos:altLabel "measurement process"@en ;
   skos:altLabel "meetproces"@nl ;
-  skos:definition "een bewering over de werkelijkheid met een bepaald waarheidsgehalte, die het resultaat is van een meetproces."@nl ;
+  skos:definition "observatie over de werkelijkheid met een bepaald waarheidsgehalte, die het resultaat is van een meetproces."@nl ;
   skos:prefLabel "measurement"@en ;
   skos:prefLabel "meting"@nl ;
   cbnl:state "proposed" ;
@@ -2778,7 +2798,7 @@ cbnl:
   rdfs:comment "er staat output in de originele definitie en dat is een passieve functionele entiteit." ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
   rdfs:subClassOf nen2660:FunctionalEntity ;
-  skos:definition "Functionele entiteit (output) (3.7.5) van een organisatie (3.2.1) waarbij er noodzakelijkerwijs ten minste één activiteit wordt uitgevoerd tussen de organisatie en de klant (3.2.4)."@nl ;
+  skos:definition "Functionele entiteit (output) van een organisatie waarbij er noodzakelijkerwijs ten minste één activiteit wordt uitgevoerd tussen de organisatie en de klant."@nl ;
   skos:prefLabel "dienst"@nl ;
   skos:prefLabel "service"@en ;
   cbnl:state "proposed" ;
@@ -3063,13 +3083,15 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/2af70f94-23af-4740-8e64-e9d2fb951578>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:bb0e8e3c-3379-4c7a-b860-2db24fbcb7e5 ;
   skos:altLabel "longitude"@nl ;
-  skos:definition "is de geografische positieaanduiding dat de hoek tussen het meridiaanvlak van dat meetpunt en het meridiaanvlak van het nulpunt is, meestal het meridiaanvlak van Greenwich."@nl ;
+  skos:definition "is de geografische positieaanduiding middels denkbeeldige verticale cirkelbogen (meridianen) welke vanaf de Noordpool via de evenaar naar de Zuidpool lopen. De nulmeridiaan loopt door het Engelse Greenwich. De opdeling is in 360 graden (180 in oostelijke richting, 180 in westelijke richting)."@nl ;
   skos:prefLabel "lengtegraad"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/2b1af04c-0071-479c-ac07-75f47f36ad32>
   a rdfs:Class ;
@@ -3416,9 +3438,7 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf nen2660:Requirement ;
   skos:altLabel "eis aan raakvlak"@nl ;
-  skos:definition "altDef: Eis aan een systeem die het resultaat is van een raakvlakkenanalyse. Een dergelijke analyse inventariseert de eisen die de omgeving van het systeem aan het systeem stelt. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
-  skos:definition "altDef: Eis die wordt gesteld aan het in samenhang functioneren tussen objecten of diensten op hun gemeenschappelijke grens. (bron: WWB0001)"@nl ;
-  skos:definition "prefDef: Eis die wordt gesteld aan een raakvlak tussen twee of meer objecten. (bron: AOA Begrippen- en Definitielijst)"@nl ;
+  skos:definition "Requirement die wordt gesteld aan een raakvlak tussen twee of meer objecten."@nl ;
   skos:prefLabel "interface requirement"@en ;
   skos:prefLabel "raakvlakeis"@nl ;
   cbnl:state "proposed" ;
@@ -3492,13 +3512,15 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/316964cf-fb2a-45ec-8912-8877becbd170>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "ISO 80000-3:2019" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:prefLabel "lengte"@nl ;
   skos:prefLabel "length"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/3181fd8b-1122-4d8c-8ec7-5661da336879>
   a rdfs:Class ;
@@ -3554,6 +3576,8 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/32e1707c-6678-4808-bd1b-236fe50dd6e3>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/72fa6b78-56cb-4c04-a112-fd88f3f45c99> ;
   skos:altLabel "bestrating, plaveisel"@nl ;
   skos:definition "Open verharding bestaande uit geprefabriceerde of natuurlijk elementen (bron: CROW 156)"@nl ;
@@ -3623,15 +3647,6 @@ cbnl:
   rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:prefLabel "lock culvert"@en ;
   skos:prefLabel "omloopriool"@nl ;
-  cbnl:state "proposed" ;
-  cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
-.
-<https://bimloket.nl/data/def/cbnl/3502dd34-ec8f-41d3-b6c2-4f5a02a3b65d>
-  a rdfs:Class ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/45c08a32-796c-40be-973f-f88a477bac54> ;
-  skos:definition "een getal dat wordt gebruikt om de plaats van een punt aan te geven."@nl ;
-  skos:prefLabel "coördinaat"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
@@ -3881,6 +3896,8 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/39aa56dd-684c-43bc-a45c-cc33a03cf1f8>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/72fa6b78-56cb-4c04-a112-fd88f3f45c99> ;
   skos:definition "Open verharding bestaande uit een laag ongebonden grind en/of steenslag. mijnsteen, schelpen en dergelijke. (bron: CROW 156)"@nl ;
   skos:prefLabel "ongebonden verharding"@nl ;
@@ -3917,7 +3934,7 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Handreiking prestatiegestuurde risicoanalyses" ;
   rdfs:subClassOf nen2660:Requirement ;
-  skos:definition "Eis die wordt gesteld wordt aan het systeem."@nl ;
+  skos:definition "Requirement die wordt gesteld wordt aan het systeem."@nl ;
   skos:prefLabel "systeemeis"@nl ;
   skos:prefLabel "system requirement"@en ;
   cbnl:state "proposed" ;
@@ -3972,18 +3989,22 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/3afd3b50-894a-4360-baad-15f344f1c0ab>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:bb0e8e3c-3379-4c7a-b860-2db24fbcb7e5 ;
   skos:altLabel "latitude"@nl ;
-  skos:definition "is de geografische positieaanduiding die de hoek die de lijn loodrecht op het model van de Aarde met het vlak van de evenaar maakt."@nl ;
+  skos:definition "is de geografische positieaanduiding middels denkbeeldige cirkels (parallelen) welke evenwijdig aan de evenaar lopen. De opdeling is in 180 graden. De evenaar is nul graden, de Noordpool is 90 graden Noord en de Zuidpool 90 graden Zuid."@nl ;
   skos:prefLabel "breedtegraad"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-10-27"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/3b97b108-ab4b-49d1-bc27-5c40ad833b4d>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/213397e7-4253-4d4d-adb8-c7141530f321> ;
-  skos:definition "Bermbeveiligingsconstructie (ROA-VIB: constructie) ter afscherming van een obstakel, die botsingsenergie kan absorberen en bij aanrijding voertuigen met zo weinig mogelijk schade van richting doet veranderen of tot stilstand brengt. (bron: CROW 156)"@nl ;
+  skos:definition "bermbeveiligingsconstructie (ROA-VIB: constructie) ter afscherming van een obstakel, die botsingsenergie kan absorberen en bij aanrijding voertuigen met zo weinig mogelijk schade van richting doet veranderen of tot stilstand brengt."@nl ;
   skos:prefLabel "obstacle protector"@en ;
   skos:prefLabel "obstakelbeveiliger"@nl ;
   cbnl:state "proposed" ;
@@ -4008,7 +4029,7 @@ cbnl:
   dct:references "Uniforme Administratieve Voorwaarden voor geïntegreerde contractvormen 2005" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:a15428a1-4742-4e80-a385-219c4261a513 ;
-  skos:definition "specificatie die als zodanig in de Basisovereenkomst aangemerkte contractdocument wordt genoemd dat door of namens de Opdrachtgever is vervaardigd, op basis waarvan de Opdrachtnemer zijn Aanbieding heeft opgesteld en ingediend."@nl ;
+  skos:definition "specificatie die als zodanig in de basisovereenkomst aangemerkte contractdocument wordt genoemd dat door of namens de opdrachtgever is vervaardigd, op basis waarvan de opdrachtnemer zijn aanbieding opstelt of heeft opgesteld en ingediend."@nl ;
   skos:prefLabel "tender specification"@en ;
   skos:prefLabel "vraagspecificatie"@nl ;
   cbnl:state "proposed" ;
@@ -4038,7 +4059,7 @@ cbnl:
   dct:references "CROW 156" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1487adc0-f66d-492c-89e4-bbc35843a636> ;
-  skos:definition "Bovenste verhardingslaag van de verharding."@nl ;
+  skos:definition "bovenste verhardingslaag van de verharding."@nl ;
   skos:prefLabel "deklaag"@nl ;
   skos:prefLabel "upper layer"@en ;
   cbnl:state "proposed" ;
@@ -4061,7 +4082,7 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/827e3253-e7e0-4101-b1b0-fddad81bfda1> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "fysieke eenheid van elektrische lading. Een Coulomb is gedefinieerd in termen van ampère en seconden. 1 C is gelijk aan 1 As (ampère-seconde), de hoeveelheid lading die vervoerd wordt door een elektrische stroom van 1 ampère gedurende 1 seconde."@nl ;
   skos:prefLabel "coulomb"@en ;
   skos:prefLabel "coulomb"@nl ;
@@ -4075,9 +4096,9 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "none" ;
-  rdfs:subClassOf cbnl:c18a520a-49e8-4af3-853d-291ed069d0be ;
+  rdfs:subClassOf nen2660:InformationObject ;
   skos:altLabel "waarneming"@nl ;
-  skos:definition "Kwalitatieve bewering over de werkelijkheid met een bepaald waarheidsgehalte, die het resultaat is van een waarnemingsproces."@nl ;
+  skos:definition "Information object die een kwalitatieve bewering over de werkelijkheid met een bepaald waarheidsgehalte vormt, die het resultaat is van een waarnemingsproces."@nl ;
   skos:prefLabel "observatie"@nl ;
   skos:prefLabel "observation"@en ;
   cbnl:state "proposed" ;
@@ -4236,7 +4257,7 @@ cbnl:
   dct:references "ISO 9000" ;
   rdfs:comment "none" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/77a66ebc-533d-4622-80a7-afd437d4910c> ;
-  skos:definition "plan om een langetermijn- of algehele doelstelling (3.7.1) te bereiken."@nl ;
+  skos:definition "plan om een langetermijn- of algehele doelstelling te bereiken."@nl ;
   skos:prefLabel "strategie"@nl ;
   skos:prefLabel "strategy"@en ;
   cbnl:state "proposed" ;
@@ -4524,13 +4545,15 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/4507d851-48aa-479a-8f24-27c77ab23ef7>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "period in time"@en ;
   skos:prefLabel "tijdperiode"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/4508c7e8-37a5-40fe-8a52-8163b55c315d>
   a rdfs:Class ;
@@ -4609,12 +4632,14 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/45c08a32-796c-40be-973f-f88a477bac54>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:b750bb4b-27c3-4455-a6e4-aa3cca4d51e1 ;
   skos:definition "een ruimtelijke locatiereferentie dat wordt gebruikt om de plaats van een punt aan te geven."@nl ;
   skos:prefLabel "coördinaat"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/45d1fadf-a167-45c1-8442-3a112b0a342c>
   a rdfs:Class ;
@@ -4751,6 +4776,7 @@ cbnl:
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/827e3253-e7e0-4101-b1b0-fddad81bfda1> ;
   skos:definition "fysieke eenheid voor de hoeveelheid stof van een systeem dat exact 6,022 140 76 × 1023 elementaire entiteiten bevat, welk getal, uitgedrukt in de eenheid mol-1, de vaste numerieke waarde van de constante van Avogadro NA is en het getal van Avogrado wordt genoemd."@nl ;
   skos:prefLabel "mol"@en ;
@@ -5073,7 +5099,7 @@ cbnl:
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "verplaatst i.o.m. Leo van Ruijven" ;
   rdfs:subClassOf nen2660:InformationObject ;
-  skos:definition "an information object with a fixed and structured amount of information that can be managed and interchanged as a unit between users and systems."@en ;
+  skos:definition "Information object with a fixed and structured amount of information that can be managed and interchanged as a unit between users and systems."@en ;
   skos:prefLabel "document"@en ;
   skos:prefLabel "document"@nl ;
   cbnl:state "proposed" ;
@@ -5116,10 +5142,10 @@ cbnl:
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "i.o.m. Leo expliciet genoemd en verplaatst naar Activity en apart genoemd. Stond eerst onder actieve functionele activiteit" ;
   rdfs:subClassOf nen2660:Activity ;
-  skos:definition "Activity (gedrag) (handeling, actie, werk) van een persoon, groep van personen (organisatie) of van een systeem richting een of meerdere (context)objecten. Een functie kan worden uigedrukt in een transformatie (omzetting, verandering) van een of meerdere inputs in een of meerdere outputs. Daarmee wordt een functie minimaal beschreven door een werkwoord en een zelfstandignaamwoord. Voorbeeld: personen vervoeren. Uitzondering hierop vormt en actie die dit al impliceert zoals: maatregel."@nl ;
+  skos:definition "Activity (gedrag) (handeling, actie, werk) van een persoon, groep van personen (organisatie) of van een systeem, richting een of meerdere (context)objecten. Een functie kan worden uigedrukt in een transformatie (omzetting, verandering) van een of meerdere inputs in een of meerdere outputs. Daarmee wordt een functie minimaal beschreven door een werkwoord en een zelfstandignaamwoord. Voorbeeld: personen vervoeren. Uitzondering hierop vormt een activiteit die dit al impliceert zoals: maatregel."@nl ;
   skos:prefLabel "functie"@nl ;
   skos:prefLabel "function"@en ;
-  cbnl:state "deleted" ;
+  cbnl:state "proposed" ;
   cbnl:stateComment "tweede iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
 .
@@ -5245,7 +5271,7 @@ cbnl:
   dct:references "CROW 156" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf nen2660:Mixture ;
-  skos:definition "Belangrijkst mengsel (grondstof) voor de productie van cement dat wordt vervaardigd uit kalk-, silicium-, aluminium- en ijzerhoudende stoffen."@nl ;
+  skos:definition "belangrijkst mengsel (grondstof) voor de productie van cement dat wordt vervaardigd uit kalk-, silicium-, aluminium- en ijzerhoudende stoffen."@nl ;
   skos:prefLabel "cement clinker"@en ;
   skos:prefLabel "cementklinker"@nl ;
   cbnl:state "proposed" ;
@@ -5295,7 +5321,7 @@ cbnl:
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf nen2660:Requirement ;
   skos:altLabel "eis aan aspect"@nl ;
-  skos:definition "Beschrijving van de systeemeis aan een systeem (LSE2: product of dienst) aangaande een aspect."@nl ;
+  skos:definition "Requirement aan een systeem (LSE2: product of dienst) aangaande een aspect."@nl ;
   skos:prefLabel "aspect requirement"@en ;
   skos:prefLabel "aspecteis"@nl ;
   cbnl:state "proposed" ;
@@ -5430,11 +5456,13 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/547a3e2f-7e52-4f36-9e50-d5c328048b2d>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Wet milieubeheer" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   rdfs:comment "is afvalwater niet een speciaal soort afvalstof?" ;
   rdfs:subClassOf cbnl:b0bc2bd5-859d-4302-8c14-92cdbc3127ea ;
-  skos:definition "Materiaal dat hoofdzakelijk uit water bestaat waarvan de houder zich ontdoet, voornemens is zich te ontdoen of zich moet ontdoen."@nl ;
+  skos:definition "materiaal dat hoofdzakelijk uit water bestaat waarvan de houder zich ontdoet, voornemens is zich te ontdoen of zich moet ontdoen."@nl ;
   skos:prefLabel "afvalwater"@nl ;
   skos:prefLabel "waste water"@en ;
   cbnl:state "proposed" ;
@@ -5626,7 +5654,7 @@ cbnl:
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "i.o.m. Leo verplaatst naar functie." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/4f3877b2-8528-4efd-b84a-036d37f5afd3> ;
-  skos:definition "Functie (ingreep) die moet worden uitgevoerd om een doelstelling te bereiken."@nl ;
+  skos:definition "functie (ingreep) die moet worden uitgevoerd om een doelstelling te bereiken."@nl ;
   skos:prefLabel "maatregel"@nl ;
   skos:prefLabel "measure"@en ;
   cbnl:state "proposed" ;
@@ -5682,9 +5710,9 @@ cbnl:
   dct:modified "2021-10-27T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "none" ;
   rdfs:comment "geintroduceert voor NEN 2767-4" ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/13334548-925b-4974-9d65-ecd85905b6cd> ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/8704b333-91c3-46d7-b6ed-ef1c7c9b8545> ;
   skos:altLabel "bouwdeel"@nl ;
-  skos:definition "component dat een nen 2767-4 bouwdeel vormt."@nl ;
+  skos:definition "onderdeel dat een nen 2767-4 bouwdeel vormt."@nl ;
   skos:prefLabel "nen 2767-4 bouwdeel"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -5839,8 +5867,10 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/5c201b1a-3af5-4bf1-9b7c-4e5471ae3d0e>
   a rdfs:Class ;
-  rdfs:subClassOf cbnl:a2ad8dc3-278f-43f1-99f8-767d16518e75 ;
-  skos:definition "Verharding die ondoorlatend is voor hemelwater en grotendeels of geheel bestaat uit lagen die slechts door definitieve destructie te verwijderen zijn. (bron: CROW 156)"@nl ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/0310d105-58fb-49a0-85b6-9b80515f0aa0> ;
+  skos:definition "bouwconstructie in de rol van deklaag die ondoorlatend is voor hemelwater en grotendeels of geheel bestaat uit lagen die slechts door definitieve destructie te verwijderen zijn. (bron: CROW 156)"@nl ;
   skos:prefLabel "gesloten verharding"@nl ;
   skos:prefLabel "pavement"@en ;
   cbnl:state "proposed" ;
@@ -5898,7 +5928,7 @@ cbnl:
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/827e3253-e7e0-4101-b1b0-fddad81bfda1> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "square meter"@en ;
   skos:prefLabel "vierkante meter"@nl ;
@@ -6014,9 +6044,9 @@ cbnl:
   dct:references "Wet luchtvaart" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf cbnl:dcbe4704-2748-4fa3-959b-44082e682a4d ;
-  skos:definition "het verkeer (geheel der verplaatsingen) van luchtvaartuigen in de lucht of op een luchthaven, alsmede het gebruik van het luchtruim door toestellen die geen luchtvaartuigen zijn."@nl ;
+  skos:definition "verkeer (geheel der verplaatsingen) van luchtvaartuigen in de lucht of op een luchthaven, alsmede het gebruik van het luchtruim door toestellen die geen luchtvaartuigen zijn."@nl ;
   skos:prefLabel "air traffic"@en ;
-  skos:prefLabel "luchtverkeer"@nl ;
+  skos:prefLabel "luchtvaartverkeer"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
@@ -6037,9 +6067,8 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Gellish library" ;
   rdfs:comment "TODO engelse definitie uit Gellish library." ;
-  rdfs:subClassOf nen2660:DiscreteObject ;
-  rdfs:subClassOf nen2660:TechnicalEntity ;
-  skos:definition "discrete and technical object that is capable of life or which is alive. A lifeform may have existed in the past."@gb ;
+  rdfs:subClassOf nen2660:PhysicalObject ;
+  skos:definition "discrete and technical object that is capable of life or which is alive. A lifeform may have existed in the past."@en ;
   skos:prefLabel "biological object"@en ;
   skos:prefLabel "biologisch object"@nl ;
   cbnl:state "proposed" ;
@@ -6101,11 +6130,13 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/61206b80-2842-47c8-81ad-13046aa56391>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Wet vervoer gevaarlijke stoffen" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   rdfs:comment "is dit geen verzameling i.p.v. een rol?" ;
   rdfs:subClassOf cbnl:b0bc2bd5-859d-4302-8c14-92cdbc3127ea ;
-  skos:definition """Materiaal verzameld onder een of meerdere categorieen uit onderstaande lijst:
+  skos:definition """materiaal verzameld onder een of meerdere categorieen uit onderstaande lijst:
 a. ontplofbare stoffen en voorwerpen,
 b. samengeperste, vloeibaar gemaakte of onder druk opgeloste gassen,
 c. brandbare vloeistoffen,
@@ -6146,7 +6177,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   dct:references "CROW 156" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf nen2660:Mixture ;
-  skos:definition "Hydraulisch mengsel (materiaal), ten dele of in hoofdzaak bestaande uit (fijn) gemalen cementklinker, waaraan gewoonlijk een geringe hoeveelheid gips of anhydriet is toegevoegd als bindtijdregelaar."@nl ;
+  skos:definition "hydraulisch mengsel (materiaal), ten dele of in hoofdzaak bestaande uit (fijn) gemalen cementklinker, waaraan gewoonlijk een geringe hoeveelheid gips of anhydriet is toegevoegd als bindtijdregelaar."@nl ;
   skos:prefLabel "cement"@en ;
   skos:prefLabel "cement"@nl ;
   cbnl:state "proposed" ;
@@ -6337,7 +6368,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/827e3253-e7e0-4101-b1b0-fddad81bfda1> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "cubic meter"@en ;
   skos:prefLabel "kubieke meter"@nl ;
@@ -6356,6 +6387,19 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:definition "een ruimtelijk structuur element gevormd door een strook land/gebied (ook in de lucht) liggend tussen twee (of meerdere) territoria of \"mainports\", waardoor vervoer van goederen/personen plaatsvindt." ;
   skos:prefLabel "corridor"@en ;
   skos:prefLabel "corridor"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie plus vervallen dubbel voorkomen van ruimtelijk gebied." ;
+  cbnl:stateDate "2022-01-01"^^xsd:date ;
+.
+<https://bimloket.nl/data/def/cbnl/652cdbb0-9885-4530-acfa-784cecd28bed_1>
+  a rdfs:Class ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-01T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia" ;
+  rdfs:comment "geintroduceerd i.o.m. Leo van Ruijven" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "een ruimtelijk structuur element gevormd door een strook land/gebied (ook in de lucht) liggend tussen twee (of meerdere) territoria of \"mainports\", waardoor vervoer van goederen/personen plaatsvindt." ;
+  skos:prefLabel "vergaderruimte"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie plus vervallen dubbel voorkomen van ruimtelijk gebied." ;
   cbnl:stateDate "2022-01-01"^^xsd:date ;
@@ -6420,7 +6464,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   rdfs:comment "none" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
   skos:altLabel "steward"@en ;
-  skos:definition "rol van een persoon of organisatie die het bezit van een ander beheert."@nl ;
+  skos:definition "rol van een persoon of organisatie die het bezit veelal van een ander beheert."@nl ;
   skos:prefLabel "asset manager"@en ;
   skos:prefLabel "beheerder"@nl ;
   cbnl:state "proposed" ;
@@ -6472,9 +6516,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
 .
 <https://bimloket.nl/data/def/cbnl/6781b562-e998-4821-b81e-9b5740bea0d9>
   a rdfs:Class ;
-  dct:created "2020-01-06T20:08:59.184Z"^^xsd:dateTime ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2020-12-16T14:08:00.036Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
@@ -6482,6 +6524,9 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:definition "Bulk materie, bestaand uit een aaneengesloten vloeistofmassa."@nl ;
   skos:prefLabel "amount of liquid matter"@en ;
   skos:prefLabel "hoeveelheid vloeibare materie"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/6794ce85-ec40-4f2e-a495-02637f9e51e5>
   a rdfs:Class ;
@@ -6564,7 +6609,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   dct:references "NPR 4768" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf cbnl:cd79f4f7-6914-4fc5-b6f8-53f160af7376 ;
-  skos:definition "Aangelegd infrawerk (grondlichaam) dat het land beschermt tegen overstroming."@nl ;
+  skos:definition "infrawerk (grondlichaam) dat het land beschermt tegen overstroming."@nl ;
   skos:prefLabel "dijk"@nl ;
   skos:prefLabel "dike"@en ;
   cbnl:state "proposed" ;
@@ -6598,8 +6643,8 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "NVN-ISO/IEC TS 33060" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf cbnl:c18a520a-49e8-4af3-853d-291ed069d0be ;
-  skos:definition "statement that initiates a defined course of action or change in order to fulfil a need."@en ;
+  rdfs:subClassOf nen2660:InformationObject ;
+  skos:definition "Information object that initiates a defined course of action or change in order to fulfil a need."@en ;
   skos:prefLabel "request"@en ;
   skos:prefLabel "verzoek"@nl ;
   cbnl:state "proposed" ;
@@ -6814,6 +6859,8 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
 .
 <https://bimloket.nl/data/def/cbnl/6e4ef4cb-15c3-4fd3-9796-50c85a410e10>
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:altLabel "speed"@en ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
@@ -6821,7 +6868,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:prefLabel "velocity"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/6e876ecc-61c7-4841-9dc0-24abdb3f6b4c>
   a rdfs:Class ;
@@ -7151,12 +7198,10 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
 .
 <https://bimloket.nl/data/def/cbnl/72fa6b78-56cb-4c04-a112-fd88f3f45c99>
   a rdfs:Class ;
-  rdfs:subClassOf cbnl:a2ad8dc3-278f-43f1-99f8-767d16518e75 ;
-  skos:definition "Verharding die doorlatend is voor hemelwater en bestaat uit ongebonden materialen of in verband aangebrachte elementen die gemakkelijk aan te brengen of weer te verwijderen zijn. (bron: CROW 156)"@nl ;
-  skos:definition "altDef: Verharding gevormd door in verband aangebrachte elementen van beperkte afmetingen  zoals bijvoorbeeld klinkers en tegels. (bron: Informatiemodel Grootschalige topografie)"@nl ;
-  skos:definition "altDef: Wegdek dat uit losse elementen zoals klinkers of tegels opgebouwd wordt. In tegenstelling tot een gesloten verharding heeft een open verharding voegen en is in meer of mindere mate water- en lucht doorlatend. (bron: ROA Veilige Inrichting van Bermen)"@nl ;
-  skos:definition "altDef: de oppervlakte van de open verharding van het afvoerend oppervlak dat op de vrijvervalleiding loost (bron: Aquo Lex en Objectencatalogus)"@nl ;
-  skos:definition "prefDef: Verharding die doorlatend is voor hemelwater en bestaat uit ongebonden materialen of in verband aangebrachte elementen die gemakkelijk aan te brengen of weer te verwijderen zijn. (bron: CROW 156)"@nl ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/0310d105-58fb-49a0-85b6-9b80515f0aa0> ;
+  skos:definition "bouwconstructie in de rol van deklaag die doorlatend is voor hemelwater en bestaat uit ongebonden materialen of in verband aangebrachte elementen die gemakkelijk aan te brengen of weer te verwijderen zijn."@nl ;
   skos:prefLabel "open verharding"@nl ;
   skos:prefLabel "permeable pavement"@en ;
   cbnl:state "proposed" ;
@@ -7225,7 +7270,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/842eb336-f05b-4bb6-b4c7-9570fdd2427f> ;
   skos:altLabel "gebonden fundering"@nl ;
-  skos:definition "Relatief stijve en sterke funderingslaag bestaande uit hydraulisch of bitumineus, cement- of hydraulisch gebonden mineraal aggregaat."@nl ;
+  skos:definition "relatief stijve en sterke funderingslaag bestaande uit hydraulisch of bitumineus, cement- of hydraulisch gebonden mineraal aggregaat."@nl ;
   skos:prefLabel "funderingslaag (gebonden)"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -7593,19 +7638,10 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:comment "none" ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/5f939285-3a7a-42d8-8fa3-e32e7234cf8c> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "een groep organismen"@nl ;
   skos:prefLabel "organism group"@en ;
   skos:prefLabel "organisme groep"@nl ;
-  cbnl:state "proposed" ;
-  cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
-.
-<https://bimloket.nl/data/def/cbnl/796dbfab-a848-41c8-a976-87ec29046fdd>
-  a rdfs:Class ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/45c08a32-796c-40be-973f-f88a477bac54> ;
-  skos:definition "een getal dat wordt gebruikt om de plaats van een punt aan te geven."@nl ;
-  skos:prefLabel "coördinaat"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
@@ -7956,8 +7992,8 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Regeling veiligheid primaire waterkeringen 2017" ;
   rdfs:comment "none" ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1e20be1f-7c72-48bd-ae27-c25c477bdda5> ;
-  skos:definition """Kunstwerk om water van een laag peil naar een hoog peil te brengen, waarvan de noodzaak kan liggen in wateroverschot aan de lage kant (afvoer) of in waterbehoefte in het gebied aan de hoge kant (aanvoer). Een gemaal is een samenstel van verschillende onderdelen:
+  rdfs:subClassOf cbnl:c2242d3f-dbc4-4b49-a15f-f4f172016d8e ;
+  skos:definition """bouwwerk, geen gebouw zijnde om water van een laag peil naar een hoog peil te brengen, waarvan de noodzaak kan liggen in wateroverschot aan de lage kant (afvoer) of in waterbehoefte in het gebied aan de hoge kant (aanvoer). Een gemaal is een samenstel van verschillende onderdelen:
 • één of meerdere doorvoerleidingen of -kokers
 • één of meerdere afsluitmiddelen
 • een gebouw met installaties."""@nl ;
@@ -7973,9 +8009,9 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Rijkswaterstaat Organisatie Structuur" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1759a1cc-cbf8-4017-9974-d89cded1a623> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:altLabel "dienst"@nl ;
-  skos:definition "Landelijke of regionale organisatie-eenheid, die een onderdeel vormt van het agentschap RWS. Een organisatie-onderdeel staat onder leiding van een HID. (vrij naar bron-definitie)"@nl ;
+  skos:definition "lijnorganisatie-eenheid, die een onderdeel vormt een organisatie-onderdeel staat onder leiding van een directeur. (vrij naar bron-definitie)"@nl ;
   skos:prefLabel "organisatieonderdeel"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -8020,7 +8056,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf cbnl:dcbe4704-2748-4fa3-959b-44082e682a4d ;
   skos:altLabel "shipping traffic"@en ;
-  skos:definition "het verkeer (het geheel van verplaatsingen) van vaartuigen over een vaarweglink."@nl ;
+  skos:definition "verkeer (het geheel van verplaatsingen) van vaartuigen over een vaarweglink."@nl ;
   skos:prefLabel "scheepvaartverkeer"@nl ;
   skos:prefLabel "waterway traffic"@en ;
   cbnl:state "proposed" ;
@@ -8340,7 +8376,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-27T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "none" ;
-  rdfs:comment "geintroduceert voor ifcElement." ;
+  rdfs:comment "geintroduceert voor o.m. ifcElement." ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
   skos:altLabel "element"@en ;
@@ -8483,7 +8519,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   rdfs:comment "i.o.m. Leo verplaatst. Bovendien beheerobject en asset samengevoegd. " ;
   rdfs:comment "vrij naar IFC 4.1" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
-  skos:definition "rol van een uniek identificeerbaar object met waarde of dat gebruikt kan worden als een eenheid."@nl ;
+  skos:definition "rol van een uniek identificeerbaar object met waarde voor een individu en/of organisatie dat gebruikt kan worden als een eenheid."@nl ;
   skos:prefLabel "asset"@en ;
   skos:prefLabel "beheerobject"@nl ;
   cbnl:state "proposed" ;
@@ -8716,8 +8752,8 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Is een apparaat niet een installatiedeel en installatiedeel slechts een ron van apparaat?" ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/13334548-925b-4974-9d65-ecd85905b6cd> ;
-  skos:definition "component dat een onderdeel van een installatie vormt."@nl ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/8704b333-91c3-46d7-b6ed-ef1c7c9b8545> ;
+  skos:definition "onderdeel van een installatie."@nl ;
   skos:prefLabel "installatiedeel"@nl ;
   skos:prefLabel "installation part"@en ;
   cbnl:state "proposed" ;
@@ -9084,7 +9120,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf nen2660:GeometricEntity ;
   skos:altLabel "tijdsperiode"@nl ;
-  skos:definition "geometrische entiteit die kan worden afgebeeld op de concrete (fysieke) tijd, die we in de werkelijkheid ervaren."@nl ;
+  skos:definition "Geometrische entiteit die kan worden afgebeeld op de concrete (fysieke) tijd, die we in de werkelijkheid ervaren."@nl ;
   skos:prefLabel "temporal region"@en ;
   skos:prefLabel "temporeel gebied"@nl ;
   cbnl:state "proposed" ;
@@ -9142,7 +9178,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:references "IFC-4.1" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
-  skos:definition "Type of built element in a road or other paved area to provide an even surface sustaining loads from vehicles or pedestrians, usually comprising several courses. NOTE Definition from ISO 6707-1: road, runway, or similar construction above the subgrade."@nl ;
+  skos:definition "bouwconstructie in a road or other paved area to provide an even surface sustaining loads from vehicles or pedestrians, usually comprising several courses. NOTE Definition from ISO 6707-1: road, runway, or similar construction above the subgrade."@nl ;
   skos:prefLabel "verharding"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -9390,7 +9426,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "none" ;
   rdfs:subClassOf nen2660:DiscreteObject ;
-  skos:definition "Een discreet object dat gegraven of geboorde kokervormige diepte is waarin zich (vloei)stoffen bevinden."@nl ;
+  skos:definition "Discreet object dat gegraven of geboorde kokervormige diepte is waarin zich (vloei)stoffen bevinden."@nl ;
   skos:prefLabel "put"@nl ;
   skos:prefLabel "well"@en ;
   cbnl:state "proposed" ;
@@ -9446,7 +9482,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:references "Inspectiekader RWS" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:c8dcffa9-0a72-46e1-9bbd-5fd66e497668 ;
-  skos:definition "Niet gericht inspecteren, in het kader van de korte termijn zorgplicht (directe aansprakelijkheidsrisicos) van een beheerder."@nl ;
+  skos:definition "niet gericht inspecteren, in het kader van de korte termijn zorgplicht (directe aansprakelijkheidsrisicos) van een beheerder."@nl ;
   skos:prefLabel "schouwen"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -9495,7 +9531,7 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/827e3253-e7e0-4101-b1b0-fddad81bfda1> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "newton"@en ;
   skos:prefLabel "newton"@nl ;
@@ -9559,8 +9595,8 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "CROW 156" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1e20be1f-7c72-48bd-ae27-c25c477bdda5> ;
-  skos:definition "Kokervormig kunstwerk onder een of meerdere wegen, spoorwegen, waterwegen en/of andere hindernissen, als ondergrondse doorgang voor verkeer, leidingen of dieren."@nl ;
+  rdfs:subClassOf cbnl:c2242d3f-dbc4-4b49-a15f-f4f172016d8e ;
+  skos:definition "bouwwerk, geen gebouw zijnde in de vorm van een koker onder een of meerdere wegen, spoorwegen, waterwegen en/of andere hindernissen, als ondergrondse doorgang voor verkeer, leidingen of dieren."@nl ;
   skos:prefLabel "tunnel"@en ;
   skos:prefLabel "tunnel"@nl ;
   cbnl:state "proposed" ;
@@ -9617,9 +9653,9 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   dct:references "naar AOA Begrippen- en Definitielijst" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:dcbe4704-2748-4fa3-959b-44082e682a4d ;
-  skos:definition "verkeer (geheel van verplaatsingen) van spoorvoertuigen met hun bestuurder en passagiers over een spoorweglink."@nl ;
+  skos:definition "verkeer (geheel van verplaatsingen) van spoorvoertuigen al of niet met hun bestuurder en passagiers over een spoorweglink."@nl ;
   skos:prefLabel "railway traffic"@en ;
-  skos:prefLabel "spoorverkeer"@nl ;
+  skos:prefLabel "spoorwegverkeer"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
@@ -9905,7 +9941,7 @@ cbnl:a28b0c40-7787-4dc4-9505-9fbda115ba9f
 .
 cbnl:a2ad8dc3-278f-43f1-99f8-767d16518e75
   a rdfs:Class ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/0310d105-58fb-49a0-85b6-9b80515f0aa0> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition """altDef: 1) Gedeelte van de wegconstructie boven de onderbouw (inclusief funderingsconstructie), of het gedeelte van de wegconstructie op een kruising (NOCLA)
 2) Uit lagen of elementen opgebouwde constructie op Onderbouw welke de verkeersbelastingen naar deze Onderbouw spreidt (bron: CS 22)"""@nl ;
   skos:definition "altDef: Constructie bestaande uit een of meer verhardingslagen, om verkeer over het terrein mogelijk te maken. (bron: Objecttypenbibliotheek Rijkswaterstaat (NL))"@nl ;
@@ -9915,7 +9951,7 @@ cbnl:a2ad8dc3-278f-43f1-99f8-767d16518e75
   skos:definition "altDef: TODO (bron: Bedrijfsobjectenmodel Rijkswaterstaat)"@nl ;
   skos:definition "altDef: Verzameling van alle verhardingslagen en wegfundering. M.a.w. de afdracht en spreiding van de belasting door het verkeer naar de ondergrond (bron: Kader wegontwerpproces)"@nl ;
   skos:definition "altDef: Voor het verkeer aangebrachte verhardingsconstructie van een verkeersbaan. (bron: Data-eisen Digitaal Topografisch Bestand)"@nl ;
-  skos:definition "prefDef: Gedeelte van de wegconstructie boven de onderbouw. (bron: CROW 156)"@nl ;
+  skos:definition "prefDef: bouwconstructie Gedeelte van de wegconstructie boven de onderbouw. (bron: CROW 156)"@nl ;
   skos:prefLabel "bovenbouw (weg)"@nl ;
   skos:prefLabel "paving"@en ;
   cbnl:state "proposed" ;
@@ -10078,7 +10114,7 @@ cbnl:a5bbda95-f189-48ca-a64a-5d8413cd9a93
   dct:references "Vraagspecificatie Eisen DenC (oud)" ;
   rdfs:comment "none" ;
   rdfs:subClassOf nen2660:Requirement ;
-  skos:definition "Eis die wordt gesteld aan een proces van een opdrachtnemer."@nl ;
+  skos:definition "Requirement die wordt gesteld aan een proces van een opdrachtnemer."@nl ;
   skos:prefLabel "proceseis"@nl ;
   skos:prefLabel "process requirement"@en ;
   cbnl:state "proposed" ;
@@ -10229,12 +10265,7 @@ cbnl:a888e924-bcab-4530-8362-2fd62c616e82
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf nen2660:Requirement ;
   skos:altLabel "eis aan functie"@nl ;
-  skos:definition "altDef: De beschrijving van een gewenste eigenschap aangaande een primaire functie van een product(object) of dienst. (bron: WWB0001)"@nl ;
-  skos:definition "altDef: Eeen primaire eis aan de functie. Deze worden per functie beschreven.  Er is in vervat wat het systeem moet kunnen, beschreven in kwantitatieve termen. Vaak heeft een functionele eis betrekking op de capaciteit die een systeem moet leveren bij het vervullen van de functie. (bron: Netwerkschakels in relatie tot prestatiemanagement)"@nl ;
-  skos:definition "altDef: Eis die de gewenste functionaliteit (functie) expliciteert. (bron: Vraagspecificatie Algemeen PRC (oud))"@nl ;
-  skos:definition "altDef: Eis, die aan de inrichting van een watersysteem of beheersobject gesteld wordt, om te voldoen aan de gebruiksfuncties ervan en in kwaliteitseisen (waaronder technische eisen) zijn te vertalen. (bron: Richtlijnen Vaarwegen)"@nl ;
-  skos:definition "altDef: Primaire eis die gesteld wordt aan de functie. (bron: Handreiking prestatiegestuurde risicoanalyses)"@nl ;
-  skos:definition "prefDef: Eis die beschrijft welke functie het systeem moet vervullen, in kwalitatieve en/of kwantitatieve termen, inclusief de condities waaronder de functie moet worden vervuld. (bron: Sjabloon Systeemspecificatie)"@nl ;
+  skos:definition "Requirement die beschrijft welke functie het systeem moet vervullen, in kwalitatieve en/of kwantitatieve termen, inclusief de condities waaronder de functie moet worden vervuld. (bron: Sjabloon Systeemspecificatie)"@nl ;
   skos:prefLabel "functional requirement"@en ;
   skos:prefLabel "functionele eis"@nl ;
   cbnl:state "proposed" ;
@@ -10305,13 +10336,15 @@ cbnl:a9ce67a3-e46c-4cf8-9bf8-95e5eb2c6a65
 .
 cbnl:aa02de2b-0b52-4fe3-b763-3caaabd06b83
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "mass"@en ;
   skos:prefLabel "massa"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:aa23b11f-e1bb-449e-bfbe-f7aad803a9d2
   a rdfs:Class ;
@@ -10320,7 +10353,7 @@ cbnl:aa23b11f-e1bb-449e-bfbe-f7aad803a9d2
   dct:references "ISO 9000" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/52d6c2d8-6b26-465c-9ed5-333d3d62d787> ;
-  skos:definition "aspecteis (3.6.4) met betrekking tot kwaliteit (3.6.2)."@nl ;
+  skos:definition "aspecteis met betrekking tot kwaliteit."@nl ;
   skos:prefLabel "kwaliteitseis"@nl ;
   skos:prefLabel "quality requirement"@en ;
   cbnl:state "proposed" ;
@@ -10506,6 +10539,8 @@ cbnl:ad60e8e0-a1fc-4fc2-a4a8-33c74915c1ee
 .
 cbnl:ad768fd6-cb3f-44da-bbb7-3ee5a7a0ba13
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "ISO 80000-3:2019" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/316964cf-fb2a-45ec-8912-8877becbd170> ;
   skos:definition "minimum length of a straight line segment between a point and a reference line or reference surface."@en ;
@@ -10513,7 +10548,7 @@ cbnl:ad768fd6-cb3f-44da-bbb7-3ee5a7a0ba13
   skos:prefLabel "hoogte"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:ad8105b3-9ee5-43d4-9720-062f0063b815
   a rdfs:Class ;
@@ -10528,10 +10563,12 @@ cbnl:ad8105b3-9ee5-43d4-9720-062f0063b815
 .
 cbnl:ad8452d3-5e27-4969-a670-533392691c7e
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Besluit bodemkwaliteit" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:b0bc2bd5-859d-4302-8c14-92cdbc3127ea ;
-  skos:definition "Materiaal waarin de totaalgehalten aan silicium, calcium of aluminium tezamen meer dan 10 gewichtsprocent van dat materiaal bedragen, uitgezonderd vlakglas, metallisch aluminium, grond of baggerspecie, dat is bestemd om te worden toegepast."@nl ;
+  skos:definition "materiaal waarin de totaalgehalten aan silicium, calcium of aluminium tezamen meer dan 10 gewichtsprocent van dat materiaal bedragen, uitgezonderd vlakglas, metallisch aluminium, grond of baggerspecie, dat is bestemd om te worden toegepast."@nl ;
   skos:prefLabel "bouwstof"@nl ;
   skos:prefLabel "building material"@en ;
   cbnl:state "proposed" ;
@@ -10660,9 +10697,9 @@ cbnl:b0914c2b-7928-4639-b99a-7ea25eaf5a31
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/14b23215-d51e-49f8-8fcf-6d68d793c9e2> ;
+  rdfs:subClassOf nen2660:InformationObject ;
   skos:altLabel "non-conformiteit"@nl ;
-  skos:definition "verificatie, waarbij de mogelijke of feitelijke werkelijkheid niet voldoet aan de verzameling van gespecificeerde eisen."@nl ;
+  skos:definition "Informatie object waarbij de mogelijke of feitelijke werkelijkheid niet voldoet aan de verzameling van gespecificeerde eisen."@nl ;
   skos:prefLabel "afwijking"@nl ;
   skos:prefLabel "nonconformity"@en ;
   cbnl:state "proposed" ;
@@ -10747,13 +10784,15 @@ cbnl:b1a21ae5-cffb-4494-8cca-21bebb1251d8
 .
 cbnl:b235dc25-95ab-402b-93e6-f27a5b06641e
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "electric charge"@en ;
   skos:prefLabel "elektrische lading"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:b2613218-063e-49a6-b5fe-4967953ae7b1
   a rdfs:Class ;
@@ -10810,13 +10849,15 @@ cbnl:b330200b-7db3-413e-bb9a-0ddb86e45bc5
 .
 cbnl:b38df359-a44c-4498-ac42-fd1800d41187
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "force"@en ;
   skos:prefLabel "kracht"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:b3cb47e0-5cf8-4f02-8f49-143e7135d56d
   a rdfs:Class ;
@@ -10944,7 +10985,7 @@ cbnl:b5dbb914-378e-41cf-80a8-d32b3d7b86d1
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "none" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/6725ac29-2fe5-4e33-9219-8b926aa44a56> ;
-  skos:definition "organisatie die in het leven wordt geroepen door een formele privaatrechtelijke handeling, zoals een notariele akte."@nl ;
+  skos:definition "formele organisatie die in het leven wordt geroepen door een formele privaatrechtelijke handeling, zoals een notariele akte."@nl ;
   skos:prefLabel "privaatrechtelijke organisatie"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -11018,13 +11059,15 @@ cbnl:b70e1819-2182-4c4d-ad42-4853486a5125
 .
 cbnl:b750bb4b-27c3-4455-a6e4-aa3cca4d51e1
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:ecd1f8b5-cd38-418e-b4cc-e2f77bc6458f ;
   skos:definition "Ruimtelijke locatie, vorm of geometrie van een entiteit t.o.v. een ruimtelijk locatiereferentiesysteem (bron: AOA Begrippen- en Definitielijst)"@nl ;
   skos:prefLabel "ruimtelijke locatiereferentie"@nl ;
   skos:prefLabel "spatial location reference"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:b765460b-cb42-4897-895e-7b685b6109c2
   a rdfs:Class ;
@@ -11106,8 +11149,10 @@ cbnl:b8e0c2e0-197c-4ffa-8631-ccf5de42fe77
 .
 cbnl:b8f268c4-351b-47a3-93b1-ab13dcdea010
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:f688b252-0283-4187-a309-19538546fec4 ;
-  skos:definition "Geleideconstructie in de vorm van het New-Jersey profiel. (bron: CROW 156)"@nl ;
+  skos:definition "geleideconstructie in de vorm van het New-Jersey profiel. (bron: CROW 156)"@nl ;
   skos:prefLabel "geleidebarrier"@nl ;
   skos:prefLabel "guard barrier"@en ;
   cbnl:state "proposed" ;
@@ -11163,7 +11208,7 @@ cbnl:ba6cfc5c-1653-4366-947b-9c11755ae93c
   dct:references "NEN 2660-1" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf cbnl:c8dcffa9-0a72-46e1-9bbd-5fd66e497668 ;
-  skos:definition "Gestandaardiseerde wijze van inspecteren (werkwijze) voor de opname van technische gebreken en de bepaling van de conditie van een bouwdeel."@nl ;
+  skos:definition "gestandaardiseerde wijze van inspecteren (werkwijze) voor de opname van technische gebreken en de bepaling van de conditie van een fysiek object."@nl ;
   skos:prefLabel "conditiemeten"@nl ;
   skos:prefLabel "to asses condition"@en ;
   cbnl:state "proposed" ;
@@ -11172,12 +11217,14 @@ cbnl:ba6cfc5c-1653-4366-947b-9c11755ae93c
 .
 cbnl:bb0e8e3c-3379-4c7a-b860-2db24fbcb7e5
   a rdfs:Class ;
-  rdfs:subClassOf cbnl:b750bb4b-27c3-4455-a6e4-aa3cca4d51e1 ;
-  skos:definition "een ruimtelijke locatiereferentie waarvan de waarde wordt gebruikt om eendimensionale waarde van een punt aan te geven."@nl ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/45c08a32-796c-40be-973f-f88a477bac54> ;
+  skos:definition "een coördinaat waarmee een locatie op aarde numeriek wordt vastgelegd met breedtegraad, lengtegraad en eventueel hoogte ten opzichte van een referentievlak."@nl ;
   skos:prefLabel "geografische positieaanduiding"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:bb38ec7d-72ef-4534-9cbb-a50aada50266
   a rdfs:Class ;
@@ -11186,7 +11233,7 @@ cbnl:bb38ec7d-72ef-4534-9cbb-a50aada50266
   dct:references "kennisconsult.nl" ;
   rdfs:comment "none" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/184d2e0e-6053-4425-8a44-bbb17eaa3588> ;
-  skos:definition "Team van projectmedewerkers onder leiding van een teamleider belast met het bereiken van een project(deel)resultaat."@nl ;
+  skos:definition "werkorganisatie-eenheid van projectmedewerkers onder leiding van een projectleider belast met het bereiken van een project(deel)resultaat."@nl ;
   skos:prefLabel "project team"@en ;
   skos:prefLabel "projectteam"@nl ;
   cbnl:state "proposed" ;
@@ -11273,7 +11320,7 @@ cbnl:bd3fe634-d6e8-4659-bf29-aa4d866ad9eb
   dct:modified "2021-10-27T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/4f3877b2-8528-4efd-b84a-036d37f5afd3> ;
-  skos:definition "een functie die het kruisen van verkeer faciliteert."@nl ;
+  skos:definition "functie die het kruisen van verkeer faciliteert."@nl ;
   skos:prefLabel "kruisen verkeer"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -11409,9 +11456,23 @@ cbnl:be8fa4c0-e6bd-4ea0-b771-c42f172e80e2
   dct:references "Handreiking prestatiegestuurde risicoanalyses" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf nen2660:FunctionalEntity ;
-  skos:definition "Een fysiek object dat een samenhangend geheel van (fysieke) onderdelen dat is bedoeld om een bepaalde functie te vervullen."@nl ;
+  skos:definition "Een Functioneel object dat een samenhangend geheel van (fysieke) onderdelen dat is bedoeld om een bepaalde functie te vervullen."@nl ;
   skos:prefLabel "systeem"@nl ;
   skos:prefLabel "system"@en ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+cbnl:be8fa4c0-e6bd-4ea0-b771-c42f172e80e2_1
+  a rdfs:Class ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Handreiking prestatiegestuurde risicoanalyses" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:subClassOf nen2660:FunctionalEntity ;
+  skos:definition "Functionele entiteit dat een samenhangend geheel van (fysieke) onderdelen vormt dat is bedoeld om een bepaalde functie te vervullen."@nl ;
+  skos:prefLabel "functional interface"@en ;
+  skos:prefLabel "functioneel raakvlak"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
@@ -11462,8 +11523,8 @@ cbnl:bee892b2-e05a-4cb7-bf3a-c7e308aa54fa
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "none" ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/14b23215-d51e-49f8-8fcf-6d68d793c9e2> ;
-  skos:definition "verificatie, waarbij de mogelijke of feitelijke werkelijkheid voldoet aan de verzameling van gespecificeerde eisen."@nl ;
+  rdfs:subClassOf nen2660:InformationObject ;
+  skos:definition "Informatie object waarbij de mogelijke of feitelijke werkelijkheid voldoet aan de verzameling van gespecificeerde eisen."@nl ;
   skos:prefLabel "conformiteit"@nl ;
   skos:prefLabel "conformity"@en ;
   cbnl:state "proposed" ;
@@ -11482,12 +11543,14 @@ cbnl:bef97b59-6993-4527-8f19-f563c4f08e75
 .
 cbnl:bf1210fe-9f4e-4e06-b4d1-7d7d767eb1f1
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/45c08a32-796c-40be-973f-f88a477bac54> ;
   skos:definition "een coördinaat waarmee een locatie op aarde numeriek wordt vastgelegd met breedtegraad, lengtegraad en eventueel hoogte."@nl ;
   skos:prefLabel "geografisch coördinaat"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:bf13c792-ce9a-4c18-b524-f91ee40364f6
   a rdfs:Class ;
@@ -11578,7 +11641,7 @@ cbnl:c18a520a-49e8-4af3-853d-291ed069d0be
   rdfs:subClassOf nen2660:InformationObject ;
   skos:altLabel "propositie"@nl ;
   skos:altLabel "proposition"@en ;
-  skos:definition "informatie object over een feitelijke werkelijkheid of voorstelbare werkelijkheden, die het resultaat is van een denkproces."@nl ;
+  skos:definition "Informatie object over een feitelijke werkelijkheid of voorstelbare werkelijkheden, die het resultaat is van een denkproces."@nl ;
   skos:prefLabel "bewering"@nl ;
   skos:prefLabel "statement"@en ;
   cbnl:state "proposed" ;
@@ -11718,7 +11781,7 @@ cbnl:c4759e6b-03f2-4489-add2-e770ba336a36
   rdfs:comment "verplaatst i.o.m. Leo van Ruijven" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/4e3f975b-8dde-46ec-8d0b-f6ffbcb21d34> ;
   skos:definition "A documented way of formally conducting a customary course of action. (bron: NVN-ISO/IEC TS 33060)"@en ;
-  skos:definition "bewering dat een gespecificeerde wijze vormt van het uitvoeren van een activiteit of een proces (3.4.1)"@nl ;
+  skos:definition "document dat een gespecificeerde wijze vormt van het uitvoeren van een activiteit of een proces (3.4.1)"@nl ;
   skos:prefLabel "procedure"@en ;
   skos:prefLabel "procedure"@nl ;
   cbnl:state "proposed" ;
@@ -11784,6 +11847,7 @@ cbnl:c5e23a7b-b477-45bc-bb5e-cd27aa7c65f3
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/827e3253-e7e0-4101-b1b0-fddad81bfda1> ;
   skos:definition "fysieke eenheid van tijd, die volgt uit de vaste numerieke waarde van de cesiumfrequentie, de frequentie van de onverstoorde hyperfijnovergang van het cesium-133-atoom in grondtoestand, die is vastgesteld op 9 192 631 770, uitgedrukt in de eenheid Hz, die gelijk is aan s-1."@nl ;
   skos:prefLabel "second"@en ;
@@ -12154,7 +12218,7 @@ cbnl:cbc48c87-3d40-461a-a30d-f354dbc49347
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/5c201b1a-3af5-4bf1-9b7c-4e5471ae3d0e> ;
   skos:altLabel "asfalt"@nl ;
-  skos:definition "Gesloten verharding bestaande uit asfaltbeton of andere met bitumen gebonden materialen."@nl ;
+  skos:definition "gesloten verharding bestaande uit asfaltbeton of andere met bitumen gebonden materialen."@nl ;
   skos:prefLabel "asfaltverharding"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -12183,13 +12247,15 @@ cbnl:cc0e7856-04ad-424a-96c0-39badfd5a540
 .
 cbnl:cc17a991-325b-4194-805e-136be5481fa4
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/18d33f97-a525-4a91-b0c5-8494d07d1dcb> ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "fysieke grootheid"@nl ;
   skos:prefLabel "physical quantity"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:cc1b8bac-a164-4127-bb9b-2e05dd474eb2
   a rdfs:Class ;
@@ -12222,11 +12288,13 @@ cbnl:cc4e3c05-d5b6-49cd-b4ca-5fbba9130954
 .
 cbnl:cc63a380-fd0a-4fa5-b677-da6ed02623cc
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Wet milieubeheer" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   rdfs:subClassOf cbnl:b0bc2bd5-859d-4302-8c14-92cdbc3127ea ;
   skos:altLabel "afval"@nl ;
-  skos:definition "Materiaal dat een stof, mengsel of voorwerp vormt, waarvan de houder zich ontdoet, voornemens is zich te ontdoen of zich moet ontdoen."@nl ;
+  skos:definition "materiaal dat een stof, mengsel of voorwerp vormt, waarvan de houder zich ontdoet, voornemens is zich te ontdoen of zich moet ontdoen."@nl ;
   skos:prefLabel "afvalstof"@nl ;
   skos:prefLabel "waste"@en ;
   cbnl:state "proposed" ;
@@ -12237,12 +12305,9 @@ cbnl:cc8e7264-9694-4436-96f6-7ed0032d991c
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1cf5f351-98ee-409b-abcb-fe2b6fb529f4> ;
-  skos:definition """1. een samenstel, voorzien van of bestemd om te worden voorzien van een aandrijfsysteem — maar niet op basis van rechtstreeks gebruikte menselijke of dierlijke spierkracht —, van onderling verbonden onderdelen of componenten waarvan er ten minste één kan bewegen, en die samengevoegd worden voor een bepaalde toepassing;
-2. een samenstel als bedoeld onder het eerste streepje waaraan slechts de componenten voor de montage op de plaats van gebruik of voor de aansluiting op kracht of aandrijfbronnen ontbreken;
-3. een samenstel als bedoeld onder de eerste twee streepjes dat gereed is voor montage en dat alleen in deze staat kan functioneren na montage op een vervoermiddel of montage in een gebouw of bouwwerk;
-4. samenstellen van machines als bedoeld onder het eerste, tweede en derde streepje, en/of niet voltooide machines als bedoeld onder g) die, teneinde tot hetzelfde resultaat te komen, zodanig zijn opgesteld en worden bestuurd dat zij als één geheel functioneren;
-5. een samenstel van onderling verbonden onderdelen of componenten waarvan er ten minste één kan bewegen, en die in hun samenhang bestemd zijn voor het heffen van lasten en die uitsluitend rechtstreeks aangedreven worden door menselijke spierkracht. (bron: 2006/42/EG)"""@nl ;
+  skos:definition "apparaat, voorzien van of bestemd om te worden voorzien van een aandrijfsysteem — maar niet op basis van rechtstreeks gebruikte menselijke of dierlijke spierkracht —, bestaande uit onderling verbonden onderdelen of componenten waarvan er ten minste één kan bewegen, en die samengevoegd worden voor een bepaalde toepassing."@nl ;
   skos:prefLabel "engine"@en ;
   skos:prefLabel "machine"@nl ;
   cbnl:state "proposed" ;
@@ -12256,8 +12321,8 @@ cbnl:cd00adc1-17ee-492b-8779-f492050f12a4
   dct:references "ISO 9000" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
-  skos:definition "rol dat de output vormt van een organisatie en geproduceerd kan worden zonder dat er een uitwisseling plaatsvindt tussen de organisatie en de klant."@nl ;
+  rdfs:subClassOf <https://bimloket.nl/data/term/cbnl/5b84328b-d8a7-45bf-b207-cf7d993b1793> ;
+  skos:definition "output van een organisatie en geproduceerd kan worden zonder dat er een uitwisseling plaatsvindt tussen de organisatie en de klant."@nl ;
   skos:prefLabel "product"@en ;
   skos:prefLabel "product"@nl ;
   cbnl:state "proposed" ;
@@ -12271,7 +12336,7 @@ cbnl:cd34f568-59ae-4890-bafe-d4824f5a3677
   dct:references "NPR 4768" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/0310d105-58fb-49a0-85b6-9b80515f0aa0> ;
-  skos:definition "Balkvormige bouwconstructie als aanrijbescherming boven de weg voor het beschermen van constructies tegen de aanrijding van een voertuig."@nl ;
+  skos:definition "balkvormige bouwconstructie als aanrijbescherming boven de weg voor het beschermen van constructies tegen de aanrijding van een voertuig."@nl ;
   skos:prefLabel "aanrijbalk"@nl ;
   skos:prefLabel "impact bar"@en ;
   cbnl:state "proposed" ;
@@ -12285,7 +12350,7 @@ cbnl:cd513055-ecf5-4536-91b1-6b2497d58889
   dct:references "UIT 68" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf nen2660:DiscreteObject ;
-  skos:definition "een sociale groep bestaande uit één persoon of groep van personen die zijn eigen functies heeft met verantwoordelijkheden, bevoegdheden en relaties om zijn doelstellingen (3.08) te bereiken ("@nl ;
+  skos:definition "Discrete object bestaande uit één persoon of groep van personen die zijn eigen functies heeft met verantwoordelijkheden, bevoegdheden en relaties om zijn doelstellingen (3.08) te bereiken ("@nl ;
   skos:prefLabel "organisatie"@nl ;
   skos:prefLabel "organization"@en ;
   cbnl:state "proposed" ;
@@ -12466,13 +12531,15 @@ cbnl:d027b8c4-37f2-4eb4-b5f7-decf464ca3f6
 .
 cbnl:d033bd0d-999d-45b9-a25b-8a64b5637158
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/18d33f97-a525-4a91-b0c5-8494d07d1dcb> ;
   skos:definition "In de economie is waarde een eigenschap van goederen (waaronder ook diensten worden verstaan) waarlangs goederen onderling kwantitatief vergeleken kunnen worden, om zo tot uitruil of een prijs te komen."@nl ;
   skos:prefLabel "economic value"@en ;
   skos:prefLabel "economische waarde"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-10-27"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:d04d5bbc-7e6f-4e2e-9e25-0ce2850648a8
   a rdfs:Class ;
@@ -12505,13 +12572,15 @@ cbnl:d0c57612-d352-442f-8684-7b34e68a2fcd
 .
 cbnl:d0fd4742-8e05-4071-87f3-60670aeb7936
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "het quotient van de massa m en het ingenomen volume V (bron: Aquo Lex en Objectencatalogus)"@nl ;
   skos:prefLabel "density"@en ;
   skos:prefLabel "dichtheid"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:d0ffa5c5-7619-4780-91cd-016fff80a6b6
   a rdfs:Class ;
@@ -12623,13 +12692,15 @@ cbnl:d1f2909d-5bc1-48fb-b9ce-0c82298b3612
 .
 cbnl:d26bc97e-46a8-4841-8dcb-cb1d9d7a45a4
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:d033bd0d-999d-45b9-a25b-8a64b5637158 ;
   skos:definition "van een goed of dienst is het geldbedrag (economische waarde) dat voor dat goed of die dienst moet worden betaald om het goed in eigendom of de dienst geleverd te krijgen."@nl ;
   skos:prefLabel "price"@en ;
   skos:prefLabel "prijs"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-10-27"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:d28e76d4-bb08-4889-bb42-fcb589e8c18d
   a rdfs:Class ;
@@ -12648,7 +12719,7 @@ cbnl:d2a50f64-9aff-4864-8a84-c446ffee6399
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Combinatie LTS-1.10 en Jaap Bakker - persoonlijke communicatie" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/77a66ebc-533d-4622-80a7-afd437d4910c> ;
-  skos:definition "Plan dat beschrijft hoe de continuïteit van een object wordt gewaarborgd (met behulp van beheer en onderhoud)."@nl ;
+  skos:definition "plan dat beschrijft hoe de continuïteit van de functie van een object wordt gewaarborgd (met behulp van beheer en onderhoud)."@nl ;
   skos:prefLabel "conservation plan"@en ;
   skos:prefLabel "instandhoudingsplan"@nl ;
   cbnl:state "proposed" ;
@@ -12661,8 +12732,8 @@ cbnl:d2b7e49a-60b9-420d-baee-7ca8156ba146
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "none" ;
-  rdfs:subClassOf nen2660:Requirement ;
-  skos:definition "eis over hoe de werkelijkheid eruit moet zien."@nl ;
+  rdfs:subClassOf nen2660:InformationObject ;
+  skos:definition "Information object over hoe de werkelijkheid eruit moet zien."@nl ;
   skos:prefLabel "regel"@nl ;
   skos:prefLabel "rule"@en ;
   cbnl:state "proposed" ;
@@ -12682,13 +12753,15 @@ cbnl:d3142fc2-9cf4-493e-9dd2-cc77d2cc2a9e
 .
 cbnl:d34a2bfe-e3d2-447e-a930-e1054de605b1
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/316964cf-fb2a-45ec-8912-8877becbd170> ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "afstand"@nl ;
   skos:prefLabel "distance"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:d3834003-ddb2-4558-b4c6-26430958d066
   a rdfs:Class ;
@@ -12917,10 +12990,12 @@ cbnl:d8aff1bf-3bb4-4c52-bf0d-8355d6dfd75f
 .
 cbnl:d8ffc1b3-96a7-4f3a-a270-b4ff5b199b68
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Mijnbouwwet" ;
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   rdfs:subClassOf cbnl:b0bc2bd5-859d-4302-8c14-92cdbc3127ea ;
-  skos:definition "Materiaal zijnde in de ondergrond aanwezige mineralen of substanties van organische oorsprong, in een aldaar langs natuurlijke weg ontstane concentratie of afzetting, in vaste, vloeibare of gasvormige toestand, met uitzondering van brongas, kalksteen, grind, zand, klei, schelpen en mengsels daarvan."@nl ;
+  skos:definition "materiaal zijnde in de ondergrond aanwezige mineralen of substanties van organische oorsprong, in een aldaar langs natuurlijke weg ontstane concentratie of afzetting, in vaste, vloeibare of gasvormige toestand, met uitzondering van brongas, kalksteen, grind, zand, klei, schelpen en mengsels daarvan."@nl ;
   skos:prefLabel "delfstof"@nl ;
   skos:prefLabel "mineral"@en ;
   cbnl:state "proposed" ;
@@ -12987,13 +13062,15 @@ cbnl:daf46997-0f45-42e2-805b-217635ed37b2
 .
 cbnl:dafef1d6-24f1-4e30-a0eb-56d53cafa140
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "area"@en ;
   skos:prefLabel "oppervlakte (grootheid)"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:db07175b-dcbd-483f-9a13-4dc46c47cfce
   a rdfs:Class ;
@@ -13027,13 +13104,15 @@ cbnl:dba37203-5d62-45cc-a0a8-da65a4dc09a1
 .
 cbnl:dbaaabfa-b288-4b2e-b8c8-cdcb4ab46848
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:b750bb4b-27c3-4455-a6e4-aa3cca4d51e1 ;
   skos:definition "<bag> door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats; (bron: Wet basisregistratie adressen en gebouwen)"@nl ;
   skos:prefLabel "address"@en ;
   skos:prefLabel "adres"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:dbcd6aea-a97a-4e40-9652-fe8395a09b25
   a rdfs:Class ;
@@ -13072,7 +13151,7 @@ cbnl:dcbe4704-2748-4fa3-959b-44082e682a4d
   dct:references "AOA Begrippen- en Definitielijst" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf nen2660:Activity ;
-  skos:definition "Activiteit van geheel van verplaatsingen vervoermiddelen en personen tussen twee punten over een transportlink."@nl ;
+  skos:definition "Activiteit van geheel van verplaatsingen van vervoermiddelen en personen tussen twee punten over een transportlink."@nl ;
   skos:prefLabel "traffic"@en ;
   skos:prefLabel "verkeer"@nl ;
   cbnl:state "proposed" ;
@@ -13093,7 +13172,7 @@ cbnl:dcf167af-0cd4-4db5-a1b4-ee2983059045
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/827e3253-e7e0-4101-b1b0-fddad81bfda1> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "kilogram per cubic meter"@en ;
   skos:prefLabel "kilogram per kubieke meter"@nl ;
@@ -13270,7 +13349,7 @@ cbnl:dfec04d5-b318-44c4-9cb2-1e5e5ff1c701
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "volgens de definitie is dit een bouwconstructie." ;
   rdfs:subClassOf cbnl:cd79f4f7-6914-4fc5-b6f8-53f160af7376 ;
-  skos:definition "Dwars op het water opgeworpen infrawerk (waterbouwkundige constructie) om water te keren, te beheersen, te leiden of te verdelen."@nl ;
+  skos:definition "infrawerk dwars op het water opgeworpen (waterbouwkundige constructie) om water te keren, te beheersen, te leiden of te verdelen."@nl ;
   skos:prefLabel "dam"@en ;
   skos:prefLabel "dam"@nl ;
   cbnl:state "proposed" ;
@@ -13435,10 +13514,11 @@ cbnl:e1c4f9f1-4f90-4c8a-84ac-22c27dc08913
   dct:created "2021-10-27T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-27T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "none" ;
+  rdfs:comment "Eigendom is het meest omvattende recht dat een persoon op een zaak en afgescheiden vruchten kan hebben." ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
   rdfs:comment "none" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
-  skos:definition "rol van een persoon of organisatie die een object bezit."@nl ;
+  skos:definition "rol van een persoon of organisatie die een voorwerp of zaak in (wettig) eigendom heeft."@nl ;
   skos:prefLabel "eigenaar"@nl ;
   skos:prefLabel "owner"@en ;
   cbnl:state "proposed" ;
@@ -13570,7 +13650,7 @@ cbnl:e4a64357-3560-4db6-b42a-89e3c1319df3
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/5f939285-3a7a-42d8-8fa3-e32e7234cf8c> ;
   skos:altLabel "levend wezen"@nl ;
   skos:altLabel "living being"@en ;
-  skos:definition "biologisch object, niet kunstmatig fysiek object, dat door middel van uitwisseling van energie en materie met de omgeving en door een inwendig metabolisme in staat is om zich in stand te houden, te groeien, zich voort te planten en zich aan te passen aan veranderingen in de omgeving, zowel op korte (fysiologische en morfologische adaptatie) als op lange termijn."@nl ;
+  skos:definition "biologisch object (niet kunstmatig fysiek object) dat door middel van uitwisseling van energie en materie met de omgeving en door een inwendig metabolisme in staat is om zich in stand te houden, te groeien, zich voort te planten en zich aan te passen aan veranderingen in de omgeving, zowel op korte (fysiologische en morfologische adaptatie) als op lange termijn."@nl ;
   skos:prefLabel "organism"@en ;
   skos:prefLabel "organisme"@nl ;
   cbnl:state "proposed" ;
@@ -13752,13 +13832,15 @@ cbnl:e7c344a3-ea3a-46dd-a3c5-d42a248f0217
 .
 cbnl:e8ccd42e-85c1-4683-a89d-c9b075e1b565
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "hoeveelheid arbeid die moet worden verricht om een systeem vanaf een grondtoestand naar de actuele toestand te brengen. (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
   skos:prefLabel "amount of energy (quantity)"@en ;
   skos:prefLabel "hoeveelheid energie (grootheid)"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:e8d6f76c-7bf7-465e-a20a-ac80c91f9aec
   a rdfs:Class ;
@@ -13792,13 +13874,15 @@ cbnl:e9271471-c8af-409e-b5d4-ec9ce9bd7b2d
 .
 cbnl:e927c060-5862-4852-93e2-027cde48ebda
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "temperature"@en ;
   skos:prefLabel "temperatuur"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:e92800ac-1cff-4a8f-bb4f-1803605b8e0d
   a rdfs:Class ;
@@ -13978,13 +14062,15 @@ cbnl:ec330a1d-fbaf-4ca6-bfbf-f16b41968f8f
 .
 cbnl:ecd1f8b5-cd38-418e-b4cc-e2f77bc6458f
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/18d33f97-a525-4a91-b0c5-8494d07d1dcb> ;
   skos:definition "Karakterisering van de locatie van een entiteit in een ruimte-tijd t.o.v. een locatie-referentiesysteem. (bron: AOA Begrippen- en Definitielijst)"@nl ;
   skos:prefLabel "locatiereferentie"@nl ;
   skos:prefLabel "location reference"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
+  cbnl:stateDate "2022-01-31"^^xsd:date ;
 .
 cbnl:ecfcb903-e49b-4c94-974a-c85233b79a09
   a rdfs:Class ;
@@ -14152,9 +14238,11 @@ cbnl:f05480d9-ff10-4b79-a687-e0b040577b53
 .
 cbnl:f05c466d-9a99-448c-beb4-2d4f525e60d9
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/5c201b1a-3af5-4bf1-9b7c-4e5471ae3d0e> ;
   skos:altLabel "betonverharding"@nl ;
-  skos:definition "Gesloten verharding bestaande uit gewapend of ongewapend beton. (bron: CROW 156)"@nl ;
+  skos:definition "gesloten verharding bestaande uit gewapend of ongewapend beton. (bron: CROW 156)"@nl ;
   skos:prefLabel "cementbetonverharding"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -14401,8 +14489,10 @@ cbnl:f5cdd979-e2a3-4896-9ee3-8f03add62894
 .
 cbnl:f688b252-0283-4187-a309-19538546fec4
   a rdfs:Class ;
+  dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/213397e7-4253-4d4d-adb8-c7141530f321> ;
-  skos:definition "Bermbeveiligingsconstructie bedoeld voor fysieke geleiding van voertuigen die uit de koers zijn geraakt. (bron: CROW 156)"@nl ;
+  skos:definition "bermbeveiligingsconstructie bedoeld voor fysieke geleiding van voertuigen die uit de koers zijn geraakt. (bron: CROW 156)"@nl ;
   skos:prefLabel "geleideconstructie"@nl ;
   skos:prefLabel "guide construction"@en ;
   cbnl:state "proposed" ;
@@ -14511,8 +14601,8 @@ cbnl:f9a4959f-06a1-482a-a52d-002a9b769386
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Aquo Lex en Objectencatalogus" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1e20be1f-7c72-48bd-ae27-c25c477bdda5> ;
-  skos:definition "vast of beweegbaar kunstwerk die dient om het peil bovenstrooms van de constructie te verhogen c.q. te regelen."@nl ;
+  rdfs:subClassOf cbnl:c2242d3f-dbc4-4b49-a15f-f4f172016d8e ;
+  skos:definition "bouwwerk, geen gebouw zijnde dat vast of beweegbaar is en dient om het peil van een watergng bovenstrooms van de constructie te verhogen c.q. te regelen."@nl ;
   skos:prefLabel "barrage"@en ;
   skos:prefLabel "stuw"@nl ;
   cbnl:state "proposed" ;
@@ -14538,8 +14628,8 @@ cbnl:f9f29950-9cb7-4c95-abd8-e3c9f6310f78
   dct:references "NEN 2767-1" ;
   rdfs:comment "Definitie herschreven zodat Discreet Object genoemd wordt, echter is discutabel. Er moet wellicht een Civiel bouwdeel worden geintroduceerd." ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/13334548-925b-4974-9d65-ecd85905b6cd> ;
-  skos:definition "component dat een zelfstandig en aanwijsbaar deel van een bouwwerk vormt, onderscheiden naar samenstelling of constructiewijze, bestaande uit één of meer componenten waaraan technische eigenschappen en een onderhoudshistorie kunnen worden gerelateerd."@nl ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/8704b333-91c3-46d7-b6ed-ef1c7c9b8545> ;
+  skos:definition "onderdeel dat een zelfstandig en aanwijsbaar deel van een bouwwerk vormt, onderscheiden naar samenstelling of constructiewijze, bestaande uit één of meer componenten waaraan technische eigenschappen en een onderhoudshistorie kunnen worden gerelateerd."@nl ;
   skos:prefLabel "bouwdeel"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -14550,6 +14640,7 @@ cbnl:fa527c82-e770-4394-8091-591a35ec4ac5
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "NEN 2660-1" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1cf5f351-98ee-409b-abcb-fe2b6fb529f4> ;
   skos:definition "apparaat (niet-levend fysiek object), waarmee symbolische objecten volgens formele procedures (algoritmen) kunnen worden verwerkt."@nl ;
   skos:prefLabel "computer"@en ;
@@ -14601,7 +14692,7 @@ cbnl:fb3c9362-858e-4fa9-b9de-530a3ea5f935
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt. Gevaarlijk om de subtypen exclusief te noemen in de definitie en daarom verwijderd." ;
   rdfs:comment "aangepast i.o.m. Leo van Ruijven" ;
   rdfs:subClassOf nen2660:SpatialRegion ;
-  skos:definition "Een hoeveelheid vloeibare materie op het oppervlak of in de grond van de Aarde dat een ruimtelijk gebied vormt."@nl ;
+  skos:definition "ruimtelijk gebied bestaande uit een hoeveelheid vloeibare materie op het oppervlak of in de grond van de Aarde."@nl ;
   skos:prefLabel "water body"@en ;
   skos:prefLabel "waterlichaam"@nl ;
   cbnl:state "proposed" ;
@@ -14623,7 +14714,7 @@ cbnl:fbdc0bb6-17a6-49e6-8d58-e8aa8aeac519
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/827e3253-e7e0-4101-b1b0-fddad81bfda1> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "prefDef: TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "meter per second"@en ;
   skos:prefLabel "meter per seconde"@nl ;
@@ -14724,6 +14815,19 @@ cbnl:fd332db9-2a52-4510-b73a-466ffa339ab8
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+cbnl:fd38387b-d9ea-4f69-a5bd-b0639e3a5d4a
+  a rdfs:Class ;
+  dct:created "2021-10-27T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-01-27T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "none" ;
+  rdfs:comment "none" ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
+  skos:definition "rol van de afnemer van bepaalde producten en/of diensten."@nl ;
+  skos:prefLabel "klant"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2021-10-27"^^xsd:date ;
 .
 cbnl:fd42e778-442d-4718-ae74-407c7cf6c7b1
   a rdfs:Class ;
@@ -14921,7 +15025,7 @@ cbnl:fff4b129-0ecc-4d16-8b08-cda1cb7ad696
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
-  skos:definition "rol van een passieve functionele entiteit in een outputrelatie."@nl ;
+  skos:definition "rol van een Object in een outputrelatie."@nl ;
   skos:prefLabel "output"@en ;
   skos:prefLabel "output"@nl ;
 .
@@ -14939,7 +15043,7 @@ cbnl:fff4b129-0ecc-4d16-8b08-cda1cb7ad696
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
-  skos:definition "rol van een passieve functionele entiteit in een inputrelatie."@nl ;
+  skos:definition "rol van een Object in een inputrelatie."@nl ;
   skos:prefLabel "input"@en ;
   skos:prefLabel "input"@nl ;
 .
@@ -14974,8 +15078,8 @@ cbnl-term:ba0a920c-5428-40b3-af3e-9d5c00a36e40
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Objecttypenbibliotheek Rijkswaterstaat" ;
   rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/1e20be1f-7c72-48bd-ae27-c25c477bdda5> ;
-  skos:definition "kunstwerk dat wordt gekenmerkt door een constructie met minimaal twee steunpunten."@nl ;
+  rdfs:subClassOf cbnl:c2242d3f-dbc4-4b49-a15f-f4f172016d8e ;
+  skos:definition "bouwwerk, geen gebouw zijnde dat wordt gekenmerkt door een constructie met minimaal twee steunpunten als overgang voor verkeer, leidingen of dieren."@nl ;
   skos:prefLabel "bridging"@en ;
   skos:prefLabel "overbrugging"@nl ;
   cbnl:state "proposed" ;
@@ -15037,6 +15141,8 @@ nen2660:FunctionalEntity
   rdfs:comment "subtype van Physical object gemaakt i.o.m. Leo van Ruijven" ;
   rdfs:subClassOf nen2660:PhysicalObject ;
   skos:altLabel "Functional object"@en ;
-  skos:definition "An activity involving the external behavior (function) of the object where the output contributes to stakeholder objectives (what it does) implemented/played by technical entities"@en ;
   cbnl:stateDate "2022-01-01"^^xsd:date ;
+.
+nen2660:Interface
+  skos:definition "Spatial region dat een interface (verbinding) (associatie, drager, kanaal) vormt tussen twee systeem(delen), waarlangs een (soms dynamische) wisselwerking of interactie tussen die elementen kan plaatsvinden."@nl ;
 .
