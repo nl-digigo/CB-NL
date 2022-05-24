@@ -32,7 +32,7 @@
   rdfs:isDefinedBy <https://bimloket.nl/data/term/cbnl/0016f909-dd1d-46c5-855e-fec88fb15ee8> ;
 .
 <https://bimloket.nl/data/def/cbnl/022a3f64-bab7-4b41-8c8a-8a9bb7675f1f>
-  rdfs:isDefinedBy <https://bimloket.nl/data/term/cbnl/3db4edfc-c706-4437-95b3-3112e42e5e55> ;
+  rdfs:isDefinedBy nen2660-term:Event ;
 .
 <https://bimloket.nl/data/def/cbnl/02607e16-9e44-465b-aa97-5dfda290b2aa>
   rdfs:isDefinedBy cbnl-term:f17b5801-dc14-4f15-b8f1-475d7290d5e8 ;

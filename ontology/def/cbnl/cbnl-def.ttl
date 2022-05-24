@@ -452,8 +452,9 @@ cbnl:
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition "a scalar quantity expressing the amount of three-dimensional space enclosed by a closed surface."@en ;
   skos:prefLabel "volume"@en ;
   skos:prefLabel "volume"@nl ;
   cbnl:state "proposed" ;
@@ -841,20 +842,6 @@ cbnl:
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
-.
-<https://bimloket.nl/data/def/cbnl/0b8a0eea-4635-44d7-b4d1-4112afe5c81d>
-  a rdfs:Class ;
-  dct:created "2021-10-27T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2022-01-27T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "none" ;
-  rdfs:comment "i.o.m. Leo verplaatst." ;
-  rdfs:comment "none" ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/70d2e0d3-46ee-4304-8060-fdeed17a026a> ;
-  skos:definition "rol van een persoon of organisatie die het onderhoud aan een beheerobject dient uit te voeren."@nl ;
-  skos:prefLabel "ondehoudsplichtige"@nl ;
-  cbnl:state "proposed" ;
-  cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-10-27"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/0bd72663-446b-4c70-ad58-7464e9eb0598>
   a rdfs:Class ;
@@ -1301,7 +1288,7 @@ cbnl:
 .
 <https://bimloket.nl/data/def/cbnl/10fd0967-605f-4097-8135-72b249f64fed>
   a rdfs:Class ;
-  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/0310d105-58fb-49a0-85b6-9b80515f0aa0> ;
   skos:prefLabel "balk"@nl ;
   skos:prefLabel "beam"@en ;
   cbnl:state "proposed" ;
@@ -1830,6 +1817,19 @@ cbnl:
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+<https://bimloket.nl/data/def/cbnl/17c7c525-0b5d-4b8f-af0d-1988eb2ad2c7>
+  a rdfs:Class ;
+  dct:created "2022-03-18T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-03-18T09:00:00.000Z"^^xsd:dateTime ;
+  rdfs:comment "Nodig voor IFC of ETIM." ;
+  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/8704b333-91c3-46d7-b6ed-ef1c7c9b8545> ;
+  skos:definition "An element is a generalization of all components that make up an AEC product. Elements are physically existent objects, although they might be void elements, such as holes. Elements either remain permanently in the AEC product, or only temporarily, as formwork does. Elements can be either assembled on site or pre-manufactured and built in on site."@en ;
+  skos:prefLabel "IFC element"@en ;
+  skos:prefLabel "IFC element"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-03-18"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/17d63c63-ede7-4b05-93ba-d417858d3e70>
   a rdfs:Class ;
@@ -2396,9 +2396,10 @@ cbnl:
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:altLabel "lichtintensiteit"@nl ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition "a measure of the wavelength-weighted power emitted by a light source in a particular direction per unit solid angle, based on the luminosity function, a standardized model of the sensitivity of the human eye."@en ;
   skos:prefLabel "lichtsterkte"@nl ;
   skos:prefLabel "luminous intensity"@en ;
   cbnl:state "proposed" ;
@@ -3514,8 +3515,9 @@ cbnl:
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "ISO 80000-3:2019" ;
+  dct:references "Wikipedia, de vrije encyclopedie" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
+  skos:definition "lengte is een grootheid met de dimensie afstand."@nl ;
   skos:prefLabel "lengte"@nl ;
   skos:prefLabel "length"@en ;
   cbnl:state "proposed" ;
@@ -3578,6 +3580,7 @@ cbnl:
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/72fa6b78-56cb-4c04-a112-fd88f3f45c99> ;
   skos:altLabel "bestrating, plaveisel"@nl ;
   skos:definition "Open verharding bestaande uit geprefabriceerde of natuurlijk elementen (bron: CROW 156)"@nl ;
@@ -3898,8 +3901,9 @@ cbnl:
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/72fa6b78-56cb-4c04-a112-fd88f3f45c99> ;
-  skos:definition "Open verharding bestaande uit een laag ongebonden grind en/of steenslag. mijnsteen, schelpen en dergelijke. (bron: CROW 156)"@nl ;
+  skos:definition "Open verharding bestaande uit een laag ongebonden grind en/of steenslag. mijnsteen, schelpen en dergelijke."@nl ;
   skos:prefLabel "ongebonden verharding"@nl ;
   skos:prefLabel "unbounded paving"@en ;
   cbnl:state "proposed" ;
@@ -4196,7 +4200,7 @@ cbnl:
 <https://bimloket.nl/data/def/cbnl/3e1732c2-eebd-4b09-b2ae-7da04e816434>
   a rdfs:Class ;
   dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
-  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  rdfs:subClassOf cbnl:c4759e6b-03f2-4489-add2-e770ba336a36 ;
   skos:definition "Een opstaande rand of steunvlak dat de bewegingsrichting van bewegende delen begrenst en steun biedt aan de bewegende delen van een constructie." ;
   skos:prefLabel "aanslag"@nl ;
   skos:prefLabel "stop"@en ;
@@ -4547,10 +4551,11 @@ cbnl:
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
-  skos:prefLabel "period in time"@en ;
-  skos:prefLabel "tijdperiode"@nl ;
+  skos:definition "Time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future."@en ;
+  skos:prefLabel "tijd"@nl ;
+  skos:prefLabel "time"@en ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2022-01-31"^^xsd:date ;
@@ -4844,6 +4849,20 @@ cbnl:
   skos:definition "Sluitmechanisme om openingen in hevels, sifons en doorlaatwerken te (deels) kunnen sluiten" ;
   skos:prefLabel "gate valve"@en ;
   skos:prefLabel "schuif"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+<https://bimloket.nl/data/def/cbnl/49a75e31-9527-49a7-b682-270ccbc666db>
+  a rdfs:Class ;
+  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Handreiking prestatiegestuurde risicoanalyses" ;
+  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
+  rdfs:subClassOf nen2660:FunctionalEntity ;
+  skos:definition "Functionele entiteit dat een verbinding (associatie, drager, kanaal) tussen twee delen, waarlangs een (soms dynamische) wisselwerking of interactie tussen die elementen plaatsvind met een bepaald doel."@nl ;
+  skos:prefLabel "functional interface"@en ;
+  skos:prefLabel "functioneel raakvlak"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
@@ -6067,7 +6086,7 @@ cbnl:
   dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
   dct:references "Gellish library" ;
   rdfs:comment "TODO engelse definitie uit Gellish library." ;
-  rdfs:subClassOf nen2660:PhysicalObject ;
+  rdfs:subClassOf nen2660:DiscreteObject ;
   skos:definition "discrete and technical object that is capable of life or which is alive. A lifeform may have existed in the past."@en ;
   skos:prefLabel "biological object"@en ;
   skos:prefLabel "biologisch object"@nl ;
@@ -6384,7 +6403,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   rdfs:comment "geintroduceerd i.o.m. Leo van Ruijven" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/43170703-009d-40af-880b-7045c74c1222> ;
   skos:definition "a spatial stucture element that is defined by one or more modes of transportation crossing the territories of more than one country like highways, railroads or public transit which share a common course."@en ;
-  skos:definition "een ruimtelijk structuur element gevormd door een strook land/gebied (ook in de lucht) liggend tussen twee (of meerdere) territoria of \"mainports\", waardoor vervoer van goederen/personen plaatsvindt." ;
+  skos:definition "een ruimtelijk structuur element gevormd door een strook land/gebied (ook in de lucht) liggend tussen twee (of meerdere) territoria of \"mainports\", waardoor vervoer van goederen/personen plaatsvindt."@nl ;
   skos:prefLabel "corridor"@en ;
   skos:prefLabel "corridor"@nl ;
   cbnl:state "proposed" ;
@@ -6861,9 +6880,10 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
   skos:altLabel "speed"@en ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition " the rate of change of its position with respect to a frame of reference, and is a function of time."@en ;
   skos:prefLabel "snelheid"@nl ;
   skos:prefLabel "velocity"@en ;
   cbnl:state "proposed" ;
@@ -7200,6 +7220,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/0310d105-58fb-49a0-85b6-9b80515f0aa0> ;
   skos:definition "bouwconstructie in de rol van deklaag die doorlatend is voor hemelwater en bestaat uit ongebonden materialen of in verband aangebrachte elementen die gemakkelijk aan te brengen of weer te verwijderen zijn."@nl ;
   skos:prefLabel "open verharding"@nl ;
@@ -10338,8 +10359,9 @@ cbnl:aa02de2b-0b52-4fe3-b763-3caaabd06b83
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition "the quantity of matter in a physical body. It is also a measure of the body's inertia, the resistance to acceleration (change of velocity) when a net force is applied."@en ;
   skos:prefLabel "mass"@en ;
   skos:prefLabel "massa"@nl ;
   cbnl:state "proposed" ;
@@ -10786,8 +10808,9 @@ cbnl:b235dc25-95ab-402b-93e6-f27a5b06641e
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition "is een natuurkundige grootheid (symbool Q) die aangeeft op welke manier een deeltje wordt beïnvloed door elektrische en magnetische velden."@nl ;
   skos:prefLabel "electric charge"@en ;
   skos:prefLabel "elektrische lading"@nl ;
   cbnl:state "proposed" ;
@@ -10852,7 +10875,7 @@ cbnl:b38df359-a44c-4498-ac42-fd1800d41187
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition "een natuurkundige grootheid die een voorwerp van vorm of van snelheid kan doen veranderen."@nl ;
   skos:prefLabel "force"@en ;
   skos:prefLabel "kracht"@nl ;
   cbnl:state "proposed" ;
@@ -11463,20 +11486,6 @@ cbnl:be8fa4c0-e6bd-4ea0-b771-c42f172e80e2
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
 .
-cbnl:be8fa4c0-e6bd-4ea0-b771-c42f172e80e2_1
-  a rdfs:Class ;
-  dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:modified "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "Handreiking prestatiegestuurde risicoanalyses" ;
-  rdfs:comment "Definitie herschreven zodat supertype genoemd wordt." ;
-  rdfs:subClassOf nen2660:FunctionalEntity ;
-  skos:definition "Functionele entiteit dat een samenhangend geheel van (fysieke) onderdelen vormt dat is bedoeld om een bepaalde functie te vervullen."@nl ;
-  skos:prefLabel "functional interface"@en ;
-  skos:prefLabel "functioneel raakvlak"@nl ;
-  cbnl:state "proposed" ;
-  cbnl:stateComment "eerste iteratie" ;
-  cbnl:stateDate "2021-06-30"^^xsd:date ;
-.
 cbnl:be95a97b-2db3-4e44-8d11-800e2b47e886
   a rdfs:Class ;
   dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
@@ -11661,7 +11670,7 @@ cbnl:c22011b8-1d50-4018-aabf-1bc90ad92749
   a rdfs:Class ;
   dct:created "2021-10-27T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2021-10-27T09:00:00.000Z"^^xsd:dateTime ;
-  dct:references "none" ;
+  dct:references "IFC 4.1" ;
   rdfs:comment "geintroduceert voor ifcElement." ;
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/8704b333-91c3-46d7-b6ed-ef1c7c9b8545> ;
   skos:definition "a generalization of all transport related parts that move people, animals or goods."@en ;
@@ -12322,7 +12331,7 @@ cbnl:cd00adc1-17ee-492b-8779-f492050f12a4
   rdfs:comment "Definitie herschreven t.b.v. taxonomie." ;
   rdfs:comment "i.o.m. Leo verplaatst." ;
   rdfs:subClassOf <https://bimloket.nl/data/term/cbnl/5b84328b-d8a7-45bf-b207-cf7d993b1793> ;
-  skos:definition "output van een organisatie en geproduceerd kan worden zonder dat er een uitwisseling plaatsvindt tussen de organisatie en de klant."@nl ;
+  skos:definition "output van een organisatie dat geproduceerd kan worden zonder dat er een uitwisseling plaatsvindt tussen de organisatie en de klant."@nl ;
   skos:prefLabel "product"@en ;
   skos:prefLabel "product"@nl ;
   cbnl:state "proposed" ;
@@ -12574,8 +12583,9 @@ cbnl:d0fd4742-8e05-4071-87f3-60670aeb7936
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Aquo Lex en Objectencatalogus" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "het quotient van de massa m en het ingenomen volume V (bron: Aquo Lex en Objectencatalogus)"@nl ;
+  skos:definition "het quotient van de massa m en het ingenomen volume V."@nl ;
   skos:prefLabel "density"@en ;
   skos:prefLabel "dichtheid"@nl ;
   cbnl:state "proposed" ;
@@ -12755,7 +12765,7 @@ cbnl:d34a2bfe-e3d2-447e-a930-e1054de605b1
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
-  rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/316964cf-fb2a-45ec-8912-8877becbd170> ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
   skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
   skos:prefLabel "afstand"@nl ;
   skos:prefLabel "distance"@en ;
@@ -13064,8 +13074,9 @@ cbnl:dafef1d6-24f1-4e30-a0eb-56d53cafa140
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition "Area is the quantity that expresses the extent of a two-dimensional region, shape, or planar lamina, in the plane."@en ;
   skos:prefLabel "area"@en ;
   skos:prefLabel "oppervlakte (grootheid)"@nl ;
   cbnl:state "proposed" ;
@@ -13834,8 +13845,9 @@ cbnl:e8ccd42e-85c1-4683-a89d-c9b075e1b565
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL)" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "hoeveelheid arbeid die moet worden verricht om een systeem vanaf een grondtoestand naar de actuele toestand te brengen. (bron: Wikipedia, de vrije encyclopedie (NL))"@nl ;
+  skos:definition "hoeveelheid arbeid die moet worden verricht om een systeem vanaf een grondtoestand naar de actuele toestand te brengen."@nl ;
   skos:prefLabel "amount of energy (quantity)"@en ;
   skos:prefLabel "hoeveelheid energie (grootheid)"@nl ;
   cbnl:state "proposed" ;
@@ -13876,8 +13888,9 @@ cbnl:e927c060-5862-4852-93e2-027cde48ebda
   a rdfs:Class ;
   dct:created "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
   dct:modified "2022-01-31T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, the free encyclopedia (EN))" ;
   rdfs:subClassOf cbnl:cc17a991-325b-4194-805e-136be5481fa4 ;
-  skos:definition "TODO (bron: NEN-EN-ISO 80000 series)"@en ;
+  skos:definition "Temperature is a physical quantity that expresses hot and cold."@en ;
   skos:prefLabel "temperature"@en ;
   skos:prefLabel "temperatuur"@nl ;
   cbnl:state "proposed" ;
