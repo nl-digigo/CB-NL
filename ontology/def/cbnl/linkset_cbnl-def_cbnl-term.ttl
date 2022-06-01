@@ -1,12 +1,18 @@
 # baseURI: file:///C:/Users/Wilhelmina/OneDrive%20-%20bink.nu/Documents/My%20Projects/BIM-Loket/Kernmodel%20CB-NL/TBC702/Kernmodel/linkset_cbnl-def_cbnl-term.ttl
 
+
 @prefix cbnl-def: <https://bimloket.nl/data/def/cbnl/> .
 @prefix cbnl-term: <https://bimloket.nl/data/term/cbnl/> .
+@prefix nen2660-term: <https://w3id.org/nen2660/skos/term> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<file:///C:/Users/Wilhelmina/OneDrive%20-%20bink.nu/Documents/My%20Projects/BIM-Loket/Kernmodel%20CB-NL/TBC702/Kernmodel/linkset_cbnl-def_cbnl-term.ttl>
+  a owl:Ontology ;
+  owl:versionInfo "CBNL-linkset Kern-Thesau (linkset_cbnl-def_cbnl-term.ttl) versie mei 2022" ;
+.
 <https://bimloket.nl/data/def/cbnl/002cf0ec-aac6-4499-9d8d-519a4816c01e>
   rdfs:isDefinedBy <https://bimloket.nl/data/term/cbnl/991ffec8-0b5e-47b9-a1a0-bb91fb5b0ea5> ;
 .
@@ -32,7 +38,7 @@
   rdfs:isDefinedBy <https://bimloket.nl/data/term/cbnl/0016f909-dd1d-46c5-855e-fec88fb15ee8> ;
 .
 <https://bimloket.nl/data/def/cbnl/022a3f64-bab7-4b41-8c8a-8a9bb7675f1f>
-  rdfs:isDefinedBy nen2660-term:Event ;
+  rdfs:isDefinedBy <https://w3id.org/nen2660/skos/termEvent> ;
 .
 <https://bimloket.nl/data/def/cbnl/02607e16-9e44-465b-aa97-5dfda290b2aa>
   rdfs:isDefinedBy cbnl-term:f17b5801-dc14-4f15-b8f1-475d7290d5e8 ;

@@ -15,7 +15,7 @@
 cbnl:
   a owl:Ontology ;
   owl:imports <https://w3id.org/nen2660/rdfs/def> ;
-  owl:versionInfo "Created with TopBraid Composer" ;
+  owl:versionInfo "CBNL-Kernmodel (cbnl-def.ttl) versie mei 2022" ;
 .
 <https://bimloket.nl/data/def/cbnl/002cf0ec-aac6-4499-9d8d-519a4816c01e>
   a rdfs:Class ;
