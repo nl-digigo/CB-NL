@@ -28,6 +28,7 @@ cbnl-term:
   a owl:Ontology ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://w3id.org/nen2660/skos/term> ;
+  owl:versionInfo "CBNL-Thesaurus (cbnl-term.ttl) versie mei 2022" ;
 .
 <https://bimloket.nl/data/term/cbnl/0016f909-dd1d-46c5-855e-fec88fb15ee8>
   a skos:Concept ;
