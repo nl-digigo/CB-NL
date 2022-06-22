@@ -6036,8 +6036,8 @@ cbnl:
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/022062e4-0444-4cd0-97d1-017f3914256c> ;
   skos:altLabel "vakgebied"@nl ;
   skos:definition "is een groep van beroepsmatig toegepaste kennis en vaardigheden waar mensen zich in kunnen specialiseren."@nl ;
-  skos:prefLabel "dicipline"@gb ;
-  skos:prefLabel "dicipline"@nl ;
+  skos:prefLabel "discipline"@gb ;
+  skos:prefLabel "discipline"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-10-27"^^xsd:date ;
@@ -7584,7 +7584,7 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   rdfs:subClassOf <https://bimloket.nl/data/def/cbnl/5f1473ca-50de-4c9b-b314-a99cb4c9aa58> ;
   skos:altLabel "civiel"@nl ;
   skos:definition "is de discipline die zich bezighoudt met het produceren van woningen en andere bouwwerken."@nl ;
-  skos:prefLabel "civiele dicipline"@nl ;
+  skos:prefLabel "civiele discipline"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-10-27"^^xsd:date ;
