@@ -1225,7 +1225,7 @@ cbnl-term:
   dct:references "none" ;
   skos:broader <https://bimloket.nl/data/term/cbnl/5eda7807-e24c-4a61-9183-7299f64c73c2> ;
   skos:definition "is de discipline die zich bezighoudt met het produceren van woningen en andere bouwwerken."@nl ;
-  skos:prefLabel "civiele dicipline"@nl ;
+  skos:prefLabel "civiele discipline"@nl ;
 .
 <https://bimloket.nl/data/term/cbnl/1a23673e-3f87-4edb-a9eb-c9f3a3a0d36d>
   a skos:Concept ;
@@ -4191,8 +4191,8 @@ Asphalt layers"""@nl ;
   dct:references "none" ;
   skos:broader <https://bimloket.nl/data/term/cbnl/8ee0a637-5461-4f54-857c-93853f309854> ;
   skos:definition "is een groep van beroepsmatig toegepaste kennis en vaardigheden waar mensen zich in kunnen specialiseren."@nl ;
-  skos:prefLabel "dicipline"@gb ;
-  skos:prefLabel "dicipline"@nl ;
+  skos:prefLabel "discipline"@gb ;
+  skos:prefLabel "discipline"@nl ;
 .
 <https://bimloket.nl/data/term/cbnl/5ef467c7-0be8-40f6-93f4-d6aa6441e506>
   a skos:Concept ;
