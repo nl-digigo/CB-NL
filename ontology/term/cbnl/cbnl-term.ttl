@@ -911,6 +911,17 @@ cbnl-term:
   skos:prefLabel "toilet"@en ;
   skos:prefLabel "toilet"@nl ;
 .
+<https://bimloket.nl/data/term/cbnl/1394c86e-7627-4cc8-8180-088cfd3537ae>
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NPR 4768" ;
+  skos:altLabel "stempel"@nl ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "(Tijdelijke) buis tussen twee tegenoverliggende wanden, dammen of schotten bedoeld om naar elkaar toe wijken te voorkomen."@nl ;
+  skos:prefLabel "bracing strut"@en ;
+  skos:prefLabel "stempelbuis"@nl ;
+.
 <https://bimloket.nl/data/term/cbnl/13d8ef79-f63a-4aa8-9122-d5e8c09c38d8>
   a skos:Concept ;
   skos:altLabel "obstakelmarkering"@nl ;
@@ -2251,6 +2262,16 @@ cbnl-term:
   skos:definition "The distribution flow element IfcFlowTerminal defines the occurrence of a permanently attached element that acts as a terminus or beginning of a distribution system such as an air outlet, drain, water closet, or sink . A terminal is typically a point at which a system interfaces with an external environment. Its type is defined by IfcFlowTerminalType or its subtypes."@nl ;
   skos:prefLabel "stroomterminal"@nl ;
 .
+<https://bimloket.nl/data/term/cbnl/2f91a95a-431c-4b9c-a1d6-c665fd51039c>
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL))" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "homogene mengsel van gassen in de onderste lagen van de aardatmosfeer, voor ongeveer 78 vol.-% bestaand uit stikstofgas, 21 vol.-% uit zuurstofgas en bijna 1% argon. Daarnaast bevat lucht sporen van andere edelgassen, een sterk wisselende hoeveelheid waterdamp (0,7 vol.-%), en koolzuurgas, dat ook in hoeveelheid sterk kan wisselen."@nl ;
+  skos:prefLabel "air"@en ;
+  skos:prefLabel "lucht"@nl ;
+.
 <https://bimloket.nl/data/term/cbnl/2fafac40-5fb6-47bd-82dc-fd21b6671a83>
   a skos:Concept ;
   dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
@@ -2942,6 +2963,16 @@ cbnl-term:
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
   skos:prefLabel "verbindingsbrug (loopbrug)"@nl ;
+.
+<https://bimloket.nl/data/term/cbnl/409b2f8b-1cb2-4c83-b032-dbdb0299544b>
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "Kunstwerk in de vorm van een viaduct dat deel uitmaakt van een verkeersbaan en waarmee een verkeersstroom over twee of meer ongelijkvloerse (conflicterende) verkeersstromen wordt geleid."@nl ;
+  skos:prefLabel "fly-over"@nl ;
+  skos:prefLabel "flyover"@en ;
 .
 <https://bimloket.nl/data/term/cbnl/40de8e18-7f72-4bc9-8e82-9dd4790b4e08>
   a skos:Concept ;
@@ -4590,6 +4621,16 @@ Asphalt layers"""@nl ;
   skos:prefLabel "calamiteit"@nl ;
   skos:prefLabel "calamity"@en ;
 .
+<https://bimloket.nl/data/term/cbnl/6844333e-e905-4ad9-b51f-d75bd16cc6b7>
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Objecttypenbibliotheek Rijkswaterstaat (NL)" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "Verticale wand ter scheiding van land en water, opgebouwd uit een muur van (soms) gemetselde stenen of gestort beton."@nl ;
+  skos:prefLabel "kademuur"@nl ;
+  skos:prefLabel "quay wall"@en ;
+.
 <https://bimloket.nl/data/term/cbnl/687b98a1-4783-468d-9916-b30d139b0265>
   a skos:Concept ;
   dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
@@ -5735,11 +5776,31 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:prefLabel "footbridge"@en ;
   skos:prefLabel "loopbrug"@nl ;
 .
+<https://bimloket.nl/data/term/cbnl/8004a70d-9b1c-49fb-98e5-5154acb00030>
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "Langwerpige smalle ingraving voor een fundering, riolering, kabels en leidingen."@nl ;
+  skos:prefLabel "sleuf"@nl ;
+  skos:prefLabel "slot"@en ;
+.
 <https://bimloket.nl/data/term/cbnl/800e1d95-ddf5-4f8a-8528-ee99f3579b1f>
   a skos:Concept ;
   skos:broader <https://bimloket.nl/data/term/cbnl/61899d0e-d54c-4e15-84d2-ea1150850348> ;
   skos:definition "Bovenste, open of poreuze laag asfalt van een weg waar het verkeer overheen rijdt (bron: NPR 4768)"@nl ;
   skos:prefLabel "open deklaag"@nl ;
+.
+<https://bimloket.nl/data/term/cbnl/80376f53-23a5-4e0c-989a-d1351d8e6b9c>
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Objecttypenbibliotheek Rijkswaterstaat (NL)" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "Smal en meestal diep water of kanaal."@nl ;
+  skos:prefLabel "channel"@en ;
+  skos:prefLabel "geul"@nl ;
 .
 <https://bimloket.nl/data/term/cbnl/808cb4d6-9651-487e-ad7b-5689eb0fa685>
   a skos:Concept ;
@@ -5834,6 +5895,16 @@ l. andere stoffen die voor de mens of het milieu gevaarlijk kunnen zijn, indien 
   skos:definition "Schakeleenheid, die het mogelijke maakt om verschillende videobronnen naar verschillende uitgangen te schakelen." ;
   skos:prefLabel "video matrix"@en ;
   skos:prefLabel "videomatrix"@nl ;
+.
+<https://bimloket.nl/data/term/cbnl/839ce299-6e60-40db-b574-05d9940415e8>
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NPR 4768" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "Veld, gemarkeerd met lijnen, om bepaalde sporten mogelijk te maken."@nl ;
+  skos:prefLabel "sports field"@en ;
+  skos:prefLabel "sportveld"@nl ;
 .
 <https://bimloket.nl/data/term/cbnl/8436cd3d-64d5-4dd8-b787-95baeb57fb37>
   a skos:Concept ;
@@ -7891,6 +7962,16 @@ cbnl-term:af0908c5-7819-4804-a1b5-026cba3e1ad5
   skos:definition "Discreet object dat een lijnvormige constructie vormt voor vervoer en transport van personen, goederen, stoffen, energie en informatie, met inbegrip van de daarvan deel uitmakende infragebonden installaties."@nl ;
   skos:prefLabel "infrawerk"@nl ;
 .
+cbnl-term:af5e338d-e844-4b51-a160-3d53683c3283
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Aquo Lex en Objectencatalogus" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "natuurlijk door of in  water afgezet materiaal dat is ontstaan door verwering van gesteenten, behorende tot de fijnste groep afzettingsgesteenten."@nl ;
+  skos:prefLabel "clay"@en ;
+  skos:prefLabel "klei"@nl ;
+.
 cbnl-term:af6d8ef4-2d15-4487-bd78-e75a3898c478
   a skos:Concept ;
   dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
@@ -8349,6 +8430,16 @@ cbnl-term:ba15464f-b285-4f11-a29b-416a4fb78a11
   skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
   skos:prefLabel "zender"@nl ;
 .
+cbnl-term:ba2db201-d611-41a7-a108-9c7b5067d8b5
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "Gegraven lijnvormige verdieping in het maaiveld, al of niet gevuld met water, voor onder meer de berging en de afvoer en/of aanvoer van water."@nl ;
+  skos:prefLabel "watercourse"@en ;
+  skos:prefLabel "watergang"@nl ;
+.
 cbnl-term:ba5b307f-c11c-48e4-a3a9-e7edb9d99a32
   a skos:Concept ;
   dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
@@ -8620,6 +8711,16 @@ cbnl-term:c0673ef0-b016-4e8e-b538-6a5244975552
   skos:definition "Een niet of in zeer geringe mate verhoute plant" ;
   skos:prefLabel "herbaceous plant"@en ;
   skos:prefLabel "kruidachtige plant"@nl ;
+.
+cbnl-term:c07ef1b2-ff8c-4976-8f26-28a8ebc24fc0
+  a skos:Concept ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 3610" ;
+  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
+  skos:definition "Grondoppervlak in principe bedekt met water."@nl ;
+  skos:prefLabel "water"@en ;
+  skos:prefLabel "water"@nl ;
 .
 cbnl-term:c09b1a33-0b29-4825-8e5c-cf2a22b50891
   a skos:Concept ;
@@ -10204,7 +10305,7 @@ cbnl-term:e813c2e3-2b8d-462c-a172-fa2913ca2981
   dct:references "IMBOR" ;
   rdfs:comment "none" ;
   skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
-  skos:definition "Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing. (Bron: definities.geostandaarden.nl)"@nl ;
+  skos:definition "Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing."@nl ;
   skos:prefLabel "moeras"@nl ;
 .
 cbnl-term:e86368f3-ef32-43ea-95eb-9f636e4b9cb0
@@ -10841,14 +10942,6 @@ cbnl-term:f438f9dd-0b8d-468a-ab84-38494b0e1b5a
   skos:definition "Een losse extra ballast, aangebracht in of aan het contragewicht van een brug, om het evenwicht van het val af te regelen" ;
   skos:prefLabel "control ballast"@en ;
   skos:prefLabel "regelballast"@nl ;
-.
-cbnl-term:f460f60b-472b-48df-97c8-f99aac721ad7
-  a skos:Concept ;
-  dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
-  skos:broader <https://bimloket.nl/data/term/cbnl/27fd9135-6c9a-4edb-bb8f-a749af9702ac> ;
-  skos:definition "Een (tijdelijke) buis tussen twee tegenoverliggende wanden, dammen of schotten bedoeld om naar elkaar toe wijken te voorkomen" ;
-  skos:prefLabel "bracing strut"@en ;
-  skos:prefLabel "stempelbuis"@nl ;
 .
 cbnl-term:f48361c4-f479-4d52-9ede-94b71e2514eb
   a skos:Concept ;
