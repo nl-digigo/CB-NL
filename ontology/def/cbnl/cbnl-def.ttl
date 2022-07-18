@@ -141,6 +141,19 @@ cbnl:
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
 .
+<https://bimloket.nl/data/def/cbnl/02882772-2d6f-4561-ab63-c0957efbad9b>
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NPR 4768" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Veld, gemarkeerd met lijnen, om bepaalde sporten mogelijk te maken."@nl ;
+  skos:prefLabel "sports field"@en ;
+  skos:prefLabel "sportveld"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
+.
 <https://bimloket.nl/data/def/cbnl/02a34db2-234e-4b8a-9331-23c1e3766bc9>
   a rdfs:Class ;
   dct:references "IFC-4.1" ;
@@ -470,6 +483,19 @@ cbnl:
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+<https://bimloket.nl/data/def/cbnl/067c7f53-e6fb-4231-b671-6a090664cce9>
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "NEN 3610" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Grondoppervlak in principe bedekt met water."@nl ;
+  skos:prefLabel "water"@en ;
+  skos:prefLabel "water"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/0692ea34-8591-44b7-92db-2f4a31b43c10>
   a rdfs:Class ;
@@ -5838,6 +5864,19 @@ cbnl:
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
 .
+<https://bimloket.nl/data/def/cbnl/5b3eed2a-80e1-4df3-acdb-e6ba1dbc6b23>
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Langgerekte afgeplatte aarden wal van geringe hoogte met een gesloten beplanting."@nl ;
+  skos:prefLabel "houtwal"@nl ;
+  skos:prefLabel "wooded bank"@en ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
+.
 <https://bimloket.nl/data/def/cbnl/5b5dbc18-1d1a-400f-a52a-28349b7f1508>
   a rdfs:Class ;
   rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
@@ -6069,6 +6108,19 @@ cbnl:
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+<https://bimloket.nl/data/def/cbnl/5f3c875a-cb01-4082-8797-9c6702c68a78>
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Kunstwerk in de vorm van een viaduct dat deel uitmaakt van een verkeersbaan en waarmee een verkeersstroom over twee of meer ongelijkvloerse (conflicterende) verkeersstromen wordt geleid."@nl ;
+  skos:prefLabel "fly-over"@nl ;
+  skos:prefLabel "flyover"@en ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/5f73cdba-51b4-4aeb-843b-1626adc7a9e2>
   a rdfs:Class ;
@@ -8392,6 +8444,19 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
 .
+<https://bimloket.nl/data/def/cbnl/8704a2e4-6c33-4cb2-b7dc-ae132c1f47a2>
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Objecttypenbibliotheek Rijkswaterstaat (NL)" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Smal en meestal diep water of kanaal."@nl ;
+  skos:prefLabel "channel"@en ;
+  skos:prefLabel "geul"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
+.
 <https://bimloket.nl/data/def/cbnl/8704b333-91c3-46d7-b6ed-ef1c7c9b8545>
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -8663,6 +8728,19 @@ c) kunstmatig gecreëerde, van het oppervlaktewater en het grondwater gescheiden
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+<https://bimloket.nl/data/def/cbnl/8cba30fa-7693-4446-8b0f-a1f045ba5bc4>
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Informatiemodel Grootschalige topografie" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing."@nl ;
+  skos:prefLabel "moeras"@nl ;
+  skos:prefLabel "swamp"@en ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
 .
 <https://bimloket.nl/data/def/cbnl/8cbf87b6-8362-461f-9b0b-6a140fef047f>
   a rdfs:Class ;
@@ -10235,6 +10313,19 @@ cbnl:a7fb07b4-eb6f-4efb-b27a-3fc4c303295c
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
 .
+cbnl:a80a71ee-33c2-42e5-9d65-76bf6a93b89d
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Langwerpige smalle ingraving voor een fundering, riolering, kabels en leidingen."@nl ;
+  skos:prefLabel "sleuf"@nl ;
+  skos:prefLabel "slot"@en ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
+.
 cbnl:a80c6ba3-2b90-47e9-af3b-1884c433a452
   a rdfs:Class ;
   dct:created "2021-06-30T09:00:00.000Z"^^xsd:dateTime ;
@@ -10597,6 +10688,19 @@ cbnl:ad8452d3-5e27-4969-a670-533392691c7e
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
 .
+cbnl:ad8ef936-d1ef-4ae1-b59e-410b2ff0e566
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Objecttypenbibliotheek Rijkswaterstaat (NL)" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Verticale wand ter scheiding van land en water, opgebouwd uit een muur van (soms) gemetselde stenen of gestort beton."@nl ;
+  skos:prefLabel "kademuur"@nl ;
+  skos:prefLabel "quay wall"@en ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
+.
 cbnl:adde3322-e8ce-472b-a261-95ec774719c3
   a rdfs:Class ;
   dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
@@ -10793,6 +10897,19 @@ cbnl:b1346c37-c917-4db2-9484-f3d8c1d2d1cc
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
 .
+cbnl:b13bcb03-b270-44b3-a534-3015815c9860
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Wikipedia, de vrije encyclopedie (NL))" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "homogene mengsel van gassen in de onderste lagen van de aardatmosfeer, voor ongeveer 78 vol.-% bestaand uit stikstofgas, 21 vol.-% uit zuurstofgas en bijna 1% argon. Daarnaast bevat lucht sporen van andere edelgassen, een sterk wisselende hoeveelheid waterdamp (0,7 vol.-%), en koolzuurgas, dat ook in hoeveelheid sterk kan wisselen."@nl ;
+  skos:prefLabel "air"@en ;
+  skos:prefLabel "lucht"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
+.
 cbnl:b1a21ae5-cffb-4494-8cca-21bebb1251d8
   a rdfs:Class ;
   dct:modified "2022-01-01T20:38:00.000Z"^^xsd:dateTime ;
@@ -10803,6 +10920,19 @@ cbnl:b1a21ae5-cffb-4494-8cca-21bebb1251d8
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+cbnl:b1ea5ff5-b479-4e41-8310-1152cf63c2a8
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "CROW 156" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Gegraven lijnvormige verdieping in het maaiveld, al of niet gevuld met water, voor onder meer de berging en de afvoer en/of aanvoer van water."@nl ;
+  skos:prefLabel "watercourse"@en ;
+  skos:prefLabel "watergang"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
 .
 cbnl:b235dc25-95ab-402b-93e6-f27a5b06641e
   a rdfs:Class ;
@@ -11309,7 +11439,7 @@ cbnl:bc61281f-a4d6-49c9-9a6e-c2bd5f6e6da7
   dct:references "IFC-4.1" ;
   rdfs:comment "none" ;
   rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
-  skos:definition "A zone is S a group of spaces, partial spaces or other zones. Zone structures may not be hierarchical in contrary to the spatial structure of a project see IfcSpatialStructureElement , i.e. one individual IfcSpace may be associated with zero, one, or several IfcZone s. IfcSpace s are grouped into an IfcZone by using the objectified relationship IfcRelAssignsToGroup as specified at the supertype IfcGroup . NOTE S Certain use cases may restrict the freedom of non hierarchical relationships. In some building service use cases the zone denotes a S view based delimited volume for the purpose of analysis and calculation. This type of zone cannot overlap with respect to that analysis, but may overlap otherwise."@nl ;
+  skos:definition "A zone is a group of spaces, partial spaces or other zones. Zone structures may not be hierarchical in contrary to the spatial structure of a project see IfcSpatialStructureElement , i.e. one individual IfcSpace may be associated with zero, one, or several IfcZone s. IfcSpace s are grouped into an IfcZone by using the objectified relationship IfcRelAssignsToGroup as specified at the supertype IfcGroup . NOTE S Certain use cases may restrict the freedom of non hierarchical relationships. In some building service use cases the zone denotes a S view based delimited volume for the purpose of analysis and calculation. This type of zone cannot overlap with respect to that analysis, but may overlap otherwise."@nl ;
   skos:prefLabel "zone"@nl ;
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
@@ -11851,6 +11981,19 @@ cbnl:c5b6f3ce-762e-4cd0-8287-c3c5e1210714
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+cbnl:c5d3ebec-8cd4-4096-bab9-cf09e15cace6
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Kader en Leidraad Beheer Groenvoorzieningen" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "Lage vegetatie die grotendeels bestaat uit dwergstruiken. Langs wegen domineert Struikheide."@nl ;
+  skos:prefLabel "heide"@nl ;
+  skos:prefLabel "moor"@en ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
 .
 cbnl:c5e23a7b-b477-45bc-bb5e-cd27aa7c65f3
   a rdfs:Class ;
@@ -12815,6 +12958,19 @@ cbnl:d45c924c-1df4-444f-bc0b-102d9fcaa4dd
   cbnl:state "proposed" ;
   cbnl:stateComment "eerste iteratie" ;
   cbnl:stateDate "2021-06-30"^^xsd:date ;
+.
+cbnl:d4613532-49cd-4d06-b449-cc06408480df
+  a rdfs:Class ;
+  dct:created "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:modified "2022-06-30T09:00:00.000Z"^^xsd:dateTime ;
+  dct:references "Aquo Lex en Objectencatalogus" ;
+  rdfs:subClassOf cbnl:aef6ffc2-fb9e-4b74-a1bf-929b649b556d ;
+  skos:definition "natuurlijk door of in  water afgezet materiaal dat is ontstaan door verwering van gesteenten, behorende tot de fijnste groep afzettingsgesteenten."@nl ;
+  skos:prefLabel "clay"@en ;
+  skos:prefLabel "klei"@nl ;
+  cbnl:state "proposed" ;
+  cbnl:stateComment "eerste iteratie" ;
+  cbnl:stateDate "2022-06-30"^^xsd:date ;
 .
 cbnl:d4be147f-668e-444e-a66f-d4db9793f2ab
   a rdfs:Class ;
