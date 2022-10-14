@@ -6,7 +6,10 @@ Door de komst van de NTA8035 en de ontwikkeling van de NEN2660 is er binnen de s
 
 Andere standaarden van BIM-loket en van partners kunnen aansluiten op kernmodel van CB-NL. Hierdoor is het in de toekomst mogelijk om een “basis-OTL” te genereren, waarin de landelijke standaarden in 1 structuur aan elkaar gekoppeld zijn. Organisaties die een dergelijke basis-OTL volgen hoeven dus niet meer zelf te modelleren wat er in de sector is afgesproken.
 
- ![samenhang nen2660, cb-nl en otl](media/cb-nl-piramide.png "positionering cb-nl")
+<figure>
+<img src="media/cb-nl-piramide.png" alt="Piramide van bovenaan internationale afspraken, in het midden nationaal en onderaan organisatie. NEN 2660-1 en NEN 2660-2 en CB-NL staan in het midden, Organisatie OTL staat onderaan.">
+<figcaption>Samenhang NEN 2660, CB-NL en OTL.</figcaption>
+</figure>
 
 ## Versnellingsproject kernmodel CB-NL
 
