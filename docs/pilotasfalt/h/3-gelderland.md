@@ -81,6 +81,11 @@ Maar ook de dataset vanuit PIM kan op vergelijkbare manieren zichtbaar gemaakt w
   <figcaption>De luchtfoto visualisatie van linked datasets van wegen vanuit PIM data</figcaption>
 </figure>
 
+<figure id="figure">
+  <img src="h/media/pim-asfalt-voorbeeld.png" alt="Screenshot van applicatie" />
+  <figcaption>Gedetailleerde Asfalt gegevens vanuit PIM</figcaption>
+</figure>
+
 ### Koppelen van de data
 
 
