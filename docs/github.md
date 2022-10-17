@@ -15,17 +15,12 @@ Git maakt gebruik van line-based code comparisson. bij elke wijziging wordt dus 
 
 We gebruiken Github om onze issues bij te houden en onze code en producten met elkaar te delen.
 
-### Variant 1 (VOORSTEL)
 
 Bij CB-NL werken we allemaal in de master/main branch. Dat is de simpelste manier van werken.Gevolg hiervan is dat we het review systeem van Github (rond de pull-requests) niet gebruiken en we elkaar dus actief om reviews moeten vragen van wijzigingen die we al doorgevoerd hebben in de master/main. Iedereen werkt aan een kopie op zijn lokale omgeving en uploadt (pusht) die naar de Github master/main branch.
 
-### Variant 2
-
-Bij CB-NL werken we per takenpakket in een verschillende branch van de software. Zo hebben we allemaal een eigen omgeving waar de wijzigingen rond die taak worden doorgevoerd. Als de taak is afgerond wordt een pull-request aangemaakt waarbij om een review wordt gevraagd. Als de review klaar is dan worden de wijzigingen automatisch doorgevoerd in de master/main branch. Deze variant is complexer, maar wel beter op te schalen. Iedereen werkt aan een lokale lokale kopie van de branch waar hij aan werkt, uploadt (pusht) die naar de branch op Github, waarna deze eventueel kan worden samengevoegd.
+We werken met interne en externe reviewversies van Respec documenten om elkaars werk formeel te reviewen.
 
 ## Hoe doe je dat dan?
-
-**Let op: instructie o.b.v. variant 1**
 
 De Github issues, wiki, etc. kun je het best benaderen via de browser.
 
