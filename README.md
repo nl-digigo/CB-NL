@@ -1,15 +1,31 @@
-# CB-NL
+# Use Cases CB-NL
 
-Repository voor de ontwikkeling van CB-NL.
+Repository voor de ontwikkeling van CB-NL. Beoogd doel is de inrichting en het gebruik van andere standaarden en OTL’s in de sector te vereenvoudigen en daarmee bij te dragen aan een gestandaardiseerde manier van uitwisselen van digitale informatie en het voorkomen van informatieverlies tussen opdrachtgevers en opdrachtnemers.
 
-## Project Kernmodel CB-NL
+* De use cases waarvoor CB-NL potentieel geschikt is staan in dit document: [https://bimloket.github.io/CB-NL/usecases](https://bimloket.github.io/CB-NL/usecases)
 
-Het kernmodel van de CB-NL wordt aangepast aan de NEN2660-2.
-De documentatie hiervan is te vinden op: [https://bimloket.github.io/CB-NL/](https://bimloket.github.io/CB-NL/)
+## CB-NL 2.0
 
-## Tijdelijke viewer ter ondersteuning van de ontwikkeling van de CBNL
-CBNL Skos viewer met sparql widget is te vinden via: 
-https://connectedapps.nl/projects/cbnl/viewer/
+CB-NL 1.0 is aangepast naar aanleiding van de NEN 2660-2. CB-NL 2.0 is nu de vigerende versie. De ontwikkeling van CB-NL 2.0 is gefinancierd door [DigiGO](https://www.digigo.nu/), aangevuld met 'in-kind' bijdragen van een aantal deelnemende organisatie.
+
+Het doel was het ontwikkelen van een nieuw kernmodel voor CB-NL gebaseerd op de NEN2660-2. Het gaat daarbij primair om het afstemmen van termen en definities (semantiek) en het faciliteren van gegevensuitwisseling en -deling door afspraken over de gegevensstructuur (taxonomie). De inhoud van CB-NL 1.0 (het kerndeel van de taxonomie) is opgeschoond en in lijn gebracht met datgene waarover consensus is in de sector. 
+
+Let op; dit is in het stadium van beproeving en ontwikkeling, CB-NL is een beta versie waarmnee de sector kan experimenteren en beproeven wat er nodig is, het is nog niet geschikt voor grootschalige implementatie.
+
+* De spelregels die gebruikt zijn bij het opstellen van CB-NL 2.0 staan in dit document: [https://bimloket.github.io/CB-NL/spelregels](https://bimloket.github.io/CB-NL/spelregels)
+* De documentatie hiervan is te vinden op: [https://bimloket.github.io/CB-NL/](https://bimloket.github.io/CB-NL/)
+
+## Tijdelijke viewers ter ondersteuning van de ontwikkeling van de CBNL
+
+* CBNL Skos viewer met sparql widget is te vinden via: https://connectedapps.nl/projects/cbnl/viewer/
+* Open source viewer op basis van de NEN 2660-2, gehost vanaf de GitHub van BIM loket:  https://bimloket.github.io/ld-viewer/cb-nl2.0-pilot/
+
+## Pilot uitwisseling gegevens over asfaltverhardingen
+In 2022 heeft een pilot plaatsgevonden waarin informatie over asfaltverhardingen wordt uitgewisseld met behulp van CB-NL. De bevindingen staan in dit document: [https://bimloket.github.io/CB-NL/pilotasfalt](https://bimloket.github.io/CB-NL/pilotasfalt)
+
+
+## Instructie voor editor
+DE instructie voor editors in het werken met Github staat hier: [https://github.com/bimloket/CB-NL/tree/main/docs/github.md](https://github.com/bimloket/CB-NL/tree/main/docs/github.md)
 
 
 
