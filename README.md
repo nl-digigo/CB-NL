@@ -13,7 +13,6 @@ Het doel was het ontwikkelen van een nieuw kernmodel voor CB-NL gebaseerd op de 
 Let op; dit is in het stadium van beproeving en ontwikkeling, CB-NL is een beta versie waarmnee de sector kan experimenteren en beproeven wat er nodig is, het is nog niet geschikt voor grootschalige implementatie.
 
 * De spelregels die gebruikt zijn bij het opstellen van CB-NL 2.0 staan in dit document: [https://bimloket.github.io/CB-NL/spelregels](https://bimloket.github.io/CB-NL/spelregels)
-* De documentatie hiervan is te vinden op: [https://bimloket.github.io/CB-NL/](https://bimloket.github.io/CB-NL/)
 
 ## Tijdelijke viewers ter ondersteuning van de ontwikkeling van de CBNL
 
