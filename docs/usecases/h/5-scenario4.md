@@ -10,3 +10,5 @@ Een modelleur / informatie architect heeft hiervan gebruiksgemak en kan direct f
 
 Dit houdt in dat we de verschillende haken die men nodig kan hebben voor een OTL integraal moeten aanbieden, met de mogelijkheid een haak niet te gebruiken.  
 
+Ideeën voor uitwerking:
+Het inrichten van de CB-NL-werkplaats: Dit is het gedeelte waar de interface naar de gebruikers een belangrijke rol gaat spelen. Het betreft het creëren van de benodigde hulpmiddelen voor extenden en refereren van deze “basis-OTL” naar de relevante delen van de organisatie-eigen OTL’s.
