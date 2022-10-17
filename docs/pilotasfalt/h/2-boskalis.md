@@ -48,8 +48,8 @@ BIM-V houdt zich aan de Linked data architectuur waarbij databronnen gekoppeld k
 </figure>
 
 <figure id="figure">
-  <img src="h/media/boskalis_invulling.png" alt="Invulling OTL en datalandschap door Boskalis" />
-  <figcaption>Invulling OTL en datalandschap door Boskalis</figcaption>
+  <img src="h/media/boskalis_invulling.png" alt="Invulling OTL en datalandschap door Rijkswaterstaat BIM-Provesy" />
+  <figcaption>Invulling OTL en datalandschap door Rijkswaterstaat's BIM-Provesy</figcaption>
 </figure>
 
 
