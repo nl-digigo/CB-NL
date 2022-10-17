@@ -8,8 +8,16 @@ var respecConfig = {
     // alleen `name` is verplicht, https://respec.org/docs/#person
     {
       name: "Elisabeth de Vries",
+      company: "BIM loket",
     },
   ],
-  github: "https://github.com/Stichting-CROW/CB-NL",
-  license: "undefined",
+  authors: [
+    // alleen `name` is verplicht, https://respec.org/docs/#person
+    {
+      name: "Henny Stolwijk",
+      company: "BIM loket",
+    },
+  ],
+  github: "https://github.com/bimloket/CB-NL",
+  license: "cc-by",
 };

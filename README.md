@@ -4,13 +4,15 @@ Repository voor de ontwikkeling van CB-NL. Beoogd doel is de inrichting en het g
 
 * De use cases waarvoor CB-NL potentieel geschikt is staan in dit document: [https://bimloket.github.io/CB-NL/usecases](https://bimloket.github.io/CB-NL/usecases)
 
+Merk op dat CB-NL 2.0 zich in het stadium van beproeving en ontwikkeling bevindt. CB-NL is nog niet geschikt voor grootschalige implementatie.
+
 ## CB-NL 2.0
 
 CB-NL 1.0 is aangepast naar aanleiding van de NEN 2660-2. CB-NL 2.0 is nu de vigerende versie. De ontwikkeling van CB-NL 2.0 is gefinancierd door [DigiGO](https://www.digigo.nu/), aangevuld met 'in-kind' bijdragen van een aantal deelnemende organisatie.
 
 Het doel was het ontwikkelen van een nieuw kernmodel voor CB-NL gebaseerd op de NEN2660-2. Het gaat daarbij primair om het afstemmen van termen en definities (semantiek) en het faciliteren van gegevensuitwisseling en -deling door afspraken over de gegevensstructuur (taxonomie). De inhoud van CB-NL 1.0 (het kerndeel van de taxonomie) is opgeschoond en in lijn gebracht met datgene waarover consensus is in de sector. 
 
-Let op; dit is in het stadium van beproeving en ontwikkeling, CB-NL is een beta versie waarmnee de sector kan experimenteren en beproeven wat er nodig is, het is nog niet geschikt voor grootschalige implementatie.
+
 
 * De spelregels die gebruikt zijn bij het opstellen van CB-NL 2.0 staan in dit document: [https://bimloket.github.io/CB-NL/spelregels](https://bimloket.github.io/CB-NL/spelregels)
 
