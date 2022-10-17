@@ -24,7 +24,7 @@ In 2022 heeft een pilot plaatsgevonden waarin informatie over asfaltverhardingen
 
 
 ## Instructie voor editor
-DE instructie voor editors in het werken met Github staat hier: [https://github.com/bimloket/CB-NL/tree/main/docs/github.md](https://github.com/bimloket/CB-NL/tree/main/docs/github.md)
+De instructie voor editors in het werken met Github staat hier: [https://github.com/bimloket/CB-NL/tree/main/docs/github.md](https://github.com/bimloket/CB-NL/tree/main/docs/github.md)
 
 
 
