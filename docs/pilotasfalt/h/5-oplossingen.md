@@ -3,7 +3,7 @@
 ## Vervolgproject
 
 <figure id="figure">
-  <img src="h/media/oplossingsrichting.png" alt="Structuur met data en otl's" />
+  <img src="h/media/oplossingsrichting.PNG" alt="Structuur met data en otl's" />
   <figcaption>Een oplossingsrichting waarbij CB-NL helpt bij uitwisseling van asfaltinformatie</figcaption>
 </figure>
 

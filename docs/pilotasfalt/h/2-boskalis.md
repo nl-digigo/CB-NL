@@ -33,7 +33,7 @@ De positie of het detailniveau van PIM-OTL ten opzichte van de NEN 2660 en de NE
 BIM-Provesy is een Linked Data systeem ontwikkeld voor Rijkswaterstaat voor het centraliseren en koppelen van verhardings-informatie voor rijkswegen. Het systeem bevat valgewichtdeflectiemetingen, (gedetailleerde) boorkernen, garanties, CE informatie asfaltmengsels,  MJPV planningen, inspectie gegevens, KNMI gegevens, rekenresultaten en veel andere datasets. Onderdeel van de informatie stroom is het testen en toetsen van aangeleverde informatie via zogenaamde ‘validators’. Deze validators testen de dataset en produceren een rapportage hiervan.
 
 <figure id="figure">
-  <img src="h/media/rws_bimprovesy.png" alt="BIM-Provesy" />
+  <img src="h/media/rws_bimprovesy.PNG" alt="BIM-Provesy" />
   <figcaption>BIM-Provesy</figcaption>
 </figure>
 
