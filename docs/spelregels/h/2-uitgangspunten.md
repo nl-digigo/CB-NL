@@ -41,29 +41,10 @@ De modellen die binnen deze use case aan kunnen haken aan het kernmodel zijn bij
 
 Deze modellen zijn specifiek en voor een bepaalde use case ontwikkeld. Het kernmodel wordt generiek en richt zich op interoperabiliteit en uitwisselbaarheid.
 
-## Taalbindingen: 
 
-De CB-NL richt zich op de toepassingstypen:
-* 'afstemming van termen en definities' (1) (SKOS) en 
-* 'gegevensuitwisseling of -deling' (2) (RDFS of RDFS+OWL) 
+### Areaal/bouwwerkgegevens uitwisselen 
+<aside class="note" title="Scenario 5: Areaalgegevens uitwisselen">
+Ik wil areaalgegevens en/of bouwwerkgegevens kunnen uitwisselen tussen twee partijen met elk een eigen OTL op basis van CB-NL. Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases CB-NL</a>
+</aside>
 
-uit de NEN2660. 
 
-Het toepassingstype 'gegevensintegratie en innovatie' (3) (RDFS+SHACL) zien we als toepassingstype wat in onderliggende 'OTL' ontologieën van toepassing kan zijn, maar de keuze welke beperkingen er op bepaalde concepten gelden willen we niet in de CB-NL vastleggen.
-
-## Opbouw van de CB-NL:
-
-### Vocabulaire
-Er wordt een vocabulaire gemaakt en een taxonomie. De vocabulaire wordt uitgedrukt in SKOS concepten met een voorkeursdefinitie. In de definitie worden de definiërende zaken/eigenschappen meegenomen.
-
-Het woordenboek kan op deze manier worden hergebruikt op een laagdrempelige wijze wat de adaptatie van het kernmodel bespoedigt. 
-
-Iedere definitie krijgt een bronvermelding. Er kunnen meerdere definities aan een concept hangen. Eén van de definities is de voorkeursdefinitie.
-
-### Taxonomie
-De Taxonomie wordt opgebouwd uit de concepten van de vocabulaire. De hiërarchie wordt bepaalt door de definitie. De definitie kan worden aangescherpt of aangevuld a.d.h.v. de plek in de taxonomie.
-
-De taxonomie wordt geschreven in rdf/rdfs en niet in skos. Er wordt naar skos concepten verwezen door rdfs:isDefinedBy. De subtypering wordt gedefinieerd door rdfs:subClassOf en niet skos:narrower.
-
-De taxonomie mag multiple inheritance gebruiken. Hoe de definitie wordt uitgeschreven is tijdens de meeting nog een punt van discussie.
-De taxonomie is er om te ‘extenden’ en niet om te mappen.

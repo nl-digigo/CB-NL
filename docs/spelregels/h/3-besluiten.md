@@ -1,5 +1,15 @@
 # Ontwerpbeslissingen
 
+## Taalbindingen: 
+
+De CB-NL richt zich op de toepassingstypen:
+* 'afstemming van termen en definities' (1) (SKOS) en 
+* 'gegevensuitwisseling of -deling' (2) (RDFS of RDFS+OWL) 
+
+uit de NEN2660. 
+
+Het toepassingstype 'gegevensintegratie en innovatie' (3) (RDFS+SHACL) zien we als toepassingstype wat in onderliggende 'OTL' ontologieën van toepassing kan zijn, maar de keuze welke beperkingen er op bepaalde concepten gelden willen we niet in de CB-NL vastleggen.
+
 ## Bronnen CB-NL 2.0
 De volgende bronnen zijn als input gebruikt voor CB-NL 2.0:
 * ABDL (RWS)
@@ -18,14 +28,33 @@ De volgende bronnen zijn als input gebruikt voor CB-NL 2.0:
 ### Bronnen 
 De bronnen zijn eerst in een linked data vorm gegoten als ze dat nog niet waren. Vanwege de verschillende vormen en indelingen van de bronnen, is er gekozen om de bronnen in skos vast te leggen. Een linked data vorm die veel vrijheid geeft en meerdere hiërarchieën versimpelt naar de skos:broader en skos:narower opdeling.
 
+## Opbouw van CB-NL 2.0
 
-## Het Woordenboek
+### Vocabulaire
+Er wordt een vocabulaire ("woordenboek") gemaakt en een taxonomie. De vocabulaire wordt uitgedrukt in SKOS concepten met een voorkeursdefinitie. In de definitie worden de definiërende zaken/eigenschappen meegenomen.
+
+Het woordenboek kan op deze manier worden hergebruikt op een laagdrempelige wijze wat de adaptatie van het kernmodel bespoedigt. 
+
+Iedere definitie krijgt een bronvermelding. Er kunnen meerdere definities aan een concept hangen. Eén van de definities is de voorkeursdefinitie.
+
+#### Definitiekeuzes
 Voor iedere bron heeft de specialist of ervaringsdeskundige een selectie van concepten gemaakt voor opname In het woordenboek en voor opname In het kern model. Zo ontstond er een brede selectie aan concepten uit verschillende bronnen In de basis vormde voor het CBNL woordenboek in skos. Er is dankbaar gebruik gemaakt van de zeer rijk gevulde ABDL Van Rijkswaterstaat. In de ABDL zijn veel concepten al opgenomen met Definitie inclusief bronvermelding. Daarnaast is er al een voorkeur aangegeven Als het mogelijk was voor de definitie die gebruikt zou worden In de ABDL. Hieronder is het voorbeeld gegeven van brug In de ABDL.
 
 <figure id="figure">
   <img src="h/media/brugabdl.png" alt="Screenshot van applicatie" />
   <figcaption>Een brug in de ABDL</figcaption>
 </figure>
+
+### Taxonomie
+De Taxonomie wordt opgebouwd uit de concepten van de vocabulaire. De hiërarchie wordt bepaalt door de definitie. De definitie kan worden aangescherpt of aangevuld a.d.h.v. de plek in de taxonomie.
+
+De taxonomie wordt geschreven in rdf/rdfs en niet in skos. Er wordt naar skos concepten verwezen door rdfs:isDefinedBy. De subtypering wordt gedefinieerd door rdfs:subClassOf en niet skos:narrower.
+
+De taxonomie mag multiple inheritance gebruiken. Hoe de definitie wordt uitgeschreven is tijdens de meeting nog een punt van discussie.
+De taxonomie is er om te ‘extenden’ en niet om te mappen.
+
+
+
 
 
 ## Het Kernmodel
