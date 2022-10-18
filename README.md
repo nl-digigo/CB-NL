@@ -19,7 +19,11 @@ Het doel was het ontwikkelen van een nieuw kernmodel voor CB-NL gebaseerd op de 
 ## Tijdelijke viewers ter ondersteuning van de ontwikkeling van de CBNL
 
 * CBNL Skos viewer met sparql widget is te vinden via: https://connectedapps.nl/projects/cbnl/viewer/
-* Open source viewer op basis van de NEN 2660-2, gehost vanaf de GitHub van BIM loket:  https://bimloket.github.io/ld-viewer/cb-nl2.0-pilot/
+
+
+* Open source viewer op basis van de NEN 2660-2, gehost vanaf de GitHub van BIM loket:  https://bimloket.github.io/ld-viewer/cb-nl2.0-pilot/. Van CB-NL is hier alleen nog de 'CB-NL Def' ingeladen (en die importeert NEN2660-RDFS). 
+Dit is de CROW versie van de Laces - LinkedData viewer. Originele source code: https://github.com/laceshub/linked-data-viewer
+
 
 ## Pilot uitwisseling gegevens over asfaltverhardingen
 In 2022 heeft een pilot plaatsgevonden waarin informatie over asfaltverhardingen wordt uitgewisseld met behulp van CB-NL. De bevindingen staan in dit document: [https://bimloket.github.io/CB-NL/pilotasfalt](https://bimloket.github.io/CB-NL/pilotasfalt)
