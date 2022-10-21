@@ -25,7 +25,7 @@ De volgende bronnen zijn als input gebruikt voor CB-NL 2.0:
 * Aquo?
 * NL-SfB?
 
-### Bronnen 
+### Bron vertalen 
 De bronnen zijn eerst in een linked data vorm gegoten als ze dat nog niet waren. Vanwege de verschillende vormen en indelingen van de bronnen, is er gekozen om de bronnen in skos vast te leggen. Een linked data vorm die veel vrijheid geeft en meerdere hiërarchieën versimpelt naar de skos:broader en skos:narower opdeling.
 
 ## Opbouw van CB-NL 2.0
