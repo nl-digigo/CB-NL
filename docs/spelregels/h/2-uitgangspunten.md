@@ -42,9 +42,3 @@ De modellen die binnen deze use case aan kunnen haken aan het kernmodel zijn bij
 Deze modellen zijn specifiek en voor een bepaalde use case ontwikkeld. Het kernmodel wordt generiek en richt zich op interoperabiliteit en uitwisselbaarheid.
 
 
-### Areaal/bouwwerkgegevens uitwisselen 
-<aside class="note" title="Scenario 5: Areaalgegevens uitwisselen">
-Ik wil areaalgegevens en/of bouwwerkgegevens kunnen uitwisselen tussen twee partijen met elk een eigen OTL op basis van CB-NL. Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases CB-NL</a>
-</aside>
-
-
