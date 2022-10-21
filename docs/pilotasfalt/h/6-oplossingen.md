@@ -16,6 +16,6 @@ Door het leggen van deze relaties kan er een efficiëntere en herbruikbare link 
 
 
 <figure id="figure">
-  <img src="h/media/concepten_otls_cb-nl.png" alt="Boomstructuur" />
-  <figcaption>Relatie tussen NEN2660, NEN3610, CB-NL en PIM</figcaption>
+  <img src="h/media/NEN2660-2_en_PIM-OTL.png" alt="Boomstructuur" />
+  <figcaption>Relatie tussen NEN2660-2 en PIM-OTL</figcaption>
 </figure>
