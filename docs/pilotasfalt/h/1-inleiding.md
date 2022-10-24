@@ -5,12 +5,16 @@ Het voorliggende praktijkproject is van de provincie Gelderland en Rijkswatersta
 
 ## Aanleiding
 
-In april 2021 is het versnellingsproject Kernmodel CB-NL van start gegaan. Het gaat om de aanpassing van CB-NL aan de NEN2660 Modelleringsregels voor de bouw. De nieuwe inhoud van CB-NL is opgebouwd uit een topmodel aansluitend op NEN2660 en een aan het topmodel verbonden woordenboek (thesaurus). De spelregels die gebruikt zijn bij het opstellen van CB-NL 2.0 staan in [Spelregels CB-NL 2.0](https://bimloket.github.io/CB-NL/spelregels). 
+In april 2021 is het versnellingsproject Kernmodel CB-NL van start gegaan. Het gaat om de aanpassing van CB-NL aan de [=NEN-2660=] Modelleringsregels voor de bouw. De nieuwe inhoud van CB-NL is opgebouwd uit een topmodel aansluitend op NEN2660 en een aan het topmodel verbonden woordenboek (thesaurus). De spelregels die gebruikt zijn bij het opstellen van CB-NL 2.0 staan in [Spelregels CB-NL 2.0](https://bimloket.github.io/CB-NL/spelregels). 
+
+<dfn data-lt="NEN-2660">NEN-2660</dfn>: Regels voor informatiemodellering van de gebouwde omgeving.</p>
 
 
 ## Probleemstelling
-Belangrijk onderdeel van de digitalisering is het uitwisselen en delen van informatie. Om dit te kunnen doen zijn veel standaarden ontwikkeld. Deze zijn echter niet consistent met elkaar. Ook binnen organisaties speelt dit probleem. Informatiebronnen zijn moeilijk te verbinden, onder meer door inconsistente semantiek onderling. Daarom zijn vele organisaties zelf informatiemodellen (OTL, afkorting van object type library) aan het ontwikkelen, om hun gegevensbehoefte te structureren. Deze OTL’s verschillen ook weer van elkaar. De problemen die hieruit volgen kosten veel tijd en capaciteit, hetgeen een flinke barrière vormt voor het bereiken van de beoogde versnelling in de sector. 
+Belangrijk onderdeel van de digitalisering is het uitwisselen en delen van informatie. Om dit te kunnen doen zijn veel standaarden ontwikkeld. Deze zijn echter niet consistent met elkaar. Ook binnen organisaties speelt dit probleem. Informatiebronnen zijn moeilijk te verbinden, onder meer door inconsistente semantiek onderling. Daarom zijn vele organisaties zelf informatiemodellen (OTL, afkorting van object type library) aan het ontwikkelen, om hun gegevensbehoefte te structureren. Deze [=OTL=]’s verschillen ook weer van elkaar. De problemen die hieruit volgen kosten veel tijd en capaciteit, hetgeen een flinke barrière vormt voor het bereiken van de beoogde versnelling in de sector. 
 <br>
+<br>
+<dfn data-lt="OTL|Objecttypenbibliotheek">OTL</dfn>: Synoniem van ontologie. Een kennismodel van een specifiek kennisdomein in de werkelijkheid. Bevat een set regels, die gebruikt kunnen worden om extra kennis af te leiden uit gelinkte data. Met behulp van zo'n model kunnen computers begrijpen wat de data betekent en redeneren over data. </p>
 <br>
 Het is belangrijk om te komen tot een gemeenschappelijke taal. CB-NL is hiervoor bedoeld, en kan dienen als kernmodel waar andere standaarden aan kunnen verbinden en waarop OTL’s kunnen aanhaken.
 Andere standaarden van BIM-loket en van partners kunnen aansluiten op het kernmodel van CB-NL. Organisaties die een dergelijke basis-OTL volgen hoeven dus niet meer zelf te modelleren wat er in de sector is afgesproken. We verwachten dat de gegevensuitwisseling hierdoor gemakkelijker wordt en minder fouten oplevert.
