@@ -4,8 +4,7 @@
 
 ### Woordenboek
 <aside class="note" title="Scenario 1: Woordenboek">
-Ik wil opzoeken in CB-NL ‘thesaurus’ wat de betekenis is van een begrip in de bouw (ook wel het woordenboek genoemd). Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases CB-NL</a>
-</aside>
+Ik wil opzoeken in CB-NL ‘thesaurus’ wat de betekenis is van een begrip in de bouw (ook wel het woordenboek genoemd). Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases CB-NL</a></aside>
 
 ### Aansluiting BIM standaarden
 Het is niet de bedoeling dat in deze eerste versie van het kernmodel alle concepten uit de gebouwde omgeving zijn te vinden, alleen voldoende uitbreiding van de NEN 2660-2 dat BIM standaarden erop kunnen aansluiten.

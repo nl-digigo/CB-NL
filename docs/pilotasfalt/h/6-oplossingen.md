@@ -1,6 +1,16 @@
-# Beschrijving van de gewenste oplossing
+# Vervolgproject
 
-## Vervolgproject
+## Doel
+Doelen in het vervolgproject:
+
+* PIM en CB-NL publiceren op een publicatieplatform met een sparql-endpoint (een API voor linked data). IMBOR is al zo gepubliceerd. 
+* De waarde daarvan tonen door in de applicatie van de OTL-Gelderland te zoeken in PIM, IMBOR en CB-NL en concepten, attributen en waardelijsten in de OTL Gelderland een relatie te geven met de bron in PIM, IMBOR en CB-NL; zodat de informatievraag van Gelderland uitgedrukt is in standaarden.
+* Een informatieleveringsspecificatie vanuit Gelderland opstellen met een ontologie op basis van CB-NL
+* Publicatie van de nieuwe linksetsen/of scripts om datasets te vertalen die door een volgende gebruikt kunnen worden(van PIM > IMBOR; van IMBOR > IMGeo enzovoorts).
+
+Voorwaarde is, dat eerste de use cases van CB-NL beter omschreven zijn, zodat in een vervolgproject per use case een "proof of value" geleverd kan worden.
+
+## Gewenste oplossing
 
 <figure id="figure">
   <img src="h/media/oplossingsrichting.PNG" alt="Structuur met data en otl's" />
