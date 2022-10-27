@@ -3,7 +3,7 @@
 
 ## OTL Gelderland
 Gelderland heeft een eigen OTL. In OTL-Gelderland is de informatiebehoefte van de provincie beschreven in de vorm van een verzameling objecttypes, eigenschappen, relaties tussen objecttypes en waardenlijsten. Objecttypes zijn ingedeeld rondom de verschillende provinciale ‘disciplines’ (Verhardingen, Groen, Elektrotechnische Installaties, Water, Faunavoorzieningen, Wegmeubilair). OTL-Gelderland vormt de basis voor de inrichting van de provinciale beheermanagementsystemen en het datamodel dat gebruikt wordt bij het uitwisselen van data tussen de provincie en haar opdrachtnemers. 
-OTL-Gelderland wordt op dit moment beheerd in Relatics. De modellering in de laatst gepubliceerde versie (1.9) en de deze zomer gepubliceerde versie 1.10 is zoveel mogelijk gebaseerd op IMBOR (informatiemodel openbare ruimte) 2020-01 en IMGeo 2.1. Voor verhardingen zijn hier een aantal objecttypes toegevoegd die de verschillende soorten constructielagen voorstellen. Zie figuur 4 voor het informatiemodel rondom de discipline ‘Verhardingen’. In toekomstige versies van OTL-Gelderland zal de modellering conform OTL-PIM plaatsvinden.
+OTL-Gelderland wordt op dit moment beheerd in Relatics. De modellering in de laatst gepubliceerde versie (1.9) en de deze zomer gepubliceerde versie 1.10 is zoveel mogelijk gebaseerd op [=IMBOR=] 2020-01 en IMGeo 2.1. Voor verhardingen zijn hier een aantal objecttypes toegevoegd die de verschillende soorten constructielagen voorstellen. Zie figuur 4 voor het informatiemodel rondom de discipline ‘Verhardingen’. In toekomstige versies van OTL-Gelderland zal de modellering conform OTL-PIM plaatsvinden.
 
 
 <figure id="figure">

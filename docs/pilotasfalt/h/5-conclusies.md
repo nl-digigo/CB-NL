@@ -19,7 +19,7 @@ Ik wil mijn BIM-standaard (linked data) koppelen aan het Kernmodel. Hiertoe dien
 Ik wil mijn standaard mappen (relateren) aan objecten (en wellicht eigenschappen) van CB-NL, maar mijn standaard is niet beschikbaar als linked data. Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases CB-NL</a>
 </aside>
 
-* Theoretisch lijkt het handig om een OTL-Wegenbouw te hebben waarbij de beheer-view en de wegenbouw-view vertegenwoordigd is inclusief conditiemetingen opdat de gehele sector met 1 OTL kan gaan werken. Kanttekening daarbij is dat de beherende partijen op dit moment allemaal hun eigen selectie en aanvulling maken op de standaarden voor beheer (IMBOR) en conditiemetingen (NEN 2767), waardoor altijd individuele aanpassing nodig blijft bij de levering van de bouwende partij naar de beherende partij. 
+* Theoretisch lijkt het handig om een OTL-Wegenbouw te hebben waarbij de beheer-view en de wegenbouw-view vertegenwoordigd is inclusief conditiemetingen opdat de gehele sector met 1 OTL kan gaan werken. Kanttekening daarbij is dat de beherende partijen op dit moment allemaal hun eigen selectie en aanvulling maken op de standaarden voor beheer (IMBOR) en conditiemetingen ([[NEN_2767_1_2019]]), waardoor altijd individuele aanpassing nodig blijft bij de levering van de bouwende partij naar de beherende partij. 
 
 ## Scenario 4: Bouwstenen ontologie
 <aside class="note" title="Scenario 4: Bouwstenen ontologie">
@@ -32,7 +32,7 @@ Ik wil een OTL (ontologie in linked data) maken voor mijn organisatie die voldoe
 * Naast de ontwikkeling van een nationaal locatiereferentiesysteem is tevens aan te bevelen om een ‘nationaal’ beschrijvend locatiereferentiesysteem te ontwikkelen voor uniforme beschrijving van locaties in het wegendomein. Voorgesteld wordt om hiervoor het huidige BPS als basis te nemen, dit door te ontwikkelen en het beheer van dit systeem te organiseren
 * Ontwikkelen uniform object identificatiesysteem (voor zover nog nodig bij gebruik linkeddata technologie)
 * In het kader van de ontwikkeling van een NEN 2660-2 compliant PIM-OTL zijn in een tiental werksessies waaraan Boskalis, Heijmans, TNO en Building Bits hebben deelgenomen aanvullende afspraken gemaakt om te komen tot een voor de praktijk toepasbare ontologie. Aanbevolen wordt om deze aanvullende afspraken in breed verband te communiceren.
-* Om de huidige ontwikkelingen in het kader van datamodellering en -uitwisseling enigszins overzichtelijk te houden is het zeer wenselijk dat er duidelijke relaties, toelichtingen en praktische aanbevelingen worden geschreven voor referentie-ontologieën, CB-NL als ‘vertaler’ en initiatieven als BORIUS, ILS-configurator/NEN 2767/IMBOR etc.
+* Om de huidige ontwikkelingen in het kader van datamodellering en -uitwisseling enigszins overzichtelijk te houden is het zeer wenselijk dat er duidelijke relaties, toelichtingen en praktische aanbevelingen worden geschreven voor referentie-ontologieën, CB-NL als ‘vertaler’ en initiatieven als BORIUS, ILS-configurator/[[NEN_2767_1_2019]]/IMBOR etc.
 
 ## Scenario 5: Areaalgegevens uitwisselen 
 <aside class="note" title="Scenario 5: Areaalgegevens uitwisselen">
