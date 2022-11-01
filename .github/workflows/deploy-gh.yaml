@@ -1,0 +1,74 @@
+name: Deploy and report
+
+on:
+  workflow_run:
+    types:
+      - completed
+    workflows:
+      - "Publish review or reference version"
+      - "Add draft document"
+      - "Auto-publish draft"
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+env:
+  DOCS_HOME: https://bimloket.github.io
+
+jobs:
+  deploy-drafts:
+    name: Deploy working drafts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Deploy live view 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: docs # The folder the action should deploy.
+          force: false
+          clean-exclude: |
+            v/**
+          commit-message: |
+            Deploying to bimloket.github.io from @ ${{ env.GITHUB_SHA }}
+
+            Reason: After push by ${{ github.actor }}
+
+  report-done:
+    name: Report
+    runs-on: ubuntu-latest
+
+    needs:
+      - deploy-drafts
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Collect all files in gh-pages
+        run: |
+          REPO_NAME=$(echo '${{ github.repository }}' | cut -d'/' -f2 )
+          # go to branch gh-pages
+          git switch gh-pages
+          # find index.html files and get their html-title
+          find . -type f -name 'index.html' -exec sh -c "grep '<title>' {} | sed -e 's|</*title>||g' | xargs" \; > /tmp/index-titles.text
+          # find index.html files and construct (as we're on gh-pages) their 
+          find . -type f -name 'index.html' \
+            | sed -r 's|/[^/]+$||'  \
+            | sed -r "s|^.|$(echo $DOCS_HOME)/$(echo $REPO_NAME)|" > /tmp/index-filepaths.text
+
+      - name: Report as index.html
+        run: |
+          echo "## Now serving: 🍸" >> $GITHUB_STEP_SUMMARY
+          echo "| Title | URL |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|-----|" >> $GITHUB_STEP_SUMMARY
+          # merge with '|' (paste) the results of 1: index-titles.text, but with '|' replaced (sed); 2: the contents of index-filepaths.text
+          paste -d'|' <(sed -r 's/\|/-/' /tmp/index-titles.text) <(cat /tmp/index-filepaths.text) >> $GITHUB_STEP_SUMMARY

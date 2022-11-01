@@ -1,0 +1,92 @@
+name: Add draft document
+
+on:
+  workflow_dispatch:
+    inputs:
+      documentShortName:
+        description: "Document short name (name of the folder inside `docs`)"
+        required: true
+      documentTitle:
+        description: "Document title"
+        required: false
+        default: "Informatiemodel van ... voor ..."
+      documentType:
+        description: "Document type (specType, free text)"
+        required: false
+        default: "technische documentatie"
+      onReviewTrack:
+        description: "Will this document be formally reviewed?"
+        type: boolean
+        required: false
+
+env:
+  DOCS_HOME: "https://bimloket.github.io"
+
+permissions:
+  contents: write
+
+jobs:
+  add-doc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code 🛂
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          ref: ${{ github.head_ref }}
+
+      - name: Calculate variables 🛂
+        run: |
+          echo "DOC_SHORT_NAME=$(echo -n '${{ github.event.inputs.documentShortName }}' | tr '[:upper:]' '[:lower:]' | tr -c a-z0-9 - | sed 's/--\+/-/g;s/^-\+//;s/-\+$$//')" >> $GITHUB_ENV
+          echo "REPO_NAME=$(echo '${{ github.repository }}' | cut -d'/' -f2 )" >> $GITHUB_ENV
+          echo "LIVE_URL=$DOCS_HOME/$REPO_NAME/$DOC_SHORT_NAME" >> $GITHUB_ENV
+
+      - name: Install cookiecutter 🍪
+        run: pip3 install cookiecutter
+
+      - name: Calculate document metadata 🧾
+        uses: actions/github-script@v4
+        id: fetch-user-details
+        with:
+          script: |
+            const query = `query ($login:String!) {
+              user(login:$login) {
+                name
+              }
+            }`;
+            const variables = {
+              login: "${{ github.actor }}",
+            }
+            const result = await github.graphql(query, variables)
+            console.log(result)
+            return result
+
+      - name: Rebuild contents using cookiecutter 👷‍♀️
+        env:
+          INFO: ${{ steps.fetch-user-details.outputs.result }}
+        run: |
+          # Run cookiecutter
+          pushd /tmp
+          cookiecutter gh:stichting-crow/respec-document-template --no-input \
+            document_short_name="$DOC_SHORT_NAME" \
+            repository_name="$REPO_NAME" \
+            document_title="${{ github.event.inputs.documentTitle }}" \
+            first_editor="$(echo $INFO | jq -r .user.name)" \
+            on_review_track=${{ github.event.inputs.onReviewTrack }}
+
+          popd
+          # Move generated content to root directory of repo
+          mv /tmp/$DOC_SHORT_NAME docs/
+
+      - name: Push new document to repo 🚀
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: |
+            doc: add ${{ env.DOC_SHORT_NAME }}
+
+            Reason: run add-doc.yaml by ${{ github.actor }}
+
+      - name: Report to log 😎
+        run: |
+          echo "## Werkdocument 🎁" >> $GITHUB_STEP_SUMMARY
+          echo "docs/$REPO_NAME/$DOC_SHORT_NAME" >> $GITHUB_STEP_SUMMARY
