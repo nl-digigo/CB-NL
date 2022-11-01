@@ -1,0 +1,1226 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="generator" content="ReSpec 32.1.9">
+<style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:MuseoSans,"Museo Sans",Museo,sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+<link rel="stylesheet" href="https://docs.crow.nl/webfonts/webfonts.css">
+<link rel="stylesheet" href="https://docs.crow.nl/respec-design/stichting-crow/base.min.css">
+<link rel="stylesheet" media="(prefers-color-scheme: dark);" href="https://docs.crow.nl/respec-design/stichting-crow/dark.min.css">
+  
+  
+  
+  
+<title>Pilot asfaltverhardingen uitwisselen met CB-NL 2.0</title>
+  
+  
+
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+code{color:#c63501}
+th code{color:inherit}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000;color:var(--toclink-text)}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+<link rel="icon" href="https://www.bimloket.nl/favicon.png">
+<style>
+ul.index{columns:30ch;column-gap:1.5em}
+ul.index li{list-style:inherit}
+ul.index li span{color:inherit;cursor:pointer;white-space:normal}
+#index-defined-here ul.index li{font-size:.9rem}
+ul.index code{color:inherit}
+#index-defined-here .print-only{display:none}
+@media print{
+#index-defined-here .print-only{display:initial}
+}
+</style>
+<meta name="description" content="Dit document beschrijft de resultaten van een proof of value van CB-NL binnen een praktijkproject van de provincie Gelderland en Rijkswaterstaat en Boskalis. Het gaat hier om de informatie over asfaltverhardingen op basis van 'PIM', een wegenbouw informatiemodel ontwikkeld door een aantal grote opdrachtnemers, en van de informatiebehoefte van de opdrachtgevers. De aan te tonen &quot;value&quot; is om met behulp van CB-NL versie 2.0 eenvoudiger gegevens te kunnen uitwisselen.">
+<style>
+var{position:relative;cursor:pointer}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "specStatus": "IR",
+  "shortName": "CB-NL/pilotasfalt",
+  "specType": "technische documentatie",
+  "imprint": "bimloket",
+  "authors": [
+    {
+      "name": "Berwich Sluer",
+      "company": "Boskalis"
+    },
+    {
+      "name": "Hans Schevers",
+      "company": "Building Bits"
+    },
+    {
+      "name": "Paul Kuijper",
+      "company": "Rijkswaterstaat"
+    },
+    {
+      "name": "Jaap Bakker",
+      "company": "Rijkswaterstaat; BIM loket"
+    },
+    {
+      "name": "Gert-Jan Aaftink",
+      "company": "Rijkswaterstaat"
+    },
+    {
+      "name": "Niels Reyngoud",
+      "company": "Gelderland"
+    },
+    {
+      "name": "Joost Damen",
+      "company": "Gelderland"
+    },
+    {
+      "name": "Bram Corneliszen",
+      "company": "Gelderland"
+    },
+    {
+      "name": "Henny Stolwijk",
+      "company": "BIM loket"
+    }
+  ],
+  "editors": [
+    {
+      "name": "Elisabeth de Vries",
+      "company": "BIM loket"
+    }
+  ],
+  "github": "https://github.com/bimloket/CB-NL",
+  "license": "cc-by",
+  "localBiblio": {
+    "NEN_2660_2_2022": {
+      "title": "NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1",
+      "href": "https://connect.nen.nl/Family/Detail?name=NEN%202660-2",
+      "status": "Actueel",
+      "publisher": "NEN",
+      "id": "nen_2660_2_2022"
+    },
+    "NEN_2660_1_2022": {
+      "title": "NEN 2660-1 Rules for information modelling of the built environment - Part 1: Conceptual models",
+      "href": "https://www.nen.nl/en/nen-2660-1-2022-nl-291666",
+      "status": "Actueel",
+      "publisher": "NEN"
+    },
+    "NEN_3610_2022": {
+      "title": "Basic schema for geo-information - Terms, definitions, relations and general rules for the interchange of information of spatial objects related to the earth",
+      "href": "https://www.nen.nl/en/nen-3610-2022-nl-296137",
+      "status": "Actueel",
+      "publisher": "NEN",
+      "id": "nen_3610_2022"
+    },
+    "NEN_2767_1_2019": {
+      "title": "Condition assessment built environment - Part 1: Methodology + Summary of assets",
+      "href": "https://www.nen.nl/en/nen-2767-1-c1-2019-en-259262",
+      "status": "Actueel",
+      "publisher": "NEN",
+      "id": "nen_2767_1_2019"
+    }
+  },
+  "publishDate": "2022-11-01",
+  "reviewDateEnd": "2022-11-30",
+  "hypothesisComments": true,
+  "publishISODate": "2022-11-01T00:00:00.000Z",
+  "generatedSubtitle": "BIM Loket technische documentatie, referentieversie 1 november 2022"
+}</script></head>
+
+<body style="background-image: url(&quot;https://docs.crow.nl/respec-design/stichting-crow/status-nl/IR.svg&quot;);" class="h-entry"><div class="head">
+    <p class="logos"><a class="logo" href="https://bimloket.nl"><img crossorigin="" alt="BIM Loket" height="75" src="https://docs.crow.nl/respec-design/stichting-crow/logo/bimloket.jpg" width="150">
+  </a></p>
+    <h1 id="title" class="title">Pilot asfaltverhardingen uitwisselen met CB-NL 2.0</h1> 
+    <p id="w3c-state">BIM Loket technische documentatie,
+  referentieversie <time style="white-space: pre;" class="dt-published" datetime="2022-11-01">1 november 2022</time></p>
+    <details open="">
+      <summary>Meer informatie over dit document</summary>
+      <dl>
+        
+        
+        
+        <dt>Laatste werkversie:</dt><dd><a href="https://bimloket.github.io/CB-NL/pilotasfalt">https://bimloket.github.io/CB-NL/pilotasfalt</a></dd>
+        <dt>Geschiedenis:</dt><dd>
+                    <a href="https://github.com/bimloket/CB-NL/commits/">Wijzigingsgeschiedenis</a>
+                  </dd>
+        
+        
+        
+        <dt>Redacteur:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Elisabeth de Vries</span> (<span class="p-org org h-org">BIM loket</span>)
+  </dd>
+        
+        <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Berwich Sluer</span> (<span class="p-org org h-org">Boskalis</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Hans Schevers</span> (<span class="p-org org h-org">Building Bits</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Paul Kuijper</span> (<span class="p-org org h-org">Rijkswaterstaat</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Jaap Bakker</span> (<span class="p-org org h-org">Rijkswaterstaat; BIM loket</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Gert-Jan Aaftink</span> (<span class="p-org org h-org">Rijkswaterstaat</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Niels Reyngoud</span> (<span class="p-org org h-org">Gelderland</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Joost Damen</span> (<span class="p-org org h-org">Gelderland</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Bram Corneliszen</span> (<span class="p-org org h-org">Gelderland</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Henny Stolwijk</span> (<span class="p-org org h-org">BIM loket</span>)
+  </dd>
+        <dt>Feedback:</dt><dd>
+        <a href="https://github.com/bimloket/CB-NL/">GitHub bimloket/CB-NL</a>
+        (<a href="https://github.com/bimloket/CB-NL/pulls/">wijzigingsverzoeken</a>,
+        <a href="https://github.com/bimloket/CB-NL/issues/new/choose">nieuw issue</a>,
+        <a href="https://github.com/bimloket/CB-NL/issues/">openstaande issues</a>)
+      </dd><dd id="annotation-service-placeholder">
+        <button type="button" data-load-annotation-service="">
+          Laad annotaties
+        </button>
+        <span><small>Annotaties door <a href="https://web.hypothes.is">Hypothes.is</a> (<a href="https://web.hypothes.is/privacy">privacybeleid</a>).</small></span>
+      </dd><dd hidden="" id="annotation-service-loaded">
+        <span data-hypothesis-annotation-count="">...</span> annotatie(s) met <em>Hypothes.is</em>
+        <button type="button" data-hypothesis-trigger="">
+          Toon annotatiebalk
+        </button>
+        <button type="button" data-unload-annotation-service="">
+          Verberg
+        </button>
+      </dd>
+        
+        
+      </dl>
+    </details>
+    
+    <p class="copyright">
+    Copyright ©
+    2022
+    
+    <a href="https://bimloket.nl">BIM Loket</a>.
+    BIM Loket
+    <a href="https://www.bimloket.nl/p/21/Disclaimer">disclaimer</a>
+      van toepassing en gedistribueerd onder
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons Naamsvermelding">CC BY 4.0</a>
+  </p>
+    <hr title="Separator for header">
+  </div>
+  
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft de resultaten van een proof of value van <a data-link-type="dfn" href="#dfn-cb-nl" class="internalDFN" id="ref-for-dfn-cb-nl-1">CB-NL</a> binnen een praktijkproject van de provincie Gelderland en Rijkswaterstaat en Boskalis. Het gaat hier om de informatie over asfaltverhardingen op basis van '<abbr title="Pavement Information Model">PIM</abbr>', een wegenbouw informatiemodel ontwikkeld door een aantal grote opdrachtnemers, en van de informatiebehoefte van de opdrachtgevers. De aan te tonen "value" is om met behulp van <a data-link-type="dfn" href="#dfn-cb-nl" class="internalDFN" id="ref-for-dfn-cb-nl-2">CB-NL</a> versie 2.0 eenvoudiger gegevens te kunnen uitwisselen.</p>
+</section>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p><em>Deze paragraaf
+      beschrijft de status van dit document ten tijde van publicatie. Het is
+      mogelijk dat er actuelere versies van dit document bestaan. Bekijk de
+      lijst van BIM Loket technische standaarden op
+      <a href="https://https://bimloket.nl/">bimloket.nl</a>
+      en alle BIM Loket-publicaties via
+      <a href="https://https://bimloket.nl">bimloket.nl</a>.</em></p><p>
+      Dit is een reviewversie en is nog niet vastgesteld.
+      Een publicatie als referentieversie
+          impliceert geen onderschrijven door BIM Loket.
+    </p><p>
+            Belanghebbenden, geïnteresseerde partijen en anderen worden
+            uitgenodigd dit document te reviewen en hun commentaar in te zenden
+            vóór 30 november 2022. Zowel inhoudelijk als
+            technisch commentaar als commentaar betreffende de
+            implementeerbaarheid is welkom.
+          </p><p>
+      <a href="https://github.com/bimloket/CB-NL/issues/">GitHub Issues</a> wordt gebruikt voor de discussie
+      van dit document. Eén issue per onderwerp vereenvoudigt de verwerking.
+    </p><p>
+      Reviewcommentaar mag ook achtergelaten worden als
+      <em>Hypothes.is</em> annotaties. Gebruik het publieke kanaal voor je
+      commentaar.
+    </p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#praktijkproef"><bdi class="secno">1.1 </bdi>Praktijkproef</a></li><li class="tocline"><a class="tocxref" href="#aanleiding"><bdi class="secno">1.2 </bdi>Aanleiding</a></li><li class="tocline"><a class="tocxref" href="#probleemstelling"><bdi class="secno">1.3 </bdi>Probleemstelling</a></li><li class="tocline"><a class="tocxref" href="#doel"><bdi class="secno">1.4 </bdi>Doel</a></li><li class="tocline"><a class="tocxref" href="#methoden"><bdi class="secno">1.5 </bdi>Methoden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#boskalis"><bdi class="secno">2. </bdi>Boskalis</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">2.1 </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#pim-otl"><bdi class="secno">2.2 </bdi><abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inhoud"><bdi class="secno">2.2.1 </bdi>Inhoud</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#rijkswaterstaat"><bdi class="secno">3. </bdi>Rijkswaterstaat</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bim-provesy"><bdi class="secno">3.1 </bdi>BIM-Provesy</a></li><li class="tocline"><a class="tocxref" href="#bim-v-uitbreidingen"><bdi class="secno">3.2 </bdi><abbr title="BIM Provesy">BIM-V</abbr> uitbreidingen</a></li><li class="tocline"><a class="tocxref" href="#poc-s-bim-v-en-pim"><bdi class="secno">3.3 </bdi>POC’s <abbr title="BIM Provesy">BIM-V</abbr> en <abbr title="Pavement Information Model">PIM</abbr></a></li><li class="tocline"><a class="tocxref" href="#otl-pim-otl-wegenbouw"><bdi class="secno">3.4 </bdi><abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr>/<abbr title="objecttypenbibliotheek">OTL</abbr>-Wegenbouw</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gelderland"><bdi class="secno">4. </bdi>Gelderland</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#otl-gelderland"><bdi class="secno">4.1 </bdi><abbr title="objecttypenbibliotheek">OTL</abbr> Gelderland</a></li><li class="tocline"><a class="tocxref" href="#werkzaamheden"><bdi class="secno">4.2 </bdi>Werkzaamheden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#data-preparatie"><bdi class="secno">4.2.1 </bdi>Data preparatie</a></li><li class="tocline"><a class="tocxref" href="#data-typering"><bdi class="secno">4.2.2 </bdi>Data typering</a></li><li class="tocline"><a class="tocxref" href="#pim-data-verwerken"><bdi class="secno">4.2.3 </bdi><abbr title="Pavement Information Model">PIM</abbr> data verwerken</a></li><li class="tocline"><a class="tocxref" href="#visualisatie-van-de-linked-data"><bdi class="secno">4.2.4 </bdi>Visualisatie van de Linked Data</a></li><li class="tocline"><a class="tocxref" href="#koppelen-van-de-data"><bdi class="secno">4.2.5 </bdi>Koppelen van de data</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#koppeling-wegvakken-pim"><bdi class="secno">4.2.5.1 </bdi>Koppeling wegvakken-<abbr title="Pavement Information Model">PIM</abbr></a></li></ol></li><li class="tocline"><a class="tocxref" href="#koppeling-cb-nl"><bdi class="secno">4.2.6 </bdi>Koppeling <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a></li></ol></li><li class="tocline"><a class="tocxref" href="#uitwisseling-in-de-praktijk"><bdi class="secno">4.3 </bdi>Uitwisseling in de praktijk</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conclusies-en-aanbevelingen"><bdi class="secno">5. </bdi>Conclusies en aanbevelingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#scenario-1-woordenboek"><bdi class="secno">5.1 </bdi>Scenario 1: Woordenboek</a></li><li class="tocline"><a class="tocxref" href="#scenario-2-3-aansluiting-bim-standaarden"><bdi class="secno">5.2 </bdi>Scenario 2-3: Aansluiting BIM Standaarden</a></li><li class="tocline"><a class="tocxref" href="#scenario-4-bouwstenen-ontologie"><bdi class="secno">5.3 </bdi>Scenario 4: Bouwstenen ontologie</a></li><li class="tocline"><a class="tocxref" href="#scenario-5-areaalgegevens-uitwisselen"><bdi class="secno">5.4 </bdi>Scenario 5: Areaalgegevens uitwisselen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#datasets-vertalen-naar-linkeddata"><bdi class="secno">5.4.1 </bdi>Datasets vertalen naar LinkedData</a></li><li class="tocline"><a class="tocxref" href="#vertalen-bouwdata-naar-beheerdata"><bdi class="secno">5.4.2 </bdi>Vertalen "bouwdata" naar "beheerdata"</a></li></ol></li><li class="tocline"><a class="tocxref" href="#vervolproject"><bdi class="secno">5.5 </bdi>Vervolproject</a></li></ol></li><li class="tocline"><a class="tocxref" href="#vervolgproject"><bdi class="secno">6. </bdi>Vervolgproject</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#doel-0"><bdi class="secno">6.1 </bdi>Doel</a></li><li class="tocline"><a class="tocxref" href="#gewenste-oplossing"><bdi class="secno">6.2 </bdi>Gewenste oplossing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">7. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">8. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Termen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Termen gedefinieerd door referentie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <section class="informative" id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<section id="praktijkproef"><div class="header-wrapper"><h3 id="x1-1-praktijkproef"><bdi class="secno">1.1 </bdi>Praktijkproef</h3><a class="self-link" href="#praktijkproef" aria-label="Permalink for Section 1.1"></a></div>
+<p>Het voorliggende praktijkproject is van de provincie Gelderland en Rijkswaterstaat en Boskalis. Het gaat hier om de informatie over asfaltverhardingen op basis van het ‘Pavement Information Model’ (<abbr title="Pavement Information Model">PIM</abbr>) en van de informatiebehoefte van de opdrachtgevers beschreven in hun <abbr title="objecttypenbibliotheek">OTL</abbr>. Dit document beschrijft de pilot binnen dit project om met behulp van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>2.0 eenvoudiger gegevens te kunnen uitwisselen.</p>
+<p><dfn data-lt="PIM-OTL" id="dfn-pim-otl" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr></dfn>: Een wegenbouw informatiemodel ontwikkeld door een aantal grote opdrachtnemers.</p><p></p>
+</section><section id="aanleiding"><div class="header-wrapper"><h3 id="x1-2-aanleiding"><bdi class="secno">1.2 </bdi>Aanleiding</h3><a class="self-link" href="#aanleiding" aria-label="Permalink for Section 1.2"></a></div>
+<p>In april 2021 is het versnellingsproject Kernmodel <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> van start gegaan. Het gaat om de aanpassing van <a data-link-type="dfn" href="#dfn-cb-nl" class="internalDFN" id="ref-for-dfn-cb-nl-3">CB-NL</a> aan de [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2660_2_2022" title="NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1">NEN_2660_2_2022</a></cite>] Modelleringsregels voor de bouw. De nieuwe inhoud van <a data-link-type="dfn" href="#dfn-cb-nl" class="internalDFN" id="ref-for-dfn-cb-nl-4">CB-NL</a> is opgebouwd uit een topmodel aansluitend op <a data-link-type="dfn" href="#dfn-nen-2660-2" class="internalDFN" id="ref-for-dfn-nen-2660-2-1">NEN-2660-2</a> en een aan het topmodel verbonden woordenboek (thesaurus). De spelregels die gebruikt zijn bij het opstellen van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> 2.0 staan in <a href="https://bimloket.github.io/CB-NL/spelregels">Spelregels <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> 2.0</a>. </p>
+<p><dfn data-lt="NEN-2660-2" id="dfn-nen-2660-2" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">NEN-2660-2</dfn>: Regels voor informatiemodellering van de gebouwde omgeving, uitgewerkt in een ontologie voor de bouwsector.</p> [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2660_2_2022" title="NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1">NEN_2660_2_2022</a></cite>]<p></p>
+<p><dfn data-lt="CB-NL" id="dfn-cb-nl" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></dfn>: Standaard voor de gebouwde omgeving, waarmee genavigeerd kan worden tussen standaarden, zoals die van RAW, STABU, NEN, IMGeo, ETIM en Rioned.</p><p></p>
+</section><section id="probleemstelling"><div class="header-wrapper"><h3 id="x1-3-probleemstelling"><bdi class="secno">1.3 </bdi>Probleemstelling</h3><a class="self-link" href="#probleemstelling" aria-label="Permalink for Section 1.3"></a></div>
+<p>Belangrijk onderdeel van de digitalisering is het uitwisselen en delen van informatie. Om dit te kunnen doen zijn veel standaarden ontwikkeld. Deze zijn echter niet consistent met elkaar. Ook binnen organisaties speelt dit probleem. Informatiebronnen zijn moeilijk te verbinden, onder meer door inconsistente semantiek onderling. Daarom zijn vele organisaties zelf informatiemodellen (in de bouwsector bekend als objecttypenbibliotheken "<a data-link-type="dfn" href="#dfn-otl" class="internalDFN" id="ref-for-dfn-otl-1">OTL</a>'s") aan het ontwikkelen, om hun gegevensbehoefte te structureren. Deze <a data-link-type="dfn" href="#dfn-otl" class="internalDFN" id="ref-for-dfn-otl-2">OTL</a>’s verschillen ook weer van elkaar. De problemen die hieruit volgen kosten veel tijd en capaciteit, hetgeen een flinke barrière vormt voor het bereiken van de beoogde versnelling in de sector. 
+<br>
+<br>
+Het is belangrijk om te komen tot een gemeenschappelijke taal. <a data-link-type="dfn" href="#dfn-cb-nl" class="internalDFN" id="ref-for-dfn-cb-nl-5">CB-NL</a> is hiervoor bedoeld, en kan dienen als kernmodel waar andere standaarden aan kunnen verbinden en waarop <a data-link-type="dfn" href="#dfn-otl" class="internalDFN" id="ref-for-dfn-otl-3">OTL</a>’s kunnen aanhaken.
+Andere standaarden van BIM-loket en van partners kunnen aansluiten op het kernmodel van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>. Organisaties die een dergelijke basis-<abbr title="objecttypenbibliotheek">OTL</abbr> volgen hoeven dus niet meer zelf te modelleren wat er in de sector is afgesproken. We verwachten dat de gegevensuitwisseling hierdoor gemakkelijker wordt en minder fouten oplevert.
+Het draagt in hoge mate bij aan een gestandaardiseerde manier van uitwisselen van digitale informatie en het voorkomen van informatieverlies tussen opdrachtgevers en opdrachtnemers. De use cases waarvoor <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> potentieel geschikt is staan in <a href="https://bimloket.github.io/CB-NL/usecases">Use cases <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a>.
+<br>
+<br>
+<dfn data-lt="OTL" id="dfn-otl" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><abbr title="objecttypenbibliotheek">OTL</abbr></dfn>: Object Type Library (en) of Objecttypenbibliotheek (nl). Term die in de bouwsector gebruikt wordt en een specialisatie is van een <a href="#dfn-ontologie" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-ontologie-1">Ontologie</a>.</p>
+<dfn data-lt="ontologie|ontologieën|Ontologie" id="dfn-ontologie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Ontologie</dfn>: Een kennismodel van een specifiek kennisdomein in de werkelijkheid. Bevat een set regels, die gebruikt kunnen worden om extra kennis af te leiden uit gelinkte data. Met behulp van zo'n model kunnen computers begrijpen wat de data betekent en redeneren over data. <p></p><p></p>
+</section><section id="doel"><div class="header-wrapper"><h3 id="x1-4-doel"><bdi class="secno">1.4 </bdi>Doel</h3><a class="self-link" href="#doel" aria-label="Permalink for Section 1.4"></a></div>
+<p>Het doel is om aan te tonen dat je door het koppelen van de <a data-link-type="dfn" href="#dfn-otl" class="internalDFN" id="ref-for-dfn-otl-4">OTL</a>’s van verschillende bij het project betrokken organisaties aan het Kernmodel <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>, een betere informatie-uitwisseling kan bewerkstelligen: minder handwerk en minder fouten. Dit doel sluit aan op scenario 5 van <a data-link-type="dfn" href="#dfn-cb-nl" class="internalDFN" id="ref-for-dfn-cb-nl-6">CB-NL</a>.</p>
+<p>Om de meerwaarde van de ontwikkeling van het Kernmodel <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> aan te tonen zijn twee praktijkprojecten geselecteerd. Toetsing (verificatie en validatie) van het projectresultaat is gedaan om de uitwisseling met behulp van een <a data-link-type="dfn" href="#dfn-otl" class="internalDFN" id="ref-for-dfn-otl-5">OTL</a> gekoppeld aan <a data-link-type="dfn" href="#dfn-cb-nl" class="internalDFN" id="ref-for-dfn-cb-nl-7">CB-NL</a> te testen in de praktijk. De Klankbordgroep is bij de start van de pilot en tijdens het project geconsulteerd over de aanpak. Op deze manier hebben we geborgd dat de keuzen in het project aansluiten bij wat in de markt gerealiseerd kan worden. In dit praktijkproject willen we laten zien welke voordelen het bij uitwisseling oplevert als we (data)koppelingen kunnen leggen via <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>.</p>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Noot</span><span class="issue-label">: Scenario 5: Areaalgegevens uitwisselen</span></div><aside class="">
+Ik wil areaalgegevens en/of bouwwerkgegevens kunnen uitwisselen tussen twee partijen met elk een eigen <abbr title="objecttypenbibliotheek">OTL</abbr> op basis van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>. Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a>
+</aside></div>
+
+</section><section id="methoden"><div class="header-wrapper"><h3 id="x1-5-methoden"><bdi class="secno">1.5 </bdi>Methoden</h3><a class="self-link" href="#methoden" aria-label="Permalink for Section 1.5"></a></div>
+<p>Om data vanuit verschillende bronnen aan elkaar te koppelen zijn diverse wegen te bewandelen:</p>
+<ol>
+<li>Data koppelen op basis van geografische locatie (o.b.v. gis).</li>
+<li>Data koppelen op basis van een directe semantische mapping tussen twee modellen.</li>
+<li>Data koppelen door vanuit de bronnen een semantische mapping te leggen naar een referentiemodel (<abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>) en vervolgens deze koppelingen te volgen.</li>
+<li>Vertalen overbodig maken door geïntegreerd model te maken.<br>
+<br>
+In het project zijn vooral methode 1 en 2 toegepast.</li>
+</ol>
+</section></section>
+  <section id="boskalis"><div class="header-wrapper"><h2 id="x2-boskalis"><bdi class="secno">2. </bdi>Boskalis</h2><a class="self-link" href="#boskalis" aria-label="Permalink for Section 2."></a></div>
+<section id="inleiding-0"><div class="header-wrapper"><h3 id="x2-1-inleiding"><bdi class="secno">2.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 2.1"></a></div>
+<p>Dit hoofdstuk is beschreven vanuit de bril van Boskalis als dataleverende partij.
+Centraal stond een Linked Data versie van <abbr title="Pavement Information Model">PIM</abbr>, dat gekoppeld kan worden aan andere Linked datasets (denk aan materiaal databases, prognose data, meetdata, <abbr title="objecttypenbibliotheek">OTL</abbr>-en, etc.).
+Om de data te viewen is er een <abbr title="Pavement Information Model">PIM</abbr>-viewer opgetuigd met bijvoorbeeld een kaart voor het weergeven van GIS-data, een kenmerkscherm voor het browsen van kenmerken en relaties en wellicht enkele speciale widgets zoals bijv een boorkern visualisatie. 
+Om de data nog in een geprefereerd formaat te krijgen zijn export modules gebruikt. Via Sparql en/of mini-ontologieën is het goed mogelijk om de gewenste data eruit te halen en deze vervolgens (via software) te serialiseren naar een ander formaat zoals excel, Geopackage, ICDD, GraphQL, etc.</p>
+<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="4"><span>Noot</span><span class="issue-label">: PIM</span></div><aside class="">
+Acht grote Nederlandse wegenbouwbedrijven, waaronder Boskalis Nederland, hebben een uniform softwaresysteem ontwikkeld om realisatie en onderhoud van wegverhardingen te optimaliseren. Pavement Information Modelling (<abbr title="Pavement Information Model">PIM</abbr>) is een hulpmiddel bij efficiënt werken en procesbeheersing in asfalt. De software van <abbr title="Pavement Information Model">PIM</abbr> volgt het wegverhardingsproces digitaal, vanaf de ontwerpfase tot en met aanleg van het asfalt. Een project legt bijvoorbeeld de volgende zaken vast: hoeveel asfalt er nodig is, welke mengsels gebruikt gaan worden, welk materieel wordt ingezet, tussentijdse controles en keuringen. Asfaltaanvragen en planningen voor productie door de asfaltcentrale worden ook geregeld met <abbr title="Pavement Information Model">PIM</abbr>.  Bron: <a href="https://nederland.boskalis.com/over-ons/nieuws/detail/pim-de-toekomst-in-asfalt.html">Website Boskalis</a></aside></div>
+
+</section><section id="pim-otl"><div class="header-wrapper"><h3 id="x2-2-pim-otl"><bdi class="secno">2.2 </bdi><abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr></h3><a class="self-link" href="#pim-otl" aria-label="Permalink for Section 2.2"></a></div>
+<p><a data-link-type="dfn" href="#dfn-pim-otl" class="internalDFN" id="ref-for-dfn-pim-otl-1">PIM-OTL</a> staat voor de <abbr title="objecttypenbibliotheek">OTL</abbr> van het samenwerkingsverband van acht in <abbr title="Pavement Information Model">PIM</abbr> participerende wegenbouwaannemers. Inmiddels omvat deze <abbr title="objecttypenbibliotheek">OTL</abbr> meer concepten, relaties en attributen dan in het informatiesysteem <abbr title="Pavement Information Model">PIM</abbr> zelf zijn opgenomen. De ambitie is om met het [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2660_2_2022" title="NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1">NEN_2660_2_2022</a></cite>]compliant maken van de <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> een doorontwikkeling te laten plaatsvinden naar een landelijke gestandaardiseerde Wegenbouw-<abbr title="objecttypenbibliotheek">OTL</abbr>.
+Bij de ontwikkeling van het systeem <abbr title="Pavement Information Model">PIM</abbr> is een vereiste geweest dat het object ‘wegverharding/wegconstructie’, zodanig ge(de)componeerd moest zijn, dat alle objectniveaus waarop in de wegenbouwpraktijk eisen worden gesteld of data worden geregistreerd expliciet aanwezig moesten zijn. Tevens moest hierbij de materialisering volgens een eenduidige taxonomie zijn beschreven. Voor de toekomstvastheid van het systeem <abbr title="Pavement Information Model">PIM</abbr> werd het noodzakelijk geacht dat aan deze eisen werd voldaan. Ten tijde van de keuzes die moesten worden gemaakt voor de decompositie en taxonomie voor <abbr title="Pavement Information Model">PIM</abbr> werd nog aangenomen dat de [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2767_1_2019" title="Condition assessment built environment - Part 1: Methodology + Summary of assets">NEN_2767_1_2019</a></cite>] een goede basis zou moeten vormen, maar al snel bleek dat deze standaard ontoereikend was voor de ontwikkeling van <abbr title="Pavement Information Model">PIM</abbr>.</p>
+<section id="inhoud"><div class="header-wrapper"><h4 id="x2-2-1-inhoud"><bdi class="secno">2.2.1 </bdi>Inhoud</h4><a class="self-link" href="#inhoud" aria-label="Permalink for Section 2.2.1"></a></div>
+<p>De basis voor <a data-link-type="dfn" href="#dfn-pim-otl" class="internalDFN" id="ref-for-dfn-pim-otl-2">PIM-OTL</a> is gelegd met het vaststellen van de decompositie benodigde taxonomie voor de ontwikkeling van <abbr title="Pavement Information Model">PIM</abbr>, zoals weergegeven in figuur 1. De belangrijkste uitgangspunten bij de ontwikkeling van dit schema waren:</p>
+<ul>
+<li>Alle objectniveaus waarop in de sector eisen gesteld kunnen worden of data moeten worden vastgelegd moeten in expliciet benoemd zijn</li>
+<li>Het laagste objectniveau in de decompositie is het niveau waarop het object daadwerkelijk wordt vormgegeven of gerealiseerd</li>
+<li>Alle benodigde relaties vanaf een bouwstof van een asfaltmengsel tot aan de gehele samengestelde wegconstructie moeten eenduidig zijn.</li></ul>
+
+<p>Er is bij de ontwikkeling van <abbr title="Pavement Information Model">PIM</abbr> ook een belangrijke keuze gemaakt om in het systeem <abbr title="Pavement Information Model">PIM</abbr> alleen de reëel/discrete objecten en materialisering van een wegconstructie op te nemen en geometrieën en/of ruimtelijke gebieden buiten <abbr title="Pavement Information Model">PIM</abbr> te houden. Deze worden in GIS geregistreerd en beheerd. De reden hiervoor is dat de structuur voor aanlegdata voor de hele levenscyclus van een wegconstructie uniform is, waar de structuur voor functionele objecten in de assetmanagementfase sterk uiteenlopend en per beheerder of belanghebbende variabel kan zijn.</p>
+<p>De basisstructuur voor data die gedeeld of uitgewisseld moeten kunnen worden tussen aannemer en (weg)beheerder is na het tot stand komen van de [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2660_2_2022" title="NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1">NEN_2660_2_2022</a></cite>] beschreven, zoals in figuur 2 is weergegeven. In dit schema betreft de linkerzijde in principe de ‘aanlegzijde’ en de rechterzijde ‘de beheer(ders)zijde’.
+Vanuit de basis (figuur 2 en 3) wordt nu de <a data-link-type="dfn" href="#dfn-pim-otl" class="internalDFN" id="ref-for-dfn-pim-otl-3">PIM-OTL</a> in vlot tempo doorontwikkeld , waarbij het de bedoeling is dat zo veel mogelijk aangesloten wordt bij standaarden (NEN 2660, NEN 3610 etc.) en bestaande domeinafspraken (<abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr>, <abbr title="Rijkswaterstaat">RWS</abbr> etc.). De actuele versie van de <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> (Excel) is momenteel op aanvraag ter inzage beschikbaar en wordt naar verwachting nog in 2022 gepubliceerd. Na publicatie is het <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> middels een <abbr title="objecttypenbibliotheek">OTL</abbr>-viewer via het internet te raadplegen.
+De positie of het detailniveau van <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> ten opzichte van de [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2660_2_2022" title="NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1">NEN_2660_2_2022</a></cite>] en de [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_3610_2022" title="Basic schema for geo-information - Terms, definitions, relations and general rules for the interchange of information of spatial objects related to the earth">NEN_3610_2022</a></cite>] is weergegeven in figuur 2.</p>
+<figure id="figure">
+  <img src="h/media/structuur_pim.png" alt="Structuur data objecten in PIM">
+  <figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Structuur data objecten in <abbr title="Pavement Information Model">PIM</abbr></span></figcaption>
+</figure>
+
+
+<figure id="figure">
+  <img src="h/media/positie_pim.png" alt="Positie en detailniveau PIM-OTL">
+  <figcaption>Figuur <bdi class="figno">2</bdi> <span class="fig-title">Positie en detailniveau <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr></span></figcaption>
+</figure>
+
+<p><dfn data-lt="Informatiemodel Beheer Openbare Ruimte|IMBOR" id="dfn-informatiemodel-beheer-openbare-ruimte" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr></dfn></p>
+<dd> Het Informatiemodel Beheer Openbare Ruimte (<abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr>) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie vormen de de geometrische representatie van de objecten in <abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr>. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="https://docs.crow.nl/onto-verkenner/imbor/#/view">deze viewer</a>  </dd></section></section></section>
+  <section id="rijkswaterstaat"><div class="header-wrapper"><h2 id="x3-rijkswaterstaat"><bdi class="secno">3. </bdi>Rijkswaterstaat</h2><a class="self-link" href="#rijkswaterstaat" aria-label="Permalink for Section 3."></a></div>
+<section id="bim-provesy"><div class="header-wrapper"><h3 id="x3-1-bim-provesy"><bdi class="secno">3.1 </bdi>BIM-Provesy</h3><a class="self-link" href="#bim-provesy" aria-label="Permalink for Section 3.1"></a></div>
+<p><dfn data-lt="BIM-Provesy" id="dfn-bim-provesy" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">BIM-Provesy</dfn>: Een Linked Data systeem ontwikkeld voor Rijkswaterstaat voor het centraliseren en koppelen van verhardings-informatie voor rijkswegen. Het systeem bevat valgewichtdeflectiemetingen, (gedetailleerde) boorkernen, garanties, CE informatie asfaltmengsels,  MJPV planningen, inspectie gegevens, KNMI gegevens, rekenresultaten en veel andere datasets. Onderdeel van de informatie stroom is het testen en toetsen van aangeleverde informatie via zogenaamde ‘validators’. Deze validators testen de dataset en produceren een rapportage hiervan.</p><p></p>
+<figure id="figure">
+  <img src="h/media/rws_bimprovesy.PNG" alt="BIM-Provesy">
+  <figcaption>Figuur <bdi class="figno">3</bdi> <span class="fig-title">BIM-Provesy</span></figcaption>
+</figure>
+
+<p> <abbr title="BIM Provesy">BIM-V</abbr> werkt op basis van Linked data en probeert datasets te relateren. Vaak worden datasets op basis van BPS of GPS locaties gerelateerd. Andere relaties zijn weerstation relaties en bijv asfaltmengsel relaties. De objecten en kenmerken zijn grotendeels afkomstig uit de <abbr title="Rijkswaterstaat">RWS</abbr> <abbr title="objecttypenbibliotheek">OTL</abbr> (versie 1.71 met <abbr title="objecttypenbibliotheek">OTL</abbr>-Provesy objecten). </p>
+</section><section id="bim-v-uitbreidingen"><div class="header-wrapper"><h3 id="x3-2-bim-v-uitbreidingen"><bdi class="secno">3.2 </bdi><abbr title="BIM Provesy">BIM-V</abbr> uitbreidingen</h3><a class="self-link" href="#bim-v-uitbreidingen" aria-label="Permalink for Section 3.2"></a></div>
+<p><abbr title="BIM Provesy">BIM-V</abbr> houdt zich aan de Linked data architectuur waarbij databronnen gekoppeld kunnen worden door bijv (her-) gebruik van URI’s of door het leggen van een relatie op basis van een gezamelijke waarde. Extra context en evt extra verrijking vanwege de aanwezigheid van deze context is mogelijk door de data te koppelen aan een netwerk van (gerelateerde) <abbr title="objecttypenbibliotheek">OTL</abbr>-en.</p>
+<figure id="figure">
+  <img src="h/media/otl_aanpak.png" alt="Gedistribueerde aanpak OTL's">
+  <figcaption>Figuur <bdi class="figno">4</bdi> <span class="fig-title">Gedistribueerde aanpak <abbr title="objecttypenbibliotheek">OTL</abbr>'s</span></figcaption>
+</figure>
+
+<figure id="figure">
+  <img src="h/media/boskalis_invulling.png" alt="Invulling OTL en datalandschap door Rijkswaterstaat BIM-Provesy">
+  <figcaption>Figuur <bdi class="figno">5</bdi> <span class="fig-title">Invulling <abbr title="objecttypenbibliotheek">OTL</abbr> en datalandschap door Rijkswaterstaat's BIM-Provesy</span></figcaption>
+</figure>
+
+
+</section><section id="poc-s-bim-v-en-pim"><div class="header-wrapper"><h3 id="x3-3-poc-s-bim-v-en-pim"><bdi class="secno">3.3 </bdi>POC’s <abbr title="BIM Provesy">BIM-V</abbr> en <abbr title="Pavement Information Model">PIM</abbr></h3><a class="self-link" href="#poc-s-bim-v-en-pim" aria-label="Permalink for Section 3.3"></a></div>
+<p>In 2 Proof-of-concepts is er <abbr title="Pavement Information Model">PIM</abbr> data omgezet naar Linked Data die zeer makkelijk bruikbaar was binnen <a data-link-type="dfn" href="#dfn-bim-provesy" class="internalDFN" id="ref-for-dfn-bim-provesy-1">BIM-Provesy</a>. Grofweg zijn de volgende punten aan bod gekomen binnen de POC’s </p>
+<ol><li>Conversie van <abbr title="Pavement Information Model">PIM</abbr> data naar Linked data </li>
+<li>Niet alle <abbr title="Pavement Information Model">PIM</abbr> data is in eerste instantie relevant voor uitwisseling. Denk hierbij aan (interne) proces informatie en of interne goedkeuringen en/of ‘oude’ versies van objecten.</li>
+<li>2D GIS data is ook makkelijk om te zetten naar Linked Data zodat er 1 homogene dataset bestaat met GIS en <abbr title="Pavement Information Model">PIM</abbr> data</li>
+<li>	Datasets zoals WITOS gegevens zijn makkelijk toe te voegen aan de dataset indien deze omgezet zijn naar Linked Data</li>
+<li>	Intepretatie van <abbr title="Pavement Information Model">PIM</abbr> data wordt makkelijker indien deze gekoppeld is met een <abbr title="objecttypenbibliotheek">OTL</abbr> met definities en beschrijvingen</li>
+<li>	Integratie van <abbr title="Pavement Information Model">PIM</abbr> data met <abbr title="BIM Provesy">BIM-V</abbr> data is grotendeels gebaseerd op locatie </li>
+<ol><li>	Denk hierbij aan GIS gebaseerde integratie</li>
+<li>Uniforme aanduiding van (locaties op) wegen is wellicht zeer handig</li></ol>
+<li>	Verdere integratie door afstemming lijkt zeer goed mogelijk in de vorm van een gedragen <abbr title="objecttypenbibliotheek">OTL</abbr> voor wegenbouw met bijv </li>
+<ol><li>	een uniforme constructie opbouw van een weg </li>
+<li>	een uniforme manier om (conditie) metingen op te slaan (denk aan intensiteit, VGD,boorkernen, etc)</li>
+<li>	een uniforme manier voor locatie afspraken (denk aan BPS, GPS, NWB en 2D/3D geometrie beschrijvingen)</li></ol></ol>
+
+
+</section><section id="otl-pim-otl-wegenbouw"><div class="header-wrapper"><h3 id="x3-4-otl-pim-otl-wegenbouw"><bdi class="secno">3.4 </bdi><abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr>/<abbr title="objecttypenbibliotheek">OTL</abbr>-Wegenbouw</h3><a class="self-link" href="#otl-pim-otl-wegenbouw" aria-label="Permalink for Section 3.4"></a></div>
+<p>Linked datasets op basis van een gedragen <abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr>/<abbr title="objecttypenbibliotheek">OTL</abbr>-Wegenbouw kunnen zeer makkelijk in <abbr title="BIM Provesy">BIM-V</abbr> geplaatst worden omdat <abbr title="BIM Provesy">BIM-V</abbr> gebaseerd is op Linked data. Indien standardisatie van een <abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr>/<abbr title="objecttypenbibliotheek">OTL</abbr>-wegenbouw leidt tot een markt waarbij meerdere partijen data kunnen aanleveren volgens dit formaat lijkt een consistentie opbouw en beheer van gedetailleerde verhardings informatie dichter bij te komen. Een dergelijk model zal wellicht interactie hebben met de BGT en/of <a data-link-type="dfn" href="#dfn-informatiemodel-beheer-openbare-ruimte" class="internalDFN" id="ref-for-dfn-informatiemodel-beheer-openbare-ruimte-1">IMBOR</a>. Vooralsnog is <abbr title="Rijkswaterstaat">RWS</abbr> zeer geinteresseerd in de haalbaarheid van dit soort oplossingen en participeert vanwege deze interesse in deze use-case om meer zicht hierop te krijgen.</p>
+</section></section>
+  <section id="gelderland"><div class="header-wrapper"><h2 id="x4-gelderland"><bdi class="secno">4. </bdi>Gelderland</h2><a class="self-link" href="#gelderland" aria-label="Permalink for Section 4."></a></div>
+<section id="otl-gelderland"><div class="header-wrapper"><h3 id="x4-1-otl-gelderland"><bdi class="secno">4.1 </bdi><abbr title="objecttypenbibliotheek">OTL</abbr> Gelderland</h3><a class="self-link" href="#otl-gelderland" aria-label="Permalink for Section 4.1"></a></div>
+<p>Gelderland heeft een eigen <abbr title="objecttypenbibliotheek">OTL</abbr>. In <abbr title="objecttypenbibliotheek">OTL</abbr>-Gelderland is de informatiebehoefte van de provincie beschreven in de vorm van een verzameling objecttypes, eigenschappen, relaties tussen objecttypes en waardenlijsten. Objecttypes zijn ingedeeld rondom de verschillende provinciale ‘disciplines’ (Verhardingen, Groen, Elektrotechnische Installaties, Water, Faunavoorzieningen, Wegmeubilair). <abbr title="objecttypenbibliotheek">OTL</abbr>-Gelderland vormt de basis voor de inrichting van de provinciale beheermanagementsystemen en het datamodel dat gebruikt wordt bij het uitwisselen van data tussen de provincie en haar opdrachtnemers. 
+<abbr title="objecttypenbibliotheek">OTL</abbr>-Gelderland wordt op dit moment beheerd in Relatics. De modellering in de laatst gepubliceerde versie (1.9) en de deze zomer gepubliceerde versie 1.10 is zoveel mogelijk gebaseerd op <a data-link-type="dfn" href="#dfn-informatiemodel-beheer-openbare-ruimte" class="internalDFN" id="ref-for-dfn-informatiemodel-beheer-openbare-ruimte-2">IMBOR</a> 2020-01 en IMGeo 2.1. Voor verhardingen zijn hier een aantal objecttypes toegevoegd die de verschillende soorten constructielagen voorstellen. Zie figuur 4 voor het informatiemodel rondom de discipline ‘Verhardingen’. In toekomstige versies van <abbr title="objecttypenbibliotheek">OTL</abbr>-Gelderland zal de modellering conform <abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr> plaatsvinden.</p>
+<figure id="figure">
+  <img src="h/media/gelderland_otl.png" alt="boomstructuur">
+  <figcaption>Figuur <bdi class="figno">6</bdi> <span class="fig-title">De <abbr title="objecttypenbibliotheek">OTL</abbr> van Gelderland</span></figcaption>
+</figure>
+
+</section><section id="werkzaamheden"><div class="header-wrapper"><h3 id="x4-2-werkzaamheden"><bdi class="secno">4.2 </bdi>Werkzaamheden</h3><a class="self-link" href="#werkzaamheden" aria-label="Permalink for Section 4.2"></a></div>
+<section id="data-preparatie"><div class="header-wrapper"><h4 id="x4-2-1-data-preparatie"><bdi class="secno">4.2.1 </bdi>Data preparatie</h4><a class="self-link" href="#data-preparatie" aria-label="Permalink for Section 4.2.1"></a></div>
+<p>De volgende datasets zijn vertaald naar Linked Data:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Wat</th>
+<th>Kenmerken</th>
+<th><abbr title="objecttypenbibliotheek">OTL</abbr></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Wegvakken dataset van de provincie gelderland</td>
+<td>Geosparql/WKT*</td>
+<td><abbr title="objecttypenbibliotheek">OTL</abbr>-GLD (COINS2 versie)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Asfaltplakken GIS</td>
+<td>Geosparql/WKT</td>
+<td><abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Witos data</td>
+<td>Geosparql/Wkt</td>
+<td><abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr>-Witos</td>
+</tr>
+<tr>
+<td>4</td>
+<td><abbr title="Pavement Information Model">PIM</abbr> data</td>
+<td>Vanuit SQL database</td>
+<td><abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr></td>
+</tr>
+</tbody></table>
+<p>*WKT staat voor Well Known Text. WKT is een GIS formaat en kan dus geometrie beschrijvingen opslaan. GeoSparql bestaat uit een ontologie om o.a. WKT strings te duiden en breidt Sparql verder uit met enkele basis GIS operaties.</p>
+</section><section id="data-typering"><div class="header-wrapper"><h4 id="x4-2-2-data-typering"><bdi class="secno">4.2.2 </bdi>Data typering</h4><a class="self-link" href="#data-typering" aria-label="Permalink for Section 4.2.2"></a></div>
+<p>De wegvakken uit de dataset van Gelderland zijn getypeerd volgens de <abbr title="objecttypenbibliotheek">OTL</abbr>-GLD. </p>
+<figure id="figure">
+  <img src="h/media/data_gelderland.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">7</bdi> <span class="fig-title">De wegvakken uit de dataset van Gelderland zijn getypeerd volgens de <abbr title="objecttypenbibliotheek">OTL</abbr>-GLD. </span></figcaption>
+</figure>
+
+<p>De GIS data (wegvakken) van de provincie is vertaald naar Linked Data en is gekoppeld aan de <abbr title="objecttypenbibliotheek">OTL</abbr>. Dat wil zeggen dat elk object direct gekoppeld is via rdf:type met een Class uit de <abbr title="objecttypenbibliotheek">OTL</abbr>. Al deze data is in Ontotext GraphDB gezet. Zie screenshot hieronder.</p>
+<figure id="figure">
+  <img src="h/media/gisdata_gelderland.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">8</bdi> <span class="fig-title">De GIS data (wegvakken) van de provincie is vertaald naar Linked Data en is gekoppeld aan de <abbr title="objecttypenbibliotheek">OTL</abbr></span></figcaption>
+</figure>
+
+</section><section id="pim-data-verwerken"><div class="header-wrapper"><h4 id="x4-2-3-pim-data-verwerken"><bdi class="secno">4.2.3 </bdi><abbr title="Pavement Information Model">PIM</abbr> data verwerken</h4><a class="self-link" href="#pim-data-verwerken" aria-label="Permalink for Section 4.2.3"></a></div>
+<p>In verschillende P.O.C. is er <abbr title="Pavement Information Model">PIM</abbr> data via Excelsheets vertaald naar Linked Data. In deze case is er direct toegang gekregen tot de SQL databases van <abbr title="Pavement Information Model">PIM</abbr>. Het betreft hier een subset van alle tabellen. In deze POC is data zoveel mogelijk direct uit deze tabellen gehaald. Daarnaast zijn er Witos en GIS gegevens aangeleverd. Al deze bronnen zijn vertaald naar Linked data conform de eerder genoemde <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr>. Zie screenshot hieronder. </p>
+<figure id="figure">
+  <img src="h/media/pim_data_gelderland.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">9</bdi> <span class="fig-title">De verwerking van <abbr title="Pavement Information Model">PIM</abbr> data</span></figcaption>
+</figure>
+
+
+<p>In deze <abbr title="objecttypenbibliotheek">OTL</abbr> zijn alle klasses en relaties te vinden. Elk object in <abbr title="Pavement Information Model">PIM</abbr> heeft een directe relatie met een klasse uit de <abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr>. Tevens zijn objecten verbonden aan elkaar. Zo is in de <abbr title="objecttypenbibliotheek">OTL</abbr>-browser te zien dat een Wegvak verbonden kan worden met bijvoorbeeld LosLocaties, Temperaturen, etc. Deze structuren zijn weer terug te vinden in de triplestore waar zowel de datasets als ook de <abbr title="objecttypenbibliotheek">OTL</abbr> opgeslagen is. Zie hieronder een screenshot van GraphDB waarin een wegvak uit <abbr title="Pavement Information Model">PIM</abbr> centraal staat met de kenmerken rechts in het kenmerken scherm en tevens de verbindingen te zien is met andere resources.</p>
+<figure id="figure">
+  <img src="h/media/pim_viewer_gelderland.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">10</bdi> <span class="fig-title">De viewer van Gelderland op de <abbr title="Pavement Information Model">PIM</abbr> <abbr title="objecttypenbibliotheek">OTL</abbr></span></figcaption>
+</figure>
+
+</section><section id="visualisatie-van-de-linked-data"><div class="header-wrapper"><h4 id="x4-2-4-visualisatie-van-de-linked-data"><bdi class="secno">4.2.4 </bdi>Visualisatie van de Linked Data</h4><a class="self-link" href="#visualisatie-van-de-linked-data" aria-label="Permalink for Section 4.2.4"></a></div>
+<p>Naast de standaard visualisatie van bijvoorbeeld GraphDB is de data natuurlijk ook op de kaart te presenteren vanwege de aanwezigheid van WKT strings in de dataset. In een demonstratietool zijn deze datasets toonbaar gemaakt zoals de dataset van de provincie Gelderland, zie screenshot. 
+Zie ook:  <a href="https://connectedapps.nl/projects/cbnl/pim/cbnl-pim-gld-showcase-(versie-0.9.4)/">https://connectedapps.nl/projects/cbnl/pim/cbnl-pim-gld-showcase-(versie-0.9.4)/</a></p>
+<figure id="figure">
+  <img src="h/media/visualisatie_wegdata_gelderland.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">11</bdi> <span class="fig-title">De visualisatie van linked datasets van wegen van Gelderland</span></figcaption>
+</figure>
+
+<p>Maar ook de dataset vanuit <abbr title="Pavement Information Model">PIM</abbr> kan op vergelijkbare manieren zichtbaar gemaakt worden. Hieronder een screenshot van de demonstratietool waarbij de aanleg temperaturen zichtbaar worden gemaakt van een wegvak. Door een wegvak te selecteren worden de temperaturen over de breedte van de weg opgehaald en in een grafiek gezet. </p>
+<figure id="figure">
+  <img src="h/media/visualisatie_pimdata_gelderland.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">12</bdi> <span class="fig-title">De GIS visualisatie van linked datasets van wegen vanuit <abbr title="Pavement Information Model">PIM</abbr> data</span></figcaption>
+</figure>
+
+<figure id="figure">
+  <img src="h/media/visualisatie_pimdata_gelderland2.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">13</bdi> <span class="fig-title">De luchtfoto visualisatie van linked datasets van wegen vanuit <abbr title="Pavement Information Model">PIM</abbr> data</span></figcaption>
+</figure>
+
+<figure id="figure">
+  <img src="h/media/pim-asfalt-voorbeeld.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">14</bdi> <span class="fig-title">Gedetailleerde Asfalt gegevens vanuit <abbr title="Pavement Information Model">PIM</abbr></span></figcaption>
+</figure>
+
+</section><section id="koppelen-van-de-data"><div class="header-wrapper"><h4 id="x4-2-5-koppelen-van-de-data"><bdi class="secno">4.2.5 </bdi>Koppelen van de data</h4><a class="self-link" href="#koppelen-van-de-data" aria-label="Permalink for Section 4.2.5"></a></div>
+<section id="koppeling-wegvakken-pim"><div class="header-wrapper"><h5 id="x4-2-5-1-koppeling-wegvakken-pim"><bdi class="secno">4.2.5.1 </bdi>Koppeling wegvakken-<abbr title="Pavement Information Model">PIM</abbr></h5><a class="self-link" href="#koppeling-wegvakken-pim" aria-label="Permalink for Section 4.2.5.1"></a></div>
+<p>De wegvakken van de provincie Gelderland zijn via een relatie met de naam “bevatPIMWegvak” gekoppeld aan de <abbr title="Pavement Information Model">PIM</abbr> data (zo is een koppeling ontstaan conform hoofdstuk 4, methode 2). Zie onderstaande screenshot voor een voorbeeld dataset van 1 wegvak (provincie Gelderland) dat gekoppeld is aan een <abbr title="Pavement Information Model">PIM</abbr> Wegvak.</p>
+<figure id="figure">
+  <img src="h/media/koppeling_gelderland_pimdata.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">15</bdi> <span class="fig-title">De koppeling van <abbr title="Pavement Information Model">PIM</abbr> data aan Gelderse wegvakken</span></figcaption>
+</figure>
+
+<p>Deze relatie is voor deze demonstratie gelegd op basis van een GIS overlap analyse (hoofdstuk 4, methode 1). Deze kan makkelijk door Geosparql geimplementeerd worden. Beter zou natuurlijk een centrale wegennet Linked dataset zijn waar zowel de provincie Gelderland als ook <abbr title="Pavement Information Model">PIM</abbr> naar refereert of herbruikt (datakoppeling methode 3)
+Met de relatie is het mogelijk om data van de provincie Gelderland te laten zien (de wegvakken) die een koppeling hebben naar <abbr title="Pavement Information Model">PIM</abbr> data. Hieronder een screenshot van wegvakken van de provincie Gelderland waarbij het geselecteerde wegvak een relatie heeft naar een <abbr title="Pavement Information Model">PIM</abbr> wegvak dat vervolgens verbonden is met aanleg-gegevens,  loslocaties, etc. Tevens zijn de asfaltmengsels uit <abbr title="Pavement Information Model">PIM</abbr> gebruikt om de wegvakken van Gelderland te voorzien van een kleurcodering. Ook worden de aanleg temperaturen (Witos) in de grafiek getoond voor een Wegvak (Gelderland).</p>
+<figure id="figure">
+  <img src="h/media/visualisatie_koppeling_gelderland_pimdata.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">16</bdi> <span class="fig-title">De koppeling van <abbr title="Pavement Information Model">PIM</abbr> data aan Gelderse wegvakken</span></figcaption>
+</figure>
+
+<p>Naast deze visualisatie is het ook mogelijk om deze datasets te bevragen via Sparql. </p>
+<figure id="figure">
+  <img src="h/media/sparql-queries_gelderland.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">17</bdi> <span class="fig-title">Het zoeken in de wegdata met sparql-queries</span></figcaption>
+</figure>
+
+</section></section><section id="koppeling-cb-nl"><div class="header-wrapper"><h4 id="x4-2-6-koppeling-cb-nl"><bdi class="secno">4.2.6 </bdi>Koppeling <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></h4><a class="self-link" href="#koppeling-cb-nl" aria-label="Permalink for Section 4.2.6"></a></div>
+<p>De koppeling naar de <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> is minimaal uitgewerkt. Het concept Asfaltmengsel uit de <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> kent 2 versies: RDFS Asfaltmengsel en een Skos versie. Deze zijn verbonden aan elkaar. Zie onderstaande screenshot.</p>
+<figure id="figure">
+  <img src="h/media/cbnl-koppeling_gelderland.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">18</bdi> <span class="fig-title">Koppelen van de gelderse <abbr title="objecttypenbibliotheek">OTL</abbr> aan <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></span></figcaption>
+</figure>
+
+<p>Ook <abbr title="Pavement Information Model">PIM</abbr> kent asfaltmengsel en deze is via skos:related gekoppeld aan de <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> versie. Hiermee is het mogelijk om bijvoorbeeld beschrijvingen vanuit de <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> te hergebruiken voor <abbr title="Pavement Information Model">PIM</abbr>. Door deze koppeling kan er nu ook andere gerelateerde <abbr title="Pavement Information Model">PIM</abbr> concepten gevonden worden uit de <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr>. In het volgende screenshot is het bolletjes diagram verder uitgebreid met <abbr title="Pavement Information Model">PIM</abbr> <abbr title="objecttypenbibliotheek">OTL</abbr> concepten.</p>
+<figure id="figure">
+  <img src="h/media/cbnl-koppeling_pim.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">19</bdi> <span class="fig-title">Koppelen van de <abbr title="Pavement Information Model">PIM</abbr> <abbr title="objecttypenbibliotheek">OTL</abbr> aan <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></span></figcaption>
+</figure>
+
+</section></section><section id="uitwisseling-in-de-praktijk"><div class="header-wrapper"><h3 id="x4-3-uitwisseling-in-de-praktijk"><bdi class="secno">4.3 </bdi>Uitwisseling in de praktijk</h3><a class="self-link" href="#uitwisseling-in-de-praktijk" aria-label="Permalink for Section 4.3"></a></div>
+<p>Hoewel Linked Data een mooie manier is om data te delen of wellicht gewoon te gebruiken zonder dat je echt kunt spreken van delen (data bij de bron) is uitwisseling van data nog steeds zeer wenselijk. Een dergelijke uitwisseling (bv. met ICDD) vergt natuurlijk kennis van Linked Data en het is zeer wenselijk dat er een rijk software ecosysteem aanwezig is voor het verwerken van deze informatie. Dit is op moment van schrijven van dit document niet helemaal aanwezig. Vandaar dat de provincie Gelderland de <abbr title="Pavement Information Model">PIM</abbr> informatie wil ontvangen in een zogenaamde Geopackage formaat waarbij naast GIS data ook relaties naar (niet) Gis objecten gecommuniceerd kan worden.
+Voor dit doel is een geopackage export gemaakt waarbij de <abbr title="Pavement Information Model">PIM</abbr> data gexporteerd wordt. Ook Niet-gis objecten zoals Asfaltmengsels en MonsterLagen worden in deze package geëxporteerd. Relaties worden geschreven opdat deze passen in een Geopackage dat lukt voor “1:n” relaties. 
+Hieronder een screenshot van QGIS waarbij de geopackage file is geladen. </p>
+<figure id="figure">
+  <img src="h/media/geopackage_qgis.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">20</bdi> <span class="fig-title">Een screenshot van QGIS waarbij de geopackage file is geladen</span></figcaption>
+</figure>
+
+<p>Ook niet GIS data kan op deze manier overgedragen worden. Hieronder is een screenshot te zien van een boorkernlaag. Deze boorkernlaag heeft geen GIS info maar hoort bij een Boorkern. De uri van de Boorkern is te vinden via het kenmerk parentID. </p>
+<figure id="figure">
+  <img src="h/media/boorkern_koppeling.png" alt="Screenshot van applicatie">
+  <figcaption>Figuur <bdi class="figno">21</bdi> <span class="fig-title">Een screenshot van QGIS waarbij de niet-geografische informatie over een boorkern gevonden kan worden</span></figcaption>
+</figure>
+
+<p>Naast de koppeling met een Boorkern is er ook nog een relatie met een asfaltmengsel. Deze gaat via asfaltmengselID.</p>
+</section></section>
+  <section id="conclusies-en-aanbevelingen"><div class="header-wrapper"><h2 id="x5-conclusies-en-aanbevelingen"><bdi class="secno">5. </bdi>Conclusies en aanbevelingen</h2><a class="self-link" href="#conclusies-en-aanbevelingen" aria-label="Permalink for Section 5."></a></div>
+<p>De conclusies en aanbevelingen volgen de scenario's voor potentiële use case van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> <a href="https://bimloket.github.io/CB-NL/usecases">Use cases <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a>. Niet alle scenario's zijn onderzocht. </p>
+<section id="scenario-1-woordenboek"><div class="header-wrapper"><h3 id="x5-1-scenario-1-woordenboek"><bdi class="secno">5.1 </bdi>Scenario 1: Woordenboek</h3><a class="self-link" href="#scenario-1-woordenboek" aria-label="Permalink for Section 5.1"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="4"><span>Noot</span><span class="issue-label">: Scenario 1: Woordenboek</span></div><aside class="">
+Ik wil opzoeken in <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> ‘thesaurus’ wat de betekenis is van een begrip in de bouw (ook wel het woordenboek genoemd). Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a></aside></div>
+
+<ul>
+<li><abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> kan leverancier zijn van definities die relevant zijn voor de gebruiker. </li>
+<li><abbr title="objecttypenbibliotheek">OTL</abbr>-<abbr title="Pavement Information Model">PIM</abbr> begint met diepgaandere decomposities waar <abbr title="objecttypenbibliotheek">OTL</abbr>-GLD ophoudt. Een simpele ‘relatie’ tussen <abbr title="objecttypenbibliotheek">OTL</abbr>-GLD wegvakken en <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> wegvakken kan snel meerwaarde opleveren bij oplevering van bouwende partij naar beherende partij. In het voorliggende voorbeeld lijkt het raakvlak tussen de <abbr title="objecttypenbibliotheek">OTL</abbr>'s te liggen op het concept "wegvak". Dit zou kunnen worden toegevoegd aan <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> 2.0.</li>
+</ul>
+</section><section id="scenario-2-3-aansluiting-bim-standaarden"><div class="header-wrapper"><h3 id="x5-2-scenario-2-3-aansluiting-bim-standaarden"><bdi class="secno">5.2 </bdi>Scenario 2-3: Aansluiting BIM Standaarden</h3><a class="self-link" href="#scenario-2-3-aansluiting-bim-standaarden" aria-label="Permalink for Section 5.2"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-2"><div role="heading" class="note-title marker" id="h-note-2" aria-level="4"><span>Noot</span><span class="issue-label">: Scenario 2: Koppelen van BIM standaarden</span></div><aside class="">
+Ik wil mijn BIM-standaard (linked data) koppelen aan het Kernmodel. Hiertoe dien ik herkenbare objecten en eigenschappen in het Kernmodel te vinden, waarop ik de concepten van mijn standaard kan subtyperen / extenden. De betreffende standaard in linked data heeft benoemde relaties. Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a>
+</aside></div>
+
+<div class="note" role="note" id="issue-container-generatedID-3"><div role="heading" class="note-title marker" id="h-note-3" aria-level="4"><span>Noot</span><span class="issue-label">: Scenario 3: Koppelen niet-linked data</span></div><aside class="">
+Ik wil mijn standaard mappen (relateren) aan objecten (en wellicht eigenschappen) van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>, maar mijn standaard is niet beschikbaar als linked data. Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a>
+</aside></div>
+
+<ul>
+<li>Theoretisch lijkt het handig om een <abbr title="objecttypenbibliotheek">OTL</abbr>-Wegenbouw te hebben waarbij de beheer-view en de wegenbouw-view vertegenwoordigd is inclusief conditiemetingen opdat de gehele sector met 1 <abbr title="objecttypenbibliotheek">OTL</abbr> kan gaan werken. Kanttekening daarbij is dat de beherende partijen op dit moment allemaal hun eigen selectie en aanvulling maken op de standaarden voor beheer (<abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr>) en conditiemetingen ([<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2767_1_2019" title="Condition assessment built environment - Part 1: Methodology + Summary of assets">NEN_2767_1_2019</a></cite>]), waardoor altijd individuele aanpassing nodig blijft bij de levering van de bouwende partij naar de beherende partij.</li>
+</ul>
+</section><section id="scenario-4-bouwstenen-ontologie"><div class="header-wrapper"><h3 id="x5-3-scenario-4-bouwstenen-ontologie"><bdi class="secno">5.3 </bdi>Scenario 4: Bouwstenen ontologie</h3><a class="self-link" href="#scenario-4-bouwstenen-ontologie" aria-label="Permalink for Section 5.3"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note-4" aria-level="4"><span>Noot</span><span class="issue-label">: Scenario 4: Bouwstenen ontologie</span></div><aside class="">
+Ik wil een <abbr title="objecttypenbibliotheek">OTL</abbr> (ontologie in linked data) maken voor mijn organisatie die voldoet aan de NEN2660. Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a>
+</aside></div>
+
+<ul>
+<li><abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> zit op een hoog detailniveau en heeft slechts enkele raakpunten met <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> (zie figuur 4). Een mogelijk voordeel van koppeling via <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> is in dit project nog onvoldoende onderzocht.</li>
+<li>Het is aan te bevelen om voor het efficiënt kunnen delen en uitwisselen van data een NEN 2660 compliant referentie-ontologie voor de wegenbouw tot op laagste detailniveau te ontwikkelen. Het huidige <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> is een goede basis voor verdere ontwikkeling tot een WEGENBOUW-<abbr title="objecttypenbibliotheek">OTL</abbr>.</li>
+<li>De NEN 2660 biedt een kader voor het modelleren van gestandaardiseerde ontologieën en met goede domein specifieke afspraken kunnen praktisch toepasbare geoptimaliseerde referentie ontologieën worden ontwikkeld. Om ook tot eenduidige afspraken te komen voor het locatieaanduidingen wordt de ontwikkeling van een ‘nationaal’ locatiereferentiesysteem aanbevolen. Voorgesteld wordt om het huidige NWB als basis te nemen en dit door te ontwikkelen middels het toevoegen van niveau ‘weg’ en niveau ‘strook’ en het beheer van het dit systeem te organiseren.</li>
+<li>Naast de ontwikkeling van een nationaal locatiereferentiesysteem is tevens aan te bevelen om een ‘nationaal’ beschrijvend locatiereferentiesysteem te ontwikkelen voor uniforme beschrijving van locaties in het wegendomein. Voorgesteld wordt om hiervoor het huidige BPS als basis te nemen, dit door te ontwikkelen en het beheer van dit systeem te organiseren</li>
+<li>Ontwikkelen uniform object identificatiesysteem (voor zover nog nodig bij gebruik linkeddata technologie)</li>
+<li>In het kader van de ontwikkeling van een NEN 2660-2 compliant <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> zijn in een tiental werksessies waaraan Boskalis, Heijmans, TNO en Building Bits hebben deelgenomen aanvullende afspraken gemaakt om te komen tot een voor de praktijk toepasbare ontologie. Aanbevolen wordt om deze aanvullende afspraken in breed verband te communiceren.</li>
+<li>Om de huidige ontwikkelingen in het kader van datamodellering en -uitwisseling enigszins overzichtelijk te houden is het zeer wenselijk dat er duidelijke relaties, toelichtingen en praktische aanbevelingen worden geschreven voor referentie-ontologieën, <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> als ‘vertaler’ en initiatieven als BORIUS, ILS-configurator/[<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2767_1_2019" title="Condition assessment built environment - Part 1: Methodology + Summary of assets">NEN_2767_1_2019</a></cite>]/<abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr> etc.</li>
+</ul>
+</section><section id="scenario-5-areaalgegevens-uitwisselen"><div class="header-wrapper"><h3 id="x5-4-scenario-5-areaalgegevens-uitwisselen"><bdi class="secno">5.4 </bdi>Scenario 5: Areaalgegevens uitwisselen</h3><a class="self-link" href="#scenario-5-areaalgegevens-uitwisselen" aria-label="Permalink for Section 5.4"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-5"><div role="heading" class="note-title marker" id="h-note-5" aria-level="4"><span>Noot</span><span class="issue-label">: Scenario 5: Areaalgegevens uitwisselen</span></div><aside class="">
+Ik wil areaalgegevens en/of bouwwerkgegevens kunnen uitwisselen tussen twee partijen met elk een eigen <abbr title="objecttypenbibliotheek">OTL</abbr> op basis van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>. Bron: <a href="https://bimloket.github.io/CB-NL/usecases">Use cases <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></a>
+</aside></div>
+
+
+<section id="datasets-vertalen-naar-linkeddata"><div class="header-wrapper"><h4 id="x5-4-1-datasets-vertalen-naar-linkeddata"><bdi class="secno">5.4.1 </bdi>Datasets vertalen naar LinkedData</h4><a class="self-link" href="#datasets-vertalen-naar-linkeddata" aria-label="Permalink for Section 5.4.1"></a></div>
+<ul>
+<li>Het is eenvoudig uitvoerbaar om 2D GIS en andere datasets te vertalen naar Linked Data.</li>
+<li>Vertalen van datasets naar LD kan grotendeels zonder een <abbr title="objecttypenbibliotheek">OTL</abbr></li>
+<li>Een <abbr title="objecttypenbibliotheek">OTL</abbr> kan meer context geven aan de data zoals beschrijvingen, definities, en cardinaliteiten op kenmerken en relaties.</li>
+</ul>
+</section><section id="vertalen-bouwdata-naar-beheerdata"><div class="header-wrapper"><h4 id="x5-4-2-vertalen-bouwdata-naar-beheerdata"><bdi class="secno">5.4.2 </bdi>Vertalen "bouwdata" naar "beheerdata"</h4><a class="self-link" href="#vertalen-bouwdata-naar-beheerdata" aria-label="Permalink for Section 5.4.2"></a></div>
+<ul>
+<li>Aggregatie van bijvoorbeeld asfaltmengsels van <abbr title="Pavement Information Model">PIM</abbr> (constructie) wegvakken naar (beheer) wegvakken kan een incorrect beeld opleveren.</li>
+<li>Locatie blijft een ‘integrator’ voor meerdere datasets en dit geval heeft dat te maken met de ligging van de weg. Een nationaal gepubliceerde linked dataset van alle wegen zou onderdeel kunnen zijn om datasets te koppelen.</li>
+<li>Indien <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> informatiemodellen interoperabel wil maken zullen input- en outputmodellen, inclusief transformaties, beschikbaar gesteld moeten worden door te publiceren op een publicatieplatform met een sparql-endpoint (een API voor linked data).</li>
+</ul>
+</section></section><section id="vervolproject"><div class="header-wrapper"><h3 id="x5-5-vervolproject"><bdi class="secno">5.5 </bdi>Vervolproject</h3><a class="self-link" href="#vervolproject" aria-label="Permalink for Section 5.5"></a></div>
+<p>Gezien de bovenstaande bevindingen wordt aanbevolen een vervolgtraject te starten waarin de koppeling via <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> uitgebreid wordt getest en mogelijke voordelen kunnen worden geïdentificeerd en benoemd.</p>
+</section></section>
+  <section id="vervolgproject"><div class="header-wrapper"><h2 id="x6-vervolgproject"><bdi class="secno">6. </bdi>Vervolgproject</h2><a class="self-link" href="#vervolgproject" aria-label="Permalink for Section 6."></a></div>
+<section id="doel-0"><div class="header-wrapper"><h3 id="x6-1-doel"><bdi class="secno">6.1 </bdi>Doel</h3><a class="self-link" href="#doel-0" aria-label="Permalink for Section 6.1"></a></div>
+<p>Doelen in het vervolgproject:</p>
+<ul>
+<li><abbr title="Pavement Information Model">PIM</abbr> en <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> publiceren op een publicatieplatform met een sparql-endpoint (een API voor linked data). <abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr> is al zo gepubliceerd. </li>
+<li>De waarde daarvan tonen door in de applicatie van de <abbr title="objecttypenbibliotheek">OTL</abbr>-Gelderland te zoeken in <abbr title="Pavement Information Model">PIM</abbr>, <abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr> en <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> en concepten, attributen en waardelijsten in de <abbr title="objecttypenbibliotheek">OTL</abbr> Gelderland een relatie te geven met de bron in <abbr title="Pavement Information Model">PIM</abbr>, <abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr> en <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>; zodat de informatievraag van Gelderland uitgedrukt is in standaarden.</li>
+<li>Een informatieleveringsspecificatie vanuit Gelderland opstellen met een ontologie op basis van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></li>
+<li>Publicatie van de nieuwe linksetsen/of scripts om datasets te vertalen die door een volgende gebruikt kunnen worden(van <abbr title="Pavement Information Model">PIM</abbr> &gt; <abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr>; van <abbr title="Informatie Model Beheer Openbare Ruimte">IMBOR</abbr> &gt; IMGeo enzovoorts).</li>
+</ul>
+<p>Voorwaarde is, dat eerste de use cases van <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> beter omschreven zijn, zodat in een vervolgproject per use case een "proof of value" geleverd kan worden.</p>
+</section><section id="gewenste-oplossing"><div class="header-wrapper"><h3 id="x6-2-gewenste-oplossing"><bdi class="secno">6.2 </bdi>Gewenste oplossing</h3><a class="self-link" href="#gewenste-oplossing" aria-label="Permalink for Section 6.2"></a></div>
+<figure id="figure">
+  <img src="h/media/oplossingsrichting.PNG" alt="Structuur met data en otl's">
+  <figcaption>Figuur <bdi class="figno">22</bdi> <span class="fig-title">Een oplossingsrichting waarbij <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> helpt bij uitwisseling van asfaltinformatie</span></figcaption>
+</figure>
+
+<p>Bij de gewenste oplossing worden bestaande datamodellen via <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> aan elkaar gekoppeld. In voorgaande figuur is dit uitgewerkt voor de koppeling van de linked-data versies van <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr> en de <abbr title="objecttypenbibliotheek">OTL</abbr> van Gelderland. Eenzelfde figuur kan worden gemaakt voor de koppeling naar de <abbr title="objecttypenbibliotheek">OTL</abbr> van Rijkswaterstaat.</p>
+<p>Op deze wijze kunnen datasets die op verschillende informatiemodellen zijn gebaseerd semantisch worden gekoppeld aan elkaar. Zo kunnen er relaties worden gelegd tussen <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr>, NEN3610, NEN2660 en <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr>.
+Zie hiervoor de volgende figuur
+Omdat de link naar <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> in dit praktijkproject nog onvoldoende is uitgewerkt, wordt voorgesteld een vervolg te organiseren met de zelfde datasets. 
+Door het leggen van deze relaties kan er een efficiëntere en herbruikbare link worden gelegd tussen datasets. Op deze wijze zou er een besparing kunnen optreden in de uit te voeren werkzaamheden bij het gebruik voor meerdere projecten.</p>
+<figure id="figure">
+  <img src="h/media/NEN2660-2_en_PIM-OTL.png" alt="Boomstructuur" class="respec-offending-element" title="Image could not be loaded (height: 0 px)" id="respec-offender-image-could-not-be-loaded-height-0-px">
+  <figcaption>Figuur <bdi class="figno">23</bdi> <span class="fig-title">Relatie tussen NEN2660-2 en <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr></span></figcaption>
+</figure></section></section>
+
+  <section id="conformance"><div class="header-wrapper"><h2 id="x7-conformiteit"><bdi class="secno">7. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 7."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn,
+      zijn ook alle diagrammen, voorbeelden, en noten in dit document niet
+      normatief. Verder is alles in dit document normatief.</p>
+    
+  </section>
+
+  <section id="tof"><div class="header-wrapper"><h2 id="x8-lijst-met-figuren"><bdi class="secno">8. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 8."></a></div>
+    
+  <ul class="tof">
+        <li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">1</bdi> <span class="fig-title">Structuur data objecten in <abbr title="Pavement Information Model">PIM</abbr></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">2</bdi> <span class="fig-title">Positie en detailniveau <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">3</bdi> <span class="fig-title">BIM-Provesy</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">4</bdi> <span class="fig-title">Gedistribueerde aanpak <abbr title="objecttypenbibliotheek">OTL</abbr>'s</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">5</bdi> <span class="fig-title">Invulling <abbr title="objecttypenbibliotheek">OTL</abbr> en datalandschap door Rijkswaterstaat's BIM-Provesy</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">6</bdi> <span class="fig-title">De <abbr title="objecttypenbibliotheek">OTL</abbr> van Gelderland</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">7</bdi> <span class="fig-title">De wegvakken uit de dataset van Gelderland zijn getypeerd volgens de <abbr title="objecttypenbibliotheek">OTL</abbr>-GLD. </span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">8</bdi> <span class="fig-title">De GIS data (wegvakken) van de provincie is vertaald naar Linked Data en is gekoppeld aan de <abbr title="objecttypenbibliotheek">OTL</abbr></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">9</bdi> <span class="fig-title">De verwerking van <abbr title="Pavement Information Model">PIM</abbr> data</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">10</bdi> <span class="fig-title">De viewer van Gelderland op de <abbr title="Pavement Information Model">PIM</abbr> <abbr title="objecttypenbibliotheek">OTL</abbr></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">11</bdi> <span class="fig-title">De visualisatie van linked datasets van wegen van Gelderland</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">12</bdi> <span class="fig-title">De GIS visualisatie van linked datasets van wegen vanuit <abbr title="Pavement Information Model">PIM</abbr> data</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">13</bdi> <span class="fig-title">De luchtfoto visualisatie van linked datasets van wegen vanuit <abbr title="Pavement Information Model">PIM</abbr> data</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">14</bdi> <span class="fig-title">Gedetailleerde Asfalt gegevens vanuit <abbr title="Pavement Information Model">PIM</abbr></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">15</bdi> <span class="fig-title">De koppeling van <abbr title="Pavement Information Model">PIM</abbr> data aan Gelderse wegvakken</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">16</bdi> <span class="fig-title">De koppeling van <abbr title="Pavement Information Model">PIM</abbr> data aan Gelderse wegvakken</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">17</bdi> <span class="fig-title">Het zoeken in de wegdata met sparql-queries</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">18</bdi> <span class="fig-title">Koppelen van de gelderse <abbr title="objecttypenbibliotheek">OTL</abbr> aan <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">19</bdi> <span class="fig-title">Koppelen van de <abbr title="Pavement Information Model">PIM</abbr> <abbr title="objecttypenbibliotheek">OTL</abbr> aan <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">20</bdi> <span class="fig-title">Een screenshot van QGIS waarbij de geopackage file is geladen</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">21</bdi> <span class="fig-title">Een screenshot van QGIS waarbij de niet-geografische informatie over een boorkern gevonden kan worden</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">22</bdi> <span class="fig-title">Een oplossingsrichting waarbij <abbr title="Concepten Bibliotheek Nederland">CB-NL</abbr> helpt bij uitwisseling van asfaltinformatie</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#figure">Figuur <bdi class="figno">23</bdi> <span class="fig-title">Relatie tussen NEN2660-2 en <abbr title="Pavement Information Model">PIM</abbr>-<abbr title="objecttypenbibliotheek">OTL</abbr></span></a>
+  </li>
+      </ul></section>
+
+  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div>
+    
+  <section id="index-defined-here"><div class="header-wrapper"><h3 id="a-1-termen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Termen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
+    
+    <ul class="index">
+    <li>
+      <a class="index-term" href="#dfn-bim-provesy">BIM-Provesy</a> 
+    <span class="print-only">§3.1</span></li><li>
+      <a class="index-term" href="#dfn-cb-nl">CB-NL</a> 
+    <span class="print-only">§1.2</span></li><li>
+      <a class="index-term" href="#dfn-informatiemodel-beheer-openbare-ruimte">IMBOR</a> 
+    <span class="print-only">§2.2.1</span></li><li>
+      <a class="index-term" href="#dfn-nen-2660-2">NEN-2660-2</a> 
+    <span class="print-only">§1.2</span></li><li>
+      <a class="index-term" href="#dfn-ontologie">Ontologie</a> 
+    <span class="print-only">§1.3</span></li><li>
+      <a class="index-term" href="#dfn-otl">OTL</a> 
+    <span class="print-only">§1.3</span></li><li>
+      <a class="index-term" href="#dfn-pim-otl">PIM-OTL</a> 
+    <span class="print-only">§1.1</span></li>
+  </ul>
+  </section><section id="index-defined-elsewhere"><div class="header-wrapper"><h3 id="a-2-termen-gedefinieerd-door-referentie"><bdi class="secno">A.2 </bdi>Termen gedefinieerd door referentie</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
+    
+    <ul class="index">
+    
+  </ul>
+  </section></section>
+
+
+<script id="annotation-service-runtime">(() => {
+// @ts-check
+const SETTING_KEY = "annotation-service-hypothesis";
+const SETTING_VALUE_ALLOWED = "allowed";
+const hClientDefault = {
+  openSidebar: false,
+  showHighlights: true,
+  theme: "classic",
+  branding: {
+    accentColor: "rgb(0, 157, 224)",
+    appBackgroundColor: "white",
+    ctaBackgroundColor: "rgb(255, 110, 26)",
+    ctaTextColor: "white",
+    selectionFontFamily: "'Museo Sans', Museo, Helvetica, Arial, sans serif",
+    annotationFontFamily: "'Museo Sans', Museo, Helvetica, Arial, sans serif",
+  },
+};
+
+if (document.respec) {
+  document.respec.ready.then(render);
+} else {
+  render();
+}
+
+/** Render the placeholder (Load Service Button) or annotation info (# annotations, Show Annotation Button). */
+function render() {
+  if (localStorage.getItem(SETTING_KEY) == SETTING_VALUE_ALLOWED) {
+    renderAnnotationServiceInfo();
+  } else {
+    renderPlaceholder();
+  }
+}
+
+/** Render Load Service Button, with privacy info. */
+function renderPlaceholder() {
+  localStorage.removeItem(SETTING_KEY);
+
+  /** @type {HTMLElement} */
+  const placeholder = document.querySelector("#annotation-service-placeholder");
+  placeholder.hidden = false;
+
+  const listener = loadButtonListener();
+  document
+    .querySelector("[data-load-annotation-service]")
+    .addEventListener("keydown", listener);
+  document
+    .querySelector("[data-load-annotation-service]")
+    .addEventListener("click", listener);
+
+  /** @type {HTMLElement} */
+  const serviceInfo = document.querySelector("#annotation-service-loaded");
+  serviceInfo.hidden = true;
+}
+
+function loadButtonListener() {
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLButtonElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    target.disabled = true;
+    localStorage.setItem(SETTING_KEY, SETTING_VALUE_ALLOWED);
+    renderAnnotationServiceInfo();
+  };
+}
+
+function unloadButtonListener() {
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLButtonElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    target.disabled = true;
+    localStorage.removeItem(SETTING_KEY);
+    removeHScript();
+  };
+}
+
+function renderAnnotationServiceInfo() {
+  addHConfig(document);
+  addHScript(document);
+}
+
+/**
+ *
+ * @param {Document} doc
+ * @param {*} conf
+ */
+function addHScript(doc, conf) {
+  const script = doc.createElement("script");
+  script.src = "https://hypothes.is/embed.js";
+  script.async = true;
+  doc.body.appendChild(script);
+
+  script.addEventListener("load", event => {
+    /** @type {HTMLElement} */
+    const placeholder = document.querySelector(
+      "#annotation-service-placeholder"
+    );
+    placeholder.hidden = true;
+
+    /** @type {HTMLElement} */
+    const serviceInfo = document.querySelector("#annotation-service-loaded");
+    serviceInfo.hidden = false;
+
+    const unloadListener = unloadButtonListener();
+    document
+      .querySelector("[data-unload-annotation-service]")
+      .addEventListener("keydown", unloadListener);
+    document
+      .querySelector("[data-unload-annotation-service]")
+      .addEventListener("click", unloadListener);
+  });
+}
+
+/**
+ * Retract Hypothesis permission.
+ */
+function removeHScript() {
+  // Deleting the hypothesis-script, does not undo its changes, listeners etc.
+  // Instead, reload the frame.
+  window.location.reload();
+}
+
+/**
+ *
+ * @param {Document} doc
+ * @param {*} conf
+ */
+function addHConfig(doc, conf) {
+  const script = doc.createElement("script");
+  script.className = "js-hypothesis-config";
+  script.type = "application/json";
+  script.innerText = JSON.stringify(hClientDefault);
+  doc.body.appendChild(script);
+}
+})()</script><section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties"><div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
+    
+    <dl class="bibliography"><dt id="bib-nen_2660_2_2022">[NEN_2660_2_2022]</dt><dd>
+      <a href="https://connect.nen.nl/Family/Detail?name=NEN%202660-2"><cite>NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1</cite></a>.  NEN. Actueel. URL: <a href="https://connect.nen.nl/Family/Detail?name=NEN%202660-2">https://connect.nen.nl/Family/Detail?name=NEN%202660-2</a>
+    </dd><dt id="bib-nen_2767_1_2019">[NEN_2767_1_2019]</dt><dd>
+      <a href="https://www.nen.nl/en/nen-2767-1-c1-2019-en-259262"><cite>Condition assessment built environment - Part 1: Methodology + Summary of assets</cite></a>.  NEN. Actueel. URL: <a href="https://www.nen.nl/en/nen-2767-1-c1-2019-en-259262">https://www.nen.nl/en/nen-2767-1-c1-2019-en-259262</a>
+    </dd><dt id="bib-nen_3610_2022">[NEN_3610_2022]</dt><dd>
+      <a href="https://www.nen.nl/en/nen-3610-2022-nl-296137"><cite>Basic schema for geo-information - Terms, definitions, relations and general rules for the interchange of information of spatial objects related to the earth</cite></a>.  NEN. Actueel. URL: <a href="https://www.nen.nl/en/nen-3610-2022-nl-296137">https://www.nen.nl/en/nen-3610-2022-nl-296137</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-pim-otl" aria-label="Links in this document to definition: PIM-OTL">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-pim-otl" aria-label="Permalink for definition: PIM-OTL. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-pim-otl-1" title="§ 2.2 PIM-OTL">§ 2.2 PIM-OTL</a> 
+  </li><li>
+    <a href="#ref-for-dfn-pim-otl-2" title="§ 2.2.1 Inhoud">§ 2.2.1 Inhoud</a> <a href="#ref-for-dfn-pim-otl-3" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-nen-2660-2" aria-label="Links in this document to definition: NEN-2660-2">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-nen-2660-2" aria-label="Permalink for definition: NEN-2660-2. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-nen-2660-2-1" title="§ 1.2 Aanleiding">§ 1.2 Aanleiding</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-cb-nl" aria-label="Links in this document to definition: CB-NL">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-cb-nl" aria-label="Permalink for definition: CB-NL. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-cb-nl-1" title="§ Samenvatting">§ Samenvatting</a> <a href="#ref-for-dfn-cb-nl-2" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-cb-nl-3" title="§ 1.2 Aanleiding">§ 1.2 Aanleiding</a> <a href="#ref-for-dfn-cb-nl-4" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-cb-nl-5" title="§ 1.3 Probleemstelling">§ 1.3 Probleemstelling</a> 
+  </li><li>
+    <a href="#ref-for-dfn-cb-nl-6" title="§ 1.4 Doel">§ 1.4 Doel</a> <a href="#ref-for-dfn-cb-nl-7" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-otl" aria-label="Links in this document to definition: OTL">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-otl" aria-label="Permalink for definition: OTL. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-otl-1" title="§ 1.3 Probleemstelling">§ 1.3 Probleemstelling</a> <a href="#ref-for-dfn-otl-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-otl-3" title="Reference 3">(3)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-otl-4" title="§ 1.4 Doel">§ 1.4 Doel</a> <a href="#ref-for-dfn-otl-5" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-ontologie" aria-label="Links in this document to definition: Ontologie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-ontologie" aria-label="Permalink for definition: Ontologie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-ontologie-1" title="§ 1.3 Probleemstelling">§ 1.3 Probleemstelling</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-informatiemodel-beheer-openbare-ruimte" aria-label="Links in this document to definition: IMBOR">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-informatiemodel-beheer-openbare-ruimte" aria-label="Permalink for definition: IMBOR. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-informatiemodel-beheer-openbare-ruimte-1" title="§ 3.4 OTL-PIM/OTL-Wegenbouw">§ 3.4 OTL-PIM/OTL-Wegenbouw</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-beheer-openbare-ruimte-2" title="§ 4.1 OTL Gelderland">§ 4.1 OTL Gelderland</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bim-provesy" aria-label="Links in this document to definition: BIM-Provesy">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-bim-provesy" aria-label="Permalink for definition: BIM-Provesy. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-bim-provesy-1" title="§ 3.3 POC’s BIM-V en PIM">§ 3.3 POC’s BIM-V en PIM</a> 
+  </li>
+  </ul>
+    </div><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><script src="https://docs.crow.nl/respec-design/fixup.js"></script></body></html>
