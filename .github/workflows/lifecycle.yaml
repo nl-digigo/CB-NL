@@ -126,7 +126,7 @@ jobs:
           mv *.gh/docs/v/* v/
 
       - name: Create PDF from HTML
-        uses: frnode/html-to-pdf-action@v1.0.1
+        uses: LukaszLapaj/html-to-pdf-action@2.0.0
         with:
           htmlFile: v/${{ needs.build.outputs.docfilename }}/index.html
           outputFile: v/${{ needs.build.outputs.docfilename }}/${{ needs.build.outputs.docfilename }}.pdf
