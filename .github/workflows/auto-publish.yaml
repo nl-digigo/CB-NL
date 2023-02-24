@@ -1,0 +1,31 @@
+name: Auto-publish draft
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - run: echo "ready for publication"
+      # - name: Checkout 🛎️
+      #   uses: actions/checkout@v3
+
+      # - name: Deploy live view 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4.3.3
+      #   with:
+      #     branch: gh-pages # The branch the action should deploy to.
+      #     folder: ./docs # The folder the action should deploy.
+      #     force: false
+      #     clean-exclude: |
+      #       v/**
+      #     commit-message: |
+      #       Deploying to docs.crow.nl from @ ${{ env.GITHUB_SHA}}
+
+      #       Reason: After push by ${{ github.actor }}
