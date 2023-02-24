@@ -4,6 +4,49 @@
 <img src="h/media/routekaart_gemeenten_en_bim.png" usemap="#image-map">
 
 <map name="image-map">
-    <area target="_parent" alt="nulmeting" title="nulmeting" href="https://crow.nl" coords="577,952,655,1046" shape="rect">
-    <area target="" alt="" title="" href="" coords="" shape="0">
+    <area target="_blank" alt="Ten geleide" title="Ten geleide" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/ten-geleide" coords="752,1074,860,1102" shape="rect">
+<!-- Organisatie --->
+    <area target="_blank" alt="Organisatie" title="Organisatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/organisatie" coords="182,997,33,1040" shape="rect">
+    <area target="_blank" alt="Organisatie" title="Organisatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/organisatie" coords="456,990,57" shape="circle">
+    <area target="_blank" alt="Nulmeting" title="Nulmeting" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/nulmeting" coords="608,995,59" shape="circle">
+    <area target="_blank" alt="Ambities en doelen" title="Ambities en doelen" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/ambities-en-doelen" coords="793,1003,53" shape="circle">
+    <area target="_blank" alt="Programmering" title="Programmering" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="974,1000,57" shape="circle">
+    <area target="_blank" alt="Relatie markt &amp; kennis" title="Relatie markt &amp; kennis" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1152,996,59" shape="circle">
+    <area target="_blank" alt="Aan de slag!" title="Aan de slag!" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1335,997,56" shape="circle">
+<!-- Openbare ruimte --->    
+    <area target="_blank" alt="Openbare ruimte" title="Openbare ruimte" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="34,902,197,938" shape="rect">
+    <area target="_blank" alt="Openbare ruimte" title="Openbare ruimte" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="452,862,38" shape="circle">
+    <area target="_blank" alt="Basis op orde" title="Basis op orde" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="264,610,539,757,574,729,358,609,346,561,309,533,259,562" shape="poly">
+    <area target="_blank" alt="Informatiebehoefte" title="Informatiebehoefte" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="350,515,390,582,632,715,654,687,442,560,438,510,392,481" shape="poly">    
+    <area target="_blank" alt="Eisenspecificatie" title="Eisenspecificatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="738,703,58" shape="circle">
+    <area target="_blank" alt="Koppeling objecten en eisen" title="Koppeling objecten en eisen" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="801,806,52" shape="circle">
+    <area target="_blank" alt="NLCS" title="NLCS" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="906,862,48" shape="circle">
+    <area target="_blank" alt="Objectgericht ontwerp" title="Objectgericht ontwerp" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1013,868,47" shape="circle">
+    <area target="_blank" alt="BIM" title="BIM" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1167,862,52" shape="circle">
+    <area target="_blank" alt="Contractbeheer" title="Contractbeheer" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1330,792,59" shape="circle">
+    <area target="_blank" alt="Digitale oplevering" title="Digitale oplevering" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="940,381,983,405,989,457,1096,526,1072,557,978,506,933,481,897,460,891,408" shape="poly">
+    <area target="_blank" alt="Objecttypenbibliotheek" title="Objecttypenbibliotheek" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1224,468,53" shape="circle">
+    <area target="_blank" alt="Areaalmodel" title="Areaalmodel" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1432,517,59" shape="circle">
+<!-- Gemeentelijk vastgoed ---> 
+    <area target="_blank" alt="Gemeentelijk vastgoed" title="Gemeentelijk vastgoed" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="37,858,39,885,247,890,347,885,385,855,410,822,416,791,374,768,333,791,330,837,259,861" shape="poly">
+    <area target="_blank" alt="3D BIM" title="3D BIM" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="846,547,53" shape="circle">
+    <area target="_blank" alt="Facilitair beheer" title="Facilitair beheer" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1087,415,48" shape="circle">
+    <area target="_blank" alt="Koppeling model grondgebied" title="Koppeling model grondgebied" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1192,353,52" shape="circle">
+ <!-- Leefomgeving --->    
+    <area target="_blank" alt="Leefomgeving" title="Leefomgeving" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="39,813,40,839,159,841,259,839,291,813,320,782,347,749,294,719,261,754,168,819" shape="poly">
+    <area target="_blank" alt="3D vergunning verlening" title="3D vergunning verlening" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="716,503,55" shape="circle">
+    <area target="_blank" alt="Levering omgevingsinformatie" title="Levering omgevingsinformatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="661,376,60" shape="circle">
+    <area target="_blank" alt="Participatie" title="Participatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="418,334,54" shape="circle">
+    <area target="_blank" alt="Bouwwerk dossier" title="Bouwwerk dossier" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="444,191,57" shape="circle">
+    <area target="_blank" alt="Omgevingsvisie en -plan" title="Omgevingsvisie en -plan" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="606,198,52" shape="circle">
+    <area target="_blank" alt="Voedingsregistraties" title="Voedingsregistraties" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="768,224,54" shape="circle">
+    <area target="_blank" alt="Omgevingsdossier" title="Omgevingsdossier" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="979,286,49" shape="circle">
+ <!-- Basis & Kernregistraties --->  
+    <area target="_blank" alt="Basis- &amp; Kernrtegistraties" title="Basis- &amp; Kernrtegistraties" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="37,754,36,794,176,794,257,728,256,696,210,676,169,746" shape="poly"> 
+    <area target="_blank" alt="Data volledig en actueel" title="Data volledig en actueel" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="284,316,56" shape="circle">
+    <area target="_blank" alt="Open data" title="Open data" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="256,144,55" shape="circle">
+    <area target="_blank" alt="Meervoudig bruikbaar" title="Meervoudig bruikbaar" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="526,84,58" shape="circle">
+    <area target="_blank" alt="Digitaal model grondgebied" title="Digitaal model grondgebied" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="791,80,56" shape="circle">
+ <!-- Digital Twin --->      
+    <area target="_blank" alt="Digital Twin" title="Digital Twin" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="1355,264,1195,168,1191,1,1518,3,1513,168" shape="poly">
 </map>
