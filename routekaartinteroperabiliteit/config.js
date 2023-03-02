@@ -10,6 +10,6 @@ var respecConfig = {
       name: "Elisabeth de Vries",
     },
   ],
-  github: "https://github.com/bimloket/routekaartbim",
+  github: "https://github.com/bimloket/CB-NL",
   license: "cc-by",
 };
