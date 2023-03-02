@@ -1,26 +1,7 @@
 # Initiatieven
 
-## Ten geleide
 
 
-## Organisatie
-
-
-### Nulmeting
-
-
-### Ambities en doelen
-
-
-### Programmering
-
-
-
-### Relatie markt & kennis
-
-
-
-### Aan de slag
 
 
 ## Basis- en kernregstraties
@@ -35,6 +16,11 @@ Breng de dataregistraties over fysieke objecten op het gemeentelijk grondgebied 
 ### Informatiebehoefte
 
 Formuleer de informatiebehoefte: wat wil ik weten over de fysieke objecten binnen de gemeente, bovenop de wettelijke registraties? Hierbij is het goed om aan te sluiten op informatiestandaarden in de sector. Niet alleen semantisch (inhoud), maar ook voor de vastlegging van de data (vorm). 
+
+<dfn class="lint-ignore">IMBOR</dfn> Het InformatieModel Openbare Ruimte is beschikbaar in linked data en beschrijft objecten met attributen en waardelijsten die van belang zijn voor de beheerfase van objecten in de openbare ruimte en infrastructuur. Zie ook <a href="https://www.crow.nl/imbor">hier</a>.
+
+
+
 
 ### Data volledig en actueel
 
@@ -157,12 +143,54 @@ Beschikbare standaarden en initiatieven
 
 ### Areaalmodel
 
+## Organisatie
 
+
+### Nulmeting
+Voer een zelfscan uit om te bepalen wat de huidige situatie is in de gemeente:
+* Welke rollen zijn ingevuld binnen de gemeente en welke taken voer ik uit (zie lijst met rollen), welke heb ik uitbesteed (naar markt of samenwerkingsverband)?
+* Hoe is het kennisniveau van de medewerkers t.a.v. deze rollen?
+* Hoe is het gesteld met de digitale vaardigheden van de medewerkers?
+* Zijn er samenwerkingsverbanden met andere organisaties?
+* Wordt er door marktpartijen soms al met BIM gewerkt bij opdrachten vande gemeente?
+Benoem als resultaat van de scan ook de ‘probleemgebieden’ en/of het laaghangend fruit.
+
+
+### Ambities en doelen
+Binnen de kaders van het gemeentelijk beleid is het van belang de doelen te bepalen. Welke ambities op BIM-gebied wil de gemeente nastreven? Leg de relatie tussen de ‘vigerende’ bestuursdoelstellingen (energietransitie, circulariteit, omgevingswet enz.) en het belang van goede informatie voor de realiseerbaarheid ervan. Breng de toegevoegde waarde van BIM daarbij in beeld. En bepaal de voorwaarden voor toepassing van BIM in de vorm van het vaststellen van toe te passen standaarden en op te leveren informatie. Vervolgens kunnen per rol de doelen worden bepaald. Probeer de doelen een haalbaar, tijdgebonden karakter te geven. Laat je inspireren door kleine voorbeelden waarom, wat en hoe anderen het aangepakt hebben. Besteed daarbij ook aandacht aan mens en cultuur: hoe krijg je medewerkers enthousiast voor de noodzakelijke veranderingen?
+
+### Programmering
+Denk bij programmering bijvoorbeeld aan de volgende aspecten:
+* Benoem het laaghangend fruit en laat dat ook zien
+* Het bevorderen van een veranderingsklimaat
+* Noodzakelijke opleidingen
+* Aanpassing van het personeelsbeleid (rollen en profielen)
+* Leg de processen vast
+* De ict-voorzieningen, software en gebruik van nationale standaarden;
+* Leiderschap in bestuur en management
+* Stel een programmateam in met een eindverantwoordelijke
+* Interne- en externe communicatie
+* Evalueer periodiek en deel de doelen en resultaten (transparantie is belangrijk)
+* Zorg ervoor dat de resultaten geborgd worden en deelbaar zijn en werk deze eventueel uit in een businesscase
+
+
+### Relatie markt & kennis
+Ga in gesprek met markt- en kennispartijen, waarmee de gemeente regelmatig
+werkt in de genoemde rollen:
+* Doe dit zoveel mogelijk samen met omliggende gemeenten. Dit in verband met regionale samenwerking van overheden en omdat de MKB regionaal van aard is (‘Samen Organiseren’)
+* Luister naar wensen van marktpartijen
+* Leg gemeentelijke ambities en doelen uit
+* Ga na of experimenten mogelijk zijn met marktpartijen
+* Accepteer dat je als opdrachtgever de eerste stap (ook financieel) moet zetten
+* Zorg voor kennisverspreiding
+
+
+### Aan de slag
 
 ## Digital Twin
 
 
 > DEF
-> Een <dfn class="lint-ignore">digital twin</dfn> maakt een digitale representatie van een gebouw of gebied. De informatie in de digitale representatie is afhankelijk van het gebruiksdoel, bijvoorbeeld ontwerpen, bouwen, gebruiken of beheren.
+> Een <dfn class="lint-ignore">digital twin</dfn> maakt een digitale replica van een gebouw of gebied. De informatie in de digitale replica is afhankelijk van het gebruiksdoel, bijvoorbeeld ontwerpen, bouwen, gebruiken of beheren.
 
 
