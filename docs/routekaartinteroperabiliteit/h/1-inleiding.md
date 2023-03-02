@@ -26,13 +26,15 @@ U kunt op ieder willekeurig station instappen en uitstappen. Er hoeft niet per s
     <area target="_blank" alt="Organisatie" title="Organisatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#organisatie" coords="182,997,33,1040" shape="rect">
     <area target="_blank" alt="Organisatie" title="Organisatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#organisatie" coords="456,990,57" shape="circle">
     <area target="_blank" alt="Nulmeting" title="Nulmeting" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#nulmeting" coords="608,995,59" shape="circle">
-    <area target="_blank" alt="Ambities en doelen" title="Ambities en doelen" href="https://bimloket.github.io/CB-NL/#routekaartinteroperabiliteit/ambities-en-doelen" coords="793,1003,53" shape="circle">
-    <area target="_blank" alt="Programmering" title="Programmering" href="https://bimloket.github.io/CB-NL/#routekaartinteroperabiliteit/" coords="974,1000,57" shape="circle">
+    <area target="_blank" alt="Ambities en doelen" title="Ambities en doelen" href="https://bimloket.github.io/CB-NL/#routekaartinteroperabiliteit/#ambities-en-doelen" coords="793,1003,53" shape="circle">
+    <area target="_blank" alt="Programmering" title="Programmering" href="https://bimloket.github.io/CB-NL/#routekaartinteroperabiliteit/#programmering" coords="974,1000,57" shape="circle">
     <area target="_blank" alt="Relatie markt &amp; kennis" title="Relatie markt &amp; kennis" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#relatie-markt" coords="1152,996,59" shape="circle">
     <area target="_blank" alt="Aan de slag!" title="Aan de slag!" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#aan-de-slag" coords="1335,997,56" shape="circle">
 <!-- Openbare ruimte --->    
     <area target="_blank" alt="Openbare ruimte" title="Openbare ruimte" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#openbare-ruimte" coords="34,902,197,938" shape="rect">
     <area target="_blank" alt="Openbare ruimte" title="Openbare ruimte" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#openbare-ruimte" coords="452,862,38" shape="circle">
+    <area target="_self" alt="Basis op orde: Openbare ruimte" title="Basis op orde: Openbare ruimte" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#basis-openbare-ruimte-op-orde" coords="546,736,24" shape="circle">
+    <area target="_self" alt="Informatiebehoefte: Openbare ruimte" title="Informatiebehoefte: Openbare ruimte" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#informatiebehoefte-openbare-ruimte" coords="621,684,30" shape="circle">
     <area target="_blank" alt="Eisenspecificatie" title="Eisenspecificatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#eisenspecificatie" coords="738,703,58" shape="circle">
     <area target="_blank" alt="Koppeling objecten en eisen" title="Koppeling objecten en eisen" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#koppeling-objecten-en-eisen" coords="801,806,52" shape="circle">
     <area target="_blank" alt="NLCS" title="NLCS" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#NLCS" coords="906,862,48" shape="circle">
@@ -43,6 +45,8 @@ U kunt op ieder willekeurig station instappen en uitstappen. Er hoeft niet per s
     <area target="_blank" alt="Objecttypenbibliotheek" title="Objecttypenbibliotheek" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#objecttypenbibliotheek" coords="1224,468,53" shape="circle">
     <area target="_blank" alt="Areaalmodel" title="Areaalmodel" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#areaalmodel" coords="1432,517,59" shape="circle">
 <!-- Gemeentelijk vastgoed ---> 
+   <area target="_self" alt="Basis op orde: Vastgoed" title="Basis op orde: Vastgoed" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#basis-vastgoed-op-orde" coords="488,706,24" shape="circle">
+   <area target="_self" alt="Informatiebehoefte: Vastgoed" title="Informatiebehoefte: Vastgoed" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#informatiebehoefte-vastgoed" coords="566,656,19" shape="circle">
     <area target="_blank" alt="Gemeentelijk vastgoed" title="Gemeentelijk vastgoed" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#gemeentelijk-vastgoed" coords="37,858,39,885,247,890,347,885,385,855,410,822,416,791,374,768,333,791,330,837,259,861" shape="poly">
     <area target="_blank" alt="3D BIM" title="3D BIM" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#3d-bim" coords="846,547,53" shape="circle">
     <area target="_blank" alt="Facilitair beheer" title="Facilitair beheer" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#facilitair-beheer" coords="1087,415,48" shape="circle">
@@ -50,14 +54,14 @@ U kunt op ieder willekeurig station instappen en uitstappen. Er hoeft niet per s
  <!-- Leefomgeving --->    
     <area target="_self" alt="Basis op orde: Leefomgeving" title="Basis op orde: Leefomgeving" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#basis-leefomgeving-op-orde" coords="433,675,26" shape="circle">
     <area target="_self" alt="Informatiebehoefte: Leefomgeving" title="Informatiebehoefte: Leefomgeving" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#informatiebehoefte-leefomgeving" coords="513,628,25" shape="circle">
-    <area target="_blank" alt="Leefomgeving" title="Leefomgeving" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="39,813,40,839,159,841,259,839,291,813,320,782,347,749,294,719,261,754,168,819" shape="poly">
+    <area target="_blank" alt="Leefomgeving" title="Leefomgeving" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#leefomgeving" coords="39,813,40,839,159,841,259,839,291,813,320,782,347,749,294,719,261,754,168,819" shape="poly">
     <area target="_blank" alt="3D vergunning verlening" title="3D vergunning verlening" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#3d-vergunning-verlening" coords="716,503,55" shape="circle">
     <area target="_blank" alt="Levering omgevingsinformatie" title="Levering omgevingsinformatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#levering-omgevingsinformatie" coords="661,376,60" shape="circle">
     <area target="_blank" alt="Participatie" title="Participatie" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#participatie" coords="418,334,54" shape="circle">
     <area target="_blank" alt="Bouwwerk dossier" title="Bouwwerk dossier" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#bouwwerk-dossier" coords="444,191,57" shape="circle">
     <area target="_blank" alt="Omgevingsvisie en -plan" title="Omgevingsvisie en -plan" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#omgevingsvisie-en--plan" coords="606,198,52" shape="circle">
     <area target="_blank" alt="Voedingsregistraties" title="Voedingsregistraties" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#voedingsregistraties" coords="768,224,54" shape="circle">
-    <area target="_blank" alt="Omgevingsdossier" title="Omgevingsdossier" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/" coords="979,286,49" shape="circle">
+    <area target="_blank" alt="Omgevingsdossier" title="Omgevingsdossier" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#omgevingsdossier" coords="979,286,49" shape="circle">
  <!-- Basis & Kernregistraties --->  
     <area target="_self" alt="Basis op orde: Basisregistraties" title="Basis op orde: Basisregistraties" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#basisregistraties-op-orde" coords="374,641,28" shape="circle">
     <area target="_self" alt="Informatiebehoefte: Basisregistraties" title="Informatiebehoefte: Basisregistraties" href="https://bimloket.github.io/CB-NL/routekaartinteroperabiliteit/#informatiebehoefte-basisregistraties" coords="454,593,27" shape="circle">
