@@ -1,0 +1,1632 @@
+# baseURI: http://ont.cbnl.org/mapping/IMGeo-2.1.1-CBNL-20190510
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/(haven)kraan>
+  a owl:Class ;
+  rdfs:label "(haven)kraan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02488 ;
+.
+
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/AuxiliaryTrafficArea>
+  a owl:Class ;
+  rdfs:label "OndersteunendWegdeel"@nl-nl ;
+  skos:related cbnlcore:CB02338 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Bak>
+  a owl:Class ;
+  rdfs:label "Bak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01300 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Bord>
+  a owl:Class ;
+  rdfs:label "Bord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01035 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/BridgeConstructionElement>
+  a owl:Class ;
+  rdfs:label "Overbruggingsdeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01117 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/BuildingInstallation>
+  a owl:Class ;
+  rdfs:label "Gebouwinstallatie"@nl-nl ;
+  skos:related cbnlcore:CB01095 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/BuildingPart>
+  a owl:Class ;
+  rdfs:label "Pand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01095 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Buurt>
+  a owl:Class ;
+  rdfs:label "Buurt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01381 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/CAI-kast>
+  a owl:Class ;
+  rdfs:label "CAI-kast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/FunctioneelGebied>
+  a owl:Class ;
+  rdfs:label "Functioneel Gebied"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01348 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/GMS_kast>
+  a owl:Class ;
+  rdfs:label "GMS kast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/GMS_sensor>
+  a owl:Class ;
+  rdfs:label "GMS sensor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01068 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Installatie>
+  a owl:Class ;
+  rdfs:label "Installatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB00021 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Kast>
+  a owl:Class ;
+  rdfs:label "Kast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Kunstwerk>
+  a owl:Class ;
+  rdfs:label "Kunstwerk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01117 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Kunstwerkdeel>
+  a owl:Class ;
+  rdfs:label "Kunstwerkdeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01117 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Mast>
+  a owl:Class ;
+  rdfs:label "Mast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01891 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/OV-baan>
+  a owl:Class ;
+  rdfs:label "OV-baan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01685 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/OnbegroeidTerreindeel>
+  a owl:Class ;
+  rdfs:label "Onbegroeid terreindeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01366 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/OndersteunendWaterdeel>
+  a owl:Class ;
+  rdfs:label "Ondersteunend waterdeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/OngeclassificeerdObject>
+  a owl:Class ;
+  rdfs:label "Ongeclassificeerd object"@nl-nl ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/OpenbareRuimte>
+  a owl:Class ;
+  rdfs:label "OpenbareRuimte"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02767 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/OverigBouwwerk>
+  a owl:Class ;
+  rdfs:label "Overig bouwwerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01095 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/OverigeScheiding>
+  a owl:Class ;
+  rdfs:label "Overige Scheiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:Scheiding ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Paal>
+  a owl:Class ;
+  rdfs:label "Paal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/PlantCover>
+  a owl:Class ;
+  rdfs:label "Begroeid terreindeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01366 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Put>
+  a owl:Class ;
+  rdfs:label "Put"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01789 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Railway>
+  a owl:Class ;
+  rdfs:label "Spoor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01524 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/RegistratiefGebied>
+  a owl:Class ;
+  rdfs:label "RegistratiefGebied"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01381 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Scheiding>
+  a owl:Class ;
+  rdfs:label "Scheiding"@nl-nl ;
+  owl:equivalentClass cbnlcore:Scheiding ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Sensor>
+  a owl:Class ;
+  rdfs:label "Sensor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01068 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/SolitaryVegetationObject>
+  a owl:Class ;
+  rdfs:label "Vegetatieobject"@nl-nl ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Stadsdeel>
+  a owl:Class ;
+  rdfs:label "Stadsdeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01449 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Straatmeubilair>
+  a owl:Class ;
+  rdfs:label "Straatmeubilair"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03183 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Terrein>
+  a owl:Class ;
+  rdfs:label "Terrein"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01366 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/TrafficArea>
+  a owl:Class ;
+  rdfs:label "Wegdeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01031 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/TunnelPart>
+  a owl:Class ;
+  rdfs:label "Tunneldeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01935 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Water>
+  a owl:Class ;
+  rdfs:label "Water"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01371 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Waterdeel>
+  a owl:Class ;
+  rdfs:label "Waterdeel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01371 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Waterinrichtingselement>
+  a owl:Class ;
+  rdfs:label "Waterinrichtings-element"@nl-nl ;
+  skos:related cbnlcore:CB01371 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Waterschap>
+  a owl:Class ;
+  rdfs:label "Waterschap"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03478 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Weginrichtingselement>
+  a owl:Class ;
+  rdfs:label "Weginrichtings-element"@nl-nl ;
+  skos:related cbnlcore:CB01031 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/Wijk>
+  a owl:Class ;
+  rdfs:label "Wijk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03494 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/_ecoduct>
+  a owl:Class ;
+  rdfs:label "ecoduct"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01954 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/_fly-over>
+  a owl:Class ;
+  rdfs:label "fly-over"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02020 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/abri>
+  a owl:Class ;
+  rdfs:label "abri"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01094 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/afsluitpaal>
+  a owl:Class ;
+  rdfs:label "afsluitpaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/afval_apart_plaats>
+  a owl:Class ;
+  rdfs:label "afval apart plaats"@nl-nl ;
+  skos:related cbnlcore:CB01151 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/afvalbak>
+  a owl:Class ;
+  rdfs:label "afvalbak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01152 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/akkerbouw>
+  a owl:Class ;
+  rdfs:label "akkerbouw"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/aquaduct>
+  a owl:Class ;
+  rdfs:label "aquaduct"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01216 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/asfalt>
+  a owl:Class ;
+  rdfs:label "asfalt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02125 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/baan_voor_vliegverkeer>
+  a owl:Class ;
+  rdfs:label "baan voor vliegverkeer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01262 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/balustrade>
+  a owl:Class ;
+  rdfs:label "balustrade"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01321 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bank>
+  a owl:Class ;
+  rdfs:label "bank"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01332 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bassin>
+  a owl:Class ;
+  rdfs:label "bassin"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01422 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bedrijvigheid>
+  a owl:Class ;
+  rdfs:label "bedrijvigheid"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01163 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/beek>
+  a owl:Class ;
+  rdfs:label "beek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01370 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/begraafplaats>
+  a owl:Class ;
+  rdfs:label "begraafplaats"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01375 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/benzine-_/_olieput>
+  a owl:Class ;
+  rdfs:label "benzine- / olieput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01789 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/benzinestation>
+  a owl:Class ;
+  rdfs:label "benzinestation"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03725 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/berm>
+  a owl:Class ;
+  rdfs:label "berm "@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01431 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/betaalautomaat>
+  a owl:Class ;
+  rdfs:label "betaalautomaat"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01452 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/beton_element>
+  a owl:Class ;
+  rdfs:label "beton element"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02764 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/betonning>
+  a owl:Class ;
+  rdfs:label "betonning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03667 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/betonstraatstenen>
+  a owl:Class ;
+  rdfs:label "betonstraatstenen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02764 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bewoning>
+  a owl:Class ;
+  rdfs:label "bewoning"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01680 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bezinkbak>
+  a owl:Class ;
+  rdfs:label "bezinkbak "@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01414 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bloembak>
+  a owl:Class ;
+  rdfs:label "bloembak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01518 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bodembedekkers>
+  a owl:Class ;
+  rdfs:label "bodembedekkers"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bodemval>
+  a owl:Class ;
+  rdfs:label "bodemval"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01117 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bolder>
+  a owl:Class ;
+  rdfs:label "bolder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01557 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bollenteelt>
+  a owl:Class ;
+  rdfs:label "bollenteelt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/boom>
+  a owl:Class ;
+  rdfs:label "boom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01558 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/boomschors>
+  a owl:Class ;
+  rdfs:label "boomschors"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02687 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/boomspiegel>
+  a owl:Class ;
+  rdfs:label "boomspiegel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/boomteelt>
+  a owl:Class ;
+  rdfs:label "boomteelt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bordes>
+  a owl:Class ;
+  rdfs:label "bordes"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01580 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bosplantsoen>
+  a owl:Class ;
+  rdfs:label "bosplantsoen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bouwland>
+  a owl:Class ;
+  rdfs:label "bouwland"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01594 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bovenleidingmast>
+  a owl:Class ;
+  rdfs:label "bovenleidingmast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01891 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/braakliggend>
+  a owl:Class ;
+  rdfs:label "braakliggend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/brandkraan_/_-put>
+  a owl:Class ;
+  rdfs:label "brandkraan / -put"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01629 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/brievenbus>
+  a owl:Class ;
+  rdfs:label "brievenbus"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01657 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bron>
+  a owl:Class ;
+  rdfs:label "bron"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01354 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/brug>
+  a owl:Class ;
+  rdfs:label "brug"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01341 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bunker>
+  a owl:Class ;
+  rdfs:label "bunker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01682 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/bushalte>
+  a owl:Class ;
+  rdfs:label "bushalte"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01687 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/calamiteitendoorsteek>
+  a owl:Class ;
+  rdfs:label "calamiteitendoorsteek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01700 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/camera>
+  a owl:Class ;
+  rdfs:label "camera"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01702 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/carpoolplaats>
+  a owl:Class ;
+  rdfs:label "carpoolplaats"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01710 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/cementbeton>
+  a owl:Class ;
+  rdfs:label "cementbeton"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02125 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/container>
+  a owl:Class ;
+  rdfs:label "container"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01156 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/coupure>
+  a owl:Class ;
+  rdfs:label "coupure"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01774 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/damwand>
+  a owl:Class ;
+  rdfs:label "damwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01427 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/debietmeter>
+  a owl:Class ;
+  rdfs:label "debietmeter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03568 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/dek>
+  a owl:Class ;
+  rdfs:label "dek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01662 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/detectielus>
+  a owl:Class ;
+  rdfs:label "detectielus"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/dijkpaal>
+  a owl:Class ;
+  rdfs:label "dijkpaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/draadraster>
+  a owl:Class ;
+  rdfs:label "draadraster"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01878 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/drainageput>
+  a owl:Class ;
+  rdfs:label "drainageput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01789 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/drinkbak>
+  a owl:Class ;
+  rdfs:label "drinkbak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01300 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/drukknoppaal>
+  a owl:Class ;
+  rdfs:label "drukknoppaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/duiker>
+  a owl:Class ;
+  rdfs:label "duiker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01934 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/duin>
+  a owl:Class ;
+  rdfs:label "duin"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01938 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/dynamische_snelheidsindicator>
+  a owl:Class ;
+  rdfs:label "dynamische snelheidsindicator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01035 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/elektrakast>
+  a owl:Class ;
+  rdfs:label "elektrakast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/erf>
+  a owl:Class ;
+  rdfs:label "erf"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01981 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/faunaraster>
+  a owl:Class ;
+  rdfs:label "faunaraster"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01998 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/faunavoorziening>
+  a owl:Class ;
+  rdfs:label "faunavoorziening"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01999 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/fietsenkluis>
+  a owl:Class ;
+  rdfs:label "fietsenkluis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03183 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/fietsenrek>
+  a owl:Class ;
+  rdfs:label "fietsenrek"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03183 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/fietspad>
+  a owl:Class ;
+  rdfs:label "fietspad"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01030 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/flitser>
+  a owl:Class ;
+  rdfs:label "flitser"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/fontein>
+  a owl:Class ;
+  rdfs:label "fontein"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02021 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/fruitteelt>
+  a owl:Class ;
+  rdfs:label "fruitteelt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/functioneel_beheer>
+  a owl:Class ;
+  rdfs:label "functioneel beheer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/functioneel_beheer:_hondenuitlaatplaats>
+  a owl:Class ;
+  rdfs:label "functioneel beheer: hondenuitlaatplaats"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gaskast>
+  a owl:Class ;
+  rdfs:label "gaskast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gasput>
+  a owl:Class ;
+  rdfs:label "gasput"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02051 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gebakken_klinkers>
+  a owl:Class ;
+  rdfs:label "gebakken klinkers"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02764 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/geleideconstructie>
+  a owl:Class ;
+  rdfs:label "geleideconstructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01039 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/geleidewerk>
+  a owl:Class ;
+  rdfs:label "geleidewerk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02950 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/geluidsscherm>
+  a owl:Class ;
+  rdfs:label "geluidsscherm"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02094 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gemaal>
+  a owl:Class ;
+  rdfs:label "gemaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01578 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gemengd_bos>
+  a owl:Class ;
+  rdfs:label "gemengd bos"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02103 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gesloten_duinvegetatie>
+  a owl:Class ;
+  rdfs:label "gesloten duinvegetatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01938 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gesloten_verharding>
+  a owl:Class ;
+  rdfs:label "gesloten verharding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02125 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gracht>
+  a owl:Class ;
+  rdfs:label "gracht"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02166 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gras-_en_kruidachtigen>
+  a owl:Class ;
+  rdfs:label "gras- en kruidachtigen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00007 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/grasklinkers>
+  a owl:Class ;
+  rdfs:label "grasklinkers"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02206 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/grasland_agrarisch_>
+  a owl:Class ;
+  rdfs:label "grasland agrarisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02168 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/grasland_overig>
+  a owl:Class ;
+  rdfs:label "grasland overig"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02168 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/gravel>
+  a owl:Class ;
+  rdfs:label "gravel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02206 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/grensmarkering>
+  a owl:Class ;
+  rdfs:label "grensmarkering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/greppel,_droge_sloot>
+  a owl:Class ;
+  rdfs:label "greppel, droge sloot"@nl-nl ;
+  skos:related cbnlcore:CB02172 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/griend_en_hakhout>
+  a owl:Class ;
+  rdfs:label "griend en hakhout"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02583 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/grind>
+  a owl:Class ;
+  rdfs:label "grind"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02206 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/groenvoorziening>
+  a owl:Class ;
+  rdfs:label "groenvoorziening"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01567 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/haag>
+  a owl:Class ;
+  rdfs:label "haag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02310 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/half_verhard>
+  a owl:Class ;
+  rdfs:label "half verhard"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02206 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/haltepaal>
+  a owl:Class ;
+  rdfs:label "haltepaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/haven>
+  a owl:Class ;
+  rdfs:label "haven"@nl-nl ;
+  owl:equivalentClass cbnlcore:Haven ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hectometerpaal>
+  a owl:Class ;
+  rdfs:label "hectometerpaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/heesters>
+  a owl:Class ;
+  rdfs:label "heesters"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02243 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/heide>
+  a owl:Class ;
+  rdfs:label "heide"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02250 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hek>
+  a owl:Class ;
+  rdfs:label "hek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01322 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/herdenkingsmonument>
+  a owl:Class ;
+  rdfs:label "herdenkingsmonument"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03183 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hoogspanningsmast>
+  a owl:Class ;
+  rdfs:label "hoogspanningsmast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02295 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hoogstam_boomgaarden>
+  a owl:Class ;
+  rdfs:label "hoogstam boomgaarden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03559 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hoogtedetectieapparaat>
+  a owl:Class ;
+  rdfs:label "hoogtedetectieapparaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/hoogtemerk>
+  a owl:Class ;
+  rdfs:label "hoogtemerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01019 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/houtwal>
+  a owl:Class ;
+  rdfs:label "houtwal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02309 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/informatiebord>
+  a owl:Class ;
+  rdfs:label "informatiebord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01034 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/infrastructuur_verkeer_en_vervoer>
+  a owl:Class ;
+  rdfs:label "infrastructuur verkeer en vervoer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/infrastructuur_waterstaatswerken>
+  a owl:Class ;
+  rdfs:label "infrastructuur waterstaatswerken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/inrit>
+  a owl:Class ;
+  rdfs:label "inrit"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02345 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/inspectie-_/_rioolput>
+  a owl:Class ;
+  rdfs:label "inspectie- / rioolput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01789 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/kademuur>
+  a owl:Class ;
+  rdfs:label "Kademuur "@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02387 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/kanaal>
+  a owl:Class ;
+  rdfs:label "kanaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01948 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/keermuur>
+  a owl:Class ;
+  rdfs:label "keermuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01205 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/kering>
+  a owl:Class ;
+  rdfs:label "kering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01205 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/klein_fruit>
+  a owl:Class ;
+  rdfs:label "klein fruit"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/kolk>
+  a owl:Class ;
+  rdfs:label "kolk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01167 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/kunstobject>
+  a owl:Class ;
+  rdfs:label "kunstobject"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02503 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/kunststof>
+  a owl:Class ;
+  rdfs:label "kunststof"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02125 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/kwelder>
+  a owl:Class ;
+  rdfs:label "kwelder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02504 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/laagspanningsmast>
+  a owl:Class ;
+  rdfs:label "laagspanningsmast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01890 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/laagstam_boomgaarden>
+  a owl:Class ;
+  rdfs:label "laagstam boomgaarden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03559 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/lage_trafo>
+  a owl:Class ;
+  rdfs:label "lage trafo"@nl-nl ;
+  skos:related cbnlcore:CB04291 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/landbouw>
+  a owl:Class ;
+  rdfs:label "landbouw"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01177 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/landhoofd>
+  a owl:Class ;
+  rdfs:label "landhoofd"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01011 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/lichtcel>
+  a owl:Class ;
+  rdfs:label "lichtcel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02559 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/lichtmast>
+  a owl:Class ;
+  rdfs:label "lichtmast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02540 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/lichtpunt>
+  a owl:Class ;
+  rdfs:label "lichtpunt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03183 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/lijnafwatering>
+  a owl:Class ;
+  rdfs:label "lijnafwatering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02572 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/loofbos>
+  a owl:Class ;
+  rdfs:label "loofbos"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02583 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/luifel>
+  a owl:Class ;
+  rdfs:label "luifel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02609 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/maatschappelijke_en/of_publieksvoorziening>
+  a owl:Class ;
+  rdfs:label "maatschappelijke en/of publieksvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/meer,_plas,_ven,_vijver>
+  a owl:Class ;
+  rdfs:label "meer, plas, ven, vijver"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03480 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/meerpaal>
+  a owl:Class ;
+  rdfs:label "meerpaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02627 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/moeras>
+  a owl:Class ;
+  rdfs:label "moeras"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02663 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/molgoot>
+  a owl:Class ;
+  rdfs:label "molgoot"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02666 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/muur>
+  a owl:Class ;
+  rdfs:label "muur "@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01232 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/naaldbos>
+  a owl:Class ;
+  rdfs:label "naaldbos"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02676 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/natuur_en_landschap>
+  a owl:Class ;
+  rdfs:label "natuur en landschap"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01509 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/niet-bgt>
+  a owl:Class ;
+  rdfs:label "niet-bgt"@nl-nl ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/oever,_slootkant>
+  a owl:Class ;
+  rdfs:label "oever, slootkant"@nl-nl ;
+  skos:related cbnlcore:CB01443 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/onverhard>
+  a owl:Class ;
+  rdfs:label "onverhard"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02687 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/open_duinvegetatie>
+  a owl:Class ;
+  rdfs:label "open duinvegetatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01938 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/open_loods>
+  a owl:Class ;
+  rdfs:label "open loods"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02581 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/open_verharding>
+  a owl:Class ;
+  rdfs:label "open verharding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02764 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/openbaar_toilet>
+  a owl:Class ;
+  rdfs:label "openbaar toilet"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03264 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/openbare_verlichtingkast>
+  a owl:Class ;
+  rdfs:label "openbare verlichtingkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/opslagtank>
+  a owl:Class ;
+  rdfs:label "opslagtank"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02773 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/overkapping>
+  a owl:Class ;
+  rdfs:label "overkapping"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/overkluizing>
+  a owl:Class ;
+  rdfs:label "overkluizing"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02786 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/overweg>
+  a owl:Class ;
+  rdfs:label "overweg"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01245 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/parkeerbeugel>
+  a owl:Class ;
+  rdfs:label "parkeerbeugel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03183 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/parkeervlak>
+  a owl:Class ;
+  rdfs:label "parkeervlak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01711 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/perron>
+  a owl:Class ;
+  rdfs:label "perron"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01688 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/picknicktafel>
+  a owl:Class ;
+  rdfs:label "picknicktafel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03183 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/pijler>
+  a owl:Class ;
+  rdfs:label "pijler"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03604 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/plaatsnaambord>
+  a owl:Class ;
+  rdfs:label "plaatsnaambord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02866 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/planten>
+  a owl:Class ;
+  rdfs:label "planten"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/poller>
+  a owl:Class ;
+  rdfs:label "poller"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/pomp>
+  a owl:Class ;
+  rdfs:label "pomp"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02716 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/ponton>
+  a owl:Class ;
+  rdfs:label "ponton"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02887 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/portaal>
+  a owl:Class ;
+  rdfs:label "portaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02890 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/praatpaal>
+  a owl:Class ;
+  rdfs:label "praatpaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/puin>
+  a owl:Class ;
+  rdfs:label "puin"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02206 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/pyloon>
+  a owl:Class ;
+  rdfs:label "pyloon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03607 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/radar_detector>
+  a owl:Class ;
+  rdfs:label "radar detector"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01068 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/radarmast>
+  a owl:Class ;
+  rdfs:label "radarmast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02921 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/reclamebord>
+  a owl:Class ;
+  rdfs:label "reclamebord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01706 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/reclamezuil>
+  a owl:Class ;
+  rdfs:label "reclamezuil"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02932 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/recreatie>
+  a owl:Class ;
+  rdfs:label "recreatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01679 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/recreatie:_bungalowpark>
+  a owl:Class ;
+  rdfs:label "recreatie: bungalowpark"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01678 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/recreatie:_camping>
+  a owl:Class ;
+  rdfs:label "recreatie: camping"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01708 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/recreatie:_speeltuin>
+  a owl:Class ;
+  rdfs:label "recreatie: speeltuin"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03099 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/recreatie:_sportterrein>
+  a owl:Class ;
+  rdfs:label "recreatie: sportterrein"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03132 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/recreatie:_volkstuin>
+  a owl:Class ;
+  rdfs:label "recreatie: volkstuin"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01679 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/remmingswerk>
+  a owl:Class ;
+  rdfs:label "remmingswerk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02950 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rietland>
+  a owl:Class ;
+  rdfs:label "rietland"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02955 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rijbaan_autosnelweg>
+  a owl:Class ;
+  rdfs:label "rijbaan autosnelweg"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01249 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rijbaan_autoweg>
+  a owl:Class ;
+  rdfs:label "rijbaan autoweg"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01255 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rijbaan_lokale_weg>
+  a owl:Class ;
+  rdfs:label "rijbaan lokale weg"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01031 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rijbaan_regionale_weg>
+  a owl:Class ;
+  rdfs:label "rijbaan regionale weg"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01031 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rioolkast>
+  a owl:Class ;
+  rdfs:label "rioolkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rivier>
+  a owl:Class ;
+  rdfs:label "rivier"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01353 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/rooster>
+  a owl:Class ;
+  rdfs:label "rooster"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02109 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/ruiterpad>
+  a owl:Class ;
+  rdfs:label "ruiterpad"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03005 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/scheepvaartbord>
+  a owl:Class ;
+  rdfs:label "scheepvaartbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03826 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/schelpen>
+  a owl:Class ;
+  rdfs:label "schelpen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02206 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/schuur>
+  a owl:Class ;
+  rdfs:label "schuur"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03055 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/sierbestrating>
+  a owl:Class ;
+  rdfs:label "sierbestrating"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02764 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/sirene>
+  a owl:Class ;
+  rdfs:label "sirene"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/slagboom>
+  a owl:Class ;
+  rdfs:label "slagboom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02202 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/slik>
+  a owl:Class ;
+  rdfs:label "slik"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02897 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/sloof>
+  a owl:Class ;
+  rdfs:label "sloof"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01012 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/sloot>
+  a owl:Class ;
+  rdfs:label "sloot"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01440 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/sluis>
+  a owl:Class ;
+  rdfs:label "sluis"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02130 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/sneltram>
+  a owl:Class ;
+  rdfs:label "sneltram"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02565 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/speelvoorziening>
+  a owl:Class ;
+  rdfs:label "speelvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03099 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/spoorbaan>
+  a owl:Class ;
+  rdfs:label "spoorbaan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03115 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/steiger>
+  a owl:Class ;
+  rdfs:label "steiger"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01026 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/straalzender>
+  a owl:Class ;
+  rdfs:label "straalzender"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03181 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/straatnaambord>
+  a owl:Class ;
+  rdfs:label "straatnaambord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03185 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/strand_en_strandwal>
+  a owl:Class ;
+  rdfs:label "strand en strandwal"@nl-nl ;
+  skos:related cbnlcore:CB03188 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/strekdam>
+  a owl:Class ;
+  rdfs:label "strekdam"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03196 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/struiken>
+  a owl:Class ;
+  rdfs:label "struiken"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02251 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/struikrozen>
+  a owl:Class ;
+  rdfs:label "struikrozen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03203 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/stuw>
+  a owl:Class ;
+  rdfs:label "stuw"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01307 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/tegels>
+  a owl:Class ;
+  rdfs:label "tegels"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02764 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/telecom_kast>
+  a owl:Class ;
+  rdfs:label "telecom kast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/telefooncel>
+  a owl:Class ;
+  rdfs:label "telefooncel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03183 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/telkast>
+  a owl:Class ;
+  rdfs:label "telkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/telpaal>
+  a owl:Class ;
+  rdfs:label "telpaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/toegangstrap>
+  a owl:Class ;
+  rdfs:label "toegangstrap"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01475 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/tram>
+  a owl:Class ;
+  rdfs:label "tram"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03269 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/trein>
+  a owl:Class ;
+  rdfs:label "trein"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01524 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verbindingsweg>
+  a owl:Class ;
+  rdfs:label "verbindingsweg"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01132 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verblindingswering>
+  a owl:Class ;
+  rdfs:label "verblindingswering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01213 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verkeersbord>
+  a owl:Class ;
+  rdfs:label "verkeersbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01023 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verkeersbordpaal>
+  a owl:Class ;
+  rdfs:label "verkeersbordpaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03365 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verkeersdrempel>
+  a owl:Class ;
+  rdfs:label "verkeersdrempel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03366 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verkeerseiland>
+  a owl:Class ;
+  rdfs:label "verkeerseiland"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02649 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verkeersregelinstallatiekast>
+  a owl:Class ;
+  rdfs:label "Verkeersregelinstal-latiekast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verkeersregelinstallatiepaal>
+  a owl:Class ;
+  rdfs:label "verkeersregelinstallatiepaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verklikker_transportleiding>
+  a owl:Class ;
+  rdfs:label "verklikker transportleiding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02543 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/verzorgingsplaats>
+  a owl:Class ;
+  rdfs:label "verzorgingsplaats"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03385 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/viaduct>
+  a owl:Class ;
+  rdfs:label "viaduct"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01217 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/vispassage>
+  a owl:Class ;
+  rdfs:label "vispassage"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01395 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/vlaggenmast>
+  a owl:Class ;
+  rdfs:label "vlaggenmast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/voedersilo>
+  a owl:Class ;
+  rdfs:label "voedersilo"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03074 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/voetgangersgebied>
+  a owl:Class ;
+  rdfs:label "voetgangersgebied"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01031 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/voetpad>
+  a owl:Class ;
+  rdfs:label "voetpad "@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03292 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/voetpad_op_trap>
+  a owl:Class ;
+  rdfs:label "voetpad op trap"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03292 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/vollegrondsteelt>
+  a owl:Class ;
+  rdfs:label "vollegrondsteelt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/voorde>
+  a owl:Class ;
+  rdfs:label "voorde"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01117 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/vuilvang>
+  a owl:Class ;
+  rdfs:label "vuilvang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01136 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/waarschuwingshek>
+  a owl:Class ;
+  rdfs:label "waarschuwingshek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03039 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/walbescherming>
+  a owl:Class ;
+  rdfs:label "walbescherming"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02486 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/waterbergingsgebied>
+  a owl:Class ;
+  rdfs:label "waterbergingsgebied"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/waterleidingput>
+  a owl:Class ;
+  rdfs:label "waterleidingput"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03474 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/waterloop>
+  a owl:Class ;
+  rdfs:label "waterloop"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01354 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/waterstandmeter>
+  a owl:Class ;
+  rdfs:label "waterstandmeter"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02845 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/watervlakte>
+  a owl:Class ;
+  rdfs:label "watervlakte"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03480 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/weerstation>
+  a owl:Class ;
+  rdfs:label "weerstation"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03484 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/wegmarkering>
+  a owl:Class ;
+  rdfs:label "wegmarkering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01528 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/wegwijzer>
+  a owl:Class ;
+  rdfs:label "wegwijzer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01482 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/wijngaarden>
+  a owl:Class ;
+  rdfs:label "wijngaarden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/wildrooster>
+  a owl:Class ;
+  rdfs:label "wildrooster"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03495 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/windmeter>
+  a owl:Class ;
+  rdfs:label "windmeter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/windturbine>
+  a owl:Class ;
+  rdfs:label "windturbine"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03501 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/woonerf>
+  a owl:Class ;
+  rdfs:label "woonerf"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01981 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/zand>
+  a owl:Class ;
+  rdfs:label "zand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01781 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/zand-_/_zoutbak>
+  a owl:Class ;
+  rdfs:label "zand- / zoutbak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01300 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/zandverstuiving>
+  a owl:Class ;
+  rdfs:label "zandverstuiving"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01509 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/zee>
+  a owl:Class ;
+  rdfs:label "zee"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03527 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/zendmast>
+  a owl:Class ;
+  rdfs:label "zendmast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02190 ;
+.
+<https://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/zonnepaneel>
+  a owl:Class ;
+  rdfs:label "zonnepaneel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03541 ;
+.
+<http://ont.cbnl.org/mapping/IMGeo-2.1.1-CBNL-20190510>
+  a owl:Ontology ;
+.

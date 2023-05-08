@@ -1,0 +1,4855 @@
+# baseURI: http://ont.cbnl.org/mapping/NEN2767-4-1.0-CBNL-20190510
+
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ont.cbnl.org/mapping/NEN2767-4-1.0-CBNL-20190510>
+  a owl:Ontology ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/1.html>
+  a owl:Class ;
+  rdfs:label "Aanleginrichtingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/10.html>
+  a owl:Class ;
+  rdfs:label "Dammen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01522 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/11.html>
+  a owl:Class ;
+  rdfs:label "Dijken"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01330 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/12.html>
+  a owl:Class ;
+  rdfs:label "Drinkwaterinlaten"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/13.html>
+  a owl:Class ;
+  rdfs:label "Duikers"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01934 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/14.html>
+  a owl:Class ;
+  rdfs:label "Duingebieden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03911 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/15.html>
+  a owl:Class ;
+  rdfs:label "Ecoducten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01954 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/16.html>
+  a owl:Class ;
+  rdfs:label "Faunatunnels"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01958 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/18.html>
+  a owl:Class ;
+  rdfs:label "Gemalen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01578 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/19.html>
+  a owl:Class ;
+  rdfs:label "Grondkeringen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01204 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/2.html>
+  a owl:Class ;
+  rdfs:label "Aquaducten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01216 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/23.html>
+  a owl:Class ;
+  rdfs:label "Kades"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02386 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/24.html>
+  a owl:Class ;
+  rdfs:label "Kanalen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01948 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/25.html>
+  a owl:Class ;
+  rdfs:label "Landbouwgebieden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01176 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/26.html>
+  a owl:Class ;
+  rdfs:label "Meren"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03596 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/27.html>
+  a owl:Class ;
+  rdfs:label "Natuurgebieden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02684 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/28.html>
+  a owl:Class ;
+  rdfs:label "Onderdoorgangen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02725 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/3.html>
+  a owl:Class ;
+  rdfs:label "Begraafplaatsen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01375 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/30.html>
+  a owl:Class ;
+  rdfs:label "Open Tunnelbakken"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03298 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/31.html>
+  a owl:Class ;
+  rdfs:label "Overkluizingen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02786 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/33.html>
+  a owl:Class ;
+  rdfs:label "Parken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03154 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/34.html>
+  a owl:Class ;
+  rdfs:label "Rioleringen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01867 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/35.html>
+  a owl:Class ;
+  rdfs:label "Rivieren"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01353 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/37.html>
+  a owl:Class ;
+  rdfs:label "Schutsluizen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03052 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/38.html>
+  a owl:Class ;
+  rdfs:label "Spoorwegen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02241 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/40.html>
+  a owl:Class ;
+  rdfs:label "Spuisluizen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03139 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/41.html>
+  a owl:Class ;
+  rdfs:label "Stormvloedkeringen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03178 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/42.html>
+  a owl:Class ;
+  rdfs:label "Stuwen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01307 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/43.html>
+  a owl:Class ;
+  rdfs:label "Terreinen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01366 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/44.html>
+  a owl:Class ;
+  rdfs:label "Tunnels"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01935 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/45.html>
+  a owl:Class ;
+  rdfs:label "Uiterwaarden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03678 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/47.html>
+  a owl:Class ;
+  rdfs:label "Verkeerscentrales"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01095 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/48.html>
+  a owl:Class ;
+  rdfs:label "Verzorgingsplaatsen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03385 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/49.html>
+  a owl:Class ;
+  rdfs:label "Viaducten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01217 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/5.html>
+  a owl:Class ;
+  rdfs:label "Bosgebieden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01585 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/53.html>
+  a owl:Class ;
+  rdfs:label "Wegen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01031 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/54.html>
+  a owl:Class ;
+  rdfs:label "Zee"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03527 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/56.html>
+  a owl:Class ;
+  rdfs:label "Recreatieve gebieden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01679 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/58.html>
+  a owl:Class ;
+  rdfs:label "Bunkers"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01682 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/59.html>
+  a owl:Class ;
+  rdfs:label "Sifons"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02180 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/6.html>
+  a owl:Class ;
+  rdfs:label "Bruggen (beweegbaar)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01340 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/60.html>
+  a owl:Class ;
+  rdfs:label "Hevels"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02180 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/7.html>
+  a owl:Class ;
+  rdfs:label "Bruggen (vast)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01342 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/77.html>
+  a owl:Class ;
+  rdfs:label "Procesbassins"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/8.html>
+  a owl:Class ;
+  rdfs:label "Buffers"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03470 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/84.html>
+  a owl:Class ;
+  rdfs:label "Bezinkbassins"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/85.html>
+  a owl:Class ;
+  rdfs:label "Ontvangst- en verdeelwerken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/87.html>
+  a owl:Class ;
+  rdfs:label "Gistingstanks"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/88.html>
+  a owl:Class ;
+  rdfs:label "Opslagtanks"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/89.html>
+  a owl:Class ;
+  rdfs:label "Beluchtingstanks"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/9.html>
+  a owl:Class ;
+  rdfs:label "Coupures"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01774 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/90.html>
+  a owl:Class ;
+  rdfs:label "Zandfilterbassins"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/91.html>
+  a owl:Class ;
+  rdfs:label "Windmolens"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02665 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/92.html>
+  a owl:Class ;
+  rdfs:label "Persleidingen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02853 ;
+.
+<http://www.nen2767-4.nl/beheerobject/detail/93.html>
+  a owl:Class ;
+  rdfs:label "Individuele Behandeling van Afvalwater (IBA)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02317 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1.html>
+  a owl:Class ;
+  rdfs:label "(Open) tandwieloverbrenging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/10.html>
+  a owl:Class ;
+  rdfs:label "Aanslag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/100.html>
+  a owl:Class ;
+  rdfs:label "Brandblusser"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1000.html>
+  a owl:Class ;
+  rdfs:label "Noodhandbediening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00042 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1003.html>
+  a owl:Class ;
+  rdfs:label "Spuitkanon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1004.html>
+  a owl:Class ;
+  rdfs:label "Hydrant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1005.html>
+  a owl:Class ;
+  rdfs:label "Handbrandmelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01637 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1007.html>
+  a owl:Class ;
+  rdfs:label "Lager"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1008.html>
+  a owl:Class ;
+  rdfs:label "Halfverharding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02736 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1011.html>
+  a owl:Class ;
+  rdfs:label "Boomgeleiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1012.html>
+  a owl:Class ;
+  rdfs:label "Vormboom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01558 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1013.html>
+  a owl:Class ;
+  rdfs:label "Vrij uitgroeiende"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01558 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1015.html>
+  a owl:Class ;
+  rdfs:label "Niet vrij uitgroeiende"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01558 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1016.html>
+  a owl:Class ;
+  rdfs:label "Hakhout"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1017.html>
+  a owl:Class ;
+  rdfs:label "Grienden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03678 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1018.html>
+  a owl:Class ;
+  rdfs:label "Takkenril"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02310 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1019.html>
+  a owl:Class ;
+  rdfs:label "Broeihoop"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00014 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1021.html>
+  a owl:Class ;
+  rdfs:label "Boombak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01300 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1023.html>
+  a owl:Class ;
+  rdfs:label "Vlonder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03427 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1024.html>
+  a owl:Class ;
+  rdfs:label "Bloembak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01518 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1026.html>
+  a owl:Class ;
+  rdfs:label "Tafel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1027.html>
+  a owl:Class ;
+  rdfs:label "Oeverzwaluwenwand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/103.html>
+  a owl:Class ;
+  rdfs:label "Brandstofcel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1030.html>
+  a owl:Class ;
+  rdfs:label "Gedenksteen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1032.html>
+  a owl:Class ;
+  rdfs:label "Draaipoort"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01879 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1033.html>
+  a owl:Class ;
+  rdfs:label "Schuifpoort"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03050 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1034.html>
+  a owl:Class ;
+  rdfs:label "Looppoort"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01886 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1035.html>
+  a owl:Class ;
+  rdfs:label "Fitnesstoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1036.html>
+  a owl:Class ;
+  rdfs:label "Bank"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01332 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1037.html>
+  a owl:Class ;
+  rdfs:label "Sleufopbouw"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1038.html>
+  a owl:Class ;
+  rdfs:label "Sleufonderbouw"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02756 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/104.html>
+  a owl:Class ;
+  rdfs:label "Brandstofunit"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1040.html>
+  a owl:Class ;
+  rdfs:label "Antiverblindingsscherm"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01213 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1045.html>
+  a owl:Class ;
+  rdfs:label "Halsbeugel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1046.html>
+  a owl:Class ;
+  rdfs:label "Schacht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1048.html>
+  a owl:Class ;
+  rdfs:label "Onderbak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01300 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1049.html>
+  a owl:Class ;
+  rdfs:label "Afdekplaat"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01104 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1050.html>
+  a owl:Class ;
+  rdfs:label "Schachtopbouw"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1051.html>
+  a owl:Class ;
+  rdfs:label "Remschot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01937 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1053.html>
+  a owl:Class ;
+  rdfs:label "Buisaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01086 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1054.html>
+  a owl:Class ;
+  rdfs:label "Wervelventiel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03491 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1055.html>
+  a owl:Class ;
+  rdfs:label "Stankscherm"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1056.html>
+  a owl:Class ;
+  rdfs:label "Kegelstuk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1057.html>
+  a owl:Class ;
+  rdfs:label "Putrand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1058.html>
+  a owl:Class ;
+  rdfs:label "Banket"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1059.html>
+  a owl:Class ;
+  rdfs:label "Stroomprofiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01108 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/106.html>
+  a owl:Class ;
+  rdfs:label "Buffer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1060.html>
+  a owl:Class ;
+  rdfs:label "Uitstroombak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03318 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1061.html>
+  a owl:Class ;
+  rdfs:label "Slokop"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03081 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1062.html>
+  a owl:Class ;
+  rdfs:label "Lijnafwatering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02572 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1063.html>
+  a owl:Class ;
+  rdfs:label "Inlaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1064.html>
+  a owl:Class ;
+  rdfs:label "Olie-/benzineafscheider"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02714 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1065.html>
+  a owl:Class ;
+  rdfs:label "Vetafscheider"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03388 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1066.html>
+  a owl:Class ;
+  rdfs:label "Slibafscheider"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03079 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1068.html>
+  a owl:Class ;
+  rdfs:label "Lamellenafscheider"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02518 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/107.html>
+  a owl:Class ;
+  rdfs:label "Buis"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01051 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1070.html>
+  a owl:Class ;
+  rdfs:label "Reddingslijn"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1071.html>
+  a owl:Class ;
+  rdfs:label "Reddingsvest"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1072.html>
+  a owl:Class ;
+  rdfs:label "Reddingsboei"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01547 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1073.html>
+  a owl:Class ;
+  rdfs:label "Beschermlaag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01112 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1077.html>
+  a owl:Class ;
+  rdfs:label "Haspel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01650 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1078.html>
+  a owl:Class ;
+  rdfs:label "Reddingsdavid"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01630 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1079.html>
+  a owl:Class ;
+  rdfs:label "Camera, vast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01702 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/108.html>
+  a owl:Class ;
+  rdfs:label "C2000"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01208 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1080.html>
+  a owl:Class ;
+  rdfs:label "Camera, beweegbaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01702 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1082.html>
+  a owl:Class ;
+  rdfs:label "Boeienlijn"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01047 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1084.html>
+  a owl:Class ;
+  rdfs:label "Anode"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1086.html>
+  a owl:Class ;
+  rdfs:label "Grijper"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1087.html>
+  a owl:Class ;
+  rdfs:label "Meetpunt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1088.html>
+  a owl:Class ;
+  rdfs:label "Bliksemafleider"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01514 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1089.html>
+  a owl:Class ;
+  rdfs:label "Aardrail"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1090.html>
+  a owl:Class ;
+  rdfs:label "Ballastweerstand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1093.html>
+  a owl:Class ;
+  rdfs:label "Ballon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1094.html>
+  a owl:Class ;
+  rdfs:label "Riem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1096.html>
+  a owl:Class ;
+  rdfs:label "Borstel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1097.html>
+  a owl:Class ;
+  rdfs:label "Buisbeluchter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1098.html>
+  a owl:Class ;
+  rdfs:label "Compensator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1099.html>
+  a owl:Class ;
+  rdfs:label "Drijflaagruimer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/11.html>
+  a owl:Class ;
+  rdfs:label "Aansluitconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/110.html>
+  a owl:Class ;
+  rdfs:label "Caisson"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01696 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1100.html>
+  a owl:Class ;
+  rdfs:label "Filterdoek"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01506 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1101.html>
+  a owl:Class ;
+  rdfs:label "Filtervulling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00062 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1102.html>
+  a owl:Class ;
+  rdfs:label "Filterhuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1103.html>
+  a owl:Class ;
+  rdfs:label "Isolator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1104.html>
+  a owl:Class ;
+  rdfs:label "Membraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1105.html>
+  a owl:Class ;
+  rdfs:label "Membraanbeluchter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1106.html>
+  a owl:Class ;
+  rdfs:label "Mixer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1107.html>
+  a owl:Class ;
+  rdfs:label "Plaatbeluchter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1108.html>
+  a owl:Class ;
+  rdfs:label "Puntbeluchter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1112.html>
+  a owl:Class ;
+  rdfs:label "Rotorbeluchter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02272 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1114.html>
+  a owl:Class ;
+  rdfs:label "Schraper"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02223 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1115.html>
+  a owl:Class ;
+  rdfs:label "Statische menger"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1117.html>
+  a owl:Class ;
+  rdfs:label "Versnijder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1118.html>
+  a owl:Class ;
+  rdfs:label "Roerwerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1119.html>
+  a owl:Class ;
+  rdfs:label "Monsternameapparaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00012 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1120.html>
+  a owl:Class ;
+  rdfs:label "Centrifuge"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1121.html>
+  a owl:Class ;
+  rdfs:label "Drijflaag afvoerbak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01300 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1122.html>
+  a owl:Class ;
+  rdfs:label "Hark"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02223 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1123.html>
+  a owl:Class ;
+  rdfs:label "Inlooptrommel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1124.html>
+  a owl:Class ;
+  rdfs:label "Kettingtand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1125.html>
+  a owl:Class ;
+  rdfs:label "Schotelbeluchter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1126.html>
+  a owl:Class ;
+  rdfs:label "Shikanen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1127.html>
+  a owl:Class ;
+  rdfs:label "Sproeikop"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1128.html>
+  a owl:Class ;
+  rdfs:label "Terugslagklep"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03252 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1129.html>
+  a owl:Class ;
+  rdfs:label "Voortstuwer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1130.html>
+  a owl:Class ;
+  rdfs:label "Wals"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01099 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1131.html>
+  a owl:Class ;
+  rdfs:label "Bak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01300 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1132.html>
+  a owl:Class ;
+  rdfs:label "Net"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03642 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1135.html>
+  a owl:Class ;
+  rdfs:label "Reclamezuil"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02932 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1136.html>
+  a owl:Class ;
+  rdfs:label "Paneel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1137.html>
+  a owl:Class ;
+  rdfs:label "Stijl"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01320 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1138.html>
+  a owl:Class ;
+  rdfs:label "Wandafwerking"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1140.html>
+  a owl:Class ;
+  rdfs:label "Vloerafwerking"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1141.html>
+  a owl:Class ;
+  rdfs:label "Trapafwerking"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1142.html>
+  a owl:Class ;
+  rdfs:label "Helling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1143.html>
+  a owl:Class ;
+  rdfs:label "Hellingafwerking"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01397 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1145.html>
+  a owl:Class ;
+  rdfs:label "Leuningafwerking"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01397 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1147.html>
+  a owl:Class ;
+  rdfs:label "Dakafwerking"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1148.html>
+  a owl:Class ;
+  rdfs:label "Plafondafwerking"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01397 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1149.html>
+  a owl:Class ;
+  rdfs:label "Kozijn"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01502 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1150.html>
+  a owl:Class ;
+  rdfs:label "Raam"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01469 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1151.html>
+  a owl:Class ;
+  rdfs:label "Beglazing"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1152.html>
+  a owl:Class ;
+  rdfs:label "Lichtkoepel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02551 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1153.html>
+  a owl:Class ;
+  rdfs:label "Lichtstraat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1155.html>
+  a owl:Class ;
+  rdfs:label "Urinoir"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03329 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1156.html>
+  a owl:Class ;
+  rdfs:label "Wastafel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01731 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1158.html>
+  a owl:Class ;
+  rdfs:label "Douche"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01873 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1159.html>
+  a owl:Class ;
+  rdfs:label "Bad"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/116.html>
+  a owl:Class ;
+  rdfs:label "Centrale"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1161.html>
+  a owl:Class ;
+  rdfs:label "Kraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1162.html>
+  a owl:Class ;
+  rdfs:label "Boiler"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03631 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1163.html>
+  a owl:Class ;
+  rdfs:label "Geiser"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00012 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1166.html>
+  a owl:Class ;
+  rdfs:label "Beplating"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1167.html>
+  a owl:Class ;
+  rdfs:label "Hamerstuk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02217 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1169.html>
+  a owl:Class ;
+  rdfs:label "Kist"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1170.html>
+  a owl:Class ;
+  rdfs:label "Schokdemper"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1172.html>
+  a owl:Class ;
+  rdfs:label "Parkeerbeugel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1173.html>
+  a owl:Class ;
+  rdfs:label "Deklaag, dicht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01816 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1174.html>
+  a owl:Class ;
+  rdfs:label "Deklaag, open"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01816 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1175.html>
+  a owl:Class ;
+  rdfs:label "Onderlaag"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02731 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1176.html>
+  a owl:Class ;
+  rdfs:label "Funderingslaag (gebonden)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01112 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1177.html>
+  a owl:Class ;
+  rdfs:label "Funderingslaag (ongebonden)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01112 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1178.html>
+  a owl:Class ;
+  rdfs:label "Ondergrond"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01635 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1179.html>
+  a owl:Class ;
+  rdfs:label "Tussenlaag"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03304 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/118.html>
+  a owl:Class ;
+  rdfs:label "Centrale-deurontgrendeling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1180.html>
+  a owl:Class ;
+  rdfs:label "Schakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1181.html>
+  a owl:Class ;
+  rdfs:label "Olieboom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1183.html>
+  a owl:Class ;
+  rdfs:label "Kaart"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1185.html>
+  a owl:Class ;
+  rdfs:label "Rolluik"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02610 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1186.html>
+  a owl:Class ;
+  rdfs:label "Scherm"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1187.html>
+  a owl:Class ;
+  rdfs:label "Rolgordijn"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1188.html>
+  a owl:Class ;
+  rdfs:label "Jaloezie (lamel)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02370 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1189.html>
+  a owl:Class ;
+  rdfs:label "Local Area Network (LAN)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01807 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/119.html>
+  a owl:Class ;
+  rdfs:label "Cilinder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1190.html>
+  a owl:Class ;
+  rdfs:label "Switch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1192.html>
+  a owl:Class ;
+  rdfs:label "Leuning"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01325 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1193.html>
+  a owl:Class ;
+  rdfs:label "Elektrische aandrijving"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03259 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1197.html>
+  a owl:Class ;
+  rdfs:label "Asfaltwapening"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03553 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1198.html>
+  a owl:Class ;
+  rdfs:label "Keukenblok"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1199.html>
+  a owl:Class ;
+  rdfs:label "Keukeninstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02412 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/120.html>
+  a owl:Class ;
+  rdfs:label "Coaxstralers (tunnelbekabeling)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1201.html>
+  a owl:Class ;
+  rdfs:label "Hulppostkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1202.html>
+  a owl:Class ;
+  rdfs:label "Leidingnetwerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01807 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/1204.html>
+  a owl:Class ;
+  rdfs:label "Brandslang"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01647 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/121.html>
+  a owl:Class ;
+  rdfs:label "Combiwand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01427 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/122.html>
+  a owl:Class ;
+  rdfs:label "Compressor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03710 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/124.html>
+  a owl:Class ;
+  rdfs:label "Connector"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/126.html>
+  a owl:Class ;
+  rdfs:label "Console"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01756 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/13.html>
+  a owl:Class ;
+  rdfs:label "Aansluitleiding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01050 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/131.html>
+  a owl:Class ;
+  rdfs:label "Contragewicht"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03565 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/132.html>
+  a owl:Class ;
+  rdfs:label "Dak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01618 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/133.html>
+  a owl:Class ;
+  rdfs:label "Damwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01427 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/137.html>
+  a owl:Class ;
+  rdfs:label "Damwandkop"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01107 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/14.html>
+  a owl:Class ;
+  rdfs:label "Aanstraalverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01233 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/140.html>
+  a owl:Class ;
+  rdfs:label "Dek"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01310 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/141.html>
+  a owl:Class ;
+  rdfs:label "Dekzerkprofiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01108 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/143.html>
+  a owl:Class ;
+  rdfs:label "Geluidsdemper"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/144.html>
+  a owl:Class ;
+  rdfs:label "Detectielus"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/145.html>
+  a owl:Class ;
+  rdfs:label "Detectiesysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/146.html>
+  a owl:Class ;
+  rdfs:label "Detector"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/148.html>
+  a owl:Class ;
+  rdfs:label "Deur"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01364 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/149.html>
+  a owl:Class ;
+  rdfs:label "Deuraanstraalarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01233 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/15.html>
+  a owl:Class ;
+  rdfs:label "Aardelektrode"@nl-nl ;
+  owl:equivalentClass cbnlcore:Aardelektrode ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/150.html>
+  a owl:Class ;
+  rdfs:label "Deurgeleiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/151.html>
+  a owl:Class ;
+  rdfs:label "Deurrails"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/152.html>
+  a owl:Class ;
+  rdfs:label "Deuvel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01831 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/153.html>
+  a owl:Class ;
+  rdfs:label "Diagonaal (vakwerkligger)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03333 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/154.html>
+  a owl:Class ;
+  rdfs:label "Dieptefiltratie (t.b.v. oliereiniging)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/155.html>
+  a owl:Class ;
+  rdfs:label "Diepwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01838 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/158.html>
+  a owl:Class ;
+  rdfs:label "Dilatatievoeg"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01843 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/159.html>
+  a owl:Class ;
+  rdfs:label "Dilatatievoegovergang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02956 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/160.html>
+  a owl:Class ;
+  rdfs:label "Display"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/162.html>
+  a owl:Class ;
+  rdfs:label "Draadstang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01043 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/164.html>
+  a owl:Class ;
+  rdfs:label "Draaipunt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01770 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/166.html>
+  a owl:Class ;
+  rdfs:label "Drainagebuis"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01897 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/167.html>
+  a owl:Class ;
+  rdfs:label "Drainmonding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00070 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/168.html>
+  a owl:Class ;
+  rdfs:label "Drempel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/170.html>
+  a owl:Class ;
+  rdfs:label "Drijfraam"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02950 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/171.html>
+  a owl:Class ;
+  rdfs:label "Drijvende bolder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01557 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/172.html>
+  a owl:Class ;
+  rdfs:label "Drukknoppaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01917 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/173.html>
+  a owl:Class ;
+  rdfs:label "Drukpalen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01574 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/174.html>
+  a owl:Class ;
+  rdfs:label "Drukvat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01668 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/176.html>
+  a owl:Class ;
+  rdfs:label "Duinovergang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01509 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/177.html>
+  a owl:Class ;
+  rdfs:label "Duinvoetverdediging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/179.html>
+  a owl:Class ;
+  rdfs:label "Dwarsdrager"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03571 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/18.html>
+  a owl:Class ;
+  rdfs:label "Accu"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/183.html>
+  a owl:Class ;
+  rdfs:label "Elektrovijzel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/184.html>
+  a owl:Class ;
+  rdfs:label "Elementenverharding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03069 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/185.html>
+  a owl:Class ;
+  rdfs:label "Energiekabel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01089 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/187.html>
+  a owl:Class ;
+  rdfs:label "Evacuatieverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01233 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/188.html>
+  a owl:Class ;
+  rdfs:label "Evenaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/189.html>
+  a owl:Class ;
+  rdfs:label "Evenaar (hefdeur/roldeur)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/19.html>
+  a owl:Class ;
+  rdfs:label "Achterbeplating fender"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01106 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/190.html>
+  a owl:Class ;
+  rdfs:label "Stootkussen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/191.html>
+  a owl:Class ;
+  rdfs:label "Filterconstructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01506 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/2.html>
+  a owl:Class ;
+  rdfs:label "Aandrijf- en bewegingswerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/20.html>
+  a owl:Class ;
+  rdfs:label "Achtergrondschild"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/201.html>
+  a owl:Class ;
+  rdfs:label "Folie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00062 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/203.html>
+  a owl:Class ;
+  rdfs:label "Frame"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00039 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/204.html>
+  a owl:Class ;
+  rdfs:label "Fundatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/21.html>
+  a owl:Class ;
+  rdfs:label "Achterloopheidscherm"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/210.html>
+  a owl:Class ;
+  rdfs:label "Geleidende balk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03578 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/211.html>
+  a owl:Class ;
+  rdfs:label "Geleider"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00062 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/212.html>
+  a owl:Class ;
+  rdfs:label "Geleiderail"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01964 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/213.html>
+  a owl:Class ;
+  rdfs:label "Geleidewerk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02950 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/214.html>
+  a owl:Class ;
+  rdfs:label "Geleidewiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/215.html>
+  a owl:Class ;
+  rdfs:label "Gelijkrichter"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02082 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/218.html>
+  a owl:Class ;
+  rdfs:label "Geluidwering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/22.html>
+  a owl:Class ;
+  rdfs:label "Achterplaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01106 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/220.html>
+  a owl:Class ;
+  rdfs:label "Geotextiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00062 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/222.html>
+  a owl:Class ;
+  rdfs:label "Glasvezelkabel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02152 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/223.html>
+  a owl:Class ;
+  rdfs:label "Glasvezelput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01789 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/224.html>
+  a owl:Class ;
+  rdfs:label "Golfpijp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01051 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/225.html>
+  a owl:Class ;
+  rdfs:label "Goot"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01148 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/226.html>
+  a owl:Class ;
+  rdfs:label "Gording"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02165 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/227.html>
+  a owl:Class ;
+  rdfs:label "Grendel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/228.html>
+  a owl:Class ;
+  rdfs:label "Grondlichaam"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01079 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/23.html>
+  a owl:Class ;
+  rdfs:label "Afdichting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01111 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/234.html>
+  a owl:Class ;
+  rdfs:label "Grondverbetering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00039 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/235.html>
+  a owl:Class ;
+  rdfs:label "Global System for Mobile communications (GSM)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/236.html>
+  a owl:Class ;
+  rdfs:label "H-palen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/237.html>
+  a owl:Class ;
+  rdfs:label "Haalkom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/238.html>
+  a owl:Class ;
+  rdfs:label "Hameistijl (poort)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02216 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/239.html>
+  a owl:Class ;
+  rdfs:label "Hanger (boogbrug)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/24.html>
+  a owl:Class ;
+  rdfs:label "Afdichtingsprofiel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01113 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/240.html>
+  a owl:Class ;
+  rdfs:label "Hangstang"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02226 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/242.html>
+  a owl:Class ;
+  rdfs:label "Hectometerbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03629 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/243.html>
+  a owl:Class ;
+  rdfs:label "Hefdeur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03088 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/244.html>
+  a owl:Class ;
+  rdfs:label "Hefschuif"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02802 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/246.html>
+  a owl:Class ;
+  rdfs:label "Hek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01322 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/248.html>
+  a owl:Class ;
+  rdfs:label "Helofytenfilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01506 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/250.html>
+  a owl:Class ;
+  rdfs:label "Heugelstang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/256.html>
+  a owl:Class ;
+  rdfs:label "Hoofdverdeler"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/258.html>
+  a owl:Class ;
+  rdfs:label "Hoogspanningsverdeler"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/260.html>
+  a owl:Class ;
+  rdfs:label "Hydraulisch aggregaat (pomp, motor, kleppenblok, tankeenheid)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/263.html>
+  a owl:Class ;
+  rdfs:label "Hydrometer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/264.html>
+  a owl:Class ;
+  rdfs:label "In grond vervaardigde palen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01573 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/265.html>
+  a owl:Class ;
+  rdfs:label "Individuele Behandeling van Afvalwater (IBA)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02317 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/266.html>
+  a owl:Class ;
+  rdfs:label "Infiltratiekratten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02331 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/267.html>
+  a owl:Class ;
+  rdfs:label "Infiltratieleiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02573 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/268.html>
+  a owl:Class ;
+  rdfs:label "Infiltratievelden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02334 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/269.html>
+  a owl:Class ;
+  rdfs:label "Infiltratievijvers"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01415 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/272.html>
+  a owl:Class ;
+  rdfs:label "Instroomopening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02756 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/273.html>
+  a owl:Class ;
+  rdfs:label "Intercom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02358 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/275.html>
+  a owl:Class ;
+  rdfs:label "Intercompost"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/277.html>
+  a owl:Class ;
+  rdfs:label "Luchtinlaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02756 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/278.html>
+  a owl:Class ;
+  rdfs:label "Juk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01308 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/280.html>
+  a owl:Class ;
+  rdfs:label "Kabeldoorvoer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02380 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/282.html>
+  a owl:Class ;
+  rdfs:label "Kabelgoot"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01817 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/285.html>
+  a owl:Class ;
+  rdfs:label "Kabelspaninrichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/287.html>
+  a owl:Class ;
+  rdfs:label "Kabeltender"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03807 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/288.html>
+  a owl:Class ;
+  rdfs:label "Kabeltrommel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/290.html>
+  a owl:Class ;
+  rdfs:label "Kadeput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01789 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/291.html>
+  a owl:Class ;
+  rdfs:label "Luchtkanaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02594 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/292.html>
+  a owl:Class ;
+  rdfs:label "Kast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01224 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/295.html>
+  a owl:Class ;
+  rdfs:label "Keerelement"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/296.html>
+  a owl:Class ;
+  rdfs:label "Keermuur"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01428 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/297.html>
+  a owl:Class ;
+  rdfs:label "Kesp"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03589 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/299.html>
+  a owl:Class ;
+  rdfs:label "Ketel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/3.html>
+  a owl:Class ;
+  rdfs:label "Aandrijving"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03259 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/300.html>
+  a owl:Class ;
+  rdfs:label "Ketting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/301.html>
+  a owl:Class ;
+  rdfs:label "Kettingoog"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/302.html>
+  a owl:Class ;
+  rdfs:label "Kettingoverbrenging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01082 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/303.html>
+  a owl:Class ;
+  rdfs:label "Kettingverankering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02140 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/304.html>
+  a owl:Class ;
+  rdfs:label "Klep"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01002 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/309.html>
+  a owl:Class ;
+  rdfs:label "Klimaatinstallatie (ventilatie, verwarming is van toepassing bij DRIP's en GRIP's)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/310.html>
+  a owl:Class ;
+  rdfs:label "Knelbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/311.html>
+  a owl:Class ;
+  rdfs:label "Knooppunt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/313.html>
+  a owl:Class ;
+  rdfs:label "Koelmachine"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/314.html>
+  a owl:Class ;
+  rdfs:label "Kolk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/315.html>
+  a owl:Class ;
+  rdfs:label "Kooi"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/316.html>
+  a owl:Class ;
+  rdfs:label "Koppeling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/317.html>
+  a owl:Class ;
+  rdfs:label "Kraanrail"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02487 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/318.html>
+  a owl:Class ;
+  rdfs:label "Kraanrailfundering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01698 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/321.html>
+  a owl:Class ;
+  rdfs:label "Krukstang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/322.html>
+  a owl:Class ;
+  rdfs:label "KWh-metering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/324.html>
+  a owl:Class ;
+  rdfs:label "Ladder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/325.html>
+  a owl:Class ;
+  rdfs:label "Ladderbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01149 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/326.html>
+  a owl:Class ;
+  rdfs:label "Landhoofd"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01011 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/327.html>
+  a owl:Class ;
+  rdfs:label "Landverkeerssein"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01186 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/328.html>
+  a owl:Class ;
+  rdfs:label "Langsligger"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02536 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/33.html>
+  a owl:Class ;
+  rdfs:label "Afsluitboomverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01059 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/330.html>
+  a owl:Class ;
+  rdfs:label "LED-display (LED panelen, behuizing, bekabeling)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/331.html>
+  a owl:Class ;
+  rdfs:label "Buisleiding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01669 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/333.html>
+  a owl:Class ;
+  rdfs:label "Lekdetectie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/334.html>
+  a owl:Class ;
+  rdfs:label "Reling"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02948 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/336.html>
+  a owl:Class ;
+  rdfs:label "Leuningband"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01325 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/34.html>
+  a owl:Class ;
+  rdfs:label "Afsluiter"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01002 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/340.html>
+  a owl:Class ;
+  rdfs:label "Liftdeur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01364 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/341.html>
+  a owl:Class ;
+  rdfs:label "Verbindingsbrug (Loopbrug)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02584 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/343.html>
+  a owl:Class ;
+  rdfs:label "Loopkat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/344.html>
+  a owl:Class ;
+  rdfs:label "Loopplank"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01430 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/345.html>
+  a owl:Class ;
+  rdfs:label "Luchtdroger"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/346.html>
+  a owl:Class ;
+  rdfs:label "Luidspreker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/347.html>
+  a owl:Class ;
+  rdfs:label "Luik"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02610 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/350.html>
+  a owl:Class ;
+  rdfs:label "Maaiveld"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02356 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/357.html>
+  a owl:Class ;
+  rdfs:label "Markering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01279 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/358.html>
+  a owl:Class ;
+  rdfs:label "Mast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01891 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/359.html>
+  a owl:Class ;
+  rdfs:label "Matrix"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02621 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/360.html>
+  a owl:Class ;
+  rdfs:label "Matrixsignaalgever"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02621 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/361.html>
+  a owl:Class ;
+  rdfs:label "Meerpaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02627 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/362.html>
+  a owl:Class ;
+  rdfs:label "Meerstoel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02628 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/363.html>
+  a owl:Class ;
+  rdfs:label "Meetsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/364.html>
+  a owl:Class ;
+  rdfs:label "Meetvoorzieningen-meetput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01789 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/366.html>
+  a owl:Class ;
+  rdfs:label "Microfoon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02644 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/369.html>
+  a owl:Class ;
+  rdfs:label "Monitor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/37.html>
+  a owl:Class ;
+  rdfs:label "Anker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01190 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/372.html>
+  a owl:Class ;
+  rdfs:label "Nautofoon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01208 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/375.html>
+  a owl:Class ;
+  rdfs:label "Nivelleerschuif"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02802 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/377.html>
+  a owl:Class ;
+  rdfs:label "Noodstop"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/38.html>
+  a owl:Class ;
+  rdfs:label "Antenne"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01207 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/382.html>
+  a owl:Class ;
+  rdfs:label "Obstakelbeveiliger"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03599 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/383.html>
+  a owl:Class ;
+  rdfs:label "Omloopriool"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/391.html>
+  a owl:Class ;
+  rdfs:label "Onderloopsheidscherm"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/393.html>
+  a owl:Class ;
+  rdfs:label "Onderverdeler"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/395.html>
+  a owl:Class ;
+  rdfs:label "Ontvangbed"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03635 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/396.html>
+  a owl:Class ;
+  rdfs:label "Ontvanger"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/397.html>
+  a owl:Class ;
+  rdfs:label "Onverhard oppervlak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01400 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/398.html>
+  a owl:Class ;
+  rdfs:label "Op- en afrit"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01131 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/399.html>
+  a owl:Class ;
+  rdfs:label "Open buispalen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03562 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/401.html>
+  a owl:Class ;
+  rdfs:label "Openfilterconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01112 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/402.html>
+  a owl:Class ;
+  rdfs:label "Ophoging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01112 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/403.html>
+  a owl:Class ;
+  rdfs:label "Oplegpunt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02218 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/405.html>
+  a owl:Class ;
+  rdfs:label "Opnamemedium"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/408.html>
+  a owl:Class ;
+  rdfs:label "Opsluitband"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/41.html>
+  a owl:Class ;
+  rdfs:label "Arm"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/411.html>
+  a owl:Class ;
+  rdfs:label "Opsluitconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/418.html>
+  a owl:Class ;
+  rdfs:label "Opzetinrichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/42.html>
+  a owl:Class ;
+  rdfs:label "Armatuur"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01233 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/420.html>
+  a owl:Class ;
+  rdfs:label "Overgangsplaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01106 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/421.html>
+  a owl:Class ;
+  rdfs:label "Overlastbelastingsbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/422.html>
+  a owl:Class ;
+  rdfs:label "Overspanningbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/423.html>
+  a owl:Class ;
+  rdfs:label "Paal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01437 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/424.html>
+  a owl:Class ;
+  rdfs:label "Paalbeugel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01463 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/425.html>
+  a owl:Class ;
+  rdfs:label "Peilschaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02843 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/427.html>
+  a owl:Class ;
+  rdfs:label "Pennenbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/43.html>
+  a owl:Class ;
+  rdfs:label "Reflector"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02404 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/430.html>
+  a owl:Class ;
+  rdfs:label "Pijler"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03604 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/431.html>
+  a owl:Class ;
+  rdfs:label "Programmable Logic Controller (PLC)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04244 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/433.html>
+  a owl:Class ;
+  rdfs:label "Poer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02878 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/434.html>
+  a owl:Class ;
+  rdfs:label "Pomp"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02716 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/438.html>
+  a owl:Class ;
+  rdfs:label "Overspanning"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02425 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/44.html>
+  a owl:Class ;
+  rdfs:label "Asfaltconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/440.html>
+  a owl:Class ;
+  rdfs:label "Praatpaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02895 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/445.html>
+  a owl:Class ;
+  rdfs:label "Puntdeur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03088 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/447.html>
+  a owl:Class ;
+  rdfs:label "Pyloon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03607 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/449.html>
+  a owl:Class ;
+  rdfs:label "Radarscanner"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/450.html>
+  a owl:Class ;
+  rdfs:label "Rail"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/451.html>
+  a owl:Class ;
+  rdfs:label "Railbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/452.html>
+  a owl:Class ;
+  rdfs:label "Railgeleiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/453.html>
+  a owl:Class ;
+  rdfs:label "Rails in verharding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01524 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/454.html>
+  a owl:Class ;
+  rdfs:label "Rails vrijliggend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01524 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/455.html>
+  a owl:Class ;
+  rdfs:label "Railsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/456.html>
+  a owl:Class ;
+  rdfs:label "Randelement"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/457.html>
+  a owl:Class ;
+  rdfs:label "Randprofiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01108 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/458.html>
+  a owl:Class ;
+  rdfs:label "Radio Direction Finding (RDF)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/459.html>
+  a owl:Class ;
+  rdfs:label "Reductiekast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/46.html>
+  a owl:Class ;
+  rdfs:label "Askoppeling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01082 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/460.html>
+  a owl:Class ;
+  rdfs:label "Rem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/461.html>
+  a owl:Class ;
+  rdfs:label "Rijdek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02968 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/466.html>
+  a owl:Class ;
+  rdfs:label "Rolbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/467.html>
+  a owl:Class ;
+  rdfs:label "Roldeur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03088 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/468.html>
+  a owl:Class ;
+  rdfs:label "Rolsleufmechanisme"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/47.html>
+  a owl:Class ;
+  rdfs:label "Assenstelsel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/470.html>
+  a owl:Class ;
+  rdfs:label "Rolwagen (roldeur)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/471.html>
+  a owl:Class ;
+  rdfs:label "Rondsel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/473.html>
+  a owl:Class ;
+  rdfs:label "Rooster"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02109 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/474.html>
+  a owl:Class ;
+  rdfs:label "Samengestelde damwand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01427 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/475.html>
+  a owl:Class ;
+  rdfs:label "Supervisory Control and Data Acquisition (SCADA-systeem)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/476.html>
+  a owl:Class ;
+  rdfs:label "Schamelstel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00012 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/478.html>
+  a owl:Class ;
+  rdfs:label "Schampstrook"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03018 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/48.html>
+  a owl:Class ;
+  rdfs:label "Backup software"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00008 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/480.html>
+  a owl:Class ;
+  rdfs:label "Scheepvaartsein"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01024 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/482.html>
+  a owl:Class ;
+  rdfs:label "Schoor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01308 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/483.html>
+  a owl:Class ;
+  rdfs:label "Schotbalk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03033 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/484.html>
+  a owl:Class ;
+  rdfs:label "Schotbalksponning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03112 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/485.html>
+  a owl:Class ;
+  rdfs:label "Schrikhek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03039 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/486.html>
+  a owl:Class ;
+  rdfs:label "Schuif"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02802 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/49.html>
+  a owl:Class ;
+  rdfs:label "Balanspriem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/490.html>
+  a owl:Class ;
+  rdfs:label "Sensor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01068 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/491.html>
+  a owl:Class ;
+  rdfs:label "Server"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01751 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/492.html>
+  a owl:Class ;
+  rdfs:label "Signaalgever"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/493.html>
+  a owl:Class ;
+  rdfs:label "Signaalkabel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03072 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/496.html>
+  a owl:Class ;
+  rdfs:label "Sloof"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01106 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/497.html>
+  a owl:Class ;
+  rdfs:label "Smeersysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/498.html>
+  a owl:Class ;
+  rdfs:label "Spieplank"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01430 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/5.html>
+  a owl:Class ;
+  rdfs:label "Aandrijving (elektromechanisch)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03259 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/50.html>
+  a owl:Class ;
+  rdfs:label "Balg"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/502.html>
+  a owl:Class ;
+  rdfs:label "Spuisein"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01186 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/504.html>
+  a owl:Class ;
+  rdfs:label "Staalkabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01057 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/507.html>
+  a owl:Class ;
+  rdfs:label "Stempelbuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03562 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/51.html>
+  a owl:Class ;
+  rdfs:label "Balk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01308 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/510.html>
+  a owl:Class ;
+  rdfs:label "Stortebed"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03635 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/514.html>
+  a owl:Class ;
+  rdfs:label "Stroombreker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02163 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/515.html>
+  a owl:Class ;
+  rdfs:label "Stuwelement"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/516.html>
+  a owl:Class ;
+  rdfs:label "Takel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02271 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/518.html>
+  a owl:Class ;
+  rdfs:label "Tandwiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/519.html>
+  a owl:Class ;
+  rdfs:label "Tandwieloverbrenging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/520.html>
+  a owl:Class ;
+  rdfs:label "Tank"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03611 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/522.html>
+  a owl:Class ;
+  rdfs:label "Telefoontoestel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03240 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/53.html>
+  a owl:Class ;
+  rdfs:label "Geleidebarriï¿½r"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02071 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/530.html>
+  a owl:Class ;
+  rdfs:label "Toerenregelinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/549.html>
+  a owl:Class ;
+  rdfs:label "Transformator"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04291 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/550.html>
+  a owl:Class ;
+  rdfs:label "Trafohuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01971 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/551.html>
+  a owl:Class ;
+  rdfs:label "Transmissie apparatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/552.html>
+  a owl:Class ;
+  rdfs:label "Trap"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01475 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/555.html>
+  a owl:Class ;
+  rdfs:label "Traptrede"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/556.html>
+  a owl:Class ;
+  rdfs:label "Trekduwstang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/557.html>
+  a owl:Class ;
+  rdfs:label "Trekpalen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03284 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/558.html>
+  a owl:Class ;
+  rdfs:label "Triangel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/559.html>
+  a owl:Class ;
+  rdfs:label "Tuiconstructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04223 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/563.html>
+  a owl:Class ;
+  rdfs:label "Plafond"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01230 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/569.html>
+  a owl:Class ;
+  rdfs:label "Uitstroomopening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02756 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/57.html>
+  a owl:Class ;
+  rdfs:label "Bedieningspaneel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01359 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/571.html>
+  a owl:Class ;
+  rdfs:label "Valreep"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02584 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/574.html>
+  a owl:Class ;
+  rdfs:label "Vastzetinrichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/576.html>
+  a owl:Class ;
+  rdfs:label "Veiligheidsventiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01002 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/578.html>
+  a owl:Class ;
+  rdfs:label "Ventilator"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03711 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/581.html>
+  a owl:Class ;
+  rdfs:label "Verbinding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01082 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/582.html>
+  a owl:Class ;
+  rdfs:label "Verbrandingsmotor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04052 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/583.html>
+  a owl:Class ;
+  rdfs:label "Verdeelblok"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/586.html>
+  a owl:Class ;
+  rdfs:label "Verkeersbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01023 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/588.html>
+  a owl:Class ;
+  rdfs:label "Verkeersgeleidendsverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/59.html>
+  a owl:Class ;
+  rdfs:label "Beï¿½indigingsprofiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01108 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/590.html>
+  a owl:Class ;
+  rdfs:label "Verlichtingsarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01233 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/591.html>
+  a owl:Class ;
+  rdfs:label "Versterker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/592.html>
+  a owl:Class ;
+  rdfs:label "Verticaal (vakwerkligger)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03333 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/593.html>
+  a owl:Class ;
+  rdfs:label "Verwarming (bv. stoom)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/595.html>
+  a owl:Class ;
+  rdfs:label "Verwarmingslint"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/596.html>
+  a owl:Class ;
+  rdfs:label "Verwarmingstoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/597.html>
+  a owl:Class ;
+  rdfs:label "Verwerkingseenheid"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01751 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/60.html>
+  a owl:Class ;
+  rdfs:label "Begroeiing"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01366 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/600.html>
+  a owl:Class ;
+  rdfs:label "Videomatrix"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/601.html>
+  a owl:Class ;
+  rdfs:label "Vijzel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02223 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/602.html>
+  a owl:Class ;
+  rdfs:label "Vijzelgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01148 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/604.html>
+  a owl:Class ;
+  rdfs:label "Vleugelwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03403 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/605.html>
+  a owl:Class ;
+  rdfs:label "Vloer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01310 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/606.html>
+  a owl:Class ;
+  rdfs:label "Vluchtdeur"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02701 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/609.html>
+  a owl:Class ;
+  rdfs:label "Vluchtwegverlichting-dynamisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01059 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/610.html>
+  a owl:Class ;
+  rdfs:label "Voegconstructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01109 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/614.html>
+  a owl:Class ;
+  rdfs:label "Vuilvangrooster"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03448 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/615.html>
+  a owl:Class ;
+  rdfs:label "Opvulling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/617.html>
+  a owl:Class ;
+  rdfs:label "Wadi"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03458 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/618.html>
+  a owl:Class ;
+  rdfs:label "Wagen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03757 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/619.html>
+  a owl:Class ;
+  rdfs:label "Wand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01444 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/620.html>
+  a owl:Class ;
+  rdfs:label "Warmtewisselaar"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01847 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/626.html>
+  a owl:Class ;
+  rdfs:label "Wielstel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/628.html>
+  a owl:Class ;
+  rdfs:label "Windmeter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/630.html>
+  a owl:Class ;
+  rdfs:label "Windverband"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03503 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/631.html>
+  a owl:Class ;
+  rdfs:label "Woelbak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/632.html>
+  a owl:Class ;
+  rdfs:label "Wrijfgording"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03520 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/633.html>
+  a owl:Class ;
+  rdfs:label "Wrijfschort"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01308 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/634.html>
+  a owl:Class ;
+  rdfs:label "Wrijfstijl"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01308 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/635.html>
+  a owl:Class ;
+  rdfs:label "Wrijvingswerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02950 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/636.html>
+  a owl:Class ;
+  rdfs:label "Zadel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02218 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/638.html>
+  a owl:Class ;
+  rdfs:label "Zandbed"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00014 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/639.html>
+  a owl:Class ;
+  rdfs:label "Zandvang"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03526 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/640.html>
+  a owl:Class ;
+  rdfs:label "Zender"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/646.html>
+  a owl:Class ;
+  rdfs:label "Zinkstuk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03493 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/651.html>
+  a owl:Class ;
+  rdfs:label "Zonnepaneel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03541 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/652.html>
+  a owl:Class ;
+  rdfs:label "Zonwerend rooster"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02109 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/660.html>
+  a owl:Class ;
+  rdfs:label "Giek"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/661.html>
+  a owl:Class ;
+  rdfs:label "Panamawiel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/662.html>
+  a owl:Class ;
+  rdfs:label "Regelballast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/663.html>
+  a owl:Class ;
+  rdfs:label "Tandbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/668.html>
+  a owl:Class ;
+  rdfs:label "Installatiekabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01089 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/669.html>
+  a owl:Class ;
+  rdfs:label "Lichtgroepenkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/672.html>
+  a owl:Class ;
+  rdfs:label "Videowall"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/673.html>
+  a owl:Class ;
+  rdfs:label "Turbine"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/675.html>
+  a owl:Class ;
+  rdfs:label "Infraroodlamp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01234 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/676.html>
+  a owl:Class ;
+  rdfs:label "Weerhut"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01338 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/678.html>
+  a owl:Class ;
+  rdfs:label "Kapiteel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/679.html>
+  a owl:Class ;
+  rdfs:label "Kolom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02467 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/68.html>
+  a owl:Class ;
+  rdfs:label "Beschoeiing"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01442 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/680.html>
+  a owl:Class ;
+  rdfs:label "Plaatveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03802 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/681.html>
+  a owl:Class ;
+  rdfs:label "Voegloze overgang"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03419 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/683.html>
+  a owl:Class ;
+  rdfs:label "Noodtelefoon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/685.html>
+  a owl:Class ;
+  rdfs:label "Voetpedaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/686.html>
+  a owl:Class ;
+  rdfs:label "Oplegblok"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02218 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/687.html>
+  a owl:Class ;
+  rdfs:label "Oplegbalk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01308 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/688.html>
+  a owl:Class ;
+  rdfs:label "Oplegstoel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02218 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/689.html>
+  a owl:Class ;
+  rdfs:label "Oplegtafel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02218 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/695.html>
+  a owl:Class ;
+  rdfs:label "Har"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01320 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/699.html>
+  a owl:Class ;
+  rdfs:label "Rookafvoer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02756 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/70.html>
+  a owl:Class ;
+  rdfs:label "Betonverharding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/700.html>
+  a owl:Class ;
+  rdfs:label "Rij-ijzer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03805 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/702.html>
+  a owl:Class ;
+  rdfs:label "Meerboei"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01547 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/703.html>
+  a owl:Class ;
+  rdfs:label "Halslager"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/704.html>
+  a owl:Class ;
+  rdfs:label "Taats"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03223 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/706.html>
+  a owl:Class ;
+  rdfs:label "Zinkerbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03537 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/707.html>
+  a owl:Class ;
+  rdfs:label "Strand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03188 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/708.html>
+  a owl:Class ;
+  rdfs:label "Steilwand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01352 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/71.html>
+  a owl:Class ;
+  rdfs:label "Bevestiging"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01463 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/710.html>
+  a owl:Class ;
+  rdfs:label "Ton"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01547 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/711.html>
+  a owl:Class ;
+  rdfs:label "Drijfbaken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03667 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/712.html>
+  a owl:Class ;
+  rdfs:label "Spar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01558 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/713.html>
+  a owl:Class ;
+  rdfs:label "Baken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02618 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/717.html>
+  a owl:Class ;
+  rdfs:label "Afvalbak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01152 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/718.html>
+  a owl:Class ;
+  rdfs:label "Afvalcontainer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01153 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/719.html>
+  a owl:Class ;
+  rdfs:label "Afvoer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/72.html>
+  a owl:Class ;
+  rdfs:label "Bewegingswerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/724.html>
+  a owl:Class ;
+  rdfs:label "Atletiekbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/725.html>
+  a owl:Class ;
+  rdfs:label "Baanzool"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/726.html>
+  a owl:Class ;
+  rdfs:label "Backstop honkbal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/727.html>
+  a owl:Class ;
+  rdfs:label "Backstop softbal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/728.html>
+  a owl:Class ;
+  rdfs:label "Ballenvanger"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03642 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/729.html>
+  a owl:Class ;
+  rdfs:label "Trottoirband"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02278 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/73.html>
+  a owl:Class ;
+  rdfs:label "Bewegwijzeringsbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01482 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/730.html>
+  a owl:Class ;
+  rdfs:label "Basketbalpaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01437 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/731.html>
+  a owl:Class ;
+  rdfs:label "Basketbalveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/732.html>
+  a owl:Class ;
+  rdfs:label "Beachvolleyveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/740.html>
+  a owl:Class ;
+  rdfs:label "Bodembedekkende heester"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/742.html>
+  a owl:Class ;
+  rdfs:label "Bollen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/748.html>
+  a owl:Class ;
+  rdfs:label "Boomweide"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01570 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/749.html>
+  a owl:Class ;
+  rdfs:label "Schietbord"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/75.html>
+  a owl:Class ;
+  rdfs:label "Blokkenmuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01232 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/751.html>
+  a owl:Class ;
+  rdfs:label "Botanische rozen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/752.html>
+  a owl:Class ;
+  rdfs:label "Bouwakker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/754.html>
+  a owl:Class ;
+  rdfs:label "Brandgang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01432 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/755.html>
+  a owl:Class ;
+  rdfs:label "Broedgat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02756 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/756.html>
+  a owl:Class ;
+  rdfs:label "Columbarium (urnenmuur)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01232 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/757.html>
+  a owl:Class ;
+  rdfs:label "Combinatietoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/759.html>
+  a owl:Class ;
+  rdfs:label "Deksel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01105 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/760.html>
+  a owl:Class ;
+  rdfs:label "Doel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/761.html>
+  a owl:Class ;
+  rdfs:label "Doelvoorstellingsapparatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/762.html>
+  a owl:Class ;
+  rdfs:label "Doorgang grondlichaam"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02725 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/765.html>
+  a owl:Class ;
+  rdfs:label "Draad (glad/punt)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01121 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/767.html>
+  a owl:Class ;
+  rdfs:label "Droge heide"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02250 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/768.html>
+  a owl:Class ;
+  rdfs:label "Dugout"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01338 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/770.html>
+  a owl:Class ;
+  rdfs:label "Duinstruweel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/771.html>
+  a owl:Class ;
+  rdfs:label "Evenwichtstoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/772.html>
+  a owl:Class ;
+  rdfs:label "Fantasietoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/778.html>
+  a owl:Class ;
+  rdfs:label "Faunaspiegel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03496 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/78.html>
+  a owl:Class ;
+  rdfs:label "Bodem (waterbodem)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01542 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/780.html>
+  a owl:Class ;
+  rdfs:label "Fontein"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02021 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/781.html>
+  a owl:Class ;
+  rdfs:label "Gaas"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01123 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/783.html>
+  a owl:Class ;
+  rdfs:label "Geschoren haag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03579 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/784.html>
+  a owl:Class ;
+  rdfs:label "Geschoren heestervak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01566 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/786.html>
+  a owl:Class ;
+  rdfs:label "Glijbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/788.html>
+  a owl:Class ;
+  rdfs:label "Grafbeplanting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/790.html>
+  a owl:Class ;
+  rdfs:label "Grafsteen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01202 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/792.html>
+  a owl:Class ;
+  rdfs:label "Zandbedekking"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01112 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/794.html>
+  a owl:Class ;
+  rdfs:label "Extensief gazon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02059 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/797.html>
+  a owl:Class ;
+  rdfs:label "Greppel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02172 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/798.html>
+  a owl:Class ;
+  rdfs:label "Grindkoffer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02331 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/801.html>
+  a owl:Class ;
+  rdfs:label "Gronddepot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/802.html>
+  a owl:Class ;
+  rdfs:label "Grondspot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01234 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/803.html>
+  a owl:Class ;
+  rdfs:label "Haagwindscherm"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03579 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/804.html>
+  a owl:Class ;
+  rdfs:label "Halfheester"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/805.html>
+  a owl:Class ;
+  rdfs:label "Halfverhard sportveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/810.html>
+  a owl:Class ;
+  rdfs:label "Heesterrozen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/813.html>
+  a owl:Class ;
+  rdfs:label "Helmgras"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02255 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/814.html>
+  a owl:Class ;
+  rdfs:label "Hindernisbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01366 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/816.html>
+  a owl:Class ;
+  rdfs:label "Hockeyveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/817.html>
+  a owl:Class ;
+  rdfs:label "Honkbalveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/818.html>
+  a owl:Class ;
+  rdfs:label "Verspringaccommodatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/821.html>
+  a owl:Class ;
+  rdfs:label "IJsbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/822.html>
+  a owl:Class ;
+  rdfs:label "Informatiebord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01034 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/824.html>
+  a owl:Class ;
+  rdfs:label "Keerwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01428 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/825.html>
+  a owl:Class ;
+  rdfs:label "Kinderspeelplaats"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03099 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/826.html>
+  a owl:Class ;
+  rdfs:label "Klimplant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/827.html>
+  a owl:Class ;
+  rdfs:label "Klimplantconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/828.html>
+  a owl:Class ;
+  rdfs:label "Klimtoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/830.html>
+  a owl:Class ;
+  rdfs:label "Kogelvanger"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/831.html>
+  a owl:Class ;
+  rdfs:label "Koker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01361 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/833.html>
+  a owl:Class ;
+  rdfs:label "Kunstobject"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02503 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/834.html>
+  a owl:Class ;
+  rdfs:label "Kunststofsportveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/837.html>
+  a owl:Class ;
+  rdfs:label "Leiplant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/838.html>
+  a owl:Class ;
+  rdfs:label "Loopstrook"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01432 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/839.html>
+  a owl:Class ;
+  rdfs:label "Losse haag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03579 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/840.html>
+  a owl:Class ;
+  rdfs:label "Markeringspaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02618 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/842.html>
+  a owl:Class ;
+  rdfs:label "Moeras- en oevervegetatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/846.html>
+  a owl:Class ;
+  rdfs:label "Natte heide"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02250 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/847.html>
+  a owl:Class ;
+  rdfs:label "Natuurlijke grasvegetatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02061 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/848.html>
+  a owl:Class ;
+  rdfs:label "Oefenring"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/85.html>
+  a owl:Class ;
+  rdfs:label "Bodemprotectie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03635 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/851.html>
+  a owl:Class ;
+  rdfs:label "Omloopbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/852.html>
+  a owl:Class ;
+  rdfs:label "Ondergrond speelvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00062 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/854.html>
+  a owl:Class ;
+  rdfs:label "Ophangconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00039 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/855.html>
+  a owl:Class ;
+  rdfs:label "Paaiplaats"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00046 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/856.html>
+  a owl:Class ;
+  rdfs:label "Pannakooi"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/857.html>
+  a owl:Class ;
+  rdfs:label "Papierbak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02817 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/859.html>
+  a owl:Class ;
+  rdfs:label "Pergola"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01338 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/860.html>
+  a owl:Class ;
+  rdfs:label "Eï¿½n-/tweejarige perkplant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/863.html>
+  a owl:Class ;
+  rdfs:label "Plasberm"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02871 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/87.html>
+  a owl:Class ;
+  rdfs:label "Bodemstabilisatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03635 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/871.html>
+  a owl:Class ;
+  rdfs:label "Rietvegetatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02954 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/873.html>
+  a owl:Class ;
+  rdfs:label "Roosterput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02109 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/874.html>
+  a owl:Class ;
+  rdfs:label "Ruige oevervegetatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02711 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/875.html>
+  a owl:Class ;
+  rdfs:label "Ruiggras"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02061 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/878.html>
+  a owl:Class ;
+  rdfs:label "Schanskorf"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01232 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/88.html>
+  a owl:Class ;
+  rdfs:label "Bodemverdediging"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03635 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/880.html>
+  a owl:Class ;
+  rdfs:label "Schommel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/883.html>
+  a owl:Class ;
+  rdfs:label "Schraalgrasland"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03037 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/886.html>
+  a owl:Class ;
+  rdfs:label "Gazon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02059 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/888.html>
+  a owl:Class ;
+  rdfs:label "Sierheester"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/890.html>
+  a owl:Class ;
+  rdfs:label "Skatebaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/891.html>
+  a owl:Class ;
+  rdfs:label "Skateramp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02252 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/892.html>
+  a owl:Class ;
+  rdfs:label "Skatetoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/894.html>
+  a owl:Class ;
+  rdfs:label "Speelhuisje"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01338 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/895.html>
+  a owl:Class ;
+  rdfs:label "Speelweide"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01679 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/896.html>
+  a owl:Class ;
+  rdfs:label "Sportgrasveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/897.html>
+  a owl:Class ;
+  rdfs:label "Springbak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/898.html>
+  a owl:Class ;
+  rdfs:label "Staalmat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01315 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/90.html>
+  a owl:Class ;
+  rdfs:label "Boei"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01547 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/901.html>
+  a owl:Class ;
+  rdfs:label "Stobbenwal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02310 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/903.html>
+  a owl:Class ;
+  rdfs:label "Straatnaambord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03185 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/904.html>
+  a owl:Class ;
+  rdfs:label "Strooiveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01375 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/906.html>
+  a owl:Class ;
+  rdfs:label "Struikrozen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/907.html>
+  a owl:Class ;
+  rdfs:label "Stuifzand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01781 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/908.html>
+  a owl:Class ;
+  rdfs:label "Tafeltennistafel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/909.html>
+  a owl:Class ;
+  rdfs:label "Tennisbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/91.html>
+  a owl:Class ;
+  rdfs:label "Bolder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01557 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/910.html>
+  a owl:Class ;
+  rdfs:label "Tenniskooi"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/911.html>
+  a owl:Class ;
+  rdfs:label "Toegang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00070 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/912.html>
+  a owl:Class ;
+  rdfs:label "Toilet"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01730 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/913.html>
+  a owl:Class ;
+  rdfs:label "Toiletcabine"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01338 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/914.html>
+  a owl:Class ;
+  rdfs:label "Touwbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/916.html>
+  a owl:Class ;
+  rdfs:label "Touwkliminstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/917.html>
+  a owl:Class ;
+  rdfs:label "Traliedeur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01364 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/918.html>
+  a owl:Class ;
+  rdfs:label "Trapveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/919.html>
+  a owl:Class ;
+  rdfs:label "Tuinakker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/92.html>
+  a owl:Class ;
+  rdfs:label "Bomen/houtopstanden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01366 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/922.html>
+  a owl:Class ;
+  rdfs:label "Tuinhuisje"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03297 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/923.html>
+  a owl:Class ;
+  rdfs:label "Tuinmuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01232 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/925.html>
+  a owl:Class ;
+  rdfs:label "Urnengraf, bovengronds"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01375 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/926.html>
+  a owl:Class ;
+  rdfs:label "Kruidachtige plant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/927.html>
+  a owl:Class ;
+  rdfs:label "Wiptoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/928.html>
+  a owl:Class ;
+  rdfs:label "Veldafscheiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01879 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/93.html>
+  a owl:Class ;
+  rdfs:label "Boog"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/930.html>
+  a owl:Class ;
+  rdfs:label "Vistrap"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01717 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/934.html>
+  a owl:Class ;
+  rdfs:label "Vluchtstang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/935.html>
+  a owl:Class ;
+  rdfs:label "Voetbalkooi"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/936.html>
+  a owl:Class ;
+  rdfs:label "Voetbalveld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/937.html>
+  a owl:Class ;
+  rdfs:label "Voliï¿½re"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01220 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/94.html>
+  a owl:Class ;
+  rdfs:label "Afsluitboom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02202 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/940.html>
+  a owl:Class ;
+  rdfs:label "Waterplant, drijvend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/941.html>
+  a owl:Class ;
+  rdfs:label "Waterplant, ondergedoken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/946.html>
+  a owl:Class ;
+  rdfs:label "Weide"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03617 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/948.html>
+  a owl:Class ;
+  rdfs:label "Werpaccommodatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/949.html>
+  a owl:Class ;
+  rdfs:label "Windsingel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03500 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/95.html>
+  a owl:Class ;
+  rdfs:label "Bordes"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01580 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/960.html>
+  a owl:Class ;
+  rdfs:label "Zandbak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/964.html>
+  a owl:Class ;
+  rdfs:label "Zeeuwse haag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03579 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/969.html>
+  a owl:Class ;
+  rdfs:label "Schietbaanportaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01095 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/971.html>
+  a owl:Class ;
+  rdfs:label "Steenhoop"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/973.html>
+  a owl:Class ;
+  rdfs:label "Hoogspringaccommodatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01417 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/977.html>
+  a owl:Class ;
+  rdfs:label "Oliefilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01506 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/979.html>
+  a owl:Class ;
+  rdfs:label "Gaffel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02038 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/983.html>
+  a owl:Class ;
+  rdfs:label "Schort"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00015 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/984.html>
+  a owl:Class ;
+  rdfs:label "Geleiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/986.html>
+  a owl:Class ;
+  rdfs:label "Waarschuwingslicht"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03455 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/987.html>
+  a owl:Class ;
+  rdfs:label "Droogzetvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01417 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/988.html>
+  a owl:Class ;
+  rdfs:label "Beschermkap"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01196 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/99.html>
+  a owl:Class ;
+  rdfs:label "Bovenleiding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01613 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/992.html>
+  a owl:Class ;
+  rdfs:label "Rijzendam"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02163 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/993.html>
+  a owl:Class ;
+  rdfs:label "Zonnekap"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/994.html>
+  a owl:Class ;
+  rdfs:label "Schuifgeleiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00026 ;
+.
+<http://www.nen2767-4.nl/bouwdeel/detail/997.html>
+  a owl:Class ;
+  rdfs:label "Waaiervlotdeur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03088 ;
+.
+<http://www.nen2767-4.nl/element/detail/1.html>
+  a owl:Class ;
+  rdfs:label "Aandrijving en bewegingswerk, elektrohydraulisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03259 ;
+.
+<http://www.nen2767-4.nl/element/detail/10.html>
+  a owl:Class ;
+  rdfs:label "Antivandalismevoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01417 ;
+.
+<http://www.nen2767-4.nl/element/detail/100.html>
+  a owl:Class ;
+  rdfs:label "Sluiskolk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03089 ;
+.
+<http://www.nen2767-4.nl/element/detail/101.html>
+  a owl:Class ;
+  rdfs:label "Steiger"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01026 ;
+.
+<http://www.nen2767-4.nl/element/detail/102.html>
+  a owl:Class ;
+  rdfs:label "Steunpunt"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02218 ;
+.
+<http://www.nen2767-4.nl/element/detail/103.html>
+  a owl:Class ;
+  rdfs:label "Strandhoofd"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03190 ;
+.
+<http://www.nen2767-4.nl/element/detail/104.html>
+  a owl:Class ;
+  rdfs:label "Strekdam"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03196 ;
+.
+<http://www.nen2767-4.nl/element/detail/105.html>
+  a owl:Class ;
+  rdfs:label "Keringschuif"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03051 ;
+.
+<http://www.nen2767-4.nl/element/detail/106.html>
+  a owl:Class ;
+  rdfs:label "Telefooninstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/107.html>
+  a owl:Class ;
+  rdfs:label "Telemetrie-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/108.html>
+  a owl:Class ;
+  rdfs:label "Erf"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01981 ;
+.
+<http://www.nen2767-4.nl/element/detail/109.html>
+  a owl:Class ;
+  rdfs:label "Toegangshek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03049 ;
+.
+<http://www.nen2767-4.nl/element/detail/110.html>
+  a owl:Class ;
+  rdfs:label "Tracing"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/111.html>
+  a owl:Class ;
+  rdfs:label "Trambaan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03269 ;
+.
+<http://www.nen2767-4.nl/element/detail/112.html>
+  a owl:Class ;
+  rdfs:label "Tunnelbuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03299 ;
+.
+<http://www.nen2767-4.nl/element/detail/113.html>
+  a owl:Class ;
+  rdfs:label "Ventilatie-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/115.html>
+  a owl:Class ;
+  rdfs:label "Uithouder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03313 ;
+.
+<http://www.nen2767-4.nl/element/detail/116.html>
+  a owl:Class ;
+  rdfs:label "Vaarwegmarkering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03667 ;
+.
+<http://www.nen2767-4.nl/element/detail/117.html>
+  a owl:Class ;
+  rdfs:label "Vangconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/118.html>
+  a owl:Class ;
+  rdfs:label "Verankering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02140 ;
+.
+<http://www.nen2767-4.nl/element/detail/119.html>
+  a owl:Class ;
+  rdfs:label "Verharding wegtype 1, Hoofdwegennet"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/element/detail/12.html>
+  a owl:Class ;
+  rdfs:label "Bedienings- en besturingsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/120.html>
+  a owl:Class ;
+  rdfs:label "Verharding wegtype 2, Zwaarbelaste weg"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/element/detail/121.html>
+  a owl:Class ;
+  rdfs:label "Verharding wegtype 3, Gemiddeld belaste weg"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/element/detail/122.html>
+  a owl:Class ;
+  rdfs:label "Verharding wegtype 4, Licht belast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/element/detail/123.html>
+  a owl:Class ;
+  rdfs:label "Verharding wegtype 5, Weg in woongebied"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/element/detail/124.html>
+  a owl:Class ;
+  rdfs:label "Verharding wegtype 6, Weg in verblijfsgebied"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/element/detail/125.html>
+  a owl:Class ;
+  rdfs:label "Verharding wegtype 7, Fietspaden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<http://www.nen2767-4.nl/element/detail/126.html>
+  a owl:Class ;
+  rdfs:label "Verkeersdetectie-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/127.html>
+  a owl:Class ;
+  rdfs:label "Verkeersregelinstallatie (VRI)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01921 ;
+.
+<http://www.nen2767-4.nl/element/detail/129.html>
+  a owl:Class ;
+  rdfs:label "Verplaatsbare Vangrail installatie (VEVA)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/13.html>
+  a owl:Class ;
+  rdfs:label "Kabel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01057 ;
+.
+<http://www.nen2767-4.nl/element/detail/130.html>
+  a owl:Class ;
+  rdfs:label "Vijzelinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/131.html>
+  a owl:Class ;
+  rdfs:label "Vluchthaven aanwezigheidsdetectie (VAD)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/132.html>
+  a owl:Class ;
+  rdfs:label "Vluchtweginstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/133.html>
+  a owl:Class ;
+  rdfs:label "Voegovergang"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02956 ;
+.
+<http://www.nen2767-4.nl/element/detail/138.html>
+  a owl:Class ;
+  rdfs:label "Wegmarkering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01528 ;
+.
+<http://www.nen2767-4.nl/element/detail/139.html>
+  a owl:Class ;
+  rdfs:label "Weigh In Motion"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/element/detail/14.html>
+  a owl:Class ;
+  rdfs:label "Berm"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01431 ;
+.
+<http://www.nen2767-4.nl/element/detail/140.html>
+  a owl:Class ;
+  rdfs:label "Werk-spreekverbinding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/142.html>
+  a owl:Class ;
+  rdfs:label "Zinker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03536 ;
+.
+<http://www.nen2767-4.nl/element/detail/147.html>
+  a owl:Class ;
+  rdfs:label "Basculekelder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01343 ;
+.
+<http://www.nen2767-4.nl/element/detail/148.html>
+  a owl:Class ;
+  rdfs:label "Centrale Antenne Installatie (CAI)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/149.html>
+  a owl:Class ;
+  rdfs:label "Grendelinrichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/15.html>
+  a owl:Class ;
+  rdfs:label "Binnenverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01059 ;
+.
+<http://www.nen2767-4.nl/element/detail/150.html>
+  a owl:Class ;
+  rdfs:label "Inbraakbeveiligingsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/151.html>
+  a owl:Class ;
+  rdfs:label "Kelder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01664 ;
+.
+<http://www.nen2767-4.nl/element/detail/155.html>
+  a owl:Class ;
+  rdfs:label "Stuwhoofd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/element/detail/156.html>
+  a owl:Class ;
+  rdfs:label "Voorland"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01352 ;
+.
+<http://www.nen2767-4.nl/element/detail/157.html>
+  a owl:Class ;
+  rdfs:label "Vooroever"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03191 ;
+.
+<http://www.nen2767-4.nl/element/detail/158.html>
+  a owl:Class ;
+  rdfs:label "Buitentalud"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01606 ;
+.
+<http://www.nen2767-4.nl/element/detail/159.html>
+  a owl:Class ;
+  rdfs:label "Kruin"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00070 ;
+.
+<http://www.nen2767-4.nl/element/detail/16.html>
+  a owl:Class ;
+  rdfs:label "Bodem"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01542 ;
+.
+<http://www.nen2767-4.nl/element/detail/160.html>
+  a owl:Class ;
+  rdfs:label "Binnentalud"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01606 ;
+.
+<http://www.nen2767-4.nl/element/detail/161.html>
+  a owl:Class ;
+  rdfs:label "Stabiliteitsberm"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01431 ;
+.
+<http://www.nen2767-4.nl/element/detail/162.html>
+  a owl:Class ;
+  rdfs:label "Onderhoudsstrook"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01432 ;
+.
+<http://www.nen2767-4.nl/element/detail/163.html>
+  a owl:Class ;
+  rdfs:label "Teensloot"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03231 ;
+.
+<http://www.nen2767-4.nl/element/detail/164.html>
+  a owl:Class ;
+  rdfs:label "Achterland"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01382 ;
+.
+<http://www.nen2767-4.nl/element/detail/165.html>
+  a owl:Class ;
+  rdfs:label "Pipingberm"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01431 ;
+.
+<http://www.nen2767-4.nl/element/detail/166.html>
+  a owl:Class ;
+  rdfs:label "Vispassage"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01395 ;
+.
+<http://www.nen2767-4.nl/element/detail/167.html>
+  a owl:Class ;
+  rdfs:label "Vaargeul"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02077 ;
+.
+<http://www.nen2767-4.nl/element/detail/168.html>
+  a owl:Class ;
+  rdfs:label "Aanloopgebied"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<http://www.nen2767-4.nl/element/detail/169.html>
+  a owl:Class ;
+  rdfs:label "Ankergebied"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01006 ;
+.
+<http://www.nen2767-4.nl/element/detail/17.html>
+  a owl:Class ;
+  rdfs:label "Bodembescherming"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03635 ;
+.
+<http://www.nen2767-4.nl/element/detail/170.html>
+  a owl:Class ;
+  rdfs:label "Wingebied"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01382 ;
+.
+<http://www.nen2767-4.nl/element/detail/171.html>
+  a owl:Class ;
+  rdfs:label "Keerplaats"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01778 ;
+.
+<http://www.nen2767-4.nl/element/detail/172.html>
+  a owl:Class ;
+  rdfs:label "Talud"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01606 ;
+.
+<http://www.nen2767-4.nl/element/detail/173.html>
+  a owl:Class ;
+  rdfs:label "Landbouwgrond"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01176 ;
+.
+<http://www.nen2767-4.nl/element/detail/175.html>
+  a owl:Class ;
+  rdfs:label "Asbestemming"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/element/detail/176.html>
+  a owl:Class ;
+  rdfs:label "Boom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01558 ;
+.
+<http://www.nen2767-4.nl/element/detail/178.html>
+  a owl:Class ;
+  rdfs:label "Boomgroep"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01565 ;
+.
+<http://www.nen2767-4.nl/element/detail/18.html>
+  a owl:Class ;
+  rdfs:label "Bovenbouwconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/element/detail/19.html>
+  a owl:Class ;
+  rdfs:label "Brandblusinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/191.html>
+  a owl:Class ;
+  rdfs:label "Graf"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/element/detail/192.html>
+  a owl:Class ;
+  rdfs:label "Haag"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03579 ;
+.
+<http://www.nen2767-4.nl/element/detail/196.html>
+  a owl:Class ;
+  rdfs:label "Infiltratievoorziening"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02331 ;
+.
+<http://www.nen2767-4.nl/element/detail/199.html>
+  a owl:Class ;
+  rdfs:label "Klim- en leiplanten"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/element/detail/2.html>
+  a owl:Class ;
+  rdfs:label "Aandrijving en bewegingswerk, elektromechanisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03259 ;
+.
+<http://www.nen2767-4.nl/element/detail/20.html>
+  a owl:Class ;
+  rdfs:label "Brandmeld- en ontruimingsinstallatie (BMI)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/202.html>
+  a owl:Class ;
+  rdfs:label "Kwelder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02504 ;
+.
+<http://www.nen2767-4.nl/element/detail/204.html>
+  a owl:Class ;
+  rdfs:label "Moerasvegetatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02664 ;
+.
+<http://www.nen2767-4.nl/element/detail/208.html>
+  a owl:Class ;
+  rdfs:label "Schietbaan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/element/detail/21.html>
+  a owl:Class ;
+  rdfs:label "Calamiteiten Doorsteek installatie (CADO)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01700 ;
+.
+<http://www.nen2767-4.nl/element/detail/214.html>
+  a owl:Class ;
+  rdfs:label "Sportveldverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01059 ;
+.
+<http://www.nen2767-4.nl/element/detail/217.html>
+  a owl:Class ;
+  rdfs:label "Heester"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02243 ;
+.
+<http://www.nen2767-4.nl/element/detail/22.html>
+  a owl:Class ;
+  rdfs:label "Closed Circuit TeleVision installatie (CCTV installatie)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/222.html>
+  a owl:Class ;
+  rdfs:label "Vijver"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03396 ;
+.
+<http://www.nen2767-4.nl/element/detail/223.html>
+  a owl:Class ;
+  rdfs:label "Vleermuiskelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01664 ;
+.
+<http://www.nen2767-4.nl/element/detail/23.html>
+  a owl:Class ;
+  rdfs:label "Compressorinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/233.html>
+  a owl:Class ;
+  rdfs:label "Begroeiingsvrij gebied"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01366 ;
+.
+<http://www.nen2767-4.nl/element/detail/235.html>
+  a owl:Class ;
+  rdfs:label "Vissluis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02130 ;
+.
+<http://www.nen2767-4.nl/element/detail/236.html>
+  a owl:Class ;
+  rdfs:label "Ponton"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02887 ;
+.
+<http://www.nen2767-4.nl/element/detail/237.html>
+  a owl:Class ;
+  rdfs:label "Klimaatinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/24.html>
+  a owl:Class ;
+  rdfs:label "Transmissie-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/241.html>
+  a owl:Class ;
+  rdfs:label "Grasvegetatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02061 ;
+.
+<http://www.nen2767-4.nl/element/detail/243.html>
+  a owl:Class ;
+  rdfs:label "Sportattribuut"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/element/detail/244.html>
+  a owl:Class ;
+  rdfs:label "Sportveld"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03132 ;
+.
+<http://www.nen2767-4.nl/element/detail/245.html>
+  a owl:Class ;
+  rdfs:label "Speeltoestel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03933 ;
+.
+<http://www.nen2767-4.nl/element/detail/246.html>
+  a owl:Class ;
+  rdfs:label "Bol- en knolgewas"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/element/detail/247.html>
+  a owl:Class ;
+  rdfs:label "Perkplant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/element/detail/248.html>
+  a owl:Class ;
+  rdfs:label "Vaste plant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01556 ;
+.
+<http://www.nen2767-4.nl/element/detail/249.html>
+  a owl:Class ;
+  rdfs:label "Borstwering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01232 ;
+.
+<http://www.nen2767-4.nl/element/detail/250.html>
+  a owl:Class ;
+  rdfs:label "Stortvak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01348 ;
+.
+<http://www.nen2767-4.nl/element/detail/251.html>
+  a owl:Class ;
+  rdfs:label "Sloot"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01440 ;
+.
+<http://www.nen2767-4.nl/element/detail/253.html>
+  a owl:Class ;
+  rdfs:label "Beek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01370 ;
+.
+<http://www.nen2767-4.nl/element/detail/254.html>
+  a owl:Class ;
+  rdfs:label "Put"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02886 ;
+.
+<http://www.nen2767-4.nl/element/detail/256.html>
+  a owl:Class ;
+  rdfs:label "Bergbezinkbassin"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01414 ;
+.
+<http://www.nen2767-4.nl/element/detail/257.html>
+  a owl:Class ;
+  rdfs:label "Uitlaatvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/element/detail/258.html>
+  a owl:Class ;
+  rdfs:label "Inlaatvoorziening"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03815 ;
+.
+<http://www.nen2767-4.nl/element/detail/259.html>
+  a owl:Class ;
+  rdfs:label "Afscheiderinstallatie, statisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/26.html>
+  a owl:Class ;
+  rdfs:label "Doorlaatkoker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01361 ;
+.
+<http://www.nen2767-4.nl/element/detail/260.html>
+  a owl:Class ;
+  rdfs:label "Leikade"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01443 ;
+.
+<http://www.nen2767-4.nl/element/detail/261.html>
+  a owl:Class ;
+  rdfs:label "Leidam"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03196 ;
+.
+<http://www.nen2767-4.nl/element/detail/262.html>
+  a owl:Class ;
+  rdfs:label "Reddingsmiddel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00017 ;
+.
+<http://www.nen2767-4.nl/element/detail/263.html>
+  a owl:Class ;
+  rdfs:label "Ven"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03351 ;
+.
+<http://www.nen2767-4.nl/element/detail/264.html>
+  a owl:Class ;
+  rdfs:label "Nevengeul"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01441 ;
+.
+<http://www.nen2767-4.nl/element/detail/265.html>
+  a owl:Class ;
+  rdfs:label "Tertiaire watergangen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00051 ;
+.
+<http://www.nen2767-4.nl/element/detail/27.html>
+  a owl:Class ;
+  rdfs:label "Drainage"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01893 ;
+.
+<http://www.nen2767-4.nl/element/detail/270.html>
+  a owl:Class ;
+  rdfs:label "Loggingsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/272.html>
+  a owl:Class ;
+  rdfs:label "Waarschuwings- en alarmeringssysteem (WAS)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/element/detail/273.html>
+  a owl:Class ;
+  rdfs:label "Kathodische bescherminstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02401 ;
+.
+<http://www.nen2767-4.nl/element/detail/274.html>
+  a owl:Class ;
+  rdfs:label "Meetinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/277.html>
+  a owl:Class ;
+  rdfs:label "Afscheiderinstallatie, dynamisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01136 ;
+.
+<http://www.nen2767-4.nl/element/detail/278.html>
+  a owl:Class ;
+  rdfs:label "Beluchtingsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/279.html>
+  a owl:Class ;
+  rdfs:label "Nooddouche-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/28.html>
+  a owl:Class ;
+  rdfs:label "Duin"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01938 ;
+.
+<http://www.nen2767-4.nl/element/detail/280.html>
+  a owl:Class ;
+  rdfs:label "Menginstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/281.html>
+  a owl:Class ;
+  rdfs:label "Roostergoed container"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01153 ;
+.
+<http://www.nen2767-4.nl/element/detail/282.html>
+  a owl:Class ;
+  rdfs:label "Roosterreinigingsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/283.html>
+  a owl:Class ;
+  rdfs:label "Persinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/284.html>
+  a owl:Class ;
+  rdfs:label "Ruimerinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/285.html>
+  a owl:Class ;
+  rdfs:label "Tankconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/286.html>
+  a owl:Class ;
+  rdfs:label "Transportinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/29.html>
+  a owl:Class ;
+  rdfs:label "Duurzame energiebron"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/294.html>
+  a owl:Class ;
+  rdfs:label "Sanitaire installatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01731 ;
+.
+<http://www.nen2767-4.nl/element/detail/295.html>
+  a owl:Class ;
+  rdfs:label "Watertapinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/296.html>
+  a owl:Class ;
+  rdfs:label "Gasinstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02856 ;
+.
+<http://www.nen2767-4.nl/element/detail/298.html>
+  a owl:Class ;
+  rdfs:label "Sluismarkering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03667 ;
+.
+<http://www.nen2767-4.nl/element/detail/299.html>
+  a owl:Class ;
+  rdfs:label "Verkeerseiland"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02649 ;
+.
+<http://www.nen2767-4.nl/element/detail/3.html>
+  a owl:Class ;
+  rdfs:label "Aandrijving en bewegingswerk; mechanisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03259 ;
+.
+<http://www.nen2767-4.nl/element/detail/30.html>
+  a owl:Class ;
+  rdfs:label "Dynamische bewegwijzering en informatie systemen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03747 ;
+.
+<http://www.nen2767-4.nl/element/detail/300.html>
+  a owl:Class ;
+  rdfs:label "Toegangscontrole-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/301.html>
+  a owl:Class ;
+  rdfs:label "Zonweringsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/302.html>
+  a owl:Class ;
+  rdfs:label "Pollerinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/303.html>
+  a owl:Class ;
+  rdfs:label "Schoorsteen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03031 ;
+.
+<http://www.nen2767-4.nl/element/detail/304.html>
+  a owl:Class ;
+  rdfs:label "Perron"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03672 ;
+.
+<http://www.nen2767-4.nl/element/detail/305.html>
+  a owl:Class ;
+  rdfs:label "Geleidetoren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02249 ;
+.
+<http://www.nen2767-4.nl/element/detail/306.html>
+  a owl:Class ;
+  rdfs:label "Stuurstroomvoedingsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/308.html>
+  a owl:Class ;
+  rdfs:label "Warmte-kracht koppeling (WKK)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/309.html>
+  a owl:Class ;
+  rdfs:label "Drukluchtschuiminstallatie (DLS)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/310.html>
+  a owl:Class ;
+  rdfs:label "Watermistinstallatie (WMS)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/32.html>
+  a owl:Class ;
+  rdfs:label "Folieconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/element/detail/33.html>
+  a owl:Class ;
+  rdfs:label "Fundering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01698 ;
+.
+<http://www.nen2767-4.nl/element/detail/34.html>
+  a owl:Class ;
+  rdfs:label "Gasdetectie-installatie (LEL)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/36.html>
+  a owl:Class ;
+  rdfs:label "Geleideconstructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01039 ;
+.
+<http://www.nen2767-4.nl/element/detail/38.html>
+  a owl:Class ;
+  rdfs:label "Gestrekte oever, natuurvriendelijk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02689 ;
+.
+<http://www.nen2767-4.nl/element/detail/39.html>
+  a owl:Class ;
+  rdfs:label "Gestrekte oever, talud"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01443 ;
+.
+<http://www.nen2767-4.nl/element/detail/4.html>
+  a owl:Class ;
+  rdfs:label "Aanrijbalk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03551 ;
+.
+<http://www.nen2767-4.nl/element/detail/40.html>
+  a owl:Class ;
+  rdfs:label "Gladheidsmeldsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/element/detail/42.html>
+  a owl:Class ;
+  rdfs:label "Havendam"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01522 ;
+.
+<http://www.nen2767-4.nl/element/detail/43.html>
+  a owl:Class ;
+  rdfs:label "Heftoren"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02249 ;
+.
+<http://www.nen2767-4.nl/element/detail/44.html>
+  a owl:Class ;
+  rdfs:label "Hemelwaterafvoer (HWA)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/element/detail/45.html>
+  a owl:Class ;
+  rdfs:label "Hoog Frequent installatie (HF-installatie)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/46.html>
+  a owl:Class ;
+  rdfs:label "Hijs- en hefinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/47.html>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03802 ;
+.
+<http://www.nen2767-4.nl/element/detail/48.html>
+  a owl:Class ;
+  rdfs:label "Hoofddraaipunt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00070 ;
+.
+<http://www.nen2767-4.nl/element/detail/49.html>
+  a owl:Class ;
+  rdfs:label "Hoogspanningsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/5.html>
+  a owl:Class ;
+  rdfs:label "Aarding- en bliksembeveiligingsinstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01083 ;
+.
+<http://www.nen2767-4.nl/element/detail/50.html>
+  a owl:Class ;
+  rdfs:label "Hoogtedetectie-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/52.html>
+  a owl:Class ;
+  rdfs:label "Inspectiewagen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01099 ;
+.
+<http://www.nen2767-4.nl/element/detail/53.html>
+  a owl:Class ;
+  rdfs:label "Intercominstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02360 ;
+.
+<http://www.nen2767-4.nl/element/detail/54.html>
+  a owl:Class ;
+  rdfs:label "Informatie en Volgsysteem Scheepvaart 1990 (IVS90)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/element/detail/55.html>
+  a owl:Class ;
+  rdfs:label "Kabel- en leidingtunnel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02375 ;
+.
+<http://www.nen2767-4.nl/element/detail/56.html>
+  a owl:Class ;
+  rdfs:label "Kabeldraagconstructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01149 ;
+.
+<http://www.nen2767-4.nl/element/detail/57.html>
+  a owl:Class ;
+  rdfs:label "Kerende constructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01205 ;
+.
+<http://www.nen2767-4.nl/element/detail/58.html>
+  a owl:Class ;
+  rdfs:label "Klepconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/59.html>
+  a owl:Class ;
+  rdfs:label "Krib"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02491 ;
+.
+<http://www.nen2767-4.nl/element/detail/6.html>
+  a owl:Class ;
+  rdfs:label "Afmeervoorziening"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01027 ;
+.
+<http://www.nen2767-4.nl/element/detail/60.html>
+  a owl:Class ;
+  rdfs:label "Kribvak"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01382 ;
+.
+<http://www.nen2767-4.nl/element/detail/62.html>
+  a owl:Class ;
+  rdfs:label "Laagspanningsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/63.html>
+  a owl:Class ;
+  rdfs:label "Leiding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01052 ;
+.
+<http://www.nen2767-4.nl/element/detail/65.html>
+  a owl:Class ;
+  rdfs:label "Lift-installatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02562 ;
+.
+<http://www.nen2767-4.nl/element/detail/66.html>
+  a owl:Class ;
+  rdfs:label "Loopbrug"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02584 ;
+.
+<http://www.nen2767-4.nl/element/detail/67.html>
+  a owl:Class ;
+  rdfs:label "Mantelbuis"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03595 ;
+.
+<http://www.nen2767-4.nl/element/detail/68.html>
+  a owl:Class ;
+  rdfs:label "Marifooninstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/69.html>
+  a owl:Class ;
+  rdfs:label "Wegkantsysteem (WKS)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00048 ;
+.
+<http://www.nen2767-4.nl/element/detail/7.html>
+  a owl:Class ;
+  rdfs:label "Afsluitboominstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01139 ;
+.
+<http://www.nen2767-4.nl/element/detail/70.html>
+  a owl:Class ;
+  rdfs:label "Nautofooninstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/71.html>
+  a owl:Class ;
+  rdfs:label "Noodstroominstallatie, roterend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/72.html>
+  a owl:Class ;
+  rdfs:label "Noodstroominstallatie, statisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/73.html>
+  a owl:Class ;
+  rdfs:label "Objectverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01059 ;
+.
+<http://www.nen2767-4.nl/element/detail/74.html>
+  a owl:Class ;
+  rdfs:label "Oeverbescherming"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02486 ;
+.
+<http://www.nen2767-4.nl/element/detail/75.html>
+  a owl:Class ;
+  rdfs:label "Omroepinstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02359 ;
+.
+<http://www.nen2767-4.nl/element/detail/78.html>
+  a owl:Class ;
+  rdfs:label "Onderhoudsvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00029 ;
+.
+<http://www.nen2767-4.nl/element/detail/79.html>
+  a owl:Class ;
+  rdfs:label "Openbare verlichting (OV)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01058 ;
+.
+<http://www.nen2767-4.nl/element/detail/80.html>
+  a owl:Class ;
+  rdfs:label "Oplegging"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02159 ;
+.
+<http://www.nen2767-4.nl/element/detail/81.html>
+  a owl:Class ;
+  rdfs:label "Opstal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01338 ;
+.
+<http://www.nen2767-4.nl/element/detail/82.html>
+  a owl:Class ;
+  rdfs:label "Over- en onderdrukinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/83.html>
+  a owl:Class ;
+  rdfs:label "Overgangsconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.
+<http://www.nen2767-4.nl/element/detail/84.html>
+  a owl:Class ;
+  rdfs:label "Personenzoekinstallatie (PZI)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/86.html>
+  a owl:Class ;
+  rdfs:label "Pompinstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01930 ;
+.
+<http://www.nen2767-4.nl/element/detail/87.html>
+  a owl:Class ;
+  rdfs:label "Pompkelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01664 ;
+.
+<http://www.nen2767-4.nl/element/detail/88.html>
+  a owl:Class ;
+  rdfs:label "Portaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02890 ;
+.
+<http://www.nen2767-4.nl/element/detail/89.html>
+  a owl:Class ;
+  rdfs:label "Radarinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/90.html>
+  a owl:Class ;
+  rdfs:label "Remming- en/of geleidewerk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02950 ;
+.
+<http://www.nen2767-4.nl/element/detail/92.html>
+  a owl:Class ;
+  rdfs:label "Roltrapinstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02994 ;
+.
+<http://www.nen2767-4.nl/element/detail/93.html>
+  a owl:Class ;
+  rdfs:label "Schampkant"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03017 ;
+.
+<http://www.nen2767-4.nl/element/detail/94.html>
+  a owl:Class ;
+  rdfs:label "Scheepvaartdetectie-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/95.html>
+  a owl:Class ;
+  rdfs:label "Scheepverkeersbeseining"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00020 ;
+.
+<http://www.nen2767-4.nl/element/detail/96.html>
+  a owl:Class ;
+  rdfs:label "Schuifconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01117 ;
+.
+<http://www.nen2767-4.nl/element/detail/98.html>
+  a owl:Class ;
+  rdfs:label "Sluisdeur (hef, punt, rol)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03088 ;
+.
+<http://www.nen2767-4.nl/element/detail/99.html>
+  a owl:Class ;
+  rdfs:label "Sluishoofd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB00022 ;
+.

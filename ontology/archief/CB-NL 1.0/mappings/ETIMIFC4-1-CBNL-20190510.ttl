@@ -1,0 +1,334 @@
+# baseURI: http://ont.cbnl.org/mapping/ETIMIFC4-1-CBNL-20190510
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ont.cbnl.org/mapping/ETIMIFC4-1-CBNL-20190510>
+  a owl:Ontology ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcbuildingcontrolsdomain/lexical/ifcactuator.htm>
+  a owl:Class ;
+  rdfs:label "Actuator"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01015 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcbuildingcontrolsdomain/lexical/ifccontroller.htm>
+  a owl:Class ;
+  rdfs:label "Controller"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01811 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcbuildingcontrolsdomain/lexical/ifcsensor.htm>
+  a owl:Class ;
+  rdfs:label "Sensor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01068 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcbuildingcontrolsdomain/lexical/ifcunitarycontrolelement.htm>
+  a owl:Class ;
+  rdfs:label "UnitaryControlElement"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01182 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifcaudiovisualappliance.htm>
+  a owl:Class ;
+  rdfs:label "audio visual appliance"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01242 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifccablecarrierfitting.htm>
+  a owl:Class ;
+  rdfs:label "cable carier fitting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04250 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifccablecarriersegment.htm>
+  a owl:Class ;
+  rdfs:label "cable carrier segment"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01818 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifccablefitting.htm>
+  a owl:Class ;
+  rdfs:label "cable fitting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04245 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifccablesegment.htm>
+  a owl:Class ;
+  rdfs:label "cable segment"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02153 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifccommunicationsappliance.htm>
+  a owl:Class ;
+  rdfs:label "communications appliance"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01208 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifcelectricappliance.htm>
+  a owl:Class ;
+  rdfs:label "electric appliance"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01243 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifcelectricflowstoragedevice.htm>
+  a owl:Class ;
+  rdfs:label "electric flow storage device"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04320 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifclightfixture.htm>
+  a owl:Class ;
+  rdfs:label "light fixture"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02553 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcelectricaldomain/lexical/ifcprotectivedevicetrippingunit.htm>
+  a owl:Class ;
+  rdfs:label "protective device tripping unit"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03878 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcairterminal.htm>
+  a owl:Class ;
+  rdfs:label "air terminal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04258 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifccompressor.htm>
+  a owl:Class ;
+  rdfs:label "Compressor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03710 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcdistributioncontrolelement.htm>
+  a owl:Class ;
+  rdfs:label "distribution control element"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01017 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcdistributionelement.htm>
+  a owl:Class ;
+  rdfs:label "distribution element"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01017 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcductfitting.htm>
+  a owl:Class ;
+  rdfs:label "duct fitting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04254 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcductsegment.htm>
+  a owl:Class ;
+  rdfs:label "duct segment"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04262 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcductsilencer.htm>
+  a owl:Class ;
+  rdfs:label "duct silencer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02595 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcfan.htm>
+  a owl:Class ;
+  rdfs:label "Fan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03711 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcfilter.htm>
+  a owl:Class ;
+  rdfs:label "filter"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01506 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcmedicaldevice.htm>
+  a owl:Class ;
+  rdfs:label "medical device"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02625 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcpipefitting.htm>
+  a owl:Class ;
+  rdfs:label "pipe fitting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02862 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcpipesegment.htm>
+  a owl:Class ;
+  rdfs:label "pipe segment"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03712 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcpump.htm>
+  a owl:Class ;
+  rdfs:label "Pump"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02716 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifctank.htm>
+  a owl:Class ;
+  rdfs:label "tank"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01668 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifchvacdomain/lexical/ifcvalve.htm>
+  a owl:Class ;
+  rdfs:label "Valve"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01002 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcplumbingfireprotectiondomain/lexical/ifcfiresuppressionterminal.htm>
+  a owl:Class ;
+  rdfs:label "fire suppression terminal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04272 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcplumbingfireprotectiondomain/lexical/ifcinterceptor.htm>
+  a owl:Class ;
+  rdfs:label "interceptor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01136 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcplumbingfireprotectiondomain/lexical/ifcsanitaryterminal.htm>
+  a owl:Class ;
+  rdfs:label "sanitary terminal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04267 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcplumbingfireprotectiondomain/lexical/ifcwasteterminal.htm>
+  a owl:Class ;
+  rdfs:label "waste terminal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01162 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcdistributionflowelement.htm>
+  a owl:Class ;
+  rdfs:label "distribution flow element"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01052 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcenergyconversiondevice.htm>
+  a owl:Class ;
+  rdfs:label "energy conversion device"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01005 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcflowcontroller.htm>
+  a owl:Class ;
+  rdfs:label "Flowcontroller"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01003 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcflowfitting.htm>
+  a owl:Class ;
+  rdfs:label "flow fitting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02863 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcflowmovingdevice.htm>
+  a owl:Class ;
+  rdfs:label "Flow moving device"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02717 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcflowsegment.htm>
+  a owl:Class ;
+  rdfs:label "flow segment"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02863 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcflowstoragedevice.htm>
+  a owl:Class ;
+  rdfs:label "flow storage device"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04241 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcflowterminal.htm>
+  a owl:Class ;
+  rdfs:label "flow terminal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01209 ;
+.
+<http://www.buildingsmart-tech.org/ifc/IFC4/final/html/schema/ifcsharedbldgserviceelements/lexical/ifcflowtreatmentdevice.htm>
+  a owl:Class ;
+  rdfs:label "flow treatment device"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01507 ;
+.

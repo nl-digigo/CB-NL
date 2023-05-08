@@ -1,0 +1,3594 @@
+# baseURI: http://ont.cbnl.org/mapping/NL-SFB-1-CBNL-20170401
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem11.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04532 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem111.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen-grond"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04532 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1111.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen-grond-ontgravingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04532 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1112.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen-grond-aanvullingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04532 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1113.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen-grond-sloop-enrooiwerkzaamheden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04343 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1115.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen-grond-damwanden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01427 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem112.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen-water"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04532 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1124.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen-water-bemalingen"@nl-nl ;
+  skos:related cbnlcore:CB04535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1125.htm>
+  a owl:Class ;
+  rdfs:label "Bodemvoorzieningen-water-damwanden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01427 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem13.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem131.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag-nietconstructief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1311.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag-nietconstructief-bodemafsluitingen"@nl-nl ;
+  skos:related cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1312.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag-nietconstructief-vloerenalsgebouwonderdeel"@nl-nl ;
+  skos:related cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1313.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag-nietconstructief-vloerenalsbestrating"@nl-nl ;
+  skos:related cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem132.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag-constructief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1321.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag-constructief-bodemafsluitingen"@nl-nl ;
+  skos:related cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1322.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag-constructief-vloerenalsgebouwonderdeel"@nl-nl ;
+  skos:related cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1325.htm>
+  a owl:Class ;
+  rdfs:label "Vloerenopgrondslag-constructief-grondverbeteringen"@nl-nl ;
+  skos:related cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem16.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01698 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem161.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-voetenenbalken"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04533 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1611.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-voetenenbalken-fundatievoeten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02030 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1612.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-voetenenbalken-fundatiebalken"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02028 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1613.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-voetenenbalken-fundatiepoeren"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02030 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1614.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-voetenenbalken-gevelwanden_-200_"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1615.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-voetenenbalken-grondverbeteringen"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem162.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-keerwanden"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1621.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-keerwanden-grondkerendewanden"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1622.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-keerwanden-waterkerendewanden"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1623.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-keerwanden-gevelwanden_-200_"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1625.htm>
+  a owl:Class ;
+  rdfs:label "Funderingsconstructies-keerwanden-grondverbeteringen"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem17.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03047 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem171.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-nietgeheid"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04489 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1711.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-nietgeheid-dragendepalen-geboord"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04489 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1712.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-nietgeheid-dragendepalen-geschoefd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04489 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1713.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-nietgeheid-trekverankering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04489 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1714.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-nietgeheid-pijlerputringfundering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04489 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1715.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-nietgeheid-bodeminjecties"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04489 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem172.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-geheid"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04490 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1721.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-geheid-dragendepalen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04490 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1722.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-geheid-palen-ingeheidebekisting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04490 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1723.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-geheid-trekverankeringen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04490 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem1725.htm>
+  a owl:Class ;
+  rdfs:label "Paalfunderingen-geheid-damwanden-funderingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04490 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem21.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01584 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem211.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-nietconstructief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01584 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2111.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-nietconstructief-massievewanden"@nl-nl ;
+  skos:related cbnlcore:CB01584 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2112.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-nietconstructief-spouwwanden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04429 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2113.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-nietconstructief-systeemwanden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03220 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2114.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-nietconstructief-vlieswanden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04432 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2115.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-nietconstructief-borstweringen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01583 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2116.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-nietconstructief-boeiboorden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01549 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem212.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-constructief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04428 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2121.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-constructief-massievewanden"@nl-nl ;
+  skos:related cbnlcore:CB04428 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2122.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-constructief-spouwwanden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04429 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2123.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-constructief-systeemwanden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03220 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2125.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwanden-constructief-borstweringen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01583 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem22.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03441 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem221.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-nietconstructief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03441 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2211.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-nietconstructief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04430 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2212.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-nietconstructief-spouwwanden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04429 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2213.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-nietconstructief-systeemwanden-vast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04433 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2214.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-nietconstructief-systeemwanden-verplaatsbaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04434 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem222.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-constructief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03441 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2221.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-constructief-massievewanden"@nl-nl ;
+  skos:related cbnlcore:CB04428 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2222.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-constructief-spouwwanden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04429 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2223.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwanden-constructief-systeemwanden-vast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04433 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem23.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01310 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem231.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-nietconstructief"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04439 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2311.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-nietconstructief-vrijdragendevloeren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04439 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2312.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-nietconstructief-balkons"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01309 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2313.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-nietconstructief-galerijen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04435 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2314.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-nietconstructief-bordessen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04437 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2315.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-nietconstructief-vloerent.b.v.technischevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04439 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem232.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-constructief"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04438 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2321.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-constructief-vrijdragendevloeren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04438 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2322.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-constructief-balkons"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01309 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2323.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-constructief-galerijen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04435 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2324.htm>
+  a owl:Class ;
+  rdfs:label "Vloeren-constructief-bordessen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04437 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem24.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen"@nl-nl ;
+  skos:related cbnlcore:CB01475 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem241.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-trappen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01475 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2411.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-trappen-rechtesteektrappen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03156 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2412.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-trappen-niet-rechtesteektrappen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03156 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2413.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-trappen-spiltrappen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03105 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2415.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-trappen-bordessen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01580 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem242.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-hellingen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02252 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2421.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-hellingen-beloopbarehellingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02252 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2422.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-hellingen-berijdbarehellingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02252 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2425.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-hellingen-bordessen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01580 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem243.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-laddersenklimijzers"@nl-nl ;
+  skos:related cbnlcore:CB04440 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2431.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-laddersenklimijzers-ladders"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04440 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2432.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-laddersenklimijzers-klimijzers"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04441 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2435.htm>
+  a owl:Class ;
+  rdfs:label "Trappenenhellingen-laddersenklimijzers-bordessen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01580 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem27.htm>
+  a owl:Class ;
+  rdfs:label "Daken"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01618 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem271.htm>
+  a owl:Class ;
+  rdfs:label "Daken-nietconstructief"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04442 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2711.htm>
+  a owl:Class ;
+  rdfs:label "Daken-nietconstructief-vlakkedaken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01797 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2712.htm>
+  a owl:Class ;
+  rdfs:label "Daken-nietconstructief-hellendedaken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01783 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2713.htm>
+  a owl:Class ;
+  rdfs:label "Daken-nietconstructief-luifels"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02609 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2714.htm>
+  a owl:Class ;
+  rdfs:label "Daken-nietconstructief-overkappingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01589 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2716.htm>
+  a owl:Class ;
+  rdfs:label "Daken-nietconstructief-gootconstructies"@nl-nl ;
+  skos:related cbnlcore:CB01790 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem272.htm>
+  a owl:Class ;
+  rdfs:label "Daken-constructief"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04443 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2721.htm>
+  a owl:Class ;
+  rdfs:label "Daken-constructief-vlakkedaken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01797 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2722.htm>
+  a owl:Class ;
+  rdfs:label "Daken-constructief-hellendedaken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01783 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2723.htm>
+  a owl:Class ;
+  rdfs:label "Daken-constructief-luifels"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02609 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2724.htm>
+  a owl:Class ;
+  rdfs:label "Daken-constructief-overkappingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01589 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2726.htm>
+  a owl:Class ;
+  rdfs:label "Daken-constructief-gootconstructies"@nl-nl ;
+  skos:related cbnlcore:CB01790 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem28.htm>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructies"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03802 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem281.htm>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructies-kolommenenliggers"@nl-nl ;
+  skos:related cbnlcore:CB01943 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2811.htm>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructies-kolommenenliggers-spanten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04444 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2812.htm>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructies-kolommenenliggers-kolom-/liggerconstructies"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02067 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem282.htm>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructies-wandenenvloeren"@nl-nl ;
+  skos:related cbnlcore:CB04438 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2821.htm>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructies-wandenenvloeren-wand-/vloerconstructies"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02067 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem283.htm>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructies-ruimte-eenheden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04445 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem2831.htm>
+  a owl:Class ;
+  rdfs:label "Hoofddraagconstructies-ruimte-eenheden-doosconstructies"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04445 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem31.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03774 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem311.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-nietgevuld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03774 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3111.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-nietgevuld-daglichtopeningen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03774 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3112.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-nietgevuld-buitenluchtopeningen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03774 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem312.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetramen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3121.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetramen-geslotenramen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04447 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3122.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetramen-ramendraaiendaaneenkant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01888 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3123.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetramen-schuiframen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04451 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3124.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetramen-ramendraaiendopverticaleofhorizontaleas"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03224 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3125.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetramen-combinatieramen"@nl-nl ;
+  skos:related cbnlcore:CB01469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem313.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetdeuren"@nl-nl ;
+  skos:related cbnlcore:CB01674 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3131.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetdeuren-draaideuren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01674 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3132.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetdeuren-schuifdeuren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01674 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3133.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetdeuren-tuimeldeuren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01674 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3134.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetdeuren-tourniquets"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04449 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem314.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetpuien"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02908 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3141.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandopeningen-gevuldmetpuien-geslotenpuien"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02908 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem32.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03774 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem321.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-nietgevuld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03774 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3211.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-nietgevuld-openingenalsdoorgang"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02033 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3212.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-nietgevuld-openingenalsdoorzicht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03774 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem322.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetramen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3221.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetramen-geslotenramen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04447 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3222.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetramen-ramendraaiendaaneenkant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01888 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3223.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetramen-schuiframen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04451 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3224.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetramen-ramendraaiendopverticaleofhorizontaleas"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03295 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3225.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetramen-combinatieramen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem323.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetdeuren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01500 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3231.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetdeuren-draaideuren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03549 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3232.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetdeuren-schuifdeuren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02909 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3233.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetdeuren-tuimeldeuren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04448 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3234.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetdeuren-tourniquets"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04449 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem324.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-gevuldmetpuien"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02908 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3241.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandopeningen-geslotenpuien"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02908 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem33.htm>
+  a owl:Class ;
+  rdfs:label "Vloeropeningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03411 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem331.htm>
+  a owl:Class ;
+  rdfs:label "Vloeropeningen-nietgevuld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03411 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3311.htm>
+  a owl:Class ;
+  rdfs:label "Vloeropeningen-nietgevuld-openingenalsdoorgang"@nl-nl ;
+  skos:related cbnlcore:CB03411 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3312.htm>
+  a owl:Class ;
+  rdfs:label "Vloeropeningen-nietgevuld-openingenalsdoorzicht"@nl-nl ;
+  skos:related cbnlcore:CB03411 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem332.htm>
+  a owl:Class ;
+  rdfs:label "Vloeropeningen-gevuld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03411 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3321.htm>
+  a owl:Class ;
+  rdfs:label "Vloeropeningen-gevuld-beloopbarevullingen"@nl-nl ;
+  skos:related cbnlcore:CB03412 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3322.htm>
+  a owl:Class ;
+  rdfs:label "Vloeropeningen-gevuld-niet-beloopbarevullingen"@nl-nl ;
+  skos:related cbnlcore:CB03412 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem34.htm>
+  a owl:Class ;
+  rdfs:label "Balustradesenleuningen"@nl-nl ;
+  skos:related cbnlcore:CB01321 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem341.htm>
+  a owl:Class ;
+  rdfs:label "Balustradesenleuningen-balustradesâ€¢Ã€__"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01321 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3411.htm>
+  a owl:Class ;
+  rdfs:label "Balustradesenleuningen-balustrades-binnenbalustrades"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01321 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3412.htm>
+  a owl:Class ;
+  rdfs:label "Balustradesenleuningen-balustrades-buitenbalustrades"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01321 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem342.htm>
+  a owl:Class ;
+  rdfs:label "Balustradesenleuningen-leuningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01325 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3421.htm>
+  a owl:Class ;
+  rdfs:label "Balustradesenleuningen-leuningen-binnenleuningen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01325 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3422.htm>
+  a owl:Class ;
+  rdfs:label "Balustradesenleuningen-leuningen-buitenleuningen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01325 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem37.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04452 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem371.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-nietgevuld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04452 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3711.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-nietgevuld-daglichtopeningen"@nl-nl ;
+  skos:related cbnlcore:CB04452 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3712.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-nietgevuld-buitenluchtopeningen"@nl-nl ;
+  skos:related cbnlcore:CB04452 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem372.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-gevuld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04452 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3721.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-gevuld-geslotenramen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01795 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3722.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-gevuld-ramendraaiendaaneenkant"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01795 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3723.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-gevuld-schuiframen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01795 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3724.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-gevuld-schuiframen-ramendraaiendopeenas"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01795 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3725.htm>
+  a owl:Class ;
+  rdfs:label "Dakopeningen-gevuld-combinatieramen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01795 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem38.htm>
+  a owl:Class ;
+  rdfs:label "Inbouwpakketten"@nl-nl ;
+  skos:related cbnlcore:CB04453 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem381.htm>
+  a owl:Class ;
+  rdfs:label "Inbouwpakketten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04453 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3811.htm>
+  a owl:Class ;
+  rdfs:label "Inbouwpakketten-inbouwpakkettenmetteopenendelen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04453 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem3812.htm>
+  a owl:Class ;
+  rdfs:label "Inbouwpakketten-inbouwpakkettenmetgeslotendelen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04453 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem41.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem411.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4111.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandafwerkingen-afwerklagen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4112.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandafwerkingen-bekledingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4113.htm>
+  a owl:Class ;
+  rdfs:label "Buitenwandafwerkingen-voorzetwanden"@nl-nl ;
+  skos:related cbnlcore:CB04455 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem42.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem421.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4211.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandafwerkingen-afwerklagen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4212.htm>
+  a owl:Class ;
+  rdfs:label "Binnenwandafwerkingen-bekledingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem43.htm>
+  a owl:Class ;
+  rdfs:label "Vloerafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem431.htm>
+  a owl:Class ;
+  rdfs:label "Vloerafwerkingen-verhoogd"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04457 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4311.htm>
+  a owl:Class ;
+  rdfs:label "Vloerafwerkingen-verhoogd-podiums"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04458 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4312.htm>
+  a owl:Class ;
+  rdfs:label "Vloerafwerkingen-verhoogd-installatievloeren"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04456 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem432.htm>
+  a owl:Class ;
+  rdfs:label "Vloerafwerkingen-nietverhoogd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4321.htm>
+  a owl:Class ;
+  rdfs:label "Vloerafwerkingen-nietverhoogd-afwerklagen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4322.htm>
+  a owl:Class ;
+  rdfs:label "Vloerafwerkingen-nietverhoogd-bekledingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4323.htm>
+  a owl:Class ;
+  rdfs:label "Vloerafwerkingen-nietverhoogd-systeemvloerafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem44.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01475 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem441.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen-trapafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4411.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen-trapafwerkingen-afwerklagen"@nl-nl ;
+  skos:related cbnlcore:CB01475 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4412.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen-trapafwerkingen-bekledingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4413.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen-trapafwerkingen-systeemafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem442.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen-hellingafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4421.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen-hellingafwerkingen-afwerklagen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4422.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen-hellingafwerkingen-bekledingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4423.htm>
+  a owl:Class ;
+  rdfs:label "Trap-enhellingafwerkingen-hellingafwerkingen-systeemafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem45.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01230 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem451.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-verlaagd"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04460 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4511.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-verlaagd-verlaagdeplafonds"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4512.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-verlaagd-systeemplafonds"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4514.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-verlaagd-koofconstructies"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02468 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4515.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-verlaagd-gordijnplanken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02468 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem452.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-nietverlaagd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4521.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-nietverlaagd-afwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4522.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-nietverlaagd-bekledingen"@nl-nl ;
+  skos:related cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4523.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-nietverlaagd-systeemafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01397 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4524.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-nietverlaagd-koofconstructies"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02468 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4525.htm>
+  a owl:Class ;
+  rdfs:label "Plafondafwerkingen-nietverlaagd-gordijnplanken"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02468 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem47.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen"@nl-nl ;
+  skos:related cbnlcore:CB04467 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem471.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-afwerkingen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04467 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4711.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-afwerkingen-vlakkedakafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04467 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4712.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-afwerkingen-hellendedakafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04467 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4713.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-afwerkingen-luifelafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04467 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4714.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-afwerkingen-overkappingsafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04467 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4715.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-afwerkingen-beloopbaredakafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04467 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4716.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-afwerkingen-berijdbaredakafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04467 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem472.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-bekledingen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04461 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4721.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-bekledingen-vlakkedakbekledingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04461 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4722.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-bekledingen-hellendedakbekledingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04461 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4723.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-bekledingen-luifelbekledingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04461 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4724.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-bekledingen-overkappingbekledingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04461 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4725.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-bekledingen-beloopbaredakbekledingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04461 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4726.htm>
+  a owl:Class ;
+  rdfs:label "Dakafwerkingen-bekledingen-berijdbaredakbekledingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04461 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem48.htm>
+  a owl:Class ;
+  rdfs:label "Afwerkingspakketten"@nl-nl ;
+  skos:related cbnlcore:CB04459 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem481.htm>
+  a owl:Class ;
+  rdfs:label "Afwerkingspakketten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04459 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4811.htm>
+  a owl:Class ;
+  rdfs:label "Afwerkingspakketten-naadlozeafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04459 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem4812.htm>
+  a owl:Class ;
+  rdfs:label "Afwerkingspakketten-overigeafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04459 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem51.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04462 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem511.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-lokaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01291 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5111.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-lokaal-gasvormigebrandstoffen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01291 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5112.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-lokaal-vloeibarebrandstoffen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01291 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5113.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-lokaal-vastebrandstoffen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01291 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5116.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-lokaal-gecombineerdetapwaterverwarming"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01291 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5119.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-lokaal-brandstoffenopslag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04466 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem512.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-centraal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04465 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5121.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-centraal-gasvormigebrandstoffen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04465 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5122.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-centraalvloeibarebrandstoffen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04465 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5123.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-centraal-vastebrandstoffen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04465 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5124.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-centraal-schoorstenen/kanalen_nietbouwkundig_"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04464 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5126.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-centraal-gecombineerdetapwaterverwarming"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04465 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5129.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-centraal-brandstoffenopslag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04466 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem513.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-toegeleverdewarmte"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5131.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-toegeleverdewarmte-watertot140gradenC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5132.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-toegeleverdewarmte-waterboven140gradenC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5133.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-toegeleverdewarmte-stoom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5136.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-toegeleverdewarmte-gecombineerdetapwaterverwarming"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem514.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-warmte-krachtkoppeling"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04468 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5141.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-warmte-krachtkoppeling-total-energy"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04468 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5146.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-warmte-krachtkoppeling-schoorstenen/kanalen_nietbouwkundig_"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04464 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5149.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-warmte-krachtkoppeling-brandstoffenopslag"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04466 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem515.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-bijzonderâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04462 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5151.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-bijzonder-warmtepomp"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04470 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5152.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-bijzonder-zonnecollectoren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04462 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5153.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-bijzonder-accumulatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5154.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-bijzonder-aardwarmte"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04469 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5155.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-bijzonder-kernenergie"@nl-nl ;
+  skos:related cbnlcore:CB02411 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem52.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01792 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem521.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-regenwater"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01791 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5211.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-regenwater-afvoerinstallatie-inhetgebouw"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01791 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5212.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-regenwater-afvoerinstallatie-buitenhetgebouw"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01791 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5214.htm>
+  a owl:Class ;
+  rdfs:label "Warmte-opwekking-lokaal-schoorstenen/kanalen_nietbouwkundig_"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04464 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5216.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-regenwater-pompsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04479 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem522.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-faecaliâ€¢Ã€_â€¢Ã€_n"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5221.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-faecaliâ€¢Ã€_â€¢Ã€_n-standaardsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5222.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-faecaliâ€¢Ã€_â€¢Ã€_n-vacuÃ­Ã‡msysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5223.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-faecaliâ€¢Ã€_â€¢Ã€_n-overdruksysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5226.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-faecaliâ€¢Ã€_â€¢Ã€_n-pompsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem523.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-afvalwater"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5231.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-afvalwater-huishoudelijkafval"@nl-nl ;
+  skos:related cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5232.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-afvalwater-bedrijfsafval"@nl-nl ;
+  skos:related cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5236.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-afvalwater-pompsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04479 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem524.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-gecombineerd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5241.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-gecombineerd-geâ€¢Ã€_ntegreerdsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04478 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5246.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-gecombineerd-pompsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04479 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem525.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-speciaalâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04477 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5251.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-speciaal-chemischverontreinigdafvalwaterâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01792 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5252.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-speciaal-biologischbesmetafvalwaterâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01792 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5253.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-speciaal-radioactiefbesmetafvalwaterâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01792 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5256.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-speciaal-pompsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01792 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem526.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-vastvuil"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04492 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5261.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-vastvuil-stortkokers"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04492 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5262.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-vastvuil-vacuÃ­Ã‡msysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04492 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5263.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-vastvuil-persluchtsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04492 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5264.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-vastvuil-verdichtingssysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04492 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5265.htm>
+  a owl:Class ;
+  rdfs:label "Afvoeren-vastvuil-verbrandingssysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03356 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem53.htm>
+  a owl:Class ;
+  rdfs:label "Water"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01368 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem531.htm>
+  a owl:Class ;
+  rdfs:label "Water-drinkwater"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04482 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5311.htm>
+  a owl:Class ;
+  rdfs:label "Water-drinkwater-netaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04482 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5312.htm>
+  a owl:Class ;
+  rdfs:label "Water-drinkwater-bronaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04482 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5313.htm>
+  a owl:Class ;
+  rdfs:label "Water-drinkwater-reinwaterkelderaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04482 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5314.htm>
+  a owl:Class ;
+  rdfs:label "Water-drinkwater-drukverhoging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5319.htm>
+  a owl:Class ;
+  rdfs:label "Water-drinkwater-opslagtanks"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04481 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem532.htm>
+  a owl:Class ;
+  rdfs:label "Water-verwarmdtapwater"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04493 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5321.htm>
+  a owl:Class ;
+  rdfs:label "Water-verwarmdtapwater-directverwarmdmetvoorraad"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04493 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5322.htm>
+  a owl:Class ;
+  rdfs:label "Water-verwarmdtapwater-indirectverwarmdmetvoorraad"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04493 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5323.htm>
+  a owl:Class ;
+  rdfs:label "Water-verwarmdtapwater-doorstroom-directverwarmd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04493 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5324.htm>
+  a owl:Class ;
+  rdfs:label "Water-verwarmdtapwater-doorstroom-indirectverwarmd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04493 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem533.htm>
+  a owl:Class ;
+  rdfs:label "Water-bedrijfswater"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01367 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5331.htm>
+  a owl:Class ;
+  rdfs:label "Water-bedrijfswater-onthard-watersysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01367 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5332.htm>
+  a owl:Class ;
+  rdfs:label "Water-bedrijfswater-demi-watersysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01367 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5333.htm>
+  a owl:Class ;
+  rdfs:label "Water-bedrijfswater-gedistilleerd-watersysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01367 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5334.htm>
+  a owl:Class ;
+  rdfs:label "Water-bedrijfswater-zwembad-watersysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01367 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem534.htm>
+  a owl:Class ;
+  rdfs:label "Water-gebruiksstoomencondens"@nl-nl ;
+  skos:related cbnlcore:CB04494 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5341.htm>
+  a owl:Class ;
+  rdfs:label "Water-gebruiksstoomencondens-lage-drukstoomsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04494 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5342.htm>
+  a owl:Class ;
+  rdfs:label "Water-gebruiksstoomencondens-hoge-drukstoomsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04494 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5344.htm>
+  a owl:Class ;
+  rdfs:label "Water-gebruiksstoomencondens-condensverzamelsysteem"@nl-nl ;
+  skos:related cbnlcore:CB04494 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem535.htm>
+  a owl:Class ;
+  rdfs:label "Water-waterbehandeling"@nl-nl ;
+  skos:related cbnlcore:CB03472 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5351.htm>
+  a owl:Class ;
+  rdfs:label "Water-waterbehandeling-filtratiesysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03472 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5352.htm>
+  a owl:Class ;
+  rdfs:label "Water-waterbehandeling-absorbtiesysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03472 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5353.htm>
+  a owl:Class ;
+  rdfs:label "Water-waterbehandeling-ontgassingssysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03472 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5354.htm>
+  a owl:Class ;
+  rdfs:label "Water-waterbehandeling-destillatiesysteem"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03471 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem54.htm>
+  a owl:Class ;
+  rdfs:label "Gasinstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02856 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem541.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-brandstof"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04495 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5411.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-brandstof-aardgasvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04495 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5412.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-brandstof-butaanvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04495 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5413.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-brandstof-propaanvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04495 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5414.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-brandstof-LPG-voorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04495 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem542.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-persluchtenvacuÃ­Ã‡mâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB02855 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5421.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-persluchtenvacuÃ­Ã‡m-persluchtvoorzieningâ€¢Ã€__"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02855 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5422.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-persluchtenvacuÃ­Ã‡m-vacuÃ­Ã‡mvoorzieningâ€¢Ã€__"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04484 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem543.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-medisch"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04498 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5431.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-medisch-zuurstofvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04498 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5432.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-medisch-carbogeenvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04498 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5433.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-medisch-lachgasvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04498 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5434.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-medisch-koolzuurvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04498 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5435.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-medisch-medischeluchtvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04498 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem544.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-technisch"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04496 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5441.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-technisch-stikstofvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04496 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5442.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-technisch-waterstofvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04496 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5443.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-technisch-argonvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04496 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5444.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-technisch-heliumvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04496 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5445.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-technisch-acetyleenvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04496 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5446.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-technisch-propaanvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04496 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5447.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-technisch-koolzuurvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04496 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem545.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02856 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5451.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-bijzonder-voorziening-zuiveregassen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02856 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5452.htm>
+  a owl:Class ;
+  rdfs:label "Gassen-bijzonder-voorziening-menggassen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02856 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem55.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekkingendistributie"@nl-nl ;
+  skos:related cbnlcore:CB04463 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem551.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-lokaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04485 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5511.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-lokaal-raamkoelers"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04485 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5512.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-lokaal-splitsystemen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04485 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5513.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-lokaal-compactsystemen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04485 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem552.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-centraalâ€¢Ã€__"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04486 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5521.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-centraal-compressorensystemenâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04486 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5522.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-centraal-absorbtiesystemenâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04486 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5523.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-centraal-grondwatersystemenâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04486 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5524.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-centraal-oppervlaktewatersystemenâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04486 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem553.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-distributie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04500 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5531.htm>
+  a owl:Class ;
+  rdfs:label "Koude-opwekking-distributie-distributiesystemen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04500 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem56.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem561.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-water"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5611.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-water-radiatorsystemen"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5612.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-water-convectorsystemen"@nl-nl ;
+  skos:related cbnlcore:CB04462 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5613.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-water-vloerverwarmingssystemen"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem562.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-stoom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5621.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-stoom-radiatorsystemen"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5622.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-stoom-convestorsystemen"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5624.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-stoom-stralingspanelen"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem563.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-lucht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5631.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-lucht-directdistributiesysteem"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5632.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-lucht-systeemmetstralingsoverdracht"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem564.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-bijzonderâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5641.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-bijzonder-zonnewarmtesystemenâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5642.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-bijzonder-aardwarmtesystemenâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5643.htm>
+  a owl:Class ;
+  rdfs:label "Warmtedistributie-bijzonder-centraalwarmtepompsysteemâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04499 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem57.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem571.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-natuurlijkeventilatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5711.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-natuurlijkeventilatie-voorzieningen-regelbaar"@nl-nl ;
+  skos:related cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5712.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-natuurlijkeventilatie-voorzieningen-nietregelbaar"@nl-nl ;
+  skos:related cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem572.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-lokalemechanischeafzuiging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5721.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-lokalemechanischeafzuiging-afzuiginstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem573.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-centralemechanischeafzuigingâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5731.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-centralemechanischeafzuiging-afzuiginstallatieâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem574.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-lokalemechanischeventilatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5741.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-lokalemechanischeventilatie-ventilatie-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem575.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-centralemechanischeventilatieâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5751.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-centralemechanischeventilatie-ventilatie-installatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5752.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-centralemechanischeventilatie-ventilatie-installatiemetwarmteterugwinning"@nl-nl ;
+  skos:related cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem576.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-lokaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5761.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-lokaal-luchtbehandelingsinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem577.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-centraalâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5771.htm>
+  a owl:Class ;
+  rdfs:label "Luchtbehandeling-centraal-luchtbehandelingsinstallatieâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02044 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem58.htm>
+  a owl:Class ;
+  rdfs:label "Regelingklimaatensanitair"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04503 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem581.htm>
+  a owl:Class ;
+  rdfs:label "Regelingklimaatensanitair-specifiekeregelingen"@nl-nl ;
+  skos:related cbnlcore:CB04503 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5811.htm>
+  a owl:Class ;
+  rdfs:label "Regelingklimaatensanitair-specifiekeregelingen-specifiekeregeling"@nl-nl ;
+  skos:related cbnlcore:CB04503 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5812.htm>
+  a owl:Class ;
+  rdfs:label "Regelingklimaatensanitair-specifiekeregelingen-gecombineerderegeling"@nl-nl ;
+  skos:related cbnlcore:CB04503 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem582.htm>
+  a owl:Class ;
+  rdfs:label "Regelingklimaatensanitair-centralemelding-metingensturingâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04503 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5821.htm>
+  a owl:Class ;
+  rdfs:label "Regelingklimaatensanitair-centralemelding-metingensturing-specifiekeregeling"@nl-nl ;
+  skos:related cbnlcore:CB04503 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem5822.htm>
+  a owl:Class ;
+  rdfs:label "Regelingklimaatensanitair-centralemelding-metingensturing-gecombineerderegeling"@nl-nl ;
+  skos:related cbnlcore:CB04503 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem61.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen"@nl-nl ;
+  skos:related cbnlcore:CB02136 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem611.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-energie-noodstroom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02136 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6111.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-energie-noodstroom-eigenenergieopwekking"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02136 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem612.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-aardingâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6121.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-aarding-veiligheidsaardingâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6122.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-aarding-medischeaarding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6123.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-aarding-specialeaarding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6124.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-aarding-statischeelektriciteit"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6125.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-aarding-bliksemafleiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6126.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-aarding-potentiaalvereffening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem613.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-kanalisatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01149 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6131.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-kanalisatie-t.b.v.installatiesvoorhogespanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01149 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6132.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-kanalisatie-t.b.v.installatiesvoorlagespanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01149 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6133.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-kanalisatie-t.b.v.installatiesvoorcommunicatieofbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01149 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem614.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-energie-hoogspanning"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04507 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6141.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-energie-hoogspanning-1Kvenhoger"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02136 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem615.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-energie-laagspanningâ€¢Ã€__"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04506 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6151.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-energie-laagspanning-lagerdan1Kvenhogerdan100V"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04506 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem616.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-energie-zeerlagespanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04506 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6161.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-energie-zeerlagespanning-lagerdan110V"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04506 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem617.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-bliksemafleidingâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6171.htm>
+  a owl:Class ;
+  rdfs:label "Centraleelektrotechnischevoorzieningen-bliksemafleidingâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01083 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem62.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem621.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-hoogspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6211.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-hoogspanning-1t/m3Kv"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6212.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-hoogspanning-boven3Kv"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem622.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-onbewaakt"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6221.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-onbewaakt-220/230V-380V"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6222.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-onbewaakt-380V-660V"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6223.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-onbewaakt-660V-1Kv"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem623.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-bewaakt"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6231.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-bewaakt-220/230V-380V"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6232.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-bewaakt-380V-660V"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6233.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-bewaakt-660V-1Kv"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem624.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-gestabiliseerd"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6241.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-gestabiliseerd-220/230V-380V"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6242.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-gestabiliseerd-380V-660V"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6243.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-gestabiliseerd-660V-1Kv"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem625.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-gecompenseerd"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6251.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-gecompenseerd-220/230V-380V"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6252.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-gecompenseerd-380V-660V"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6253.htm>
+  a owl:Class ;
+  rdfs:label "Krachtstroom-laagspanning-gecompenseerd-660V-Kv"@nl-nl ;
+  skos:related cbnlcore:CB04509 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem63.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem631.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-onbewaaktâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6311.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-onbewaakt-220/230Vâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6312.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-onbewaakt-115Vâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6313.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-onbewaakt-42Vâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6314.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-onbewaakt-24Vâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem632.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-calamiteiten-decentraal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6323.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-calamiteiten-decentraal-42V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6324.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-calamiteiten-decentraal-24V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem633.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-onbewaakt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6331.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-onbewaakt-220/230V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6332.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-onbewaakt-115V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6333.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-onbewaakt-42V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6334.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-onbewaakt-24V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem634.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-bewaakt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6341.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-bewaakt-220/230V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6342.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-bewaakt-115V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6343.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-bewaakt-42V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6344.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-standaard-bewaakt-24V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem635.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-calamiteiten-centraalâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6351.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-calamiteiten-centraal-220/230V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6352.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-calamiteiten-centraal-115V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6353.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-calamiteiten-centraal-42V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6354.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-calamiteiten-centraal-24V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem636.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-bewaakt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6361.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-bewaakt-220/230V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6362.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-bewaakt-115V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6363.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-bewaakt-42V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6364.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-bewaakt-24V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem637.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-reclame"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6371.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-reclame-220/230V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6372.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-reclame-115V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6373.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-reclame-42V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6374.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-reclame-24V"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6375.htm>
+  a owl:Class ;
+  rdfs:label "Verlichting-bijzonder-reclame-1Kvenhoger"@nl-nl ;
+  skos:related cbnlcore:CB04508 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem64.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem641.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-signalen"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6411.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-signalen-algemenesignaleringen"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6412.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-signalen-algemenepersonenoproep"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6413.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-signalen-tijdsignalering"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6414.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-signalen-aanwezigheid-/betelsignalering"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem642.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-geluiden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6421.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvangeluid/spraak-telefoon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03882 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6422.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvangeluid/spraak-intercom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02360 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6423.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvangeluid/spraak-radio/mobilofoon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02660 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6424.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvangeluid/spraak-geluidsdistributie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02092 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6425.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvangeluid/spraak-vertaalsystemen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6426.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvangeluid/spraak-conferentiesystemen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem643.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-beelden"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6431.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvanbeelden-geslotentelevisiecircuits"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6432.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvanbeelden-geslotenbeeldreproductie"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6433.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvanbeelden-geslotenfilm/dia/overhead"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem644.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvandataâ€¢Ã€__"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04511 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6441.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvandata-geslotendatanet"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04511 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6442.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-overdrachtvandata-openbaardatanet"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04511 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem645.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-geâ€¢Ã€_ntegreerdesystemen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6451.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-geâ€¢Ã€_ntegreerdesystemen-geslotennetwerken"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6452.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-geâ€¢Ã€_ntegreerdesystemen-openbarenetwerken"@nl-nl ;
+  skos:related cbnlcore:CB02093 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem646.htm>
+  a owl:Class ;
+  rdfs:label "Communicatie-antenneinrichtingen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04314 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem65.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem651.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-brand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04510 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6511.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-brand-detectieenalarmering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01639 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6512.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-brand-deurvergrendelingenen-ontgrendelingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04510 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6513.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-brand-brandbestrijding"@nl-nl ;
+  skos:related cbnlcore:CB03138 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem652.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-braak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02323 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6521.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-braak-detectieenalarmering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02322 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6522.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-braak-toegangscontrole"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02323 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem653.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-overlast-detectieenalarmeringâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6531.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-overlast-detectieenalarmering-zonweringsinstallatieâ€¢Ã€__"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04512 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6532.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-overlast-detectieenalarmering-elektromagnetischevoorzieningenâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6534.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-overlast-detectieenalarmering-overspanningsbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6535.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-overlast-detectieenalarmering-gassenbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6536.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-overlast-detectieenalarmering-vloeistofbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6537.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-overlast-detectieenalarmering-stralingsbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6539.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-overlast-detectieenalarmering-overigebeveiligingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem654.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-socialealarmering"@nl-nl ;
+  skos:related cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6541.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-socialealarmering-nooddetectie-geslotensystemen"@nl-nl ;
+  skos:related cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6542.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-socialealarmering-nooddetectie-opensystemen"@nl-nl ;
+  skos:related cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem655.htm>
+  a owl:Class ;
+  rdfs:label "Beveiliging-milieu-overlast-detectieenalarmeringâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01535 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem66.htm>
+  a owl:Class ;
+  rdfs:label "Transport"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem661.htm>
+  a owl:Class ;
+  rdfs:label "Transport-liften"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02562 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6611.htm>
+  a owl:Class ;
+  rdfs:label "Transport-liften-elektrischeliften"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02562 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6612.htm>
+  a owl:Class ;
+  rdfs:label "Transport-liften-hydraulischeliften"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02562 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6613.htm>
+  a owl:Class ;
+  rdfs:label "Transport-liften-trapliften"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03277 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6614.htm>
+  a owl:Class ;
+  rdfs:label "Transport-liften-heftableaus"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02562 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem662.htm>
+  a owl:Class ;
+  rdfs:label "Transport-roltrappenenrolpaden"@nl-nl ;
+  skos:related cbnlcore:CB02992 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6621.htm>
+  a owl:Class ;
+  rdfs:label "Transport-roltrappenenrolpaden-roltrappen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02994 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6622.htm>
+  a owl:Class ;
+  rdfs:label "Transport-roltrappenenrolpaden-rolpaden"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02992 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem663.htm>
+  a owl:Class ;
+  rdfs:label "Transport-goederen"@nl-nl ;
+  skos:related cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6631.htm>
+  a owl:Class ;
+  rdfs:label "Transport-goederen-goederenliften"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02562 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6632.htm>
+  a owl:Class ;
+  rdfs:label "Transport-goederen-goederenheffers"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02562 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6633.htm>
+  a owl:Class ;
+  rdfs:label "Transport-goederen-baantransportmiddelen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6634.htm>
+  a owl:Class ;
+  rdfs:label "Transport-goederen-bandtransportmiddelen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6635.htm>
+  a owl:Class ;
+  rdfs:label "Transport-goederen-baktransportmiddelen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6636.htm>
+  a owl:Class ;
+  rdfs:label "Transport-goederen-hijswerktuigen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02269 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6637.htm>
+  a owl:Class ;
+  rdfs:label "Transport-goederen-vrije-baan-transportvoertuigen"@nl-nl ;
+  skos:related cbnlcore:CB02563 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem664.htm>
+  a owl:Class ;
+  rdfs:label "Transport-documenten"@nl-nl ;
+  skos:related cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6641.htm>
+  a owl:Class ;
+  rdfs:label "Transport-documenten-buizenpost"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6642.htm>
+  a owl:Class ;
+  rdfs:label "Transport-documenten-railcontainerbanen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6644.htm>
+  a owl:Class ;
+  rdfs:label "Transport-documenten-bandtransportmiddelen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02270 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem67.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem671.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-bedieningensignalering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6711.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-bedieningensignalering-elektrotechnischesystemen"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6712.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-bedieningensignalering-optischesystemen"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6713.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-bedieningensignalering-pneumatischesystemen"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6714.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-bedieningensignalering-geâ€¢Ã€_ntegreerdesystemen"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem672.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-automatiseringâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6721.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-automatisering-elektrotechnischesystemenâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6722.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-automatisering-optischesystemenâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6723.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-automatisering-pneumatischesystemenâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6724.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-automatisering-geâ€¢Ã€_ntegreerdesystemenâ€¢Ã€__"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem673.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-regelinstallatiesklimaat/sanitair_opafstand_"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6731.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-regelinstallatiesklimaat/sanitair_opafstand_-elektrotechnischesystemen"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6732.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheersvoorzieningen-regelinstallatiesklimaat/sanitair_opafstand_-optischesystemen"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6733.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-regelinstallatiesklimaat/sanitair_opafstand_-pneumatischesystemen"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem6734.htm>
+  a owl:Class ;
+  rdfs:label "Gebouwbeheervoorzieningen-regelinstallatiesklimaat/sanitair_opafstand_-geâ€¢Ã€_ntegreerdesystemen"@nl-nl ;
+  skos:related cbnlcore:CB04518 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem71.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04525 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem711.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7111.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-standaard-meubileringen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7112.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-standaard-bewegwijzering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7113.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-standaard-kunstwerken"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7114.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-standaard-decoratiese.d."@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem712.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7121.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-bijzonder-meubileringen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7122.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-bijzonder-bewegwijzeringen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7123.htm>
+  a owl:Class ;
+  rdfs:label "Vasteverkeersvoorzieningen-bijzonder-specifiekevoorzieningen_o.a.loopleuningen_"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem72.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04522 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem721.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7211.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen-standaard-meubileringen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7212.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen-standaard-lichtweringen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7213.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen-standaard-gordijnvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7214.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen-standaard-beschermendevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem722.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7221.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen-bijzonder-meubileringvoorspecifiekefunctiedoeleinden"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7222.htm>
+  a owl:Class ;
+  rdfs:label "Vastegebruikersvoorzieningen-bijzonder-instrumenten/apparatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem73.htm>
+  a owl:Class ;
+  rdfs:label "Vastekeukenvoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04530 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem731.htm>
+  a owl:Class ;
+  rdfs:label "Vastekeukenvoorzieningen-standaardâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7311.htm>
+  a owl:Class ;
+  rdfs:label "Vastekeukenvoorzieningen-standaard-keukenmeubilering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7312.htm>
+  a owl:Class ;
+  rdfs:label "Vastekeukenvoorzieningen-standaard-keukenapparatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem732.htm>
+  a owl:Class ;
+  rdfs:label "Vastekeukenvoorzieningen-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7321.htm>
+  a owl:Class ;
+  rdfs:label "Vastekeukenvoorzieningen-bijzonder-keukenmeubilering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7322.htm>
+  a owl:Class ;
+  rdfs:label "Vastekeukenvoorzieningen-bijzonder-keukenapparatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem74.htm>
+  a owl:Class ;
+  rdfs:label "Vastesanitairevoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04520 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem741.htm>
+  a owl:Class ;
+  rdfs:label "Vastesanitairevoorzieningen-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7411.htm>
+  a owl:Class ;
+  rdfs:label "Vastesanitairevoorzieningen-standaard-sanitairetoestellen-normaal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7412.htm>
+  a owl:Class ;
+  rdfs:label "Vastesanitairevoorzieningen-standaard-sanitairetoestellen-aangepast"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7413.htm>
+  a owl:Class ;
+  rdfs:label "Vastesanitairevoorzieningen-standaard-accessoires"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem742.htm>
+  a owl:Class ;
+  rdfs:label "Vastesanitairevoorzieningen-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7421.htm>
+  a owl:Class ;
+  rdfs:label "Vastesanitairevoorzieningen-bijzonder-sanitairetoestellenvoorbijzonderetoepassing"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7422.htm>
+  a owl:Class ;
+  rdfs:label "Vastesanitairevoorzieningen-bijzonder-ingebouwdesanitairevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem75.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04526 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem751.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7511.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen-standaard-gebouwonderhoudsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7512.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen-standaard-interieuronderhoudsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7513.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen-standaard-gevelonderhoudsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem752.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7521.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen-bijzonder-gebouwonderhoudsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7522.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen-bijzonder-interieuronderhoudsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7523.htm>
+  a owl:Class ;
+  rdfs:label "Vasteonderhoudsvoorzieningen-bijzonder-gemechaniseerdegevelonderhoudsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem76.htm>
+  a owl:Class ;
+  rdfs:label "Vasteopslagvoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04521 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem761.htm>
+  a owl:Class ;
+  rdfs:label "Vasteopslagvoorzieningen-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7611.htm>
+  a owl:Class ;
+  rdfs:label "Vasteopslagvoorzieningen-standaard-meubileringen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem762.htm>
+  a owl:Class ;
+  rdfs:label "Vasteopslagvoorzieningen-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7621.htm>
+  a owl:Class ;
+  rdfs:label "Vasteopslagvoorzieningen-bijzonder-gemechaniseerdevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem7622.htm>
+  a owl:Class ;
+  rdfs:label "Vasteopslagvoorzieningen-bijzonder-specifiekevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem81.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04528 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem811.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8111.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-standaard-meubilering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8112.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-standaard-bewegwijzering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8113.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-standaard-kunstwerken"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8114.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-decoratiese.d."@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem812.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8121.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-bijzonder-meubilering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8122.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-bijzonder-bewegwijzering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8123.htm>
+  a owl:Class ;
+  rdfs:label "Losseverkeersinventaris-bijzonder-specifiekevoorzieningen_o.a.afvalbakken_"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem82.htm>
+  a owl:Class ;
+  rdfs:label "Lossegebruikersinventaris"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04523 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem821.htm>
+  a owl:Class ;
+  rdfs:label "Lossegebruikersinventaris-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8211.htm>
+  a owl:Class ;
+  rdfs:label "Lossegebruikersinventaris-standaard-meubilering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8212.htm>
+  a owl:Class ;
+  rdfs:label "Lossegebruikersinventaris-standaard-lichtweringen/verduisteringen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8213.htm>
+  a owl:Class ;
+  rdfs:label "Lossegebruikersinventaris-standaard-lichtweringen/stofferingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem822.htm>
+  a owl:Class ;
+  rdfs:label "Lossegebruikersinventaris-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8221.htm>
+  a owl:Class ;
+  rdfs:label "Lossegebruikersinventaris-bijzonder-meubileringvoorspecifiekefunctiedoeleinden"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8222.htm>
+  a owl:Class ;
+  rdfs:label "Lossegebruikersinventaris-bijzonder-instrumenten/apparatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem83.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04529 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem831.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8311.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-standaard-keukenmeubilering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8312.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-standaard-keukenapparatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8313.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-standaard-kleinekeukeninventaris"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem832.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8321.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-bijzonder-keukeninrichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8322.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-bijzonder-keukenapparatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8323.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-bijzonder-kleinekeukeninventaris"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8324.htm>
+  a owl:Class ;
+  rdfs:label "Lossekeukeninventaris-bijzonder-transportmiddelen_"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem84.htm>
+  a owl:Class ;
+  rdfs:label "Lossesanitaireinventaris"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04527 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem841.htm>
+  a owl:Class ;
+  rdfs:label "Lossesanitaireinventaris-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8411.htm>
+  a owl:Class ;
+  rdfs:label "Lossesanitaireinventaris-afvalvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8412.htm>
+  a owl:Class ;
+  rdfs:label "Lossesanitaireinventaris-voorzieningent.b.v.hygiâ€¢Ã€_â€¢Ã€_ne"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8413.htm>
+  a owl:Class ;
+  rdfs:label "Lossesanitaireinventaris-accessoires"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem842.htm>
+  a owl:Class ;
+  rdfs:label "Lossesanitaireinventaris-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8421.htm>
+  a owl:Class ;
+  rdfs:label "Lossesanitaireinventaris-bijzonder-algemeen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8422.htm>
+  a owl:Class ;
+  rdfs:label "Lossesanitaireinventaris-sanitairetoestellenvoorbijzonderetoepassing"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem85.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04519 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem851.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8511.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris-standaard-schoonmaakapparatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8512.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris-standaard-vuilopslag"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8513.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris-standaard-vuiltransport"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem852.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8521.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris-bijzonder-schoonmaakapparatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8522.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris-bijzonder-vuilopslag"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8523.htm>
+  a owl:Class ;
+  rdfs:label "Losseschoonmaakinventaris-bijzonder-vuiltransport"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem86.htm>
+  a owl:Class ;
+  rdfs:label "Losseopslaginventaris"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04524 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem861.htm>
+  a owl:Class ;
+  rdfs:label "Losseopslaginventaris-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8611.htm>
+  a owl:Class ;
+  rdfs:label "Losseopslaginventaris-standaard-meubileringen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem862.htm>
+  a owl:Class ;
+  rdfs:label "Losseopslaginventaris-bijzonder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8621.htm>
+  a owl:Class ;
+  rdfs:label "Losseopslaginventaris-bijzonder-algemeen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8622.htm>
+  a owl:Class ;
+  rdfs:label "Losseopslaginventaris-bijzonder-gemechaniseerdevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem8623.htm>
+  a owl:Class ;
+  rdfs:label "Losseopslaginventaris-bijzonder-specifiekevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem90.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04531 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem901.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-grondvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9011.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-grondvoorzieningen-verwijderenobstakels"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9012.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-grondvoorzieningen-grondwaterverlagingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9013.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-grondvoorzieningen-drainagevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem902.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-opstallen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9021.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-opstallen-gebouwtjesmetspecialefunctie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9022.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-opstallen-overkappingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem903.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-omheiningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9031.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-omheiningen-muren"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9032.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-omheiningen-hekwerken"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9033.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-omheiningen-overigeafscheidingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem904.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-terreinafwerkingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9041.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-terreinafwerkingen-verhardingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9042.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-terreinafwerkingen-beplantingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9043.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-terreinafwerkingen-waterpartijen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9044.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-terreinafwerkingen-keerwanden_enbalustrades_"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem905.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-werktuigkundig"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9051.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-werktuigkundig-verwarmingsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9052.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-werktuigkundig-afvoervoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9053.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-werktuigkundig-watervoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9054.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-werktuigkundig-gasvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9055.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-werktuigkundig-koudeopwekkingsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9056.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-werktuigkundig-warmtedistributievoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9057.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-werktuigkundig-regelingvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem906.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-elektrotechnisch"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9061.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-elektrotechnisch.Elektrotechnischeenaardingsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9062.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-elektrotechnisch.krachtvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9063.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-elektrotechnisch.lichtvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9064.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-elektrotechnisch.communicatievoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9065.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-elektrotechnisch.beveiligingsvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9066.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-elektrotechnisch-transportvoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9067.htm>
+  a owl:Class ;
+  rdfs:label "Terreinvoorzieningen-elektrotechnisch-beheervoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem907.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-standaard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9071.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-standaard-terreinmeubilering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9072.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-standaard-bewegwijzering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9073.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-standaard-kunstwerken"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9074.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-standaard-decoratiese.d."@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem908.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-bijzonderâ€¢Ã€__"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9081.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-bijzonder-terreinmeubilering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9082.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-bijzonder-specifiekevoorzieningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://cbnl.weaverplatform.com/#/nlsfb/element?id=http:%2F%2Fnl-sfb.bk.tudelft.nl%2Felpags%2Fbiem9083.htm>
+  a owl:Class ;
+  rdfs:label "Terreininrichtingen-bijzonder-bijzondereverhardingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00086 ;
+.
+<http://ont.cbnl.org/mapping/NL-SFB-1-CBNL-20170401>
+  a owl:Ontology ;
+.

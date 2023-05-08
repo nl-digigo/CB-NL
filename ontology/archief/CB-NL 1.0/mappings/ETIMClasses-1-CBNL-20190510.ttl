@@ -1,0 +1,2564 @@
+# baseURI: http://ont.cbnl.org/mapping/ETIMClasses-1-CBNL-20190510
+
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+#@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ont.cbnl.org/mapping/ETIMClasses-1-CBNL-20190510>
+  a owl:Ontology ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000137>
+rdf:type owl:Class ;
+  rdfs:label "Sirene"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000008>
+rdf:type owl:Class ;
+  rdfs:label "Aftakkast railkoker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02511 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000016>
+rdf:type owl:Class ;
+  rdfs:label "CEE-contactdoos explosieveilig"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000017>
+rdf:type owl:Class ;
+  rdfs:label "CEE-contactstop/koppelcontactstop explosieveilig"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000019>
+rdf:type owl:Class ;
+  rdfs:label "Coaxkabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000020>
+rdf:type owl:Class ;
+  rdfs:label "Combinatie schakelaar/wandcontactdoos"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000024>
+rdf:type owl:Class ;
+  rdfs:label "Vloercontactdoos"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000030>
+rdf:type owl:Class ;
+  rdfs:label "Eindschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000034>
+rdf:type owl:Class ;
+  rdfs:label "Glasvezelkabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02152 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000043>
+rdf:type owl:Class ;
+  rdfs:label "Lichte installatiekabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02513 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000047>
+rdf:type owl:Class ;
+  rdfs:label "kabelgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01818 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000057>
+rdf:type owl:Class ;
+  rdfs:label "Installatiekabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02513 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000058>
+rdf:type owl:Class ;
+  rdfs:label "Installatiekast leeg"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000062>
+rdf:type owl:Class ;
+  rdfs:label "Straat- en pleinverlichtingsarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04284 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000086>
+rdf:type owl:Class ;
+  rdfs:label "Perilex contactdoos"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000100>
+rdf:type owl:Class ;
+  rdfs:label "Smeltveilighedenkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02511 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000125>
+rdf:type owl:Class ;
+  rdfs:label "Wandcontactdoos"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000130>
+rdf:type owl:Class ;
+  rdfs:label "Signaalhoorn"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000132>
+rdf:type owl:Class ;
+  rdfs:label "Beldrukker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01917 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000134>
+rdf:type owl:Class ;
+  rdfs:label "Zwakstroomschakelaar voor deurbel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01917 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000135>
+rdf:type owl:Class ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000140>
+rdf:type owl:Class ;
+  rdfs:label "CEE-contactstop"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000186>
+rdf:type owl:Class ;
+  rdfs:label "Scheerwandcontactdoos"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000214>
+rdf:type owl:Class ;
+  rdfs:label "Installatiekast met DIN-rail leeg"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000225>
+rdf:type owl:Class ;
+  rdfs:label "Drukknopkast compleet"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01359 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000236>
+rdf:type owl:Class ;
+  rdfs:label "PLC basiseenheid"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04244 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000237>
+rdf:type owl:Class ;
+  rdfs:label "PLC verbindingskabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000297>
+rdf:type owl:Class ;
+  rdfs:label "Trappenhuisschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02555 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000312>
+rdf:type owl:Class ;
+  rdfs:label "Data schakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04274 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000320>
+rdf:type owl:Class ;
+  rdfs:label "Ventilator voor kast/lessenaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000330>
+rdf:type owl:Class ;
+  rdfs:label "Contactdooscombinatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000339>
+rdf:type owl:Class ;
+  rdfs:label "Verwarmingskabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04259 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000353>
+rdf:type owl:Class ;
+  rdfs:label "Huisdeurtelefoon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000379>
+rdf:type owl:Class ;
+  rdfs:label "CEE-contactdoos combinatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000382>
+rdf:type owl:Class ;
+  rdfs:label "UPS"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04320 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000399>
+rdf:type owl:Class ;
+  rdfs:label "Indicatie- en signaleringslamp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02549 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000416>
+rdf:type owl:Class ;
+  rdfs:label "Antenne (terrestrisch)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01207 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000426>
+rdf:type owl:Class ;
+  rdfs:label "Schotelantenne"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01207 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000435>
+rdf:type owl:Class ;
+  rdfs:label "Lichtmeetcel rolluik"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02559 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000439>
+rdf:type owl:Class ;
+  rdfs:label "Antennecontactdoos"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04276 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000443>
+rdf:type owl:Class ;
+  rdfs:label "Inbouwschakelaar en -drukcontakt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02555 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000479>
+rdf:type owl:Class ;
+  rdfs:label "Pictogram noodverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04322 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000484>
+rdf:type owl:Class ;
+  rdfs:label "Bouwaansluitkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02511 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000532>
+rdf:type owl:Class ;
+  rdfs:label "Ventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000597>
+rdf:type owl:Class ;
+  rdfs:label "Kookplaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000614>
+rdf:type owl:Class ;
+  rdfs:label "Televisie (beeldbuis)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01242 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000628>
+rdf:type owl:Class ;
+  rdfs:label "Koelkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000652>
+rdf:type owl:Class ;
+  rdfs:label "Luidspreker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01242 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000661>
+rdf:type owl:Class ;
+  rdfs:label "Magnetron"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000664>
+rdf:type owl:Class ;
+  rdfs:label "Inbouw kookplaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000683>
+rdf:type owl:Class ;
+  rdfs:label "Netontstoorfilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03830 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000778>
+rdf:type owl:Class ;
+  rdfs:label "ISDN telefoon met snoer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000779>
+rdf:type owl:Class ;
+  rdfs:label "Huistelefoon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000782>
+rdf:type owl:Class ;
+  rdfs:label "Kaartlezer bussysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01067 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000825>
+rdf:type owl:Class ;
+  rdfs:label "Vlakkabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04259 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000826>
+rdf:type owl:Class ;
+  rdfs:label "Liftkabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02513 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000829>
+rdf:type owl:Class ;
+  rdfs:label "Signaal-/telefoonkabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000830>
+rdf:type owl:Class ;
+  rdfs:label "Computerdatakabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000838>
+rdf:type owl:Class ;
+  rdfs:label "Thermokoppelkabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04259 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000844>
+rdf:type owl:Class ;
+  rdfs:label "Zoemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000927>
+rdf:type owl:Class ;
+  rdfs:label "Lichtmeetcel bussysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02559 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000976>
+rdf:type owl:Class ;
+  rdfs:label "Scheepsvoedingskabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02513 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000977>
+rdf:type owl:Class ;
+  rdfs:label "Scheepscommunicatiekabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000981>
+rdf:type owl:Class ;
+  rdfs:label "Explosieveilig noodverlichtings- en signaleringsarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04269 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000994>
+rdf:type owl:Class ;
+  rdfs:label "Installatiekabel voor onder stucwerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02513 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC000997>
+rdf:type owl:Class ;
+  rdfs:label "Vliegveldverlichtingskabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02513 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001006>
+rdf:type owl:Class ;
+  rdfs:label "Aftakstuk kabelgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04250 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001007>
+rdf:type owl:Class ;
+  rdfs:label "Verloopstuk kabelgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04250 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001026>
+rdf:type owl:Class ;
+  rdfs:label "Paneelzoemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001058>
+rdf:type owl:Class ;
+  rdfs:label "Tunnelverlichtingsarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04284 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001081>
+rdf:type owl:Class ;
+  rdfs:label "Kamerantenne"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01207 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001135>
+rdf:type owl:Class ;
+  rdfs:label "Coax koppeling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02744 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001136>
+rdf:type owl:Class ;
+  rdfs:label "Sub-D koppeling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02744 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001137>
+rdf:type owl:Class ;
+  rdfs:label "Hoogspanningskabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02293 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001138>
+rdf:type owl:Class ;
+  rdfs:label "Extra hoogspanningskabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02293 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001170>
+rdf:type owl:Class ;
+  rdfs:label "Kabelaftakmof"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001185>
+rdf:type owl:Class ;
+  rdfs:label "Hydraulische aandrijfeenheid"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04243 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001210>
+rdf:type owl:Class ;
+  rdfs:label "Waterfilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03409 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001262>
+rdf:type owl:Class ;
+  rdfs:label "Patchkabel twisted pair"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001264>
+rdf:type owl:Class ;
+  rdfs:label "Datacontactdoos twisted pair"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04281 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001317>
+rdf:type owl:Class ;
+  rdfs:label "CEE-contactdoos; aanbouw"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001319>
+rdf:type owl:Class ;
+  rdfs:label "CEE-toestelcontactdoos"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001321>
+rdf:type owl:Class ;
+  rdfs:label "CEE-wandcontactdoos"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001324>
+rdf:type owl:Class ;
+  rdfs:label "CEE-contactdoos uitschakelbaar; beveiligd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001325>
+rdf:type owl:Class ;
+  rdfs:label "Toestelcontactdoos geaard"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001326>
+rdf:type owl:Class ;
+  rdfs:label "Toestelcontactstop geaard"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001333>
+rdf:type owl:Class ;
+  rdfs:label "Flitslicht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02549 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001335>
+rdf:type owl:Class ;
+  rdfs:label "Explosieveilig flitslicht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02549 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001336>
+rdf:type owl:Class ;
+  rdfs:label "Explosieveilige elektronische zoemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001337>
+rdf:type owl:Class ;
+  rdfs:label "Explosieveilig zwaailicht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02549 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001338>
+rdf:type owl:Class ;
+  rdfs:label "Explosieveilige signaalhoorn"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001341>
+rdf:type owl:Class ;
+  rdfs:label "Zwaailicht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02549 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001351>
+rdf:type owl:Class ;
+  rdfs:label "Deurbelpaneel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001409>
+rdf:type owl:Class ;
+  rdfs:label "Datacontactdoos glasvezel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04281 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001410>
+rdf:type owl:Class ;
+  rdfs:label "DCF-antenne voor schakelklok"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01207 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001413>
+rdf:type owl:Class ;
+  rdfs:label "Industriâ€˜le PC"@nl-nl ;
+  rdfs:label "Industri‘le PC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01751 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001414>
+rdf:type owl:Class ;
+  rdfs:label "Panel-PC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01751 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001476>
+rdf:type owl:Class ;
+  rdfs:label "Glasvezelkabel voor microduct"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02152 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001486>
+rdf:type owl:Class ;
+  rdfs:label "Toerenopnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03095 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001500>
+rdf:type owl:Class ;
+  rdfs:label "Transformator laagvolt lichtsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04291 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001525>
+rdf:type owl:Class ;
+  rdfs:label "Inbraakmeldcentrale"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01181 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001528>
+rdf:type owl:Class ;
+  rdfs:label "Videohuistelefoon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001542>
+rdf:type owl:Class ;
+  rdfs:label "Kruisstuk kabelgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04250 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001544>
+rdf:type owl:Class ;
+  rdfs:label "T-stuk kabelgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04250 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001545>
+rdf:type owl:Class ;
+  rdfs:label "Inbouwschakelaar modulair"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02555 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001547>
+rdf:type owl:Class ;
+  rdfs:label "Beltransformator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04291 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001553>
+rdf:type owl:Class ;
+  rdfs:label "Filter voor afzuigkappen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001579>
+rdf:type owl:Class ;
+  rdfs:label "Combinatiekabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04259 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001590>
+rdf:type owl:Class ;
+  rdfs:label "Installatieschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02555 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001630>
+rdf:type owl:Class ;
+  rdfs:label "Televisie (LCD/LED)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01242 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001631>
+rdf:type owl:Class ;
+  rdfs:label "Televisie (plasma)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01242 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001634>
+rdf:type owl:Class ;
+  rdfs:label "Audio/Video-zendsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01242 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001663>
+rdf:type owl:Class ;
+  rdfs:label "Wandcontactdoos modulair"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04277 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001681>
+rdf:type owl:Class ;
+  rdfs:label "Patchkabel telecommunicatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001682>
+rdf:type owl:Class ;
+  rdfs:label "Patchkabel coax"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001691>
+rdf:type owl:Class ;
+  rdfs:label "Analoge telefoon met snoer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001696>
+rdf:type owl:Class ;
+  rdfs:label "VoIP telefoon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001743>
+rdf:type owl:Class ;
+  rdfs:label "Pendelarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04284 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001763>
+rdf:type owl:Class ;
+  rdfs:label "Brandmelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001767>
+rdf:type owl:Class ;
+  rdfs:label "Brandmeldpaneel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01181 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001818>
+rdf:type owl:Class ;
+  rdfs:label "Inductieve afstandssensor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001821>
+rdf:type owl:Class ;
+  rdfs:label "Lichtsensor energetisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02559 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001825>
+rdf:type owl:Class ;
+  rdfs:label "Optische afstandssensor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001829>
+rdf:type owl:Class ;
+  rdfs:label "Eindschakelaar modulair"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001846>
+rdf:type owl:Class ;
+  rdfs:label "Ultrasone afstandssensor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001849>
+rdf:type owl:Class ;
+  rdfs:label "Ultrasone drukschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001851>
+rdf:type owl:Class ;
+  rdfs:label "Elektromotor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04326 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001855>
+rdf:type owl:Class ;
+  rdfs:label "Sensor/actorkabel met connector"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001858>
+rdf:type owl:Class ;
+  rdfs:label "Wijnkoelkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01243 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001916>
+rdf:type owl:Class ;
+  rdfs:label "Stroomverdeler voor verhoogde installatievloer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02511 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001938>
+rdf:type owl:Class ;
+  rdfs:label "wandgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01818 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001952>
+rdf:type owl:Class ;
+  rdfs:label "Explosieveilig armatuur; vaste montage"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04284 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC001957>
+rdf:type owl:Class ;
+  rdfs:label "Noodverlichtingsarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04269 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002014>
+rdf:type owl:Class ;
+  rdfs:label "Thermostaat voor kast/lessenaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002033>
+rdf:type owl:Class ;
+  rdfs:label "Noodstoptrekkoordschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02219 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002034>
+rdf:type owl:Class ;
+  rdfs:label "Noodstop compleet"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02219 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002037>
+rdf:type owl:Class ;
+  rdfs:label "Regeltransformator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04291 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002045>
+rdf:type owl:Class ;
+  rdfs:label "Stabilisatietransformator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04291 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002067>
+rdf:type owl:Class ;
+  rdfs:label "Glasvezel lasbox"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04116 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002081>
+rdf:type owl:Class ;
+  rdfs:label "Temperatuursonde"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002276>
+rdf:type owl:Class ;
+  rdfs:label "Aardlekschakelaarkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02511 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002277>
+rdf:type owl:Class ;
+  rdfs:label "Schakelveilighedenkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02511 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002280>
+rdf:type owl:Class ;
+  rdfs:label "Schakelaarkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02511 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002288>
+rdf:type owl:Class ;
+  rdfs:label "Installatiekast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002397>
+rdf:type owl:Class ;
+  rdfs:label "Verticaal wandstuk kabelgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04250 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002400>
+rdf:type owl:Class ;
+  rdfs:label "Bocht/hoekstuk kabelgoot"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04250 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002456>
+rdf:type owl:Class ;
+  rdfs:label "Breekglas handmelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02219 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002457>
+rdf:type owl:Class ;
+  rdfs:label "Mechanische verbindingsmof voor telecommunicatiekabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002487>
+rdf:type owl:Class ;
+  rdfs:label "Explosieveilige telefoon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002489>
+rdf:type owl:Class ;
+  rdfs:label "Weerbestendige telefoon"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03240 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002492>
+rdf:type owl:Class ;
+  rdfs:label "EEx-luidspreker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01242 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002502>
+rdf:type owl:Class ;
+  rdfs:label "Kast/behuizing voor PC; monitor of periferie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002503>
+rdf:type owl:Class ;
+  rdfs:label "Kast/behuizing voor explosieveilige toepassing"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002513>
+rdf:type owl:Class ;
+  rdfs:label "Filter (schakelkast airco)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002514>
+rdf:type owl:Class ;
+  rdfs:label "Lucht/lucht warmtewisselaar (schakelkast airco)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02326 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002515>
+rdf:type owl:Class ;
+  rdfs:label "Lucht/water warmtewisselaar (schakelkast airco)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02326 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002516>
+rdf:type owl:Class ;
+  rdfs:label "Vloeistofkoeler voor kast/lessenaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01799 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002544>
+rdf:type owl:Class ;
+  rdfs:label "Magnetische naderingsschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002564>
+rdf:type owl:Class ;
+  rdfs:label "Filter voor laagspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03830 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002565>
+rdf:type owl:Class ;
+  rdfs:label "Filterschakeling smoorspoel voor laagspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03830 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002567>
+rdf:type owl:Class ;
+  rdfs:label "Compacte verdeler voor insteekbare gebouwinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02511 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002574>
+rdf:type owl:Class ;
+  rdfs:label "Inbouwpaneel voor telecommunicatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01359 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002587>
+rdf:type owl:Class ;
+  rdfs:label "Patchkabel voor insteekbare gebouwinstallatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002592>
+rdf:type owl:Class ;
+  rdfs:label "Eindschakelaar met gescheiden bedieningselement"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002593>
+rdf:type owl:Class ;
+  rdfs:label "Eindschakelaar met vergrendelingsfunctie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002597>
+rdf:type owl:Class ;
+  rdfs:label "Datacontactdoos twisted pair industrie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04281 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002598>
+rdf:type owl:Class ;
+  rdfs:label "Datacontactdoos glasvezel industrie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04281 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002599>
+rdf:type owl:Class ;
+  rdfs:label "Patchkabel twisted pair voor industrie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002631>
+rdf:type owl:Class ;
+  rdfs:label "Slot-PLC (PC-gebaseerde besturingen)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04244 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002632>
+rdf:type owl:Class ;
+  rdfs:label "Compleet systeem (PC gebaseerde besturingen)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01751 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002633>
+rdf:type owl:Class ;
+  rdfs:label "Soft-PLC (PC-gebaseerde besturingen)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04244 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002685>
+rdf:type owl:Class ;
+  rdfs:label "Brandmeldcentrale"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01181 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002698>
+rdf:type owl:Class ;
+  rdfs:label "Systeem patchkabel twisted pair"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002713>
+rdf:type owl:Class ;
+  rdfs:label "Klemmenkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04255 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002714>
+rdf:type owl:Class ;
+  rdfs:label "Inductieve naderingsschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002715>
+rdf:type owl:Class ;
+  rdfs:label "Capacitieve naderingsschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04287 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002719>
+rdf:type owl:Class ;
+  rdfs:label "Lichtsensor met achtergrondfilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02559 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002823>
+rdf:type owl:Class ;
+  rdfs:label "Stroomgenerator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04505 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002842>
+rdf:type owl:Class ;
+  rdfs:label "Explosieveilige brandmelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002860>
+rdf:type owl:Class ;
+  rdfs:label "Luchtcompressor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03710 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002872>
+rdf:type owl:Class ;
+  rdfs:label "Brandstoftank (voor stroomgenerator)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002874>
+rdf:type owl:Class ;
+  rdfs:label "Meet/-inspectieput aarding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02351 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002892>
+rdf:type owl:Class ;
+  rdfs:label "Plafond-wandarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01233 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002941>
+rdf:type owl:Class ;
+  rdfs:label "Filter voor gas- en dampmasker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002973>
+rdf:type owl:Class ;
+  rdfs:label "Weerbestendige luidspreker"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01242 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC002992>
+rdf:type owl:Class ;
+  rdfs:label "Coriolis-massa-stromingsmeter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010003>
+rdf:type owl:Class ;
+  rdfs:label "Dompelthermostaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010004>
+rdf:type owl:Class ;
+  rdfs:label "Woonhuisventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010006>
+rdf:type owl:Class ;
+  rdfs:label "Olievoorzetbrander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010014>
+rdf:type owl:Class ;
+  rdfs:label "Constant debietregelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04278 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010018>
+rdf:type owl:Class ;
+  rdfs:label "Thermostaat voor fancoilunit"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010022>
+rdf:type owl:Class ;
+  rdfs:label "Ont- en beluchter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010024>
+rdf:type owl:Class ;
+  rdfs:label "Driewegplugafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04261 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010028>
+rdf:type owl:Class ;
+  rdfs:label "Kabeltemperatuuropnemer actief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010032>
+rdf:type owl:Class ;
+  rdfs:label "Dunwandige stalen buis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010035>
+rdf:type owl:Class ;
+  rdfs:label "Ruimte-opnemer RV/temperatuur actief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010037>
+rdf:type owl:Class ;
+  rdfs:label "Rookgastemperatuuropnemer actief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010045>
+rdf:type owl:Class ;
+  rdfs:label "Zonneboilervat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010055>
+rdf:type owl:Class ;
+  rdfs:label "Fecaliâ€˜ndompelpomp"@nl-nl ;
+  rdfs:label "Fecali‘ndompelpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010058>
+rdf:type owl:Class ;
+  rdfs:label "Stopkraan (tapwater)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010059>
+rdf:type owl:Class ;
+  rdfs:label "Glasthermometer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04280 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010060>
+rdf:type owl:Class ;
+  rdfs:label "Knelringfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010070>
+rdf:type owl:Class ;
+  rdfs:label "Aluminium profielbuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010071>
+rdf:type owl:Class ;
+  rdfs:label "Vul- en aftapkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010075>
+rdf:type owl:Class ;
+  rdfs:label "Vierwegplugafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04263 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010076>
+rdf:type owl:Class ;
+  rdfs:label "Fundatie normpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010080>
+rdf:type owl:Class ;
+  rdfs:label "Emmerfilter; enkel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010102>
+rdf:type owl:Class ;
+  rdfs:label "Vierwegkogelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04263 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010103>
+rdf:type owl:Class ;
+  rdfs:label "Uitblaastuit rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04258 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010106>
+rdf:type owl:Class ;
+  rdfs:label "Niveauopnemer vloeistof"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04286 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010112>
+rdf:type owl:Class ;
+  rdfs:label "Schuiffitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010120>
+rdf:type owl:Class ;
+  rdfs:label "Klepafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010131>
+rdf:type owl:Class ;
+  rdfs:label "Beluchter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010142>
+rdf:type owl:Class ;
+  rdfs:label "Spoelreservoirvlotterkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010149>
+rdf:type owl:Class ;
+  rdfs:label "Overgangssysteemfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010152>
+rdf:type owl:Class ;
+  rdfs:label "Convectorradiator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01846 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010154>
+rdf:type owl:Class ;
+  rdfs:label "Schuiffitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010158>
+rdf:type owl:Class ;
+  rdfs:label "Overgangssysteemfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010163>
+rdf:type owl:Class ;
+  rdfs:label "Schuifafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010171>
+rdf:type owl:Class ;
+  rdfs:label "Pneumatisch bediende tweewegregelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010174>
+rdf:type owl:Class ;
+  rdfs:label "Ruimte-opnemer RV/temperatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010184>
+rdf:type owl:Class ;
+  rdfs:label "Boiler voorraadvat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010185>
+rdf:type owl:Class ;
+  rdfs:label "Buitentemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010198>
+rdf:type owl:Class ;
+  rdfs:label "Ketel met voorzetbrander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010199>
+rdf:type owl:Class ;
+  rdfs:label "Emmerfilter; dubbel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010205>
+rdf:type owl:Class ;
+  rdfs:label "Eenbladsregelklep ovaal luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010214>
+rdf:type owl:Class ;
+  rdfs:label "Driewegnaaldafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04261 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010216>
+rdf:type owl:Class ;
+  rdfs:label "Regelaar met vaste applicatie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04278 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010223>
+rdf:type owl:Class ;
+  rdfs:label "Dompeltemperatuuropnemer actief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010224>
+rdf:type owl:Class ;
+  rdfs:label "Klembandfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010231>
+rdf:type owl:Class ;
+  rdfs:label "Boiler directgestookt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03631 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010238>
+rdf:type owl:Class ;
+  rdfs:label "Naaldafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010240>
+rdf:type owl:Class ;
+  rdfs:label "Lamineerfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010241>
+rdf:type owl:Class ;
+  rdfs:label "Lamineerfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010243>
+rdf:type owl:Class ;
+  rdfs:label "Lijmfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010244>
+rdf:type owl:Class ;
+  rdfs:label "Lijmfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010245>
+rdf:type owl:Class ;
+  rdfs:label "Lijmfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010246>
+rdf:type owl:Class ;
+  rdfs:label "Draadfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010247>
+rdf:type owl:Class ;
+  rdfs:label "Draadfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010248>
+rdf:type owl:Class ;
+  rdfs:label "Draadfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010249>
+rdf:type owl:Class ;
+  rdfs:label "Flensfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010250>
+rdf:type owl:Class ;
+  rdfs:label "Flensfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010251>
+rdf:type owl:Class ;
+  rdfs:label "Flensfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010253>
+rdf:type owl:Class ;
+  rdfs:label "Soldeerfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010264>
+rdf:type owl:Class ;
+  rdfs:label "Brandslanghaspel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04272 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010267>
+rdf:type owl:Class ;
+  rdfs:label "Doseerpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010268>
+rdf:type owl:Class ;
+  rdfs:label "Handvleugelpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010270>
+rdf:type owl:Class ;
+  rdfs:label "Groeffitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010274>
+rdf:type owl:Class ;
+  rdfs:label "Nozzle-rooster"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02109 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010303>
+rdf:type owl:Class ;
+  rdfs:label "Driewegmagneetafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04261 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010304>
+rdf:type owl:Class ;
+  rdfs:label "Vierwegmagneetafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04263 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010308>
+rdf:type owl:Class ;
+  rdfs:label "Groeffitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010309>
+rdf:type owl:Class ;
+  rdfs:label "Groeffitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010315>
+rdf:type owl:Class ;
+  rdfs:label "Drukregelaar mediumgestuurd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04278 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010325>
+rdf:type owl:Class ;
+  rdfs:label "Brandblusunit"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04272 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010326>
+rdf:type owl:Class ;
+  rdfs:label "Zelfaanzuigende horizontale pomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010328>
+rdf:type owl:Class ;
+  rdfs:label "Lamineerfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010331>
+rdf:type owl:Class ;
+  rdfs:label "Klemfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010332>
+rdf:type owl:Class ;
+  rdfs:label "Klemfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010333>
+rdf:type owl:Class ;
+  rdfs:label "Klemfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010335>
+rdf:type owl:Class ;
+  rdfs:label "Kunststoflasfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010336>
+rdf:type owl:Class ;
+  rdfs:label "Kunststoflasfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010339>
+rdf:type owl:Class ;
+  rdfs:label "Kunststof buis geribd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010340>
+rdf:type owl:Class ;
+  rdfs:label "Elektronische kraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010343>
+rdf:type owl:Class ;
+  rdfs:label "Bronpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010345>
+rdf:type owl:Class ;
+  rdfs:label "Vetvangluchtfilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010346>
+rdf:type owl:Class ;
+  rdfs:label "Geluiddemper rechthoekig luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02595 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010347>
+rdf:type owl:Class ;
+  rdfs:label "Rasterrooster"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02109 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010350>
+rdf:type owl:Class ;
+  rdfs:label "Zonnecollector"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03542 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010351>
+rdf:type owl:Class ;
+  rdfs:label "Jaloezieklep kanaalinbouw"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010352>
+rdf:type owl:Class ;
+  rdfs:label "Brandklep rechthoekig"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010354>
+rdf:type owl:Class ;
+  rdfs:label "Brandklep rond"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010386>
+rdf:type owl:Class ;
+  rdfs:label "Handplunjerpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010402>
+rdf:type owl:Class ;
+  rdfs:label "PTFE compensator met flenzen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010403>
+rdf:type owl:Class ;
+  rdfs:label "Rubber compensator met flenzen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010463>
+rdf:type owl:Class ;
+  rdfs:label "Handmembraanpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010540>
+rdf:type owl:Class ;
+  rdfs:label "Verticale niveauschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04286 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010559>
+rdf:type owl:Class ;
+  rdfs:label "Luchtbehandelingskast binnen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04288 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010569>
+rdf:type owl:Class ;
+  rdfs:label "Slibvangput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03877 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010571>
+rdf:type owl:Class ;
+  rdfs:label "Koppelvat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010582>
+rdf:type owl:Class ;
+  rdfs:label "elektromagnetische vloeistofstromingsmeter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010586>
+rdf:type owl:Class ;
+  rdfs:label "Vloeistofstromingsmeter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010587>
+rdf:type owl:Class ;
+  rdfs:label "Luchtstromingsmeter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010588>
+rdf:type owl:Class ;
+  rdfs:label "Pneumatische ontgrendelingscylinder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04273 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010595>
+rdf:type owl:Class ;
+  rdfs:label "Zonneboilervat met geâ€¢ntegreerde CV"@nl-nl ;
+  rdfs:label "Zonneboilervat met ge•ntegreerde CV"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010606>
+rdf:type owl:Class ;
+  rdfs:label "Metalen compensator met flenzen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010732>
+rdf:type owl:Class ;
+  rdfs:label "Blokpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010733>
+rdf:type owl:Class ;
+  rdfs:label "Vuilwaterdompelpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010787>
+rdf:type owl:Class ;
+  rdfs:label "Mechanische constant volumeregelaar rond"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04278 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010798>
+rdf:type owl:Class ;
+  rdfs:label "Rubber compensator met draadaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010799>
+rdf:type owl:Class ;
+  rdfs:label "Rubber compensator met klembandaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010800>
+rdf:type owl:Class ;
+  rdfs:label "Metalen compensator met draadaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010801>
+rdf:type owl:Class ;
+  rdfs:label "Metalen compensator met lasaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010802>
+rdf:type owl:Class ;
+  rdfs:label "Metalen compensator soldeeraansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010837>
+rdf:type owl:Class ;
+  rdfs:label "Kabel regelapparatuur met connector"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03072 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010859>
+rdf:type owl:Class ;
+  rdfs:label "Flexibele aluminiumbuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010860>
+rdf:type owl:Class ;
+  rdfs:label "Vuilwaterpompunit"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010862>
+rdf:type owl:Class ;
+  rdfs:label "Badmengkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010871>
+rdf:type owl:Class ;
+  rdfs:label "Ketel voor voorzetbrander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010875>
+rdf:type owl:Class ;
+  rdfs:label "Toiletkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010877>
+rdf:type owl:Class ;
+  rdfs:label "Uitblaastuit rechthoekig luchtkanaal 45 gr"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04258 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010882>
+rdf:type owl:Class ;
+  rdfs:label "Kunststof buis glad"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010883>
+rdf:type owl:Class ;
+  rdfs:label "Wandopbouwventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010888>
+rdf:type owl:Class ;
+  rdfs:label "Bidetmengkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010893>
+rdf:type owl:Class ;
+  rdfs:label "Aanwezigheidsopnemer schakelend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01067 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010900>
+rdf:type owl:Class ;
+  rdfs:label "Kabeltemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010909>
+rdf:type owl:Class ;
+  rdfs:label "Dompeltemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010917>
+rdf:type owl:Class ;
+  rdfs:label "Plugafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010920>
+rdf:type owl:Class ;
+  rdfs:label "Lichtintensiteitsopnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02559 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010927>
+rdf:type owl:Class ;
+  rdfs:label "Ruimtethermostaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010930>
+rdf:type owl:Class ;
+  rdfs:label "Muurinbouwventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010934>
+rdf:type owl:Class ;
+  rdfs:label "Klembandfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010936>
+rdf:type owl:Class ;
+  rdfs:label "Kanaalluchtkwaliteitsopnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04285 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010943>
+rdf:type owl:Class ;
+  rdfs:label "Kunststof expansiemof"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010944>
+rdf:type owl:Class ;
+  rdfs:label "Luchtstromingsopnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010945>
+rdf:type owl:Class ;
+  rdfs:label "Buitentemperatuuropnemer actief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010950>
+rdf:type owl:Class ;
+  rdfs:label "Roestvaststalen (RVS) buis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010952>
+rdf:type owl:Class ;
+  rdfs:label "Ruimteluchtkwaliteitsopnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04285 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010955>
+rdf:type owl:Class ;
+  rdfs:label "Combiketel voor voorzetbrander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010958>
+rdf:type owl:Class ;
+  rdfs:label "Membraandrukexpansievat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010970>
+rdf:type owl:Class ;
+  rdfs:label "Metalen compensator met knelverbinding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04252 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010976>
+rdf:type owl:Class ;
+  rdfs:label "Knelringfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010980>
+rdf:type owl:Class ;
+  rdfs:label "Inbouwcirculatiepomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010981>
+rdf:type owl:Class ;
+  rdfs:label "Overgangsfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010986>
+rdf:type owl:Class ;
+  rdfs:label "Buiskrimpmof"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010993>
+rdf:type owl:Class ;
+  rdfs:label "Schoorsteen geluiddemper"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02595 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010994>
+rdf:type owl:Class ;
+  rdfs:label "Centrifugaalventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC010999>
+rdf:type owl:Class ;
+  rdfs:label "Gasvoorzetbrander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011009>
+rdf:type owl:Class ;
+  rdfs:label "Fecaliâ€˜npomp met normmotor"@nl-nl ;
+  rdfs:label "Fecali‘npomp met normmotor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011011>
+rdf:type owl:Class ;
+  rdfs:label "Dakventilator wisselspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011012>
+rdf:type owl:Class ;
+  rdfs:label "Circulatieventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011013>
+rdf:type owl:Class ;
+  rdfs:label "Buisventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011017>
+rdf:type owl:Class ;
+  rdfs:label "Eenbladsluchtregelklep rechthoekig"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011019>
+rdf:type owl:Class ;
+  rdfs:label "Geluiddemper rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02595 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011022>
+rdf:type owl:Class ;
+  rdfs:label "Paneelradiator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01846 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011023>
+rdf:type owl:Class ;
+  rdfs:label "Buisradiator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01846 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011030>
+rdf:type owl:Class ;
+  rdfs:label "Luchtverhitter indirect gestookt hangend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01290 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011047>
+rdf:type owl:Class ;
+  rdfs:label "Afperspomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011055>
+rdf:type owl:Class ;
+  rdfs:label "Brandblusser"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04272 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011066>
+rdf:type owl:Class ;
+  rdfs:label "Dompelpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011104>
+rdf:type owl:Class ;
+  rdfs:label "Lastransformator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04291 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011109>
+rdf:type owl:Class ;
+  rdfs:label "Luchtdebietmeter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011155>
+rdf:type owl:Class ;
+  rdfs:label "Peilglastoestel onder en boven"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04271 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011156>
+rdf:type owl:Class ;
+  rdfs:label "Peilglastoestel onder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04271 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011157>
+rdf:type owl:Class ;
+  rdfs:label "Peilglastoestel boven"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04271 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011159>
+rdf:type owl:Class ;
+  rdfs:label "Peilglas cilindrisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04271 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011160>
+rdf:type owl:Class ;
+  rdfs:label "Peiltoestel magnetisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04271 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011162>
+rdf:type owl:Class ;
+  rdfs:label "Peilglas plat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04271 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011165>
+rdf:type owl:Class ;
+  rdfs:label "Bimetaalthermometer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04280 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011167>
+rdf:type owl:Class ;
+  rdfs:label "Drukverschilmanometer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01925 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011168>
+rdf:type owl:Class ;
+  rdfs:label "Membraanmanometer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01925 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011170>
+rdf:type owl:Class ;
+  rdfs:label "Buisveermanometer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01925 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011171>
+rdf:type owl:Class ;
+  rdfs:label "Buitenthermostaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011172>
+rdf:type owl:Class ;
+  rdfs:label "Kanaalthermostaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011173>
+rdf:type owl:Class ;
+  rdfs:label "Aanlegthermostaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011174>
+rdf:type owl:Class ;
+  rdfs:label "Vorstbeveiligingsthermostaat(lucht)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011177>
+rdf:type owl:Class ;
+  rdfs:label "Stromingsschakelaar lucht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011178>
+rdf:type owl:Class ;
+  rdfs:label "Vlotterschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04286 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011179>
+rdf:type owl:Class ;
+  rdfs:label "Drukverschilschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011194>
+rdf:type owl:Class ;
+  rdfs:label "Stromingsschakelaar vloeistof"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011205>
+rdf:type owl:Class ;
+  rdfs:label "Niveauschakelaar voor stoomketel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04286 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011206>
+rdf:type owl:Class ;
+  rdfs:label "Elektronische niveauschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04286 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011208>
+rdf:type owl:Class ;
+  rdfs:label "Persfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011209>
+rdf:type owl:Class ;
+  rdfs:label "Persfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011212>
+rdf:type owl:Class ;
+  rdfs:label "Systeemfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011222>
+rdf:type owl:Class ;
+  rdfs:label "Uitblaasbocht rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04258 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011226>
+rdf:type owl:Class ;
+  rdfs:label "Oppervlaktetemperatuur opnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011227>
+rdf:type owl:Class ;
+  rdfs:label "Plafondtemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011228>
+rdf:type owl:Class ;
+  rdfs:label "Vorsttemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011229>
+rdf:type owl:Class ;
+  rdfs:label "Rookgastemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011238>
+rdf:type owl:Class ;
+  rdfs:label "Cassetteluchtfilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011239>
+rdf:type owl:Class ;
+  rdfs:label "Rolbandluchtfilterunit"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011247>
+rdf:type owl:Class ;
+  rdfs:label "Geluiddemper ovaal luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02595 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011249>
+rdf:type owl:Class ;
+  rdfs:label "Luchtfilterunit"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011254>
+rdf:type owl:Class ;
+  rdfs:label "Geluiddemper voor dakventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02595 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011268>
+rdf:type owl:Class ;
+  rdfs:label "Regelklep rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011276>
+rdf:type owl:Class ;
+  rdfs:label "Rookklep dubbelwandig rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011277>
+rdf:type owl:Class ;
+  rdfs:label "Rookklep rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011278>
+rdf:type owl:Class ;
+  rdfs:label "Regelklep dubbelwandig luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011279>
+rdf:type owl:Class ;
+  rdfs:label "Schuifklep rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011280>
+rdf:type owl:Class ;
+  rdfs:label "Driewegklep rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04264 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011281>
+rdf:type owl:Class ;
+  rdfs:label "Terugslagklep rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011282>
+rdf:type owl:Class ;
+  rdfs:label "Terugslagklep dubbelwandig rond luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011290>
+rdf:type owl:Class ;
+  rdfs:label "Elektrische servomotor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04326 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011303>
+rdf:type owl:Class ;
+  rdfs:label "Gietijzeren buis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011309>
+rdf:type owl:Class ;
+  rdfs:label "Ruimteklokthermostaat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03260 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011310>
+rdf:type owl:Class ;
+  rdfs:label "Driewegregelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04261 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011327>
+rdf:type owl:Class ;
+  rdfs:label "Inbouwmengkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011329>
+rdf:type owl:Class ;
+  rdfs:label "Douchemengkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011330>
+rdf:type owl:Class ;
+  rdfs:label "Elektrische luchtverhitter hangend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01290 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011333>
+rdf:type owl:Class ;
+  rdfs:label "Inline circulatiepomp met norm motor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011334>
+rdf:type owl:Class ;
+  rdfs:label "Meertraps centrifugaal pomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011343>
+rdf:type owl:Class ;
+  rdfs:label "Kogelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011344>
+rdf:type owl:Class ;
+  rdfs:label "Stopkraan voor sanitaire toestellen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011352>
+rdf:type owl:Class ;
+  rdfs:label "Overgangsfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011357>
+rdf:type owl:Class ;
+  rdfs:label "Vlakluchtfilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04256 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011359>
+rdf:type owl:Class ;
+  rdfs:label "Wervelrooster"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02109 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011360>
+rdf:type owl:Class ;
+  rdfs:label "Lamellenrooster"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02109 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011361>
+rdf:type owl:Class ;
+  rdfs:label "Flexibele rookgasbuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011374>
+rdf:type owl:Class ;
+  rdfs:label "Centrale mengkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011375>
+rdf:type owl:Class ;
+  rdfs:label "Tapkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011378>
+rdf:type owl:Class ;
+  rdfs:label "Buitenkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011389>
+rdf:type owl:Class ;
+  rdfs:label "Metalen hwa-buis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011390>
+rdf:type owl:Class ;
+  rdfs:label "Staande combiketel geâ€¢ntegreerde brander"@nl-nl ;
+  rdfs:label "Staande combiketel ge•ntegreerde brander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011391>
+rdf:type owl:Class ;
+  rdfs:label "Boiler elektrisch"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03631 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011392>
+rdf:type owl:Class ;
+  rdfs:label "Boiler indirectgestookt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03631 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011393>
+rdf:type owl:Class ;
+  rdfs:label "Boiler indirectgestookt met regeling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03631 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011395>
+rdf:type owl:Class ;
+  rdfs:label "Luchtverhitter directgestookt hangend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01290 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011396>
+rdf:type owl:Class ;
+  rdfs:label "Gaswand combiketel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011397>
+rdf:type owl:Class ;
+  rdfs:label "Staande ketel met geâ€¢ntegreerde brander"@nl-nl ;
+  rdfs:label "Staande ketel met ge•ntegreerde brander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011400>
+rdf:type owl:Class ;
+  rdfs:label "Expansievoorschakelvat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011404>
+rdf:type owl:Class ;
+  rdfs:label "Ont-en beluchter transportleiding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011408>
+rdf:type owl:Class ;
+  rdfs:label "Elektrisch bediende tweewegregelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011410>
+rdf:type owl:Class ;
+  rdfs:label "Ruimtetemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011418>
+rdf:type owl:Class ;
+  rdfs:label "Brandkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04272 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011419>
+rdf:type owl:Class ;
+  rdfs:label "Vloeistofstromingsopnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03199 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011420>
+rdf:type owl:Class ;
+  rdfs:label "Plafondtemperatuuropnemer actief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011425>
+rdf:type owl:Class ;
+  rdfs:label "Uitblaasbocht rechthoekig luchtkanaal"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04258 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011426>
+rdf:type owl:Class ;
+  rdfs:label "Membraanafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011431>
+rdf:type owl:Class ;
+  rdfs:label "Keukenmengkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011437>
+rdf:type owl:Class ;
+  rdfs:label "Buitenopnemer RV/temperatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011441>
+rdf:type owl:Class ;
+  rdfs:label "Aluminium buis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011446>
+rdf:type owl:Class ;
+  rdfs:label "Plunjerafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011452>
+rdf:type owl:Class ;
+  rdfs:label "Lasfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011459>
+rdf:type owl:Class ;
+  rdfs:label "Zonneboilervat met collector"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011462>
+rdf:type owl:Class ;
+  rdfs:label "Plaatafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011463>
+rdf:type owl:Class ;
+  rdfs:label "Inregelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011467>
+rdf:type owl:Class ;
+  rdfs:label "Driewegklepafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04261 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011468>
+rdf:type owl:Class ;
+  rdfs:label "Drukverschilopnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011471>
+rdf:type owl:Class ;
+  rdfs:label "Combiketel met voorzetbrander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011478>
+rdf:type owl:Class ;
+  rdfs:label "Druktransmitter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011481>
+rdf:type owl:Class ;
+  rdfs:label "Lasfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011487>
+rdf:type owl:Class ;
+  rdfs:label "Regelaar vrijprogrammeerbaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04278 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011488>
+rdf:type owl:Class ;
+  rdfs:label "Beschermbuis kunststof leidingsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011490>
+rdf:type owl:Class ;
+  rdfs:label "Drukverschil-overstortregelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04278 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011498>
+rdf:type owl:Class ;
+  rdfs:label "Kanaaltemperatuuropnemer actief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011499>
+rdf:type owl:Class ;
+  rdfs:label "Klembandfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011501>
+rdf:type owl:Class ;
+  rdfs:label "Vorsttemperatuuropnemer actief"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011502>
+rdf:type owl:Class ;
+  rdfs:label "Gecombineerde meet- en regelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02441 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011506>
+rdf:type owl:Class ;
+  rdfs:label "Kanaaltemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011520>
+rdf:type owl:Class ;
+  rdfs:label "Drukschakelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01926 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011521>
+rdf:type owl:Class ;
+  rdfs:label "Lasfitting met 3 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04249 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011527>
+rdf:type owl:Class ;
+  rdfs:label "Dubbelwandige rookgasbuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011530>
+rdf:type owl:Class ;
+  rdfs:label "Overgangsfitting met 4 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04321 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011532>
+rdf:type owl:Class ;
+  rdfs:label "Kanaalopnemer RV/temperatuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011533>
+rdf:type owl:Class ;
+  rdfs:label "Koperen buis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03712 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011534>
+rdf:type owl:Class ;
+  rdfs:label "Boxventilator"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03711 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011540>
+rdf:type owl:Class ;
+  rdfs:label "Driewegkogelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04261 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011541>
+rdf:type owl:Class ;
+  rdfs:label "Display/bedieningspaneel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01359 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011547>
+rdf:type owl:Class ;
+  rdfs:label "Combi voorzetbrander"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01623 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011549>
+rdf:type owl:Class ;
+  rdfs:label "Drukverschilregelaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04278 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011562>
+rdf:type owl:Class ;
+  rdfs:label "Knelringfitting met 2 aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04248 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011572>
+rdf:type owl:Class ;
+  rdfs:label "Raamtemperatuuropnemer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03246 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011573>
+rdf:type owl:Class ;
+  rdfs:label "Airco splitsysteem - single split compleet"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02118 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011579>
+rdf:type owl:Class ;
+  rdfs:label "Airco splitsysteem - multi split compleet"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02118 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011580>
+rdf:type owl:Class ;
+  rdfs:label "Airco splitsysteem - binnenunit (verdamper)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02118 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011583>
+rdf:type owl:Class ;
+  rdfs:label "Airco splitsysteem - single split condensingunit luchtgekoeld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02118 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011584>
+rdf:type owl:Class ;
+  rdfs:label "Airco splitsysteem - multi split condensingunit luchtgekoeld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02118 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011587>
+rdf:type owl:Class ;
+  rdfs:label "Airco splitsysteem - single split condensingunit watergekoeld"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02118 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011604>
+rdf:type owl:Class ;
+  rdfs:label "Mobiele airconditioner"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03634 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011605>
+rdf:type owl:Class ;
+  rdfs:label "Raam airconditioner"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03634 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011614>
+rdf:type owl:Class ;
+  rdfs:label "Grootkeukenmengkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011615>
+rdf:type owl:Class ;
+  rdfs:label "Grootkeukenkraan"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04267 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011617>
+rdf:type owl:Class ;
+  rdfs:label "Staartpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011623>
+rdf:type owl:Class ;
+  rdfs:label "Hydraulische aandrijving voor afsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04243 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011699>
+rdf:type owl:Class ;
+  rdfs:label "Signaalhoorn scheepvaart"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01178 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011705>
+rdf:type owl:Class ;
+  rdfs:label "Kanaalkoeler koudwater"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01799 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011712>
+rdf:type owl:Class ;
+  rdfs:label "Condenswaterpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011725>
+rdf:type owl:Class ;
+  rdfs:label "Veerdrukthermometer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04280 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011727>
+rdf:type owl:Class ;
+  rdfs:label "Luchtontvochtiger"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02597 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011779>
+rdf:type owl:Class ;
+  rdfs:label "Waterkoeler"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01799 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011791>
+rdf:type owl:Class ;
+  rdfs:label "Inspectieput riolering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02350 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011793>
+rdf:type owl:Class ;
+  rdfs:label "Kanaalkoeler direct expansie (DX)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01799 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011806>
+rdf:type owl:Class ;
+  rdfs:label "Brandstoffilter enkelvoudig (waterscheider)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03409 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011847>
+rdf:type owl:Class ;
+  rdfs:label "Elektrische membraanpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011849>
+rdf:type owl:Class ;
+  rdfs:label "Brandstoffilter duplex (waterscheider)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03409 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011852>
+rdf:type owl:Class ;
+  rdfs:label "Elektrisch bediende driewegregelafsluiter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04261 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011853>
+rdf:type owl:Class ;
+  rdfs:label "UV waterzuiveringsfilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03409 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011862>
+rdf:type owl:Class ;
+  rdfs:label "Buitenboordmotor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03598 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC011878>
+rdf:type owl:Class ;
+  rdfs:label "Accu"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04320 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC012031>
+rdf:type owl:Class ;
+  rdfs:label "Tandwielpomp"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02716 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC012087>
+rdf:type owl:Class ;
+  rdfs:label "Magnetische brandstoffilter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03409 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC012126>
+rdf:type owl:Class ;
+  rdfs:label "Maasrooster"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02109 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC012187>
+rdf:type owl:Class ;
+  rdfs:label "Luchtdrukvat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03611 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC012253>
+rdf:type owl:Class ;
+  rdfs:label "Hydraulische cilinder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04243 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC012286>
+rdf:type owl:Class ;
+  rdfs:label "Kast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<http://prod.etim-international.com/Class/Details?classId=EC012301>
+rdf:type owl:Class ;
+  rdfs:label "Verbrandingsmotor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03598 ;
+.

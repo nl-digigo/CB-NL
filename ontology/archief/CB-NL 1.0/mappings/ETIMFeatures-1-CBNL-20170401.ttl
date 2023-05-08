@@ -1,0 +1,4184 @@
+# baseURI: http://ont.cbnl.org/mapping/ETIMFeatures-1-CBNL-20170401
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ont.cbnl.org/mapping/ETIMFeatures-1-CBNL-20170401>
+  a owl:Ontology ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000001>
+  a owl:Class ;
+  rdfs:label "Nom. stroom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03978 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000002>
+  a owl:Class ;
+  rdfs:label "Nom. spanning"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03977 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000003>
+  a owl:Class ;
+  rdfs:label "Montagewijze"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02953 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000004>
+  a owl:Class ;
+  rdfs:label "Beschermingsklasse"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000005>
+  a owl:Class ;
+  rdfs:label "Samenstelling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000006>
+  a owl:Class ;
+  rdfs:label "Bedieningswijze"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000007>
+  a owl:Class ;
+  rdfs:label "Kleur"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000008>
+  a owl:Class ;
+  rdfs:label "Breedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000010>
+  a owl:Class ;
+  rdfs:label "Uitvoering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03321 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000012>
+  a owl:Class ;
+  rdfs:label "Kopvorm"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000013>
+  a owl:Class ;
+  rdfs:label "Aandraaivoorziening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000015>
+  a owl:Class ;
+  rdfs:label "Buitendiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000019>
+  a owl:Class ;
+  rdfs:label "Ge•soleerd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000024>
+  a owl:Class ;
+  rdfs:label "UV-bestendig"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000025>
+  a owl:Class ;
+  rdfs:label "Halogeenvrij"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000030>
+  a owl:Class ;
+  rdfs:label "Functie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000034>
+  a owl:Class ;
+  rdfs:label "Frequentie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03888 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000035>
+  a owl:Class ;
+  rdfs:label "Lampvermogen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000036>
+  a owl:Class ;
+  rdfs:label "Reflector"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000037>
+  a owl:Class ;
+  rdfs:label "Schakeling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000039>
+  a owl:Class ;
+  rdfs:label "Geschikt voor doorvoerbedrading"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000040>
+  a owl:Class ;
+  rdfs:label "Hoogte"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01261 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000041>
+  a owl:Class ;
+  rdfs:label "Toepassing"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000042>
+  a owl:Class ;
+  rdfs:label "Voet"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000046>
+  a owl:Class ;
+  rdfs:label "Draadloos"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000048>
+  a owl:Class ;
+  rdfs:label "Lamphouder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000049>
+  a owl:Class ;
+  rdfs:label "Diepte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000051>
+  a owl:Class ;
+  rdfs:label "Vorm"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000060>
+  a owl:Class ;
+  rdfs:label "Nom. geleiderdoorsnede"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000061>
+  a owl:Class ;
+  rdfs:label "Aderisolatie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000063>
+  a owl:Class ;
+  rdfs:label "Bandlengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000064>
+  a owl:Class ;
+  rdfs:label "Verbindingswijze"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000065>
+  a owl:Class ;
+  rdfs:label "Binnendiameter"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03946 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000067>
+  a owl:Class ;
+  rdfs:label "Adercodering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00083 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000073>
+  a owl:Class ;
+  rdfs:label "Geschikt voor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000074>
+  a owl:Class ;
+  rdfs:label "Aantal eenheden"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000076>
+  a owl:Class ;
+  rdfs:label "Vermogen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03974 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000078>
+  a owl:Class ;
+  rdfs:label "Lichtstroom"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000079>
+  a owl:Class ;
+  rdfs:label "Gatdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03946 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000080>
+  a owl:Class ;
+  rdfs:label "Type vezel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000081>
+  a owl:Class ;
+  rdfs:label "Kabeltype"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000083>
+  a owl:Class ;
+  rdfs:label "Flexibel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000084>
+  a owl:Class ;
+  rdfs:label "Slagvast"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000088>
+  a owl:Class ;
+  rdfs:label "Grootte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000103>
+  a owl:Class ;
+  rdfs:label "Kleurtemperatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000104>
+  a owl:Class ;
+  rdfs:label "Voedingsspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000113>
+  a owl:Class ;
+  rdfs:label "Afsluitbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000115>
+  a owl:Class ;
+  rdfs:label "Geperforeerd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000116>
+  a owl:Class ;
+  rdfs:label "RAL-nummer"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000117>
+  a owl:Class ;
+  rdfs:label "Met klapdeksel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000118>
+  a owl:Class ;
+  rdfs:label "Met montageplaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000122>
+  a owl:Class ;
+  rdfs:label "Aantal deuren"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000124>
+  a owl:Class ;
+  rdfs:label "Aansluitwijze"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000125>
+  a owl:Class ;
+  rdfs:label "Dikte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000126>
+  a owl:Class ;
+  rdfs:label "Aantal aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000128>
+  a owl:Class ;
+  rdfs:label "Stralingshoek"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03838 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000131>
+  a owl:Class ;
+  rdfs:label "Opdruk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01915 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000136>
+  a owl:Class ;
+  rdfs:label "Kleur behuizing"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000137>
+  a owl:Class ;
+  rdfs:label "Dimbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000139>
+  a owl:Class ;
+  rdfs:label "Oppervlaktebescherming"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000143>
+  a owl:Class ;
+  rdfs:label "Type stroom"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000144>
+  a owl:Class ;
+  rdfs:label "Geluidssterkte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000167>
+  a owl:Class ;
+  rdfs:label "Gewicht"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00067 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000169>
+  a owl:Class ;
+  rdfs:label "Nom. vermogen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000177>
+  a owl:Class ;
+  rdfs:label "Sleutelwijdte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000187>
+  a owl:Class ;
+  rdfs:label "Spanningstype"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000189>
+  a owl:Class ;
+  rdfs:label "Schakelfunctie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000190>
+  a owl:Class ;
+  rdfs:label "Kleur knop"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000197>
+  a owl:Class ;
+  rdfs:label "Met bewegingssensor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000202>
+  a owl:Class ;
+  rdfs:label "Autonomie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00077 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000208>
+  a owl:Class ;
+  rdfs:label "Type vergrendeling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000215>
+  a owl:Class ;
+  rdfs:label "Type toebehoren"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000218>
+  a owl:Class ;
+  rdfs:label "Inbouwdiepte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000227>
+  a owl:Class ;
+  rdfs:label "Nom. (meet)stroom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03978 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000229>
+  a owl:Class ;
+  rdfs:label "Wanddikte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000230>
+  a owl:Class ;
+  rdfs:label "Bouwwijze"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000231>
+  a owl:Class ;
+  rdfs:label "Aantal standen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000259>
+  a owl:Class ;
+  rdfs:label "Aantal kanalen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000260>
+  a owl:Class ;
+  rdfs:label "Max. lampvermogen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000280>
+  a owl:Class ;
+  rdfs:label "Geschikt voor lampvermogen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000282>
+  a owl:Class ;
+  rdfs:label "Rasteruitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000289>
+  a owl:Class ;
+  rdfs:label "Met contactdoos"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000301>
+  a owl:Class ;
+  rdfs:label "Zwenkbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000318>
+  a owl:Class ;
+  rdfs:label "Aantal ingangen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000319>
+  a owl:Class ;
+  rdfs:label "Aantal uitgangen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000321>
+  a owl:Class ;
+  rdfs:label "Aansluiting 1"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03933 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000322>
+  a owl:Class ;
+  rdfs:label "Aansluiting 2"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03934 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000326>
+  a owl:Class ;
+  rdfs:label "Geschikt voor bouwbreedte kast"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000327>
+  a owl:Class ;
+  rdfs:label "Geschikt voor bouwdiepte kast"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000332>
+  a owl:Class ;
+  rdfs:label "Inbouwhoogte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000346>
+  a owl:Class ;
+  rdfs:label "Opgenomen vermogen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000351>
+  a owl:Class ;
+  rdfs:label "Aantal fasen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000361>
+  a owl:Class ;
+  rdfs:label "Met afdekking"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000364>
+  a owl:Class ;
+  rdfs:label "Capaciteit"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000368>
+  a owl:Class ;
+  rdfs:label "Schroefdraadlengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000369>
+  a owl:Class ;
+  rdfs:label "Totale lengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000381>
+  a owl:Class ;
+  rdfs:label "Voorschakelapparaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000386>
+  a owl:Class ;
+  rdfs:label "Materiaaldikte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000394>
+  a owl:Class ;
+  rdfs:label "Rastermaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000416>
+  a owl:Class ;
+  rdfs:label "Frequentie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03888 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000422>
+  a owl:Class ;
+  rdfs:label "Met meldcontact"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000434>
+  a owl:Class ;
+  rdfs:label "Zelfklevend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000441>
+  a owl:Class ;
+  rdfs:label "Richtbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000442>
+  a owl:Class ;
+  rdfs:label "Kleurweergave-index"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000443>
+  a owl:Class ;
+  rdfs:label "Aansluiting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01086 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000458>
+  a owl:Class ;
+  rdfs:label "Met display"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000471>
+  a owl:Class ;
+  rdfs:label "Brandvertraging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000483>
+  a owl:Class ;
+  rdfs:label "Met afstandsbediening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000506>
+  a owl:Class ;
+  rdfs:label "Uitgangssignaal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000507>
+  a owl:Class ;
+  rdfs:label "Cascadeerbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000536>
+  a owl:Class ;
+  rdfs:label "Kabellengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000537>
+  a owl:Class ;
+  rdfs:label "Kabelinvoer"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000551>
+  a owl:Class ;
+  rdfs:label "Diameter"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000587>
+  a owl:Class ;
+  rdfs:label "Stroomverbruik"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000594>
+  a owl:Class ;
+  rdfs:label "Interface"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000664>
+  a owl:Class ;
+  rdfs:label "Wandmontage"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000758>
+  a owl:Class ;
+  rdfs:label "Energie-effici‘ntieklasse"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000767>
+  a owl:Class ;
+  rdfs:label "Bouwvorm"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000781>
+  a owl:Class ;
+  rdfs:label "Beveiliging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000846>
+  a owl:Class ;
+  rdfs:label "Inbouwbreedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000878>
+  a owl:Class ;
+  rdfs:label "Trekontlasting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000880>
+  a owl:Class ;
+  rdfs:label "Inhoud"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000881>
+  a owl:Class ;
+  rdfs:label "Afgeschermd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000889>
+  a owl:Class ;
+  rdfs:label "Uitschakelkarakteristiek"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000943>
+  a owl:Class ;
+  rdfs:label "Inbouwdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000955>
+  a owl:Class ;
+  rdfs:label "Geschikt voor busaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF000996>
+  a owl:Class ;
+  rdfs:label "Verstelbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001024>
+  a owl:Class ;
+  rdfs:label "Bewapening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001035>
+  a owl:Class ;
+  rdfs:label "Tekstveld/beschrijvingsvlak"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001058>
+  a owl:Class ;
+  rdfs:label "Afbuiging (hoek)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001060>
+  a owl:Class ;
+  rdfs:label "Uitvoeringsvorm sport"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001062>
+  a owl:Class ;
+  rdfs:label "EMC-uitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001067>
+  a owl:Class ;
+  rdfs:label "Dubbelzijdig"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001076>
+  a owl:Class ;
+  rdfs:label "Scharnierend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001084>
+  a owl:Class ;
+  rdfs:label "Schachtdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03946 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001088>
+  a owl:Class ;
+  rdfs:label "Aanbouwmogelijkheid"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001094>
+  a owl:Class ;
+  rdfs:label "Met transparant deksel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001105>
+  a owl:Class ;
+  rdfs:label "Aantal maakcontacten"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001106>
+  a owl:Class ;
+  rdfs:label "Aantal verbreekcontacten"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001122>
+  a owl:Class ;
+  rdfs:label "Zijperforatie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001126>
+  a owl:Class ;
+  rdfs:label "Modulaire uitvoering (voor railmontage)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001139>
+  a owl:Class ;
+  rdfs:label "Type"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001142>
+  a owl:Class ;
+  rdfs:label "Geschikt voor verlichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001161>
+  a owl:Class ;
+  rdfs:label "Met ontluchting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001187>
+  a owl:Class ;
+  rdfs:label "Met deksel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001202>
+  a owl:Class ;
+  rdfs:label "Met schakelaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001203>
+  a owl:Class ;
+  rdfs:label "Met lichtsensor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001205>
+  a owl:Class ;
+  rdfs:label "Buisdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001210>
+  a owl:Class ;
+  rdfs:label "Glasvezelversterkt"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001229>
+  a owl:Class ;
+  rdfs:label "Koppelbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001257>
+  a owl:Class ;
+  rdfs:label "Kwaliteitsklasse"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001263>
+  a owl:Class ;
+  rdfs:label "Balvaste uitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001265>
+  a owl:Class ;
+  rdfs:label "Geschikt voor pendelophanging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001314>
+  a owl:Class ;
+  rdfs:label "Motorvermogen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03973 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001315>
+  a owl:Class ;
+  rdfs:label "Max. uitgangsstroom"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001332>
+  a owl:Class ;
+  rdfs:label "Overspanningsbeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001348>
+  a owl:Class ;
+  rdfs:label "Specifieke lichtstroom"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001350>
+  a owl:Class ;
+  rdfs:label "Blacklightlamp"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001353>
+  a owl:Class ;
+  rdfs:label "UV-bescherming"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001357>
+  a owl:Class ;
+  rdfs:label "Lichtsterkte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00066 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001359>
+  a owl:Class ;
+  rdfs:label "Brandstand"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001360>
+  a owl:Class ;
+  rdfs:label "Lampvorm"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001364>
+  a owl:Class ;
+  rdfs:label "Nom. vermogen bij AC-3; 400 V"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001372>
+  a owl:Class ;
+  rdfs:label "Aantal commandoposities"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001376>
+  a owl:Class ;
+  rdfs:label "Aantal hulpcontacten als maakcontact"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001377>
+  a owl:Class ;
+  rdfs:label "Aantal hulpcontacten als verbreekcontact"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001385>
+  a owl:Class ;
+  rdfs:label "Nom. bedrijfsstroom Ie bij AC-15; 230 V"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001386>
+  a owl:Class ;
+  rdfs:label "Nom. bedrijfsstroom Ie bij DC-13; 230 V"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03978 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001389>
+  a owl:Class ;
+  rdfs:label "Nom. continustroom Iu"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001391>
+  a owl:Class ;
+  rdfs:label "Aantal polen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001407>
+  a owl:Class ;
+  rdfs:label "Terugverend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001422>
+  a owl:Class ;
+  rdfs:label "Type aandrijving"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001433>
+  a owl:Class ;
+  rdfs:label "Geschikt voor noodstop"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001435>
+  a owl:Class ;
+  rdfs:label "Bedrijfsspanning (meetspanning)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001438>
+  a owl:Class ;
+  rdfs:label "Lengte"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001444>
+  a owl:Class ;
+  rdfs:label "Voorwaardelijke nom. kortsluitstroom Iq"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001456>
+  a owl:Class ;
+  rdfs:label "Hoogte/diepte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001463>
+  a owl:Class ;
+  rdfs:label "Ge•soleerd 1000 V"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001469>
+  a owl:Class ;
+  rdfs:label "Type voeding"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001474>
+  a owl:Class ;
+  rdfs:label "Installatietechniek"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001499>
+  a owl:Class ;
+  rdfs:label "Bussysteem KNX"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001500>
+  a owl:Class ;
+  rdfs:label "Bussysteem radiofrequent"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001501>
+  a owl:Class ;
+  rdfs:label "Bussysteem Powerline"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001503>
+  a owl:Class ;
+  rdfs:label "Max. schakelvermogen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001504>
+  a owl:Class ;
+  rdfs:label "Busaansluiting incl."@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001532>
+  a owl:Class ;
+  rdfs:label "Nauwkeurigheidsklasse"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001538>
+  a owl:Class ;
+  rdfs:label "Met bedieningselement"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001569>
+  a owl:Class ;
+  rdfs:label "APC-uitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001587>
+  a owl:Class ;
+  rdfs:label "Contactuitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001596>
+  a owl:Class ;
+  rdfs:label "Materiaal behuizing"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001597>
+  a owl:Class ;
+  rdfs:label "Geschikt voor veiligheidsfunctie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001602>
+  a owl:Class ;
+  rdfs:label "Met status-indicatie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001613>
+  a owl:Class ;
+  rdfs:label "Functiebehoud"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001614>
+  a owl:Class ;
+  rdfs:label "Oliebestendig volgens EN 60811-2-1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001615>
+  a owl:Class ;
+  rdfs:label "Nom. spanning U"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03977 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001617>
+  a owl:Class ;
+  rdfs:label "Getwist"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001618>
+  a owl:Class ;
+  rdfs:label "Mantelkleur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001619>
+  a owl:Class ;
+  rdfs:label "Categorie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001621>
+  a owl:Class ;
+  rdfs:label "Nom. geleiderdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001622>
+  a owl:Class ;
+  rdfs:label "Geleidermateriaal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001623>
+  a owl:Class ;
+  rdfs:label "Afscherming groepen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001624>
+  a owl:Class ;
+  rdfs:label "Afscherming collectief"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001625>
+  a owl:Class ;
+  rdfs:label "Mantelmateriaal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001632>
+  a owl:Class ;
+  rdfs:label "Samenstelling geleider"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001635>
+  a owl:Class ;
+  rdfs:label "Geel/Groene ader"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001642>
+  a owl:Class ;
+  rdfs:label "Toerental"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03987 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001649>
+  a owl:Class ;
+  rdfs:label "Filterklasse"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001685>
+  a owl:Class ;
+  rdfs:label "Toegestane kabelbuitentemperatuur; in beweging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001686>
+  a owl:Class ;
+  rdfs:label "Toegestane kabelbuitentemperatuur; vast gemonteerd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001692>
+  a owl:Class ;
+  rdfs:label "AWG-maat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001731>
+  a owl:Class ;
+  rdfs:label "Temperatuur"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001742>
+  a owl:Class ;
+  rdfs:label "Gebruikstemperatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001758>
+  a owl:Class ;
+  rdfs:label "Type schroefdraad"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001761>
+  a owl:Class ;
+  rdfs:label "Totale hoogte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001776>
+  a owl:Class ;
+  rdfs:label "Afdichting"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001790>
+  a owl:Class ;
+  rdfs:label "Nom. spanning U0"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03977 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001791>
+  a owl:Class ;
+  rdfs:label "Scherm"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001792>
+  a owl:Class ;
+  rdfs:label "Aantal aders"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001836>
+  a owl:Class ;
+  rdfs:label "Meetbereik"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001992>
+  a owl:Class ;
+  rdfs:label "Aantal digitale ingangen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001993>
+  a owl:Class ;
+  rdfs:label "Aantal digitale uitgangen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001994>
+  a owl:Class ;
+  rdfs:label "Aantal analoge ingangen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF001995>
+  a owl:Class ;
+  rdfs:label "Aantal analoge uitgangen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002032>
+  a owl:Class ;
+  rdfs:label "Beeldschermdiagonaal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002147>
+  a owl:Class ;
+  rdfs:label "Bediening"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03940 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002149>
+  a owl:Class ;
+  rdfs:label "Temperatuurbegrenzing"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002167>
+  a owl:Class ;
+  rdfs:label "Met thermometer"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002169>
+  a owl:Class ;
+  rdfs:label "Materiaal"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002276>
+  a owl:Class ;
+  rdfs:label "Waterinhoud"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002286>
+  a owl:Class ;
+  rdfs:label "Aansluiting aanvoer"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002321>
+  a owl:Class ;
+  rdfs:label "Aansluitmaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002356>
+  a owl:Class ;
+  rdfs:label "Kabeldiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002358>
+  a owl:Class ;
+  rdfs:label "Nom. foutstroom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03978 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002386>
+  a owl:Class ;
+  rdfs:label "Omgevingstemperatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002390>
+  a owl:Class ;
+  rdfs:label "Geschikt voor buisdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002391>
+  a owl:Class ;
+  rdfs:label "Spanbereik"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002393>
+  a owl:Class ;
+  rdfs:label "Bedrijfstemperatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002423>
+  a owl:Class ;
+  rdfs:label "Lamptype"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01234 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002429>
+  a owl:Class ;
+  rdfs:label "Kleur frontrand"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002431>
+  a owl:Class ;
+  rdfs:label "Weerstandswaarde"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002435>
+  a owl:Class ;
+  rdfs:label "Knikbeschermingstule"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002505>
+  a owl:Class ;
+  rdfs:label "Connectortype uiteinde 1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002506>
+  a owl:Class ;
+  rdfs:label "Connectortype uiteinde 2"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002520>
+  a owl:Class ;
+  rdfs:label "Soort isolatiemateriaal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002521>
+  a owl:Class ;
+  rdfs:label "Brandbaarheidsklasse isolatiemateriaal conform UL 94"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002522>
+  a owl:Class ;
+  rdfs:label "Breedte/Rastermaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002523>
+  a owl:Class ;
+  rdfs:label "Hoogte bij laagst mogelijke montagehoogte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002525>
+  a owl:Class ;
+  rdfs:label "Afsluitplaat noodzakelijk"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002526>
+  a owl:Class ;
+  rdfs:label "Uitvoering elektrische aansluiting 1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002527>
+  a owl:Class ;
+  rdfs:label "Uitvoering elektrische aansluiting 2"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002560>
+  a owl:Class ;
+  rdfs:label "Type lekstroom"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002562>
+  a owl:Class ;
+  rdfs:label "Kortsluitvastheid (Icw)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002566>
+  a owl:Class ;
+  rdfs:label "DIN-grootte"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03884 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002570>
+  a owl:Class ;
+  rdfs:label "Vervuilingsgraad"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002647>
+  a owl:Class ;
+  rdfs:label "IEC-stroomsterkte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002648>
+  a owl:Class ;
+  rdfs:label "UL/CSA-stroomsterkte (indien UL-uitvoering gewenst)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002649>
+  a owl:Class ;
+  rdfs:label "Aansluittechniek"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002650>
+  a owl:Class ;
+  rdfs:label "Insteekrichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002651>
+  a owl:Class ;
+  rdfs:label "Voor \"verzwarende omstandigheden\" (conform VDE)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002659>
+  a owl:Class ;
+  rdfs:label "Aantal aansluitniveaus"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002660>
+  a owl:Class ;
+  rdfs:label "Aantal klemposities per aansluitniveau"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002661>
+  a owl:Class ;
+  rdfs:label "Intern verbonden etages"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002671>
+  a owl:Class ;
+  rdfs:label "Basiskleur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002749>
+  a owl:Class ;
+  rdfs:label "Kleur lenskap"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002910>
+  a owl:Class ;
+  rdfs:label "Mechanische codering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002918>
+  a owl:Class ;
+  rdfs:label "Draaglast"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002922>
+  a owl:Class ;
+  rdfs:label "Bevestiging deksel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002935>
+  a owl:Class ;
+  rdfs:label "Connectortype"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002950>
+  a owl:Class ;
+  rdfs:label "Breedte in module-eenheden"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002960>
+  a owl:Class ;
+  rdfs:label "Type schakeling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002978>
+  a owl:Class ;
+  rdfs:label "Handbediening"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03959 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002991>
+  a owl:Class ;
+  rdfs:label "Spanningstype voedingsspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF002993>
+  a owl:Class ;
+  rdfs:label "Toegekende stootspanning"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003017>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor LON"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003020>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces industrieel ethernet"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003021>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces serieel RS-232"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003022>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces serieel RS-422"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003023>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces serieel RS-485"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003024>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces serieel TTY"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003025>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces USB"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003026>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces parallel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003027>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces overige"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003028>
+  a owl:Class ;
+  rdfs:label "Met optische interface"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003033>
+  a owl:Class ;
+  rdfs:label "Type ingangsspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003050>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol TCP/IP"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003051>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor ASI"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003052>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor PROFIBUS"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003053>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor CAN"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003054>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor INTERBUS"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003055>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor KNX"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003057>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor MODBUS"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003058>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor Data-Highway"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003059>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor DeviceNet"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003060>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor SUCONET"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003062>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor overige bussystemen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003118>
+  a owl:Class ;
+  rdfs:label "Beschermingsgraad frontzijde (IP)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003156>
+  a owl:Class ;
+  rdfs:label "Redundantiemogelijkheid"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003340>
+  a owl:Class ;
+  rdfs:label "Met afneembare klemmen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003454>
+  a owl:Class ;
+  rdfs:label "Inbouw"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003456>
+  a owl:Class ;
+  rdfs:label "Met tekstveld"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003531>
+  a owl:Class ;
+  rdfs:label "Aantal hulpcontacten als wisselcontact"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003532>
+  a owl:Class ;
+  rdfs:label "Geschikt voor buitengebruik"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003561>
+  a owl:Class ;
+  rdfs:label "Aantal hoogte-eenheden"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003563>
+  a owl:Class ;
+  rdfs:label "Draadmaat (M..)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03884 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003582>
+  a owl:Class ;
+  rdfs:label "Met tijdfunctie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003587>
+  a owl:Class ;
+  rdfs:label "Schakelfrequentie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03888 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003601>
+  a owl:Class ;
+  rdfs:label "Type digitale uitgang"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003645>
+  a owl:Class ;
+  rdfs:label "Haakse uitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003649>
+  a owl:Class ;
+  rdfs:label "Boutmaat (M..)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003681>
+  a owl:Class ;
+  rdfs:label "Opbouw (stucwerk)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003701>
+  a owl:Class ;
+  rdfs:label "Elektrische aansluiting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03954 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003712>
+  a owl:Class ;
+  rdfs:label "Spoed schroefdraad"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003791>
+  a owl:Class ;
+  rdfs:label "Halogeenvrij volgens EN 50267-2-2"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003803>
+  a owl:Class ;
+  rdfs:label "Max. toelaatbare geleidertemperatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003811>
+  a owl:Class ;
+  rdfs:label "Andere bussystemen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003824>
+  a owl:Class ;
+  rdfs:label "Montagerichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02938 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003829>
+  a owl:Class ;
+  rdfs:label "Met verlichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003831>
+  a owl:Class ;
+  rdfs:label "Bussysteem LON"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003876>
+  a owl:Class ;
+  rdfs:label "Ingang voor nevenunit"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003882>
+  a owl:Class ;
+  rdfs:label "RAL-Nummer (vergelijkbaar)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003921>
+  a owl:Class ;
+  rdfs:label "Buitendiameter circa"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003945>
+  a owl:Class ;
+  rdfs:label "Aantal halfgeleideruitgangen met meldfunctie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003946>
+  a owl:Class ;
+  rdfs:label "Aantal contactbekrachtigde uitgangen met meldfunctie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003951>
+  a owl:Class ;
+  rdfs:label "Aantal beveiligde halfgeleider uitgangen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003952>
+  a owl:Class ;
+  rdfs:label "Aantal beveiligde contactbekrachtigde uitgangen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003956>
+  a owl:Class ;
+  rdfs:label "Uitvoering interface voor veiligheidscommunicatie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003961>
+  a owl:Class ;
+  rdfs:label "Uitvoering elektrische aansluiting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03954 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003962>
+  a owl:Class ;
+  rdfs:label "Uitvoering schakeluitgang"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003963>
+  a owl:Class ;
+  rdfs:label "Uitvoering schakelelement"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003972>
+  a owl:Class ;
+  rdfs:label "Draagrailmontage mogelijk"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003973>
+  a owl:Class ;
+  rdfs:label "Wandmontage mogelijk"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003977>
+  a owl:Class ;
+  rdfs:label "Nom. (meet)spanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03977 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003978>
+  a owl:Class ;
+  rdfs:label "Nom. stuurspanning Us bij AC 50HZ"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003979>
+  a owl:Class ;
+  rdfs:label "Nom. stuurspanning Us bij AC 60HZ"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003980>
+  a owl:Class ;
+  rdfs:label "Nom. stuurspanning Us bij DC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003982>
+  a owl:Class ;
+  rdfs:label "Bedrijfsmiddel-veiligheidsklasse"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003992>
+  a owl:Class ;
+  rdfs:label "Doorgangsweerstand"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04214 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003994>
+  a owl:Class ;
+  rdfs:label "Instelprocedure"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04355 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003996>
+  a owl:Class ;
+  rdfs:label "Explosieveiligheid"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03956 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003997>
+  a owl:Class ;
+  rdfs:label "Explosieveiligheidscategorie voor gas"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF003998>
+  a owl:Class ;
+  rdfs:label "Explosieveiligheidscategorie voor stof"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004002>
+  a owl:Class ;
+  rdfs:label "Veldbusaansluiting via separate buskoppelaar mogelijk"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004008>
+  a owl:Class ;
+  rdfs:label "Bouwvorm behuizing"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004020>
+  a owl:Class ;
+  rdfs:label "Materiaal contactcoating"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004029>
+  a owl:Class ;
+  rdfs:label "Lichtsoort"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004035>
+  a owl:Class ;
+  rdfs:label "Max. uitgangsstroom bij beveiligde uitgang"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004048>
+  a owl:Class ;
+  rdfs:label "Met opdruk"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004052>
+  a owl:Class ;
+  rdfs:label "Met bewakingsfunctie bijgeschakelde apparaten"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004054>
+  a owl:Class ;
+  rdfs:label "Met inschakelvergrendeling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004094>
+  a owl:Class ;
+  rdfs:label "Reactietijd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00077 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004118>
+  a owl:Class ;
+  rdfs:label "Systeemcomponenten"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004127>
+  a owl:Class ;
+  rdfs:label "Voedingsspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004129>
+  a owl:Class ;
+  rdfs:label "Preventieve melding voor storingskans"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004132>
+  a owl:Class ;
+  rdfs:label "Golflengte sensor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004136>
+  a owl:Class ;
+  rdfs:label "Materiaal kabelmantel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004139>
+  a owl:Class ;
+  rdfs:label "Werkingsprincipe"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004141>
+  a owl:Class ;
+  rdfs:label "Bijbehorend bedrijfsmiddel (Ex ia)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004142>
+  a owl:Class ;
+  rdfs:label "Bijbehorend bedrijfsmiddel (Ex ib)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004191>
+  a owl:Class ;
+  rdfs:label "Explosiegeteste uitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004198>
+  a owl:Class ;
+  rdfs:label "Max. continuspanning AC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004214>
+  a owl:Class ;
+  rdfs:label "Nom. ontladingsstootstroom (8/20)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03978 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004241>
+  a owl:Class ;
+  rdfs:label "Signalering op apparaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004259>
+  a owl:Class ;
+  rdfs:label "Soort verlichtingsarmatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004262>
+  a owl:Class ;
+  rdfs:label "Verblindingsbegrenzing UGR langsrichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004263>
+  a owl:Class ;
+  rdfs:label "Verblindingsbegrenzing UGR dwarsrichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004264>
+  a owl:Class ;
+  rdfs:label "Direct-/indirectaandeel apart regelbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004265>
+  a owl:Class ;
+  rdfs:label "Inbouwlengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004267>
+  a owl:Class ;
+  rdfs:label "Elektrische aansluiting met connectorsysteem"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03954 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004268>
+  a owl:Class ;
+  rdfs:label "Extreemtemperatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004269>
+  a owl:Class ;
+  rdfs:label "Kleur afdekking"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004270>
+  a owl:Class ;
+  rdfs:label "Kleur bestuurbaar (RGB)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004271>
+  a owl:Class ;
+  rdfs:label "Kleurtemperatuur regelbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004274>
+  a owl:Class ;
+  rdfs:label "Geschikt voor lichtlijnconfiguratie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004275>
+  a owl:Class ;
+  rdfs:label "Geschikt voor noodverlichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004278>
+  a owl:Class ;
+  rdfs:label "Gloeidraadtest volgens IEC 695-2-1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004282>
+  a owl:Class ;
+  rdfs:label "Lichtuittrede"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004283>
+  a owl:Class ;
+  rdfs:label "Lichtverdeling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004284>
+  a owl:Class ;
+  rdfs:label "Materiaal afdekking"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004288>
+  a owl:Class ;
+  rdfs:label "Rastermateriaal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004293>
+  a owl:Class ;
+  rdfs:label "Slagvastheid"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004296>
+  a owl:Class ;
+  rdfs:label "Ontstekingsapparaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004430>
+  a owl:Class ;
+  rdfs:label "Aantal deksels"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004464>
+  a owl:Class ;
+  rdfs:label "Type deur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004471>
+  a owl:Class ;
+  rdfs:label "Uitvoering brandvertragend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004545>
+  a owl:Class ;
+  rdfs:label "Montageperforatie in bodem"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004562>
+  a owl:Class ;
+  rdfs:label "Boorgatdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03946 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004565>
+  a owl:Class ;
+  rdfs:label "Breedte opening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004586>
+  a owl:Class ;
+  rdfs:label "Dekselbevestiging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004663>
+  a owl:Class ;
+  rdfs:label "Explosieveilig"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004739>
+  a owl:Class ;
+  rdfs:label "Gehard"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004778>
+  a owl:Class ;
+  rdfs:label "Hoogte opening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004793>
+  a owl:Class ;
+  rdfs:label "Binnenstraal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004810>
+  a owl:Class ;
+  rdfs:label "Isolatiedikte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004815>
+  a owl:Class ;
+  rdfs:label "Met kabelbevestigingsklem"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004817>
+  a owl:Class ;
+  rdfs:label "Kabelladderbreedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004818>
+  a owl:Class ;
+  rdfs:label "Kabelladderhoogte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004820>
+  a owl:Class ;
+  rdfs:label "Kabelgootbreedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004822>
+  a owl:Class ;
+  rdfs:label "Kabelgoothoogte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004826>
+  a owl:Class ;
+  rdfs:label "Met gootkoppelstuk"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF004874>
+  a owl:Class ;
+  rdfs:label "Lengte aansluitsnoer"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005040>
+  a owl:Class ;
+  rdfs:label "Met indicatieveld"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005059>
+  a owl:Class ;
+  rdfs:label "Met moer"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005114>
+  a owl:Class ;
+  rdfs:label "Nom. diameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005124>
+  a owl:Class ;
+  rdfs:label "Nom. doorsnede"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005127>
+  a owl:Class ;
+  rdfs:label "Nom. spanning"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03977 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005140>
+  a owl:Class ;
+  rdfs:label "Nuttige doorsnede"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005147>
+  a owl:Class ;
+  rdfs:label "Dekselbreedte 1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005163>
+  a owl:Class ;
+  rdfs:label "Geschikt voor draadgoot"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005165>
+  a owl:Class ;
+  rdfs:label "Geschikt voor kabelladder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005166>
+  a owl:Class ;
+  rdfs:label "Geschikt voor kabelgoot"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005247>
+  a owl:Class ;
+  rdfs:label "Sleufbreedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005266>
+  a owl:Class ;
+  rdfs:label "Beschermfolie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005383>
+  a owl:Class ;
+  rdfs:label "VDE getest"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005431>
+  a owl:Class ;
+  rdfs:label "Bochthoek"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005434>
+  a owl:Class ;
+  rdfs:label "Hoek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03838 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005452>
+  a owl:Class ;
+  rdfs:label "Breedte"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005455>
+  a owl:Class ;
+  rdfs:label "Frequentie"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005462>
+  a owl:Class ;
+  rdfs:label "Nom. diameter (inch)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005466>
+  a owl:Class ;
+  rdfs:label "Geschikt voor kabeldiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005474>
+  a owl:Class ;
+  rdfs:label "Beschermingsgraad (IP)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03938 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005645>
+  a owl:Class ;
+  rdfs:label "Bevestigingswijze"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005668>
+  a owl:Class ;
+  rdfs:label "Communicatiebus"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005678>
+  a owl:Class ;
+  rdfs:label "Diameter afvoer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005728>
+  a owl:Class ;
+  rdfs:label "Voor explosieveilige zone gas"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005774>
+  a owl:Class ;
+  rdfs:label "Geschikt voor buitenopstelling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005848>
+  a owl:Class ;
+  rdfs:label "Geschikt voor RVS"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005870>
+  a owl:Class ;
+  rdfs:label "Gesloten uitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005905>
+  a owl:Class ;
+  rdfs:label "Met lichtbron"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005913>
+  a owl:Class ;
+  rdfs:label "Met inlage"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005950>
+  a owl:Class ;
+  rdfs:label "Met LED indicatie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005958>
+  a owl:Class ;
+  rdfs:label "Lichtkleur volgens EN 12464-1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005972>
+  a owl:Class ;
+  rdfs:label "Materiaal frontrand"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF005997>
+  a owl:Class ;
+  rdfs:label "Meeschakelende nul"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006009>
+  a owl:Class ;
+  rdfs:label "Met bevestigingsmateriaal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006013>
+  a owl:Class ;
+  rdfs:label "Met filter"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006014>
+  a owl:Class ;
+  rdfs:label "Met frontring"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006050>
+  a owl:Class ;
+  rdfs:label "Militaire uitvoering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006059>
+  a owl:Class ;
+  rdfs:label "Nato perforatie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006064>
+  a owl:Class ;
+  rdfs:label "Nom. afschakelvermogen EN 60898"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006065>
+  a owl:Class ;
+  rdfs:label "Nom. afschakelvermogen IEC 60947-2"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006107>
+  a owl:Class ;
+  rdfs:label "Met PC-aansluiting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006112>
+  a owl:Class ;
+  rdfs:label "Plaatdikte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006169>
+  a owl:Class ;
+  rdfs:label "Rijgbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006233>
+  a owl:Class ;
+  rdfs:label "Met thermische beveiliging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006235>
+  a owl:Class ;
+  rdfs:label "Toegestane werkbelasting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006243>
+  a owl:Class ;
+  rdfs:label "Transparant"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006253>
+  a owl:Class ;
+  rdfs:label "Bouwvorm lens"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006254>
+  a owl:Class ;
+  rdfs:label "Type opnemer"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006273>
+  a owl:Class ;
+  rdfs:label "Uitwendige buisdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006281>
+  a owl:Class ;
+  rdfs:label "Vergrendelbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006299>
+  a owl:Class ;
+  rdfs:label "Uitvoering vonkarm"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006306>
+  a owl:Class ;
+  rdfs:label "Met slot"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006318>
+  a owl:Class ;
+  rdfs:label "Werkende lengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006331>
+  a owl:Class ;
+  rdfs:label "Vandaalbestendig"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006339>
+  a owl:Class ;
+  rdfs:label "Max. deurbreedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006346>
+  a owl:Class ;
+  rdfs:label "Geschikt voor kunststof"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006348>
+  a owl:Class ;
+  rdfs:label "Geschikt voor staal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006354>
+  a owl:Class ;
+  rdfs:label "Geschikt voor beton"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006388>
+  a owl:Class ;
+  rdfs:label "Roestvaststaal (RVS); gebeitst"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00028 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006397>
+  a owl:Class ;
+  rdfs:label "Uitvoering voor grote overspanningen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006420>
+  a owl:Class ;
+  rdfs:label "Brandwerendheid \"D\""@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006421>
+  a owl:Class ;
+  rdfs:label "Brandwerendheid \"F\""@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006422>
+  a owl:Class ;
+  rdfs:label "Brandwerendheid \"FF\""@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006423>
+  a owl:Class ;
+  rdfs:label "Inbouw in ge•soleerd plafond; brandwerendheid \"F met dak\""@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006424>
+  a owl:Class ;
+  rdfs:label "Meubelinbouw; brandwerendheid \"M\""@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006425>
+  a owl:Class ;
+  rdfs:label "Meubelinbouw; brandwerendheid \"MM\""@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006436>
+  a owl:Class ;
+  rdfs:label "Geschikt voor aantal lampen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006437>
+  a owl:Class ;
+  rdfs:label "Oppervlakte gepolijst"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006569>
+  a owl:Class ;
+  rdfs:label "Uitvoering oppervlakte"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006584>
+  a owl:Class ;
+  rdfs:label "Uurstand"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006644>
+  a owl:Class ;
+  rdfs:label "Geschikt voor wandmontage"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006657>
+  a owl:Class ;
+  rdfs:label "Ondersteunt Protocol voor SERCOS"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006662>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor INTERBUS-Safety"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006694>
+  a owl:Class ;
+  rdfs:label "Gedwongen openend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006725>
+  a owl:Class ;
+  rdfs:label "Kenkleur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006726>
+  a owl:Class ;
+  rdfs:label "Spanning volgens EN 60309-2"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006755>
+  a owl:Class ;
+  rdfs:label "Geschikt voor beschermingsgraad (IP)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006771>
+  a owl:Class ;
+  rdfs:label "Pool-markering"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006772>
+  a owl:Class ;
+  rdfs:label "Kleur codering/contactinzetstuk"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006782>
+  a owl:Class ;
+  rdfs:label "Categorie volgens EN 954-1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006785>
+  a owl:Class ;
+  rdfs:label "Overspanningscategorie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006807>
+  a owl:Class ;
+  rdfs:label "Analoge uitgang 0 V ... 10 V"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04517 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006808>
+  a owl:Class ;
+  rdfs:label "Analoge uitgang 0 mA ... 20 mA"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04517 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006809>
+  a owl:Class ;
+  rdfs:label "Analoge uitgang -10 V ... +10 V"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04517 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006810>
+  a owl:Class ;
+  rdfs:label "Analoge uitgang 4 mA ... 20 mA"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04517 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006819>
+  a owl:Class ;
+  rdfs:label "Aansluitwijze hoofdstroomcircuit"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006820>
+  a owl:Class ;
+  rdfs:label "Aansluitwijze hulpstroomcircuit"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006932>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces PROFINET"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006933>
+  a owl:Class ;
+  rdfs:label "Aantal HW-interfaces Wireless"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006976>
+  a owl:Class ;
+  rdfs:label "Uitvoering van het bedieningselement"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF006977>
+  a owl:Class ;
+  rdfs:label "Uitvoering van de interface"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007016>
+  a owl:Class ;
+  rdfs:label "Frontinbouw mogelijk"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007018>
+  a owl:Class ;
+  rdfs:label "Rackmontage mogelijk"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007020>
+  a owl:Class ;
+  rdfs:label "Wand-/directmontage mogelijk"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007051>
+  a owl:Class ;
+  rdfs:label "Meetvermogen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007094>
+  a owl:Class ;
+  rdfs:label "Breedte sensor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007111>
+  a owl:Class ;
+  rdfs:label "Diameter sensor"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007178>
+  a owl:Class ;
+  rdfs:label "Radiostandaard Bluetooth"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007179>
+  a owl:Class ;
+  rdfs:label "Radiostandaard WLAN 802.11"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007243>
+  a owl:Class ;
+  rdfs:label "Geschikt voor bodemmontage"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007245>
+  a owl:Class ;
+  rdfs:label "Geschikt voor vloeistoffen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007273>
+  a owl:Class ;
+  rdfs:label "Coating behuizing"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007283>
+  a owl:Class ;
+  rdfs:label "Hoogte van de sensor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007298>
+  a owl:Class ;
+  rdfs:label "IO-Link Master"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007332>
+  a owl:Class ;
+  rdfs:label "Kortsluitvast"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007334>
+  a owl:Class ;
+  rdfs:label "Lengte sensor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007337>
+  a owl:Class ;
+  rdfs:label "Aansluitbare geleiderdoorsnede eendraads"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007339>
+  a owl:Class ;
+  rdfs:label "Aansluitbare geleiderdoorsnede fijndraads met adereindhuls"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007341>
+  a owl:Class ;
+  rdfs:label "Aansluitbare geleiderdoorsnede fijndraads zonder adereindhuls"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007343>
+  a owl:Class ;
+  rdfs:label "Aansluitbare geleiderdoorsnede meerdraads"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007355>
+  a owl:Class ;
+  rdfs:label "Max. nom. bedrijfsspanning Ue bij AC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03977 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007399>
+  a owl:Class ;
+  rdfs:label "Performance Level volgens EN ISO 13849-1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007447>
+  a owl:Class ;
+  rdfs:label "Schakelfunctie vergrendelend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007466>
+  a owl:Class ;
+  rdfs:label "Beschermingsgraad (IP); gemonteerd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007468>
+  a owl:Class ;
+  rdfs:label "Met aardgeleider"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007515>
+  a owl:Class ;
+  rdfs:label "Omgevingstemperatuur tijdens bedrijf"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007519>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor AS-Interface Safety at Work"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007520>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor DeviceNet Safety"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007521>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor EtherNet/IP"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007522>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor Foundation Fieldbus"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007524>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor PROFINET CBA"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007525>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor PROFINET IO"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007526>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor PROFIsafe"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007527>
+  a owl:Class ;
+  rdfs:label "Ondersteunt protocol voor SafetyBUS p"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007531>
+  a owl:Class ;
+  rdfs:label "Verpakkingsvorm"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007532>
+  a owl:Class ;
+  rdfs:label "Voedingsspanning bij AC 50Hz"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007533>
+  a owl:Class ;
+  rdfs:label "Voedingsspanning bij AC 60Hz"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007534>
+  a owl:Class ;
+  rdfs:label "Voedingsspanning bij DC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007543>
+  a owl:Class ;
+  rdfs:label "Materiaal isolatielichaam"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007544>
+  a owl:Class ;
+  rdfs:label "Materiaal contact"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007556>
+  a owl:Class ;
+  rdfs:label "Voorschakelapparaat inbegrepen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007557>
+  a owl:Class ;
+  rdfs:label "Ontstekingsapparaat inbegrepen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007662>
+  a owl:Class ;
+  rdfs:label "Type lamp"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007666>
+  a owl:Class ;
+  rdfs:label "Uitvoering zijligger"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007694>
+  a owl:Class ;
+  rdfs:label "Geschikt voor beeldschermwerkplaats"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007806>
+  a owl:Class ;
+  rdfs:label "Geschikt voor functiebehoud"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007813>
+  a owl:Class ;
+  rdfs:label "Geschikt voor hout"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007834>
+  a owl:Class ;
+  rdfs:label "Draadaansluitmaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007899>
+  a owl:Class ;
+  rdfs:label "Lampvermogen bij multiwatt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007955>
+  a owl:Class ;
+  rdfs:label "Met koppelingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF007959>
+  a owl:Class ;
+  rdfs:label "Met montagebeugel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008027>
+  a owl:Class ;
+  rdfs:label "Rookarm volgens EN 61034-2"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008160>
+  a owl:Class ;
+  rdfs:label "Breedte band"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008206>
+  a owl:Class ;
+  rdfs:label "Bedrijfsspanning bij AC 50 Hz"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008207>
+  a owl:Class ;
+  rdfs:label "Bedrijfsspanning bij AC 60 Hz"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008208>
+  a owl:Class ;
+  rdfs:label "Bedrijfsspanning bij DC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008219>
+  a owl:Class ;
+  rdfs:label "Aansluitpositie"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00070 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008240>
+  a owl:Class ;
+  rdfs:label "Apparaatbouwvorm"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008242>
+  a owl:Class ;
+  rdfs:label "Type stuurspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008250>
+  a owl:Class ;
+  rdfs:label "Nom. (meet)stroom In"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03978 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008253>
+  a owl:Class ;
+  rdfs:label "Aantal insteekcontacten"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008255>
+  a owl:Class ;
+  rdfs:label "Aantal contacten als verbreekcontact"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008256>
+  a owl:Class ;
+  rdfs:label "Aantal contacten als maakcontact"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008257>
+  a owl:Class ;
+  rdfs:label "Aantal contacten als wisselcontact"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008301>
+  a owl:Class ;
+  rdfs:label "Type dimming"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008342>
+  a owl:Class ;
+  rdfs:label "Gemiddelde nom. levensduur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03650 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008404>
+  a owl:Class ;
+  rdfs:label "Voor explosieveilige zone stof"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008498>
+  a owl:Class ;
+  rdfs:label "Explosiegeteste uitvoering Ex-e"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008523>
+  a owl:Class ;
+  rdfs:label "Radio standaard GPRS"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008524>
+  a owl:Class ;
+  rdfs:label "Radio standaard GSM"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008525>
+  a owl:Class ;
+  rdfs:label "Radio standaard UMTS"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008646>
+  a owl:Class ;
+  rdfs:label "Geschikt voor non-ferro metalen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008648>
+  a owl:Class ;
+  rdfs:label "Geschikt voor steen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008808>
+  a owl:Class ;
+  rdfs:label "Schakelmateriaalbreedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008809>
+  a owl:Class ;
+  rdfs:label "Schakelmateriaalhoogte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008810>
+  a owl:Class ;
+  rdfs:label "Schakelmateriaaldiepte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008829>
+  a owl:Class ;
+  rdfs:label "Raster geperforeerd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008831>
+  a owl:Class ;
+  rdfs:label "Reflector geperforeerd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008855>
+  a owl:Class ;
+  rdfs:label "Bussysteem KNX radiofrequent"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008856>
+  a owl:Class ;
+  rdfs:label "Lampspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF008947>
+  a owl:Class ;
+  rdfs:label "Aansluitmaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009237>
+  a owl:Class ;
+  rdfs:label "Noodunit ge•ntegreerd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009345>
+  a owl:Class ;
+  rdfs:label "Nom. stroom"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03978 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009346>
+  a owl:Class ;
+  rdfs:label "Kleurtemperatuur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009348>
+  a owl:Class ;
+  rdfs:label "Gloeidraadtest volgens IEC 60695-2-10"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009349>
+  a owl:Class ;
+  rdfs:label "Effectieve lichtstroom"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009350>
+  a owl:Class ;
+  rdfs:label "Lichtkleur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009466>
+  a owl:Class ;
+  rdfs:label "Radiofrequent bidirectioneel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009483>
+  a owl:Class ;
+  rdfs:label "Gewogen energieverbruik in 1.000 uur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01077 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009769>
+  a owl:Class ;
+  rdfs:label "Halogeenvrij volgens EN 60754-1/2"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009770>
+  a owl:Class ;
+  rdfs:label "Oliebestendig volgens EN 60811-404"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF009889>
+  a owl:Class ;
+  rdfs:label "SIL conform IEC 61508"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF010355>
+  a owl:Class ;
+  rdfs:label "Oppervlaktebescherming plakplaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020001>
+  a owl:Class ;
+  rdfs:label "Uitblaaspatroon"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020002>
+  a owl:Class ;
+  rdfs:label "Zeta-waarde"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020003>
+  a owl:Class ;
+  rdfs:label "Materiaal warmtewisselaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020004>
+  a owl:Class ;
+  rdfs:label "Dakhelling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03838 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020007>
+  a owl:Class ;
+  rdfs:label "Druktrap artikel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03941 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020017>
+  a owl:Class ;
+  rdfs:label "Warmtegeleidingsco‘ffici‘nt"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020023>
+  a owl:Class ;
+  rdfs:label "Max. mediumtemperatuur (continu)"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00061 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020024>
+  a owl:Class ;
+  rdfs:label "Opgenomen elektrisch vermogen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04353 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020025>
+  a owl:Class ;
+  rdfs:label "Spindel en/of handwiel stijgend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020026>
+  a owl:Class ;
+  rdfs:label "Uitwendige diameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020039>
+  a owl:Class ;
+  rdfs:label "Npsh"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020042>
+  a owl:Class ;
+  rdfs:label "Bochtstraal"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020045>
+  a owl:Class ;
+  rdfs:label "Materiaal inlage"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020052>
+  a owl:Class ;
+  rdfs:label "Nom. binnendiameter aansluiting 2"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03976 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020053>
+  a owl:Class ;
+  rdfs:label "Nom. binnendiameter aansluiting 3"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03976 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020055>
+  a owl:Class ;
+  rdfs:label "Excentrisch"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020065>
+  a owl:Class ;
+  rdfs:label "Aansluiting 3"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01086 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020066>
+  a owl:Class ;
+  rdfs:label "Aansluiting 4"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01086 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020068>
+  a owl:Class ;
+  rdfs:label "KOMO-keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020074>
+  a owl:Class ;
+  rdfs:label "Gastec QA"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020075>
+  a owl:Class ;
+  rdfs:label "KIWA-keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020076>
+  a owl:Class ;
+  rdfs:label "Toegestaan door NCP"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020077>
+  a owl:Class ;
+  rdfs:label "Min. mediumtemperatuur (continu)"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020078>
+  a owl:Class ;
+  rdfs:label "Met aftapper"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020079>
+  a owl:Class ;
+  rdfs:label "Met ontluchter"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020105>
+  a owl:Class ;
+  rdfs:label "Thermostatisch"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020120>
+  a owl:Class ;
+  rdfs:label "Type toerenregeling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020121>
+  a owl:Class ;
+  rdfs:label "Toerenregeling motor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020122>
+  a owl:Class ;
+  rdfs:label "Uitwendige buisdiameter aansluiting 1"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020123>
+  a owl:Class ;
+  rdfs:label "Uitwendige buisdiameter aansluiting 2"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020124>
+  a owl:Class ;
+  rdfs:label "Uitwendige buisdiameter aansluiting 3"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020126>
+  a owl:Class ;
+  rdfs:label "Uitwendige buisdiameter alle aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020147>
+  a owl:Class ;
+  rdfs:label "Max. luchthoeveelheid"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020149>
+  a owl:Class ;
+  rdfs:label "Druktrap flens"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03957 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020150>
+  a owl:Class ;
+  rdfs:label "Max. drukverschil bij 20 grC"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020151>
+  a owl:Class ;
+  rdfs:label "Lengte aansluiting 1"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03964 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020152>
+  a owl:Class ;
+  rdfs:label "Lengte aansluiting 2"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03965 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020153>
+  a owl:Class ;
+  rdfs:label "Werkende lengte aansluiting 1"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03991 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020154>
+  a owl:Class ;
+  rdfs:label "Werkende lengte aansluiting 2"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03992 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020155>
+  a owl:Class ;
+  rdfs:label "Hoogte handgreep/handwiel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020156>
+  a owl:Class ;
+  rdfs:label "Lengte handgreep/diameter handwiel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020157>
+  a owl:Class ;
+  rdfs:label "Hoek van de afsluiter"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03943 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020158>
+  a owl:Class ;
+  rdfs:label "Hoek van de spindel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03838 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020159>
+  a owl:Class ;
+  rdfs:label "Lengte aansluiting 3"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020160>
+  a owl:Class ;
+  rdfs:label "Werkende lengte aansluiting 3"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020164>
+  a owl:Class ;
+  rdfs:label "Hoogte handgreep"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03960 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020165>
+  a owl:Class ;
+  rdfs:label "Lengte handgreep"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03961 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020168>
+  a owl:Class ;
+  rdfs:label "Werkende lengte aansluiting 4"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020188>
+  a owl:Class ;
+  rdfs:label "Max. omgevingstemperatuur"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020208>
+  a owl:Class ;
+  rdfs:label "Uitwendige buisdiameter aansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020224>
+  a owl:Class ;
+  rdfs:label "Met ontluchtingsaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020230>
+  a owl:Class ;
+  rdfs:label "Naadloos"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020233>
+  a owl:Class ;
+  rdfs:label "Aansluitspanning"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03937 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020239>
+  a owl:Class ;
+  rdfs:label "Aansluitvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020270>
+  a owl:Class ;
+  rdfs:label "Opnemertype"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020271>
+  a owl:Class ;
+  rdfs:label "Meetbereik onderwaarde"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020272>
+  a owl:Class ;
+  rdfs:label "Meetbereik bovenwaarde"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020279>
+  a owl:Class ;
+  rdfs:label "Insteeklengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020286>
+  a owl:Class ;
+  rdfs:label "Max. spanning contacten"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020294>
+  a owl:Class ;
+  rdfs:label "Aansluitmaat aansluitvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020311>
+  a owl:Class ;
+  rdfs:label "Nom. kanaaldiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020312>
+  a owl:Class ;
+  rdfs:label "Nom. kanaalbreedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020313>
+  a owl:Class ;
+  rdfs:label "Nom. kanaalhoogte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020314>
+  a owl:Class ;
+  rdfs:label "Vrije doorlaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020350>
+  a owl:Class ;
+  rdfs:label "Materiaal mantel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020363>
+  a owl:Class ;
+  rdfs:label "Vrijstaand"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020381>
+  a owl:Class ;
+  rdfs:label "Systeemtype"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020421>
+  a owl:Class ;
+  rdfs:label "Nom. kanaaldiameter aansluiting 1"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020422>
+  a owl:Class ;
+  rdfs:label "Nom. kanaaldiameter aansluiting 2"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020449>
+  a owl:Class ;
+  rdfs:label "Max. werkdruk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01915 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020592>
+  a owl:Class ;
+  rdfs:label "Met aftap"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020608>
+  a owl:Class ;
+  rdfs:label "Max. opvoerhoogte"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03970 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020780>
+  a owl:Class ;
+  rdfs:label "Aantal grepen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020781>
+  a owl:Class ;
+  rdfs:label "Afsluitmechanisme"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020785>
+  a owl:Class ;
+  rdfs:label "Maat aansluiting aanvoer"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020787>
+  a owl:Class ;
+  rdfs:label "Geluidsklasse volgens DIN-52 218"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF020791>
+  a owl:Class ;
+  rdfs:label "Materiaal kraan"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021154>
+  a owl:Class ;
+  rdfs:label "Met draadloze afstandsbediening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021180>
+  a owl:Class ;
+  rdfs:label "Geschikt voor plafondmontage"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021187>
+  a owl:Class ;
+  rdfs:label "Maat leidingaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021189>
+  a owl:Class ;
+  rdfs:label "Geschikt voor vul/aftapkraan"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021294>
+  a owl:Class ;
+  rdfs:label "Max. montagehoogte (uitblaashoogte)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021295>
+  a owl:Class ;
+  rdfs:label "Aantal ventilatorstanden"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021297>
+  a owl:Class ;
+  rdfs:label "Aansluitspanning ventilatoren"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021300>
+  a owl:Class ;
+  rdfs:label "Max. opgenomen stroom ventilatoren"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00082 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021302>
+  a owl:Class ;
+  rdfs:label "Max. geluidsniveau (op 3 meter afstand)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021303>
+  a owl:Class ;
+  rdfs:label "Met luchtfilter"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021360>
+  a owl:Class ;
+  rdfs:label "Temperatuur afleesbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021453>
+  a owl:Class ;
+  rdfs:label "Materiaal frame"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021457>
+  a owl:Class ;
+  rdfs:label "In hoogte verstelbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021478>
+  a owl:Class ;
+  rdfs:label "Afvoercapaciteit"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01809 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021491>
+  a owl:Class ;
+  rdfs:label "Materiaal plakplaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021493>
+  a owl:Class ;
+  rdfs:label "Breedte plakplaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021494>
+  a owl:Class ;
+  rdfs:label "Lengte plakplaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021505>
+  a owl:Class ;
+  rdfs:label "Met rooster"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021540>
+  a owl:Class ;
+  rdfs:label "Materiaal profiel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021603>
+  a owl:Class ;
+  rdfs:label "Wanddikte aansluiting 1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021604>
+  a owl:Class ;
+  rdfs:label "Wanddikte aansluiting 2"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021637>
+  a owl:Class ;
+  rdfs:label "Asdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03951 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021643>
+  a owl:Class ;
+  rdfs:label "Steekcirkel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021650>
+  a owl:Class ;
+  rdfs:label "Gecoat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021707>
+  a owl:Class ;
+  rdfs:label "Met afvoerplug"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021720>
+  a owl:Class ;
+  rdfs:label "Met terugstroombeveiliging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021779>
+  a owl:Class ;
+  rdfs:label "Aantal boutgaten"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021780>
+  a owl:Class ;
+  rdfs:label "Diameter boutgat"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03946 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021783>
+  a owl:Class ;
+  rdfs:label "Aantal inlagen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00057 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021788>
+  a owl:Class ;
+  rdfs:label "VacuŸmbestendigheid bij 20 grC"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021794>
+  a owl:Class ;
+  rdfs:label "Bewegingsopname lateraal +/-"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021858>
+  a owl:Class ;
+  rdfs:label "Beschermingsgraad (IP-waarde)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03938 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021863>
+  a owl:Class ;
+  rdfs:label "Looptijd"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03945 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021866>
+  a owl:Class ;
+  rdfs:label "Slaglengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021873>
+  a owl:Class ;
+  rdfs:label "Met koppeling aansluiting 2"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021905>
+  a owl:Class ;
+  rdfs:label "FM keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021906>
+  a owl:Class ;
+  rdfs:label "VdS keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021907>
+  a owl:Class ;
+  rdfs:label "UL-keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021908>
+  a owl:Class ;
+  rdfs:label "ULC keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF021909>
+  a owl:Class ;
+  rdfs:label "LPCB keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022042>
+  a owl:Class ;
+  rdfs:label "Volumestroomklasse"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022063>
+  a owl:Class ;
+  rdfs:label "Met voorgemonteerde afdichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022116>
+  a owl:Class ;
+  rdfs:label "Profiel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022185>
+  a owl:Class ;
+  rdfs:label "Met poten"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022194>
+  a owl:Class ;
+  rdfs:label "Aansluiting perszijde"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03935 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022273>
+  a owl:Class ;
+  rdfs:label "Hoogte bediening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022280>
+  a owl:Class ;
+  rdfs:label "Verdekte bevestiging"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022329>
+  a owl:Class ;
+  rdfs:label "Materiaal rooster"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022415>
+  a owl:Class ;
+  rdfs:label "KTW-keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022416>
+  a owl:Class ;
+  rdfs:label "WRC-keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022417>
+  a owl:Class ;
+  rdfs:label "FDA-keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022418>
+  a owl:Class ;
+  rdfs:label "DVGW-keur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022434>
+  a owl:Class ;
+  rdfs:label "Materiaal binnenbuis"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022435>
+  a owl:Class ;
+  rdfs:label "Materiaal buitenbuis"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022456>
+  a owl:Class ;
+  rdfs:label "Inwendige diameter"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03946 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022457>
+  a owl:Class ;
+  rdfs:label "Max. druk bij 20 grC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01915 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022461>
+  a owl:Class ;
+  rdfs:label "Materiaal huis"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03944 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022463>
+  a owl:Class ;
+  rdfs:label "Medium"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03839 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022465>
+  a owl:Class ;
+  rdfs:label "Productiewijze"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022466>
+  a owl:Class ;
+  rdfs:label "Kvs-waarde"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022468>
+  a owl:Class ;
+  rdfs:label "Materiaal spindel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03984 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022469>
+  a owl:Class ;
+  rdfs:label "Met standaanwijzer"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022471>
+  a owl:Class ;
+  rdfs:label "Met meetnippels"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022472>
+  a owl:Class ;
+  rdfs:label "Aansluitingen"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022473>
+  a owl:Class ;
+  rdfs:label "Opvoerhoogte bij nom. debiet"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022519>
+  a owl:Class ;
+  rdfs:label "Lengte aansluiting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022541>
+  a owl:Class ;
+  rdfs:label "Max. contactbelasting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022580>
+  a owl:Class ;
+  rdfs:label "Dubbelwerkend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022606>
+  a owl:Class ;
+  rdfs:label "Materiaal afdichting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022628>
+  a owl:Class ;
+  rdfs:label "Medisch schoon"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022637>
+  a owl:Class ;
+  rdfs:label "Met veiligheidskraag"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022639>
+  a owl:Class ;
+  rdfs:label "Diameter slangpilaar"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022647>
+  a owl:Class ;
+  rdfs:label "Met steunbus"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022659>
+  a owl:Class ;
+  rdfs:label "Uitvoeringsvorm"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00076 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022694>
+  a owl:Class ;
+  rdfs:label "Draadmaat"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022697>
+  a owl:Class ;
+  rdfs:label "Met eindcontacten"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04357 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022717>
+  a owl:Class ;
+  rdfs:label "Groefbreedte (mm)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022726>
+  a owl:Class ;
+  rdfs:label "Draadaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022727>
+  a owl:Class ;
+  rdfs:label "Hoek (graden)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03838 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022753>
+  a owl:Class ;
+  rdfs:label "Servomotor instelbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022754>
+  a owl:Class ;
+  rdfs:label "Zonder aansluitkast"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022761>
+  a owl:Class ;
+  rdfs:label "Met inbouwraam"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022764>
+  a owl:Class ;
+  rdfs:label "Frontbreedte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022765>
+  a owl:Class ;
+  rdfs:label "Frontdiameter"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022767>
+  a owl:Class ;
+  rdfs:label "Met volume-instelling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022768>
+  a owl:Class ;
+  rdfs:label "Fronthoogte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022772>
+  a owl:Class ;
+  rdfs:label "Frontlengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022836>
+  a owl:Class ;
+  rdfs:label "Hardheid IRHD"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022920>
+  a owl:Class ;
+  rdfs:label "Rollengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022923>
+  a owl:Class ;
+  rdfs:label "Nom. kanaaldiameter aansluiting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03755 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022929>
+  a owl:Class ;
+  rdfs:label "Aanvangsdrukverschil"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03887 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF022936>
+  a owl:Class ;
+  rdfs:label "Full face"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023086>
+  a owl:Class ;
+  rdfs:label "Hoogte pomp"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023091>
+  a owl:Class ;
+  rdfs:label "Frequentie 60 Hz"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04026 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023092>
+  a owl:Class ;
+  rdfs:label "Isolatieklasse volgens IEC"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03963 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023114>
+  a owl:Class ;
+  rdfs:label "Buigradius"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023116>
+  a owl:Class ;
+  rdfs:label "Max. werkdruk bij 20 grC"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01915 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023189>
+  a owl:Class ;
+  rdfs:label "Nom. debiet"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03975 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023191>
+  a owl:Class ;
+  rdfs:label "Nom. binnendiameter"@nl-nl ;
+  owl:equivalentClass cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023193>
+  a owl:Class ;
+  rdfs:label "Nom. binnendiameter aansluiting 1"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03976 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023452>
+  a owl:Class ;
+  rdfs:label "Maat draadaansluiting (inch)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023571>
+  a owl:Class ;
+  rdfs:label "Neutrale lengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023679>
+  a owl:Class ;
+  rdfs:label "Gelakt"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023686>
+  a owl:Class ;
+  rdfs:label "Accentkleur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023688>
+  a owl:Class ;
+  rdfs:label "Kraanmondstuk"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023753>
+  a owl:Class ;
+  rdfs:label "Met bedieningspaneel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023788>
+  a owl:Class ;
+  rdfs:label "Met handdoekhouder"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023789>
+  a owl:Class ;
+  rdfs:label "Vuilafstotend"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023790>
+  a owl:Class ;
+  rdfs:label "Antibacterieel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023791>
+  a owl:Class ;
+  rdfs:label "Met aardingsvoorziening"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023795>
+  a owl:Class ;
+  rdfs:label "Aansluitkast inwendig ge•soleerd"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023802>
+  a owl:Class ;
+  rdfs:label "Luchtpatroon instelbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023820>
+  a owl:Class ;
+  rdfs:label "Inwendig gevoerd"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023861>
+  a owl:Class ;
+  rdfs:label "Handelslengte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF023970>
+  a owl:Class ;
+  rdfs:label "Voedingsspanning"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02085 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024123>
+  a owl:Class ;
+  rdfs:label "Positive (overdruk)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01915 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024124>
+  a owl:Class ;
+  rdfs:label "Wet (condenserend)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024125>
+  a owl:Class ;
+  rdfs:label "Negative (onderdruk)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01915 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024126>
+  a owl:Class ;
+  rdfs:label "Dry (niet condenserend)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024307>
+  a owl:Class ;
+  rdfs:label "Draadmaat (inch)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00063 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024463>
+  a owl:Class ;
+  rdfs:label "Uitvoering afdekrozet"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024476>
+  a owl:Class ;
+  rdfs:label "Afleesbaar"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024605>
+  a owl:Class ;
+  rdfs:label "Warmteafgifte EN 442 20gr C - 75/65"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024606>
+  a owl:Class ;
+  rdfs:label "N-exponent"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024615>
+  a owl:Class ;
+  rdfs:label "Aansluitcombi 11 onderzijde links/onderzijde links"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024616>
+  a owl:Class ;
+  rdfs:label "Aansluitcombi 88 onderzijde rechts/onderzijde rechts"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024620>
+  a owl:Class ;
+  rdfs:label "Met aftapaansluiting"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024676>
+  a owl:Class ;
+  rdfs:label "Met spiegel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024696>
+  a owl:Class ;
+  rdfs:label "Geschikt voor vochtige ruimte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024707>
+  a owl:Class ;
+  rdfs:label "Soort coating"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024744>
+  a owl:Class ;
+  rdfs:label "Toebehoren"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024797>
+  a owl:Class ;
+  rdfs:label "Geschikt voor verwarming"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024798>
+  a owl:Class ;
+  rdfs:label "Geschikt voor koeling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024816>
+  a owl:Class ;
+  rdfs:label "Met lekbak"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024864>
+  a owl:Class ;
+  rdfs:label "Materiaal wanden"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024865>
+  a owl:Class ;
+  rdfs:label "Kleur profiel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024876>
+  a owl:Class ;
+  rdfs:label "Profielglans"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024893>
+  a owl:Class ;
+  rdfs:label "Materiaal deur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00062 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024894>
+  a owl:Class ;
+  rdfs:label "Antikalkbehandeling"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024895>
+  a owl:Class ;
+  rdfs:label "Glas-/kunststofdecor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024896>
+  a owl:Class ;
+  rdfs:label "Standaard kleur"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00055 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024897>
+  a owl:Class ;
+  rdfs:label "Glansgraad"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF024945>
+  a owl:Class ;
+  rdfs:label "Type koudemiddel"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF025109>
+  a owl:Class ;
+  rdfs:label "Oppervlaktebehandeling"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04363 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF025116>
+  a owl:Class ;
+  rdfs:label "Aansluiting toevoerzijde"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03936 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF025117>
+  a owl:Class ;
+  rdfs:label "Diameter aansluiting toevoerzijde"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03953 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF025118>
+  a owl:Class ;
+  rdfs:label "Diameter aansluiting perszijde"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03952 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF025173>
+  a owl:Class ;
+  rdfs:label "Enkelzijdig dichtend"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03955 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF025197>
+  a owl:Class ;
+  rdfs:label "Materiaal spindelafdichting primair"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03981 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF025198>
+  a owl:Class ;
+  rdfs:label "Materiaal spindelafdichting secundair"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03982 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF025254>
+  a owl:Class ;
+  rdfs:label "Contourcode"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00084 ;
+.
+<http://prod.etim-international.com/Feature/Details?id=EF026338>
+  a owl:Class ;
+  rdfs:label "Eurobrandklasse volgens EN 13501-1"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00049 ;
+.

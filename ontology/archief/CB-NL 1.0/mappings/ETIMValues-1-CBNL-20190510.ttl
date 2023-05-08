@@ -1,0 +1,1175 @@
+# baseURI: http://ont.cbnl.org/mapping/ETIMValues-1-CBNL-20190510
+
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ont.cbnl.org/mapping/ETIMValues-1-CBNL-20190510>
+  a owl:Ontology ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000072>
+  a owl:Class ;
+  rdfs:label "Aluminium"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04038 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000082>
+  a owl:Class ;
+  rdfs:label "Brons"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04056 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000117>
+  a owl:Class ;
+  rdfs:label "Gietijzer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04091 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000137>
+  a owl:Class ;
+  rdfs:label "Klem"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03999 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000138>
+  a owl:Class ;
+  rdfs:label "Koper"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04115 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000139>
+  a owl:Class ;
+  rdfs:label "Kunststof"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04036 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000149>
+  a owl:Class ;
+  rdfs:label "Messing"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04118 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000157>
+  a owl:Class ;
+  rdfs:label "PE (polyetheen)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04126 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000163>
+  a owl:Class ;
+  rdfs:label "PVC"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04170 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000175>
+  a owl:Class ;
+  rdfs:label "Sleutel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03078 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000179>
+  a owl:Class ;
+  rdfs:label "Staal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04180 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000189>
+  a owl:Class ;
+  rdfs:label "Verchroomd"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04188 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000191>
+  a owl:Class ;
+  rdfs:label "Vernikkeld"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04189 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000217>
+  a owl:Class ;
+  rdfs:label "Steker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04001 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000402>
+  a owl:Class ;
+  rdfs:label "Polyamide"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04165 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000408>
+  a owl:Class ;
+  rdfs:label "Kabelwartel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04112 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000572>
+  a owl:Class ;
+  rdfs:label "Keramiek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04113 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV000855>
+  a owl:Class ;
+  rdfs:label "230/400 V"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04015 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV001753>
+  a owl:Class ;
+  rdfs:label "Gecoat"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04090 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV003879>
+  a owl:Class ;
+  rdfs:label "PTFE"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04169 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV004870>
+  a owl:Class ;
+  rdfs:label "Water"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01165 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV005372>
+  a owl:Class ;
+  rdfs:label "DN 15"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04064 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV005373>
+  a owl:Class ;
+  rdfs:label "DN 20"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04067 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV005374>
+  a owl:Class ;
+  rdfs:label "DN 25"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04069 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV005922>
+  a owl:Class ;
+  rdfs:label "DN 32"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04072 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV006419>
+  a owl:Class ;
+  rdfs:label "IP54"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04102 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV006420>
+  a owl:Class ;
+  rdfs:label "IP55"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04103 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV006423>
+  a owl:Class ;
+  rdfs:label "IP67"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04105 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV006618>
+  a owl:Class ;
+  rdfs:label "IP64"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04104 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV006619>
+  a owl:Class ;
+  rdfs:label "IP68"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04106 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV006730>
+  a owl:Class ;
+  rdfs:label "EPDM"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04082 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV007139>
+  a owl:Class ;
+  rdfs:label "Benzinemotor"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04051 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV008013>
+  a owl:Class ;
+  rdfs:label "50 Hz"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04023 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV008015>
+  a owl:Class ;
+  rdfs:label "50/60 Hz"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04024 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV008017>
+  a owl:Class ;
+  rdfs:label "60 Hz"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04026 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV008045>
+  a owl:Class ;
+  rdfs:label "Groef"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04094 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV008335>
+  a owl:Class ;
+  rdfs:label "Nylon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04123 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV008487>
+  a owl:Class ;
+  rdfs:label "1/4\" (8)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04196 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV008701>
+  a owl:Class ;
+  rdfs:label "RVS 301"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04172 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV009759>
+  a owl:Class ;
+  rdfs:label "Ex-Zone 0"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03924 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV009760>
+  a owl:Class ;
+  rdfs:label "Ex-Zone 1"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03924 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV009761>
+  a owl:Class ;
+  rdfs:label "Ex-Zone 2"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03924 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV009762>
+  a owl:Class ;
+  rdfs:label "Ex-Zone 20"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03924 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV009763>
+  a owl:Class ;
+  rdfs:label "Ex-Zone 21"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03924 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV009764>
+  a owl:Class ;
+  rdfs:label "Ex-Zone 22"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03924 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV009994>
+  a owl:Class ;
+  rdfs:label "PP"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04167 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV010712>
+  a owl:Class ;
+  rdfs:label "16 2/3 Hz"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04010 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV010713>
+  a owl:Class ;
+  rdfs:label "16 2/3 Hz / 50 Hz"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04011 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV010802>
+  a owl:Class ;
+  rdfs:label "Aftakas"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04037 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV010869>
+  a owl:Class ;
+  rdfs:label "RVS"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04172 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV011484>
+  a owl:Class ;
+  rdfs:label "Ametal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04041 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV011816>
+  a owl:Class ;
+  rdfs:label "Handgreep"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04096 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020001>
+  a owl:Class ;
+  rdfs:label "Lijmmof"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04117 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020003>
+  a owl:Class ;
+  rdfs:label "Handwiel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04098 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020020>
+  a owl:Class ;
+  rdfs:label "Slangpilaar"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04178 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020027>
+  a owl:Class ;
+  rdfs:label "Binnendraad gas conisch (BSPT)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04055 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020029>
+  a owl:Class ;
+  rdfs:label "Plaatstaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04128 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020037>
+  a owl:Class ;
+  rdfs:label "Stortz"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04185 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020067>
+  a owl:Class ;
+  rdfs:label "Persmof"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04127 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020068>
+  a owl:Class ;
+  rdfs:label "Elektrolasmof"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04081 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020080>
+  a owl:Class ;
+  rdfs:label "ABS"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04035 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020083>
+  a owl:Class ;
+  rdfs:label "PVDF"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04171 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020090>
+  a owl:Class ;
+  rdfs:label "RVS 316 Ti"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04172 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020091>
+  a owl:Class ;
+  rdfs:label "Thermische olie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04186 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020101>
+  a owl:Class ;
+  rdfs:label "PN 2;5"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04138 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020102>
+  a owl:Class ;
+  rdfs:label "PN 6"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04156 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020103>
+  a owl:Class ;
+  rdfs:label "PN 10"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04130 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020104>
+  a owl:Class ;
+  rdfs:label "PN 16"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04135 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020105>
+  a owl:Class ;
+  rdfs:label "PN 25"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04142 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020106>
+  a owl:Class ;
+  rdfs:label "PN 40"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04150 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020107>
+  a owl:Class ;
+  rdfs:label "PN 63"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04159 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020108>
+  a owl:Class ;
+  rdfs:label "PN 100"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04132 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020109>
+  a owl:Class ;
+  rdfs:label "DN 6"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04075 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020110>
+  a owl:Class ;
+  rdfs:label "DN 8"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04078 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020111>
+  a owl:Class ;
+  rdfs:label "DN 10"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04061 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020112>
+  a owl:Class ;
+  rdfs:label "DN 40"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04073 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020113>
+  a owl:Class ;
+  rdfs:label "DN 50"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04074 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020114>
+  a owl:Class ;
+  rdfs:label "DN 65"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04076 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020115>
+  a owl:Class ;
+  rdfs:label "DN 80"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04079 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020116>
+  a owl:Class ;
+  rdfs:label "DN 100"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04062 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020117>
+  a owl:Class ;
+  rdfs:label "DN 125"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04063 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020118>
+  a owl:Class ;
+  rdfs:label "DN 150"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04065 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020119>
+  a owl:Class ;
+  rdfs:label "DN 175"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04066 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020120>
+  a owl:Class ;
+  rdfs:label "DN 200"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04068 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020125>
+  a owl:Class ;
+  rdfs:label "DN 250"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04070 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020145>
+  a owl:Class ;
+  rdfs:label "PN 8"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04163 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020146>
+  a owl:Class ;
+  rdfs:label "PN 12;5"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04133 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020147>
+  a owl:Class ;
+  rdfs:label "PN 3;2"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04144 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020148>
+  a owl:Class ;
+  rdfs:label "PN 4"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04149 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020168>
+  a owl:Class ;
+  rdfs:label "Vezelversterkt kunststof"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04190 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020185>
+  a owl:Class ;
+  rdfs:label "Aluminiumbrons"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04040 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020188>
+  a owl:Class ;
+  rdfs:label "Gietijzer GG 25 (GJL-250)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04092 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020202>
+  a owl:Class ;
+  rdfs:label "1 x 230 V"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04004 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020207>
+  a owl:Class ;
+  rdfs:label "1/8\" (6)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04197 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020208>
+  a owl:Class ;
+  rdfs:label "3/8\" (10)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04204 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020209>
+  a owl:Class ;
+  rdfs:label "1/2\" (15)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04195 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020210>
+  a owl:Class ;
+  rdfs:label "3/4\" (20)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04203 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020211>
+  a owl:Class ;
+  rdfs:label "1\" (25)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04192 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020212>
+  a owl:Class ;
+  rdfs:label "1.1/4\" (32)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04194 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020213>
+  a owl:Class ;
+  rdfs:label "1.1/2\" (40)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04193 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020214>
+  a owl:Class ;
+  rdfs:label "2\" (50)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04200 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020215>
+  a owl:Class ;
+  rdfs:label "2.1/2\" (65)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04201 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020216>
+  a owl:Class ;
+  rdfs:label "3\" (80)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04202 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020217>
+  a owl:Class ;
+  rdfs:label "4\" (100)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04205 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020218>
+  a owl:Class ;
+  rdfs:label "5\" (125)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04206 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020219>
+  a owl:Class ;
+  rdfs:label "6\" (150)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04207 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020220>
+  a owl:Class ;
+  rdfs:label "8\" (200)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04208 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020221>
+  a owl:Class ;
+  rdfs:label "10\" (250)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04198 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020222>
+  a owl:Class ;
+  rdfs:label "12\" (300)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04199 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020235>
+  a owl:Class ;
+  rdfs:label "Binnendraad gas cilindrisch (BSPP)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04054 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020236>
+  a owl:Class ;
+  rdfs:label "Binnendraad metrisch"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03950 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020237>
+  a owl:Class ;
+  rdfs:label "Binnendraad conisch (NPT)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04053 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020238>
+  a owl:Class ;
+  rdfs:label "Buitendraad gas conisch (BSPT)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04059 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020239>
+  a owl:Class ;
+  rdfs:label "Buitendraad gas cilindrisch (BSPP)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04058 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020240>
+  a owl:Class ;
+  rdfs:label "Buitendraad metrisch"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04060 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020241>
+  a owl:Class ;
+  rdfs:label "Buitendraad conisch (NPT)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04057 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020242>
+  a owl:Class ;
+  rdfs:label "Knelring"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04114 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020243>
+  a owl:Class ;
+  rdfs:label "Drukloos"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04080 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020244>
+  a owl:Class ;
+  rdfs:label "PN 20"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04139 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020245>
+  a owl:Class ;
+  rdfs:label "PN 32"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04146 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020246>
+  a owl:Class ;
+  rdfs:label "Handketting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04097 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020276>
+  a owl:Class ;
+  rdfs:label "DN 70"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04077 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020285>
+  a owl:Class ;
+  rdfs:label "Wormwielkast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04191 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020288>
+  a owl:Class ;
+  rdfs:label "Soldeermof"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04179 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020293>
+  a owl:Class ;
+  rdfs:label "Metaaldichtend"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04119 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020299>
+  a owl:Class ;
+  rdfs:label "Aansluitsnoer met steker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04031 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020300>
+  a owl:Class ;
+  rdfs:label "Aansluitklemmen"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04030 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020314>
+  a owl:Class ;
+  rdfs:label "150 mbar"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04008 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020315>
+  a owl:Class ;
+  rdfs:label "PB"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04124 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020341>
+  a owl:Class ;
+  rdfs:label "Hoeklijn"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04100 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020509>
+  a owl:Class ;
+  rdfs:label "FPM (FKM)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04089 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020511>
+  a owl:Class ;
+  rdfs:label "NBR (Nitrilrubber)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04122 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020576>
+  a owl:Class ;
+  rdfs:label "Staal verzinkt"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04181 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020595>
+  a owl:Class ;
+  rdfs:label "PN 160"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04136 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020596>
+  a owl:Class ;
+  rdfs:label "PN 320"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04147 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020597>
+  a owl:Class ;
+  rdfs:label "PN 400"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04151 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020598>
+  a owl:Class ;
+  rdfs:label "PN 64"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04161 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020600>
+  a owl:Class ;
+  rdfs:label "PN 10/16"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04131 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020601>
+  a owl:Class ;
+  rdfs:label "PN 6/10"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04157 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020691>
+  a owl:Class ;
+  rdfs:label "Grondverf"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04095 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020775>
+  a owl:Class ;
+  rdfs:label "PN 250"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04143 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020776>
+  a owl:Class ;
+  rdfs:label "Thermostatisch element"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04187 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020808>
+  a owl:Class ;
+  rdfs:label "Monel 400"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04121 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020809>
+  a owl:Class ;
+  rdfs:label "Hastelloy"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04099 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020810>
+  a owl:Class ;
+  rdfs:label "Incology 825"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04101 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020812>
+  a owl:Class ;
+  rdfs:label "Lasmof"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04116 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020908>
+  a owl:Class ;
+  rdfs:label "DN 300"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04071 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV020972>
+  a owl:Class ;
+  rdfs:label "PPS"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04168 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021099>
+  a owl:Class ;
+  rdfs:label "Aansluitsteker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04034 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021104>
+  a owl:Class ;
+  rdfs:label "3 x 440 V"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04019 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021265>
+  a owl:Class ;
+  rdfs:label "Monel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04120 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021667>
+  a owl:Class ;
+  rdfs:label "1 x 230 V AC"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04005 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021668>
+  a owl:Class ;
+  rdfs:label "1 * 12 V DC"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04002 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021669>
+  a owl:Class ;
+  rdfs:label "1 * 24 V DC"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04003 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021670>
+  a owl:Class ;
+  rdfs:label "Aansluitsnoer RA steker"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04033 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021671>
+  a owl:Class ;
+  rdfs:label "Aansluitsnoer Perilex"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04032 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV021673>
+  a owl:Class ;
+  rdfs:label "3 x 400 V AC"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04017 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022021>
+  a owl:Class ;
+  rdfs:label "Ametal-C"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04042 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022136>
+  a owl:Class ;
+  rdfs:label "24 V"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04016 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022523>
+  a owl:Class ;
+  rdfs:label "3 x 400 V AC +N"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04018 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022629>
+  a owl:Class ;
+  rdfs:label "300 lbs"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04021 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022630>
+  a owl:Class ;
+  rdfs:label "600 lbs"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04027 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022631>
+  a owl:Class ;
+  rdfs:label "800 lbs"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04028 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022642>
+  a owl:Class ;
+  rdfs:label "PDCPD"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04125 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022643>
+  a owl:Class ;
+  rdfs:label "PN 6/10/16"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04158 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022645>
+  a owl:Class ;
+  rdfs:label "1000 PSI WOG"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04006 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022646>
+  a owl:Class ;
+  rdfs:label "1500 PSI WOG"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04009 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022647>
+  a owl:Class ;
+  rdfs:label "2000 PSI WOG"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04014 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022649>
+  a owl:Class ;
+  rdfs:label "JIS 10K"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04107 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022653>
+  a owl:Class ;
+  rdfs:label "JIS 5K"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04111 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022683>
+  a owl:Class ;
+  rdfs:label "10000 PSI WOG"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04007 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022686>
+  a owl:Class ;
+  rdfs:label "3000 PSI WOG"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04022 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022687>
+  a owl:Class ;
+  rdfs:label "5000 PSI WOG"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04025 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022688>
+  a owl:Class ;
+  rdfs:label "JIS 16K"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04108 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022696>
+  a owl:Class ;
+  rdfs:label "200 PSI WOG"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04013 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022698>
+  a owl:Class ;
+  rdfs:label "PN 420"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04152 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022699>
+  a owl:Class ;
+  rdfs:label "PN 1"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04129 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022705>
+  a owl:Class ;
+  rdfs:label "PN 125"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04134 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022719>
+  a owl:Class ;
+  rdfs:label "JIS 20K"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04109 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022720>
+  a owl:Class ;
+  rdfs:label "JIS 40K"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04110 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022721>
+  a owl:Class ;
+  rdfs:label "PN 200"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04140 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022722>
+  a owl:Class ;
+  rdfs:label "PN 50"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04154 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022723>
+  a owl:Class ;
+  rdfs:label "PN 500"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04155 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022724>
+  a owl:Class ;
+  rdfs:label "PN 630"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04160 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022726>
+  a owl:Class ;
+  rdfs:label "RVS 316"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04172 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022729>
+  a owl:Class ;
+  rdfs:label "RVS 430"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04172 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022892>
+  a owl:Class ;
+  rdfs:label "Stekker EN 175301-803 type A"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04001 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022893>
+  a owl:Class ;
+  rdfs:label "Stekker EN 175301-803 type B"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04001 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022894>
+  a owl:Class ;
+  rdfs:label "Stekker EN 175301-803 type C"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04001 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022924>
+  a owl:Class ;
+  rdfs:label "Aangegoten kabel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04029 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022959>
+  a owl:Class ;
+  rdfs:label "ANSI 125"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04043 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022960>
+  a owl:Class ;
+  rdfs:label "ANSI 150"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04044 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022961>
+  a owl:Class ;
+  rdfs:label "ANSI 1500"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04045 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022962>
+  a owl:Class ;
+  rdfs:label "ANSI 300"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04047 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022963>
+  a owl:Class ;
+  rdfs:label "ANSI 600"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04048 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022964>
+  a owl:Class ;
+  rdfs:label "ANSI 900"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04050 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022966>
+  a owl:Class ;
+  rdfs:label "ANSI 800"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04049 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV022967>
+  a owl:Class ;
+  rdfs:label "ANSI 2000"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04046 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023101>
+  a owl:Class ;
+  rdfs:label "2 x 230 V"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04012 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023276>
+  a owl:Class ;
+  rdfs:label "PN 315"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04145 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023277>
+  a owl:Class ;
+  rdfs:label "PN 800"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04164 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023284>
+  a owl:Class ;
+  rdfs:label "RVS 304"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB04172 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023305>
+  a owl:Class ;
+  rdfs:label "PN 5"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04153 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023306>
+  a owl:Class ;
+  rdfs:label "PN 210"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04141 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023311>
+  a owl:Class ;
+  rdfs:label "PN 640"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04162 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023346>
+  a owl:Class ;
+  rdfs:label "PN 2"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04137 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023617>
+  a owl:Class ;
+  rdfs:label "POM"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04166 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023749>
+  a owl:Class ;
+  rdfs:label "Gietijzer/brons"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04093 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023750>
+  a owl:Class ;
+  rdfs:label "3 x 460 V"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04020 ;
+.
+<http://prod.etim-international.com/Value/Details?id=EV023790>
+  a owl:Class ;
+  rdfs:label "PN 350"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB04148 ;
+.

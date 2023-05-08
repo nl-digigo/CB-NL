@@ -1,0 +1,382 @@
+# baseURI: http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401>
+  a owl:Ontology ;
+.
+cbnltop:CB00001
+  owl:equivalentClass cbnltop:Object ;
+.
+cbnltop:CB00002
+  owl:equivalentClass cbnltop:Contract ;
+.
+cbnltop:CB00003
+  owl:equivalentClass cbnltop:Document ;
+.
+cbnltop:CB00004
+  owl:equivalentClass cbnltop:Informatierepresentatie ;
+.
+cbnltop:CB00005
+  owl:equivalentClass cbnltop:Fauna ;
+.
+cbnltop:CB00006
+  owl:equivalentClass cbnltop:Organisme ;
+.
+cbnltop:CB00007
+  owl:equivalentClass cbnltop:Flora ;
+.
+cbnltop:CB00008
+  owl:equivalentClass cbnltop:Software ;
+.
+cbnltop:CB00009
+  owl:equivalentClass cbnltop:Mensgemaaktobject ;
+.
+cbnltop:CB00010
+  owl:equivalentClass cbnltop:Activiteit ;
+.
+cbnltop:CB00011
+  owl:equivalentClass cbnltop:FysiekObject ;
+.
+cbnltop:CB00012
+  owl:equivalentClass cbnltop:Werktuig ;
+.
+cbnltop:CB00013
+  owl:equivalentClass cbnltop:Gebeurtenis ;
+.
+cbnltop:CB00014
+  owl:equivalentClass cbnltop:Natuurlijkobject ;
+.
+cbnltop:CB00015
+  owl:equivalentClass cbnltop:Bouwproduct ;
+.
+cbnltop:CB00016
+  owl:equivalentClass cbnltop:Bouwobject ;
+.
+cbnltop:CB00017
+  owl:equivalentClass cbnltop:Algemeenproduct ;
+.
+cbnltop:CB00018
+  owl:equivalentClass cbnltop:Relatie ;
+.
+cbnltop:CB00019
+  owl:equivalentClass cbnltop:Abstractobject ;
+.
+cbnltop:CB00020
+  owl:equivalentClass cbnltop:Installatieelement ;
+.
+cbnltop:CB00021
+  owl:equivalentClass cbnltop:Installatieobject ;
+.
+cbnltop:CB00022
+  owl:equivalentClass cbnltop:Bouwconstructie ;
+.
+cbnltop:CB00023
+  owl:equivalentClass cbnltop:Actie ;
+.
+cbnltop:CB00024
+  owl:equivalentClass cbnltop:Delfstof ;
+.
+cbnltop:CB00025
+  owl:equivalentClass cbnltop:Interactie ;
+.
+cbnltop:CB00026
+  owl:equivalentClass cbnltop:Installatiecomponent ;
+.
+cbnltop:CB00027
+  owl:equivalentClass cbnltop:Functie ;
+.
+cbnltop:CB00028
+  owl:equivalentClass cbnltop:Materie ;
+.
+cbnltop:CB00029
+  owl:equivalentClass cbnltop:Maatregel ;
+.
+cbnltop:CB00030
+  owl:equivalentClass cbnltop:Informatieobject ;
+.
+cbnltop:CB00031
+  owl:equivalentClass cbnltop:Veronderstelling ;
+.
+cbnltop:CB00032
+  owl:equivalentClass cbnltop:Doel ;
+.
+cbnltop:CB00033
+  owl:equivalentClass cbnltop:Representatie ;
+.
+cbnltop:CB00034
+  owl:equivalentClass cbnltop:Eis ;
+.
+cbnltop:CB00035
+  owl:equivalentClass cbnltop:Specificatie ;
+.
+cbnltop:CB00036
+  owl:equivalentClass cbnltop:Principe ;
+.
+cbnltop:CB00037
+  owl:equivalentClass cbnltop:Belevingseigenschap ;
+.
+cbnltop:CB00038
+  owl:equivalentClass cbnltop:Eigenschap ;
+.
+cbnltop:CB00039
+  owl:equivalentClass cbnltop:Bouwproces ;
+.
+cbnltop:CB00040
+  owl:equivalentClass cbnltop:Proces ;
+.
+cbnltop:CB00041
+  owl:equivalentClass cbnltop:Ruimtelijkobject ;
+.
+cbnltop:CB00042
+  owl:equivalentClass cbnltop:Gebruiksproces ;
+.
+cbnltop:CB00043
+  owl:equivalentClass cbnltop:Natuurlijkproces ;
+.
+cbnltop:CB00044
+  owl:equivalentClass cbnltop:Stroom ;
+.
+cbnltop:CB00045
+  owl:equivalentClass cbnltop:Organisatie ;
+.
+cbnltop:CB00046
+  owl:equivalentClass cbnltop:Functieruimte ;
+.
+cbnltop:CB00047
+  owl:equivalentClass cbnltop:Ruimte ;
+.
+cbnltop:CB00048
+  owl:equivalentClass cbnltop:Systeem ;
+.
+cbnltop:CB00049
+  owl:equivalentClass cbnltop:Intrinsiekeeigenschap ;
+.
+cbnltop:CB00050
+  owl:equivalentClass cbnltop:Karakteristiek ;
+.
+cbnltop:CB00051
+  owl:equivalentClass cbnltop:Rol ;
+.
+cbnltop:CB00052
+  owl:equivalentClass cbnltop:Functioneelkenmerk ;
+.
+cbnltop:CB00053
+  owl:equivalentClass cbnltop:Dichtheid ;
+.
+cbnltop:CB00054
+  owl:equivalentClass cbnltop:Aggregatietoestand ;
+.
+cbnltop:CB00055
+  owl:equivalentClass cbnltop:Kleur ;
+.
+cbnltop:CB00056
+  owl:equivalentClass cbnltop:Functionelecapaciteit ;
+.
+cbnltop:CB00057
+  owl:equivalentClass cbnltop:Hoeveelheid ;
+.
+cbnltop:CB00058
+  owl:equivalentClass cbnltop:Gebruikersrol ;
+.
+cbnltop:CB00059
+  owl:equivalentClass cbnltop:Beroep ;
+.
+cbnltop:CB00060
+  owl:equivalentClass cbnltop:Competentie ;
+.
+cbnltop:CB00061
+  owl:equivalentClass cbnltop:Temperatuur ;
+.
+cbnltop:CB00062
+  owl:equivalentClass cbnltop:Materiaal ;
+.
+cbnltop:CB00063
+  owl:equivalentClass cbnltop:Lengte ;
+.
+cbnltop:CB00064
+  owl:equivalentClass cbnltop:Intrinsiekgedrag ;
+.
+cbnltop:CB00065
+  owl:equivalentClass cbnltop:Oppervlaktestructuur ;
+.
+cbnltop:CB00066
+  owl:equivalentClass cbnltop:Lichtintensiteit ;
+.
+cbnltop:CB00067
+  owl:equivalentClass cbnltop:Massa ;
+.
+cbnltop:CB00068
+  owl:equivalentClass cbnltop:Conditie ;
+.
+cbnltop:CB00069
+  owl:equivalentClass cbnltop:Conditioneleeigenschap ;
+.
+cbnltop:CB00070
+  owl:equivalentClass cbnltop:Locatie ;
+.
+cbnltop:CB00071
+  owl:equivalentClass cbnltop:Geometrischeeigenschap ;
+.
+cbnltop:CB00072
+  owl:equivalentClass cbnltop:Kwaliteit ;
+.
+cbnltop:CB00073
+  owl:equivalentClass cbnltop:Faaltoestand ;
+.
+cbnltop:CB00074
+  owl:equivalentClass cbnltop:Toestand ;
+.
+cbnltop:CB00075
+  owl:equivalentClass cbnltop:Schaal ;
+.
+cbnltop:CB00076
+  owl:equivalentClass cbnltop:Vorm ;
+.
+cbnltop:CB00077
+  owl:equivalentClass cbnltop:Tijdperiode ;
+.
+cbnltop:CB00078
+  owl:equivalentClass cbnltop:Tijdeigenschap ;
+.
+cbnltop:CB00079
+  owl:equivalentClass cbnltop:Levenscyclusstadium ;
+.
+cbnltop:CB00080
+  owl:equivalentClass cbnltop:Tijdstadium ;
+.
+cbnltop:CB00081
+  owl:equivalentClass cbnltop:Symbool ;
+.
+cbnltop:CB00082
+  owl:equivalentClass cbnltop:Elektrischestroom ;
+.
+cbnltop:CB00083
+  owl:equivalentClass cbnltop:AdministratieveEigenschap ;
+.
+cbnltop:CB00084
+  owl:equivalentClass cbnltop:AdministratieveIdentificatie ;
+.
+cbnltop:CB00085
+  owl:equivalentClass cbnltop:AdministratieveStatus ;
+.
+cbnltop:CB00086
+  owl:equivalentClass cbnltop:Verzameling ;
+.

@@ -1,0 +1,950 @@
+# baseURI: http://ont.cbnl.org/mapping/OTLSAA-1-CBNL-20170401
+
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ont.cbnl.org/mapping/OTLSAA-1-CBNL-20170401>
+  a owl:Ontology ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00029&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wegment"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00046 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00031&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Afrit"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01131 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00032&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Busbaan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01684 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00034&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Hoofdrijbaan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01161 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00037&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wisselbaan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03510 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00041&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Toerit"@nl-nl ;
+  skos:related cbnlcore:CB03263 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00042&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Tussenbaan"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03301 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00046&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verbindingsweg direct"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01132 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00047&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verbindingsweg indirect"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01132 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00048&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verbindingsweg kortsluitend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01132 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00050&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verbindingsweg semi-direct"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01132 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=IN00054&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verzorgingsbaan van/naar parkeerplaats met benzinestation"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03302 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00011&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wegverkeerslicht"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01186 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00021&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wegennetwerk"@nl-nl ;
+  skos:related cbnlcore:CB01860 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00403&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "T-knooppunt"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03221 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00410&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wegmarkering in lengterichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00411&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Fundatiesloof"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00015 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00412&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Pyloon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03607 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00417&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Brug"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01341 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00418&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Brugdek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01662 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00419&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Duiker (weg)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01934 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00424&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Landhoofd"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01011 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00430&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Pijler"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03604 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00433&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Tunnel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01935 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00435&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Vaste Brug"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01342 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00436&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Viaduct"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01217 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00440&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Remmingswerk"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01027 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00476&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Fly-over (weg)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02020 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00477&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Beschoeiing"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01442 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00479&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Combiwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01426 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00480&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Damwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01427 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00481&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Diepwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01838 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00482&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Keerwand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01428 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00487&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Bussymbool"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01024 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00491&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Terrein"@nl-nl ;
+  skos:related cbnlcore:CB01366 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00493&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Driehoeksmarkering"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00502&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Asfaltverharding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00503&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Betonverharding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00505&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Open verharding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02764 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00507&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Ongebonden verharding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02736 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00508&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Stopstreep"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00510&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verdrijfpijl"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00511&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verdrijfstrepen"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00513&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Normale voorsorteerpijl"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00518&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Bestrating"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03069 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00543&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Camera"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01702 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00559&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Voedingskast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00568&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Blokmarkering"@nl-nl ;
+  skos:related cbnlcore:CB01527 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00606&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Vluchthaven Aanwezigheid Detectie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01067 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00615&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Inductielus"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01067 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00636&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Dynamisch Route Informatie Paneel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03747 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00637&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "BermDRIP"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03747 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00705&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Centrale VICnet Ruimte"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00022 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00710&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kast (WKS)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00711&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kast (DS)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00745&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Natuursteenverharding"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02016 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00763&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Plasberm"@nl-nl ;
+  skos:related cbnlcore:CB02871 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00785&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kast (VRI)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00816&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Hectometerbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03629 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00821&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Geleidebarrier"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02071 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00822&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Geleiderailconstructie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01964 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00832&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Cijfer- of lettersymbool"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00833&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Lichtmast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02540 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00834&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Lijnverlichtingsmast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01891 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00836&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Armatuur"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01233 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00853&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Sloot"@nl-nl ;
+  skos:related cbnlcore:CB01440 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00885&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Greppel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02172 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00920&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Boomgroep"@nl-nl ;
+  skos:related cbnlcore:CB01565 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00921&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Boomweide"@nl-nl ;
+  skos:related cbnlcore:CB01570 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00922&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Bos"@nl-nl ;
+  skos:related cbnlcore:CB01585 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00925&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Haag"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03579 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00941&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Voegloze overgang"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03419 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00947&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Hangstaaf"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01043 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00950&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Hameistijl"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02216 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00971&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Goot"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01148 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00972&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kantopsluiting"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02393 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00973&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Talud"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01606 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00982&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Portaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02890 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00989&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verplaatsbare geleidebarrier"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03375 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB00991&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Rimpelbuis-obstakelbeveiliger"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02980 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01004&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Boom"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01558 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01006&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kast"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01008&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Paal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01437 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01009&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Put"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01789 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01029&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Afsluitboominstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01139 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01036&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Bekleding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01397 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01042&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wegverkeersbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01350 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01057&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Bermsloot"@nl-nl ;
+  skos:related cbnlcore:CB01439 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01059&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Vijver"@nl-nl ;
+  skos:related cbnlcore:CB03396 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01060&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Praatpaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02895 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01062&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Rioolleiding"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02573 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01075&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Rioolput"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01168 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01076&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kolk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01167 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01084&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Keermuur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01205 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01085&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Muur"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01232 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01087&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Loofbos"@nl-nl ;
+  skos:related cbnlcore:CB02583 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01133&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Meerstoel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02628 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01134&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Leiding (fysiek)"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01051 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01141&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Lijnverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01059 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01142&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kast (OV;DOV)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01143&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Rij-ijzer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03805 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01149&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kast (GMS)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01154&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Drainagebuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01669 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01157&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "In de grond gevormde paal"@nl-nl ;
+  skos:related cbnlcore:CB01573 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01190&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Pomp"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02716 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01211&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Geluidsscherm"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02094 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01220&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Mottobord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02671 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01222&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Schampstrook"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03018 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01230&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Glasvezelkabel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02152 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01231&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Signaalkabel"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03238 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01232&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Glasvezelkabelput"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB03235 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01276&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Trap"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01475 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01292&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Scheepvaartverkeerslantaarn"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02006 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01297&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wegverkeerslantaarn"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02006 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01299&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Leuning"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01325 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01307&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Naambord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02677 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01308&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Straatnaambord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03185 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01309&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wegwijzer"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01350 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01311&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Informatiebord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01034 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01312&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Peilschaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02843 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01313&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Reclamebord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01706 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01314&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Waarschuwingsbord"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03453 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01316&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Pijl naar links"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01317&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Pijl naar rechts"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01528 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01324&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Waarschuwingshek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03454 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01325&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verblindingswering"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01213 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01328&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Overstapconstructie (geleiderail)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00015 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01329&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Hellingpompkelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01664 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01330&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Hoofdpompkelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01664 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01331&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Middenpompkelder"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01664 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01381&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Meteorologisch instrument"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01259 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01392&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Luskoppelkast"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01399&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Bermbeschermingsblok"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02277 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01408&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Vloer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01310 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01411&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Blusvijver"@nl-nl ;
+  skos:related cbnlcore:CB01636 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01429&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Paal met schoor"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00022 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01430&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Parkeerpalenrij"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00022 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01432&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Plas"@nl-nl ;
+  skos:related cbnlcore:CB02870 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01433&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Afvalbak"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01152 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01434&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Raster"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01322 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01437&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Siervegetatie"@nl-nl ;
+  skos:related cbnlcore:CB03071 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01442&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Bergingsbassin"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01422 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01446&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kast (CAI)"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01224 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01460&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Zonnepaneel"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03541 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01468&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Steigerconstructie"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01027 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01469&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Bolder"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01557 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01471&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Objectverlichting"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01059 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01478&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Poel"@nl-nl ;
+  skos:related cbnlcore:CB02875 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01486&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kabeltender"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03807 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01487&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Kabelgoot"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01817 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01492&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Wand"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01444 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01500&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Luik"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02610 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01518&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Binnenverlichting Verkeersbuis"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01059 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01572&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Toegangshek"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01885 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01579&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Verlichtingsinstallatie"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01059 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01621&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Grasland/Produktiegrasland"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03617 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01622&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Griend"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB02583 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01645&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Vluchtdeur"@nl-nl ;
+  rdfs:subClassOf cbnlcore:CB01364 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01657&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Snuffelpaal"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03097 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01666&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Vuilvangrooster"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03448 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01694&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Poer"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02878 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01695&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Langsligger (kunstwerk)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00051 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01696&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Dwarsdrager (kunstwerk)"@nl-nl ;
+  rdfs:subClassOf cbnltop:CB00051 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01697&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Microfoon"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB02644 ;
+.
+<https://otl.rws.nl/publicatieomgeving/pages/base/?item=OB01698&library=lib-core&version=2.0#objectOverzicht>
+  a owl:Class ;
+  rdfs:label "Schotbalk"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB03033 ;
+.

@@ -1,0 +1,607 @@
+# baseURI: http://ont.cbnl.org/top/def/
+# imports: http://qudt.org/schema/qudt
+# imports: http://qudt.org/spin/unitconversion
+# imports: http://qudt.org/vocab/unit
+# imports: http://www.linkedmodel.org/schema/dtype
+# imports: http://www.linkedmodel.org/schema/vaem
+# prefix: cbnltop
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cbnlcore:CB00001
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00002
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00003
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00004
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00005
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00006
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00007
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00008
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00009
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00010
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00011
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00012
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00013
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00014
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00015
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00016
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00017
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00018
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00019
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00020
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00021
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+  skos:prefLabel "Installatie object"@nl-nl ;
+.
+cbnlcore:CB00022
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00023
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00024
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00025
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00026
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00027
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00028
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00029
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00030
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00031
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00032
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00033
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00034
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00035
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00036
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00037
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00038
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00039
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00040
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00041
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+  skos:prefLabel "Spatial object"@nl-nl ;
+.
+cbnlcore:CB00042
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00043
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00044
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00045
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00046
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00047
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00048
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00049
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00050
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00051
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00052
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00053
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00054
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00055
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00056
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00057
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00058
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00059
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00060
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00061
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00062
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00063
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00064
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00065
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00066
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00067
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00068
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00069
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00070
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00071
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00072
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00073
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00074
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00075
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00076
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00077
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00078
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00079
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00080
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00081
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00082
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00083
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00084
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00085
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnlcore:CB00086
+  cbnlcore:status <http://ont.cbnl.org/cb/id/status/Approved> ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+.
+cbnltop:
+  a owl:Ontology ;
+  dcterms:created "2015-01-05+01:00"^^xsd:date ;
+  dcterms:modified "2015-01-05+01:00"^^xsd:date ;
+  owl:imports <http://qudt.org/schema/qudt> ;
+  owl:imports <http://qudt.org/spin/unitconversion> ;
+  owl:imports <http://qudt.org/vocab/unit> ;
+  owl:imports <http://www.linkedmodel.org/schema/dtype> ;
+  owl:imports <http://www.linkedmodel.org/schema/vaem> ;
+  owl:versionInfo "CBNL topmodel versie 18-11"@nl-nl ;
+.
+cbnltop:Activity
+  rdfs:label "Activity"@en-gb ;
+.
+cbnltop:ConstructionEntity
+  skos:definition """An independent unit of the built environment with a characteristic spatial structure, intended to serve at least
+one function or user activity."""@en ;
+.
+cbnltop:ConstructionResult
+  skos:definition """Construction object which is formed or changed in state as the result of one or more construction processes
+using one or more construction resources"""@en ;
+.
+dcterms:Agent
+  a rdfs:Class ;
+  rdfs:label "Agent"@en-us ;
+.
+dcterms:created
+  a rdf:Property ;
+  a owl:AnnotationProperty ;
+  rdfs:comment "Date of creation of the resource"@en-us ;
+  rdfs:label "created"@en-us ;
+.
+dcterms:creator
+  a rdf:Property ;
+  a owl:AnnotationProperty ;
+.
+skos:altLabel
+  a owl:AnnotationProperty ;
+.
+skos:definition
+  a owl:AnnotationProperty ;
+.
+skos:note
+  a owl:AnnotationProperty ;
+.
+skos:prefLabel
+  a owl:AnnotationProperty ;
+.

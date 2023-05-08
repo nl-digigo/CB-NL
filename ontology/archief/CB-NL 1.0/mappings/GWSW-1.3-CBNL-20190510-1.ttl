@@ -1,0 +1,1462 @@
+# baseURI: http://ont.cbnl.org/mapping/GWSW-1.3-CBNL-20190510
+
+
+@prefix : <http://ont.cbnl.org/mapping/CBNLV1Top-CBNL-20180401#> .
+@prefix GWSW: <file:///private/var/folders/fx/1drtlm6943vgyffr4gvqq0x80000gn/T/AppTranslocation/47CB9A78-D7B9-46D3-94C8-3BF21E43887E/d/TopBraid%20Composer.app/Contents/MacOS/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/C:/Users/p003439/documents/MiscApps/Protege_5.0_beta/Data/GWSW.ttl#> .
+@prefix IMGEO: <http://example.org/IMGEO#> .
+@prefix NEN: <http://example.org/NEN#> .
+@prefix actuele-wegenlijst: <http://otl.rws.nl/actuele-wegenlijst#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix backspin: <http://topbraid.org/backspin#> .
+@prefix cbnl: <http://ont.cb-nl.nl/cb/def/> .
+@prefix cbnlcore: <http://ont.cbnl.org/cb/def/> .
+@prefix cbnlmeta: <http://ont.cbnl.org/metamodel#> .
+@prefix cbnltop: <http://ont.cbnl.org/top/def/> .
+@prefix cheobs: <http://ont.cb-nl.nl/cb/cheobs/def/> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix etim: <http://ont.cbnl.org/cb/ETIM/def/> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix geo-ont: <http://www.geonames.org/ontology#> .
+@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gwsw: <http://data.gwsw.nl/1.3/totaal/> .
+@prefix html: <http://uispin.org/html#> .
+@prefix imbor: <http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#> .
+@prefix imgeo: <http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#> .
+@prefix jfn: <java:org.apache.jena.sparql.function.library.> .
+@prefix lfunctions: <http://example.org/lfunctions#> .
+@prefix lib-importer: <http://edg.topbraid.solutions/importer/lib#> .
+@prefix list: <http://ont.cbnl.org/cb/id/> .
+@prefix luc: <http://teamwork.topbraidlive.org/saf/lucene#> .
+@prefix mc-map-coins: <http://otl.rws.nl/mc-map-coins#> .
+@prefix mc-mi-types: <http://otl.rws.nl/mc-mi-types#> .
+@prefix mc-mt0006: <http://otl.rws.nl/mc-mt0006#> .
+@prefix mc-rules: <http://otl.rws.nl/mc-rules#> .
+@prefix mc-top: <http://otl.rws.nl/mc-top#> .
+@prefix meta: <http://ont.cbnl.org/metamodel/def/> .
+@prefix model: <http://ont.cbnl.org/model/dev/> .
+@prefix nen3610: <http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#> .
+@prefix ns1: <http://www.coinsweb.nl/cbim-2.0.rdf#> .
+@prefix ns2: <http://topbraid.org/tosh.ui#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix otl: <http://otl.rws.nl/otl#> .
+@prefix otl-doc: <http://otl.rws.nl/otl-doc#> .
+@prefix otl-doctype: <http://otl.rws.nl/otl-doctype#> .
+@prefix otl-gebrek: <http://otl.rws.nl/otl-gebrek#> .
+@prefix otl-m-coins-base: <http://otl.rws.nl/otl-m-coins-base#> .
+@prefix otl-mat: <http://otl.rws.nl/otl-mat#> .
+@prefix otl-org-nl-overheid: <http://standaarden.overheid.nl/owms/terms/Overheidsorganisatie#> .
+@prefix otl-org-overige: <http://otl.rws.nl/otl-org-overige#> .
+@prefix otl-orgtype: <http://otl.rws.nl/otl-orgtype#> .
+@prefix otl-rws-appl: <http://otl.rws.nl/otl-rws-appl#> .
+@prefix otl-rws-kv: <http://otl.rws.nl/otl-rws-kv#> .
+@prefix otl-rws-org: <http://otl.rws.nl/otl-rws-org#> .
+@prefix otl-rws-pr: <http://otl.rws.nl/otl-rws-pr#> .
+@prefix otl-svt: <http://otl.rws.nl/otl-svt#> .
+@prefix otl-units-quantities: <http://otl.rws.nl/otl-units-quantities#> .
+@prefix otl-vvt: <http://otl.rws.nl/otl-vvt#> .
+@prefix otl-wvt: <http://otl.rws.nl/otl-wvt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix pf: <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix primitives: <http://otl.rws.nl/primitives#> .
+@prefix qudt: <http://qudt.org/schema/qudt#unit> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudtspin: <http://qudt.org/spin/qudtspin#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix sbi2008: <http://otl.rws.nl/sbi2008#> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix swaeditor: <http://topbraid.org/swaeditor#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix tops: <http://www.topbraid.org/tops#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix uix: <http://topbraidlive.org/uix#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ont.cbnl.org/mapping/GWSW-1.3-CBNL-20190510>
+  a owl:Ontology ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Aansluiting>
+  a owl:Class ;
+
+
+  rdfs:label "Aansluiting"@nl-nl ;
+  skos:related cbnlcore:CB01086 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Aansluitput>
+  a owl:Class ;
+
+
+  rdfs:label "Aansluitput"@nl-nl ;
+  skos:related cbnlcore:CB01789 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Afsluiter>
+  a owl:Class ;
+
+
+  rdfs:label "Afsluiter"@nl-nl ;
+  skos:related cbnlcore:CB01002 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Afsluiteraandrijving>
+  a owl:Class ;
+
+
+  rdfs:label "Afsluiteraandrijving"@nl-nl ;
+  skos:related cbnlcore:CB03259 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Afsluitstuk>
+  a owl:Class ;
+
+
+  rdfs:label "Afsluitstuk"@nl-nl ;
+  skos:related cbnlcore:CB01142 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Apparatuur>
+  a owl:Class ;
+
+
+  rdfs:label "Apparatuur"@nl-nl ;
+  skos:related cbnlcore:CB01215 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Bedrijfslocatie>
+  a owl:Class ;
+
+
+  rdfs:label "Bedrijfslocatie"@nl-nl ;
+  skos:related cbnlcore:CB01163 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Beerput>
+  a owl:Class ;
+
+
+  rdfs:label "Beerput"@nl-nl ;
+  skos:related cbnlcore:CB01789 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Beluchter>
+  a owl:Class ;
+
+
+  rdfs:label "Beluchter"@nl-nl ;
+  skos:related cbnlcore:CB02441 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Bergbezinkbassin>
+  a owl:Class ;
+
+
+  rdfs:label "Bergbezinkbassin"@nl-nl ;
+  skos:related cbnlcore:CB01414 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Bergbezinkleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Bergbezinkleiding"@nl-nl ;
+  skos:related cbnlcore:CB01420 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Bergingsbassin>
+  a owl:Class ;
+
+
+  rdfs:label "Bergingsbassin"@nl-nl ;
+  skos:related cbnlcore:CB01422 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Bergingsleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Bergingsleiding"@nl-nl ;
+  skos:related cbnlcore:CB01423 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Bergingsvijver>
+  a owl:Class ;
+
+
+  rdfs:label "Bergingsvijver"@nl-nl ;
+  skos:related cbnlcore:CB01415 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Bezinkbassin>
+  a owl:Class ;
+
+
+  rdfs:label "Bezinkbassin"@nl-nl ;
+  skos:related cbnlcore:CB01415 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Bochtstuk>
+  a owl:Class ;
+
+
+  rdfs:label "Bochtstuk"@nl-nl ;
+  skos:related cbnlcore:CB01539 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Boostergemaal>
+  a owl:Class ;
+
+
+  rdfs:label "Boostergemaal"@nl-nl ;
+  skos:related cbnlcore:CB01577 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Centrifugaalpomp>
+  a owl:Class ;
+
+
+  rdfs:label "Centrifugaalpomp"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Cunetdrainage>
+  a owl:Class ;
+
+
+  rdfs:label "Cunetdrainage"@nl-nl ;
+  skos:related cbnlcore:CB01892 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Datatransportkabel>
+  a owl:Class ;
+
+
+  rdfs:label "Datatransportkabel"@nl-nl ;
+  skos:related cbnlcore:CB03072 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Debietmeter>
+  a owl:Class ;
+
+
+  rdfs:label "Debietmeter"@nl-nl ;
+  skos:related cbnlcore:CB03568 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Deksel>
+  a owl:Class ;
+
+
+  rdfs:label "Deksel"@nl-nl ;
+  skos:related cbnlcore:CB01105 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Dijk>
+  a owl:Class ;
+
+
+  rdfs:label "Dijk"@nl-nl ;
+  skos:related cbnlcore:CB01330 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Doorlaat>
+  a owl:Class ;
+
+
+  rdfs:label "Doorlaat"@nl-nl ;
+  skos:related cbnlcore:CB02441 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Doorspoelput>
+  a owl:Class ;
+
+
+  rdfs:label "Doorspoelput"@nl-nl ;
+  skos:related cbnlcore:CB01866 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Drain>
+  a owl:Class ;
+
+
+  rdfs:label "Drain"@nl-nl ;
+  skos:related cbnlcore:CB01897 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Drainageput>
+  a owl:Class ;
+
+
+  rdfs:label "Drainageput"@nl-nl ;
+  skos:related cbnlcore:CB01789 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Drainagestelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Drainagestelsel"@nl-nl ;
+  skos:related cbnlcore:CB01893 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Drukleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Drukleiding"@nl-nl ;
+  skos:related cbnlcore:CB02853 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Drukmeter>
+  a owl:Class ;
+
+
+  rdfs:label "Drukmeter"@nl-nl ;
+  skos:related cbnlcore:CB01925 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Drukriolering>
+  a owl:Class ;
+
+
+  rdfs:label "Drukriolering"@nl-nl ;
+  skos:related cbnlcore:CB01927 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Drukrioleringspomp>
+  a owl:Class ;
+
+
+  rdfs:label "Drukrioleringspomp"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Duiker>
+  a owl:Class ;
+
+
+  rdfs:label "Duiker"@nl-nl ;
+  skos:related cbnlcore:CB01934 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Duikschot>
+  a owl:Class ;
+
+
+  rdfs:label "Duikschot"@nl-nl ;
+  skos:related cbnlcore:CB01936 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Elektriciteitskast>
+  a owl:Class ;
+
+
+  rdfs:label "Elektriciteitskast"@nl-nl ;
+  skos:related cbnlcore:CB01224 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/ExterneOverstortput>
+  a owl:Class ;
+
+
+  rdfs:label "Externe overstortput"@nl-nl ;
+  skos:related cbnlcore:CB01988 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Filterput>
+  a owl:Class ;
+
+
+  rdfs:label "Filterput"@nl-nl ;
+  skos:related cbnlcore:CB02012 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Flensverbinding>
+  a owl:Class ;
+
+
+  rdfs:label "Flensverbinding"@nl-nl ;
+  skos:related cbnlcore:CB03750 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Frequentie-omvormer>
+  a owl:Class ;
+
+
+  rdfs:label "Frequentie-omvormer"@nl-nl ;
+  skos:related cbnlcore:CB04291 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Fundering>
+  a owl:Class ;
+
+
+  rdfs:label "Fundering"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/FysiekObject>
+  a owl:Class ;
+
+
+  rdfs:label "Fysiek object"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB00011 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Gasleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Gasleiding"@nl-nl ;
+  skos:related cbnlcore:CB02049 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Gebouw>
+  a owl:Class ;
+
+
+  rdfs:label "Gebouw"@nl-nl ;
+  skos:related cbnlcore:CB01095 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Gemaal>
+  a owl:Class ;
+
+
+  rdfs:label "Gemaal"@nl-nl ;
+  skos:related cbnlcore:CB01578 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/GemengdRiool>
+  a owl:Class ;
+
+
+  rdfs:label "Gemengd riool"@nl-nl ;
+  skos:related cbnlcore:CB03444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/GemengdStelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Gemengd stelsel"@nl-nl ;
+  skos:related cbnlcore:CB02104 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Glijverbinding>
+  a owl:Class ;
+
+
+  rdfs:label "Glijverbinding"@nl-nl ;
+  skos:related cbnlcore:CB01082 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Goot>
+  a owl:Class ;
+
+
+  rdfs:label "Goot"@nl-nl ;
+  skos:related cbnlcore:CB01148 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Helofytenfilter>
+  a owl:Class ;
+
+
+  rdfs:label "Helofytenfilter"@nl-nl ;
+  skos:related cbnlcore:CB01505 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Hemelwaterriool>
+  a owl:Class ;
+
+
+  rdfs:label "Hemelwaterriool"@nl-nl ;
+  skos:related cbnlcore:CB03444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Hemelwaterstelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Hemelwaterstelsel"@nl-nl ;
+  skos:related cbnlcore:CB02256 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Hijsinrichting>
+  a owl:Class ;
+
+
+  rdfs:label "Hijsinrichting"@nl-nl ;
+  skos:related cbnlcore:CB02269 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Hoogspanningskabel>
+  a owl:Class ;
+
+
+  rdfs:label "Hoogspanningskabel"@nl-nl ;
+  skos:related cbnlcore:CB02294 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/HorizontaleDrainage>
+  a owl:Class ;
+
+
+  rdfs:label "Horizontale drainage"@nl-nl ;
+  skos:related cbnlcore:CB01892 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/IBA>
+  a owl:Class ;
+
+
+  rdfs:label "IBA"@nl-nl ;
+  skos:related cbnlcore:CB02317 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Infiltratiebassin>
+  a owl:Class ;
+
+
+  rdfs:label "Infiltratiebassin"@nl-nl ;
+  skos:related cbnlcore:CB02121 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Infiltratiegreppel>
+  a owl:Class ;
+
+
+  rdfs:label "Infiltratiegreppel"@nl-nl ;
+  skos:related cbnlcore:CB02330 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Infiltratiekrat>
+  a owl:Class ;
+
+
+  rdfs:label "Infiltratiekrat"@nl-nl ;
+  skos:related cbnlcore:CB02331 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Infiltratieput>
+  a owl:Class ;
+
+
+  rdfs:label "Infiltratieput"@nl-nl ;
+  skos:related cbnlcore:CB02333 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Infiltratiereservoir>
+  a owl:Class ;
+
+
+  rdfs:label "Infiltratiereservoir"@nl-nl ;
+  skos:related cbnlcore:CB01415 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Infiltratieriool>
+  a owl:Class ;
+
+
+  rdfs:label "Infiltratieriool"@nl-nl ;
+  skos:related cbnlcore:CB03444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Infiltratieveld>
+  a owl:Class ;
+
+
+  rdfs:label "Infiltratieveld"@nl-nl ;
+  skos:related cbnlcore:CB02334 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/InlaatOppervlaktewater>
+  a owl:Class ;
+
+
+  rdfs:label "Inlaat oppervlaktewater"@nl-nl ;
+  skos:related cbnlcore:CB02343 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Inspectieput>
+  a owl:Class ;
+
+
+  rdfs:label "Inspectieput"@nl-nl ;
+  skos:related cbnlcore:CB02351 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/InterneOverstortput>
+  a owl:Class ;
+
+
+  rdfs:label "Interne overstortput"@nl-nl ;
+  skos:related cbnlcore:CB02361 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Kabel>
+  a owl:Class ;
+
+
+  rdfs:label "Kabel"@nl-nl ;
+  skos:related cbnlcore:CB01057 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Klep>
+  a owl:Class ;
+
+
+  rdfs:label "Klep"@nl-nl ;
+  skos:related cbnlcore:CB01002 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Kolk>
+  a owl:Class ;
+
+
+  rdfs:label "Kolk"@nl-nl ;
+  skos:related cbnlcore:CB01167 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Kolkaansluiting>
+  a owl:Class ;
+
+
+  rdfs:label "Kolkaansluiting"@nl-nl ;
+  skos:related cbnlcore:CB01086 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Kolkaansluitleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Kolkaansluitleiding"@nl-nl ;
+  skos:related cbnlcore:CB01050 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Kruisingsput>
+  a owl:Class ;
+
+
+  rdfs:label "Kruisingsput"@nl-nl ;
+  skos:related cbnlcore:CB01168 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Kunstwerk>
+  a owl:Class ;
+
+
+  rdfs:label "Kunstwerk"@nl-nl ;
+  skos:related cbnlcore:CB01117 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Kwaliteitssensor>
+  a owl:Class ;
+
+
+  rdfs:label "Kwaliteitssensor"@nl-nl ;
+  skos:related cbnlcore:CB01259 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Laagspanningskabel>
+  a owl:Class ;
+
+
+  rdfs:label "Laagspanningskabel"@nl-nl ;
+  skos:related cbnlcore:CB03592 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Lamellenafscheider>
+  a owl:Class ;
+
+
+  rdfs:label "Lamellenafscheider"@nl-nl ;
+  skos:related cbnlcore:CB02518 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Lasverbinding>
+  a owl:Class ;
+
+
+  rdfs:label "Lasverbinding"@nl-nl ;
+  skos:related cbnlcore:CB01743 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Leiding>
+  a owl:Class ;
+
+
+  rdfs:label "Leiding"@nl-nl ;
+  skos:related cbnlcore:CB01052 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Lijmverbinding>
+  a owl:Class ;
+
+
+  rdfs:label "Lijmverbinding"@nl-nl ;
+  skos:related cbnlcore:CB01082 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Lijnafwatering>
+  a owl:Class ;
+
+
+  rdfs:label "Lijnafwatering"@nl-nl ;
+  skos:related cbnlcore:CB02572 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Lining>
+  a owl:Class ;
+
+
+  rdfs:label "Lining"@nl-nl ;
+  skos:related cbnlcore:CB00022 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/LozeLeiding>
+  a owl:Class ;
+
+
+  rdfs:label "Loze leiding"@nl-nl ;
+  skos:related cbnlcore:CB01052 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Lozingsput>
+  a owl:Class ;
+
+
+  rdfs:label "Lozingsput"@nl-nl ;
+  skos:related cbnlcore:CB02592 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Luchtpersriolering>
+  a owl:Class ;
+
+
+  rdfs:label "Luchtpersriolering"@nl-nl ;
+  skos:related cbnlcore:CB01927 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Mangat>
+  a owl:Class ;
+
+
+  rdfs:label "Mangat"@nl-nl ;
+  skos:related cbnlcore:CB02614 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Mantelbuis>
+  a owl:Class ;
+
+
+  rdfs:label "Mantelbuis"@nl-nl ;
+  skos:related cbnlcore:CB03595 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/MechanischDrainagestelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Mechanisch drainagestelsel"@nl-nl ;
+  skos:related cbnlcore:CB02622 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/MechanischRioolstelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Mechanisch rioolstelsel"@nl-nl ;
+  skos:related cbnlcore:CB02623 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Meetinstrument>
+  a owl:Class ;
+
+
+  rdfs:label "Meetinstrument"@nl-nl ;
+  skos:related cbnlcore:CB01259 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Middenspanningskabel>
+  a owl:Class ;
+
+
+  rdfs:label "Middenspanningskabel"@nl-nl ;
+  skos:related cbnlcore:CB01089 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Molgoot>
+  a owl:Class ;
+
+
+  rdfs:label "Molgoot"@nl-nl ;
+  skos:related cbnlcore:CB02666 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Noodoverstortput>
+  a owl:Class ;
+
+
+  rdfs:label "Noodoverstortput"@nl-nl ;
+  skos:related cbnlcore:CB02702 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Nooduitlaat>
+  a owl:Class ;
+
+
+  rdfs:label "Nooduitlaat"@nl-nl ;
+  skos:related cbnlcore:CB02703 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Olie-/benzineafscheider>
+  a owl:Class ;
+
+
+  rdfs:label "Olie-/benzineafscheider"@nl-nl ;
+  skos:related cbnlcore:CB02714 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Onderheid>
+  a owl:Class ;
+
+
+  rdfs:label "Onderheid"@nl-nl ;
+  skos:related cbnlcore:CB04490 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Ontluchter>
+  a owl:Class ;
+
+
+  rdfs:label "Ontluchter"@nl-nl ;
+  skos:related cbnlcore:CB02746 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Ontluchtingsleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Ontluchtingsleiding"@nl-nl ;
+  skos:related cbnlcore:CB03600 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Ontspanningsventiel>
+  a owl:Class ;
+
+
+  rdfs:label "Ontspanningsventiel"@nl-nl ;
+  skos:related cbnlcore:CB04418 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Ontstoppingsstuk>
+  a owl:Class ;
+
+
+  rdfs:label "Ontstoppingsstuk"@nl-nl ;
+  skos:related cbnlcore:CB02755 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/OpStaal>
+  a owl:Class ;
+
+
+  rdfs:label "Op staal"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/OpenLeiding>
+  a owl:Class ;
+
+
+  rdfs:label "Open leiding"@nl-nl ;
+  skos:related cbnlcore:CB02763 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/OpeningInWand>
+  a owl:Class ;
+
+
+  rdfs:label "Opening in wand"@nl-nl ;
+  skos:related cbnlcore:CB02756 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Oppervlaktewater>
+  a owl:Class ;
+
+
+  rdfs:label "Oppervlaktewater"@nl-nl ;
+  owl:equivalentClass cbnlcore:CB01371 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Overgangsstuk>
+  a owl:Class ;
+
+
+  rdfs:label "Overgangsstuk"@nl-nl ;
+  skos:related cbnlcore:CB04248 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Overstortbemaling>
+  a owl:Class ;
+
+
+  rdfs:label "Overstortbemaling"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Overstortconstructie>
+  a owl:Class ;
+
+
+  rdfs:label "Overstortconstructie"@nl-nl ;
+  skos:related cbnlcore:CB00022 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Overstortdrempel>
+  a owl:Class ;
+
+
+  rdfs:label "Overstortdrempel"@nl-nl ;
+  skos:related cbnlcore:CB02362 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Overstortleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Overstortleiding"@nl-nl ;
+  skos:related cbnlcore:CB02800 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Overstortmeter>
+  a owl:Class ;
+
+
+  rdfs:label "Overstortmeter"@nl-nl ;
+  skos:related cbnlcore:CB01259 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Overstortput>
+  a owl:Class ;
+
+
+  rdfs:label "Overstortput"@nl-nl ;
+  skos:related cbnlcore:CB01989 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/PLC>
+  a owl:Class ;
+
+
+  rdfs:label "PLC"@nl-nl ;
+  skos:related cbnlcore:CB04244 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Peilbuis>
+  a owl:Class ;
+
+
+  rdfs:label "Peilbuis"@nl-nl ;
+  skos:related cbnlcore:CB02839 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Perceelaansluiting>
+  a owl:Class ;
+
+
+  rdfs:label "Perceelaansluiting"@nl-nl ;
+  skos:related cbnlcore:CB01086 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Perceelaansluitleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Perceelaansluitleiding"@nl-nl ;
+  skos:related cbnlcore:CB01050 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Persleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Persleiding"@nl-nl ;
+  skos:related cbnlcore:CB02853 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Persleidingsysteem>
+  a owl:Class ;
+
+
+  rdfs:label "Persleidingsysteem"@nl-nl ;
+  skos:related cbnlcore:CB01927 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Persluchtpomp>
+  a owl:Class ;
+
+
+  rdfs:label "Persluchtpomp"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Pomp>
+  a owl:Class ;
+
+
+  rdfs:label "Pomp"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Pompput>
+  a owl:Class ;
+
+
+  rdfs:label "Pompput"@nl-nl ;
+  skos:related cbnlcore:CB02886 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Put>
+  a owl:Class ;
+
+
+  rdfs:label "Put"@nl-nl ;
+  skos:related cbnlcore:CB01789 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Recreatiebedrijf>
+  a owl:Class ;
+
+
+  rdfs:label "Recreatiebedrijf"@nl-nl ;
+  skos:related cbnlcore:CB02934 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Regenmeter>
+  a owl:Class ;
+
+
+  rdfs:label "Regenmeter"@nl-nl ;
+  skos:related cbnlcore:CB02698 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/ReinigendePut>
+  a owl:Class ;
+
+
+  rdfs:label "Reinigende put"@nl-nl ;
+  skos:related cbnlcore:CB02946 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Reservoir>
+  a owl:Class ;
+
+
+  rdfs:label "Reservoir"@nl-nl ;
+  skos:related cbnlcore:CB01415 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rietmatten>
+  a owl:Class ;
+
+
+  rdfs:label "Rietmatten"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rioolgemaal>
+  a owl:Class ;
+
+
+  rdfs:label "Rioolgemaal"@nl-nl ;
+  skos:related cbnlcore:CB02983 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rioolleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Rioolleiding"@nl-nl ;
+  skos:related cbnlcore:CB02573 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rioolput>
+  a owl:Class ;
+
+
+  rdfs:label "Rioolput"@nl-nl ;
+  skos:related cbnlcore:CB01168 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rioolstelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Rioolstelsel"@nl-nl ;
+  skos:related cbnlcore:CB01867 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rioolstreng>
+  a owl:Class ;
+
+
+  rdfs:label "Rioolstreng"@nl-nl ;
+  skos:related cbnlcore:CB03444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rolverbinding>
+  a owl:Class ;
+
+
+  rdfs:label "Rolverbinding"@nl-nl ;
+  skos:related cbnlcore:CB01082 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rooster>
+  a owl:Class ;
+
+
+  rdfs:label "Rooster"@nl-nl ;
+  skos:related cbnlcore:CB02109 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Roostergoot>
+  a owl:Class ;
+
+
+  rdfs:label "Roostergoot"@nl-nl ;
+  skos:related cbnlcore:CB02998 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Rwzi>
+  a owl:Class ;
+
+
+  rdfs:label "RWZI"@nl-nl ;
+  skos:related cbnlcore:CB00020 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Schildmuur>
+  a owl:Class ;
+
+
+  rdfs:label "Schildmuur"@nl-nl ;
+  skos:related cbnlcore:CB01428 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Schroefcentrifugaalpomp>
+  a owl:Class ;
+
+
+  rdfs:label "Schroefcentrifugaalpomp"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Schroefpomp>
+  a owl:Class ;
+
+
+  rdfs:label "Schroefpomp"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Schuif>
+  a owl:Class ;
+
+
+  rdfs:label "Schuif"@nl-nl ;
+  skos:related cbnlcore:CB02802 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Septictank>
+  a owl:Class ;
+
+
+  rdfs:label "Septictank"@nl-nl ;
+  skos:related cbnlcore:CB03066 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Slibafscheider>
+  a owl:Class ;
+
+
+  rdfs:label "Slibafscheider"@nl-nl ;
+  skos:related cbnlcore:CB03079 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Slibvangput>
+  a owl:Class ;
+
+
+  rdfs:label "Slibvangput"@nl-nl ;
+  skos:related cbnlcore:CB03877 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Slokop>
+  a owl:Class ;
+
+
+  rdfs:label "Slokop"@nl-nl ;
+  skos:related cbnlcore:CB03081 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Sloofconstructie>
+  a owl:Class ;
+
+
+  rdfs:label "Sloofconstructie"@nl-nl ;
+  skos:related cbnlcore:CB01698 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Spindel>
+  a owl:Class ;
+
+
+  rdfs:label "Spindel"@nl-nl ;
+  skos:related cbnlcore:CB03106 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Spoelklep>
+  a owl:Class ;
+
+
+  rdfs:label "Spoelklep"@nl-nl ;
+  skos:related cbnlcore:CB01002 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Spoelleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Spoelleiding"@nl-nl ;
+  skos:related cbnlcore:CB01051 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Spoelvoorziening>
+  a owl:Class ;
+
+
+  rdfs:label "Spoelvoorziening"@nl-nl ;
+  skos:related cbnlcore:CB00020 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Spoorlijn>
+  a owl:Class ;
+
+
+  rdfs:label "Spoorlijn"@nl-nl ;
+  skos:related cbnlcore:CB01524 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/StalenLeiding>
+  a owl:Class ;
+
+
+  rdfs:label "Stalen leiding"@nl-nl ;
+  skos:related cbnlcore:CB01052 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Standmeter>
+  a owl:Class ;
+
+
+  rdfs:label "Standmeter"@nl-nl ;
+  skos:related cbnlcore:CB02845 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Stelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Stelsel"@nl-nl ;
+  skos:related cbnlcore:CB01851 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Stroomprofiel>
+  a owl:Class ;
+
+
+  rdfs:label "Stroomprofiel"@nl-nl ;
+  skos:related cbnlcore:CB01108 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Stuwconstructie>
+  a owl:Class ;
+
+
+  rdfs:label "Stuwconstructie"@nl-nl ;
+  skos:related cbnlcore:CB01307 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Stuwmuur>
+  a owl:Class ;
+
+
+  rdfs:label "Stuwmuur"@nl-nl ;
+  skos:related cbnlcore:CB01307 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Stuwput>
+  a owl:Class ;
+
+
+  rdfs:label "Stuwput"@nl-nl ;
+  skos:related cbnlcore:CB03213 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Stuwrioolleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Stuwrioolleiding"@nl-nl ;
+  skos:related cbnlcore:CB03444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/T-stuk>
+  a owl:Class ;
+
+
+  rdfs:label "T-stuk"@nl-nl ;
+  skos:related cbnlcore:CB04249 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Taludgoot>
+  a owl:Class ;
+
+
+  rdfs:label "Taludgoot"@nl-nl ;
+  skos:related cbnlcore:CB03227 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Terugslagklep>
+  a owl:Class ;
+
+
+  rdfs:label "Terugslagklep"@nl-nl ;
+  skos:related cbnlcore:CB03252 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Transportleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Transportleiding"@nl-nl ;
+  skos:related cbnlcore:CB01051 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/TrekvasteKoppeling>
+  a owl:Class ;
+
+
+  rdfs:label "Trekvaste koppeling"@nl-nl ;
+  skos:related cbnlcore:CB01082 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Vacuümopslagtank>
+  a owl:Class ;
+
+
+  rdfs:label "Vacuümopslagtank"@nl-nl ;
+  skos:related cbnlcore:CB02773 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Veiligheidsrooster>
+  a owl:Class ;
+
+
+  rdfs:label "Veiligheidsrooster"@nl-nl ;
+  skos:related cbnlcore:CB02109 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/VerbeterdeOverstortput>
+  a owl:Class ;
+
+
+  rdfs:label "Verbeterde overstortput"@nl-nl ;
+  skos:related cbnlcore:CB01989 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Verbindingsstuk>
+  a owl:Class ;
+
+
+  rdfs:label "Verbindingsstuk"@nl-nl ;
+  skos:related cbnlcore:CB01082 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/VerholenGoot>
+  a owl:Class ;
+
+
+  rdfs:label "Verholen goot"@nl-nl ;
+  skos:related cbnlcore:CB01148 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Verloopstuk>
+  a owl:Class ;
+
+
+  rdfs:label "Verloopstuk"@nl-nl ;
+  skos:related cbnlcore:CB04248 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Vetafscheider>
+  a owl:Class ;
+
+
+  rdfs:label "Vetafscheider"@nl-nl ;
+  skos:related cbnlcore:CB03388 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Vijzelgemaal>
+  a owl:Class ;
+
+
+  rdfs:label "Vijzelgemaal"@nl-nl ;
+  skos:related cbnlcore:CB01578 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Vijzelpomp>
+  a owl:Class ;
+
+
+  rdfs:label "Vijzelpomp"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Voedingskabel>
+  a owl:Class ;
+
+
+  rdfs:label "Voedingskabel"@nl-nl ;
+  skos:related cbnlcore:CB01089 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/VrijvervalRioolleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Vrijverval rioolleiding"@nl-nl ;
+  skos:related cbnlcore:CB03444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/VrijvervalRioolstelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Vrijverval rioolstelsel"@nl-nl ;
+  skos:related cbnlcore:CB02105 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/VrijvervalTransportleiding>
+  a owl:Class ;
+
+
+  rdfs:label "Vrijverval transportleiding"@nl-nl ;
+  skos:related cbnlcore:CB03444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/VrijvervalTransportstelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Vrijverval transportstelsel"@nl-nl ;
+  skos:related cbnlcore:CB02105 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Vuilvangrooster>
+  a owl:Class ;
+
+
+  rdfs:label "Vuilvangrooster"@nl-nl ;
+  skos:related cbnlcore:CB03448 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Vuilwaterriool>
+  a owl:Class ;
+
+
+  rdfs:label "Vuilwaterriool"@nl-nl ;
+  skos:related cbnlcore:CB03444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Vuilwaterstelsel>
+  a owl:Class ;
+
+
+  rdfs:label "Vuilwaterstelsel"@nl-nl ;
+  skos:related cbnlcore:CB03451 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Wadi>
+  a owl:Class ;
+
+
+  rdfs:label "Wadi"@nl-nl ;
+  skos:related cbnlcore:CB03458 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Wand>
+  a owl:Class ;
+
+
+  rdfs:label "Wand"@nl-nl ;
+  skos:related cbnlcore:CB01444 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Waterdeel>
+  a owl:Class ;
+
+
+  rdfs:label "Waterdeel"@nl-nl ;
+  skos:related cbnlcore:CB01371 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Waterloop>
+  a owl:Class ;
+
+
+  rdfs:label "Waterloop"@nl-nl ;
+  skos:related cbnlcore:CB01354 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Wervelput>
+  a owl:Class ;
+
+
+  rdfs:label "Wervelput"@nl-nl ;
+  skos:related cbnlcore:CB01168 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Wervelventiel>
+  a owl:Class ;
+
+
+  rdfs:label "Wervelventiel"@nl-nl ;
+  skos:related cbnlcore:CB03491 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Windketel>
+  a owl:Class ;
+
+
+  rdfs:label "Windketel"@nl-nl ;
+  skos:related cbnlcore:CB00020 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Woning>
+  a owl:Class ;
+
+
+  rdfs:label "Woning"@nl-nl ;
+  skos:related cbnlcore:CB01555 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Zakbaak>
+  a owl:Class ;
+
+
+  rdfs:label "Zakbaak"@nl-nl ;
+  skos:related cbnlcore:CB03523 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Zinker>
+  a owl:Class ;
+
+
+  rdfs:label "Zinker"@nl-nl ;
+  skos:related cbnlcore:CB03536 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Zinkerput>
+  a owl:Class ;
+
+
+  rdfs:label "Zinkerput"@nl-nl ;
+  skos:related cbnlcore:CB01168 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Zonk>
+  a owl:Class ;
+
+
+  rdfs:label "Zonk"@nl-nl ;
+  skos:related cbnlcore:CB03526 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Zuigerpomp>
+  a owl:Class ;
+
+
+  rdfs:label "Zuigerpomp"@nl-nl ;
+  skos:related cbnlcore:CB02716 ;
+.
+<https://data.gwsw.nl/1.4.1/Basis/Zuiveringsreservoir>
+  a owl:Class ;
+
+
+  rdfs:label "Zuiveringsreservoir"@nl-nl ;
+  skos:related cbnlcore:CB01415 ;
+.
