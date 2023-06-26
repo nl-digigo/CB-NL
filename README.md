@@ -1,4 +1,10 @@
-# Use Cases CB-NL
+# Repository van CB-NL
+
+## Nederlandse BegrippenBibliotheek voor de gebouwde omgeving
+
+* Use case: [https://bimloket.github.io/CB-NL/begrippenbieb](https://bimloket.github.io/CB-NL/begrippenbieb)
+
+## Use Cases CB-NL 2.0 
 
 Repository voor de ontwikkeling van CB-NL. Beoogd doel is de inrichting en het gebruik van andere standaarden en OTL’s in de sector te vereenvoudigen en daarmee bij te dragen aan een gestandaardiseerde manier van uitwisselen van digitale informatie en het voorkomen van informatieverlies tussen opdrachtgevers en opdrachtnemers.
 
