@@ -2,13 +2,13 @@
 
 ## Nederlandse BegrippenBibliotheek voor de gebouwde omgeving
 
-* Use case: [https://bimloket.github.io/CB-NL/begrippenbieb](https://bimloket.github.io/CB-NL/begrippenbieb)
+* [Toelichting begrippenbibliotheek](https://nl-digigo.github.io/CB-NL/begrippenbieb)
 
 ## Use Cases CB-NL 2.0 
 
 Repository voor de ontwikkeling van CB-NL. Beoogd doel is de inrichting en het gebruik van andere standaarden en OTL’s in de sector te vereenvoudigen en daarmee bij te dragen aan een gestandaardiseerde manier van uitwisselen van digitale informatie en het voorkomen van informatieverlies tussen opdrachtgevers en opdrachtnemers.
 
-* De use cases waarvoor CB-NL potentieel geschikt is staan in dit document: [https://bimloket.github.io/CB-NL/usecases](https://bimloket.github.io/CB-NL/usecases)
+* De use cases waarvoor CB-NL potentieel geschikt is staan in dit document: [usecases](https://nl-digigo.github.io/CB-NL/usecases)
 
 Merk op dat CB-NL 2.0 zich in het stadium van beproeving en ontwikkeling bevindt. CB-NL is nog niet geschikt voor grootschalige implementatie.
 
@@ -20,23 +20,20 @@ Het doel was het ontwikkelen van een nieuw kernmodel voor CB-NL gebaseerd op de 
 
 
 
-* De spelregels die gebruikt zijn bij het opstellen van CB-NL 2.0 staan in dit document: [https://bimloket.github.io/CB-NL/spelregels](https://bimloket.github.io/CB-NL/spelregels)
+* De spelregels die gebruikt zijn bij het opstellen van CB-NL 2.0 staan in dit document: [spelregels](https://nl-digigo.github.io/CB-NL/spelregels)
 
 ## Tijdelijke viewers ter ondersteuning van de ontwikkeling van de CBNL
 
 * CBNL Skos viewer met sparql widget is te vinden via: https://connectedapps.nl/projects/cbnl/viewer/
 
 
-* Open source viewer op basis van de NEN 2660-2, gehost vanaf de GitHub van BIM loket:  https://bimloket.github.io/ld-viewer/cb-nl2.0-pilot/. Van CB-NL is hier alleen nog de 'CB-NL Def' ingeladen (en die importeert NEN2660-RDFS). 
+* Open source viewer op basis van de NEN 2660-2, gehost vanaf de GitHub van BIM loket:  [technische viewer CB-NL 2.0](https://nl-digigo.github.io/ld-viewer/cb-nl2.0-pilot/). Van CB-NL is hier alleen nog de 'CB-NL Def' ingeladen (en die importeert NEN2660-RDFS). 
 Dit is de CROW versie van de Laces - LinkedData viewer. Originele source code: https://github.com/laceshub/linked-data-viewer
 
 
 ## Pilot uitwisseling gegevens over asfaltverhardingen
-In 2022 heeft een pilot plaatsgevonden waarin informatie over asfaltverhardingen wordt uitgewisseld met behulp van CB-NL. De bevindingen staan in dit document: [https://bimloket.github.io/CB-NL/pilotasfalt](https://bimloket.github.io/CB-NL/pilotasfalt)
+In 2022 heeft een pilot plaatsgevonden waarin informatie over asfaltverhardingen wordt uitgewisseld met behulp van CB-NL. De bevindingen staan in dit document: [pilotasfalt](https://nl-digigo.github.io/CB-NL/pilotasfalt)
 
-
-## Instructie voor editor
-De instructie voor editors in het werken met Github staat hier: [https://github.com/bimloket/CB-NL/tree/main/docs/github.md](https://github.com/bimloket/CB-NL/tree/main/docs/github.md)
 
 
 ### Overzicht documenten
