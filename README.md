@@ -1,5 +1,40 @@
 # Repository van CB-NL
 
+
+## Stopzetting beheer CB-NL
+De programma adviescommissie en het bestuur van DigiGO hebben besloten om beheer van CB-NL 2.0 stop te zetten en de werkwijze te veranderen van een centrale landelijke bibliotheek naar een mechanisme om federatief data te delen. 
+
+De CB-NL is ongeveer 10 jaar geleden ontstaan en enkele jaren geleden door Rijkswaterstaat aangeboden aan het toenmalige BIM Loket. In de CB-NL zijn vele miljoenen euro’s geïnvesteerd en de situatie vandaag de dag is dat de CB-NL verouderd is, niet compleet is en dat het imago niet optimaal is. 
+
+Bij de ontwikkeling van de CB-NL was het gedachtegoed om alle begrippen en definities vanuit alle standaarden te kopiëren naar de CB-NL. Toentertijd een logisch gedachtengoed.
+
+## Nieuwe situatie
+Op dit moment worden veel standaarden op de markt aangeboden middels linkeddata technologie. Daarmee wordt openbare toegang tot de standaarden versimpelt en gegevensuitwisseling makkelijker. Tegelijkertijd is er ook een trend om de gegevens bij de bron te houden en kunnen gegevens ontsloten worden middels ‘federatief datadelen’. Dit biedt ook kansen voor CB-NL. 
+
+Het aanbieden van een ‘zoekfunctie’ om begrippen te zoeken in alle standaarden biedt meer toegevoegde waarde:
+* Zoeken in alle! standaarden wordt mogelijk.
+* Beheerkosten zullen nihil zijn.
+* Eigendom, beheer en onderhoud blijft bij de broneigenaar
+
+Visueel kan dit als volgt worden weergegeven:
+
+![nieuwe situatie cb-nl](https://github.com/nl-digigo/CB-NL/assets/48585720/103379db-5327-4343-8b03-183bd52e105d)
+
+Spelregels
+Er zijn twee spelregels nodig in de bouwsector.
+1)	Standaarden worden gemodelleerd middels een paar bestaande NEN normen waaronder de NEN2660.
+2)	Standaarden worden beschikbaar gesteld middels linkeddata technologie.  
+
+Impact
+•	Elke organisatie die zijn standaard middels linkkeddata technologie aanbiedt kan bevraagd worden door de zoekfunctie. 
+•	De zoekfunctie krijgt een veel groter bereik waarmee de markt beter geholpen wordt.
+•	De bouw van de zoekfunctie is nihil. Dit wordt een standaard module bij de leverancier Semmtech waar digiGO nu al zaken mee doet. 
+•	De standaard CB-NL zal in 2024 ophouden te bestaan. 
+
+## Draagvlak
+De ontwikkeling om af te stappen van een landelijke bibliotheek naar een concept van federatief data delen is afgelopen maanden uitgebreid besproken in de beheercommissie van CB-NL waar Rijkswaterstaat in participeert. 
+
+# Archief:
 ## Nederlandse BegrippenBibliotheek voor de gebouwde omgeving
 
 * [Toelichting begrippenbibliotheek](https://nl-digigo.github.io/CB-NL/begrippenbieb)
